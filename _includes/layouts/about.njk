@@ -1,0 +1,28 @@
+---
+layout: layouts/about.njk
+templateClass: tmpl-post
+---
+
+<section>
+    <figure class="article__featured-image-container">
+      <img src="https://farm8.staticflickr.com/7815/46671419442_9b77cfa9ea_o.jpg" alt="Maine coast"
+        class="article__featured-image">
+    </figure>
+
+    <header class="article__header">
+      <div class="article__meta">
+        <time>{{currentDate()}}</time>
+      </div>
+      <h1 class="article__title">
+        {{title}}
+      </h1>
+      <span class="article__author">
+        by {{user}}
+      </span>
+    </header>
+
+    <section class="article__body">
+      {{ content | safe }}
+    </section>
+</section>
+  

@@ -30,6 +30,7 @@
     "markdown-it-anchor": "^5.0.2"
   },
   "dependencies": {
-    "axios": "^0.19.0"
+    "axios": "^0.19.0",
+    "trash-cli": "^3.0.0"
   }
 }
