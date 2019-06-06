@@ -2,8 +2,25 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
+  <article>
+    <figure class="article__featured-image-container">
+      <img src="https://live.staticflickr.com/3102/2607114636_40d169d7f8_o.jpg"
+        alt="An Event Apart Boston 2008" class="article__featured-image">
+    </figure>
 
-{{ content | safe }}
+    <header class="article__header">
+      <div class="article__meta">
+        <time>26 June, 2008</time>
+      </div>
+      <h1 class="article__title">
+        An Event Apart Boston 2008, Wrap-Up Edition
+      </h1>
+      <span class="article__author">
+        by Todd Libby
+      </span>
+    </header>
 
-<p><a href="{{ '/' | url }}">← Home</a></p>
+    <section class="article__body">
+      {{ content | safe }}
+    </section>
+  </article>
