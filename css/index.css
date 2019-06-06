@@ -766,6 +766,7 @@ article.style-guide {
 }
 
 .article__body {
+  display: grid;
   grid-row: 2/3;
   grid-column: 2/3;
   padding: 0 2.5rem 3rem;
