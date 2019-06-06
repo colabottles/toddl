@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/about.njk
 templateClass: tmpl-post
 ---
 
@@ -11,13 +11,13 @@ templateClass: tmpl-post
 
     <header class="article__header">
       <div class="article__meta">
-        <time>{{currentDate()}}</time>
+        <time>{{ post.date | readableDate }}</time>
       </div>
       <h1 class="article__title">
         {{title}}
       </h1>
       <span class="article__author">
-        by {{user}}
+        by Todd
       </span>
     </header>
 
