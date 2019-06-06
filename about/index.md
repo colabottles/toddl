@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: About sixtyten
 tags:
   - nav
 navtitle: About
