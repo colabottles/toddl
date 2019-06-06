@@ -13,11 +13,11 @@ sixtyten is a personal tech/programming/design blog.
 
 ## What was the inspiration behind this site&quest;
 
-First, the navigation by Reggie Bowers. <a href="https://codepen.io/bowersrd/#">So I had to have that navigation</a>.
+First, [the navigation by Reggie Bowers].(https://codepen.io/bowersrd/#)So I had to have that navigation.
 
-Brenda Storer has some awesome pens. Like the ones I forked to do the layout. <a href="https://codepen.io/brendamarienyc/pen/oZMxOY">This pen</a>, and <a href="https://codepen.io/brendamarienyc/pen/BRyQzg">this pen</a>, and <a href="https://codepen.io/brendamarienyc/pen/VXKrqL">this pen</a>.
+Brenda Storer has some awesome pens. Like the ones I forked to do the layout. [This pen](https://codepen.io/brendamarienyc/pen/oZMxOY), and [this pen](https://codepen.io/brendamarienyc/pen/BRyQzg), and [this pen](https://codepen.io/brendamarienyc/pen/VXKrqL).
 
-Last, I found <a href="https://codepen.io/liamj/pen/yrEXNx">this pen</a> which I thought was a cool animation so I forked that pen from Liam.
+Last, I found [this pen](https://codepen.io/liamj/pen/yrEXNx) which I thought was a cool animation so I forked that pen from Liam.
 
 They put in the work, I just ran with it. Or modified it just a wee bit. Either eway, they are the heroes you deserve.
       
