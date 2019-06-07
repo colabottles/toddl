@@ -846,8 +846,8 @@ li {
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-size: 0.8em;
   font-weight: 700;
-  justify-self: center;
-  padding: 0.5em 0em;
+  justify-self: right;
+  padding: 0em 0.5em;
   text-transform: uppercase;
 }
 
