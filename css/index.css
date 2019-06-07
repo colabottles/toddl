@@ -249,7 +249,8 @@ pre {
   list-style: none;
 }
 
-.nav-item a {
+.nav-item a,
+a.tag {
   color: #000000;
   font-family: "Futura", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
@@ -260,7 +261,8 @@ pre {
   transition: color 0.3s ease-out;
 }
 
-.nav-item a:hover {
+.nav-item a:hover,
+a.tag:hover {
   color: #f40009;
 }
 

@@ -1,12 +1,16 @@
 ---
-layout: layouts/home.njk
+layout: layouts/page.njk
+date: 2019-06-07
 tags:
   - nav
 navtitle: Archive
 permalink: /archives/
 ---
 
-<h1>Archive</h1>
+<section class="article__body">
+  <h2>Archive</h2>
 
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+  {% set postslist = collections.posts %}
+  {% include "postslist.njk" %}
+
+</section>
