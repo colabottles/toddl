@@ -2,25 +2,25 @@
 layout: layouts/page.njk
 templateClass: tmpl-post
 ---
-  
+
+  <article>
     <figure class="article__featured-image-container">
-      <img src="https://farm8.staticflickr.com/7815/46671419442_9b77cfa9ea_o.jpg" alt="Maine coast"
-        class="article__featured-image">
+      <img src="https://farm8.staticflickr.com/7815/46671419442_9b77cfa9ea_o.jpg" alt="Maine coast" class="article__featured-image">
     </figure>
 
     <header class="article__header">
       <div class="article__meta">
-        <time>Date / Time</time>
+        <time>Friday, 29 March, 2019</time>
       </div>
       <h1 class="article__title">
         {{title}}
       </h1>
       <span class="article__author">
-        by Todd
+        by Todd Libby
       </span>
     </header>
 
-    {{ content | safe }}
-
-  </section>
-  
+    <section class="article__body">
+      {{ content | safe }}
+    </section>
+  </article>

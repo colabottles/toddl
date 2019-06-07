@@ -182,12 +182,6 @@ q:before {
 
 /* Rest of the styling */
 
-@font-face {
-  font-family: "Abril Fatface";
-  src: url("./abrilfatface-regular-webfont.woff2") format("woff2");
-  font-weight: 1 999;
-}
-
 body {
   background: #ffffff;
 }
