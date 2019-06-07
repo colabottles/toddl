@@ -249,6 +249,10 @@ pre {
   list-style: none;
 }
 
+.navbar ul li.nav-item {
+  justify-items: center;
+}
+
 .nav-item a,
 a.tag {
   color: #000000;
@@ -846,7 +850,6 @@ li {
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-size: 0.8em;
   font-weight: 700;
-  justify-self: right;
   padding: 0em 0.5em;
   text-transform: uppercase;
 }
