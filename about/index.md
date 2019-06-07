@@ -1,13 +1,14 @@
 ---
 layout: layouts/about.njk
 title: About sixtyten
+date: 2019-06-05
 tags:
   - nav
 navtitle: About
 templateClass: tmpl-post
 ---
 
-## What is &quot;sixtyten&quot;&quest;
+## What is &ldquo;sixtyten&rdquo;&quest;
       
 sixtyten is a personal tech/programming/design blog.
 

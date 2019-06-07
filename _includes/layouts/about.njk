@@ -10,7 +10,7 @@ templateClass: tmpl-post
 
     <header class="article__header">
       <div class="article__meta">
-        <time>Friday, 29 March, 2019</time>
+        <time>{{page.date | htmlDateString}}</time>
       </div>
       <h1 class="article__title">
         {{title}}
