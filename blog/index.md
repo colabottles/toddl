@@ -4,7 +4,7 @@ title: Stories
 date: 2019-06-06
 tags:
   - nav
-navtitle: Blog
+navtitle: Stories
 templateClass: tmpl-post
 ---
 
