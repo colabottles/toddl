@@ -1,11 +1,11 @@
 ---
-layout: layouts/page.njk
+layout: layouts/contact.njk
 title: Say Hi!
 date: 2019-06-06
 tags:
   - nav
 navtitle: Contact
-templateClass: tmpl-post
+templateClass: tmpl-page
 ---
 
-{{content | safe}}
+{{ layoutContent | safe }}
