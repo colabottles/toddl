@@ -243,14 +243,19 @@ pre {
 
 .navbar ul {
   align-items: center;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-self: end;
   list-style: none;
 }
 
-/* .navbar ul li.nav-item {
-  
-} */
+.navbar ul li.nav-item {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0em 0.5rem;
+  text-transform: uppercase;
+}
 
 .nav-item a,
 a.tag {
@@ -849,7 +854,7 @@ li {
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: 700;
-  padding: 0em 0.5rem;
+  padding: 0.5rem 0rem;
   text-transform: uppercase;
 }
 
