@@ -30,10 +30,12 @@
                   <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
                 </li>
               {%- endfor -%}
-              <form action="#" role="search">
-                <input class="search-input" name="search" type="text" aria-label="search" />
-              </form>
-              <i class="fas fa-search" id="search-icon"></i>
+              <script>
+                $('.menu-toggle').click(function () {
+                  $(".nav").toggleClass("mobile-nav");
+                  $(this).toggleClass("is-active");
+                });
+              </script>
             </ul>
           </nav>
     </header>

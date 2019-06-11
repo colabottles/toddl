@@ -22,21 +22,23 @@
               <span class="bar"></span>
               <span class="bar"></span>
             </div>
-            <ul class="nav no-search">
+            <ul class="nav no-search">            
               {%- for nav in collections.nav | sort(attribute="date") -%}
                 <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
                   <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
                 </li>
               {%- endfor -%}
-              <form action="#" role="search">
-                <input class="search-input" name="search" type="text" aria-label="search" />
-              </form>
-              <i class="fas fa-search" id="search-icon"></i>
+              <script>
+                $('.menu-toggle').click(function () {
+                  $(".nav").toggleClass("mobile-nav");
+                  $(this).toggleClass("is-active");
+                });
+              </script>
             </ul>
           </nav>
     </header>
 
-    <div class="promoted-articles__container" {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+    <div class="promoted-articles__container">
       {{ content | safe }}
     </div>
 
