@@ -250,10 +250,13 @@ pre {
 }
 
 .navbar ul li.nav-item {
+  display: grid;
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: 700;
-  padding: 0em 0.5rem;
+  grid-template-columns: subgrid;
+  justify-items: center;
+  padding: 0em 1rem;
   text-transform: uppercase;
 }
 
@@ -272,6 +275,13 @@ a.tag {
 .nav-item a:hover,
 a.tag:hover {
   color: #f40009;
+}
+
+a.tag {
+  background-color: #f40009;
+  border-radius: 4px;
+  color: white;
+  padding: 2px;
 }
 
 /* SEARCH FUNCTION */
@@ -319,7 +329,7 @@ input {
   border-radius: 0;
   /* FOR SAFARI */
   outline: 0;
-  padding: 5px;
+  padding: 2px;
 }
 
 label {
@@ -655,7 +665,7 @@ label {
 }
 
 .article-meta {
-  font-size: .9em;
+  font-size: .75em;
   font-style: italic;
 }
 
@@ -685,7 +695,7 @@ li.article-list-article:hover {
 .article-list-subscribe-title {
   font-family: "Futura", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 1.3em;
+  font-size: 1em;
   padding-bottom: .5em;
 }
 
@@ -1072,8 +1082,8 @@ span.middot {
 
 .contact form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
 
 .contact form label {
@@ -1092,7 +1102,7 @@ span.middot {
 }
 
 .contact form .full {
-  grid-column: 1/3;
+  grid-column: 1;
 }
 
 .contact form input,

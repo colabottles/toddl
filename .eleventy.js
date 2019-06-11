@@ -70,7 +70,9 @@ module.exports = function(eleventyConfig) {
       "md",
       "njk",
       "html",
-      "liquid"
+      "liquid",
+      "css",
+      "js"
     ],
 
     // If your site lives in a different subdirectory, change this.
