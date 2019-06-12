@@ -22,7 +22,7 @@ Content Performance Quotient (CPQ). The time it takes your customer to get the i
 
 <blockquote cite="Jeffrey Zeldman">FAQs are the junk drawer of content.</blockquote>
 
-Jeffrey always kicks off AEA with relevant and thought-provoking talks. It made me think about the site for the company I work for and the “FAQ”-t, we have one item on the FAQ. The fact that the site is “pretty garbage” (that is a long explanation and I don’t have enough time right now to elaborate).
+Jeffrey always kicks off AEA with relevant and thought-provoking talks. It made me think about the site for the company I work for and the &ldquo;FAQ&rdquo;-t, we have one item on the FAQ. The fact that the site is &ldquo;pretty garbage&rdquo;.
 
 Once again, Jeffery delivered.
 
@@ -43,7 +43,7 @@ The differences between a successful design system and telling the story of her 
 
 Yes, she did. what I took away from her talk was to let your users’ needs define the building blocks you’ll need for your design system (if you even need one… more on that shortly). I can carry this to the table when I get back to the office and weigh heavily if we do indeed need a design system, or not.
 
-Next up was Una Kravets, who spoke on &quot;Why Design Systems Fail&quot;.
+Next up was Una Kravets, who spoke on &ldquo;Why Design Systems Fail&rdquo;.
 
 A Design System can be a style guide or visual pattern library. It can also be design tooling; a component library; voice and tone guidelines; design usage documentation; and more.
 
@@ -65,7 +65,7 @@ Same Bat-Time! Same Bat-Channel! His love for Batman and the massive resume Mike
 
 The began the second half to the day and the part of the day I was waiting for, some more light shed on CSS Grids and the new direction of web design and CSS by the next three speakers, Rachel Andrew, Eric Meyer, and Jen Simmons.
 
-Rachel started with &quot;Graduating to Grid&quot;. Telling the audience to understand CSS, you don’t have to memorize everything, just have a great understanding of it. Understanding the cascade, of Cascading Style Sheets, inheritance, specificity. You don’t need a grid-based solution to everything, build your own framework, and Rachel even spoke about Bootstrap! **_GASP!_**
+Rachel started with &ldquo;Graduating to Grid&rdquo;. Telling the audience to understand CSS, you don’t have to memorize everything, just have a great understanding of it. Understanding the cascade, of Cascading Style Sheets, inheritance, specificity. You don’t need a grid-based solution to everything, build your own framework, and Rachel even spoke about Bootstrap! **_GASP!_**
 
 <blockquote cite="Rachel Andrew">Don’t be afraid of the future of CSS Grids, be excited!</blockquote>
 
@@ -73,7 +73,7 @@ Then Eric Meyer took the stage to discuss Feature Queries. What are the pros and
 
 Feature Queries, examples.
 
-```
+```css
   @supports (prop: val) { /* CSS goes here */ } 
     @supports (--css: variables) { 
       html {
@@ -92,7 +92,7 @@ Feature Queries, examples.
     }
 ```
 
-```        
+```css
   @supports (prop: val) {
     /* CSS goes here */
   }
@@ -131,7 +131,7 @@ and I cannot forget to mention that I got to see my friend Claudia Snell again!
 
 If you are a speaker and happen to see this, and if there is anything I missed upon, key points perhaps, then please reach out and I can certainly add those. It’s now hour 41 of no sleep and by the sounds of the bulldozer and chainsaw going off in the room next door to me(the snoring person that is going right through the wall into my room) I don’t know if I am going to be getting any sleep tonight.
 
-Until tomorr… oh damn, it’s 5 minutes until &quot;tomorrow&quot;. Ciao!
+Until tomorr&hellip; oh damn, it’s 5 minutes until &ldquo;tomorrow&rdquo;. Ciao!
 
 ### Day Two 
 
@@ -147,7 +147,7 @@ Jeremy brought everyone in attendance back in time, discussed the present state 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-Then on to Donna Lichaw, who taught us on how to convey a story to your customers/clients. The better the story, the more likely you will want to use a product, pay for a product, tell others about the product. A &quot;story first&quot; approach to building websites, apps, and more that draw customers in, get them excited and keep them engaged for a long time.
+Then on to Donna Lichaw, who taught us on how to convey a story to your customers/clients. The better the story, the more likely you will want to use a product, pay for a product, tell others about the product. A &ldquo;story first&rdquo; approach to building websites, apps, and more that draw customers in, get them excited and keep them engaged for a long time.
 
 <blockquote class="twitter-tweet" data-lang="en">
   <p lang="en" dir="ltr">The better the STORY behind your product, the more likely folks are to try it, continue to use it, pay to use it, and recommend it to others. <a href="https://twitter.com/dlichaw?ref_src=twsrc%5Etfw">@dlichaw</a> <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a>&mdash; zeldman (@zeldman) <a href="https://twitter.com/zeldman/status/1011620432028545024?ref_src=twsrc%5Etfw">June 26, 2018</a>
@@ -172,13 +172,13 @@ Derek Featherstone followed with his talk on Inclusive UX. His slides and talk h
 
 <blockquote cite="Derek Featherstone">Accessibility is an outcome. Inclusive design is a process.</blockquote>
 
-Inclusive UX Design is &quot;the intentional facilitation and crafting of the interactions within an ecosystem that incorporates inclusion as a core value.&quot;
+Inclusive UX Design is &ldquo;the intentional facilitation and crafting of the interactions within an ecosystem that incorporates inclusion as a core value.&rdquo;
 
 Speaking about communication with all involved early in the process can make things a lot easier through the rest of the process. Reverse engineering a site, basically breaking it down in pieces to see where things are not right or went wrong. A great example was a site that had some pretty sketchy colors and a flyout menu that went three-wide and covered a lot of content area.
 
 Color palettes that are good and bad for accessibility, design intention, CSS class name reviews, high contrast tweaks&hellip; a lot of stuff regarding accessibility to soak in, well worth the price of admission!
 
-and to wrap up Day Two was Gerry McGovern who brought the house down with a great, humorous talk about Intuitive Navigation, and do I mean bringing the house down with laughter!
+And to wrap up Day Two was Gerry McGovern who brought the house down with a great, humorous talk about Intuitive Navigation, and do I mean bringing the house down with laughter!
 
 Discussing sites that it seems like it takes an eternity to finally get to the point of what the navigation was for. In a couple cases, the Gatwick Airport and Brussels Airport just to get online at these airports took 5 or more steps through a process to connect! And the right way to do it, Dublin Airport. Click once and you’re connected.
 
@@ -187,13 +187,13 @@ Discussing sites that it seems like it takes an eternity to finally get to the p
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-It was a humorous trip through the navigations of some example sites that had me in stitches, as well as the entire crowd. Icons for navigation, &quot;Most Popular&quot; navigation blocks, labeled versus unlabeled icons, hidden versus unhidden menu systems that result in huge losses in daily engagement.
+It was a humorous trip through the navigations of some example sites that had me in stitches, as well as the entire crowd. Icons for navigation, &ldquo;Most Popular&rdquo; navigation blocks, labeled versus unlabeled icons, hidden versus unhidden menu systems that result in huge losses in daily engagement.
 
 Even why and how to avoid (or even kill) the hamburger menu (something I am guilty of implementing on a few sites).
 
 I learned to reduce confusion and increase speed and simplicity for our customers at the company I work for, and had a lot of hearty laughter while learning.
 
-That wrapped up Day Two. As much as I would like to add more quotes, pictures and details, I have got to get some sleep. Tomorrow will be a very long day. I’ll have a wrap-up on the entire day tomorrow late. Tomorrow consists of A Day Apart, with Eric Meyer. “Navigating the CSS Renaissance”. I look forward to it.
+That wrapped up Day Two. As much as I would like to add more quotes, pictures and details, I have got to get some sleep. Tomorrow will be a very long day. I’ll have a wrap-up on the entire day tomorrow late. Tomorrow consists of A Day Apart, with Eric Meyer. &ldquo;Navigating the CSS Renaissance&rdquo;. I look forward to it.
 
 Until next time, that is all.
 
@@ -207,12 +207,12 @@ Feature and media queries. Positioning of objects and making them fit in the vie
 
 All-in-all, it was a fantastic three days of design and code. Phenomenal speakers, a great crowd, a great venue. It surpassed my expectations. It was in a new venue, new location, so I wasn’t so sure, but now that it has come and gone, it was well worth it.
 
-I got up the courage to talk and mingle with most of the speakers. Got to meet Jeremy Keith, after all these years. I went in 2008, I believe Jeremy came back in 2010, I wasn’t able to and did not attend until last year. So it was a thrill for me, fanboy moment. First site I linked to was Jeremy’s and I have 4 of his books. (HTML5 For Web Designers, Bulletproof Ajax, DOM Scripting, and Going Offline).
+I got up the courage to talk and mingle with most of the speakers. Got to meet Jeremy Keith, after all these years. I went in 2008, I believe Jeremy came back in 2010, I wasn’t able to and did not attend until last year. So it was a thrill for me, fanboy moment. First site I linked to was Jeremy’s and I have 4 of his books. (_HTML5 For Web Designers_, _Bulletproof Ajax_, _DOM Scripting_, and _Going Offline_).
 
 I tend to ramble, so I think I did a little bit when talking, but the amount of great information, from great speakers, that are very friendly.
 
 I highly recommend anyone thinking of going, go. Get your company to let you go, get them to send you there, make your pitch and sell them on it to advance your knowledge. You will be sure to leave there feeling like you have gained a lifetime of knowledge.
 
-I got to see Jeffrey Zeldman and Eric Meyer again and fanboy out like I always do, talk with them, they were so very gracious and put up with my fawning over the event like I always do and just have fun for three days.
+I got to see Jeffrey and Eric again and fanboy out like I always do, talk with them, they were so very gracious and put up with my fawning over the event like I always do and just have fun for three days.
 
 Thank you to all the speakers. I apologize for my over-enthusiastic fanboy-ing, fawning and swooning like I do each year beacause this is the best conference by far for front-end fossils like myself. Tremendous jobs from all! Thank you to those behind the scenes, that set it up and make it happen.

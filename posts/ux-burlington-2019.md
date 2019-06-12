@@ -10,7 +10,7 @@ layout: layouts/post.njk
 
 ### My First UX Burlington
 
-While scanning the countryside for conferences in the New England area, I was drawn to UX Burlington.
+While scanning the countryside for conferences in the New England area, I was drawn to UX Burlington. So I snagged a ticket. Best decision I made that week.
 
 ### Morning Keynote
 
@@ -22,7 +22,7 @@ The first speaker that I saw on the developer track was Frédéric Harper, Build
 
 ### Henri Helvetica
 
-The next speaker was Henri Helvetica, Planet of the APIs: A Tale of Performance and UX
+The next speaker was Henri Helvetica, Planet of the APIs: A Tale of Performance and UX.
 
 ### Chris DeMars
 

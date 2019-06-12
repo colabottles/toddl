@@ -39,27 +39,27 @@ I’ll leave out the bees, I went Twitter happy with that gif I think.
 
 Dan Mall came on after Brad to discuss Gantt charts. No, actually it was about strategy with design and development process. Collaboration, Should designers code? Should developers design? If they don’t, then it’s okay.
 
-He spoke about CSS briefly, did a quick, “how-to” for folks that did not know CSS or how to code it, talked about tools, the 8-point grid and a host of other small topics that I found useful.
+He spoke about CSS briefly, did a quick, &ldquo;how-to&rdquo; for folks that did not know CSS or how to code it, talked about tools, the 8-point grid and a host of other small topics that I found useful.
 
-I think I may have asked a question very much way off-topic to what he had spoken about regarding clients/bosses and their penchants for “this is not the same color I see on my phone as it is here on your computer”, when you copied the hex code as it was… I guess my question had to do with the process, so I may have not been as far off as I thought.
+I think I may have asked a question very much way off-topic to what he had spoken about regarding clients/bosses and their penchants for &ldquo;this is not the same color I see on my phone as it is here on your computer&rdquo;, when you copied the hex code as it was… I guess my question had to do with the process, so I may have not been as far off as I thought.
 
-First time speaker Laura Martini was next and gave a great talk about “Designing the Right Thing”. Designing needs for the business, the user and yourself. The HEART framework (Happiness, Engagement, Adoption, Retention, and Task Success).
+First time speaker Laura Martini was next and gave a great talk about &ldquo;Designing the Right Thing&rdquo;. Designing needs for the business, the user and yourself. The HEART framework (Happiness, Engagement, Adoption, Retention, and Task Success).
 
 Laura dove into the NPS, CSAT, and CES scoring systems, do’s and don’t(s), tools and research. She gave a great talk for her first at an An Event Apart and it helped me out and gave me some invaluable information.
 
-Chris Coyier, the guy (or one of the people) behind CodePen and CSS-Tricks finished off the first day with a talk on SVG. Something I have been reading about, looking into, and trying to adopt for what seems like ages.
+Chris Coyier, the guy (or one of the people) behind CodePen and CSS-Tricks finished off the first day with a talk on SVG. Something I have been reading about, looking into, and trying to adopt for what seems like ages. Of course, I spaced at the fact I sat and had lunch at his table one afternoon. That's where my head was&hellip;
 
 I’m basically going to leave this at, why wasn’t I using SVG more often on the projects I had done Chris wrapped up the day nicely and I had a ton of notes to take with me, go over and bring back some great ideas to work. The day was a long one, but the information up to this point from all the speakers was phenomenal.
 
 ### Day Two. The Code Block
 
-Val Head spoke about “Animation in Design Systems and Process”. Communication, storyboards and sketches. Motion comps, interactive prototypes. Tools to use when you’re creating things of the animated nature!
+Val Head spoke about &ldquo;Animation in Design Systems and Process&rdquo;. Communication, storyboards and sketches. Motion comps, interactive prototypes. Tools to use when you’re creating things of the animated nature!
 
 Defining your brand. Brand & Experience Pillars, Voice & Tone, building animation guidelines. Documenting your decisions, durations, easing values and a host of other tidbits in the animation design and documentation process that really gave me ideas for the redesign of the company site I work for. Thanks for the time to chat with you Val!
 
 Rachel Andrew and Jen Simmons followed. What they both spoke about, the CSS grid layout, was the meat and potatoes of what I went to the conference for. Rachel spoke about the browser history briefly, how Firefox, Chrome, Safari, and Opera all adopted the CSS Grid support in their respective browsers. IE had yet to support it fully.
 
-Rachel spoke about the Grid layout and showed some code examples, a great example was a magazine layout she “built” in front of all us attendees. Rachel also touched on Media Objects, auto as flex-basis, minmax(),and Feature Queries to name a few. An eye-opening look into what I had been questioning myself for since I was hired at ART. Incredible keynote that was.
+Rachel spoke about the Grid layout and showed some code examples, a great example was a magazine layout she built in front of all us attendees. Rachel also touched on Media Objects, auto as flex-basis, minmax(),and Feature Queries to name a few. An eye-opening look into what I had been questioning myself for since I was hired at ART. Incredible keynote that was.
 
 Jen followed touching on the web when it first came out to the public, table-based layouts, and the evolution up to all the different sized mobile devices used these days.
 
@@ -73,11 +73,11 @@ Needless to say&hellip; things happened in my head&hellip; Mind Blown!
 
 She went into a little about CSS Grid layouts (which I will get to soon. If you have read this far… you’re a trooper) but the meat and potatoes of this was in the third day, A Day Apart. Touched on tracks not having to be the same size, content sized by the size of a track, tracks sized by the content, the viewport, storyboards, overlap, framing, white space, verticality, flexibility and creativity.
 
-Eric Meyer stepped up and spoke about “Design for Real Life”.
+Eric Meyer stepped up and spoke about &ldquo;Design for Real Life&rdquo;.
 
 <blockquote cite="Eric Meyer">When you design for interaction, you’re creating abstract rules to take unknown content and organize it in an unknown medium for presentation to unknown people who have largely unknown personal contexts.</blockquote>
 
-The example Eric used, was Facebook. Facebook and their “On This Day” to be exact. People have things that happen in their lives that they really want to leave behind in the grieving process, Well, "On This Day" does not allow for that to happen. OTD brings up painful memories for people. Eric & myself included.
+The example Eric used, was Facebook. Facebook and their &ldquo;On This Day&rdquo; to be exact. People have things that happen in their lives that they really want to leave behind in the grieving process, Well, &ldquo;On This Day&rdquo; does not allow for that to happen. OTD brings up painful memories for people. Eric & myself included.
 
 <div class="content__placeholder">
   <img class="content__image" src="http://i.kinja-img.com/gawker-media/image/upload/s--0Hx97MFG--/zbpna1ytqwigu0xdo7wz.jpg" alt="Example of Facebook filter for On This Day" />
@@ -94,9 +94,9 @@ The first time I saw, met, and heard Eric was in Boston in 2008. It was like cat
 
 Anyway, the other examples were of Pokemon Go. When people were walking in front of cars, on private property, crossing the border into Canada… warning modals stating that users need to be careful and stay alert when playing the game.
 
-Instances where A tweet by Juliana Hatfield with a track on it was flagged by Twitter for having her track in it, the “Cheatin’uh?” error that was (and still is?) on WordPress and had a seven (yes, SEVEN) year support thread going.
+Instances where A tweet by Juliana Hatfield with a track on it was flagged by Twitter for having her track in it, the &ldquo;Cheatin’uh?&rdquo; error that was (and still is?) on WordPress and had a seven (yes, SEVEN) year support thread going.
 
-Jason Grigsby then came on and spoke on “The Case for Progressive Web Apps”. Some of his points he touched on were the case between mobile web versus native apps, what is a PWA?, and much more.
+Jason Grigsby then came on and spoke on &ldquo;The Case for Progressive Web Apps&rdquo;. Some of his points he touched on were the case between mobile web versus native apps, what is a PWA?, and much more.
 
 Not every customer or potential customer will install your native app, how people just stop using apps after a day, a week, or a month. You should provide a secure site or app for your web customers. Providing a fast experience for your users just to name a few.
 
@@ -110,21 +110,21 @@ Josh touched upon machine learning, pattern processing, personal data, image rec
 
 I was taken back by that little revelation.
 
-Alexa ordering dollhouses when people that watched a newscast and had their Amazon Echo on, when the newscaster said, “Alexa, order me a dollhouse”.
+Alexa ordering dollhouses when people that watched a newscast and had their Amazon Echo on, when the newscaster said, &ldquo;Alexa, order me a dollhouse&rdquo;.
 
 The invasive Burger King ad that triggered Google Home devices and a parrot that placed an order on an Amazon Echo because the Echo cannot tell if it is a parrot or human talking.
 
-Google’s “Featured” snippets. Josh touched on accuracy over speed, allow for ambiguity, adding human judgment, embracing multiple systems, make it easy to contribute data, and some other topics.
+Google’s &ldquo;Featured&rdquo; snippets. Josh touched on accuracy over speed, allow for ambiguity, adding human judgment, embracing multiple systems, make it easy to contribute data, and some other topics.
 
-Some shocking examples. I don’t remember the gentlman’s name, but he is of Asian heritage, and his photo did not meet the criteria of a site because it stated… “Subject eyes are closed”.
+Some shocking examples. I don’t remember the gentlman’s name, but he is of Asian heritage, and his photo did not meet the criteria of a site because it stated… &ldquo;Subject eyes are closed&rdquo;.
 
-Google tagging blacks as “Gorillas”, Microsoft’s failed “Tay” who went from excitable teen to white supremacist in 0.4 seconds. Or possibly the worst case of machine bias was this...
+Google tagging blacks as &ldquo;Gorillas&rdquo;, Microsoft’s failed &ldquo;Tay&rdquo; who went from excitable teen to white supremacist in 0.4 seconds. Or possibly the worst case of machine bias was this&hellip;
 
 The talk from Josh was incredibly eye-opening and valuable as I look at data differently now. Carefully thinking of how we, at my work, present our data. He ended Day Two in stellar fashion.
 
 ### Day Three. A Day Apart
 
-Jen Simmons. CSS Grid layouts. Five or so hours of going over layouts, writing modes, alignment, logical properties and a little Flexbox. Mostly though it was an introduction to the CSS Grid layout. Nothing really in-depth, because in the words of Eric Meyer, whom which I was seated next to this day, “It would take three days to go through everything.”
+Jen Simmons. CSS Grid layouts. Five or so hours of going over layouts, writing modes, alignment, logical properties and a little Flexbox. Mostly though it was an introduction to the CSS Grid layout. Nothing really in-depth, because in the words of Eric Meyer, whom which I was seated next to this day, &ldquo;It would take three days to go through everything.&rdquo;
 
 A phenomenal(yes, again) and fantastic glimpse into the CSS Grid layout. With examples and questions from the audience, and a quote that I really liked, from another person I had met in 2008 at the same event, Bruce Lawson, she put up on a slide to make a point about writing modes;
 
@@ -144,7 +144,7 @@ Simply put, I felt like I was in a room filled with people I follow and enjoy re
 
 Even going back to 2008 when I met Jeff Veen, Doug Bowman, Jason Santa Maria, Andy Budd, and listened to the keynotes from Kimberly Blessing, Peter-Paul Koch, Ethan Marcotte, Jared Spool, Christopher Fahey, and Luke Wroblewski to the folks I met that I named previously. I can’t even begin to describe the gratitude that I have still, and now, for what they have done to help me in my career.
 
-Even the folks at other AEA events that I did not see but always said, “I’ll be down next year!” to which I never was. People like Jeremy Keith, Andy Clarke, Dan Cederholm, Mark Boulton, Karen McGrane, Lea Verou, Mike Monteiro, Sarah Parmenter, Kristina Halvorson, Paul Irish, Jon Hicks, and Cameron Moll.
+Even the folks at other AEA events that I did not see but always said, &ldquo;I’ll be down next year!&rdquo; to which I never was. People like Jeremy Keith, Andy Clarke, Dan Cederholm, Mark Boulton, Karen McGrane, Lea Verou, Mike Monteiro, Sarah Parmenter, Kristina Halvorson, Paul Irish, Jon Hicks, and Cameron Moll.
 
 In 2008, I took back information and used it to do the job I was hired to do then. 2017, I intend to do the same with the plethora of information I brought home with me. It took me 9 years and a lot of blood, sweat, and tears to get back to where I am today and get back to see these professionals speak. It was well worth it.
 

@@ -15,11 +15,11 @@ This is a super fan boy-ish post, but it is (99%) in its original entirety.
 
 I’m going to take the time now to really sit down and write a comprehensive post on my experience at An Event Apart that took place this past Monday and Tuesday in Boston. I had been at the ready, saving what I could in time for the event and barely made it out of there with some pocket change. So be forewarned, don’t be frugal like me with little, and remember to bring your credit card and don’t leave home without it. (Where have I heard that before?)
 
-I started writing this yesterday and have given this more attention again today. I wanted to write a very in-depth post about my experience and maybe “twist an arm” and if someone out there, even if it is one person reads this, goes to an AEA event and then writes back and says it was worth it, then it really was worth taking the extra couple days to write this.
+I started writing this yesterday and have given this more attention again today. I wanted to write a very in-depth post about my experience and maybe &ldquo;twist an arm&rdquo; and if someone out there, even if it is one person reads this, goes to an AEA event and then writes back and says it was worth it, then it really was worth taking the extra couple days to write this.
 
 ### Off for an adventure
 
-I got out of my “9-5″ job at 7:30 in the morning, went home, wanted to catch an hour or so of sleep. I caught 30 minutes. So I proceeded to go get ready and left for Boston. Now mind you, I don’t trek out very much with the price of gas and because a third shift job just sucks the will to live and the life force out of you. I did on this day, as I was looking forward to this event.
+I got out of my &ldquo;9-5&rdquo; job at 7:30 in the morning, went home, wanted to catch an hour or so of sleep. I caught 30 minutes. So I proceeded to go get ready and left for Boston. Now mind you, I don’t trek out very much with the price of gas and because a third shift job just sucks the will to live and the life force out of you. I did on this day, as I was looking forward to this event.
 
 So skipping over to when I got to the Marriott (after getting lost in Roxbury and all that good stuff that usually happens when I venture down to Boston) I forget the credit card and start to freak. Calming down the solution was found, all was good, but not after my first impression with Jeffrey Zeldman was probably one of psychotic insanity (if there is such a term.)
 
@@ -31,25 +31,25 @@ I finally (after 2-3 hours of calls and instructions to fax over information so 
 
 Day one I meet Jeffrey again, we chat and had lunch together it was great. I got to talk to Bruce Lawson and Eric Meyer for a bit as well during breakfast, things were __A LOT__ better. Went in and sat through the presentations, immersed in them all, mingled during breaks, took photos, had photos taken with speakers.
 
-One thing. I went up to my room to relax for a few minutes before the Opening Night party… I made the mistake of laying down on the big, huge comfy bed I had… out like a light. Damn.
+One thing. I went up to my room to relax for a few minutes before the Opening Night party&hellip; I made the mistake of laying down on the big, huge comfy bed I had&hellip; out like a light. Damn.
 
 ### Day Two. More Mingling & Me Being Me
 
-Day Two, more of the same. Mingling, eating, listening. Asked questions, got a book from Kimberly Blessing, tried to win a copy of Adobe CS3 if I got picked for a website critique from Jeffrey… unfortunately, that didn’t happen and 5 out of 6 of the people were Mac users… Scott Fegette, I will (GLADLY) take a copy of the PC version if you feel the need to get rid of some!!!!
+Day Two, more of the same. Mingling, eating, listening. Asked questions, got a book from Kimberly Blessing, tried to win a copy of Adobe CS3 if I got picked for a website critique from Jeffrey&hellip; unfortunately, that didn’t happen and 5 out of 6 of the people were Mac users&hellip; Scott Fegette, I will **__(GLADLY)__** take a copy of the PC version if you feel the need to get rid of some!!!!
 
 Of who I met. Everyone was great. I probably came off as a nervous tool, with nothing better to say and with a look like a 16-year-old rock band groupie, wide-eyed and drooling.
 
-Jeffrey Zeldman, Marci Eversole… made me feel welcomed and hopefully forgot about the fact I was acting like a raving lunatic on Sunday. EDIT: He did not, haha.
+Jeffrey Zeldman, Marci Eversole&hellip; made me feel welcomed and hopefully forgot about the fact I was acting like a raving lunatic on Sunday. EDIT: He did not, haha.
 
-Jeffrey was very accomodating and I had the chance of a lifetime to sit down and have lunch with him and talk and he actually liked the site. Handed me some useful information that I will be working on shortly as well. ;) Autographed his book that I bought for me and we chatted and I kinda stalked him… no I did. Sorry Jeffrey!
+Jeffrey was very accomodating and I had the chance of a lifetime to sit down and have lunch with him and talk and he actually liked the site. Handed me some useful information that I will be working on shortly as well. Autographed his book that I bought for me and we chatted and I kinda stalked him&hellip; no I did. Sorry Jeffrey!
 
 Eric Meyer. What can I say. Awed in the prescence of another guru I have followed for a long time. very friendly and witty. When I told Bruce Lawson he saved my life with conditional comments, they both joked about how it was so proprietary. After the two kicks in the gut(j/k) I laughed, it was funny and yes, it was a stupid thing to say. I should have went with, &ldquo;FIRE!&rdquo; Yes, Eric, I’d rather have your name in my book rather than oh, let’s say &ldquo;Julio Iglesias&rdquo; as your signing.
 
-Bruce Lawson, friendly chap. Small guy. Him and Jeffrey, both small… or am I just tall (more on that later). He and I chatted a bit, nice guy all around. Saved my life with conditional comments, but as Eric Meyer put it, it was proprietary… so I don’t know if that was a good thing to say? Bruce is a friendly guy though, and his site states he prefers Guinness, so any guy who likes Guinness is alright in my book (as it is my preferred beverage in alcoholic nature of choice).
+Bruce Lawson, friendly chap. Small guy. Him and Jeffrey, both small&hellip; or am I just tall (more on that later). He and I chatted a bit, nice guy all around. Saved my life with conditional comments, but as Eric Meyer put it, it was proprietary&hellip; so I don’t know if that was a good thing to say? Bruce is a friendly guy though, and his site states he prefers Guinness, so any guy who likes Guinness is alright in my book (as it is my preferred beverage in alcoholic nature of choice).
 
 ### The speakers 
 
-All great and accessible. Although I didn’t ask a lot of questions, I did let the ones I have followed know that I have been a sort of “fan” for a long time. I figured they already had to field all the questions from 499 +/- other attendees. my favorites? All.
+All great and accessible. Although I didn’t ask a lot of questions, I did let the ones I have followed know that I have been a sort of &ldquo;fan&rdquo; for a long time. I figured they already had to field all the questions from 500 +/- other attendees. my favorites? All.
 
 Kimberly Blessing gave me something to shoot for. A Standards Manager job. I also won a book from her and Christopher Schmitt (among other writers)!
 
@@ -57,7 +57,7 @@ Ethan Marcotte gave me a refreshing way to make sure to communicate between code
 
 Jason Santa Maria gave me a new thought on design and presentation. Jason also stirred up the passion I have for typography and his site is amazing!
 
-Jeffrey Veen made me think of data visualization. Made me re-live 1974 all over again, and how to incorporate users into user experience. I would have loved to have sat down with him at the bar and had a beer, but I had to leave Boston that night, as I had to get back to my &ldquo;reality&rdquo; that is my full-time job. Jeffrey is 6′6″, taller than me (one of two (Christopher Schmitt being the other) I really got to chat with) I felt short for a change… a very nice guy.
+Jeffrey Veen made me think of data visualization. Made me re-live 1974 all over again, and how to incorporate users into user experience. I would have loved to have sat down with him at the bar and had a beer, but I had to leave Boston that night, as I had to get back to my &ldquo;reality&rdquo; that is my full-time job. Jeffrey is 6&acute;6&dblac;, taller than me (one of two (Christopher Schmitt being the other) I really got to chat with) I felt short for a change&hellip; a very nice guy.
 
 Jared Spool gave me a new perspective on navigation and the need for clear and conciseness when it comes to users finding their way around a site. He’s also one hell of a speaker and is super hilarious.
 
