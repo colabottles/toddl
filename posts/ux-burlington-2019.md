@@ -59,12 +59,79 @@ Minimizing large files, file requests, HTTP requests, using a CDN, running the a
 
 ### Henri Helvetica
 
-The next speaker was Henri Helvetica, &ldquo;Planet of the APIs: A Tale of Performance and UX&rdquo;.
+The next speaker was Henri Helvetica, &ldquo;Planet of the APIs: A Tale of Performance and UX&rdquo;. The beginning of Henri's talk was about the good old days of Mosaic, data and web origins such as in November of 2016 (not so long ago) when mobile and tablet internet usage surpassed desktop internet usage.
+
+How the US was 2nd in the world with selling the low end/low spec phones & devices, performance on mobile, and how 53% of visitors will abandon a page after 3 seconds and 77% of pages load in 10 seconds or more with the average page loading in 19 seconds. Want to know exactly how long 19 seconds is? If Henri doesn't mind, I'll borrow this example that he used. Buckle up.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GWbP8eC-SIw?start=20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Don't say I did not warn you!
+
+Here is a quote from Henri I loved.
+
+<blockquote cite="Henri Helvetica">Resource loading is a delicate dance that can be delightful, but also destructivedue to device damper and limitations.</blockquote>
+
+I won't (and possibly have not a chance to explain these as well as Henri did) go into the API's in-depth, but I will give you and overview of what they are and [point you to the video on the UX Burlington YouTube page](https://youtu.be/DLvSPYklE4U).
+
+1. Paint Timing API
+2. Intersection Observer API
+3. Media Capabilities API
+4. Network Information API
+5. Cache API
+6. Battery Status API
+
+I'll go back to another quote from Henri;
+
+<blockquote cite="Henri Helvetica">You can't improve what you don't measure.</blockquote> 
+
+I had written down a lot of notes, what mobile browsers these are all good in and not implemented in yet, but again, I'll direct and suggest that [folks go to the UX Burlington YouTube page and view his talk there](https://youtu.be/DLvSPYklE4U). Henri articulated everything so well, I don't want to butcher it.
 
 ### Chris DeMars
 
-Chris DeMars was the last speaker for the day with &ldquo;Focusing on Focus&rdquo;. He nailed it.
+Chris DeMars was the last speaker for the day with &ldquo;Focusing on Focus&rdquo;. He nailed it. I had corresponded with Chris (@saltnburnem) on Twitter so it was a treat to see and hear his talk on Focusing on Focus.
+
+It started with this after Chris' introduction;
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XB4cjbYywqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+and a quote that I hope Chris doesn't mind me borrowing.
+
+<blockquote cite="Chris DeMars">If now, you were on the fence about accessibility because it was always an afterthought it's never thought of from the beginning. I hope, (after the talk) you can go back and reflect on what your why is. And at some point you'll understand &lsquo;Wow, I need to do this not just for myself.&rsquo;</blockquote>
+
+According to the World Heath Organization, 20% of the people on Earth have a disability(impairment). The W3C states;
+
+<blockquote cite="W3C">Web accessibility means that people with disabilities <em>can</em> use the web.</blockquote>
+
+Chris thinks (and I am in total agreement) it <em>should</em> read;
+
+<blockquote cite="Chris DeMars">Web accessibility means that <em>EVERYONE</em> can use the web.</blockquote>
+
+[Go to the UX Burlington page on YouTube and see the video in its entirety.](https://youtu.be/gUK0ieCJkRI)
+
+Chris also walked people through <span class="pre">:focus</span> <span class="pre">:focus-visible</span> & <span class="pre">:focus-within</span> with some pretty cool, yet simple pens over at his CodePen account. [<span class="pre">:focus</span>](https://codepen.io/chrisdemars/pen/OvrbLr), [<span class="pre">:focus-within</span>](https://codepen.io/chrisdemars/pen/PRXbpg), [<span class="pre">and focus styles</span>](https://codepen.io/chrisdemars/pen/ejbZYv) so go check those out!
+
+Top notch accessibility talk from Chris, so I was extra glad I got the ticket I got.
 
 ### Dr. Robert Moore
 
-Witht the closing keynote on a great one-day conference was Dr. Robert Moore and Conversational UX.
+Witht the closing keynote on a great one-day conference was Dr. Robert Moore and &ldquo;Conversational UX&rdquo;.
+
+Without going into it, [go watch the video](https://youtu.be/ZcKB2ns8I1g). I couldn't even possibly begin to articulate a fraction of good as Dr. Moore does. I'll give it the Reader's Digest version as well as I can.
+
+Conversational UX. When dealing with the technologies we have out there, chatbots and voice assistants, there is a lack of conversational feel to them and Dr. Moore tells you how there is (and has been) work going on in the field of conversational science.
+
+Dr. Moore shows you a little bit about what they are doing at IBM and the interaction patterns they are working on and with to make conversational patterns and UX better.
+
+### But what about the Food&quest;
+
+So I decided to go out for dinner after I got into Burlington the day before the conference. I decided upon the Asiana Noodle Shop and oh my, was I glad I did. Located on Chruch Street in the heart of the Church Street Marketplace, it is a well-hidden place, so you have to look hard for it or you'll miss it. At least I had to. I am oblivious some times.
+
+I enjoyed (understatement) the Korean BBQ shirt ribs and bibimbap. Along with a terrific wonton soup. Nice cozy little place located downstairs, busy place, but the food is out of this world. That's a must-do if you're looking for good eats in the area.App-link
+
+That's just a little recommendation.App-link
+
+### Yeah, but the conference&#33;
+
+The conference, for a one-day event, is terrific! Well put together, fantastic speakers (check out the past speakers and videos on YoutTube), great food (poke bowls were phenomenal) and a great crowd.
+
+If you are debating on going, debate no more. Go. It's well worth it.

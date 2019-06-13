@@ -1355,6 +1355,14 @@ img.content__image {
   width: 40vw;
 }
 
+/* IFRAME/VIDEO CENTERING */
+iframe, 
+video {
+  display: grid;
+  justify-self: center;
+  margin: 2rem 0 4rem 0;
+}
+
 /****
  *
  *
