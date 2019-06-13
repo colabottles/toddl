@@ -3,7 +3,7 @@ title: An Event Apart 2017 - Wrap-Up Edition
 description: The wrap-up article I authored in 2017 after An Event Apart.
 date: 2017-05-20
 tags:
-  - conference
+  - conferences
 layout: layouts/post.njk
 ---
 ## An Event Apart Boston 2017, Boston, MA
