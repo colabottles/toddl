@@ -1196,7 +1196,11 @@ span.middot {
   }
 
   section.article__body {
-   max-width: 400px;
+   display: block;
+  }
+
+  .article__body h2 {
+    line-height: 1.5;
   }
 }
 
