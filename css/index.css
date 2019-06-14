@@ -953,6 +953,14 @@ blockquote cite:before {
   content: "\2014 \2009";
 }
 
+figcaption {
+  font-style: oblique;
+  font-size: .9em;
+  margin-top: -5rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+
 /* FORM STYLES */
 
 button {
