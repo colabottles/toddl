@@ -1,6 +1,6 @@
 ---
 layout: layouts/styleguide.njk
-title: sixtyten Style Guide
+title: Style Guide
 date: 2019-06-12
 tags:
   - nav
