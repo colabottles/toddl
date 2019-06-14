@@ -1203,8 +1203,8 @@ span.middot {
     line-height: 1.5;
   }
 
-  blockquote {
-    max-width: 100%;
+  blockquote.twitter-tweet {
+    padding: 1.5rem 0.5rem 1.5rem;
   }
 }
 
@@ -1361,10 +1361,9 @@ div.content__placeholder {
 }
 
 img.content__image {
-  min-width: 360px;
   margin: 0 auto;
+  max-width: 100%;
   padding: 3rem 0rem;
-  width: 40vw;
 }
 
 /* IFRAME/VIDEO CENTERING */
