@@ -80,8 +80,10 @@ Eric Meyer stepped up and spoke about &ldquo;Design for Real Life&rdquo;.
 The example Eric used, was Facebook. Facebook and their &ldquo;On This Day&rdquo; to be exact. People have things that happen in their lives that they really want to leave behind in the grieving process, Well, &ldquo;On This Day&rdquo; does not allow for that to happen. OTD brings up painful memories for people. Eric & myself included.
 
 <div class="content__placeholder">
-  <img class="content__image" src="http://i.kinja-img.com/gawker-media/image/upload/s--0Hx97MFG--/zbpna1ytqwigu0xdo7wz.jpg" alt="Example of Facebook filter for On This Day" />
-	<caption>Now Facebook allows users to go in and filter people or dates.</caption>
+  <figure>
+    <img class="content__image" src="http://i.kinja-img.com/gawker-media/image/upload/s--0Hx97MFG--/zbpna1ytqwigu0xdo7wz.jpg" alt="Example of Facebook filter for On This Day" />
+	  <figcaption>Now Facebook allows users to go in and filter people or dates.</figcaption>
+  </figure>
 </div>
 
 It brought me back to when I remember reading his book (1st Ed.) CSS: The Definitive Guide, following him closely as I could in the CSS Working Group and wherever I could as he was (and still is) one of the most influential people in my life that brought me to my career path.
