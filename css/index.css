@@ -1196,7 +1196,7 @@ span.middot {
   }
 
   section.article__body {
-   width: 32vw;
+   max-width: 400px;
   }
 }
 
