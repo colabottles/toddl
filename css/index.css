@@ -1204,7 +1204,7 @@ span.middot {
   }
 
   section.article__body {
-   display: block;
+    display: block;
   }
 
   .article__body h2 {
@@ -1375,7 +1375,7 @@ img.content__image {
 }
 
 /* IFRAME/VIDEO CENTERING */
-iframe, 
+iframe,
 video {
   display: grid;
   justify-self: center;
