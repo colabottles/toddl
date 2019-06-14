@@ -856,7 +856,7 @@ h4 {
 
 ul,
 ol {
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 
 ul {
@@ -1193,10 +1193,6 @@ span.middot {
 @media (min-width:280px) and (max-width: 400px) {
   .contact form button {
     padding: 3.5rem 10.5rem;
-  }
-
-  ul.nav {
-    left: -10px;
   }
 }
 
