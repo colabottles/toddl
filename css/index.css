@@ -1194,6 +1194,10 @@ span.middot {
   .contact form button {
     padding: 3.5rem 10.5rem;
   }
+
+  section.article__body {
+    max-width: 100%;
+  }
 }
 
 .clear {
