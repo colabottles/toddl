@@ -1202,6 +1202,10 @@ span.middot {
   .article__body h2 {
     line-height: 1.5;
   }
+
+  blockquote {
+    max-width: 100%;
+  }
 }
 
 .clear {
