@@ -282,10 +282,10 @@ a.tag:hover {
 }
 
 a.tag {
-  background-color: #f40009;
+  background-color: #1da1f2;
   border-radius: 4px;
   color: white;
-  padding: 2px;
+  padding: 0.25rem 1rem;
 }
 
 /* SEARCH FUNCTION */

@@ -1,7 +1,7 @@
 ---
 title: An Event Apart 2008 - Wrap-up Edition
 description: The wrap-up article I authored in 2008 after An Event Apart.
-date: 2018-05-01
+date: 2008-05-01
 tags:
   - conferences
 layout: layouts/post.njk
