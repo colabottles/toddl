@@ -620,7 +620,7 @@ label {
 }
 
 .promoted-articles__title {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 1);
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 700;
@@ -628,10 +628,10 @@ label {
   text-transform: uppercase;
 }
 
-.promoted-articles__article:focus .promoted-articles__title,
+/* .promoted-articles__article:focus .promoted-articles__title,
 .promoted-articles__article:hover .promoted-articles__title {
-  color: #ffffff;
-}
+  color: rgba(255, 255, 255, 0.7);
+} */
 
 .article-list {
   display: grid;
