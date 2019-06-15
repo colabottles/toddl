@@ -15,9 +15,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <header role="header">
       <div class="grad-bar"></div>
-        <nav class="navbar">
+        <nav class="navbar" role="navigation">
           <a href="{{ '/' | url }}"><h1 class="home">{{ metadata.title }}</h1></a>
             <div class="menu-toggle" id="mobile-menu">
               <span class="bar"></span>
@@ -42,7 +42,7 @@
 
     {{ content | safe }}
 
-    <footer>
+    <footer role="contentinfo">
       <a href="https://codepen.io/colabottles/#" class="codepen"><i class="fab fa-codepen"></i><span class="middot">&middot;</span></a>
       <a href="https://dribbble.com/colabottles/" class="dribbble"><i class="fab fa-dribbble"></i><span class="middot">&middot;</span></a>
       <a href="https://github.com/colabottles/" class="github"><i class="fab fa-github"></i><span class="middot">&middot;</span></a>
