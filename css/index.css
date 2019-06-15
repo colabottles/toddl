@@ -1357,6 +1357,7 @@ h2#style-guide_h2 {
 /* Tweet center positioning */
 
 twitter-widget.twitter-tweet {
+  justify-self: center;
   margin: 0 auto;
   padding: 3rem 0rem;
 }
