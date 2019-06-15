@@ -278,7 +278,7 @@ a.tag {
 
 .nav-item a:hover,
 a.tag:hover {
-  color: #f40009;
+  color: #000;
 }
 
 a.tag {
