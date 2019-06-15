@@ -121,7 +121,7 @@ and the day ended with Jen Simmons discussing the phases of the web that we have
 
 The truncation joke was a good one as well.
 
-<img src="{{ '/' | url }}img/truncation.png" alt="A slide from Jen Simmons talk on Intrinsic Web Design at An Event Apart Boston 2018">
+<img src="{{ '/' | url }}img/truncation.jpg" alt="A slide from Jen Simmons talk on Intrinsic Web Design at An Event Apart Boston 2018">
 
 There is so much that can be done with web layout these days and it is exciting, Jen touched on some key points on ways to contract and expand space, new possibilities for flexibility, columns and units, change in how we use the viewport, and programming to all four edges of the viewport.
 
