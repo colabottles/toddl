@@ -527,10 +527,10 @@ label {
 }
 
 /* MEAT & POTATOES */
-
 .promoted-articles__container {
   margin-right: auto;
   margin-left: auto;
+  background-color: #ffffff;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   max-width: 1440px;
@@ -587,15 +587,16 @@ label {
 .promoted-articles__article {
   height: 100%;
   width: auto;
+  background-color: #000000;
   display: block;
-  opacity: 0.8;
+  opacity: 0.75;
   overflow: hidden;
   position: relative;
 }
 
 .promoted-articles__article:hover {
   transition: .25s ease-in-out;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .promoted-articles__image {
@@ -604,6 +605,7 @@ label {
   min-width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+  opacity: 0.5;
 }
 
 .promoted-articles__content {
