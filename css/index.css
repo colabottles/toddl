@@ -611,8 +611,10 @@ label {
 }
 
 .promoted-articles__content {
+  background-color: rgba(0, 0, 0, 0.5);
   bottom: 0rem;
-  left: 3rem;
+  color: color: rgba(255, 255, 255, 1.0);
+  padding-left: 3rem;
   position: absolute;
   width: 100%;
 }
@@ -632,7 +634,8 @@ label {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.1;
-  padding-bottom: 2rem;
+  opacity: 1.0;
+  padding-bottom: 0rem;
   text-transform: uppercase;
 }
 
