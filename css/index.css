@@ -234,7 +234,7 @@ span.pre:hover {
   background: #ffffff;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  height: 50px;
+  height: 45px;
   overflow: hidden;
 }
 
@@ -248,7 +248,7 @@ span.pre:hover {
 .navbar ul {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-self: end;
   list-style: none;
 }
@@ -256,7 +256,6 @@ span.pre:hover {
 .navbar ul li.nav-item {
   display: grid;
   font-family: "Futura", Arial, Helvetica, sans-serif;
-  font-size: 1em;
   font-weight: 700;
   grid-template-columns: subgrid;
   justify-items: center;
@@ -264,7 +263,15 @@ span.pre:hover {
   text-transform: uppercase;
 }
 
-.nav-item a,
+.nav-item a {
+  color: #000000;
+  font-family: "Futura", Helvetica, Arial, sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
 a.tag {
   color: #000000;
   font-family: "Futura", Helvetica, Arial, sans-serif;
