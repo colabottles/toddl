@@ -273,11 +273,14 @@ span.pre:hover {
 }
 
 a.tag {
+  background-color: rgba(244, 0, 9, 1.0);
+  border-radius: 4px;
   color: #000000;
   font-family: "Futura", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.05rem;
+  padding: 0.25rem 1rem;
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.3s ease-out;
@@ -285,13 +288,6 @@ a.tag {
 
 .nav-item a:hover {
   color: rgba(244, 0, 9, 1.0);
-}
-
-a.tag {
-  background-color: rgba(29, 161, 242, 1.0);
-  border-radius: 4px;
-  color: rgba(255, 255, 255, 1.0);
-  padding: 0.25rem 1rem;
 }
 
 a.tag:hover {
@@ -611,10 +607,10 @@ label {
 }
 
 .promoted-articles__content {
-  bottom: 3rem;
-  left: 3rem;
   position: absolute;
-  right: 3rem;
+  right: 5rem;
+  bottom: 0.5rem;
+  left: 5rem;
 }
 
 @media (max-width: 600px) {
@@ -1364,7 +1360,6 @@ h2#style-guide_h2 {
 }
 
 /* Tweet center positioning */
-
 twitter-widget.twitter-tweet {
   justify-self: center;
   margin: 0 auto;
@@ -1390,6 +1385,11 @@ video {
   display: grid;
   justify-self: center;
   margin: 2rem 0 4rem 0;
+}
+
+/* ARCHIVE PAGE LINKAGE COLORS */
+a.postlist-link {
+  font-size: 1.6em;
 }
 
 /****
