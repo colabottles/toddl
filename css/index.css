@@ -180,23 +180,23 @@ q:before {
 /* Rest of the styling */
 
 body {
-  background-color: rgba(255, 255, 255, 1.0);
+  background: #ffffff;
 }
 
 a {
-  color: rgba(244, 0, 9, 1.0);
+  color: #f40009;
   font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgba(153, 0, 0, 1.0);
+  color: #990000;
   transition: 1.2s ease-out;
 }
 
 span.pre {
-  background-color: rgba(102, 51, 153, 1.0);
-  color: rgba(255, 255, 255, 1.0);
+  background-color: #639;
+  color: #fff;
   font-family: 'Overpass Mono', monospace;
   font-size: .75em;
   padding: 0.5rem 1rem;
@@ -213,7 +213,7 @@ span.pre:hover {
   /* Safari */
   position: sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, 1.0);
+  background-color: #ffffff;
 }
 
 /* BASIC SETUP */
@@ -273,25 +273,26 @@ span.pre:hover {
 }
 
 a.tag {
-  background-color: rgba(244, 0, 9, 1.0);
-  border-radius: 4px;
   color: #000000;
   font-family: "Futura", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.05rem;
-  padding: 0.25rem 1rem;
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.3s ease-out;
 }
 
-.nav-item a:hover {
-  color: rgba(244, 0, 9, 1.0);
+.nav-item a:hover,
+a.tag:hover {
+  color: #000;
 }
 
-a.tag:hover {
-  color: rgba(0, 0, 0, 1.0);
+a.tag {
+  background-color: #1da1f2;
+  border-radius: 4px;
+  color: white;
+  padding: 0.25rem 1rem;
 }
 
 /* SEARCH FUNCTION */
@@ -527,6 +528,7 @@ label {
 }
 
 /* MEAT & POTATOES */
+
 .promoted-articles__container {
   margin-right: auto;
   margin-left: auto;
@@ -550,6 +552,21 @@ label {
   .promoted-articles {
     display: block;
   }
+}
+
+.promoted-articles__article {
+  height: 100%;
+  width: auto;
+  background-color: rgba(0, 0, 0, 1.0);
+  display: block;
+  opacity: 0.75;
+  overflow: hidden;
+  position: relative;
+}
+
+.promoted-articles__article:hover {
+  transition: 1.2s ease-in-out;
+  opacity: 1;
 }
 
 @media (max-width: 900px) {
@@ -584,53 +601,44 @@ label {
   grid-area: article-6;
 }
 
-.promoted-articles__article {
-  height: 100%;
-  width: auto;
-  display: block;
-  opacity: 1.0;
-  overflow: hidden;
-  position: relative;
-}
-
-.promoted-articles__article:hover {
-  transition: .25s ease-in-out;
-  opacity: 1;
-}
-
 .promoted-articles__image {
   height: 100%;
   width: auto;
   min-width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+  opacity: 0.8;
+}
+
+.promoted-articles__content {
+  position: absolute;
+  right: 5rem;
+  bottom: 0.5rem;
+  left: 5rem;
+}
+
+@media (max-width: 600px) {
+  .promoted-articles__content {
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+    left: 2rem;
+  }
 }
 
 .promoted-articles__title {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 136, 0, 1.0);
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.1;
+  padding-bottom: 2rem;
   text-transform: uppercase;
 }
 
 .promoted-articles__article:focus .promoted-articles__title,
 .promoted-articles__article:hover .promoted-articles__title {
-  color: #ffffff;
-}
-
-.promoted-articles__content {
-  position: absolute;
-  bottom: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .promoted-articles__content {
-    right: 2rem;
-    bottom: 0;
-    left: 2rem;
-  }
+  color: rgba(255, 255, 255, 1.0);
 }
 
 .article-list {
@@ -662,7 +670,7 @@ label {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.05em;
-  border-bottom: 2px solid rgba(244, 0, 9, 1.0);
+  border-bottom: 2px solid #f40009;
   display: inline-block;
   margin-bottom: 1.2em;
   padding-bottom: 0.375em;
@@ -826,7 +834,7 @@ p.note {
 }
 
 h1 {
-  color: rgba(0, 0, 0, 1.0);
+  color: #000;
   font-family: "Futura", "Trebuchet MS", Arial, Helvetica, sans-serif;
   font-size: 1.8em;
   line-height: 1.8;
@@ -835,7 +843,7 @@ h1 {
 }
 
 h1:hover {
-  color: rgba(34, 34, 34, 0.5);
+  color: #222;
 }
 
 h2 {
@@ -1360,6 +1368,7 @@ h2#style-guide_h2 {
 }
 
 /* Tweet center positioning */
+
 twitter-widget.twitter-tweet {
   justify-self: center;
   margin: 0 auto;
@@ -1385,11 +1394,6 @@ video {
   display: grid;
   justify-self: center;
   margin: 2rem 0 4rem 0;
-}
-
-/* ARCHIVE PAGE LINKAGE COLORS */
-a.postlist-link {
-  font-size: 1.6em;
 }
 
 /****
