@@ -627,12 +627,13 @@ label {
 }
 
 .promoted-articles__title {
-  color: rgba(255, 136, 0, 1.0);
+  color: rgba(255, 255, 255, 1.0);
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.1;
   padding-bottom: 2rem;
+  -webkit-text-stroke: 2px gold;
   text-transform: uppercase;
 }
 
