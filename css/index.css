@@ -1045,6 +1045,12 @@ div.box.vivid_blue {
   color: #000;
 }
 
+div.box.green {
+  background-color: #1db954;
+  box-shadow: #c2c2c2 2px 3px 5px;
+  color: #fff;
+}
+
 div.box.mtndew_green {
   background-color: #014713;
   box-shadow: #c2c2c2 2px 3px 5px;
