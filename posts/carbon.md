@@ -16,4 +16,4 @@ Plain and simple.
 
 You can set the color scheme of the image where it uses themes from zsh and terminal color themes, the language you want to use (CSS, Clojure, Twig, Vue, etc.) and wish to share, there are different presets and you can customize the image, with options to tweet it or export it using some different settings.
 
-if you want an easy way to share code snippets, this is the way!
+If you want an easy way to share code snippets, this is the way!
