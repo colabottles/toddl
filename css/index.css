@@ -283,7 +283,9 @@ a.tag {
   background-color: #f40009;
   border-radius: 4px;
   color: #000;
+  margin: 0.5rem 0;
   padding: 0.25rem 1rem;
+  width: 10vw;
 }
 
 a.tag:hover {
