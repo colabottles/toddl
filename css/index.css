@@ -194,6 +194,9 @@ span.pre {
   font-family: 'Overpass Mono', monospace;
   font-size: .75em;
   padding: 0.5rem 1rem;
+  position: relative;
+  text-transform: none;
+  top: -0.25rem;
 }
 
 span.pre:hover {
@@ -1297,12 +1300,16 @@ video {
   .article-list-subscribe {
     grid-row: 2;
   }
+
+  article {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 73ch) {
   article {
     display: block;
-    font-size: 16px;
+    font-size: 1.2em;
   }
 
   h1.article__title {
