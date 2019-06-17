@@ -1394,6 +1394,7 @@ video {
 
   .article__body h3 {
     font-size: 1.1em;
+    padding: 1.5rem 0rem;
   }
 
   .article__body p {
