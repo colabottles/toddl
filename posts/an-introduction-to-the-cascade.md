@@ -68,3 +68,6 @@ input, textarea, keygen, select, button, meter, progress {
 
 Read more about [Transition declarations](https://www.w3.org/TR/css-cascade-4/#biblio-css-transitions-1) here.
 Read more about [Animation declarations](https://www.w3.org/TR/css-cascade-4/#biblio-css-animations-1) here.
+
+### Scope
+

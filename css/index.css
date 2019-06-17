@@ -1387,6 +1387,14 @@ video {
     padding: 1rem;
   }
 
+  .article__body h2 {
+    line-height: 1;
+  }
+
+  .article__body p {
+    font-size: 1.2em;
+  }
+
   section.article__body {
     display: block;
   }
