@@ -1285,8 +1285,12 @@ video {
 }
 
 @media (max-width: 900px) {
-  article {
-    font-size: 1.2em;
+  .article__body p {
+    font-size: 1.5em;
+  }
+
+  .article__body h2 {
+    line-height: 1.2;
   }
 
   .promoted-articles {
@@ -1317,7 +1321,7 @@ video {
   }
 
   .article__body p {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   .article__featured-image {
@@ -1335,6 +1339,10 @@ video {
 
   .article__body {
     padding: 0 2.5rem 3rem;
+  }
+
+  .article__body h2 {
+    line-height: 1.2;
   }
 
   .style_guide__body {
