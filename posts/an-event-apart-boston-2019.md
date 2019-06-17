@@ -22,9 +22,9 @@ Val Head followed with making motion inclusive. I always enjoy the animation par
 
 Val spoke about which types of motion can be triggers for people with disabilities. Now I haven't used motion much in the projects I have worked on, but intend to and this talk was just what I needed. I suffer from migraines, so when I am on the computer and must be (whether working at the office or otherwise) some animation can be hard on the eyes, so I had to take that into consideration for persons with more thatn just a migraine.
 
-Eric Meyer then spoke about CSS generated content. This was one of my cringe moments, but more on that later. I called this block the "Technical Triad of Terrific" because the next three speakers I follow closely and anything they share or write up on CSS, Grid Layout, and web.
+Eric Meyer then spoke about CSS generated content. This was one of my cringe moments, but more on that later. I called this block the &ldquo;Technical Triad of Terrific&rdquo; because the next three speakers I follow closely and anything they share or write up on CSS, Grid Layout, and web.
 
-Eric talked about the possibilities when using the pseudo-elements `::before` and `::after` for styling and minimalising the clutter in your HTML markup. Then how pull quotes are &ldquo;mismanaged&rdquo; and that's when I had my cringe moment. I thought I had borrowed a cool pull quoe design in a blockquote from a site then tailored it even better but nay. I say nay.
+Eric talked about the possibilities when using the pseudo-elements `::before` and `::after` for styling and minimalising the clutter in your HTML markup. Then how pull quotes are &ldquo;mismanaged&rdquo; and that's when I had my cringe moment. I thought I had borrowed a cool pull quote design in a blockquote from a site then tailored it even better but nay. I say nay.
 
 I will also say, as I get older, and as I go to these conferences, I get tired easily which is why I like to get up during the intermissions and walk around and mingle. I dozed off during Eric's talk for an embarassing amount of time. Something that I still feel horrible about because his technical talks are some of the best I have heard no matter what the topic. So I suffer from embarassment and remorse over that. A good reminder to get more sleep during conferences.
 
@@ -34,7 +34,7 @@ Rachel Andrew crushed it with her talk on redefining the technical possibilities
 
 Jen Simmons wrapped the day up with her talk on designing intrinsic layouts, solving layout designs, and even did a live coding walkthrough. Her work, along with Rachel's in regards to CSS Grid Layout, are the best. I point anyone who asks me where they can learn about Grid to those two wonderful people. Although you can do things the old fashioned way, and I still do from time-to-time, I like the direction that Grid and Flexbox are taking the web.
 
-Jen also mentioned that everything doesn't have to be done in Flexbox or Grid, that &ldquo;good old fashioned stuff is still good.&rdquo; I was fortunate enough to get a few minutes talking to Jen __(Thank you so very much!)__ about a few questions I had and as with all the speakers I spoke to and had questions with, she was so very gracious with her time.
+Jen also mentioned that everything doesn't have to be done in Flexbox or Grid, that &ldquo;good old fashioned stuff is still good.&rdquo; I was fortunate enough to get a few minutes talking to Jen _(Thank you so very much!)_ about a few questions I had and as with all the speakers I spoke to and had questions with, she was so very gracious with her time.
 
 Overall, as how it was the last two years, Day One was stellar. I had a great time absorbing all the information, putting it into my log book for future use and how I may do things at work going forward.
 
@@ -70,7 +70,7 @@ That wrapped up a busy Day Two in which my head was overflowing with ideas and i
 
 The accessibility rock block! Starting off with Michael Austin Sui discussing how (most passionately as well as eloquently) we're not designing in ways that are accessible to all. That even the smallest things are being overlooked. Something that really sticks with me and will continue to do so for as long as I am designing.
 
-Michael discussed AirBNB's approach to inclusive design. The best quoe from Michael was &ldquo;Design systems are your leverage to do better.&rdquo; and that &ldquo;Colors project differently on different devices.&rdquo; couldn't have rang more true. When shown a slide of four different devices with the same hex code and four different shades of that hex color. I had a lot to take back to the office just in Michael's talk (a.k.a. Safari Dude) alone!
+Michael discussed AirBNB's approach to inclusive design. The best quote from Michael was &ldquo;Design systems are your leverage to do better.&rdquo; and that &ldquo;Colors project differently on different devices.&rdquo; couldn't have rang more true. When shown a slide of four different devices with the same hex code and four different shades of that hex color. I had a lot to take back to the office just in Michael's talk (a.k.a. Safari Dude) alone!
 
 Marcy Sutton followed with her talk about CSS techniques and what they mean for accessibility and browser support. How some techniques can impact accessibility in ways that are unexpected, such as the `:focus` pseudo class.
 
