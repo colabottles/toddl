@@ -1388,20 +1388,16 @@ video {
   }
 
   .article__body h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     line-height: 1;
   }
 
   .article__body p {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   section.article__body {
     display: block;
-  }
-
-  .article__body h2 {
-    line-height: 1.5;
   }
 
   blockquote.twitter-tweet {
