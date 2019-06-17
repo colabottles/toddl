@@ -10,7 +10,7 @@ layout: layouts/post.njk
 
 ### Day One
 
-It was terrific. Jeffrey started it off with his talk about slow design. There is too much going on, on websites that distract and stresses users. Designers should help users by slowing down so they can make informed decisions. &ldquo;Readability transcends legibility&rdquo;, &ldquo;Absorption, not conversion.&rdquo;. Where you read from, lying down, sitting in a chair tablet on your knees, at the breakfast table with the tablet proped up a foot away from you?  
+It was terrific. Jeffrey started it off with his talk about slow design. There is too much going on, on websites that distract and stresses users. Designers should help users by slowing down so they can make informed decisions. &ldquo;Readability transcends legibility&rdquo;, &ldquo;Absorption, not conversion.&rdquo; Where you read from, lying down? Sitting in a chair tablet on your knees? At the breakfast table with the tablet proped up a foot away from you?  
 
 Minamalism and whitespace (macro and micro) for focus and being less busy, big typography for readability and hierarchy for accessibility were among the many points Jeffrey touched upon in his fantastic talk that kicked off another phenomenal conference.
 
