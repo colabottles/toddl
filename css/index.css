@@ -1392,6 +1392,10 @@ video {
     line-height: 1.2;
   }
 
+  .article__body h3 {
+    font-size: 1.1em;
+  }
+
   .article__body p {
     font-size: 0.9em;
   }
