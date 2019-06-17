@@ -1285,6 +1285,10 @@ video {
 }
 
 @media (max-width: 900px) {
+  article {
+    font-size: 1.2em;
+  }
+
   .promoted-articles {
     display: block;
   }

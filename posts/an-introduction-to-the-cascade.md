@@ -31,18 +31,33 @@ body {
 }
 ```
 
-1. Transition declarations. <span class="pre">transition-timing-function: steps(6, end);</span>
-2. Important user agent declarations.
+1. Transition declarations
 
 ```css
-input, textarea, keygen, select, button, meter, progress { 
-  -webkit-writing-mode: horizontal-tb !important; 
+transition-timing-function: steps(6, end);
+```
+
+1. Important user agent declarations
+
+```css
+input, textarea, keygen, select, button, meter, progress {
+  -webkit-writing-mode: horizontal-tb !important;
 }
 ```
 
-3. Important user declarations. <span class="pre">p { text-indent: 1em !important; }</span>
-4. Important author declarations. <span class="pre">p { text-indent: 1.5em !important; }</span>
-5. Animation declarations.
+1. Important user declarations
+
+```css
+p { text-indent: 1em !important; }
+```
+
+1. Important author declarations
+
+```css
+p { text-indent: 1.5em !important; }
+```
+
+1. Animation declarations
 
 ```css
 @keyframes slide-right {
@@ -56,12 +71,24 @@ input, textarea, keygen, select, button, meter, progress {
   }
 }
 ```
-6. Normal author declarations. <span class="pre">p { text-indent: 1.5em; }</span>
-7. Normal user declarations. <span class="pre">p { text-indent: 1em; }</span>
-8. Normal user agent declarations. <span class="pre">keygen, select { border-radius: 5px; }</span>
+
+1. Normal author declarations.
+
+```css
+p { text-indent: 1.5em; }
+```
+
+1. Normal user declarations.
+
+```css
+p { text-indent: 1em; }
+```
+
+1. Normal user agent declarations.
+
+```css
+keygen, select { border-radius: 5px; }
+```
 
 Read more about [Transition declarations](https://www.w3.org/TR/css-cascade-4/#biblio-css-transitions-1) here.
 Read more about [Animation declarations](https://www.w3.org/TR/css-cascade-4/#biblio-css-animations-1) here.
-
-
-
