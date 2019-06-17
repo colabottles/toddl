@@ -1388,11 +1388,12 @@ video {
   }
 
   .article__body h2 {
+    font-size: 1.7em;
     line-height: 1;
   }
 
   .article__body p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   section.article__body {
