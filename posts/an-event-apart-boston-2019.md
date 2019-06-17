@@ -1,7 +1,7 @@
 ---
 title: An Event Apart 2019 - Wrap-Up Edition
 description: The wrap-up article I authored in 2018 after An Event Apart.
-date: 2019-05-08
+date: 2019-05-09
 tags:
   - conferences
 layout: layouts/post.njk
@@ -18,13 +18,13 @@ Mina Markham followed up with a phenomenal talk about art direction and inclusiv
 
 Localization was brought to my attention and the fact that not everyone is from North America (United States) and reading what I create. Localization is important, let's make it so. Though at work we are not used outside of the United States, we probably wouldn't use localization but should anyhow. Mina talked about adjusting design, illustration and photos to a different country or culture by using her examples of her work at Slack.
 
-Val Head followed with making motion inclusive. I always enjoy the animation parts of the conference, especially when Val speaks. The energy and the enthusiasm is contagious. Her talking points being we shouldn't be using unnecessary animations, subtilty in animation (opacity, colors, movement), triggering motion in GIFs and video, and using <span class="pre">prefers-reduced-motion</span>.
+Val Head followed with making motion inclusive. I always enjoy the animation parts of the conference, especially when Val speaks. The energy and the enthusiasm is contagious. Her talking points being we shouldn't be using unnecessary animations, subtilty in animation (opacity, colors, movement), triggering motion in GIFs and video, and using `prefers-reduced-motion`.
 
 Val spoke about which types of motion can be triggers for people with disabilities. Now I haven't used motion much in the projects I have worked on, but intend to and this talk was just what I needed. I suffer from migraines, so when I am on the computer and must be (whether working at the office or otherwise) some animation can be hard on the eyes, so I had to take that into consideration for persons with more thatn just a migraine.
 
 Eric Meyer then spoke about CSS generated content. This was one of my cringe moments, but more on that later. I called this block the "Technical Triad of Terrific" because the next three speakers I follow closely and anything they share or write up on CSS, Grid Layout, and web.
 
-Eric talked about the possibilities when using the pseudo-elements <span class="pre">::before</span> and <span class="pre">::after</span> for styling and minimalising the clutter in your HTML markup. Then how pull quotes are &ldquo;mismanaged&rdquo; and that's when I had my cringe moment. I thought I had borrowed a cool pull quoe design in a blockquote from a site then tailored it even better but nay. I say nay.
+Eric talked about the possibilities when using the pseudo-elements `::before` and `::after` for styling and minimalising the clutter in your HTML markup. Then how pull quotes are &ldquo;mismanaged&rdquo; and that's when I had my cringe moment. I thought I had borrowed a cool pull quoe design in a blockquote from a site then tailored it even better but nay. I say nay.
 
 I will also say, as I get older, and as I go to these conferences, I get tired easily which is why I like to get up during the intermissions and walk around and mingle. I dozed off during Eric's talk for an embarassing amount of time. Something that I still feel horrible about because his technical talks are some of the best I have heard no matter what the topic. So I suffer from embarassment and remorse over that. A good reminder to get more sleep during conferences.
 
@@ -38,7 +38,7 @@ Jen also mentioned that everything doesn't have to be done in Flexbox or Grid, t
 
 Overall, as how it was the last two years, Day One was stellar. I had a great time absorbing all the information, putting it into my log book for future use and how I may do things at work going forward.
 
-### Day Two 
+### Day Two
 
 Kate O'Neill kicked off Day Two with her great talk about the Design of Meaning for the Future of Humanity. About building our best tech, which hit home with me at my job. Our app can and needs to do a lot better. I took a lot from her talk for sure. Our app is what I call &ldquo;Get in and get done&rdquo;, so tedious at times so I can imagine what the customers and users think, which is a huge part of what Gerry McGovern spoke about on Day Three, but more on that later.
 
@@ -60,11 +60,11 @@ Sarah's examples, especally the Bloom &amp; Wild example were perfect examples o
 
 Brad Frost followed with the technical side of design systems and again this year, did not disappoint. Brad, along with Dan Mall, the one-two punch for design systems, provided a great hour of if you got the product then you have the need for a design system. Which we do at work. The need for one that we do not have one at all for our app.
 
-Dan followed with how my role with the design system can be the most efficient it could be. I talked with both of them about how to get started and how I can make a design system from nothing that will do the job it needs to do for the company I work for. 
+Dan followed with how my role with the design system can be the most efficient it could be. I talked with both of them about how to get started and how I can make a design system from nothing that will do the job it needs to do for the company I work for.
 
 Both Brad and Dan were, and are, great to talk to about this topic. They provided me with answers to my questions. They touched on how you don't have to go guns-a-blazing and try to do everything in a design syste at once. Start of small, meet the needs and boundaries of what you're doing and go from there. Run your design system and it's evolution in tandem witht he project you or you and your team are currently working on. I even won a prize during __&ldquo;Name That Design System!&rdquo;__ (A small victory).
 
-That wrapped up a busy Day Two in which my head was overflowing with ideas and information. Then it was onward to&hellip; 
+That wrapped up a busy Day Two in which my head was overflowing with ideas and information. Then it was onward to&hellip;
 
 ### Day Three
 
@@ -72,13 +72,13 @@ The accessibility rock block! Starting off with Michael Austin Sui discussing ho
 
 Michael discussed AirBNB's approach to inclusive design. The best quoe from Michael was &ldquo;Design systems are your leverage to do better.&rdquo; and that &ldquo;Colors project differently on different devices.&rdquo; couldn't have rang more true. When shown a slide of four different devices with the same hex code and four different shades of that hex color. I had a lot to take back to the office just in Michael's talk (a.k.a. Safari Dude) alone!
 
-Marcy Sutton followed with her talk about CSS techniques and what they mean for accessibility and browser support. How some techniques can impact accessibility in ways that are unexpected, such as the <span class="pre">`:focus`</span> pseudo class.
+Marcy Sutton followed with her talk about CSS techniques and what they mean for accessibility and browser support. How some techniques can impact accessibility in ways that are unexpected, such as the `:focus` pseudo class.
 
 Markup order versus visual order of elements when using layouts such as Flexbox and CSS Grid, for example. A surprising example is that the Space Jam website, that is __still__ online, is more accessible than the Captain Marvel site tht is online from only this year. Amazing.
 
 Taking care when using Flexbox to change the UI presentation of the tab order of your elements, the first rule of ARIA is not to use it, and a plethora of other tidbits I took with me to better my CSS techniques!
 
-Derek Featherstone talked about inclusive design, a topic that is important to me. The main question I got out of Derek's talk was, &ldquo;Are my design decisions and processes inclusive enough?&rdquo; and my answer was a resounding &ldquo;No&rdquo;. I must do better during the projects I work on to make sure that I am being as inclusive as I can be and then take that ten giant steps further. 
+Derek Featherstone talked about inclusive design, a topic that is important to me. The main question I got out of Derek's talk was, &ldquo;Are my design decisions and processes inclusive enough?&rdquo; and my answer was a resounding &ldquo;No&rdquo;. I must do better during the projects I work on to make sure that I am being as inclusive as I can be and then take that ten giant steps further.
 
 Is what we are doing as a design and development community as a whole, doing an effective enough job to include persons with impairments. We played a game, we had to create an inclusive game of Twister. It was thought provoking to say the least. I came up with an idea to include someone with an impairment, yet failed to figure out a solution for the spinner which goes to show I have a long way and a lot to learn so as to be more inclusive with my methods and designs.
 
@@ -88,7 +88,7 @@ Jason Grigsby then took the stage to talk about web forms and &ldquo;touched&rdq
 
 Jason spoke about Autofill and WebAuthn and also talked about the Payment Request and Credential Management API's and alluded to the fact we need to offer more than just passwords as a solution to the problem of more than half (51%) of users have a go to password, a favorite if you will, and an astounding 65% of passwords users use are used on more than one site.
 
-The code example of the <span class="pre">`ui-mask`</span> and <span class="pre">`maxlength`</span> and how, for instance, a year field takes only 2 numbers, but should take 4 numers for the whole year, was enlightening. It was a great look into something that perhaps my company needs to (this will meet with MUCH resistance, this I know) implement.
+The code example of the `ui-mask` and `maxlength` and how, for instance, a year field takes only 2 numbers, but should take 4 numbers for the whole year, was enlightening. It was a great look into something that perhaps my company needs to (this will meet with MUCH resistance, this I know) implement.
 
 Gerry McGovern closed out yet another great conference. Gerry always puts on a great and highly entertaining talk. This and last years conference were a testament to that. Gerry spoke about focusing on your users, taking your users feedback and going to task on adjusting your design to their feedback as to work with them and design with them for your product. Know your users!
 
@@ -96,6 +96,6 @@ Google, the UK government, and AirBNB were some examples of gradual design that 
 
 ### The Summary
 
-Personally, this year was a year I was going to try and be a lot more social. I still have a ways to go, all-in-all I was able to shed my insecurities and I was able to mingle, ask a lot of questions, and get over my anxiety over approaching people and talking to them. I got to see a lot of folks I met in 2018 and say hello. 
+Personally, this year was a year I was going to try and be a lot more social. I still have a ways to go, all-in-all I was able to shed my insecurities and I was able to mingle, ask a lot of questions, and get over my anxiety over approaching people and talking to them. I got to see a lot of folks I met in 2018 and say hello.
 
 I met some nice people, talked with a few, had breakfast and lunch with speakers and attendees alike that were and are very nice and pleasant folks who, like myself, come to learn from the best and I hope to see them next year as well.

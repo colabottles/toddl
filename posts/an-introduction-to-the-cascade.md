@@ -31,11 +31,7 @@ body {
 }
 ```
 
-1. Transition declarations
-
-```css
-transition-timing-function: steps(6, end);
-```
+1. Transition declarations `transition-timing-function: steps(6, end);`
 
 1. Important user agent declarations
 
@@ -45,17 +41,9 @@ input, textarea, keygen, select, button, meter, progress {
 }
 ```
 
-1. Important user declarations
+1. Important user declarations `p { text-indent: 1em !important; }`
 
-```css
-p { text-indent: 1em !important; }
-```
-
-1. Important author declarations
-
-```css
-p { text-indent: 1.5em !important; }
-```
+1. Important author declarations `p { text-indent: 1.5em !important; }`
 
 1. Animation declarations
 
@@ -72,23 +60,11 @@ p { text-indent: 1.5em !important; }
 }
 ```
 
-1. Normal author declarations.
+1. Normal author declarations `p { text-indent: 1.5em; }`
 
-```css
-p { text-indent: 1.5em; }
-```
+1. Normal user declarations `p { text-indent: 1em; }`
 
-1. Normal user declarations.
-
-```css
-p { text-indent: 1em; }
-```
-
-1. Normal user agent declarations.
-
-```css
-keygen, select { border-radius: 5px; }
-```
+1. Normal user agent declarations `keygen, select { border-radius: 5px; }`
 
 Read more about [Transition declarations](https://www.w3.org/TR/css-cascade-4/#biblio-css-transitions-1) here.
 Read more about [Animation declarations](https://www.w3.org/TR/css-cascade-4/#biblio-css-animations-1) here.
