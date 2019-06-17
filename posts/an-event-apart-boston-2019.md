@@ -10,41 +10,43 @@ layout: layouts/post.njk
 
 ### Day One
 
-It was terrific. Jeffrey started it off with his talk about slow design. There is too much going on, on webistes that distracts and stresses users. Designers should help users by slowing down so they can make informed decisions. &ldquo;Readability transcends legibility&rdquo;, &ldquo;Absorption, not conversion.&rdquo;. Where you read from, lying down, sitting in a chair tablet on your knees, at the breakfast table with the tablet proped up a foot away from you?  
+It was terrific. Jeffrey started it off with his talk about slow design. There is too much going on, on websites that distract and stresses users. Designers should help users by slowing down so they can make informed decisions. &ldquo;Readability transcends legibility&rdquo;, &ldquo;Absorption, not conversion.&rdquo;. Where you read from, lying down, sitting in a chair tablet on your knees, at the breakfast table with the tablet proped up a foot away from you?  
 
 Minamalism and whitespace (macro and micro) for focus and being less busy, big typography for readability and hierarchy for accessibility were among the many points Jeffrey touched upon in his fantastic talk that kicked off another phenomenal conference.
 
 Mina Markham followed up with a phenomenal talk about art direction and inclusiveness. Mina also spoke about progressive enhancement and how we have to make sure users have an experience on their own terms that is the experience they want. A great one.
 
-Localization was brought to my attention and the fact that not everyone is from North America (United States) and reading what I create. Localization is important, let's make it so. Though at work we are not used outside of the United States, we probably wouldn't use localization but should anyhow. Mina talked about adjusting design, illustration and photos to a different country or culture by using her examples of her work at Slack.
+Localization was brought to my attention and the fact that not everyone is from North America (United States) and reading what I create. Localization is important, let's make it so. Though at work we are not used outside of the United States, we probably wouldn't use localization but should anyhow. Mina talked about adjusting design, illustration and photos to a different country or culture by using the examples of her work at Slack.
 
-Val Head followed with making motion inclusive. I always enjoy the animation parts of the conference, especially when Val speaks. The energy and the enthusiasm is contagious. Her talking points being we shouldn't be using unnecessary animations, subtilty in animation (opacity, colors, movement), triggering motion in GIFs and video, and using `prefers-reduced-motion`.
+Val Head followed with making motion inclusive. I always enjoy the animation parts of the conference, especially when Val speaks. The energy and enthusiasm are contagious. Her talking points being we shouldn't be using unnecessary animations, subtilty in animation (opacity, colors, movement), triggering motion in GIFs and video, and using `prefers-reduced-motion`.
 
-Val spoke about which types of motion can be triggers for people with disabilities. Now I haven't used motion much in the projects I have worked on, but intend to and this talk was just what I needed. I suffer from migraines, so when I am on the computer and must be (whether working at the office or otherwise) some animation can be hard on the eyes, so I had to take that into consideration for persons with more thatn just a migraine.
+Val spoke about which types of motion can be triggers for people with disabilities. Now I haven't used motion much in the projects I have worked on, but intend to and this talk was just what I needed. I suffer from migraines, so when I am on the computer and must be (whether working at the office or otherwise) some animation can be hard on the eyes, so I had to take that into consideration for persons with more than just a migraine.
 
 Eric Meyer then spoke about CSS generated content. This was one of my cringe moments, but more on that later. I called this block the &ldquo;Technical Triad of Terrific&rdquo; because the next three speakers I follow closely and anything they share or write up on CSS, Grid Layout, and web.
 
 Eric talked about the possibilities when using the pseudo-elements `::before` and `::after` for styling and minimalising the clutter in your HTML markup. Then how pull quotes are &ldquo;mismanaged&rdquo; and that's when I had my cringe moment. I thought I had borrowed a cool pull quote design in a blockquote from a site then tailored it even better but nay. I say nay.
 
-I will also say, as I get older, and as I go to these conferences, I get tired easily which is why I like to get up during the intermissions and walk around and mingle. I dozed off during Eric's talk for an embarassing amount of time. Something that I still feel horrible about because his technical talks are some of the best I have heard no matter what the topic. So I suffer from embarassment and remorse over that. A good reminder to get more sleep during conferences.
+I will also say, as I get older, and as I go to these conferences, I get tired easily which is why I like to get up during the intermissions and walk around and mingle. I dozed off during Eric's talk for an embarrassing amount of time. Something that I still feel horrible about because his technical talks are some of the best I have heard no matter what the topic. So I suffer from embarrassment and remorse over that. A good reminder to get more sleep during conferences.
 
-Rachel Andrew crushed it with her talk on redefining the technical possibilities of CSS Grid layout and CSS Subgrid (now available at this writing in Firefox Nightly)and how to make things better. Rachel is one of my favorite developers, her work has got me to experiment with Grid and now Subgrid and CSS as a whole. I have even purchased Perch for a site that I have (dormant but in development) her work, as well as husband Drew McLellan has always been inspiring. Everyone also got to see an appearance by Pixel the Cat as well!
+Rachel Andrew crushed it with her talk on redefining the technical possibilities of CSS Grid layout and CSS Subgrid (now available at this writing in Firefox Nightly)and how to make things better. Rachel is one of my favorite developers, her work has got me to experiment with Grid and now Subgrid and CSS as a whole.
+
+I have even purchased Perch for a site that I have (dormant but in development) her work, as well as husband Drew McLellan has always been inspiring. Everyone also got to see an appearance by Pixel the Cat as well!
 
 [Pushing for Subgrid in Chrome](https://bugs.chromium.org/p/chromium/issues/detail?id=762679) (go ahead, sign in and star it!), [many technical aspects that you can see in Rachel's slides](https://noti.st/rachelandrew/aSEj0y/making-things-better-redefining-the-technical-possibilities-of-css#sRqusUa) and many examples [on Rachel's site](https://gridbyexample.com) but the best takeaway I found was Rachel's ending where she stated, &ldquo;More than ever the web needs **diversity of thought.**&rdquo;
 
-Jen Simmons wrapped the day up with her talk on designing intrinsic layouts, solving layout designs, and even did a live coding walkthrough. Her work, along with Rachel's in regards to CSS Grid Layout, are the best. I point anyone who asks me where they can learn about Grid to those two wonderful people. Although you can do things the old fashioned way, and I still do from time-to-time, I like the direction that Grid and Flexbox are taking the web.
+Jen Simmons wrapped the day up with her talk on designing intrinsic layouts, solving layout designs, and even did a live coding walkthrough. Her work, along with Rachel's in regards to CSS Grid Layout, is the best. I point anyone who asks me where they can learn about Grid to those two wonderful people. Although you can do things the old fashioned way, and I still do from time-to-time, I like the direction that Grid and Flexbox are taking the web.
 
 Jen also mentioned that everything doesn't have to be done in Flexbox or Grid, that &ldquo;good old fashioned stuff is still good.&rdquo; I was fortunate enough to get a few minutes talking to Jen _(Thank you so very much!)_ about a few questions I had and as with all the speakers I spoke to and had questions with, she was so very gracious with her time.
 
-Overall, as how it was the last two years, Day One was stellar. I had a great time absorbing all the information, putting it into my log book for future use and how I may do things at work going forward.
+Overall, as to how it was the last two years, Day One was stellar. I had a great time absorbing all the information, putting it into my logbook for future use and how I may do things at work going forward.
 
 ### Day Two
 
-Kate O'Neill kicked off Day Two with her great talk about the Design of Meaning for the Future of Humanity. About building our best tech, which hit home with me at my job. Our app can and needs to do a lot better. I took a lot from her talk for sure. Our app is what I call &ldquo;Get in and get done&rdquo;, so tedious at times so I can imagine what the customers and users think, which is a huge part of what Gerry McGovern spoke about on Day Three, but more on that later.
+Kate O'Neill kicked off Day Two with her great talk about the &ldquo;Design of Meaning for the Future of Humanity&rdquo;. About building our best tech, which hit home with me at my job. Our app can and needs to do a lot better. I took a lot from her talk for sure. Our app is what I call &ldquo;Get in and get done&rdquo;, so tedious at times so I can imagine what the customers and users think, which is a huge part of what Gerry McGovern spoke about on Day Three, but more on that later.
 
 Meaningful design experiences is something I never had cross my mind and Kate certainly opened my mind up to that by using the Amazon Go Stores as an example. While a fantastic use of technology, you can go in, do your shopping, checkout and go (no pun intended), there is something you don't see in a Go store that you see in a regualr old supermarket. Taking an item off a shelf to help another person should they need it.
 
-Due to my height (6&acute;3&dblac;), I have had elderly people ask me to reach something on the top shelf for them and I was able to help with no problem or issue. I guess, by the talk Kate had, you can't do that in an Amazon Go store as it wont be registered correctly. So is this a meaningful experience? I dare to say, nay.
+Due to my height (6&acute;3&dblac;), I have had elderly people ask me to reach something on the top shelf for them and I was able to help with no problem or issue. I guess you can't do that in an Amazon Go store as it wont be registered correctly. So is this a meaningful experience? Dare I say, nay.
 
 A talk I was itching to hear, [Jason Pamental](https://rwt.io) followed up with his talk on Dynamic Typographic Systems and Variable Fonts. Something I want to inject and use in both personal and work projects. This is and can be the now and the future!
 
@@ -54,7 +56,7 @@ Sara Soueidan is someone I have been wishing to hear speak and I was jubilant in
 
 The technical aspects are a lot to go into here, but I would suggest following Sara for any and all information she shares regarding SVG's. I was blown away and left wanting more! Even the parts that were above my comprehension, I just wanted to hear and learn more! [Be sure to read up on her site for a lot of great articles and information](https://www.sarasoueidan.com/).
 
-Sarah Parmenter followed the lunch break with her talk on Designing for Personalities. Every year Sarah had been at AEA Boston, I had missed her talks due to life happening. This year, I was so very grateful and fortunate to finally hear and see her speak and it was fantastic. A word (along with phenomenal) which I will probably use **a lot**. It made me think of how my work can adjust our app and website to meet the needs and wishes of our customers.
+Sarah Parmenter followed the lunch break with her talk on &ldquo;Designing for Personalities&rdquo;. Every year Sarah had been at AEA Boston, I had missed her talks due to life happening. This year, I was so very grateful and fortunate to finally hear and see her speak and it was fantastic. A word (along with phenomenal) which I will probably use **a lot**. It made me think of how my work can adjust our app and website to meet the needs and wishes of our customers.
 
 Sarah's examples, especally the Bloom &amp; Wild example were perfect examples of customers to opt-out of newsletters and emails, Sarah's feedback was the catalyst for change when it came to opting out of emails on Mother's Day when someone had suffered a loss or tragedy. This talk brought me back to Eric's talk (and his book with Sara Wachter-Boettcher &ldquo;_Designing for Real Life_&rdquo;) on Design for Real Life. This was widely acclaimed on social media and even in the British press.
 
@@ -62,7 +64,7 @@ Brad Frost followed with the technical side of design systems and again this yea
 
 Dan followed with how my role with the design system can be the most efficient it could be. I talked with both of them about how to get started and how I can make a design system from nothing that will do the job it needs to do for the company I work for.
 
-Both Brad and Dan were, and are, great to talk to about this topic. They provided me with answers to my questions. They touched on how you don't have to go guns-a-blazing and try to do everything in a design syste at once. Start of small, meet the needs and boundaries of what you're doing and go from there. Run your design system and it's evolution in tandem witht he project you or you and your team are currently working on. I even won a prize during __&ldquo;Name That Design System!&rdquo;__ (A small victory).
+Both Brad and Dan were, and are, great to talk to about this topic. They provided me with answers to my questions. They touched on how you don't have to go guns-a-blazing and try to do everything in a design syste at once. Start off small, meet the needs and boundaries of what you're doing and go from there. Run your design system and it's evolution in tandem witht he project you or you and your team are currently working on. I even won a prize during __&ldquo;Name That Design System!&rdquo;__ (A small victory).
 
 That wrapped up a busy Day Two in which my head was overflowing with ideas and information. Then it was onward to&hellip;
 
@@ -98,4 +100,4 @@ Google, the UK government, and AirBNB were some examples of gradual design that 
 
 Personally, this year was a year I was going to try and be a lot more social. I still have a ways to go, all-in-all I was able to shed my insecurities and I was able to mingle, ask a lot of questions, and get over my anxiety over approaching people and talking to them. I got to see a lot of folks I met in 2018 and say hello.
 
-I met some nice people, talked with a few, had breakfast and lunch with speakers and attendees alike that were and are very nice and pleasant folks who, like myself, come to learn from the best and I hope to see them next year as well.
+I met some nice people, talked with a few, had breakfast and lunch with speakers and attendees alike that were and are very nice and pleasant folks who like myself, come to learn from the best and I hope to see them next year as well.

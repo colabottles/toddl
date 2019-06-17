@@ -18,7 +18,7 @@ As with every AEA, it was kicked off by Jeffrey Zeldman, speaking first about En
 
 Speed of Usefulness, how quickly can you get the right content to your customer? How quickly can you solve their problem? What is the shortest distance between the problem and the solution?
 
-Content Performance Quotient (CPQ). The time it takes your customer to get the information she came for. The time it takes to for a specific customer to find, receive, and absorb your most important content.
+Content Performance Quotient (CPQ). The time it takes your customer to get the information she came for. The time it takes for a specific customer to find, receive, and absorb your most important content.
 
 <blockquote cite="Jeffrey Zeldman">FAQs are the junk drawer of content.</blockquote>
 
@@ -34,18 +34,18 @@ A good design system feels cohesive, unified and connected.
 
 Successful design patterns don’t exist in a vacuum. Successful design systems start with content and people.
 
-The differences between a successful design system and telling the story of her experience at Vox Media. The best way I saw her talk put,
+The differences between a successful design system and telling the story of her experience at Vox Media. The best way I saw her talk put&hellip;
 
 <blockquote class="twitter-tweet" data-lang="en">
   <p lang="en" dir="ltr">.<a href="https://twitter.com/yeseniaa?ref_src=twsrc%5Etfw">@yeseniaa</a> killed it at <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a>. &mdash; zeldman (@zeldman) <a href="https://twitter.com/zeldman/status/1011270559697645568?ref_src=twsrc%5Etfw">June 25, 2018</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Yes, she did. what I took away from her talk was to let your users’ needs define the building blocks you’ll need for your design system (if you even need one… more on that shortly). I can carry this to the table when I get back to the office and weigh heavily if we do indeed need a design system, or not.
+Yes, she did. what I took away from her talk was to let your user's needs define the building blocks you will need for your design system (if you even need one… more on that shortly). I can carry this to the table when I get back to the office and weigh heavily if we do indeed need a design system or not.
 
 Next up was Una Kravets, who spoke on &ldquo;Why Design Systems Fail&rdquo;.
 
-A Design System can be a style guide or visual pattern library. It can also be design tooling; a component library; voice and tone guidelines; design usage documentation; and more.
+A Design System can be a style guide or visual pattern library. It can also be design tooling, a component library, voice and tone guidelines, design usage documentation and more.
 
 I’ve been contemplating a design system and pattern library since I saw Brad Frost speak last year. We may be too small to do so, I have a lot of research to do, but a lot was clarified by Una today.
 
@@ -59,7 +59,7 @@ I’ve never had a successful diet, so I will shoot for a successful design syst
 
 So much to soak in after the first half of the first day today, and then after a quick lunch, a surprise (to me, I wasn’t expecting this part) Mike Essl who had designed the website, many moons ago for They Might Be Giants. A site I used to visit daily and I loved the look!
 
-Mike spoke about Cooper Union, the school he attended and all the rich history of people that attended and the things they had contributed to the world was staggering to say the least! That school has had some rich history and very prolific people walk through their halls, indeed.
+Mike spoke about Cooper Union, the school he attended and all the rich history of people that attended and the things they had contributed to the world was staggering, to say the least! That school has had some rich history and very prolific people walk through their halls, indeed.
 
 Same Bat-Time! Same Bat-Channel! His love for Batman and the massive resume Mike has is absolutely stunning and impressive some of the work that he has done or contributed to.
 
@@ -71,7 +71,7 @@ Rachel started with &ldquo;Graduating to Grid&rdquo;. Telling the audience to un
 
 Then Eric Meyer took the stage to discuss Feature Queries. What are the pros and cons? Where are the strengths and weaknesses?
 
-Feature Queries, examples.
+Feature Queries examples.
 
 ```css
   @supports (prop: val) { /* CSS goes here */ } 
@@ -115,9 +115,9 @@ Feature Queries, examples.
   }
 ```
 
-How to put all these new CSS features to work for you right away. I’m going to do a lot of experimentation with these features soon, I hope. Another great talk by Eric.
+How to put all these new CSS features to work for you right away? I’m going to do a lot of experimentation with these features soon, I hope. Another great talk by Eric.
 
-and the day ended with Jen Simmons discussing the phases of the web that we have seen throughout the history of the web. From simple HTML to Responsive Web Design (RWD), Jen has brought forth the term Intrinsic Web Design to the forefront.
+And the day ended with Jen Simmons discussing the phases of the web that we have seen throughout the history of the web. From simple HTML to Responsive Web Design (RWD), Jen has brought forth the term Intrinsic Web Design to the forefront.
 
 The truncation joke was a good one as well.
 
@@ -125,19 +125,17 @@ The truncation joke was a good one as well.
 
 There is so much that can be done with web layout these days and it is exciting, Jen touched on some key points on ways to contract and expand space, new possibilities for flexibility, columns and units, change in how we use the viewport, and programming to all four edges of the viewport.
 
-Rachel and Jen both have been the catalyst for changing the way we look at the web today, and I am very grateful and fortunate to have seen them both speak for two years running now. They have both shed light on CSS Grids and I understand a lot better now than I did when I went into AEA last year by miles.
+Rachel and Jen both have been the catalyst for changing the way we look at the web today, and I am very grateful and fortunate to have seen them both speak for two years running now. They have both shed light on CSS Grid and I understand a lot better now than I did when I went into AEA last year by miles.
 
-and I cannot forget to mention that I got to see my friend Claudia Snell again!
+&hellip;and I cannot forget to mention that I got to see my friend Claudia Snell again!
 
-If you are a speaker and happen to see this, and if there is anything I missed upon, key points perhaps, then please reach out and I can certainly add those. It’s now hour 41 of no sleep and by the sounds of the bulldozer and chainsaw going off in the room next door to me(the snoring person that is going right through the wall into my room) I don’t know if I am going to be getting any sleep tonight.
-
-Until tomorr&hellip; oh damn, it’s 5 minutes until &ldquo;tomorrow&rdquo;. Ciao!
+If you are a speaker and happen to see this, and if there is anything I missed upon, key points perhaps, then please reach out and I can certainly add those. 
 
 ### Day Two 
 
 Well, it is finished and as usual the second day of speakers was as good as the first!
 
-Jeremy Keith kicked the day off with his talk. What a talk it was. The way the web is changing it can be overwhelming and exhausting. What tools should you learn and use and how long will those tools be around?
+Jeremy Keith kicked the day off with his talk and what a talk it was! The way the web is changing it can be overwhelming and exhausting. What tools should you learn and use and how long will those tools be around?
 
 Jeremy brought everyone in attendance back in time, discussed the present state and walked us on a tour of the future in working on the web. From HTML/CSS/JS to frameworks and libraries and all the way to Progressive Web Apps, Jeremy taught us if we learn from the past, we can make sensible choices in the future regarding our work on the web.
 
@@ -146,7 +144,6 @@ Jeremy brought everyone in attendance back in time, discussed the present state 
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
 Then on to Donna Lichaw, who taught us on how to convey a story to your customers/clients. The better the story, the more likely you will want to use a product, pay for a product, tell others about the product. A &ldquo;story first&rdquo; approach to building websites, apps, and more that draw customers in, get them excited and keep them engaged for a long time.
 
 <blockquote class="twitter-tweet" data-lang="en">
@@ -154,15 +151,15 @@ Then on to Donna Lichaw, who taught us on how to convey a story to your customer
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Make things that go BOOM!
+Make things that go __BOOM!__
 
 Then on to Val Head who brought to the table this year, Building More Expressive Products. Using animation and sound, you can bring a whole new level to the sites you create or the projects you are working on and Val showed us a little bit of how to harness the design details from motion and sound to build overarching themes.
 
 Using examples from TunnelBear, Authentic Weather and MailChimp, and the way they use animation to express their brand with personality. How we style for animation and what feelings do we aim for. Calm? Strong? Energetic? Animation on the web can bring a website or brand to a whole new level of personality.
 
-After lunch, the panel opened up with Rachel Andrew and Jeremy Keith. Discussing the positives (as well as the negatives) of working with CSS Grid layout and how we can begin leveling up our Grid skills.
+After lunch, the panel opened up with Rachel Andrew and Jeremy Keith. Discussing the positives (as well as the negatives) of working with CSS Grid Layout and how we can begin leveling up our Grid skills.
 
-Trent Walton followed up the lunch hour with his talk on third-party scripts, how many we have loading on our sites, ways to check the speed of our sites with all the stuff we have loading on them and to be honest (when I ran a check) I nearly fell over in my chair on how much it takes and how fast it is to load this site.
+Trent Walton followed up the lunch hour with his talk on third-party scripts, how many we have loading on our sites, ways to check the speed of our sites with all the stuff we have loading on them and to be honest (when I ran a check) I nearly fell over in my chair on how much it takes and how fast it is to load my old site.
 
 Trent also shared ways to include third-party scripts and services on our sites. Benefits and concerns about those third-party scripts. Using your ad blocker versus not and seeing the difference with the preferred browser inspector of your choice. A great talk and his first time speaking at AEA. Job well done!
 
