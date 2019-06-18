@@ -9,11 +9,7 @@ templateClass: tmpl-post
 ---
 ## Who are you&quest;
 
-I'm Todd. I'm a web designer. I've been around the web for about twenty years or so. I love creating and making things, I love the web and learning. I'm a huge fan of accessibility and UX. You can use the contact form to contact me or find me on Twitter.
-
-I don't do much out of the web scene. I love to travel, write and read, go to web conferences, meet new people and talk web. Lobster rolls from Maine are the best. I'm also a big proponent of the front end web developer and the work they put into the web. That's another story.
-
-If I get cranky, just throw me a Snickers bar.
+I'm Todd. I'm a web designer. I've been around the web for about twenty years or so. I love creating and making things, I love the web and learning. I'm a huge supporter of accessibility and UX. You can use the contact form to contact me or find me on Twitter. I don't do much out of the web scene. I love to travel, write and read, go to web conferences, meet new people and talk web. Lobster rolls from Maine are the best. I'm also a big proponent of the front end web developer and the work they put into the web. That's another story.
 
 ## What is &ldquo;sixtyten&rdquo;&quest;
       

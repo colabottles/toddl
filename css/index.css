@@ -198,11 +198,10 @@ a:hover {
 }
 
 code {
-  background-color: #639;
-  color: #fff;
+  color: #639;
   font-family: 'Overpass Mono', monospace;
-  font-size: .9em;
-  padding: 0.5rem 1rem;
+  font-size: .75em;
+  padding: 0.5rem;
   position: relative;
   text-transform: none;
   top: -0.25rem;
@@ -513,8 +512,10 @@ label {
 }
 
 .article-meta {
-  font-size: .75em;
+  font-size: 0.75em;
   font-style: italic;
+  font-weight: 500;
+  margin-left: 0rem;
 }
 
 li.article-list-article {
@@ -668,10 +669,12 @@ ul {
   padding: .75rem 0rem;
 }
 
-li {
+li,
+li p {
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: 700;
+  margin-left: 2.5rem;
   padding: 0.5rem 0rem;
   text-transform: uppercase;
 }
@@ -763,6 +766,25 @@ figcaption {
   margin-top: -5rem;
   padding: 3rem 0;
   text-align: center;
+}
+
+/* IMAGE CLIP PATHS */
+.container {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.shape {
+  width: 300px;
+  height: 300px;
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  shape-margin: 0rem;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
 }
 
 /* FORM STYLES */
