@@ -81,7 +81,7 @@ The example Eric used, was Facebook. Facebook and their &ldquo;On This Day&rdquo
 
 <div class="content__placeholder">
   <figure>
-    <img class="content__image" src="http://i.kinja-img.com/gawker-media/image/upload/s--0Hx97MFG--/zbpna1ytqwigu0xdo7wz.jpg" alt="Example of Facebook filter for On This Day" />
+    <img class="content__image" src="/img/onthisday.jpg" alt="Example of Facebook filter for On This Day" />
     <figcaption>Now Facebook allows users to go in and filter people or dates.</figcaption>
   </figure>
 </div>
