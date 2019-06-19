@@ -4,6 +4,7 @@ description: An online tool to share images of code on social media.
 date: 2019-06-16
 tags:
   - discoveries
+  - tools
 layout: layouts/post.njk
 ---
 I came across Carbon on Twitter (exactly where escapes me. Again.) when I came across a tweet where there was code shared via Carbon. I thought it was pretty cool and a great way to share code. 
