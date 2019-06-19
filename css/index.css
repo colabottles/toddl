@@ -852,6 +852,10 @@ footer a.twitter:hover {
   color: #1da1f2;
 }
 
+footer a.fcc:hover {
+  color: #006400;
+}
+
 span.middot {
   display: none;
 }
