@@ -808,12 +808,6 @@ footer {
   min-width: 100%;
 }
 
-footer i {
-  font-size: 1.5em;
-  opacity: 1;
-  padding: 0em 0.25em;
-}
-
 footer a:hover {
   transition: 0.8s ease-in-out;
 }
@@ -824,40 +818,49 @@ footer a:active {
   color: #000000;
 }
 
-footer a.codepen:hover {
+footer a {
+  padding: 0rem 0.5rem;
+}
+
+a.codepen:hover {
   color: #666666;
 }
 
-footer a.dribbble:hover {
+a.dribbble:hover {
   color: #ea4c89;
 }
 
-footer a.github:hover {
+a.github:hover {
   color: #666666;
 }
 
-footer a.gitlab:hover {
+a.gitlab:hover {
   color: #fc6d26;
 }
 
-footer a.lastfm:hover {
+a.lastfm:hover {
   color: #d51007;
 }
 
-footer a.spotify:hover {
+a.spotify:hover {
   color: #1db954;
 }
 
-footer a.twitter:hover {
+a.twitter:hover {
   color: #1da1f2;
 }
 
-footer a.fcc:hover {
+a.fcc:hover {
   color: #006400;
 }
 
-span.middot {
-  display: none;
+/* SVG ICONS */
+.icon {
+  width: 2em;
+  height: 2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
 /* CONTACT FORM */
