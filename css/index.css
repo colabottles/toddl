@@ -1426,6 +1426,10 @@ video {
     padding: 1rem;
   }
 
+  .article__title {
+    font-size: 2em;
+  }
+
   .article__body h2 {
     font-size: 1.3em;
     line-height: 1.2;
