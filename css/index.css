@@ -601,7 +601,7 @@ article.style-guide {
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
-  font-variation-settings: "wght"900;
+  font-variation-settings: "wght" 900;
 }
 
 .article__body {
@@ -1225,6 +1225,14 @@ video {
 
   100% {
     background-position: 0% 50%;
+  }
+}
+
+/* FONT SUPPORTS */
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'AbrilDisplay-Regular', serif;
+    font-variation-settings: "wght" 400;
   }
 }
 
