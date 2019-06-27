@@ -97,14 +97,14 @@ a:visited {
   outline: none;
 }
 
-/* Variable Fonts 
+/* Variable Fonts */
 @font-face {
   font-family: 'AbrilDisplay-Regular';
-  src: '/fonts/Abril_Fatface.woff2' format('woff2-variations');
+  src: '/fonts/AbrilDisplay-Regular.woff2'format('woff2-variations');
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
-} */
+}
 
 /* Layout & Box-sizing */
 article,
@@ -587,21 +587,21 @@ article.style-guide {
 .article__title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Abril-Fatface", Georgia, Times, serif;
+  /* font-family: "Abril-Fatface", Georgia, Times, serif;
   font-size: 3.4em;
-  font-weight: 400;
+  font-weight: 400; */
   font-weight: 1 999;
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
-  /* text-shadow: 0 0;
+  text-shadow: 0 0;
   font: 3.4em 'AbrilDisplay-Regular';
   font-feature-settings: "kern" on, "liga" on, "calt" on;
   -moz-font-feature-settings: "kern" on, "liga" on, "calt" on;
   -webkit-font-feature-settings: "kern" on, "liga" on, "calt" on;
   -ms-font-feature-settings: "kern" on, "liga" on, "calt" on;
   -o-font-feature-settings: "kern" on, "liga" on, "calt" on;
-  font-variation-settings: "wght" 900; */
+  font-variation-settings: "wght" 900;
 }
 
 .article__body {
@@ -1232,7 +1232,7 @@ video {
 @supports (font-variation-settings: normal) {
   html {
     font-family: 'AbrilDisplay-Regular', serif;
-    font-variation-settings: "wght" 900;
+    font-variation-settings: "wght"900;
   }
 }
 
