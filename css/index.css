@@ -600,7 +600,7 @@ article.style-guide {
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
-  font-variation-settings: "wght"400;
+  font-variation-settings: "wght"900;
 }
 
 .article__body {
