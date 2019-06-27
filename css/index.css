@@ -100,7 +100,7 @@ a:visited {
 /* Variable Fonts */
 @font-face {
   font-family: 'AbrilDisplay-Regular';
-  src: '/fonts/AbrilDisplay-Regular.woff2'format('woff2-variations');
+  src: '../fonts/AbrilDisplay-Regular.woff2'format('woff2-variations');
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
