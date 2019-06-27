@@ -97,15 +97,6 @@ a:visited {
   outline: none;
 }
 
-/* Variable Fonts */
-@font-face {
-  font-family: 'AbrilDisplay-Regular';
-  src: '../fonts/AbrilDisplay-Regular.woff2'format('woff2-variations');
-  font-weight: 1 999;
-  font-stretch: 85% 100%;
-  font-style: normal;
-}
-
 /* Layout & Box-sizing */
 article,
 aside,
@@ -596,12 +587,12 @@ article.style-guide {
   text-transform: none;
   text-shadow: 0 0;
   font: 3.4em "AbrilDisplay-Regular";
-  font-feature-settings: "kern" on, "liga" on, "calt" on;
-  -moz-font-feature-settings: "kern" on, "liga" on, "calt" on;
-  -webkit-font-feature-settings: "kern" on, "liga" on, "calt" on;
-  -ms-font-feature-settings: "kern" on, "liga" on, "calt" on;
-  -o-font-feature-settings: "kern" on, "liga" on, "calt" on;
-  font-variation-settings: "wght" 900;
+  font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  font-variation-settings: "wght"900;
 }
 
 .article__body {
@@ -1228,9 +1219,18 @@ video {
   }
 }
 
+/* Variable Fonts */
+@font-face {
+  font-family: 'AbrilDisplay-Regular';
+  src: '../fonts/AbrilDisplay-Regular.woff2'format('woff2-variations');
+  font-weight: 1 999;
+  font-stretch: 85% 100%;
+  font-style: normal;
+}
+
 /* FONT SUPPORTS */
 @supports (font-variation-settings: normal) {
-  html {
+  .article__title {
     font-family: 'AbrilDisplay-Regular', serif;
     font-variation-settings: "wght" 900;
   }
