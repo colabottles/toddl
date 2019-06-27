@@ -587,8 +587,8 @@ article.style-guide {
 .article__title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'AbrilDisplay-Regular', Georgia, Times, serif;
-  /* font-size: 3.4em;
+  /* font-family: 'AbrilDisplay-Regular', Georgia, Times, serif;
+  font-size: 3.4em;
   font-weight: 400; */
   line-height: 1.2;
   margin: 1rem 0;
