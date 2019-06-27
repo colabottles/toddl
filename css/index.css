@@ -596,11 +596,11 @@ article.style-guide {
   text-transform: none;
   text-shadow: 0 0;
   font: 3.4em 'AbrilDisplay-Regular';
-  font-feature-settings: "kern"on, "liga"on, "calt"on;
-  -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
-  -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
-  -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
-  -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  font-feature-settings: "kern" on, "liga" on, "calt" on;
+  -moz-font-feature-settings: "kern" on, "liga" on, "calt" on;
+  -webkit-font-feature-settings: "kern" on, "liga" on, "calt" on;
+  -ms-font-feature-settings: "kern" on, "liga" on, "calt" on;
+  -o-font-feature-settings: "kern" on, "liga" on, "calt" on;
   font-variation-settings: "wght" 900;
 }
 
