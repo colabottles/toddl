@@ -1219,7 +1219,7 @@ video {
   }
 }
 
-/* Variable Fonts */
+/* Variable Fonts 
 @font-face {
   font-family: 'AbrilDisplay-Regular';
   src: url('/fonts/AbrilDisplay-Regular.woff2') format('woff2');
@@ -1234,15 +1234,15 @@ video {
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
-}
+} */
 
-/* FONT SUPPORTS */
+/* FONT SUPPORTS 
 @supports (font-variation-settings: normal) {
   .article__title {
     font-family: 'AbrilDisplay-Regular', serif;
     font-variation-settings: "wght"900;
   }
-}
+} */
 
 /* Media Queries */
 @media (max-width: 600px) {
