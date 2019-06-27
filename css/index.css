@@ -595,7 +595,7 @@ article.style-guide {
   margin: 1rem 0;
   text-transform: none;
   text-shadow: 0 0;
-  font: 3.4em 'AbrilDisplay-Regular';
+  font: 3.4em "AbrilDisplay-Regular";
   font-feature-settings: "kern" on, "liga" on, "calt" on;
   -moz-font-feature-settings: "kern" on, "liga" on, "calt" on;
   -webkit-font-feature-settings: "kern" on, "liga" on, "calt" on;
@@ -1178,7 +1178,7 @@ img.content__image {
 }
 
 /* IFRAME/VIDEO CENTERING */
-iframe,
+iframe.yt,
 video {
   display: grid;
   justify-self: center;
@@ -1232,7 +1232,7 @@ video {
 @supports (font-variation-settings: normal) {
   html {
     font-family: 'AbrilDisplay-Regular', serif;
-    font-variation-settings: "wght"900;
+    font-variation-settings: "wght" 900;
   }
 }
 
