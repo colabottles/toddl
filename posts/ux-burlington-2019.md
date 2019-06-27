@@ -63,7 +63,7 @@ The next speaker was Henri Helvetica, &ldquo;Planet of the APIs: A Tale of Perfo
 
 How the US was 2nd in the world with selling the low end/low spec phones & devices, performance on mobile, and how 53% of visitors will abandon a page after 3 seconds and 77% of pages load in 10 seconds or more with the average page loading in 19 seconds. Want to know exactly how long 19 seconds is? If Henri doesn't mind, I'll borrow this example that he used. Buckle up.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GWbP8eC-SIw?start=20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/GWbP8eC-SIw?start=20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Don't say I did not warn you!
 
@@ -92,7 +92,7 @@ Chris DeMars was the last speaker for the day with &ldquo;Focusing on Focus&rdqu
 
 It started with this after Chris' introduction;
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XB4cjbYywqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/XB4cjbYywqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 and a quote that I hope Chris doesn't mind me borrowing.
 

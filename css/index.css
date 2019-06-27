@@ -142,6 +142,7 @@ ul {
 }
 
 img,
+iframe.yt,
 video {
   max-width: 100%;
 }
