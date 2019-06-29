@@ -865,8 +865,8 @@ a.a11y:hover {
 
 /* SVG ICONS */
 .icon {
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
