@@ -1,0 +1,5 @@
+title { font-family: sans-serif; color: black }
+subtitle { margin: 1em; color: red }
+entry title { text-align: right; margin-bottom: 2em }
+updated, id, link { line-height: 1.5; margin-left: 15% }
+link { color: blue }
