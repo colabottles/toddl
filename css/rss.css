@@ -24,7 +24,7 @@ link {
   color: blue
 }
 
-products {
+entry {
   font-size: 80%;
   margin: 0.5em;
   font-family: Verdana;
@@ -39,14 +39,11 @@ entry {
   background-color: whitesmoke;
 }
 
-name,
-price,
-stock,
-country {
+author {
   display: block
 }
 
-name {
+author {
   color: red;
   text-decoration: underline
 }
