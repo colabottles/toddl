@@ -855,6 +855,14 @@ a.fcc:hover {
   color: #006400;
 }
 
+a.rss:hover {
+  color: #ec802b;
+}
+
+a.a11y:hover {
+  color: #1259a7;
+}
+
 /* SVG ICONS */
 .icon {
   width: 2em;
