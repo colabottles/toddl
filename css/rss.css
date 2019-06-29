@@ -24,13 +24,13 @@ a:hover {
   text-decoration: none;
 }
 
-h2 {
+title, h2 {
   font-weight: normal;
   border-bottom: 1px solid #960000;
   margin-bottom: 0.4em;
 }
 
-h2 a {
+title a, h2 a {
   display: block;
   margin-bottom: 0.2em;
   text-decoration: none;
