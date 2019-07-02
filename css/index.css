@@ -823,7 +823,7 @@ footer a {
   padding: 0rem 0.5rem;
 }
 
-a.codepen:hover {
+a.codepen:hover svg {
   color: #666666;
 }
 
