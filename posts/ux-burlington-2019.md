@@ -132,6 +132,6 @@ That's just a little recommendation.
 
 ### Yeah, but the conference&#33;
 
-The conference, for a one-day event, is terrific! Well put together, fantastic speakers (check out the past speakers and videos on YoutTube), great food (poke bowls were phenomenal) and a great crowd.
+The conference, for a one-day event, is terrific! Well put together, fantastic speakers (check out the past speakers and videos on YouTube), great food (poke bowls were phenomenal) and a great crowd.
 
 If you are debating on going, debate no more. Go. It's well worth it.
