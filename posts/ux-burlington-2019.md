@@ -126,7 +126,7 @@ Dr. Moore shows you a little bit about what they are doing at IBM and the intera
 
 So I decided to go out for dinner after I got into Burlington the day before the conference. I decided upon the Asiana Noodle Shop and oh my, was I glad I did. Located on Chruch Street in the heart of the Church Street Marketplace, it is a well-hidden place, so you have to look hard for it or you'll miss it. At least I had to. I am oblivious some times.
 
-I enjoyed (understatement) the Korean BBQ shirt ribs and bibimbap. Along with a terrific wonton soup. Nice cozy little place located downstairs, busy place, but the food is out of this world. That's a must-do if you're looking for good eats in the area.App-link
+I enjoyed (understatement) the Korean BBQ short ribs and bibimbap. Along with a terrific wonton soup. Nice cozy little place located downstairs, busy place, but the food is out of this world. That's a must-do if you're looking for good eats in the area.App-link
 
 That's just a little recommendation.App-link
 
