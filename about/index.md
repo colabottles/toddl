@@ -23,7 +23,7 @@ Brenda Storer has some awesome pens. Like the ones I forked to do the layout. [T
 
 Last, I found [this pen](https://codepen.io/liamj/pen/yrEXNx) which I thought was a cool animation so I forked that pen from Liam.
 
-They put in the work, I just ran with it. Or modified it just a wee bit. Either eway, they are the heroes you deserve.
+They put in the work, I just ran with it. Or modified it just a wee bit. Either way, they are the heroes you deserve.
 
 I changed a few things, added a couple more areas on the index page, added a few transitions, made sure everything adheres to WCAG 2.0 AA guidelines, changed some fonts, and kept the overall structure of these templates.
 
