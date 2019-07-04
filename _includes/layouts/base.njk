@@ -24,7 +24,7 @@
             </div>
             <ul class="nav no-search">            
               {%- for nav in collections.nav | sort(attribute="date") -%}
-                <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" tabindex="0">
+                <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
                   <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
                 </li>
               {%- endfor -%}
@@ -43,7 +43,7 @@
     </main>
 
     <footer role="contentinfo">
-      <a href="https://codepen.io/colabottles/#" class="codepen" aria-label="A link to my CodePen page" tabindex="0">
+      <a href="https://codepen.io/colabottles/#" class="codepen" aria-label="A link to my CodePen page" tabindex="-1">
         <svg class="icon icon-codepen"><use href="/img/symbol-defs.svg#icon-codepen"></use></svg>
       </a>
       <a href="https://dribbble.com/colabottles/" class="dribbble" aria-label="A link to my Dribbble page">
