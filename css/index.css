@@ -254,7 +254,8 @@ span.pre:hover {
   font-weight: 700;
   grid-template-columns: subgrid;
   justify-items: center;
-  padding: 0em 0.25rem;
+  margin-right: 0.95rem;
+  padding: 0em 0.05rem;
   text-transform: uppercase;
 }
 
@@ -820,7 +821,7 @@ footer a:active {
 }
 
 footer a {
-  padding: 0rem 0.5rem;
+  padding: 0rem 0.25rem;
 }
 
 a.codepen:hover svg {
