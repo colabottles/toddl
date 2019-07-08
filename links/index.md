@@ -1,6 +1,6 @@
 ---
 layout: layouts/links.njk
-title: links
+title: Links
 date: 2019-06-16
 tags:
   - nav
