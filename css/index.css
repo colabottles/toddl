@@ -241,7 +241,7 @@ span.pre:hover {
 .navbar ul {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(7, auto);
+  grid-template-columns: repeat(6, auto);
   justify-self: end;
   list-style: none;
 }
