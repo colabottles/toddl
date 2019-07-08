@@ -7,15 +7,15 @@ tags:
 navtitle: About
 templateClass: tmpl-post
 ---
-## Who are you
+## Who are you&quest;
 
 I'm Todd. I'm a web designer. I've been around the web for about twenty years or so. I love creating and making things, I love the web and learning. I'm a huge supporter of accessibility and UX. You can use the contact form to contact me or find me on Twitter. I don't do much out of the web scene. I love to travel, write and read, go to web conferences, meet new people and talk web. Lobster rolls from Maine are the best. I'm also a big proponent of the front end web developer and the work they put into the web. That's another story.
 
-## What is "sixtyten"
+## What is "sixtyten"&quest;
 
-sixtyten is a personal tech/programming/design blog. The name is a working name&hellip; I'll rename it when I get a domain.
+sixtyten is a personal tech/programming/design blog. The name is a working title&hellip; I'll rename it when I get a domain.
 
-## What was the inspiration behind this site
+## What was the inspiration behind this site&quest;
 
 First, [the navigation by Reggie Bowers](https://codepen.io/bowersrd/#). So I had to have that navigation.
 
@@ -29,4 +29,4 @@ I changed a few things, added a couple more areas on the index page, added a few
 
 ### I take no credit for the layout
 
-I found these pens, loved them, and wanted to use and implement them. So I did. If the authors of the pens do not want me using them, I will change things no questions asked.
+I found these pens, loved them, and wanted to use and implement them. So I did.

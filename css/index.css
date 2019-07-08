@@ -206,9 +206,7 @@ span.pre:hover {
 .nav-wrapper {
   width: 100%;
   position: -webkit-sticky;
-
-  /* Safari */
-  position: sticky;
+  /* Safari */ position: sticky;
   top: 0;
   background-color: #ffffff;
 }
@@ -243,7 +241,7 @@ span.pre:hover {
 .navbar ul {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(7, auto);
   justify-self: end;
   list-style: none;
 }
@@ -625,6 +623,10 @@ p.note {
   font-size: .9em;
   font-style: italic;
   padding: 1rem 0.5rem;
+}
+
+p.hidden {
+  visibility: hidden;
 }
 
 h1 {
