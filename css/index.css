@@ -1239,14 +1239,6 @@ video {
 /* Variable Fonts */
 @font-face {
   font-family: 'PublicSans-Black';
-  src: url('/fonts/PublicSans-Black.ttf') format('ttf');
-  font-weight: 1 999;
-  font-stretch: 85% 100%;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PublicSans-Black';
   src: url('/fonts/PublicSans-Black.woff2') format('woff2');
   font-weight: 1 999;
   font-stretch: 85% 100%;
@@ -1256,14 +1248,6 @@ video {
 @font-face {
   font-family: 'PublicSans-Black';
   src: url('/fonts/PublicSans-Black.woff2') format('woff2-variations');
-  font-weight: 1 999;
-  font-stretch: 85% 100%;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lora-VF';
-  src: url('/fonts/Lora-VF.ttf') format('ttf');
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
