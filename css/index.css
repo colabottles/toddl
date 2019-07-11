@@ -575,7 +575,7 @@ article.style-guide {
 .article__title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: 3.4em "PublicSans-Black";
+  font-size: 3.4em;
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
@@ -604,7 +604,7 @@ article.style-guide {
 
 /* TYPOGRAPHY */
 p {
-  font: 1.2em "Lora-VF";
+  font-size: 1.2em;
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
@@ -1284,11 +1284,15 @@ video {
 
 */
 
-/* FONT SUPPORTS 
+/* FONT SUPPORTS */
 @supports (font-variation-settings: normal) {
   .article__title {
-    font-family: 'AbrilDisplay-Regular', serif;
+    font-family: 'PublicSans-Black', 'Open-Sans', Arial ,sans-serif;
     font-variation-settings: "wght"900;
+  }
+  p {
+    font-family: 'Lora-VF', Georgia, 'Times New Roman', Times, serif;
+    font-variation-settings: "wght"500;
   }
 }
 
