@@ -206,7 +206,8 @@ span.pre:hover {
 .nav-wrapper {
   width: 100%;
   position: -webkit-sticky;
-  /* Safari */ position: sticky;
+  /* Safari */
+  position: sticky;
   top: 0;
   background-color: #ffffff;
 }
@@ -579,18 +580,18 @@ article.style-guide {
   /* font-family: 'Abril Fatface', Georgia, Times, serif;
   font-size: 3.4em;
   font-weight: 400; */
-  font-weight: 1 999;
-  line-height: 1.2;
-  margin: 1rem 0;
-  text-transform: none;
-  text-shadow: 0 0;
-  font: 3.4em "Lora-VF";
+  font: 3.4em "BandeinsSansVariableGX";
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
-  font-variation-settings: "wght"900; */
+  font-variation-settings: "wght"900;
+  font-weight: 1 999;
+  line-height: 1.2;
+  margin: 1rem 0;
+  text-transform: none;
+  text-shadow: 0 0;
 }
 
 .article__body {
