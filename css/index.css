@@ -615,14 +615,14 @@ p {
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght"400;
   font-weight: 1 499;
   line-height: 1.417;
   margin: 1rem 0;
   text-transform: none;
   text-shadow: 0 0;
-  font-family: "Adelle", Georgia, serif;
-  /* font-size: 1.2em;
+  /* font-family: "Adelle", Georgia, serif;
+  font-size: 1.2em;
   font-weight: 400;
   line-height: 1.417; */
   padding: 0.25rem 0rem;
@@ -1242,22 +1242,40 @@ video {
   }
 }
 
-/* Variable Fonts 
+/* Variable Fonts */
 @font-face {
-  font-family: 'AbrilDisplay-Regular';
-  src: url('/fonts/AbrilDisplay-Regular.woff2') format('woff2');
+  font-family: 'BandeinsSansVariableGX';
+  src: url('/fonts/BandeinsSansVariableGX.ttf') format('ttf');
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'AbrilDisplay-Regular';
-  src: '/fonts/AbrilDisplay-Regular.woff2'format('woff2-variations');
+  font-family: 'BandeinsSansVariableGX';
+  src: url('/fonts/Lora-VF.woff2') format('woff2');
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
-} */
+}
+
+@font-face {
+  font-family: 'Lora-VF';
+  src: url('/fonts/Lora-VF.woff2') format('woff2');
+  font-weight: 1 999;
+  font-stretch: 85% 100%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lora-VF';
+  src: url('/fonts/Lora-VF.woff2') format('woff2-variations');
+  font-weight: 1 999;
+  font-stretch: 85% 100%;
+  font-style: normal;
+}
+
+*/
 
 /* FONT SUPPORTS 
 @supports (font-variation-settings: normal) {
@@ -1265,7 +1283,7 @@ video {
     font-family: 'AbrilDisplay-Regular', serif;
     font-variation-settings: "wght"900;
   }
-} */
+}
 
 /* Media Queries */
 @media (max-width: 600px) {
