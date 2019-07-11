@@ -1300,7 +1300,11 @@ video {
   }
 }
 
-/* Media Queries */
+/***** 
+ * 
+ * Media Queries 
+ *
+ *****/
 @media (max-width: 600px) {
   .promoted-articles__content {
     position: absolute;
@@ -1437,9 +1441,9 @@ video {
     font-size: 1.2em;
   }
 
-  h1.article__title {
+  /* h1.article__title {
     font-size: 2.8em;
-  }
+  } */
 
   .article__body p {
     font-size: 1.5em;
@@ -1454,9 +1458,9 @@ video {
     padding: 2rem 1rem;
   }
 
-  .article__title {
+  /* .article__title {
     font-size: 2.5em;
-  }
+  } */
 
   .article__body {
     padding: 0 2.5rem 3rem;
@@ -1508,9 +1512,9 @@ video {
     padding: 1rem;
   }
 
-  h1.article__title {
+  /* h1.article__title {
     font-size: 2.5em;
-  }
+  } */
 
   .article__body h2 {
     font-size: 1.3em;
