@@ -1300,11 +1300,7 @@ video {
   }
 }
 
-/***** 
- * 
- * Media Queries 
- *
- *****/
+/***** Media Queries *****/
 @media (max-width: 600px) {
   .promoted-articles__content {
     position: absolute;
@@ -1459,7 +1455,7 @@ video {
   }
 
   .article__title {
-    /* font-size: 2.5em; */
+    font-size: 2.5em;
     font-family: "PublicSans-Black";
   }
 
@@ -1514,7 +1510,7 @@ video {
   }
 
   h1.article__title {
-    /* font-size: 2.5em; */
+    font-size: 2.5em;
   }
 
   .article__body h2 {
