@@ -10,11 +10,11 @@ layout: layouts/post.njk
 
 Accessibility: _adj. that can be used, entered, reached, etc._
 
-Some of us all too often forget how easy it is for us able-bodies persons to access the web. We don't need screen readers, assistive software, optical character recognition (OCR), adaptive or on-screen keyboards, magnification software. I could go on and on but you probably get the point.
+Some of us all too often forget how easy it is for us able-bodied persons to access the web. We don't need screen readers, assistive software, optical character recognition (OCR), adaptive or on-screen keyboards, magnification software. I could go on and on but you probably get the point.
 
 We able-bodied people are fortunate. As of 2010, 56.7 million people in the United States had a disability of some kind and around 38.3 million people had a severe disability. That's 95 million people out of (as of 2010) around 309 million people. That's over a quarter of the entire populace, 30.7% to be precise.
 
-### What does that have to do with me
+### What does that have to do with me&quest;
 
 A: Everything.
 
@@ -34,7 +34,7 @@ So to not make a site accessible, is denying someone of their basic human right.
 
 Accessibility is part of the fabric now, it is part of an inclusive experience for those that deserve it. The keyword there is _deserve_. Don't get me wrong, the web is for everyone regardless of age, sex, religion, preferences, gender, color, or creed. I find that some folks just blow off disabled persons. Even if the disability is just a temporary one. Broken arm. Eye surgery. Child on your lap. Yes, those are temporary, situational or conditional disabilities.
 
-### What Do I Need To Do
+### What Do I Need To Do&quest;
 
 **The use of descriptive alt tags.** 
 
