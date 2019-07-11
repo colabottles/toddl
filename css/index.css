@@ -576,15 +576,15 @@ article.style-guide {
 .article__title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Abril Fatface', Georgia, Times, serif;
+  /* font-family: 'Abril Fatface', Georgia, Times, serif;
   font-size: 3.4em;
-  font-weight: 400;
-  /* font-weight: 1 999; */
+  font-weight: 400; */
+  font-weight: 1 999;
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
-  /* text-shadow: 0 0;
-  font: 3.4em "AbrilDisplay-Regular";
+  text-shadow: 0 0;
+  font: 3.4em "Lora-VF";
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
