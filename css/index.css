@@ -573,7 +573,7 @@ article.style-guide {
 }
 
 .article__title {
-  font-size: 3.4em;
+  font: 3.4em "PublicSans-Black";
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
