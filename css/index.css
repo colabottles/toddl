@@ -192,11 +192,9 @@ a:hover {
 code {
   color: #639;
   font-family: 'Overpass Mono', monospace;
-  font-size: .75em;
+  font-size: .85em;
   padding: 0.5rem;
-  position: relative;
   text-transform: none;
-  top: -0.25rem;
 }
 
 span.pre:hover {
