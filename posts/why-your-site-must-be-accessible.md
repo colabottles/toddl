@@ -74,7 +74,7 @@ These just aren't it, there is a lot more you can do to make your site accessibl
 
 There is a lot you can do. Do it. Educate yourself, read up on articles, attend conferences, workshops, talk to the speakers there. Soak in all you can about accessibility. You will gain a vast amount of information and in my case, education about accessibility.
 
-If you are at a job where it is an uphill battle to get your company to recognize and practice accessibility, fight for it. Diplomatically. Push hard, but not too hard. Know your limits. I'll share from my experience.App
+If you are at a job where it is an uphill battle to get your company to recognize and practice accessibility, fight for it. Diplomatically. Push hard, but not too hard. Know your limits. I'll share from my experience.
 
 "We don't need to have accessibility as a priority." said my boss. All I had to say is, "Yes we do." I presented one story about why accessibility is important to someone who is focused on company. "Did you hear about Target being sued for their website not being accessible according to the ADA?"
 
