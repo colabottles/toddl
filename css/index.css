@@ -578,7 +578,7 @@ article.style-guide {
   /* font-family: 'Abril Fatface', Georgia, Times, serif;
   font-size: 3.4em;
   font-weight: 400; */
-  font: 3.4em "BandeinsSansVariableGX";
+  font: 3.4em "PublicSans-Black";
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
@@ -1242,16 +1242,32 @@ video {
 
 /* Variable Fonts */
 @font-face {
-  font-family: 'BandeinsSansVariableGX';
-  src: url('/fonts/BandeinsSansVariableGX.ttf') format('ttf');
+  font-family: 'PublicSans-Black';
+  src: url('/fonts/PublicSans-Black.ttf') format('ttf');
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'BandeinsSansVariableGX';
-  src: url('/fonts/Lora-VF.woff2') format('woff2');
+  font-family: 'PublicSans-Black';
+  src: url('/fonts/PublicSans-Black.woff2') format('woff2');
+  font-weight: 1 999;
+  font-stretch: 85% 100%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PublicSans-Black';
+  src: url('/fonts/PublicSans-Black.woff2') format('woff2-variations');
+  font-weight: 1 999;
+  font-stretch: 85% 100%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lora-VF';
+  src: url('/fonts/Lora-VF.ttf') format('ttf');
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
