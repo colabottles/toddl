@@ -176,6 +176,7 @@ q:before {
 /* Rest of the styling */
 body {
   background-color: #ffffff;
+  max-width: 100%;
 }
 
 a {
