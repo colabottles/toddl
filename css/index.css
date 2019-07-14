@@ -578,7 +578,7 @@ article.style-guide {
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
-  font-family: "PublicSans-Black";
+  font-family: "Public Sans Black";
   font-size: 3.4em;
   font-variation-settings: 'wght'900, 'wdth'75;
   transition: font-variation-settings .3s ease-out, font-size .3s ease-out;
@@ -1253,16 +1253,6 @@ video {
   font-weight: 1 999;
   src: local('Public Sans Black'), url('https://sixtyten.netlify.com/fonts/PublicSans-Black.tff') format('truetype');
 }
-
-/* FONT SUPPORTS 
-@supports (font-variation-settings: normal) {
-  .article__title {
-    font-family: "PublicSans-Black", serif;
-    font-variation-settings: "wght"900;
-  }
-}
-*/
-
 
 /* Media Queries */
 
