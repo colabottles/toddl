@@ -1222,7 +1222,7 @@ video {
   }
 }
 
-/* Variable Fonts */
+/* Variable Fonts 
 @font-face {
   font-family: 'BandeinsSansVariableGX';
   src: url('/fonts/BandeinsSansVariableGX.ttf') format('ttf');
@@ -1255,18 +1255,17 @@ video {
   font-style: normal;
 }
 
-*/
-
-/* FONT SUPPORTS 
+FONT SUPPORTS 
 @supports (font-variation-settings: normal) {
   .article__title {
     font-family: 'AbrilDisplay-Regular', serif;
     font-variation-settings: "wght"900;
   }
-}
+} */
 
 /* Media Queries */
-@media only screen and (max-width: 600px) {
+
+@media all and (max-width: 600px) {
   .promoted-articles__content {
     position: absolute;
     right: 2rem;
