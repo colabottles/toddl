@@ -578,7 +578,7 @@ article.style-guide {
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
-  font-family: "Public Sans Black";
+  font-family: 'Public Sans Black';
   font-size: 3.4em;
   font-variation-settings: 'wght'900, 'wdth'75;
   transition: font-variation-settings .3s ease-out, font-size .3s ease-out;
@@ -1270,10 +1270,6 @@ video {
     right: 2rem;
     bottom: 0.5rem;
     left: 2rem;
-  }
-
-  .article__title {
-    font-family: 'Public Sans Black';
   }
 }
 
