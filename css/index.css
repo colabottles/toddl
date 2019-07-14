@@ -578,9 +578,9 @@ article.style-guide {
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
-  font-family: "Avenir Next Variable";
+  font-family: "PublicSans-Black";
   font-size: 3.4em;
-  font-variation-settings: 'wght'450, 'ital'0;
+  font-variation-settings: 'wght'900, 'ital'0;
 }
 
 .article__body {
@@ -1223,53 +1223,28 @@ video {
 
 @font-face {
   font-family: "PublicSans-Black";
-  src: url("https://cdn.rawgit.com/Monotype/Monotype_prototype_variable_fonts/f8067a0e/AvenirNext/AvenirNext_Variable.ttf") format("truetype");
-  font-weight: 1 999;
-  font-stretch: 85% 100%;
-  font-style: normal;
-}
-
-/* Variable Fonts 
-@font-face {
-  font-family: 'BandeinsSansVariableGX';
-  src: url('/fonts/BandeinsSansVariableGX.ttf') format('ttf');
+  src: url("/fonts/PublicSans-Black.woff2") format("woff2");
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'BandeinsSansVariableGX';
-  src: url('/fonts/Lora-VF.woff2') format('woff2');
+  font-family: "PublicSans-Black";
+  src: url("/fonts/PublicSans-Black.ttf") format("truetype");
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Lora-VF';
-  src: url('/fonts/Lora-VF.woff2') format('woff2');
-  font-weight: 1 999;
-  font-stretch: 85% 100%;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lora-VF';
-  src: url('/fonts/Lora-VF.woff2') format('woff2-variations');
-  font-weight: 1 999;
-  font-stretch: 85% 100%;
-  font-style: normal;
-}
-
-FONT SUPPORTS 
-@supports (font-variation-settings: normal) {
+FONT SUPPORTS @supports (font-variation-settings: normal) {
   .article__title {
-    font-family: 'AbrilDisplay-Regular', serif;
+    font-family: 'PublicSans-Black', serif;
     font-variation-settings: "wght"900;
   }
-} */
+}
 
+*/
 /* Media Queries */
 
 @media all and (max-width: 600px) {
