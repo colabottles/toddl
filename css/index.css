@@ -575,12 +575,12 @@ article.style-guide {
 .article__title {
   /* font-family: 'Abril Fatface', Georgia, Times, serif;
   font-weight: 400; */
-  line-height: 1.2;
-  margin: 1rem 0;
-  text-transform: none;
   font-family: "PublicSans-Black";
   font-size: 3.4em;
   font-variation-settings: 'wght'450, 'ital'0;
+  line-height: 1.2;
+  margin: 1rem 0;
+  text-transform: none;
 }
 
 .article__body {
@@ -1223,7 +1223,7 @@ video {
 
 @font-face {
   font-family: "PublicSans-Black";
-  src: url("/fonts/PublicSans-Black.woff2") format("woff2");
+  src: url("fonts/PublicSans-Black.woff2") format("woff2");
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
@@ -1239,24 +1239,8 @@ video {
 }
 
 @font-face {
-  font-family: 'BandeinsSansVariableGX';
-  src: url('/fonts/Lora-VF.woff2') format('woff2');
-  font-weight: 1 999;
-  font-stretch: 85% 100%;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Lora-VF';
   src: url('/fonts/Lora-VF.woff2') format('woff2');
-  font-weight: 1 999;
-  font-stretch: 85% 100%;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lora-VF';
-  src: url('/fonts/Lora-VF.woff2') format('woff2-variations');
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
@@ -1265,7 +1249,7 @@ video {
 FONT SUPPORTS 
 @supports (font-variation-settings: normal) {
   .article__title {
-    font-family: 'AbrilDisplay-Regular', serif;
+    font-family: 'PublciSans-Black', serif;
     font-variation-settings: "wght"900;
   }
 } */
