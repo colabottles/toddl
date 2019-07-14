@@ -575,13 +575,16 @@ article.style-guide {
 .article__title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Abril Fatface', Georgia, Times, serif;
+  /* font-family: 'Abril Fatface', Georgia, Times, serif;
   font-size: 3.4em;
-  font-weight: 400;
+  font-weight: 400; */
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
-  text-shadow: 0 0;
+  font-family: "Avenir Next Variable";
+  color: rgb(0, 0, 0);
+  font-size: 148px;
+  font-variation-settings: 'wght'631.164, 'wdth'88.6799;
 }
 
 .article__body {
@@ -1220,6 +1223,11 @@ video {
   100% {
     background-position: 0% 50%;
   }
+}
+
+@font-face {
+  font-family: "Avenir Next Variable";
+  src: url("/fonts/AvenirNext_Variable.ttf") format("truetype");
 }
 
 /* Variable Fonts 
