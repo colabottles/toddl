@@ -1223,7 +1223,7 @@ video {
 
 @font-face {
   font-family: "PublicSans-Black";
-  src: url("/fonts/PublicSans-Black.woff2") format("woff2");
+  src: url("https://sixtyten.netlify.com/fonts/PublicSans-Black.woff2") format("woff2");
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
@@ -1231,7 +1231,7 @@ video {
 
 @font-face {
   font-family: "PublicSans-Black";
-  src: url("/fonts/PublicSans-Black.ttf") format("truetype");
+  src: url("https://sixtyten.netlify.com/fonts/PublicSans-Black.ttf") format("truetype");
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
@@ -1239,7 +1239,7 @@ video {
 
 FONT SUPPORTS @supports (font-variation-settings: normal) {
   .article__title {
-    font-family: 'PublicSans-Black', serif;
+    font-family: "PublicSans-Black", serif;
     font-variation-settings: "wght"900;
   }
 }
