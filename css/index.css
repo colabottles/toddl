@@ -576,14 +576,13 @@ article.style-guide {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* font-family: 'Abril Fatface', Georgia, Times, serif;
-  font-size: 3.4em;
   font-weight: 400; */
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
   font-family: "Avenir Next Variable";
+  font-size: 3.4em;
   color: rgb(0, 0, 0);
-  font-size: 148px;
   font-variation-settings: 'wght'631.164, 'wdth'88.6799;
 }
 
@@ -1228,6 +1227,9 @@ video {
 @font-face {
   font-family: "Avenir Next Variable";
   src: url("/fonts/AvenirNext_Variable.ttf") format("truetype");
+  font-weight: 1 999;
+  font-stretch: 85% 100%;
+  font-style: normal;
 }
 
 /* Variable Fonts 
