@@ -1243,7 +1243,7 @@ video {
   font-style: normal;
   font-stretch: 85% 100%;
   font-weight: 1 999;
-  src: local('Public Sans Black'), url('https://sixtyten.netlify.com/fonts/PublicSans-Black.woff2') format('woff2');
+  src: local('PublicSans-Black'), url('https://sixtyten.netlify.com/fonts/PublicSans-Black.woff2') format('woff2');
 }
 
 @font-face {
@@ -1251,7 +1251,15 @@ video {
   font-style: normal;
   font-stretch: 85% 100%;
   font-weight: 1 999;
-  src: local('Public Sans Black'), url('https://sixtyten.netlify.com/fonts/PublicSans-Black.tff') format('truetype');
+  src: local('PublicSans-Black'), url('https://sixtyten.netlify.com/fonts/PublicSans-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Public Sans Black';
+  font-style: normal;
+  font-stretch: 85% 100%;
+  font-weight: 1 999;
+  src: local('PublicSans-Black'), url('https://sixtyten.netlify.com/fonts/PublicSans-Black.tff') format('truetype');
 }
 
 /* Media Queries */
