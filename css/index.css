@@ -573,14 +573,12 @@ article.style-guide {
 }
 
 .article__title {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   /* font-family: 'Abril Fatface', Georgia, Times, serif;
   font-weight: 400; */
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
-  font-family: "Avenir Next Variable";
+  font-family: "PublicSans-Black";
   font-size: 3.4em;
   font-variation-settings: 'wght'450, 'ital'0;
 }
@@ -1224,8 +1222,8 @@ video {
 }
 
 @font-face {
-  font-family: "Avenir Next Variable";
-  src: url("/fonts/AvenirNext_Variable.ttf") format("truetype");
+  font-family: "PublicSans-Black";
+  src: url("/fonts/PublicSans-Black.woff2") format("woff2");
   font-weight: 1 999;
   font-stretch: 85% 100%;
   font-style: normal;
