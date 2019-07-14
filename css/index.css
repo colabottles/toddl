@@ -1271,6 +1271,10 @@ video {
     bottom: 0.5rem;
     left: 2rem;
   }
+
+  .article__title {
+    font-family: "Public Sans Black";
+  }
 }
 
 @media only screen and (max-width: 720px) {
