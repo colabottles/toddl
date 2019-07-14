@@ -582,8 +582,7 @@ article.style-guide {
   text-transform: none;
   font-family: "Avenir Next Variable";
   font-size: 3.4em;
-  color: rgb(0, 0, 0);
-  font-variation-settings: 'wght'631.164, 'wdth'88.6799;
+  font-variation-settings: 'wght'450, 'ital'0;
 }
 
 .article__body {
