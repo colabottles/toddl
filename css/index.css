@@ -1259,7 +1259,7 @@ video {
   font-style: normal;
   font-stretch: 85% 100%;
   font-weight: 1 999;
-  src: url('https://sixtyten.netlify.com/fonts/PublicSans-Black.tff') format('truetype');
+  src: url('https://sixtyten.netlify.com/fonts/PublicSans-Black.ttf') format('truetype');
 }
 
 /* Media Queries */
