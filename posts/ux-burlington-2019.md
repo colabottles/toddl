@@ -22,11 +22,11 @@ Three main points of the talk were:
 2. Decision Making Heuristics
 3. Tactical Design Elements
 
-We all have an attention span that is less than that of a goldfish. Designers need to care about their users' attention though. Victor touched upon the questions we have to be asking not only our team and stakeholders, but for our users as well.App
+We all have an attention span that is less than that of a goldfish. Designers need to care about their users' attention though. Victor touched upon the questions we have to be asking not only our team and stakeholders, but for our users as well.
 
 <blockquote cite="Victor Yocco">Designing to gain people's attention comes with great responsibility. Why do you want that, what are you doing that's contributing to making their lives better if they're going to give you their attention?</blockquote>
 
-A lot of tech giants need to start asking themselves that very question.App
+A lot of tech giants need to start asking themselves that very question.
 
 Some of the many points touched on in the fantastic morning keynote were;
 
