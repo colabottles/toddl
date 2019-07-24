@@ -543,6 +543,7 @@ article {
   background-color: #ffffff;
   color: #333333;
   display: grid;
+  font-family: "Adelle", Georgia, "Times New Roman", serif;
   grid-template-columns: 1fr minmax(auto, 73ch) 1fr;
   grid-template-rows: 100vh auto;
   font-size: 1.2em;
@@ -584,7 +585,7 @@ article.style-guide {
 
 .article__meta,
 span.article__author {
-  font-family: "Muli", helvetica, sans-serif;
+  font-family: "Muli", Arial, Helvetica, sans-serif;
 }
 
 .article__body {
