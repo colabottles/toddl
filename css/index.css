@@ -227,7 +227,6 @@ span.pre:hover {
   grid-template-columns: auto 3fr;
   height: 50px;
   margin-right: 10px;
-  overflow: hidden;
 }
 
 .navbar img {
@@ -240,7 +239,7 @@ span.pre:hover {
 .navbar ul {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(5, auto);
   justify-self: end;
   list-style: none;
 }
