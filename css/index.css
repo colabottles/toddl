@@ -1408,6 +1408,7 @@ video {
 /* SMALL SCREENS */
 @media (min-width:280px) and (max-width: 480px) {
   .article__featured-image {
+    background-size: cover;
     height: auto;
     width: 100%;
   }
