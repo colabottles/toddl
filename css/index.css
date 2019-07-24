@@ -544,10 +544,10 @@ article {
   color: #333333;
   display: grid;
   font-family: "Adelle", Georgia, "Times New Roman", serif;
-  grid-template-columns: 1fr minmax(auto, 73ch) 1fr;
-  grid-template-rows: 100vh auto;
   font-size: 1.2em;
   font-weight: 300;
+  grid-template-columns: 1fr minmax(auto, 73ch) 1fr;
+  grid-template-rows: 100vh auto;
 }
 
 article.style-guide {
@@ -1354,11 +1354,6 @@ video {
 
   .article__body p {
     font-size: 1.5em;
-  }
-
-  .article__featured-image {
-    height: auto;
-    width: 100%;
   }
 
   .article__header {
