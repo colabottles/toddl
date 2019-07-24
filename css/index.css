@@ -105,7 +105,7 @@ header,
 nav,
 section,
 main {
-  display: grid;
+  display: block;
 }
 
 * {
@@ -204,13 +204,13 @@ span.pre:hover {
 .nav-wrapper {
   width: 100%;
   position: -webkit-sticky;
-  /* Safari */
+  /*** Safari ***/
   position: sticky;
   top: 0;
   background-color: #ffffff;
 }
 
-/*** BASIC SETUP ***/
+/*** basic setup ***/
 .grad-bar {
   width: 100%;
   height: 10px;
@@ -221,10 +221,9 @@ span.pre:hover {
   animation: gradbar 15s ease infinite;
 }
 
-/*** NAVIGATION ***/
+/*** navigation ***/
 .navbar {
   background: #ffffff;
-  display: grid;
   grid-template-columns: auto 3fr;
   height: 50px;
   margin-right: 10px;
@@ -241,7 +240,7 @@ span.pre:hover {
 .navbar ul {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(5, auto);
   justify-self: end;
   list-style: none;
 }
@@ -1319,13 +1318,6 @@ video {
   }
 }
 
-@media (min-width: 780px) {
-  .article-list-subscribe {
-    grid-column: -2;
-    grid-row: 3;
-  }
-}
-
 @media (max-width: 900px) {
   .article__body p {
     font-size: 1.3em;
@@ -1343,12 +1335,6 @@ video {
     height: 400px;
     margin-bottom: 8px;
     width: 100%;
-  }
-}
-
-@media (min-width: 1140px) {
-  .article-list-subscribe {
-    grid-row: 2;
   }
 }
 
