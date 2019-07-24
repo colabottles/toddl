@@ -223,6 +223,7 @@ span.pre:hover {
 
 /*** navigation ***/
 .navbar {
+  display: grid;
   background: #ffffff;
   grid-template-columns: auto 3fr;
   height: 50px;
