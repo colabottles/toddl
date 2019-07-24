@@ -53,7 +53,7 @@ I’m basically going to leave this at, why wasn’t I using SVG more often on t
 
 ### Day Two. The Code Block
 
-VVal Head spoke about &ldquo;Animation in Design Systems and Process&rdquo;. Communication, storyboards, and sketches. Motion comps, interactive prototypes. Tools to use when you’re creating things of the animated nature!
+Val Head spoke about &ldquo;Animation in Design Systems and Process&rdquo;. Communication, storyboards, and sketches. Motion comps, interactive prototypes. Tools to use when you’re creating things of the animated nature!
 
 Defining your brand. Brand & Experience Pillars, Voice & Tone, building animation guidelines. Documenting your decisions, durations, easing values and a host of other tidbits in the animation design and documentation process that really gave me ideas for the redesign of the company site I work for. Thanks for the time to chat with you Val!
 

@@ -545,7 +545,6 @@ article {
   display: grid;
   grid-template-columns: 1fr minmax(auto, 73ch) 1fr;
   grid-template-rows: 100vh auto;
-  font-family: "Muli", helvetica, sans-serif;
   font-size: 1.2em;
   font-weight: 300;
 }
@@ -581,6 +580,11 @@ article.style-guide {
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
+}
+
+.article__meta,
+span.article__author {
+  font-family: "Muli", helvetica, sans-serif;
 }
 
 .article__body {
@@ -829,24 +833,8 @@ a.github:hover {
   color: #666666;
 }
 
-a.gitlab:hover {
-  color: #fc6d26;
-}
-
-a.lastfm:hover {
-  color: #d51007;
-}
-
-a.spotify:hover {
-  color: #1db954;
-}
-
 a.twitter:hover {
   color: #1da1f2;
-}
-
-a.fcc:hover {
-  color: #006400;
 }
 
 a.rss:hover {
