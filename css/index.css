@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:600,800|Open+Sans|Abril+Fatface|Overpass+Mono|Muli:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:600,800|Open+Sans|Abril+Fatface');
+@import url("https://fonts.googleapis.com/css?family=Overpass+Mono|Muli:300,300i,400,400i,700,700i");
 
 /*** CSS Reset ***/
 html,
@@ -213,8 +214,7 @@ span.pre:hover {
 .grad-bar {
   width: 100%;
   height: 10px;
-  background: linear-gradient(-45deg, #f40009, #ff7800, #ffd900,
-    #1db954, #004883, #4b0082, #639, #8f5e99);
+  background: linear-gradient(-45deg, #f40009, #ff7800, #ffd900, #1db954, #004883, #4b0082, #639, #8f5e99);
   background-size: 400% 400%;
   -webkit-animation: gradbar 15s ease infinite;
   -moz-animation: gradbar 15s ease infinite;
@@ -227,6 +227,7 @@ span.pre:hover {
   grid-template-columns: auto 3fr;
   height: 50px;
   margin-right: 10px;
+  overflow: hidden;
 }
 
 .navbar img {
@@ -239,7 +240,7 @@ span.pre:hover {
 .navbar ul {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   justify-self: end;
   list-style: none;
 }
@@ -399,13 +400,10 @@ label {
 .promoted-articles {
   border: 0;
   display: grid;
-  gap: 8px;
+  grid-gap: 8px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 240px);
-  grid-template-areas: "article-6 article-5 article-3 article-3"
-    "article-6 article-5 article-3 article-3"
-    "article-1 article-1 article-2 article-2"
-    "article-1 article-1 article-4 article-4";
+  grid-template-areas: "article-6 article-5 article-3 article-3""article-6 article-5 article-3 article-3""article-1 article-1 article-2 article-2""article-1 article-1 article-4 article-4";
   padding: 8px;
 }
 
@@ -482,7 +480,7 @@ label {
 
 .article-list {
   display: grid;
-  gap: 3em;
+  grid-gap: 3em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   list-style-type: none;
   margin: 0 auto;
@@ -543,10 +541,11 @@ article {
   background-color: #ffffff;
   color: #333333;
   display: grid;
-  font-size: 1.2em;
-  font-weight: 300;
   grid-template-columns: 1fr minmax(auto, 73ch) 1fr;
   grid-template-rows: 100vh auto;
+  font-family: "Muli", helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 article.style-guide {
@@ -568,8 +567,9 @@ article.style-guide {
 .article__header {
   align-self: end;
   background-color: #ffffff;
-  grid-row: 1;
-  grid-column: 2;
+  grid-row: 1/2;
+  grid-column: 2/4;
+  padding: 2.5rem 2.5rem;
 }
 
 .article__title {
@@ -583,14 +583,14 @@ article.style-guide {
 
 .article__body {
   display: grid;
-  grid-row: 2;
-  grid-column: 2;
+  grid-row: 2/3;
+  grid-column: 2/3;
   padding: 0 2.5rem 3rem;
 }
 
 .style_guide__body {
-  grid-row: 1;
-  grid-column: 2;
+  grid-row: 1/3;
+  grid-column: 2/3;
   padding: 0 2.5rem 3rem;
 }
 
@@ -797,8 +797,8 @@ footer {
   flex-direction: row;
   justify-content: center;
   line-height: 0;
-  min-width: auto;
   padding: 1em 0em;
+  min-width: auto;
 }
 
 footer a:hover {
@@ -827,8 +827,24 @@ a.github:hover {
   color: #666666;
 }
 
+a.gitlab:hover {
+  color: #fc6d26;
+}
+
+a.lastfm:hover {
+  color: #d51007;
+}
+
+a.spotify:hover {
+  color: #1db954;
+}
+
 a.twitter:hover {
   color: #1da1f2;
+}
+
+a.fcc:hover {
+  color: #006400;
 }
 
 a.rss:hover {
@@ -883,7 +899,7 @@ a.a11y:hover {
 .contact form {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-gap: 1rem;
 }
 
 .contact form label {
@@ -1008,7 +1024,7 @@ a.a11y:hover {
 /* STYLE GUIDE STUFF! */
 .style-guide__wrapper {
   display: grid;
-  gap: 10px;
+  grid-gap: 10px;
   grid-template-columns: 1fr;
 }
 
@@ -1354,9 +1370,9 @@ video {
     width: 100%;
   }
 
-  /* .article__header {
+  .article__header {
     padding: 2rem 1rem;
-  } */
+  }
 
   .article__title {
     font-size: 2.5em;
@@ -1413,7 +1429,7 @@ video {
   }
 
   h1.article__title {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .article__body h2 {
