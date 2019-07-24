@@ -1,13 +1,13 @@
 {
-  "title": "sixtyten",
-  "url": "https://sixtyten.netlify.com/",
-  "description": "My personal blog.",
+  "title": "Todd Libby",
+  "url": "https://toddl.dev/",
+  "description": "A web development, design and technology blog.",
   "feed": {
-    "subtitle": "My personal blog.",
+    "subtitle": "A web development, design and technology blog.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "url": "https://sixtyten.netlify.com/feed/feed.xml",
-    "id": "https://sixtyten.netlify.com/"
+    "url": "https://toddl.dev/feed/feed.xml",
+    "id": "https://toddl.dev/"
   },
   "author": {
     "name": "Todd Libby",
