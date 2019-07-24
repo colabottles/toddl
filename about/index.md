@@ -1,6 +1,6 @@
 ---
 layout: layouts/about.njk
-title: About sixtyten
+title: About Me
 date: 2019-06-05
 tags:
   - nav
@@ -9,11 +9,9 @@ templateClass: tmpl-post
 ---
 ## Who are you&quest;
 
-I'm Todd. I'm a web designer. I've been around the web for about twenty years or so. I love creating and making things, I love the web and learning. I'm a huge supporter of accessibility and UX. You can use the contact form to contact me or find me on Twitter. I don't do much out of the web scene. I love to travel, write and read, go to web conferences, meet new people and talk web. Lobster rolls from Maine are the best. I'm also a big proponent of the front end web developer and the work they put into the web. That's another story.
+I'm Todd. I'm a Senior Front End Developer. I've been around the web for about twenty years or so. I love creating and making things, I love the web and learning. I'm a huge supporter of accessibility and UX. You can use the contact form to contact me or find me on Twitter. I don't do much out of the web scene. I love to travel, write and read, go to web conferences, meet new people and talk web. Lobster rolls from Maine are the best. I'm also a big proponent of the front end web developer and the work they put into the web. That's another story.
 
-## What is "sixtyten"&quest;
-
-sixtyten is a personal tech/programming/design blog. The name is a working title&hellip; I'll rename it when I get a domain.
+This is my personal tech/programming/design blog.
 
 ## What was the inspiration behind this site&quest;
 
