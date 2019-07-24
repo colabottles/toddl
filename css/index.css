@@ -98,7 +98,15 @@ a:visited {
 }
 
 /*** Layout & Box-sizing ***/
-
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+  display: grid;
+}
 
 * {
   box-sizing: border-box;
@@ -216,6 +224,7 @@ span.pre:hover {
 /*** NAVIGATION ***/
 .navbar {
   background: #ffffff;
+  display: grid;
   grid-template-columns: auto 3fr;
   height: 50px;
   margin-right: 10px;
