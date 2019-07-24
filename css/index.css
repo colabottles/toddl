@@ -543,7 +543,6 @@ article {
   background-color: #ffffff;
   color: #333333;
   display: grid;
-  font-family: "Adelle", Georgia, "Times New Roman", serif;
   font-size: 1.2em;
   font-weight: 300;
   grid-template-columns: 1fr minmax(auto, 73ch) 1fr;
@@ -571,7 +570,6 @@ article.style-guide {
   background-color: #ffffff;
   grid-row: 1;
   grid-column: 2;
-  padding: 2.5rem 2.5rem;
 }
 
 .article__title {
@@ -581,11 +579,6 @@ article.style-guide {
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
-}
-
-.article__meta,
-span.article__author {
-  font-family: "Muli", Arial, Helvetica, sans-serif;
 }
 
 .article__body {
