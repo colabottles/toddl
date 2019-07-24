@@ -98,15 +98,7 @@ a:visited {
 }
 
 /*** Layout & Box-sizing ***/
-article,
-aside,
-footer,
-header,
-nav,
-section,
-main {
-  display: grid;
-}
+
 
 * {
   box-sizing: border-box;
