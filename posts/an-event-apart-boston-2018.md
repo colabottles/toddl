@@ -37,9 +37,12 @@ Successful design patterns don’t exist in a vacuum. Successful design systems 
 The differences between a successful design system and telling the story of her experience at Vox Media. The best way I saw her talk put&hellip;
 
 <blockquote class="twitter-tweet" data-lang="en">
-  <p lang="en" dir="ltr">.<a href="https://twitter.com/yeseniaa?ref_src=twsrc%5Etfw">@yeseniaa</a> killed it at <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a>. &mdash; zeldman (@zeldman) <a href="https://twitter.com/zeldman/status/1011270559697645568?ref_src=twsrc%5Etfw">June 25, 2018</a>
+  <p lang="en" dir="ltr">.<a href="https://twitter.com/yeseniaa?ref_src=twsrc%5Etfw">@yeseniaa</a> killed it at <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a>.
+  </p>&mdash; zeldman (@zeldman) 
+  <a href="https://twitter.com/zeldman/status/1011270559697645568?ref_src=twsrc%5Etfw">June 25, 2018</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 Yes, she did. what I took away from her talk was to let your user's needs define the building blocks you will need for your design system (if you even need one… more on that shortly). I can carry this to the table when I get back to the office and weigh heavily if we do indeed need a design system or not.
 
