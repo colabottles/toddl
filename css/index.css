@@ -1356,6 +1356,11 @@ video {
     font-size: 1.5em;
   }
 
+  .article__featured-image {
+    height: auto;
+    width: 100%;
+  }
+
   .article__header {
     padding: 2rem 1rem;
   }
@@ -1402,6 +1407,11 @@ video {
 
 /* SMALL SCREENS */
 @media (min-width:280px) and (max-width: 480px) {
+  .article__featured-image {
+    height: auto;
+    width: 100%;
+  }
+
   .contact form button {
     padding: 3.5rem 10.5rem;
   }
