@@ -1361,9 +1361,9 @@ video {
     width: 100%;
   }
 
-  .article__header {
+  /* .article__header {
     padding: 2rem 1rem;
-  }
+  } */
 
   .article__title {
     font-size: 2.5em;
