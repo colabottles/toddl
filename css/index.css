@@ -298,7 +298,7 @@ a.postlist-link {
   font-size: 1.5em;
 }
 
-/*** SEARCH FUNCTION ***/
+/*** search function ***/
 #search-icon {
   font-size: 1.5rem;
   transition: color 0.3s ease-out;
@@ -349,7 +349,7 @@ label {
   margin-right: 0;
 }
 
-/*** MOBILE MENU & ANIMATION ***/
+/*** mobile menu & animation ***/
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
@@ -363,7 +363,7 @@ label {
 .menu-toggle {
   display: none;
   justify-self: end;
-  margin: 13px 25px 0px 0px;
+  margin: 13px 15px 0px 0px;
 }
 
 .menu-toggle:hover {
@@ -388,7 +388,7 @@ label {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/*** MEAT & POTATOES ***/
+/*** meat & potatoes ***/
 .promoted-articles__container {
   margin-right: auto;
   margin-left: auto;
@@ -544,7 +544,6 @@ article {
   display: grid;
   grid-template-columns: 1fr minmax(auto, min-content) 1fr;
   grid-template-rows: 100vh auto;
-  font-family: "Muli", helvetica, sans-serif;
   font-size: 1.2em;
   font-weight: 300;
 }
@@ -595,7 +594,7 @@ article.style-guide {
   padding: 0 2.5rem 3rem;
 }
 
-/*** TYPOGRAPHY ***/
+/*** typography ***/
 p {
   font-family: "Adelle", Georgia, serif;
   font-size: 1.2em;
