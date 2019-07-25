@@ -8,7 +8,9 @@ layout: layouts/post.njk
 ---
 The trip entailed a five-day jaunt up the Maine coast starting in Kittery, Maine at Bob's Clam Hut who has one of the best lobster rolls in southern Maine.
 
-## I've Never Met a Lobster Roll I Didn't Like
+## I've Only Met Two Lobster Rolls I Didn't Like
+
+But they weren't at any place on the coast. They were at places that were inland, which is why I go to very few places inland to get a delicious lobster roll.
 
 [Red's Eats](http://www.redseatsmaine.com/)
 [Maine Lobster Festival](https://www.mainelobsterfestival.com/)
