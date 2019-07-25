@@ -1255,7 +1255,7 @@ video {
     flex-direction: column;
     position: absolute;
     justify-content: start;
-    top: 55px;
+    top: 25px;
     left: 0;
     background-color: #ffffff;
     width: 100%;
@@ -1316,13 +1316,6 @@ video {
 
   .contact form label {
     font-size: 2em;
-  }
-}
-
-@media (min-width: 780px) {
-  .article-list-subscribe {
-    grid-column: -2;
-    grid-row: 3;
   }
 }
 
