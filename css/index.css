@@ -223,18 +223,11 @@ span.pre:hover {
 
 /* NAVIGATION */
 .navbar {
-  background: #ffffff;
-  grid-template-columns: auto 3fr;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
   height: 50px;
-  margin-right: 10px;
   overflow: hidden;
-}
-
-.navbar img {
-  height: 16px;
-  width: auto;
-  justify-self: start;
-  margin-left: 20px;
 }
 
 .navbar ul {
@@ -246,10 +239,8 @@ span.pre:hover {
 }
 
 .navbar ul li.nav-item {
-  display: grid;
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  grid-template-columns: subgrid;
   justify-items: center;
   padding: 0rem 0.05rem;
   text-transform: uppercase;
