@@ -10,7 +10,7 @@ layout: layouts/post.njk
 
 ### Day One
 
-It was terrific. Jeffrey started it off with his talk about slow design. There is too much going on, on websites that distract and stresses users. Designers should help users by slowing down so they can make informed decisions. &ldquo;Readability transcends legibility&rdquo;, &ldquo;Absorption, not conversion.&rdquo; Where you read from, lying down? Sitting in a chair tablet on your knees? At the breakfast table with the tablet proped up a foot away from you?  
+It was terrific. Jeffrey started it off with his talk about slow design. There is too much going on, on websites that distract and stresses users. Designers should help users by slowing down so they can make informed decisions. <span class="italic">&ldquo;Readability transcends legibility&rdquo;</span>, <span class="italic">&ldquo;Absorption, not conversion</span>.&rdquo; Where you read from, lying down? Sitting in a chair tablet on your knees? At the breakfast table with the tablet proped up a foot away from you?  
 
 Minamalism and whitespace (macro and micro) for focus and being less busy, big typography for readability and hierarchy for accessibility were among the many points Jeffrey touched upon in his fantastic talk that kicked off another phenomenal conference.
 
@@ -22,7 +22,7 @@ Val Head followed with making motion inclusive. I always enjoy the animation par
 
 Val spoke about which types of motion can be triggers for people with disabilities. Now I haven't used motion much in the projects I have worked on, but intend to and this talk was just what I needed. I suffer from migraines, so when I am on the computer and must be (whether working at the office or otherwise) some animation can be hard on the eyes, so I had to take that into consideration for persons with more than just a migraine.
 
-Eric Meyer then spoke about CSS generated content. This was one of my cringe moments, but more on that later. I called this block the &ldquo;Technical Triad of Terrific&rdquo; because the next three speakers I follow closely and anything they share or write up on CSS, Grid Layout, and web.
+Eric Meyer then spoke about CSS generated content. This was one of my cringe moments, but more on that later. I called this block the <span class="bolder">&ldquo;Technical Triad of Terrific&rdquo;</span> because the next three speakers I follow closely and anything they share or write up on CSS, Grid Layout, and web.
 
 Eric talked about the possibilities when using the pseudo-elements `::before` and `::after` for styling and minimalising the clutter in your HTML markup. Then how pull quotes are &ldquo;mismanaged&rdquo; and that's when I had my cringe moment. I thought I had borrowed a cool pull quote design in a blockquote from a site then tailored it even better but nay. I say nay.
 
@@ -32,11 +32,11 @@ Rachel Andrew crushed it with her talk on redefining the technical possibilities
 
 I have even purchased Perch for a site that I have (dormant but in development) her work, as well as husband Drew McLellan has always been inspiring. Everyone also got to see an appearance by Pixel the Cat as well!
 
-[Pushing for Subgrid in Chrome](https://bugs.chromium.org/p/chromium/issues/detail?id=762679) (go ahead, sign in and star it!), [many technical aspects that you can see in Rachel's slides](https://noti.st/rachelandrew/aSEj0y/making-things-better-redefining-the-technical-possibilities-of-css#sRqusUa) and many examples [on Rachel's site](https://gridbyexample.com) but the best takeaway I found was Rachel's ending where she stated, &ldquo;More than ever the web needs **diversity of thought.**&rdquo;
+[Pushing for Subgrid in Chrome](https://bugs.chromium.org/p/chromium/issues/detail?id=762679) (go ahead, sign in and star it!), [many technical aspects that you can see in Rachel's slides](https://noti.st/rachelandrew/aSEj0y/making-things-better-redefining-the-technical-possibilities-of-css#sRqusUa) and many examples [on Rachel's site](https://gridbyexample.com) but the best takeaway I found was Rachel's ending where she stated, &ldquo;More than ever the web needs <span class="bolder">diversity of thought</span>.&rdquo;
 
 Jen Simmons wrapped the day up with her talk on designing intrinsic layouts, solving layout designs, and even did a live coding walkthrough. Her work, along with Rachel's in regards to CSS Grid Layout, is the best. I point anyone who asks me where they can learn about Grid to those two wonderful people. Although you can do things the old fashioned way, and I still do from time-to-time, I like the direction that Grid and Flexbox are taking the web.
 
-Jen also mentioned that everything doesn't have to be done in Flexbox or Grid, that &ldquo;good old fashioned stuff is still good.&rdquo; I was fortunate enough to get a few minutes talking to Jen _(Thank you so very much!)_ about a few questions I had and as with all the speakers I spoke to and had questions with, she was so very gracious with her time.
+Jen also mentioned that everything doesn't have to be done in Flexbox or Grid, that &ldquo;good old fashioned stuff is still good.&rdquo; I was fortunate enough to get a few minutes talking to Jen <span class="italic">(Thank you so very much!)</span> about a few questions I had and as with all the speakers I spoke to and had questions with, she was so very gracious with her time.
 
 Overall, as to how it was the last two years, Day One was stellar. I had a great time absorbing all the information, putting it into my logbook for future use and how I may do things at work going forward.
 

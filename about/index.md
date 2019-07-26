@@ -13,7 +13,7 @@ I'm Todd. I'm a Senior Front End Developer, been around the web for about twenty
 
 I'm also a big proponent of the front end web developer and the work they put into the web. That's another story. Front End Developers are programmers/developers no matter what kind of spin anyone tries to put on it.
 
-I currently work for a company as a Web Developer/Lead Support Technician. It's been over three years since I have been there. I am also available for work, relocation, and I am sharpening my skills int eh areas of JavaScript and User Experience.
+I currently work for a company as a Web Developer/Lead Support Technician. It's been over three years since I have been there. I am also available for work, relocation, and I am sharpening my skills in the areas of JavaScript and User Experience.
 
 I love to travel, write and read, go to web conferences, meet new people, and talk web. Lobster rolls from Maine are the best.
 
