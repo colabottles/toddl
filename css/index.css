@@ -509,7 +509,13 @@ article.style-guide {
 }
 
 h2.article__title {
-  font: 3.5em 'BildVariableV2';
+  font: 4em 'BildVariableV2';
+  font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  font-variation-settings: 'wght'900, 'wdth'60;
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
@@ -537,16 +543,16 @@ h2.article__title {
 
 /*** Typography ***/
 p {
-  margin: 1rem 0;
-  text-transform: none;
-  padding: 0.25rem 0rem;
   font: 1.2em "Lora";
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
-  font-variation-settings: "wght"200;
+  font-variation-settings: 'wght'400;
+  margin: 1rem 0;
+  text-transform: none;
+  padding: 0.25rem 0rem;
 }
 
 p.note {
@@ -710,16 +716,8 @@ span.italic {
   font-style: italic;
 }
 
-span.italic {
-  font-variation-settings: 'ital'1;
-}
-
 span.bolder {
-  font-weight: 575;
-}
-
-span.bolder {
-  font-variation-settings: 'wght'575;
+  font-weight: 900;
 }
 
 /*** IMAGE CLIP PATHS ***/
@@ -1180,23 +1178,11 @@ video {
 
 /*** Variable Fonts ***/
 @font-face {
-  src: url('fonts/Tortellini-Regular.eot');
-  /* IE < 9 */
-  src: url('fonts/Tortellini-Regular.eot?#') format("embedded-opentype"),
-    /* IE 9 */
-    url('fonts/Tortellini-Regular.woff2') format("woff2"),
-    url('fonts/Tortellini-Regular.woff') format("woff");
-  font-family: 'Tortellini';
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
   font-family: 'BildVariableV2';
   src: url('/fonts/BildVariableV2-VF.woff2');
   src: url('/fonts/BildVariableV2-VF.woff2') format('woff2-variations');
   font-weight: 1 999;
-  font-stretch: 85% 100%;
+  font-stretch: 10% 100%;
   font-style: normal;
 }
 
@@ -1205,7 +1191,7 @@ video {
   src: url('/fonts/BildVariableV2-VF.woff');
   src: url('/fonts/BildVariableV2-VF.woff') format('woff');
   font-weight: 1 999;
-  font-stretch: 85% 100%;
+  font-stretch: 10% 100%;
   font-style: normal;
 }
 
@@ -1214,7 +1200,7 @@ video {
   src: url('/fonts/BildVariableV2-VF.ttf');
   src: url('/fonts/BildVariableV2-VF.ttf') format('ttf');
   font-weight: 1 999;
-  font-stretch: 85% 100%;
+  font-stretch: 10% 100%;
   font-style: normal;
 }
 
@@ -1223,8 +1209,8 @@ video {
   src: url('/fonts/Lora-Italic-VF.woff2');
   src: url('/fonts/Lora-Italic-VF.woff2') format('woff2-variations');
   font-weight: 1 999;
-  font-stretch: 85% 100%;
-  font-style: italic;
+  font-stretch: 75% 100%;
+  font-style: oblique 0deg 12deg;
 }
 
 @font-face {
@@ -1232,8 +1218,8 @@ video {
   src: url('/fonts/Lora-Italic-VF.ttf');
   src: url('/fonts/Lora-Italic-VF.ttf') format('ttf');
   font-weight: 1 999;
-  font-stretch: 85% 100%;
-  font-style: italic;
+  font-stretch: 75% 100%;
+  font-style: oblique 0deg 12deg;
 }
 
 @font-face {
@@ -1241,7 +1227,7 @@ video {
   src: url('/fonts/Lora-VF.woff2');
   src: url('/fonts/Lora-VF.woff2') format('woff2-variations');
   font-weight: 1 999;
-  font-stretch: 85% 100%;
+  font-stretch: 75% 100%;
   font-style: normal;
 }
 
@@ -1250,7 +1236,7 @@ video {
   src: url('/fonts/Lora-VF.ttf');
   src: url('/fonts/Lora-VF.ttf') format('ttf');
   font-weight: 1 999;
-  font-stretch: 85% 100%;
+  font-stretch: 75% 100%;
   font-style: normal;
 }
 
