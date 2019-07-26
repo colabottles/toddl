@@ -1186,13 +1186,30 @@ video {
 
 /*** Variable Fonts ***/
 @font-face {
-  src: url('/fonts/BildVariableV2-VF.eot'); /* IE < 9 */
-  src: url('/fonts/BildVariableV2-VF.eot?#') format("embedded-opentype"), /* IE 9 */
-       url('/fonts/BildVariableV2-VF.woff2') format("woff2"),
-       url('/fonts/BildVariableV2-VF.woff') format("woff");
+  src: url('/fonts/BildVariableV2-VF.woff2');
+  src: url('/fonts/BildVariableV2-VF.woff2') format('woff2-variations');
   font-family: 'BildVariableV2';
   font-style: normal;
-  font-weight: 900;
+  font-stretch: 85% 100%;
+  font-weight: 1 999;
+}
+
+@font-face {
+  src: url('/fonts/BildVariableV2-VF.woff');
+  src: url('/fonts/BildVariableV2-VF.woff') format('woff');
+  font-family: 'BildVariableV2';
+  font-style: normal;
+  font-stretch: 85% 100%;
+  font-weight: 1 999;
+}
+
+@font-face {
+  src: url('/fonts/BildVariableV2-VF.ttf');
+  src: url('/fonts/BildVariableV2-VF.ttf') format('ttf');
+  font-family: 'BildVariableV2';
+  font-style: normal;
+  font-stretch: 85% 100%;
+  font-weight: 1 999;
 }
 
 @font-face {
