@@ -508,14 +508,8 @@ article.style-guide {
   padding: 2.5rem 2.5rem;
 }
 
-.article__title {
-  font: 3.5em "BildVariableV2";
-	font-feature-settings: "kern" on, "liga" on, "calt" on;
-	-moz-font-feature-settings: "kern" on, "liga" on, "calt" on;
-	-webkit-font-feature-settings: "kern" on, "liga" on, "calt" on;
-	-ms-font-feature-settings: "kern" on, "liga" on, "calt" on;
-	-o-font-feature-settings: "kern" on, "liga" on, "calt" on;
-	font-variation-settings: "wght" 900;
+h2.article__title {
+  font: 3.5em 'BildVariableV2';
   line-height: 1.2;
   margin: 1rem 0;
   text-transform: none;
@@ -547,12 +541,12 @@ p {
   text-transform: none;
   padding: 0.25rem 0rem;
   font: 1.2em "Lora";
-	font-feature-settings: "kern" on, "liga" on, "calt" on;
-	-moz-font-feature-settings: "kern" on, "liga" on, "calt" on;
-	-webkit-font-feature-settings: "kern" on, "liga" on, "calt" on;
-	-ms-font-feature-settings: "kern" on, "liga" on, "calt" on;
-	-o-font-feature-settings: "kern" on, "liga" on, "calt" on;
-	font-variation-settings: "wght" 200;
+  font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
+  font-variation-settings: "wght"200;
 }
 
 p.note {
@@ -717,7 +711,7 @@ span.italic {
 }
 
 span.italic {
-  font-variation-settings: 'ital' 1;
+  font-variation-settings: 'ital'1;
 }
 
 span.bolder {
@@ -725,7 +719,7 @@ span.bolder {
 }
 
 span.bolder {
-  font-variation-settings: 'wght' 575;
+  font-variation-settings: 'wght'575;
 }
 
 /*** IMAGE CLIP PATHS ***/
@@ -1186,30 +1180,42 @@ video {
 
 /*** Variable Fonts ***/
 @font-face {
+  src: url('fonts/Tortellini-Regular.eot');
+  /* IE < 9 */
+  src: url('fonts/Tortellini-Regular.eot?#') format("embedded-opentype"),
+    /* IE 9 */
+    url('fonts/Tortellini-Regular.woff2') format("woff2"),
+    url('fonts/Tortellini-Regular.woff') format("woff");
+  font-family: 'Tortellini';
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'BildVariableV2';
   src: url('/fonts/BildVariableV2-VF.woff2');
   src: url('/fonts/BildVariableV2-VF.woff2') format('woff2-variations');
-  font-family: 'BildVariableV2';
-  font-style: normal;
-  font-stretch: 85% 100%;
   font-weight: 1 999;
+  font-stretch: 85% 100%;
+  font-style: normal;
 }
 
 @font-face {
+  font-family: 'BildVariableV2';
   src: url('/fonts/BildVariableV2-VF.woff');
   src: url('/fonts/BildVariableV2-VF.woff') format('woff');
-  font-family: 'BildVariableV2';
-  font-style: normal;
-  font-stretch: 85% 100%;
   font-weight: 1 999;
+  font-stretch: 85% 100%;
+  font-style: normal;
 }
 
 @font-face {
+  font-family: 'BildVariableV2';
   src: url('/fonts/BildVariableV2-VF.ttf');
   src: url('/fonts/BildVariableV2-VF.ttf') format('ttf');
-  font-family: 'BildVariableV2';
-  font-style: normal;
-  font-stretch: 85% 100%;
   font-weight: 1 999;
+  font-stretch: 85% 100%;
+  font-style: normal;
 }
 
 @font-face {
