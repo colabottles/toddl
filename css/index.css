@@ -1402,10 +1402,10 @@ video {
 
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
-  /* .article__featured-image {
+  .article__featured-image {
     width: auto;
     max-width: 100%;
-  } */
+  }
 
   .contact form button {
     padding: 3.5rem 10.5rem;
