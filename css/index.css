@@ -1386,7 +1386,9 @@ video {
 
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
-  main {
+  main,
+  article,
+  section {
     display: block;
   }
   
