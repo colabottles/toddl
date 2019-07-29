@@ -491,8 +491,6 @@ article.style-guide {
 .article__featured-image-container {
   grid-column: 1/4;
   grid-row: 1/2;
-  height: 100%;
-  max-width: 100%;
 }
 
 .article__featured-image {
@@ -1344,7 +1342,7 @@ video {
   }
 }
 
-@media (max-width: 64ch) {
+@media (max-width: 73ch) {
   article {
     display: block;
     font-size: 1.2em;
@@ -1387,7 +1385,7 @@ video {
 }
 
 /*** SMALL SCREENS ***/
-@media (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 480px) {
   .article__featured-image {
     height: auto;
     width: 100%;
