@@ -237,13 +237,11 @@ span.pre:hover {
 }
 
 .navbar ul li.nav-item {
-  align-self: flex-start;
   display: grid;
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-weight: 700;
   grid-template-columns: subgrid;
   justify-items: center;
-  margin-right: 2rem;
   padding: 0rem;
   text-transform: uppercase;
 }
@@ -1392,6 +1390,14 @@ video {
 
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
+  navbar ul li.nav-item {
+    margin-right: 2rem;
+  }
+
+  li.article-list-article {
+    margin-left: 0rem;
+  }
+
   main {
     max-width: 100vw;
   }
@@ -1426,7 +1432,6 @@ video {
   }
 
   .article-list {
-    
     padding: 1rem;
   }
 
