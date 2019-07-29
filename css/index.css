@@ -1387,6 +1387,7 @@ video {
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
   .article__featured-image {
+    display: block;
     height: auto;
     width: 100%;
   }
@@ -1404,7 +1405,7 @@ video {
   }
 
   .article__title {
-    font-size: 2.3em;
+    font-size: 2.5em;
   }
 
   .article__body h2 {
