@@ -1386,8 +1386,11 @@ video {
 
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
-  .article__featured-image {
+  main {
     display: block;
+  }
+  
+  .article__featured-image {
     height: auto;
     width: 100%;
   }
