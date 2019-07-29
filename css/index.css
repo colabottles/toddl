@@ -1389,7 +1389,7 @@ video {
 }
 
 /*** SMALL SCREENS ***/
-@media (min-width: 280px) and (max-width: 480px) {
+/* @media (min-width: 280px) and (max-width: 480px) {
   .article__featured-image {
     height: auto;
     max-width: 100%;
@@ -1432,7 +1432,7 @@ video {
   .shape {
     shape-margin: 4rem;
   }
-}
+} */
 
 /****
  *
