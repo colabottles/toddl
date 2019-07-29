@@ -237,6 +237,7 @@ span.pre:hover {
 }
 
 .navbar ul li.nav-item {
+  align-self: flex-start;
   display: grid;
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -422,7 +423,6 @@ main.promoted-articles__container {
   gap: 3em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   list-style-type: none;
-  margin: 0 auto;
   max-width: 100%;
   padding: 3em;
 }
@@ -1426,6 +1426,7 @@ video {
   }
 
   .article-list {
+    
     padding: 1rem;
   }
 
