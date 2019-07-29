@@ -476,7 +476,7 @@ article {
   background-color: #ffffff;
   color: #333333;
   display: grid;
-  grid-template-columns: 1fr minmax(auto, 73ch) 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 100vh auto;
   font-family: "Muli", helvetica, sans-serif;
   font-size: 1.2em;
