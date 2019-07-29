@@ -1352,18 +1352,12 @@ video {
     font-size: 2.8em;
   }
 
-  /* .article__featured-image {
-    height: auto;
-    max-width: 100%;
-  } */
-
-
   .article__header {
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
 
   .article__title {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .article__body {
