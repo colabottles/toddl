@@ -1383,6 +1383,10 @@ video {
 
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
+  .nav-item a {
+    font-size: 1rem;
+  }
+
   main.promoted-articles__container {
     grid-column: 1;
   }
