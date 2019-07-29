@@ -484,6 +484,7 @@ article {
   font-family: "Muli", helvetica, sans-serif;
   font-size: 1.2em;
   font-weight: 300;
+  max-width: 100vw;
 }
 
 article.style-guide {
@@ -524,9 +525,10 @@ h2.article__title {
 }
 
 .article__body {
-  display: grid;
+  display: block;
   grid-column: 2;
   padding: 0 2.5rem 3rem;
+  word-break: break-word;
 }
 
 .article__body a {
