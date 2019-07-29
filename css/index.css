@@ -476,7 +476,6 @@ li.article-list-article:hover {
 article {
   background-color: #ffffff;
   color: #333333;
-  display: grid;
   grid-template-columns: 1fr minmax(auto, 73ch) 1fr;
   grid-template-rows: 100vh auto;
   font-family: "Muli", helvetica, sans-serif;
@@ -1129,7 +1128,6 @@ img.content__image {
 /*** IFRAME/VIDEO CENTERING ***/
 iframe.yt,
 video {
-  display: grid;
   justify-self: center;
   margin: 2rem 0 4rem 0;
 }
@@ -1343,12 +1341,6 @@ video {
 }
 
 @media (max-width: 73ch) {
-  main,
-  section,
-  article {
-    display: block;
-  }
-
   article {
     display: block;
     font-size: 1.2em;
@@ -1392,6 +1384,10 @@ video {
 
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
+  .menu-toggle {
+    margin: 9px 5px 0px 0px;
+  }
+
   .article__featured-image {
     height: auto;
     width: 100%;

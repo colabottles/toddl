@@ -35,7 +35,6 @@ I’ll leave out the bees, I went Twitter happy with that gif I think. Nah, unle
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This was still the best from Day One from <a href="https://twitter.com/brad_frost?ref_src=twsrc%5Etfw">@brad_frost</a> <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a> <a href="https://t.co/tcOxG1lmAn">pic.twitter.com/tcOxG1lmAn</a></p>&mdash; Todd (@toddlibby) <a href="https://twitter.com/toddlibby/status/864309047226503172?ref_src=twsrc%5Etfw">May 16, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
 Dan Mall came on after Brad to discuss Gantt charts. No, actually it was about strategy with the design and development process. Collaboration, Should designers code? Should developers design? If they don’t, then it’s okay.
 
 He spoke about CSS briefly, did a quick, &ldquo;how-to&rdquo; for folks that did not know CSS or how to code it, talked about tools, the 8-point grid and a host of other small topics that I found useful.
