@@ -1395,6 +1395,7 @@ video {
     max-width: 100%;
   }
 
+  header,
   .promoted-articles__container {
     max-width: 100%;
   }
