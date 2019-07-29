@@ -495,6 +495,7 @@ article.style-guide {
 
 .article__featured-image {
   height: 100%;
+  max-width: 100%;
   object-fit: cover;
   width: auto;
 }
@@ -1403,6 +1404,7 @@ video {
 @media (min-width: 280px) and (max-width: 480px) {
   .article__featured-image {
     width: auto;
+    max-width: 100%;
   }
 
   .contact form button {
@@ -1431,9 +1433,9 @@ video {
     padding: 1.5rem 0rem 0rem 0rem;
   }
 
-  section.article__body {
+  /* section.article__body {
     display: grid;
-  }
+  } */
 
   blockquote.twitter-tweet {
     padding: 1.5rem 0.5rem 1.5rem;
