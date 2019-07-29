@@ -1342,7 +1342,7 @@ video {
   }
 }
 
-/* @media (max-width: 73ch) {
+@media (max-width: 64ch) {
   article {
     display: block;
     font-size: 1.2em;
@@ -1363,7 +1363,7 @@ video {
   .style_guide__body {
     padding: 0 1rem 3rem;
   }
-} */
+}
 
 /*** LARGE SCREENS ***/
 @media (min-width: 700px) {
