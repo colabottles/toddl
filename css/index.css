@@ -522,6 +522,7 @@ h2.article__title {
 
 .article__body {
   display: grid;
+  grid-column: 2;
   padding: 0 2.5rem 3rem;
 }
 
