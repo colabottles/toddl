@@ -1415,7 +1415,7 @@ video {
     padding: 1rem;
   }
 
-  h1.article__title {
+  .article__title {
     font-size: 2em;
   }
 
