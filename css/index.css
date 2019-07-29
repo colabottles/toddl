@@ -1391,7 +1391,7 @@ video {
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
   navbar ul li.nav-item {
-    margin-right: 2rem;
+    margin-right: 3rem;
   }
 
   li.article-list-article {
