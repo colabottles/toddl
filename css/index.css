@@ -1393,6 +1393,7 @@ video {
 
   main.promoted-articles__container {
     grid-column: 1;
+    max-width: 100vw;
   }
 
   .menu-toggle {
