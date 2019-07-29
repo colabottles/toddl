@@ -296,7 +296,6 @@ a.postlist-link {
 }
 
 .menu-toggle {
-  display: none;
   justify-self: end;
   margin: 13px 25px 0px 0px;
 }
@@ -476,6 +475,7 @@ li.article-list-article:hover {
 article {
   background-color: #ffffff;
   color: #333333;
+  display: grid;
   grid-template-columns: 1fr minmax(auto, 73ch) 1fr;
   grid-template-rows: 100vh auto;
   font-family: "Muli", helvetica, sans-serif;
@@ -520,6 +520,7 @@ h2.article__title {
 }
 
 .article__body {
+  display: grid;
   grid-row: 2/3;
   grid-column: 2/3;
   padding: 0 2.5rem 3rem;
@@ -1340,7 +1341,7 @@ video {
 
 @media (max-width: 73ch) {
   article {
-    display: block;
+    display: grid;
     font-size: 1.2em;
   }
 
