@@ -497,7 +497,7 @@ article.style-guide {
   height: 100%;
   max-width: 100%;
   object-fit: cover;
-  width: auto;
+  width: 100%;
 }
 
 .article__header {
