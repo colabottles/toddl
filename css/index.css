@@ -384,11 +384,10 @@ main.promoted-articles__container {
 
 .promoted-articles__image {
   height: 100%;
-  width: auto;
-  min-width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
   opacity: 0.8;
+  width: auto;
 }
 
 .promoted-articles__content {
