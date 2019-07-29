@@ -1348,8 +1348,12 @@ video {
     font-size: 1.2em;
   }
 
+  h2.article__title {
+    font-size: 2.2em;
+  }
+
   .article__header {
-    padding: 2rem 0rem;
+    padding: 2rem 1rem;
   }
 
   .article__body {
