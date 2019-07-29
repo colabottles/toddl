@@ -1353,7 +1353,7 @@ video {
 
   .article__featured-image {
     height: auto;
-    width: 100%;
+    max-width: 100%;
   }
 
   .article__header {
@@ -1378,7 +1378,7 @@ video {
 }
 
 /*** LARGE SCREENS ***/
-@media (min-width:700px) {
+@media (min-width: 700px) {
   .wrapper>* {
     padding: 2em;
   }
