@@ -1353,11 +1353,11 @@ video {
   }
 
   .article__header {
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 
   .article__title {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .article__body {
@@ -1416,7 +1416,7 @@ video {
   }
 
   h1.article__title {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .article__body h2 {
@@ -1428,10 +1428,6 @@ video {
     font-size: 1.1em;
     padding: 1.5rem 0rem 0rem 0rem;
   }
-
-  /* section.article__body {
-    display: grid;
-  } */
 
   blockquote.twitter-tweet {
     padding: 1.5rem 0.5rem 1.5rem;
