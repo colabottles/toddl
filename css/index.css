@@ -249,7 +249,7 @@ span.pre:hover {
 .nav-item a {
   color: #000000;
   font-family: "Futura", Helvetica, Arial, sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.7em;
   letter-spacing: 0.05rem;
   text-decoration: none;
   transition: color 0.3s ease-out;
@@ -1364,6 +1364,10 @@ video {
     padding: 2em;
   }
 
+  .nav-item a {
+    font-size: 1em;
+  }
+
   .company-info ul,
   .brand {
     text-align: center;
@@ -1384,7 +1388,7 @@ video {
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
   .nav-item a {
-    font-size: 1rem;
+    font-size: 1em;
   }
 
   main.promoted-articles__container {
