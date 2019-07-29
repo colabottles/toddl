@@ -208,6 +208,10 @@ span.pre:hover {
   background-color: #ffffff;
 }
 
+header {
+  display: grid;
+}
+
 /*** BASIC SETUP ***/
 .grad-bar {
   width: 100%;
@@ -296,6 +300,7 @@ a.postlist-link {
 }
 
 .menu-toggle {
+  display: hidden;
   justify-self: end;
   margin: 13px 25px 0px 0px;
 }
