@@ -1384,8 +1384,8 @@ video {
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
   main.promoted-articles__container {
-    grid-column: 1/3;
-    grid-row: 1/3;
+    grid-column: 2/3;
+    grid-row: auto;
   }
 
   .menu-toggle {
