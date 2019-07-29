@@ -522,7 +522,6 @@ h2.article__title {
 
 .article__body {
   display: grid;
-  grid-column: 2;
   padding: 0 2.5rem 3rem;
 }
 
@@ -1342,7 +1341,7 @@ video {
 @media (max-width: 73ch) {
   article {
     display: block;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .article__header {
@@ -1395,11 +1394,6 @@ video {
     margin: 9px 5px 0px 0px;
   }
 
-  .article__featured-image {
-    height: auto;
-    max-width: 100vw;
-  }
-
   blockquote {
     font-size: 0.75em;
   }
@@ -1410,6 +1404,15 @@ video {
 
   .contact form label {
     font-size: 2em;
+  }
+
+  .article__featured-image {
+    height: auto;
+    max-width: 100vw;
+  }
+
+  .article__body {
+    max-width: 100vw;
   }
 
   .article-list {
