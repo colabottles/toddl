@@ -1343,10 +1343,12 @@ video {
 }
 
 @media (max-width: 73ch) {
-  main {
+  main,
+  section,
+  article {
     display: block;
   }
-  
+
   article {
     display: block;
     font-size: 1.2em;
