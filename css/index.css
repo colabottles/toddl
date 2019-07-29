@@ -1343,6 +1343,10 @@ video {
 }
 
 @media (max-width: 73ch) {
+  main {
+    display: block;
+  }
+  
   article {
     display: block;
     font-size: 1.2em;
@@ -1386,12 +1390,6 @@ video {
 
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
-  main,
-  article,
-  section {
-    display: block;
-  }
-  
   .article__featured-image {
     height: auto;
     width: 100%;
