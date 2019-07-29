@@ -1401,7 +1401,8 @@ video {
 }
 
 /*** SMALL SCREENS ***/
-@media (min-width:280px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 480px) {
+
   .contact form button {
     padding: 3.5rem 10.5rem;
   }
