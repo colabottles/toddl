@@ -1432,7 +1432,7 @@ video {
   }
 
   section.article__body {
-    display: block;
+    display: grid;
   }
 
   blockquote.twitter-tweet {
