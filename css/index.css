@@ -1353,6 +1353,8 @@ video {
   }
 
   .article__body {
+    grid-row: 2/3;
+    grid-column: 2/3;
     padding: 0 2.5rem 3rem;
   }
 
@@ -1394,7 +1396,7 @@ video {
     height: auto;
     max-width: 100%;
   }
-  
+
   .contact form button {
     padding: 3.5rem 10.5rem;
   }
@@ -1409,6 +1411,11 @@ video {
 
   .article__title {
     font-size: 2.3em;
+  }
+
+  .article__body {
+    grid-row: 2/3;
+    grid-column: 2/3;
   }
 
   .article__body h2 {
