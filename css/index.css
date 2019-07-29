@@ -1348,8 +1348,8 @@ video {
     font-size: 1.2em;
   }
 
-  h1.article__title {
-    font-size: 2.8em;
+  h2.article__title {
+    font-size: 2em;
   }
 
   .article__header {
@@ -1398,6 +1398,11 @@ video {
 
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
+  .article__featured-image {
+    height: auto;
+    max-width: 100%;
+  }
+
   .contact form button {
     padding: 3.5rem 10.5rem;
   }
@@ -1410,7 +1415,7 @@ video {
     padding: 1rem;
   }
 
-  .article__title {
+  h2.article__title {
     font-size: 2em;
   }
 
