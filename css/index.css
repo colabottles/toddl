@@ -495,7 +495,6 @@ article.style-guide {
 
 .article__featured-image {
   height: 100%;
-  max-width: 100%;
   object-fit: cover;
   width: auto;
 }
@@ -1402,6 +1401,9 @@ video {
 
 /*** SMALL SCREENS ***/
 @media (min-width: 280px) and (max-width: 480px) {
+  .article__featured-image {
+    width: auto;
+  }
 
   .contact form button {
     padding: 3.5rem 10.5rem;
