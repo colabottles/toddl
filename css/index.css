@@ -1389,13 +1389,9 @@ video {
 }
 
 /*** SMALL SCREENS ***/
-/* @media (min-width: 280px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 480px) {
   .article__featured-image {
     height: auto;
-    max-width: 100%;
-  }
-
-  .promoted-articles__container {
     max-width: 100%;
   }
   
@@ -1412,7 +1408,7 @@ video {
   }
 
   .article__title {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 
   .article__body h2 {
@@ -1432,7 +1428,7 @@ video {
   .shape {
     shape-margin: 4rem;
   }
-} */
+}
 
 /****
  *
