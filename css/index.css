@@ -325,6 +325,8 @@ a.postlist-link {
 
 /*** MEAT & POTATOES ***/
 .promoted-articles__container {
+  grid-column: 2/3;
+  grid-row: auto;
   margin-right: auto;
   margin-left: auto;
   background-color: #ffffff;
