@@ -493,6 +493,7 @@ article.style-guide {
 }
 
 .article__featured-image {
+  background-size: cover;
   height: 100%;
   max-width: 100%;
   object-fit: cover;
