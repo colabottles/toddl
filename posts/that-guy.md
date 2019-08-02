@@ -32,4 +32,6 @@ Chris Coyier reminded me last night in an article that <span class="italic">&ldq
 
 I was <span class="italic">&ldquo;That dude&rdquo;</span>. That is not helpful. I have to be better than I was yesterday. I used to say that to myself every day, then I stopped. Then I stopped being better than yesterday and it shows. So, I wake up and right next to me is my piece of paper sitting right there which reads, <span class="italic">&ldquo;Be better than you were yesterday&rdquo;</span>.
 
+<img src="/img/notetoself.png" alt="A piece of paper on my side table that reads, 'Be better than you were yesterday'." />
+
 It’s the first thing I look at when my eyes open. Be helpful, not an asshole.
