@@ -6,6 +6,7 @@ tags:
   - conferences
 layout: layouts/post.njk
 ---
+
 ## An Event Apart Boston 2017, Boston, MA
 
 **_Originally posted on my old site in installments, this has been compiled into one post._**
