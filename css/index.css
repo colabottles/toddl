@@ -741,16 +741,6 @@ span.bolder {
   -webkit-transform: scale(0.9);
 }
 
-/*** FORM STYLES ***/
-button {
-  background: #f5f5f5;
-  border: 0;
-  font-family: "Futura", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  padding: 0.85rem;
-  text-transform: uppercase;
-}
-
 /*** FOOTER ***/
 footer {
   display: flex;
@@ -827,12 +817,15 @@ a.a11y:hover {
 /*** CONTACT FORM ***/
 .contact-form {
   display: grid;
+  grid-template-columns: 1fr 72ch 1fr;
+  grid-template-rows: auto repeat(5, auto) 1fr;
   justify-content: center;
   margin-top: 3rem;
 }
 
 .company-info {
   background: #f8f8ff;
+  grid-column: 2;
 }
 
 .company-info h2 {
@@ -852,10 +845,22 @@ a.a11y:hover {
 
 .contact {
   background: #f8f8ff;
+  grid-column: 2;
   padding: 2em;
 }
 
 /*** FORM STYLES ***/
+button {
+  background: #000;
+  border: 0;
+  color: #fff;
+  font-family: "Futura", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  padding: 0.85rem 2rem;
+  text-transform: uppercase;
+  width: 50%;
+}
+
 .contact form {
   display: grid;
   grid-template-columns: 1fr;
@@ -865,7 +870,7 @@ a.a11y:hover {
 .contact form label {
   display: block;
   font-family: "Futura", Helvetica, Arial, sans-serif;
-  font-size: 0.8em;
+  font-size: 1.2em;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -903,7 +908,7 @@ a.a11y:hover {
   transition: border 1s ease-in-out;
 }
 
-.contact form button {
+/* .contact form button {
   font-family: "Futura", Helvetica, Arial, sans-serif;
   letter-spacing: .02rem;
   cursor: pointer;
@@ -1322,7 +1327,7 @@ video {
   }
 
   .contact form label {
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 
@@ -1414,12 +1419,16 @@ video {
     margin: 9px 5px 0px 0px;
   }
 
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
   .contact form button {
-    padding: 3.5rem 10.5rem;
+    width: 50%;
   }
 
   .contact form label {
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .article__featured-image {
