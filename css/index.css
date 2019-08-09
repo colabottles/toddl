@@ -259,31 +259,6 @@ span.pre:hover {
   color: #1db954;
 }
 
-a.tag {
-  background-color: #f40009;
-  border-radius: 4px;
-  color: #000000;
-  font-family: "Futura", Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.05rem;
-  margin: 0.5rem 0;
-  padding: 0.25rem 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: color 0.3s ease-out;
-  width: 12vw;
-}
-
-a.tag:hover {
-  background-color: #900;
-  color: #fff;
-}
-
-a.postlist-link {
-  font-size: 1.5em;
-}
-
 /*** MOBILE MENU & ANIMATION ***/
 .menu-toggle .bar {
   width: 25px;
@@ -1180,6 +1155,58 @@ video {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/*** Tag styling ***/
+a.tag {
+  /* background-color: #f40009; */
+  border-radius: 4px;
+  color: #000000;
+  font-family: "Futura", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  margin: 0.5rem 0;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  height: 24px;
+  display: inline-block;
+  top: 3px;
+  padding: 0 7px;
+  background: #f40009;
+  background: -moz-linear-gradient(#f40009, #621708);
+  background: -webkit-linear-gradient(#f40009, #621708);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f40009',endColorstr='#621708')";
+  border: 1px solid #800000;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: top;
+  z-index: 100;
+  max-width: 5em;
+  transition: 1.5s max-width ease-in-out;
+  -o-transition: 1.5s max-width ease-in-out;
+  -moz-transition: 1.5s max-width ease-in-out;
+  -webkit-transition: 1.5s max-width ease-in-out;
+  -ms-transition: 1.5s max-width ease-in-out;
+}
+
+a.tag:hover {
+  background-color: #900;
+  color: #fff;
+  max-width: inherit;
+}
+
+a.postlist-link {
+  font-size: 1.5em;
+}
+
+p.tag-wrap {
+  display: inline;
+  line-height: 1.4;
+  position: relative;
 }
 
 /*** Variable Fonts ***/
