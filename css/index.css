@@ -1110,8 +1110,9 @@ img.content__image {
 /*** IFRAME/VIDEO CENTERING ***/
 iframe.yt,
 video {
+  display: grid;
   justify-self: center;
-  margin: 2rem 0 4rem 0;
+  margin: 2rem auto;
 }
 
 /*** KEYFRAME ANIMATIONS ***/
