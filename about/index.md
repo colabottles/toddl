@@ -19,11 +19,24 @@ I love to travel, write and read, attend web conferences, meet new people, and t
 
 I am well-versed in HTML and CSS, I am a self-proclaimed mediocre JavaScript guy, always trying to learn and hone my skills. I have also had experience with Rails, PHP, and Perl. I am currently using the JAMstack and this site uses it. More on that later.
 
+* HTML
+* CSS
+..* Sass
+* JavaScript
+..* Vanilla
+..* JQuery
+* NPM
+* Yarn
+* Responsive Web Design
+* WCAG 2.0 Level AA
+* Adobe CS
+* Sketch
+* Git
+
+
 I've also been using on occasion, Node, React, Gatsby, but at a really basic level. I'm always looking to improve in those areas as well.
 
 This site uses Netlify as the host hooked up to my repo over at GitHub to deploy continuously. I acquired my domain over at DNSimple. My tools are Code for my editor, I use iTerm2 as my terminal with some cool zsh funkiness, and this site wouldn't be complete without the wonderful static site generator, Eleventy, by Zach Leatherman.
-
-This is my personal tech/programming/design blog. I hope you enjoy.
 
 ## What was the inspiration behind this site&quest;
 
