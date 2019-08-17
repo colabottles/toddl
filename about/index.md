@@ -21,10 +21,10 @@ I am well-versed in HTML and CSS, I am a self-proclaimed mediocre JavaScript guy
 
 * HTML
 * CSS
-..* Sass
+  * Sass
 * JavaScript
-..* Vanilla
-..* JQuery
+  * Vanilla
+  * JQuery
 * NPM
 * Yarn
 * Responsive Web Design
