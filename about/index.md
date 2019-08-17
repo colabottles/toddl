@@ -9,19 +9,25 @@ templateClass: tmpl-post
 ---
 ## Who are you&quest;
 
-I'm Todd. I'm a Senior Front End Developer, been around the web for about twenty years or so. I love creating and making things, I love the web and learning, and I am self-taught. I'm a huge supporter of accessibility and web standards.
+I'm Todd. I'm a Senior Front End Developer, been around the web for about twenty years or so. I love creating and making things, I love the web and learning, and I am self-taught. I'm a huge supporter of accessibility (a11y) and web standards.
 
-I'm also a big proponent of the front end web developer and the work they put into the web. That's another story. Front End Developers are programmers/developers no matter what kind of spin anyone tries to put on it.
+I'm highly interested in the areas of Accessibility, User Experience and Inclusive/Diversity in the web field. The web is for everyone, not just the able-bodied. User Experience (UX) should be simple, and inclusion and diversity needs to be seen, heard, and adoopted more in tech, from conferences to workplaces.
 
-I currently work for a company as a Web Developer/Lead Support Technician. It's been over three years since I have been there. I am also available for work, relocation, and I am sharpening my skills in the areas of JavaScript and User Experience.
+I currently work for Agency Revenue Tools in Conway, New Hampshire as a Senior Front End Web Developer and Lead Support Technician. It's been over three years since I have been there. I am also available for full-time, in-house work and relocation. Ideally, I am looking to relocate to the U.S. west coast but I am not closed to other opportunities.
 
-I love to travel, write and read, go to web conferences, meet new people, and talk web. Lobster rolls from Maine are the best.
+I love to travel, write and read, attend web conferences, meet new people, and talk web. Lobster rolls from Maine are the best.
+
+I am well-versed in HTML and CSS, I am a self-proclaimed mediocre JavaScript guy, always trying to learn and hone my skills. I have also had experience with Rails, PHP, and Perl. I am currently using the JAMstack and this site uses it. More on that later.
+
+I've also been using on occasion, Node, React, Gatsby, but at a really basic level. I'm always looking to improve in those areas as well.
+
+This site uses Netlify as the host hooked up to my repo over at GitHub to deploy continuously. I acquired my domain over at DNSimple. My tools are Code for my editor, I use iTerm2 as my terminal with some cool zsh funkiness, and this site wouldn't be complete without the wonderful static site generator, Eleventy, by Zach Leatherman.
 
 This is my personal tech/programming/design blog. I hope you enjoy.
 
 ## What was the inspiration behind this site&quest;
 
-I wanted to do a site using CSS Grid after hearing the talks and reading the articles from Rachel Andrew and Jen Simmons. I am currently working on the beta for my new Grid-based layout "theme".
+I wanted to do a site using CSS Grid after hearing the talks and reading the articles from Rachel Andrew and Jen Simmons. I am currently working on the beta for my new Grid-based layout "theme", but in the meantime, I "frankensteined" a few things together that I found.
 
 First, [the navigation by Reggie Bowers](https://codepen.io/bowersrd/#). So I had to have that navigation.
 
@@ -32,7 +38,3 @@ Last, I found [this pen](https://codepen.io/liamj/pen/yrEXNx) which I thought wa
 They put in the work, I just ran with it. Or modified it just a wee bit. Either way, they are the heroes you deserve.
 
 I changed a few things, added a couple more areas on the index page, added a few transitions, made sure everything adheres to WCAG 2.0 AA guidelines, changed some fonts, and kept the overall structure of these templates.
-
-### I take no credit for the layout
-
-I found these pens, loved them, and wanted to use and implement them. So I did.
