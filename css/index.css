@@ -593,10 +593,9 @@ ul {
 li,
 li p {
   font-size: 1em;
-  font-weight: 700;
+  font-style: oblique;
   margin-left: 2.5rem;
   padding: 0.5rem 0rem;
-  text-transform: uppercase;
 }
 
 ul.list__container {
