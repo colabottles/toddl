@@ -14,28 +14,27 @@
   </head>
   <body>
     <header role="group">
-      <div class="grad-bar"></div>
-        <nav class="navbar" role="navigation">
-          <a href="{{ '/' | url }}"><h1 class="home">{{ metadata.title }}</h1></a>
-            <div class="menu-toggle" id="mobile-menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-            <ul class="nav no-search">            
-              {%- for nav in collections.nav | sort(attribute="date") -%}
-                <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" tabindex="0">
-                  <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
-                </li>
-              {%- endfor -%}
-              <script>
-                $('.menu-toggle').click(function () {
-                  $(".nav").toggleClass("mobile-nav");
-                  $(this).toggleClass("is-active");
-                });
-              </script>
-            </ul>
-          </nav>
+      <nav class="navbar" role="navigation">
+        <a href="{{ '/' | url }}"><h1 class="home">{{ metadata.title }}</h1></a>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav no-search">            
+            {%- for nav in collections.nav | sort(attribute="date") -%}
+              <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" tabindex="0">
+                <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
+              </li>
+            {%- endfor -%}
+            <script>
+              $('.menu-toggle').click(function () {
+                $(".nav").toggleClass("mobile-nav");
+                $(this).toggleClass("is-active");
+              });
+            </script>
+          </ul>
+      </nav>
     </header>
 
     <main class="promoted-articles__container" role="main">
