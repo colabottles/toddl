@@ -37,12 +37,7 @@ Successful design patterns don’t exist in a vacuum. Successful design systems 
 
 The differences between a successful design system and telling the story of her experience at Vox Media. The best way I saw her talk put&hellip;
 
-<blockquote class="twitter-tweet" data-lang="en">
-  <p lang="en" dir="ltr">.<a href="https://twitter.com/yeseniaa?ref_src=twsrc%5Etfw">@yeseniaa</a> killed it at <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a>.
-  </p>&mdash; zeldman (@zeldman) 
-  <a href="https://twitter.com/zeldman/status/1011270559697645568?ref_src=twsrc%5Etfw">June 25, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">.<a href="https://twitter.com/yeseniaa?ref_src=twsrc%5Etfw">@yeseniaa</a> killed it at <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a>.</p>&mdash; zeldman (@zeldman) <a href="https://twitter.com/zeldman/status/1011270559697645568?ref_src=twsrc%5Etfw">June 25, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 
 Yes, she did. what I took away from her talk was to let your user's needs define the building blocks you will need for your design system (if you even need one… more on that shortly). I can carry this to the table when I get back to the office and weigh heavily if we do indeed need a design system or not.
@@ -143,17 +138,11 @@ Jeremy Keith kicked the day off with his talk and what a talk it was! The way th
 
 Jeremy brought everyone in attendance back in time, discussed the present state and walked us on a tour of the future in working on the web. From HTML/CSS/JS to frameworks and libraries and all the way to Progressive Web Apps, Jeremy taught us if we learn from the past, we can make sensible choices in the future regarding our work on the web.
 
-<blockquote class="twitter-tweet" data-lang="en">
-  <p lang="en" dir="ltr">Internet Pace Layers with <a href="https://twitter.com/adactio?ref_src=twsrc%5Etfw">@adactio</a> <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a><a href="https://t.co/3U1C6ETHEz">pic.twitter.com/3U1C6ETHEz</a>&mdash; Todd (@toddlibby) <a href="https://twitter.com/toddlibby/status/1011602011048038402?ref_src=twsrc%5Etfw">June 26, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Internet Pace Layers with <a href="https://twitter.com/adactio?ref_src=twsrc%5Etfw">@adactio</a> <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a> <a href="https://t.co/3U1C6ETHEz">pic.twitter.com/3U1C6ETHEz</a></p>&mdash; Todd (@toddlibby) <a href="https://twitter.com/toddlibby/status/1011602011048038402?ref_src=twsrc%5Etfw">June 26, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 Then on to Donna Lichaw, who taught us on how to convey a story to your customers/clients. The better the story, the more likely you will want to use a product, pay for a product, tell others about the product. A &ldquo;story first&rdquo; approach to building websites, apps, and more that draw customers in, get them excited and keep them engaged for a long time.
 
-<blockquote class="twitter-tweet" data-lang="en">
-  <p lang="en" dir="ltr">The better the STORY behind your product, the more likely folks are to try it, continue to use it, pay to use it, and recommend it to others. <a href="https://twitter.com/dlichaw?ref_src=twsrc%5Etfw">@dlichaw</a> <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a>&mdash; zeldman (@zeldman) <a href="https://twitter.com/zeldman/status/1011620432028545024?ref_src=twsrc%5Etfw">June 26, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The better the STORY behind your product, the more likely folks are to try it, continue to use it, pay to use it, and recommend it to others. <a href="https://twitter.com/dlichaw?ref_src=twsrc%5Etfw">@dlichaw</a> <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a></p>&mdash; zeldman (@zeldman) <a href="https://twitter.com/zeldman/status/1011620432028545024?ref_src=twsrc%5Etfw">June 26, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 Make things that go __BOOM!__
 
@@ -183,10 +172,7 @@ And to wrap up Day Two was Gerry McGovern who brought the house down with a grea
 
 Discussing sites that it seems like it takes an eternity to finally get to the point of what the navigation was for. In a couple cases, the Gatwick Airport and Brussels Airport just to get online at these airports took 5 or more steps through a process to connect! And the right way to do it, Dublin Airport. Click once and you’re connected.
 
-<blockquote class="twitter-tweet" data-lang="en">
-  <p lang="en" dir="ltr">Designing an intuitive navigation - Gerry McGovern&#39;s presentation at An Event Apart 2018 <a href="https://twitter.com/hashtag/customerexperience?src=hash&amp;ref_src=twsrc%5Etfw">#customerexperience</a> <a href="https://twitter.com/hashtag/informationarchitecture?src=hash&amp;ref_src=twsrc%5Etfw">#informationarchitecture</a> <a href="https://t.co/e4ySp0WLjl">https://t.co/e4ySp0WLjl</a> <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a> <a href="https://twitter.com/hashtag/aeaboston?src=hash&amp;ref_src=twsrc%5Etfw">#aeaboston</a> &mdash; Gerry McGovern (@gerrymcgovern) <a href="https://twitter.com/gerrymcgovern/status/1011675900482596865?ref_src=twsrc%5Etfw">June 26, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Designing an intuitive navigation - Gerry McGovern&#39;s presentation at An Event Apart 2018 <a href="https://twitter.com/hashtag/customerexperience?src=hash&amp;ref_src=twsrc%5Etfw">#customerexperience</a> <a href="https://twitter.com/hashtag/informationarchitecture?src=hash&amp;ref_src=twsrc%5Etfw">#informationarchitecture</a> <a href="https://t.co/e4ySp0WLjl">https://t.co/e4ySp0WLjl</a> <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a> <a href="https://twitter.com/hashtag/aeaboston?src=hash&amp;ref_src=twsrc%5Etfw">#aeaboston</a></p>&mdash; Gerry McGovern (@gerrymcgovern) <a href="https://twitter.com/gerrymcgovern/status/1011675900482596865?ref_src=twsrc%5Etfw">June 26, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 It was a humorous trip through the navigations of some example sites that had me in stitches, as well as the entire crowd. Icons for navigation, &ldquo;Most Popular&rdquo; navigation blocks, labeled versus unlabeled icons, hidden versus unhidden menu systems that result in huge losses in daily engagement.
 
