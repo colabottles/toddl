@@ -12,7 +12,7 @@ layout: layouts/post.njk
 
 With the recent court appeal to the US Supreme Court with a certain pizza conglomerate, “Dom Inos” I’ll call them, against blind persons, I have been thinking of what could drive a corporation to do something so egregious that it brings about the need for me to voice my opinion.
 
-What causes people and companies, to forego accessibility for greed and because “it is not necessary”. What could it be? Fear.
+What causes people and companies, to forego accessibility for greed and because “it is not necessary”. What could it be? Fear. In my opinion.
 
 What company hires people to pump out sites that are dependency-laden, framework-driven, and plastered with all the new-fangled, shiny new technologies of the month? 85-95% is my guess. Those companies in turn set deadlines.
 

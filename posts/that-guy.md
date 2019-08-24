@@ -16,7 +16,7 @@ Then I got sober in the late summer of 2013. That hatred grew exponentially. I w
 
 I was the guy that trolled. I was the guy that used <span class="italic">&ldquo;sarcasm&rdquo;</span>. I was the guy that had to be right. I wasn’t. I’m not, I never will be. I had a lot to learn. I still do. I still even fall back into old habits. I’m constantly learning.
 
-I saw someone on Twitter going through a hard time and it brought me to where I am, where I have been, and the work I need to do to not <span class="italic">&ldquo;be an asshole&rdquo;</span>. Believe me, I am trying my hardest to right the ship.
+I saw someone on Twitter tweeting about going through a hard time and it brought me to where I am, where I have been, and the work I need to do to not <span class="italic">&ldquo;be an asshole&rdquo;</span>. Believe me, I am trying my hardest to right the ship.
 
 That’s what I was. That’s what I am from time-to-time. An asshole. I remember telling a person on Twitter to <span class="bolder">&ldquo;RTFM&rdquo;</span> when they tweeted about not understanding CSS. <span class="bolder">&ldquo;RTFM&rdquo;</span> something I always loathed and abhorred seeing, but yet here I was. The hypocrite.
 
