@@ -2,3 +2,9 @@
   publish = "_site"
   functions = "functions"
   command = "DEBUG=* eleventy"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+  FilesMatch = ".(eot|otf|ttf|woff|woff2)"
+  Header-always-set = Access-Control-Allow-Origin "*"

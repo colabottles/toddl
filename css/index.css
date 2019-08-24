@@ -309,6 +309,17 @@ span.pre:hover {
 }
 
 /*** MEAT & POTATOES ***/
+main.splash {
+  background-image: url(/img/twolights1.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 85vh;
+}
+
+main.no-splash {
+  background-color: white;
+}
+
 main.promoted-articles__container {
   margin-right: auto;
   margin-left: auto;
@@ -322,9 +333,6 @@ main.promoted-articles__container {
   border: 0;
   display: grid;
   gap: 8px;
-  /* tor browser */
-  grid-gap: 8px;
-  /* does not recognize 'gap' */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 240px);
   grid-template-areas: "article-6 article-5 article-3 article-3""article-6 article-5 article-3 article-3""article-1 article-1 article-2 article-2""article-1 article-1 article-4 article-4";
@@ -434,6 +442,19 @@ li.article-list-article {
   width: 100%;
 }
 
+li.article-list-article.newest {
+  background-color: #030007;
+}
+
+li.article-list-article.newest a {
+  color: #fff;
+}
+
+li.article-list-article.newest:hover {
+  background-color: #c03000;
+  transition: background-color 3s ease-in;
+}
+
 li.article-list-article:hover {
   background-color: #f5f5f5;
   transition: background-color 1s ease-in;
@@ -470,28 +491,39 @@ article {
   max-width: 100vw;
 }
 
+article.about {
+  grid-template-rows: 50vh auto;
+}
+
 article.style-guide {
   background-color: #ffffff;
 }
 
 .article__featured-image-container {
-  grid-column: 1/3;
-  grid-row: 1/2;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .article__featured-image {
-  height: 100%;
   max-width: 100%;
   object-fit: cover;
   width: auto;
 }
 
 .article__header {
-  align-self: end;
+  align-self: start;
   background-color: #ffffff;
   grid-row: 1/2;
-  grid-column: 2/2;
-  padding: 2.5rem;
+  grid-column: 1;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+}
+
+.article__meta {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 1.4em;
+  margin-top: 1rem;
 }
 
 h2.article__title {
@@ -508,8 +540,9 @@ h2.article__title {
 }
 
 .article__body {
-  display: block;
   grid-column: 2;
+  grid-row: 1/3;
+  grid-auto-rows: max-content;
   padding: 0 2.5rem 3rem;
   word-break: break-word;
 }
@@ -542,7 +575,7 @@ p {
   -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
   font-variation-settings: 'wght'400;
-  margin: 1rem 0;
+  margin: 1rem 0rem;
   text-transform: none;
   padding: 0.25rem 0rem;
 }
@@ -581,10 +614,18 @@ h2 {
   text-transform: uppercase;
 }
 
+h2.hello {
+  color: white;
+  font-size: 10em;
+  margin-left: 10rem;
+  text-transform: lowercase;
+  animation: fadeIn 5s ease-in;
+}
+
 h3 {
-  font-family: "Futura", "Trebuchet MS", Arial, Helvetica, sans-serif;
-  font-size: 1.4em;
+  font: 1.4em "Lora";
   font-style: oblique;
+  font-weight: 900;
   padding: 1rem 0rem;
   text-transform: uppercase;
 }
@@ -620,13 +661,18 @@ ul.list__container {
   padding: .5em 0em 2em 0em;
 }
 
+li.postlist-item,
+li.postlist-item a {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .article__body h2,
 .style_guide__body h2 {
-  font-family: "Futura", Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
+  font: 2em 'BildVariableV2';
   font-weight: 700;
   line-height: 2;
-  text-transform: uppercase;
 }
 
 .article__body p,
@@ -649,13 +695,13 @@ h2.article-list-article-title {
 blockquote {
   background-color: #fff;
   border-left: 5px solid #014713;
-  font-family: "Futura", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-family: "Lora", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
   font-weight: 700;
+  font-style: oblique;
   line-height: 1.5;
   margin: 2.5em 0;
   padding: 1.5em 3em 1.5em;
-  text-transform: uppercase;
   width: 100%;
 }
 
@@ -733,16 +779,13 @@ span.bolder {
 
 /*** FOOTER ***/
 footer {
-  display: flex;
-  flex-direction: row;
+  grid-auto-flow: column;
   justify-content: center;
-  line-height: 0;
-  padding: 1em 0em;
-  min-width: auto;
+  padding: 2rem 0 1rem 0;
 }
 
 footer a:hover {
-  transition: 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 footer a:link,
@@ -1053,51 +1096,39 @@ video {
 }
 
 /*** KEYFRAME ANIMATIONS ***/
-@-webkit-keyframes gradbar {
-  0% {
-    background-position: 0% 50%;
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
+  to {
+    opacity: 1;
   }
 }
 
-@-moz-keyframes gradbar {
-  0% {
-    background-position: 0% 50%;
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
+  to {
+    opacity: 1;
   }
 }
 
-@keyframes gradbar {
-  0% {
-    background-position: 0% 50%;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
+  to {
+    opacity: 1;
   }
 }
 
 /*** Tag styling ***/
 a.tag {
-  /* background-color: #f40009; */
+  background-color: #f40009;
   border-radius: 4px;
   color: #000000;
   font-family: "Futura", Helvetica, Arial, sans-serif;
@@ -1112,23 +1143,12 @@ a.tag {
   height: 24px;
   display: inline-block;
   top: 3px;
-  padding: 0 7px;
-  background: #f40009;
-  background: -moz-linear-gradient(#f40009, #621708);
-  background: -webkit-linear-gradient(#f40009, #621708);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f40009',endColorstr='#621708')";
-  border: 1px solid #800000;
+  padding: 1px 7px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   vertical-align: top;
   z-index: 100;
-  max-width: 5em;
-  transition: 1.5s max-width ease-in-out;
-  -o-transition: 1.5s max-width ease-in-out;
-  -moz-transition: 1.5s max-width ease-in-out;
-  -webkit-transition: 1.5s max-width ease-in-out;
-  -ms-transition: 1.5s max-width ease-in-out;
 }
 
 a.tag:hover {
@@ -1396,6 +1416,11 @@ p.tag-wrap {
     font-size: 1em;
   }
 
+  .article__header {
+    transform: rotate(0deg);
+    writing-mode: horizontal-tb;
+  }
+
   .article__featured-image {
     height: auto;
     max-width: 100vw;
@@ -1440,7 +1465,7 @@ p.tag-wrap {
   }
 }
 
-/****
+/***
  *
  *
  *
@@ -1465,4 +1490,4 @@ p.tag-wrap {
   --mtndewgreen: #014713;
  }
 
- ****/
+ ***/

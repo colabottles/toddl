@@ -2,22 +2,15 @@
 layout: layouts/page.njk
 templateClass: tmpl-post
 ---
-
-  <article>
+  <article class="about">
     <figure class="article__featured-image-container">
       <img src="/img/twolights1.jpg" alt="Maine coastline. Rocks at Two Lights State Park" class="article__featured-image">
     </figure>
 
     <header class="article__header">
-      <div class="article__meta">
-        <time>{{page.date | htmlDateString}}</time>
-      </div>
       <h2 class="article__title">
         {{title}}
       </h2>
-      <span class="article__author">
-        by Todd
-      </span>
     </header>
 
     <section class="article__body">
