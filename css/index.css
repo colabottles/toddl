@@ -1172,6 +1172,7 @@ p.tag-wrap {
   font-family: 'BildVariableV2';
   src: url('/fonts/BildVariableV2-VF.woff2');
   src: url('/fonts/BildVariableV2-VF.woff2') format('woff2-variations');
+  font-display: swap;
   font-weight: 1 999;
   font-stretch: 10% 100%;
   font-style: normal;
@@ -1181,6 +1182,7 @@ p.tag-wrap {
   font-family: 'BildVariableV2';
   src: url('/fonts/BildVariableV2-VF.woff');
   src: url('/fonts/BildVariableV2-VF.woff') format('woff');
+  font-display: swap;
   font-weight: 1 999;
   font-stretch: 10% 100%;
   font-style: normal;
@@ -1190,6 +1192,7 @@ p.tag-wrap {
   font-family: 'BildVariableV2';
   src: url('/fonts/BildVariableV2-VF.ttf');
   src: url('/fonts/BildVariableV2-VF.ttf') format('ttf');
+  font-display: swap;
   font-weight: 1 999;
   font-stretch: 10% 100%;
   font-style: normal;
@@ -1199,6 +1202,7 @@ p.tag-wrap {
   font-family: 'Lora-Italic-VF';
   src: url('/fonts/Lora-Italic-VF.woff2');
   src: url('/fonts/Lora-Italic-VF.woff2') format('woff2-variations');
+  font-display: swap;
   font-weight: 1 999;
   font-stretch: 75% 100%;
   font-style: oblique 0deg 12deg;
@@ -1208,6 +1212,7 @@ p.tag-wrap {
   font-family: 'Lora-Italic-VF';
   src: url('/fonts/Lora-Italic-VF.ttf');
   src: url('/fonts/Lora-Italic-VF.ttf') format('ttf');
+  font-display: swap;
   font-weight: 1 999;
   font-stretch: 75% 100%;
   font-style: oblique 0deg 12deg;
@@ -1217,6 +1222,7 @@ p.tag-wrap {
   font-family: 'Lora-VF';
   src: url('/fonts/Lora-VF.woff2');
   src: url('/fonts/Lora-VF.woff2') format('woff2-variations');
+  font-display: swap;
   font-weight: 1 999;
   font-stretch: 75% 100%;
   font-style: normal;
@@ -1226,6 +1232,7 @@ p.tag-wrap {
   font-family: 'Lora-VF';
   src: url('/fonts/Lora-VF.ttf');
   src: url('/fonts/Lora-VF.ttf') format('ttf');
+  font-display: swap;
   font-weight: 1 999;
   font-stretch: 75% 100%;
   font-style: normal;
