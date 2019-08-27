@@ -1,6 +1,5 @@
 [build]
   publish = "_site"
-  functions = "functions"
   command = "DEBUG=* eleventy"
 
 [[headers]]

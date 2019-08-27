@@ -673,7 +673,7 @@ li.postlist-item a {
 .style_guide__body h2 {
   font: 2em 'BildVariableV2';
   font-weight: 700;
-  line-height: 2;
+  padding: 1rem 0;
 }
 
 .article__body p,
