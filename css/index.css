@@ -500,6 +500,7 @@ article.style-guide {
 }
 
 .article__featured-image-container {
+  align-self: end;
   grid-column: 1;
   grid-row: 2;
 }
@@ -527,7 +528,7 @@ article.style-guide {
 }
 
 h2.article__title {
-  font: 4em 'BildVariableV2';
+  font: 6em 'BildVariableV2';
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
