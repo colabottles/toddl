@@ -523,7 +523,6 @@ article.style-guide {
 .article__meta {
   display: flex;
   flex-direction: column-reverse;
-  font-size: 1.4em;
   margin-top: 1rem;
 }
 
@@ -671,7 +670,7 @@ li.postlist-item a {
 
 .article__body h2,
 .style_guide__body h2 {
-  font: 6em 'BildVariableV2';
+  font: 4em 'BildVariableV2';
   font-weight: 700;
   padding: 1rem 0;
 }
