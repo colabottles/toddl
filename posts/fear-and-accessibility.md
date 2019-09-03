@@ -22,7 +22,7 @@ Companies fear having to go back and spend money to fix what isn’t compliant. 
 
 CEO’s with absolutely ZERO technical skills, backgrounds, and minimal technical abilities. (I can use Outlook is not a technical skill). “Someone else will handle that, I won’t get my hands dirty if something bad happens. I can pass the buck off and act like I had no idea.”
 
-## What about the solo guy or the small dev team, or the small agency?
+## What about ...?
 
 Yes, fear. “Conner doesn’t know WCAG AA accessibility guidelines. We don’t have the time to have him learn because we push this out tomorrow.” is the line I’ve heard while at three different places where I was doing front end development. (All names are not insinuating anyone with the names I have used as examples).
 
