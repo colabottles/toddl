@@ -36,6 +36,7 @@ for = "/*.woff"
 Access-Control-Allow-Origin = "*"
 Content-Type = "application/font-woff"
 ```
+
 ```
 [[headers]]
 for = "/*.woff2"
@@ -43,6 +44,7 @@ for = "/*.woff2"
 Access-Control-Allow-Origin = "*"
 Content-Type = "application/font-woff2"
 ```
+
 ```
 [[headers]]
 for = "/*.ttf"
@@ -57,4 +59,4 @@ If there is a better, or easier way to implement this, I would be very intereste
 
 ## Special Thanks
 
-Thanks to Jason Pamental(@jpamental), Scott Kellum(@ScottKellum) and Sarah Drasner(@sarah_edo) for their guidance and assistance!
+Thanks to [Jason Pamental - @jpamental](https://twitter.com/@jpamental), [Scott Kellum - @ScottKellum](https://twitter.com/@ScottKellum) and [Sarah Drasner - @sarah_edo](https://twitter.com/@sarah_edo) for their guidance and assistance!
