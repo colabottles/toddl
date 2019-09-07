@@ -33,29 +33,29 @@ The best (and easiest) solution I found came from here http://bit.ly/2U2DV5s
 
 So, in the netlify.toml file, I just implemented these headers;
 
-```
+<code>
 [[headers]]
 for = "/*.woff"
 [headers.values]
 Access-Control-Allow-Origin = "*"
 Content-Type = "application/font-woff"
-```
+</code>
 
-```
+<code>
 [[headers]]
 for = "/*.woff2"
 [headers.values]
 Access-Control-Allow-Origin = "*"
 Content-Type = "application/font-woff2"
-```
+</code>
 
-```
+<code>
 [[headers]]
 for = "/*.ttf"
 [headers.values]
 Access-Control-Allow-Origin = "*"
 Content-Type = "application/font-ttf"
-```
+</code>
 
 And went to test and they worked! It took about 15 minutes of searching and reading and only less than 5 minutes of placing the appropriate code in and pushing it live!
 
