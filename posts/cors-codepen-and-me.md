@@ -33,7 +33,7 @@ The best (and easiest) solution I found came from here http://bit.ly/2U2DV5s
 
 So, in the netlify.toml file, I just implemented these headers;
 
-```md
+```markdown
 [[headers]]
 for = "/*.woff"
 [headers.values]
@@ -41,7 +41,7 @@ Access-Control-Allow-Origin = "*"
 Content-Type = "application/font-woff"
 ```
 
-```md
+```markdown
 [[headers]]
 for = "/*.woff2"
 [headers.values]
@@ -49,7 +49,7 @@ Access-Control-Allow-Origin = "*"
 Content-Type = "application/font-woff2"
 ```
 
-```md
+```markdown
 [[headers]]
 for = "/*.ttf"
 [headers.values]
