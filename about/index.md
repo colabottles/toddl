@@ -19,22 +19,39 @@ Here's what I know;
 * HTML
 * CSS
   * Sass
+  * Grid Layout
+  * Flex/Flexbox
 * JavaScript
   * Vanilla
   * JQuery
   * Node
-* NPM/Yarn
+* npm/Yarn
+* Static Site Genrators
+  * Eleventy
+  * Jekyll
+  * Hugo
+  * Middleman
 * Responsive Web Design
-* WCAG 2.0 Level AA
-* WordPress
+  * Mobile First
+* WCAG A11y
+  * 2.0 AA &amp; AAA
+* CMS
+  * WordPress (since it was b2/Cafelog)
+  * Drupal
 * Adobe CS
+  * Illustrator
+  * Photoshop
+  * XD
 * Sketch
+* Figma
 * Git
+* CLI
+* Vim
 
 Here's how this site works;
 
-* Netlify 
-* GitHub 
-* Code
-* iTerm2 
-* Eleventy
+* [Netlify](https://netlify.com) 
+* [GitHub](https://github.com) 
+* [Code](https://code.visualstudio.com/)
+* [iTerm2](https://iterm2.com/) 
+* [Eleventy](https://11ty.io)
