@@ -1439,7 +1439,7 @@ p.tag-wrap {
     grid-template-columns: minmax(auto, 36ch);
   }
 
-  blockquote .twitter-tweet {
+  div.EmbeddedTweet-tweetContainer {
     max-width: 100% !important;
   } 
 
