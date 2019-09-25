@@ -1439,10 +1439,6 @@ p.tag-wrap {
     grid-template-columns: minmax(auto-fill, 36ch);
   }
 
-  twitter-widget.twitter-tweet {
-    min-width: 100%;
-  } 
-
   .article__body p {
     width: 36ch;
   }
