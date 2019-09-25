@@ -1436,8 +1436,12 @@ p.tag-wrap {
   }
 
   .article__body {
-    grid-template-columns: minmax(auto-fill, 36ch);
+    grid-template-columns: minmax(auto, 36ch);
   }
+
+  twitter-widget.twitter-tweet {
+    width: 50%;
+  } 
 
   .article__body p {
     width: 36ch;
