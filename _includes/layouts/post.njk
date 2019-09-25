@@ -8,12 +8,12 @@ templateClass: tmpl-page
     </figure>
 
     <header class="article__header" role="banner">
-      <div class="article__meta">
-        <time>{{page.date | htmlDateString}}</time>
-      </div>
       <h2 class="article__title">
         {{title}}
       </h2>
+      <div class="article__meta">
+        <time>{{page.date | htmlDateString}}</time>
+      </div>
     </header>
 
     <section class="article__body" role="region">

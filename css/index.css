@@ -513,12 +513,12 @@ article.style-guide {
 
 .article__header {
   align-self: start;
-  background-color: #ffffff;
-  grid-row: 1/2;
+  background-color: rgba(0, 0, 0, 0);
+  grid-row: 1;
   grid-column: 1;
   justify-self: center;
   transform: rotate(180deg);
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
 }
 
 .article__meta {
