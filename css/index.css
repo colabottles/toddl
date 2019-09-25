@@ -1444,7 +1444,7 @@ p.tag-wrap {
   }
 
   .article__body p {
-    max-width: 36ch;
+    width: 36ch;
   }
 
   .article-list {
