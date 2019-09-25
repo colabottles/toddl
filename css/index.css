@@ -512,7 +512,6 @@ article.style-guide {
 }
 
 .article__header {
-  align-self: start;
   background-color: rgba(0, 0, 0, 0);
   grid-row: 1;
   grid-column: 1;
@@ -535,7 +534,7 @@ h2.article__title {
   -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
   font-variation-settings: 'wght'900, 'wdth'60;
-  line-height: 1.2;
+  line-height: 1;
   margin: 1rem 0;
   text-transform: none;
 }
