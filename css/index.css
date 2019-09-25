@@ -1396,7 +1396,7 @@ p.tag-wrap {
 }
 
 /*** SMALL SCREENS ***/
-@media (min-width: 280px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 640px) {
   navbar ul li.nav-item {
     margin-right: 3rem;
   }
