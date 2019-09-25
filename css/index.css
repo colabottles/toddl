@@ -1405,10 +1405,6 @@ p.tag-wrap {
     margin-left: 0rem;
   }
 
-  /* main {
-    max-width: 100vw;
-  } */
-
   .nav-item a {
     font-size: 1em;
   }
@@ -1443,7 +1439,8 @@ p.tag-wrap {
     grid-template-columns: minmax(auto-fill, 36ch);
   }
 
-  .article__body p {
+  twitter-widget.twitter-tweet, 
+  /* .article__body p */ {
     width: 36ch;
   }
 
