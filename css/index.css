@@ -1444,7 +1444,7 @@ p.tag-wrap {
   }
 
   .article__body {
-    grid-template-columns: 1fr minmax(auto-fit, 36ch) 1fr;
+    grid-template-columns: 1fr minmax(auto, 36ch) 1fr;
   }
 
   .article-list {
