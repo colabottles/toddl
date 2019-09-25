@@ -1439,9 +1439,9 @@ p.tag-wrap {
     grid-template-columns: minmax(auto, 36ch);
   }
 
-  .EmbeddedTweet-tweet {
+  blockquote.twitter-tweet {
     max-width: 100% !important;
-  }
+  } 
 
   .article__body p {
     width: 36ch;
