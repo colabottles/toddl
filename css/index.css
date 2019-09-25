@@ -1439,7 +1439,7 @@ p.tag-wrap {
     grid-template-columns: minmax(auto, 36ch);
   }
 
-  twitter-widget[id^='twitter-widget-'] { 
+  twitter-widget#twitter-widget { 
     width: 100%;
   } 
 
