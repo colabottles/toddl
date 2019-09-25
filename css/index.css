@@ -693,7 +693,7 @@ h2.article-list-article-title {
 }
 
 blockquote {
-  background-color: #fff;
+  background-color: rgb(240, 240, 240, 0.7);
   border-left: 5px solid #014713;
   font-family: "Lora", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
