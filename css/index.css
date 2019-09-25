@@ -1439,7 +1439,7 @@ p.tag-wrap {
     grid-template-columns: minmax(auto, 36ch);
   }
 
-  div[id^='twitter-widget-'].EmbeddedTweet { 
+  div[id^='twitter-widget-'] { 
     max-width: 100% !important;
   } 
 
