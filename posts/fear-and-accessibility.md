@@ -36,8 +36,7 @@ Fear of not knowing. Fear of having to spend money. Fear of having to ask for he
 
 800 companies were sued in 2017 and Tanner’s company could be next. Fear needs to be in that developers need to be held accountable. Bottom line. If you don’t make it accessible, then there are ramifications. It looks like those numbers will be met in 2019, if not exceeded.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;The rate of lawsuits filed in federal courts related to website and app accessibility has now hit a rate of one-an-hour, that’s 8 a day, 40 per week and set to be on pace for over 2,000 lawsuits again this year.&quot; <a href="https://t.co/eNwUpsFQtH">https://t.co/eNwUpsFQtH</a></p>&mdash; Bruce Lawson (@brucel) <a href="https://twitter.com/brucel/status/1164829479010590720?ref_src=twsrc%5Etfw">August 23, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote cite="@brucel" class="twitter-tweet" data-lang="en">&quot;The rate of lawsuits filed in federal courts related to website and app accessibility has now hit a rate of one-an-hour, that’s 8 a day, 40 per week and set to be on pace for over 2,000 lawsuits again this year.&quot; <a href="https://t.co/eNwUpsFQtH">https://t.co/eNwUpsFQtH</a>&mdash; Bruce Lawson (@brucel) <a href="https://twitter.com/brucel/status/1164829479010590720?ref_src=twsrc%5Etfw">August 23, 2019</a></blockquote>
 
 ## Where do we go from here?
 
