@@ -1439,8 +1439,8 @@ p.tag-wrap {
     grid-template-columns: minmax(auto, 36ch);
   }
 
-  div.EmbeddedTweet-tweetContainer {
-    max-width: 100% !important;
+  twitter-widget[id^='twitter-widget-'] { 
+    width: 100%;
   } 
 
   .article__body p {
