@@ -1440,7 +1440,7 @@ p.tag-wrap {
   }
 
   twitter-widget.twitter-tweet {
-    width: 50%;
+    max-width: 100% !important;
   } 
 
   .article__body p {
