@@ -1443,6 +1443,10 @@ p.tag-wrap {
     grid-template-columns: 1fr repeat(auto-fill, 36ch) 1fr;
   }
 
+  .article__body p {
+    max-width: 36ch;
+  }
+
   .article-list {
     padding: 1rem;
   }
