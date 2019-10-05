@@ -321,7 +321,8 @@ section#left-panel {
 }
 
 section#right-panel {
-  background-image: url(/img/todd.png);
+  background-image: url(/img/headshot.jpg);
+  background-clip: content-box;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
