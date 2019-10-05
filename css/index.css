@@ -323,7 +323,7 @@ section#left-panel {
 section#right-panel {
   background-image: url(/img/headshot.jpg);
   background-size: cover;
-  padding: 0 2rem;
+  margin: 0 2rem;
 }
 
 main.no-splash {
