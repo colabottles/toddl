@@ -38,7 +38,10 @@
     </header>
 
     <main class="splash" role="main">
-      {{ content | safe }}
+      <section id="left-panel">
+        {{ content | safe }}
+      </section>
+      <section id="right-panel"></section>
     </main>
 
     <footer role="contentinfo">

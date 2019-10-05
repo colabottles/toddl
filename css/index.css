@@ -310,10 +310,22 @@ span.pre:hover {
 
 /*** MEAT & POTATOES ***/
 main.splash {
-  background-image: url(/img/twolights1.jpg);
+  /* background-image: url(/img/twolights1.jpg);
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 50%; */
+  display: grid;
+  grid-template-areas: "a b";
   height: 85vh;
+}
+
+section#left-panel {
+  background-color: orange;
+  grid-area: a;
+}
+
+section#right-panel {
+  background-color: red;
+  grid-area: b;
 }
 
 main.no-splash {
