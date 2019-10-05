@@ -322,8 +322,8 @@ section#left-panel {
 }
 
 section#right-panel {
-  background-image: url(/img/headshot.jpg);
-  background-size: 50% 50%;
+  background-image: url(/img/todd.png);
+  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   grid-area: right right;
