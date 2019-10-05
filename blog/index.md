@@ -1,10 +1,10 @@
 ---
 layout: layouts/blog.njk
-title: Stories
+title: Blog
 date: 2019-06-06
 tags:
   - nav
-navtitle: Stories
+navtitle: Blog
 templateClass: tmpl-post
 ---
 
