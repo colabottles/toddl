@@ -316,15 +316,13 @@ main.splash {
 }
 
 section#left-panel {
-  background-image: url(/img/twolights1.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
+  background-color: white;
   grid-area: left left;
 }
 
 section#right-panel {
   background-image: url(/img/headshot.jpg);
-  background-size: contain;
+  background-size: 50% 50%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   grid-area: right right;
@@ -629,7 +627,7 @@ h2 {
 }
 
 h2.hello {
-  color: white;
+  color: black;
   font-size: 10em;
   margin-left: 10rem;
   text-transform: lowercase;
@@ -637,10 +635,10 @@ h2.hello {
 }
 
 h3.intro {
-  color: white;
+  color: black;
   font-size: 3em;
-  margin-left: 3em;
-  text-transform: lowercase;
+  margin-left: 2em;
+  text-transform: uppercase;
   animation: fadeIn 5s ease-in;
 }
 
