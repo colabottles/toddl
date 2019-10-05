@@ -324,7 +324,9 @@ section#left-panel {
 }
 
 section#right-panel {
-  background-color: white;
+  background-image: url(/img/headshot.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
   grid-area: b;
 }
 
