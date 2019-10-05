@@ -323,103 +323,12 @@ section#left-panel {
 section#right-panel {
   background-image: url(/img/headshot.jpg);
   background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
   padding: 0 2rem;
 }
 
 main.no-splash {
   background-color: white;
 }
-
-/* main.promoted-articles__container {
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #ffffff;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  max-width: 100vw;
-}
-
-.promoted-articles {
-  border: 0;
-  display: grid;
-  gap: 8px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 240px);
-  grid-template-areas: "article-6 article-5 article-3 article-3""article-6 article-5 article-3 article-3""article-1 article-1 article-2 article-2""article-1 article-1 article-4 article-4";
-  padding: 8px;
-}
-
-.promoted-articles__article {
-  height: 100%;
-  width: auto;
-  background-color: rgba(0, 0, 0, 1.0);
-  display: block;
-  opacity: 0.75;
-  overflow: hidden;
-  position: relative;
-}
-
-.promoted-articles__article:hover {
-  transition: 1.2s ease-in-out;
-  opacity: 1;
-}
-
-.promoted-articles__article:nth-child(1) {
-  grid-area: article-1;
-}
-
-.promoted-articles__article:nth-child(2) {
-  grid-area: article-2;
-}
-
-.promoted-articles__article:nth-child(3) {
-  grid-area: article-3;
-}
-
-.promoted-articles__article:nth-child(4) {
-  grid-area: article-4;
-}
-
-.promoted-articles__article:nth-child(5) {
-  grid-area: article-5;
-}
-
-.promoted-articles__article:nth-child(6) {
-  grid-area: article-6;
-}
-
-.promoted-articles__image {
-  height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
-  opacity: 0.8;
-}
-
-.promoted-articles__content {
-  position: absolute;
-  right: 3rem;
-  bottom: 0rem;
-  left: 3rem;
-}
-
-.promoted-articles__title {
-  color: rgba(255, 255, 255, 1.0);
-  font-family: "Futura", Arial, Helvetica, sans-serif;
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 1.1;
-  padding-bottom: 2rem;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 1.0);
-  text-transform: uppercase;
-}
-
-.promoted-articles__article:focus .promoted-articles__title,
-.promoted-articles__article:hover .promoted-articles__title {
-  color: rgba(255, 255, 255, 1.0);
-} */
 
 .article-list {
   display: grid;
