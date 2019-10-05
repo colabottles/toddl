@@ -235,7 +235,7 @@ span.pre:hover {
 .navbar {
   grid-template-columns: auto 3fr;
   height: 50px;
-  margin-right: 10px;
+  margin-right: 20px;
   overflow: hidden;
 }
 
