@@ -333,7 +333,7 @@ main.no-splash {
   background-color: white;
 }
 
-main.promoted-articles__container {
+/* main.promoted-articles__container {
   margin-right: auto;
   margin-left: auto;
   background-color: #ffffff;
@@ -420,7 +420,7 @@ main.promoted-articles__container {
 .promoted-articles__article:focus .promoted-articles__title,
 .promoted-articles__article:hover .promoted-articles__title {
   color: rgba(255, 255, 255, 1.0);
-}
+} */
 
 .article-list {
   display: grid;
