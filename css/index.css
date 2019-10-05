@@ -327,6 +327,9 @@ section#right-panel {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   grid-area: right right;
+  height: 300px;
+  padding: 2rem;
+  width: 300px;
 }
 
 main.no-splash {
@@ -637,7 +640,7 @@ h2.hello {
 h3.intro {
   color: black;
   font: 1.4em "Lora";
-  margin: -8em 0 0 4.75em;
+  margin: -14em 0 0 4.75em;
   text-transform: uppercase;
   animation: fadeIn 5s ease-in;
 }
