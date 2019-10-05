@@ -636,8 +636,8 @@ h2.hello {
 
 h3.intro {
   color: black;
-  font-size: 3em;
-  margin-left: 2em;
+  font-size: 1.4em;
+  margin: -6em 0 0 2em;
   text-transform: uppercase;
   animation: fadeIn 5s ease-in;
 }
