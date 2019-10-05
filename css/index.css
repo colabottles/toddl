@@ -630,6 +630,7 @@ h2.hello {
   color: white;
   font-size: 10em;
   margin-left: 10rem;
+  text-transform: none;
   animation: fadeIn 5s ease-in;
 }
 
@@ -637,6 +638,7 @@ h3.intro {
   color: white;
   font: 1.4em "Lora";
   margin: -11em 0 0 4.75em;
+  text-transform: none;
   animation: fadeIn 5s ease-in;
 }
 
