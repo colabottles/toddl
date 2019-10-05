@@ -317,8 +317,7 @@ main.splash {
 }
 
 section#left-panel {
-  background-color: white;
-  grid-area: left left;
+  background-color: black;
 }
 
 section#right-panel {
@@ -326,7 +325,6 @@ section#right-panel {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  grid-area: right right;
   height: 300px;
   padding: 2rem;
   width: 300px;
@@ -630,7 +628,7 @@ h2 {
 }
 
 h2.hello {
-  color: black;
+  color: white;
   font-size: 10em;
   margin-left: 10rem;
   text-transform: lowercase;
@@ -638,9 +636,9 @@ h2.hello {
 }
 
 h3.intro {
-  color: black;
+  color: white;
   font: 1.4em "Lora";
-  margin: -14em 0 0 4.75em;
+  margin: -11em 0 0 4.75em;
   text-transform: uppercase;
   animation: fadeIn 5s ease-in;
 }
