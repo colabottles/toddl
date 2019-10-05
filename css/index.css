@@ -312,7 +312,7 @@ span.pre:hover {
 main.splash {
   /*  */
   display: grid;
-  grid-template-areas: "a b";
+  grid-template-areas: "left left right right";
   height: 85vh;
 }
 
@@ -320,14 +320,14 @@ section#left-panel {
   background-image: url(/img/twolights1.jpg);
   background-size: cover;
   background-position: 50% 50%;
-  grid-area: a;
+  grid-area: left left;
 }
 
 section#right-panel {
   background-image: url(/img/headshot.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: 50% 50%;
-  grid-area: b;
+  grid-area: right right;
 }
 
 main.no-splash {
