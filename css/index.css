@@ -622,8 +622,7 @@ h1.home:hover {
 }
 
 h2 {
-  font-family: "Futura", "Trebuchet MS", Arial, Helvetica, sans-serif;
-  font-size: 1.6em;
+  font: 1.6em "Lora";
   text-transform: uppercase;
 }
 
@@ -637,8 +636,8 @@ h2.hello {
 
 h3.intro {
   color: black;
-  font-size: 1.4em;
-  margin: -5em 0 0 4.75em;
+  font: 1.4em "Lora";
+  margin: -8em 0 0 4.75em;
   text-transform: uppercase;
   animation: fadeIn 5s ease-in;
 }
