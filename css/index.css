@@ -326,9 +326,7 @@ section#right-panel {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  height: 300px;
   padding: 2rem;
-  width: 300px;
 }
 
 main.no-splash {
