@@ -311,7 +311,8 @@ span.pre:hover {
 /*** MEAT & POTATOES ***/
 main.splash {
   display: grid;
-  grid-template-areas: "left left right right";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   height: 85vh;
 }
 
@@ -637,7 +638,7 @@ h2.hello {
 h3.intro {
   color: black;
   font-size: 1.4em;
-  margin: -6em 0 0 2em;
+  margin: -5em 0 0 4.75em;
   text-transform: uppercase;
   animation: fadeIn 5s ease-in;
 }
