@@ -535,17 +535,19 @@ h2 {
 }
 
 h2.hello {
+  align-self: flex-end;
   color: white;
   font-size: 10em;
-  margin-left: 10rem;
+  justify-self: center;
   text-transform: none;
   animation: fadeIn 5s ease-in;
 }
 
 h3.intro {
+  align-self: center;
   color: white;
   font: 1.4em "Lora";
-  margin: -11em 0 0 4.75em;
+  justify-self: center;
   text-transform: none;
   animation: fadeIn 5s ease-in;
 }
