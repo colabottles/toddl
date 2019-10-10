@@ -321,7 +321,7 @@ section#left-panel {
 }
 
 section#right-panel {
-  background-image: url(/img/headshot.jpg);
+  background-image: url(/img/frontpage.jpg);
   background-size: cover;
   margin: 0 2rem;
 }
