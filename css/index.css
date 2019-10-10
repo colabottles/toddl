@@ -321,7 +321,7 @@ section#left-panel {
 }
 
 section#right-panel {
-  background-image: url(/img/frontpage.jpg);
+  background-image: url(/img/headshot.jpg);
   background-size: cover;
   margin: 0 2rem;
 }
@@ -544,7 +544,7 @@ h2.hello {
 }
 
 h3.intro {
-  align-self: center;
+  align-self: start;
   color: white;
   font: 1.4em "Lora";
   justify-self: center;
