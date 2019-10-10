@@ -1190,8 +1190,21 @@ p.tag-wrap {
   }
 
   h2.hello {
+    align-self: flex-end;
+    color: white;
     font-size: 8em;
-    margin-left: 5rem;
+    justify-self: center;
+    text-transform: none;
+    animation: fadeIn 5s ease-in;
+  }
+
+  h3.intro {
+    align-self: center;
+    color: white;
+    font: 1.2em "Lora";
+    justify-self: center;
+    text-transform: none;
+    animation: fadeIn 5s ease-in;
   }
 
   /*** MOBILE HEADINGS ***/
@@ -1408,8 +1421,21 @@ p.tag-wrap {
   }
 
   h2.hello {
+    align-self: flex-end;
+    color: white;
     font-size: 5em;
-    margin-left: 2rem;
+    justify-self: center;
+    text-transform: none;
+    animation: fadeIn 5s ease-in;
+  }
+
+  h3.intro {
+    align-self: center;
+    color: white;
+    font: 1em "Lora";
+    justify-self: center;
+    text-transform: none;
+    animation: fadeIn 5s ease-in;
   }
 }
 
