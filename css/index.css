@@ -318,12 +318,18 @@ main.splash {
 
 section#left-panel {
   background-color: black;
+  grid-row: 1/4;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 section#right-panel {
   background-image: url(/img/frontpage.png);
   background-size: cover;
+  grid-row: 1/4;
   margin: 0 2rem;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 main.no-splash {
@@ -1189,6 +1195,23 @@ p.tag-wrap {
     padding: 50px;
   }
 
+  main.splash {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    max-height: 100vh;
+  }
+
+  section#left-panel {
+    grid-row: 1;
+  }
+
+  section#right-panel {
+    justify-self: center;
+    grid-row: 2;
+    width: 100%;
+  }
+
   h2.hello {
     align-self: flex-end;
     color: white;
@@ -1202,7 +1225,6 @@ p.tag-wrap {
     align-self: center;
     color: white;
     font: 1.2em "Lora";
-    justify-self: center;
     text-transform: none;
     animation: fadeIn 5s ease-in;
   }
@@ -1433,9 +1455,9 @@ p.tag-wrap {
     align-self: center;
     color: white;
     font: 1em "Lora";
-    justify-self: center;
     text-transform: none;
     animation: fadeIn 5s ease-in;
+    text-align: center;
   }
 }
 
