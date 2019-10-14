@@ -8,7 +8,7 @@ navtitle: About
 templateClass: tmpl-post
 ---
 
-## Welcome to my About page!
+## Hi There!
 
 I'm Todd. I've been a Front End Developer for around twenty years or so. I started by learning BASIC as a young lad and my fascination with the internet and programming and building things on the web took off from there. My focus has been primarily on accessibility(a11y), user experience and interfaces, web standards and semantic code, a lot of backend work with PHP, some Rails and even a bit of ASP.
 
