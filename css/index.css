@@ -478,7 +478,7 @@ h2.article__title {
   color: #014713;
   text-decoration: underline;
   text-underline-offset: 0.2em;
-  text-decoration-thickness: 0.2em;
+  text-decoration-thickness: 0.1em;
   text-decoration-style: solid;
   text-decoration-color: #014713;
 }
