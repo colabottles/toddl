@@ -786,18 +786,32 @@ a.a11y:hover {
 /*** CONTACT FORM ***/
 .contact {
   background: #f8f8ff;
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  grid-column-gap: 1em;
   padding: 2em;
+  width: 80vw;
+  max-width: 30em;
 }
 
 h2#hi {
   font-size: 2em;
   font-weight: 700;
+  grid-column: 1 / -1;
   letter-spacing: .05em;
   text-align: center;
   text-transform: uppercase;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 1em;
+}
+
+.field {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: inherit;
+  grid-template-columns: subgrid;
+  grid-column-gap: inherit;
 }
 
 .contact-form label {
