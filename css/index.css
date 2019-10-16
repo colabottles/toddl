@@ -817,7 +817,7 @@ h2#hi {
 }
 
 .field#hidden {
-  display: hidden;
+  visibility: hidden;
 }
 
 .contact form input,
