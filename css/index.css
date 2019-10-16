@@ -787,20 +787,9 @@ a.a11y:hover {
 .contact {
   background: #f8f8ff;
   display: grid;
-  grid-template-columns: subgrid;
-  grid-column-gap: inherit;
-  padding: 2em;
-  width: 80vw;
-  max-width: 30em;
-}
-
-.contact-form {
-  display: grid;
   grid-template-columns: max-content 1fr;
-}
-
-.company-info {
-  background: #f8f8ff;
+  grid-column-gap: 1em;
+  padding: 2em;
 }
 
 h2#hi {
@@ -811,16 +800,6 @@ h2#hi {
   text-transform: uppercase;
 }
 
-.company-info ul {
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-
-.company-info ul li {
-  list-style: none;
-}
-
-/*** FORM STYLES ***/
 button {
   background: #000;
   border: 0;
@@ -838,20 +817,18 @@ button {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: inherit;
+  grid-template-columns: subgrid;
+  grid-column-gap: inherit;
 }
 
-/*** CONTACT FORM BUTTON ***/
 .contact form input,
 .contact form textarea {
   border: 0.5rem solid #f8f8ff;
   padding: .75em;
   width: 50%;
-}
-
-.contact form input:hover,
-.contact form textarea:hover {
-  border: 0.5rem solid #dcdcdc;
-  transition: border 1s ease-in-out;
 }
 
 /*** STYLE GUIDE STUFF! ***/
