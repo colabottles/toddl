@@ -790,6 +790,8 @@ a.a11y:hover {
   grid-template-columns: subgrid;
   grid-column-gap: inherit;
   padding: 2em;
+  width: 80vw;
+  max-width: 30em;
 }
 
 .contact-form {
