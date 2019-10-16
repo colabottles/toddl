@@ -3,29 +3,30 @@ layout: layouts/page.njk
 templateClass: tmpl-post
 ---
 
-  <h2>say hi!</h2>
     <div class="contact">
-      <form name="contact" method="POST" id="contact-form" netlify-honeypot="bot-field" data-netlify="true">
-        <p class="hidden">
-          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-        </p>
-        <label for="name">Name:
-          <input type="text" name="name" aria-labelledby="contact-form">
-        </label>
-        <label for="email">Email:
-          <input type="email" name="email" aria-labelledby="contact-form">
-        </label>
-        <label for="url">URL:
-          <input type="text" name="url" aria-labelledby="contact-form">
-        </label>
-        <label for="twitter">Twitter:
-          <input type="text" name="twitter" aria-labelledby="contact-form">
-        </label>
-        <label for="message">Message:
-          <textarea name="message" id="" cols="30" rows="10" aria-labelledby="contact-form"></textarea>
-        </label>
-        <p class="full" data-netlify-recaptcha="true"></p>
-          <button>
-            <span>Submit</span>
-          </button>
-      </form>
+      <h2>say hi!</h2>
+        <form name="contact" method="POST" id="contact-form" netlify-honeypot="bot-field" data-netlify="true">
+          <p class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+          <label for="name">Name:
+            <input type="text" name="name" aria-labelledby="contact-form">
+          </label>
+          <label for="email">Email:
+            <input type="email" name="email" aria-labelledby="contact-form">
+          </label>
+          <label for="url">URL:
+            <input type="text" name="url" aria-labelledby="contact-form">
+          </label>
+          <label for="twitter">Twitter:
+            <input type="text" name="twitter" aria-labelledby="contact-form">
+          </label>
+          <label for="message">Message:
+            <textarea name="message" id="" cols="30" rows="10" aria-labelledby="contact-form"></textarea>
+          </label>
+          <p class="full" data-netlify-recaptcha="true"></p>
+            <button>
+              <span>Submit</span>
+            </button>
+        </form>
+      </div>
