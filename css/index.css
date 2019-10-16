@@ -787,6 +787,8 @@ a.a11y:hover {
 .contact {
   background: #f8f8ff;
   display: grid;
+  grid-template-columns: subgrid;
+  grid-column-gap: inherit;
   padding: 2em;
 }
 
@@ -821,7 +823,7 @@ button {
   background: #000;
   border: 0;
   color: #fff;
-  font-family: "Futura", Helvetica, Arial, sans-serif;
+  font-family: "Lora", Helvetica, Arial, sans-serif;
   font-weight: 700;
   padding: 0.85rem 2rem;
   text-transform: uppercase;
@@ -829,7 +831,7 @@ button {
 }
 
 .contact-form label {
-  font-family: "Futura", Helvetica, Arial, sans-serif;
+  font-family: "Lora", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: 700;
   letter-spacing: 1px;
