@@ -786,21 +786,18 @@ a.a11y:hover {
 /*** CONTACT FORM ***/
 .contact-form {
   display: grid;
-  grid-template-columns: 1fr 72ch 1fr;
-  grid-template-rows: auto repeat(5, auto) 1fr;
-  justify-content: center;
-  margin-top: 3rem;
+  grid-template-columns: max-content 1fr;
 }
 
 .company-info {
   background: #f8f8ff;
-  grid-column: 2;
 }
 
 .company-info h2 {
-  display: flex;
   font-size: 2em;
-  justify-content: center;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
 }
 
 .company-info ul {
@@ -833,11 +830,10 @@ button {
 .contact form {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-gap: 1rem;
 }
 
 .contact form label {
-  display: block;
   font-family: "Futura", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: 700;
@@ -852,7 +848,9 @@ button {
 }
 
 .contact form .full {
-  grid-column: 1;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-gap: 1em;
 }
 
 .contact form input,
@@ -1346,17 +1344,6 @@ p.tag-wrap {
   .company-info ul,
   .brand {
     text-align: center;
-  }
-
-  .company-info h2 {
-    display: flex;
-    font-weight: 700;
-    justify-content: center;
-    letter-spacing: .05em;
-    margin: 1rem 0rem;
-    padding: 1rem 0rem;
-    text-align: center;
-    text-transform: uppercase;
   }
 }
 
