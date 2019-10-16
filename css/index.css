@@ -843,7 +843,7 @@ button {
 .contact form textarea {
   border: 0.5rem solid #f8f8ff;
   padding: .75em;
-  width: 100%;
+  width: 50%;
 }
 
 .contact form input:hover,
