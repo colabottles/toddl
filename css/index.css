@@ -793,7 +793,7 @@ a.a11y:hover {
   background: #f8f8ff;
 }
 
-.company-info h2 {
+h2#hi {
   font-size: 2em;
   font-weight: 700;
   letter-spacing: .05em;
