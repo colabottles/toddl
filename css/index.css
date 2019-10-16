@@ -784,6 +784,12 @@ a.a11y:hover {
 }
 
 /*** CONTACT FORM ***/
+.contact {
+  background: #f8f8ff;
+  display: grid;
+  padding: 2em;
+}
+
 .contact-form {
   display: grid;
   grid-template-columns: max-content 1fr;
@@ -797,6 +803,7 @@ h2#hi {
   font-size: 2em;
   font-weight: 700;
   letter-spacing: .05em;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -807,12 +814,6 @@ h2#hi {
 
 .company-info ul li {
   list-style: none;
-}
-
-.contact {
-  background: #f8f8ff;
-  grid-column: 2;
-  padding: 2em;
 }
 
 /*** FORM STYLES ***/
@@ -827,37 +828,11 @@ button {
   width: 50%;
 }
 
-.contact form {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
-}
-
-.contact form label {
+.contact-form label {
   font-family: "Futura", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: 700;
   letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.contact form p {
-  margin: 0;
-  font-family: "Futura", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-}
-
-.contact form .full {
-  display: grid;
-  grid-template-columns: subgrid;
-  grid-gap: 1em;
-}
-
-.contact form input,
-.contact form textarea {
-  font-family: "Futura", Helvetica, Arial, sans-serif;
-  font-size: .7em;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
