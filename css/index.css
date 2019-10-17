@@ -1337,7 +1337,6 @@ p.tag-wrap {
     letter-spacing: 1px;
     min-width: 30vw;
     padding: 2em;
-    width: 99vw;
   }
 
   h2#hi {
@@ -1351,7 +1350,7 @@ p.tag-wrap {
 
   .field {
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
   }
 
