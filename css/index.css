@@ -1328,7 +1328,8 @@ p.tag-wrap {
   }
 
   .contact {
-    width: 30vw;
+    min-width: 30vw;
+    width: 80vw;
   }
 
   .contact-form {
