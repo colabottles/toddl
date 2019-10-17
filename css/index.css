@@ -1350,7 +1350,7 @@ p.tag-wrap {
 
   .field {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: min-content 1fr;
     grid-column-gap: 1em;
   }
 
