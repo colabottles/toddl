@@ -791,9 +791,8 @@ a.a11y:hover {
   font-weight: 400;
   justify-self: center;
   letter-spacing: 1px;
-  max-width: 30em;
+  min-width: 30vw;
   padding: 2em;
-  width: 80vw;
 }
 
 h2#hi {
