@@ -810,11 +810,11 @@ h2#hi {
   grid-column-gap: 1em;
 }
 
-/* .field {
+.field {
   display: grid;
   grid-template-columns: subgrid;
   grid-column-gap: inherit;
-} */
+}
 
 .field#hidden {
   visibility: hidden;
