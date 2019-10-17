@@ -1360,6 +1360,13 @@ p.tag-wrap {
     grid-column-gap: inherit;
   }
 
+  .contact form input,
+  .contact form textarea {
+    border: 0.5rem solid #f8f8ff;
+    font-family: "Lora", Helvetica, Arial, sans-serif;
+    padding: .5em;
+  }
+
   .article__header {
     transform: rotate(0deg);
     writing-mode: horizontal-tb;
