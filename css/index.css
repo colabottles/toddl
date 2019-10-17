@@ -796,6 +796,7 @@ a.a11y:hover {
 }
 
 h2#hi {
+  font-family: "Lora", Helvetica, Arial, sans-serif;
   font-size: 2em;
   font-weight: 700;
   letter-spacing: .05em;
@@ -1339,16 +1340,25 @@ p.tag-wrap {
     width: 99vw;
   }
 
-  .contact-form {
-    grid-template-columns: 1fr;
+  h2#hi {
+    font-family: "Lora", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-align: center;
+    text-transform: uppercase;
   }
 
-  .contact form button {
-    width: 50%;
+  .field {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 1em;
   }
 
-  .contact form label {
-    font-size: 1em;
+  .field {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column-gap: inherit;
   }
 
   .article__header {
