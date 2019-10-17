@@ -791,7 +791,7 @@ a.a11y:hover {
   font-weight: 400;
   justify-self: center;
   letter-spacing: 1px;
-  min-width: 20vw;
+  min-width: 30vw;
   padding: 2em;
 }
 
@@ -1325,6 +1325,10 @@ p.tag-wrap {
 
   .menu-toggle {
     margin: 9px 5px 0px 0px;
+  }
+
+  .contact {
+    min-width: 20vw;
   }
 
   .contact-form {
