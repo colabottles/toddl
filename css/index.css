@@ -1328,8 +1328,14 @@ p.tag-wrap {
   }
 
   .contact {
+    background: #f8f8ff;
+    font-family: "Lora", Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    justify-self: center;
+    letter-spacing: 1px;
     min-width: 30vw;
-    width: 90vw;
+    padding: 2em;
   }
 
   .contact-form {
