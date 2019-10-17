@@ -1336,6 +1336,7 @@ p.tag-wrap {
     letter-spacing: 1px;
     min-width: 30vw;
     padding: 2em;
+    width: 99vw;
   }
 
   .contact-form {
