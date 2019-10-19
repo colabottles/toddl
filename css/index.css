@@ -248,7 +248,7 @@ span.pre:hover {
 }
 
 .navbar ul li.nav-item {
-  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-family: "Lora", Arial, Helvetica, sans-serif;
   font-weight: 700;
   grid-template-columns: subgrid;
   justify-items: center;
@@ -258,7 +258,7 @@ span.pre:hover {
 
 .nav-item a {
   color: #000;
-  font-family: "Futura", Helvetica, Arial, sans-serif;
+  font-family: "Lora", Helvetica, Arial, sans-serif;
   font-size: 1.7em;
   font-style: normal;
   letter-spacing: 0.05rem;
@@ -478,7 +478,7 @@ h2.article__title {
   color: #014713;
   text-decoration: underline;
   text-underline-offset: 0.2em;
-  text-decoration-thickness: 0.1em;
+  text-decoration-thickness: 0.2em;
   text-decoration-style: solid;
   text-decoration-color: #014713;
 }
