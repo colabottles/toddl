@@ -678,6 +678,12 @@ blockquote cite:before {
   content: "\2014 \2009";
 }
 
+caption {
+  font-style: oblique;
+  font-size: .9em;
+  text-align: center;
+}
+
 figcaption {
   font-style: oblique;
   font-size: .9em;
