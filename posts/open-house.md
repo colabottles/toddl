@@ -25,7 +25,7 @@ Back to the weekend. A great breakfast, some great conversation and as much as I
 
 <img src="img/breakfastphotoop.jpg" alt="From left to right, Jason Pamental, Todd Libby, and David Jonathan Ross at breakfast Sunday morning" />
 
-and here is the group photo, courtesy of Matthew Rechs, taken at Apex Orchards;
+<caption>and here is the group photo, courtesy of Matthew Rechs, taken at Apex Orchards</caption>
 
 <img src="img/group-photo.jpg" alt="A group photo at the attendees at David Jonathan Ross's open house. Photo taken at Apex Orchards, courtesy of Matthew Rechs" />
 
