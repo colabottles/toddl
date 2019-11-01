@@ -1018,9 +1018,7 @@ video {
 
 /*** Tag styling ***/
 a.tag {
-  background-color: #f40009;
-  border-radius: 4px;
-  color: #000000;
+  color: #111;
   font-family: "Futura", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
