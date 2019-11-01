@@ -1381,7 +1381,7 @@ p.tag-wrap {
 
   .article__body h2 {
     display: inline-block;
-    font-size: 1.3em;
+    font-size: 1.7em;
     line-height: 1.2;
   }
 
@@ -1404,6 +1404,7 @@ p.tag-wrap {
 
   .shape {
     shape-margin: 4rem;
+    float: none;
   }
 
   h2.hello {
