@@ -1018,7 +1018,7 @@ video {
 
 /*** Tag styling ***/
 a.tag {
-  color: #111;
+  color: #1da1f2;
   font-family: "Futura", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
@@ -1040,7 +1040,8 @@ a.tag {
 }
 
 a.tag:hover {
-  background-color: #900;
+  background-color: #1259a7;
+  border-radius: 1em;
   color: #fff;
   max-width: inherit;
 }
