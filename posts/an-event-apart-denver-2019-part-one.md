@@ -13,7 +13,7 @@ layout: layouts/post.njk
 
 I got into Denver after seven hors of travel, and it had been thirty-two years since I had been here. It was snowing, which I could have waited on but still I was traveling again. I got to do something I never thought I would ever do and that was attend the speaker meeting prior to the conference.
 
-I got a huge bear hug from my new friend Jason Ogle, the man behind the User Defenders Podcast. One of my favorites, I highly suggest folks subscribe, listen, join the User Defenders community and become a patron on Patreon.
+I got a huge bear hug from my new friend Jason Ogle, the man behind the <a href="https://userdefenders.com">User Defenders Podcast</a>. One of my favorites, I highly suggest folks subscribe, listen, join the User Defenders community and <a href="https://patreon.com/userdefenders">become a patron on Patreon</a>.
 
 <div class="content__placeholder">
   <figure>
@@ -22,11 +22,18 @@ I got a huge bear hug from my new friend Jason Ogle, the man behind the User Def
   </figure>
 </div>
 
-I got to meet Miriam Suzanne, Jason Ogle, Sarah Drasner, and Phil Hawksworth. I got to see Luke Wroblewski and Trent Walton again. The whole experience was due to Jason Pamental adding me as a +1 and I could not be more grateful to know Jason. An experience I will never forget and I had a phenomenal time.
+I got to meet <a href="https://miriam.codes/">Miriam Suzanne</a>, Jason Ogle, Sarah Drasner, and Phil Hawksworth. I got to see Luke Wroblewski and Trent Walton again. The whole experience was due to Jason Pamental adding me as a +1 and I could not be more grateful to know Jason. An experience I will never forget and I had a phenomenal time.
 
 ### Day One
 
-Jeffrey Zeldman kicks it off with his talk on Slow Design. I could listen to this talk over and over and over. Slowing the design down makes it more comprehensive for the reader. Slowing the design down so that readers can comprehend web pages and make better decisions. Learn to make layouts that help the user relax, sit back and enjoy the design, comprehension and engagement on a much less stressful level when web pages are either too slow or too fast.
+Jeffrey Zeldman kicked it off with his talk on Slow Design for an Anxious World. I could listen to this talk over and over and over. Slowing the design down makes it more comprehensive for the reader. Slowing the design down so that readers can comprehend web pages and make better decisions. Learn to make layouts that help the user relax, sit back and enjoy the design, comprehension and engagement on a much less stressful level when web pages are either too slow or too fast.
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/jz.jpg" alt="Jeffrey Zeldman on stage at An Event Apart Denver" />
+    <figcaption>Jeffrey Zeldman on stage at An Event Apart Denver talking about Slow Design for an Anxious World.</figcaption>
+  </figure>
+</div>
 
 Jason Pamental navigated the land of Variable Fonts and Typography and as always, a super treat, Tristan and Tillie, his collies, are in his slides. Love the dog pictures and tweets! His talk included how developments in the field of typography and variable fonts make it easier to create robust, scalable typographic systems on the web. Fantastic stuff, phenomenal talk by someone I am grateful to call a friend.
 
