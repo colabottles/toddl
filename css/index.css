@@ -950,6 +950,10 @@ twitter-widget.twitter-tweet {
 }
 
 /*** ARTICLE IMAGE POSITIONING ***/
+figure {
+  display: grid;
+}
+
 div.content__placeholder {
   display: grid;
   grid-template-columns: 1fr;
@@ -957,7 +961,7 @@ div.content__placeholder {
 }
 
 img.content__image {
-  margin: 0 auto;
+  justify-self: center;
   max-width: 100%;
   padding: 3rem 0rem;
 }
