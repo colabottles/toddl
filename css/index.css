@@ -324,7 +324,7 @@ section#left-panel {
 }
 
 section#right-panel {
-  background-image: url(/img/frontpage.png);
+  background-image: url(/img/tl.jpg);
   background-size: cover;
   grid-row: 1 / 4;
   margin: 0 2rem;
