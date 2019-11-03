@@ -318,7 +318,7 @@ main.splash {
 
 section#left-panel {
   background-color: black;
-  grid-row: 1/4;
+  grid-row: 1 / 4;
   max-height: 100%;
   max-width: 100%;
 }
@@ -326,7 +326,7 @@ section#left-panel {
 section#right-panel {
   background-image: url(/img/frontpage.png);
   background-size: cover;
-  grid-row: 1/4;
+  grid-row: 1 / 4;
   margin: 0 2rem;
   max-height: 100%;
   max-width: 100%;
@@ -454,7 +454,7 @@ article.style-guide {
 }
 
 h2.article__title {
-  font: 6em 'BildVariableV2';
+  font: 5em 'BildVariableV2';
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
@@ -468,7 +468,7 @@ h2.article__title {
 
 .article__body {
   grid-column: 2;
-  grid-row: 1/3;
+  grid-row: 1 / 3;
   grid-auto-rows: max-content;
   padding: 0 2.5rem 3rem;
   word-break: break-word;
@@ -488,8 +488,8 @@ h2.article__title {
 }
 
 .style_guide__body {
-  grid-row: 1/3;
-  grid-column: 2/3;
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
   padding: 0 2.5rem 3rem;
 }
 
@@ -606,7 +606,7 @@ li.postlist-item a {
 
 .article__body h2,
 .style_guide__body h2 {
-  font: 4em 'BildVariableV2';
+  font: 3em 'BildVariableV2';
   font-weight: 700;
   padding: 1rem 0;
 }
@@ -737,39 +737,23 @@ a.codepen:hover svg {
   color: #666666;
 }
 
-a.dribbble:hover {
+a.dribbble:hover svg {
   color: #ea4c89;
 }
 
-a.github:hover {
+a.github:hover svg {
   color: #666666;
 }
 
-a.gitlab:hover {
-  color: #fc6d26;
-}
-
-a.lastfm:hover {
-  color: #d51007;
-}
-
-a.spotify:hover {
-  color: #1db954;
-}
-
-a.twitter:hover {
+a.twitter:hover svg {
   color: #1da1f2;
 }
 
-a.fcc:hover {
-  color: #006400;
-}
-
-a.rss:hover {
+a.rss:hover svg {
   color: #ec802b;
 }
 
-a.a11y:hover {
+a.a11y:hover svg {
   color: #1259a7;
 }
 
