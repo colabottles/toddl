@@ -35,9 +35,16 @@ I got to meet <a href="https://miriam.codes/">Miriam Suzanne</a>, Jason Ogle, Sa
   </figure>
 </div>
 
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/jp.jpg" alt="Jason Pamental on stage at An Event Apart Denver" />
+    <figcaption>Jason Pamental on stage at An Event Apart Denver speaking about Dynamic Typographic Systems and Variable Fonts.</figcaption>
+  </figure>
+</div>
+
 <a href="https://rwt.io"></a>Jason Pamental</a> navigated the land of Variable Fonts and Typography and as always, a super treat, Tristan and Tillie, his collies, are in his slides. Love the dog pictures and tweets! His talk included how developments in the field of typography and variable fonts make it easier to create robust, scalable typographic systems on the web. Fantastic stuff, phenomenal talk by someone I am grateful to call a friend. You should, if you love typography, or even if you don't and want to learn about typography and variable fonts, <a href="https://rwt.io/newsletter">subscribe to Jason's fantastic newsletter</a>. It's well worth it!
 
-Trent Walton talked about the repercussions of using third parties when it comes to integrating such things as a commenting system or online fonts. How much can a website weigh without you knowing it and who is tracking us? Trent also took us through tools he uses and methods to see what a site is doing behind the scenes and reasons why to use apps like Ghostery.
+Trent Walton talked about the repercussions of using third parties when it comes to integrating such things as a commenting system or online fonts. How much can a website weigh without you knowing it and who is tracking us? Trent also took us through tools he uses and methods to see what a site is doing behind the scenes and reasons why to use apps like Ghostery. This always made me think a lot more when I first heard Trent's talk in Boston about all the bloat that comes with different third-party systems. Great refresher and the artwork from Trent's son was top notch!
 
 Eric Meyer came up after lunch and talked about generated content. Pullquotes, blockquotes, gradients, `::before` and `::after`. Lots of great stuff, some M*A*S*H *theme music, and lots of CSS! Even an Under Construction redux using CSS. Those need to come back into style. Literally. Eric also spoke about what is good generated content, what can we do with it? How far can we push it? So much to think about when dealing with generated content.
 
