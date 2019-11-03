@@ -11,7 +11,7 @@ layout: layouts/post.njk
 
 ### The Day Before
 
-I got into Denver after seven hors of travel, and it had been thirty-two years since I had been here. It was snowing, which I could have waited on but still I was traveling again. I got to do something I never thought I would ever do and that was attend the speaker meeting prior to the conference.
+I got into Denver after seven hours of travel, and it had been thirty-two years since I had been here. It was snowing, which I could have waited on but still I was traveling again. I got to do something I never thought I would ever do and that was attend the speaker meeting prior to the conference.
 
 I got a huge bear hug from my new friend Jason Ogle, the man behind the <a href="https://userdefenders.com">User Defenders Podcast</a>. One of my favorites, I highly suggest folks subscribe, listen, join the User Defenders community and <a href="https://patreon.com/userdefenders">become a patron on Patreon</a>.
 
@@ -22,7 +22,18 @@ I got a huge bear hug from my new friend Jason Ogle, the man behind the <a href=
   </figure>
 </div>
 
-I got to meet <a href="https://miriam.codes/">Miriam Suzanne</a>, Jason Ogle, Sarah Drasner, and Phil Hawksworth. I got to see Luke Wroblewski and Trent Walton again. The whole experience was due to Jason Pamental adding me as a +1 and I could not be more grateful to know Jason. An experience I will never forget and I had a phenomenal time.
+I got to meet <a href="https://miriam.codes/">Miriam Suzanne</a>, whom has been doing videos for Mozilla Developers, along with Jen Simmons on YouTube for some time now and it was a plesant surprise to see her there!
+
+I got to meet Sarah Drasner, and Phil Hawksworth whom work for Netlify. Which was also another pleasant surprise. I knew Sarah was a speaker there, but I did not know Netlify (as a sponsor) and Phil would be there. So I got some more laptop stickers and schwag from the Netlify table. Also a really nice Netlify t-shirt!
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/sd-ph-tl.jpg" alt="Sarah Drasner, Phil Hawksworth and Todd Libby at the Netlify table at An Event Apart Denver" />
+    <figcaption>(L to R: Sarah Drasner, Myself and Phil Hawksworth, at the Netlify table in Denver at An Event Apart Denver.</figcaption>
+  </figure>
+</div>
+
+Probably one of, if not the most awesome experiences of the trip was the speaker dinner. Now if you do not know, the speakers usually set aside the night before for dinner for the group. Something I thought I'd never experience because I am not a speaker. Well, that all changed due, in part to Jason Pamental adding me as a +1 and I could not be more grateful to know Jason. An experience I will never forget and I had a phenomenal time. Talking with folks on the walk to the restaurant was the highlight of the day. Weary with travel, but excited being able to attend this event. Forever grateful.
 
 ### Day One
 
@@ -46,7 +57,7 @@ I got to meet <a href="https://miriam.codes/">Miriam Suzanne</a>, Jason Ogle, Sa
 
 Trent Walton talked about the repercussions of using third parties when it comes to integrating such things as a commenting system or online fonts. How much can a website weigh without you knowing it and who is tracking us? Trent also took us through tools he uses and methods to see what a site is doing behind the scenes and reasons why to use apps like Ghostery. This always made me think a lot more when I first heard Trent's talk in Boston about all the bloat that comes with different third-party systems. Great refresher and the artwork from Trent's son was top notch!
 
-Eric Meyer came up after lunch and talked about generated content. Pullquotes, blockquotes, gradients, `::before` and `::after`. Lots of great stuff, some M*A*S*H *theme music, and lots of CSS! Even an Under Construction redux using CSS. Those need to come back into style. Literally. Eric also spoke about what is good generated content, what can we do with it? How far can we push it? So much to think about when dealing with generated content.
+Eric Meyer came up after lunch and talked about generated content. Pullquotes, blockquotes, gradients, `::before` and `::after`. Lots of great stuff, some M<sup>*</sup>A<sup>*</sup>S<sup>*</sup>H theme music, and lots of CSS! Even an Under Construction redux using CSS. Those need to come back into style. Literally. Eric also spoke about what is good generated content, what can we do with it? How far can we push it? So much to think about when dealing with generated content.
 
 Rachel Andrew followed with her "Making Things Better: Redefining the Technical Possibilities of CSS" talk. Flexbox, CSS Grid, Subgrid, some great looks at some of the current and future technical possibilities for developers and designers for creating things on the web. Multicol, Scroll snap, Subgrid. All things I am excited to implement. Page Layout was even mentioned and I didn't even remember that from her Boston talk.
 
