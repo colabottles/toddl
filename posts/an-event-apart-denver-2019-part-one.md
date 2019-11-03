@@ -15,6 +15,13 @@ I got into Denver after seven hors of travel, and it had been thirty-two years s
 
 I got a huge bear hug from my new friend Jason Ogle, the man behind the User Defenders Podcast. One of my favorites, I highly suggest folks subscribe, listen, join the User Defenders community and become a patron on Patreon.
 
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/jasono-todd.jpg" alt="Jason Ogle and Todd Libby" />
+    <figcaption>(L to R: Myself and Jason Ogle, creator of the User Defenders Podcast)The main reason why I traveled to Denver. This guy and the User Defenders Podcast.</figcaption>
+  </figure>
+</div>
+
 I got to meet Miriam Suzanne, Jason Ogle, Sarah Drasner, and Phil Hawksworth. I got to see Luke Wroblewski and Trent Walton again. The whole experience was due to Jason Pamental adding me as a +1 and I could not be more grateful to know Jason. An experience I will never forget and I had a phenomenal time.
 
 ### Day One
