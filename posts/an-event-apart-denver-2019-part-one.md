@@ -26,7 +26,7 @@ I got to meet <a href="https://miriam.codes/">Miriam Suzanne</a>, Jason Ogle, Sa
 
 ### Day One
 
-Jeffrey Zeldman kicked it off with his talk on Slow Design for an Anxious World. I could listen to this talk over and over and over. Slowing the design down makes it more comprehensive for the reader. Slowing the design down so that readers can comprehend web pages and make better decisions. Learn to make layouts that help the user relax, sit back and enjoy the design, comprehension and engagement on a much less stressful level when web pages are either too slow or too fast.
+<a href="https://zeldman.com">Jeffrey Zeldman</a> kicked it off with his talk on Slow Design for an Anxious World. I could listen to this talk over and over and over. Slowing the design down makes it more comprehensive for the reader. Slowing the design down so that readers can comprehend web pages and make better decisions. Learn to make layouts that help the user relax, sit back and enjoy the design, comprehension and engagement on a much less stressful level when web pages are either too slow or too fast.
 
 <div class="content__placeholder">
   <figure>
@@ -35,7 +35,7 @@ Jeffrey Zeldman kicked it off with his talk on Slow Design for an Anxious World.
   </figure>
 </div>
 
-Jason Pamental navigated the land of Variable Fonts and Typography and as always, a super treat, Tristan and Tillie, his collies, are in his slides. Love the dog pictures and tweets! His talk included how developments in the field of typography and variable fonts make it easier to create robust, scalable typographic systems on the web. Fantastic stuff, phenomenal talk by someone I am grateful to call a friend.
+<a href="https://rwt.io"></a>Jason Pamental</a> navigated the land of Variable Fonts and Typography and as always, a super treat, Tristan and Tillie, his collies, are in his slides. Love the dog pictures and tweets! His talk included how developments in the field of typography and variable fonts make it easier to create robust, scalable typographic systems on the web. Fantastic stuff, phenomenal talk by someone I am grateful to call a friend. You should, if you love typography, or even if you don't and want to learn about typography and variable fonts, <a href="https://rwt.io/newsletter">subscribe to Jason's fantastic newsletter</a>. It's well worth it!
 
 Trent Walton talked about the repercussions of using third parties when it comes to integrating such things as a commenting system or online fonts. How much can a website weigh without you knowing it and who is tracking us? Trent also took us through tools he uses and methods to see what a site is doing behind the scenes and reasons why to use apps like Ghostery.
 
