@@ -55,9 +55,32 @@ Probably one of, if not the most awesome experiences of the trip was the speaker
 
 <a href="https://rwt.io">Jason Pamental</a> navigated the land of Variable Fonts and Typography and as always, a super treat, Tristan and Tillie, his collies, are in his slides. Love the dog pictures and tweets! His talk included how developments in the field of typography and variable fonts make it easier to create robust, scalable typographic systems on the web. Fantastic stuff, phenomenal talk by someone I am grateful to call a friend. You should, if you love typography, or even if you don't and want to learn about typography and variable fonts, <a href="https://rwt.io/newsletter">subscribe to Jason's fantastic newsletter</a>. It's well worth it!
 
-Trent Walton talked about the repercussions of using third parties when it comes to integrating such things as a commenting system or online fonts. How much can a website weigh without you knowing it and who is tracking us? Trent also took us through tools he uses and methods to see what a site is doing behind the scenes and reasons why to use apps like Ghostery. This always made me think a lot more when I first heard Trent's talk in Boston about all the bloat that comes with different third-party systems. Great refresher and the artwork from Trent's son was top notch!
+<a href="https://trentwalton.com/">Trent Walton</a> spoke about the repercussions of using third parties when it comes to integrating such things as a commenting system or online fonts. How much can a website weigh without you knowing it and who is tracking us? Trent also took us through tools he uses and methods to see what a site is doing behind the scenes and reasons why to use apps like Ghostery. This always made me think a lot more when I first heard Trent's talk in Boston about all the bloat that comes with different third-party systems. Great refresher and the artwork from Trent's son was top notch!
 
-Eric Meyer came up after lunch and talked about generated content. Pullquotes, blockquotes, gradients, `::before` and `::after`. Lots of great stuff, some M &midast; A &midast; S &midast; H theme music, and lots of CSS! Even an Under Construction redux using CSS. Those need to come back into style. Literally. Eric also spoke about what is good generated content, what can we do with it? How far can we push it? So much to think about when dealing with generated content.
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/tw.jpg" alt="Trent Walton on stage at An Event Apart Denver" />
+    <figcaption>JTrent Walton discussing third-party scripts and services and the impact they can have on site performance.</figcaption>
+  </figure>
+</div>
+
+Even Trent's son, Charlie helped out with some of the slides. Of which were excellently done!
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/tw-art.jpg" alt="Trent Walton's son Charlie and his art, helped his dad out in his slides" />
+    <figcaption>Trent's son Charlie helped out with the slide presentation and produced some excellent art for dad to show the crowd at An Event Apart</figcaption>
+  </figure>
+</div>
+
+<a href="https://meyerweb.com/">Eric Meyer</a> came up after lunch and talked about generated content. Pullquotes, blockquotes, gradients, `::before` and `::after`. Lots of great stuff, some M&midast;A&midast;S&midast;H theme music, and lots of CSS! Even an Under Construction redux using CSS. Those need to come back into style. Literally. Eric also spoke about what is good generated content, what can we do with it? How far can we push it? So much to think about when dealing with generated content.
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/em.jpg" alt="Eric Meyer on stage at An Event Apart Denver" />
+    <figcaption>Eric Meyer spoke about generated content, how it is good, what we can do with it and how far can we push it to create creative generted content and use it as a tool for everyday use.</figcaption>
+  </figure>
+</div>
 
 Rachel Andrew followed with her "Making Things Better: Redefining the Technical Possibilities of CSS" talk. Flexbox, CSS Grid, Subgrid, some great looks at some of the current and future technical possibilities for developers and designers for creating things on the web. Multicol, Scroll snap, Subgrid. All things I am excited to implement. Page Layout was even mentioned and I didn't even remember that from her Boston talk.
 
@@ -67,6 +90,8 @@ Jen Simmons wrapped up the day of speakers with her phenomenal talk about Design
 
 Jason Ogle came to the stage with three speakers to do a live show of his User Defenders podcast. Joined by Mina Markham, Farai Madzima, and Derek Featherstone, they traversed many subjects in the hour such as inclusion, accessibility, and ethics. It was a pleasure and privilege to be there and to have helped out in a small way by recording video of the podcast. Terrific episode!
 
-The dinner after with Jason Ogle, Jason Pamental, Derek Featherstone and Eric Meyer was at a place that was referred to me by a friend, the name of the place, iRamen+Fish. It was terrific. A lot of good food and great conversation. I had a great time.
+I was able to help out and film video with my new iPhone 11 Pro Max in 4k, so I am anxious to see the video after all the editing is done and see how it came out. I was more than happy to have been able to help out Jason, who I consider now a good friend. If you 're not subscribed to the User Defenders podcast, you are missing out! Go subscribe today!
+
+The dinner after with Jason Ogle, Jason Pamental, Derek Featherstone and Eric Meyer was at a place that was referred to me by a friend, the name of the place, iRamen+Fish. It was terrific. A lot of good food and great conversation. I had a great time. A definite highlight of the trip as well. I was glad they all came along for dinner with me.
 
 A fantastic kickoff to the conference!
