@@ -1089,8 +1089,8 @@ p.tag-wrap {
 }
 
 @font-face {
-  src: url('fonts/RoslindaleDisplayUltraVariable-VF.woff2') format("woff2"),
-    url('fonts/RoslindaleDisplayUltraVariable-VF.woff') format("woff");
+  src: url('/fonts/RoslindaleDisplayUltraVariable-VF.woff2') format("woff2"),
+    url('/fonts/RoslindaleDisplayUltraVariable-VF.woff') format("woff");
   font-family: 'Roslindale Display Ultra Web';
   font-style: normal;
   font-weight: normal;
