@@ -455,7 +455,7 @@ article.style-guide {
 }
 
 h2.article__title {
-  font: 5em 'BildVariableV2';
+  font: 5em 'Roslindale Display Ultra Web';
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
@@ -607,7 +607,7 @@ li.postlist-item a {
 
 .article__body h2,
 .style_guide__body h2 {
-  font: 3em 'BildVariableV2';
+  font: 3em 'Roslindale Display Ultra Web';
   font-weight: 700;
   padding: 1rem 0;
 }
@@ -1047,35 +1047,6 @@ p.tag-wrap {
 }
 
 /*** Variable Fonts ***/
-@font-face {
-  font-family: 'BildVariableV2';
-  src: url('/fonts/BildVariableV2-VF.woff2');
-  src: url('/fonts/BildVariableV2-VF.woff2') format('woff2-variations');
-  font-display: swap;
-  font-weight: 1 999;
-  font-stretch: 10% 100%;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BildVariableV2';
-  src: url('/fonts/BildVariableV2-VF.woff');
-  src: url('/fonts/BildVariableV2-VF.woff') format('woff');
-  font-display: swap;
-  font-weight: 1 999;
-  font-stretch: 10% 100%;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BildVariableV2';
-  src: url('/fonts/BildVariableV2-VF.ttf');
-  src: url('/fonts/BildVariableV2-VF.ttf') format('ttf');
-  font-display: swap;
-  font-weight: 1 999;
-  font-stretch: 10% 100%;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'Lora-Italic-VF';
@@ -1115,6 +1086,14 @@ p.tag-wrap {
   font-weight: 1 999;
   font-stretch: 75% 100%;
   font-style: normal;
+}
+
+@font-face {
+  src: url('fonts/RoslindaleDisplayUltraVariable-VF.woff2') format("woff2"),
+    url('fonts/RoslindaleDisplayUltraVariable-VF.woff') format("woff");
+  font-family: 'Roslindale Display Ultra Web';
+  font-style: normal;
+  font-weight: normal;
 }
 
 /*** Media Queries ***/

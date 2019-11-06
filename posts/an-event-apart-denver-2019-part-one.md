@@ -90,7 +90,7 @@ Jen Simmons wrapped up the day of speakers with her phenomenal talk about Design
 
 Jason Ogle came to the stage with three speakers to do a live show of his User Defenders podcast. Joined by Mina Markham, Farai Madzima, and Derek Featherstone, they traversed many subjects in the hour such as inclusion, accessibility, and ethics. It was a pleasure and privilege to be there and to have helped out in a small way by recording video of the podcast. Terrific episode!
 
-I was able to help out and film video with my new iPhone 11 Pro Max in 4k, so I am anxious to see the video after all the editing is done and see how it came out. I was more than happy to have been able to help out Jason, who I consider now a good friend. If you 're not subscribed to the User Defenders podcast, you are missing out! Go subscribe today!
+I was able to help out and film video with my new iPhone 11 Pro Max in 4k, so I am anxious to see the video after all the editing is done and see how it came out. I was more than happy to have been able to help out Jason, who I consider now a good friend. If you're not subscribed to the User Defenders podcast, you are missing out! Go subscribe today!
 
 The dinner after with Jason Ogle, Jason Pamental, Derek Featherstone and Eric Meyer was at a place that was referred to me by a friend, the name of the place, iRamen+Fish. It was terrific. A lot of good food and great conversation. I had a great time. A definite highlight of the trip as well. I was glad they all came along for dinner with me.
 
