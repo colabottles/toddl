@@ -7,20 +7,123 @@ tags:
 layout: layouts/post.njk
 ---
 
-## An Event Apart Denver 2019, Denver, CO
+### An Event Apart Denver 2019, Denver, CO
 
-### Day Two
+#### Day Two
 
-Josh Clark, the Eleventh Strongest Man in Maine, started the day off talking about machines. Automation. "How can we use technology in a way that adds meaning?" What is it to have machine learning as a design material. What can machine learning do for us? How can we act on patterns we detect in machine learning and bringing them into the products we design and use. Slack, predictive keyboards, forms, survey tools. We can get cozy with casual uses of machine learning. I'm also gunning for that tenth spot on the list Josh!
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/jc.jpg" alt="Josh Clark on stage at An Event Apart Denver" />
+    <figcaption>Josh Clark speaking on stage at An Event Apart Denver on machine learning and what it can do for humans.</figcaption>
+  </figure>
+</div>
 
-Beth Dean came up next speaking about Unsolved Problems. talking about the impact of technology and the social impact it has. Design and the effects it has on people, places and things. Taking us through a walk through different places in the world and the designs done that help the social impact that benefits people and economies. Architectural designs that impact certain aspects of environments and places, what happens when designs are good and what happens when designs go bad.
+<a href="https://bigmedium.com/">Josh Clark</a>, the Eleventh Strongest Man in Maine, started the day off talking about machines. Automation. 
 
-Farai Madzima came up next. Speaking about design teams work well together to make products that make the company profitable and make the world a better place. How can we make our teams more diverse? How can we keep those people that are lost when the environments they are in aren't safe and they leave? How can we make this industry more diverse and inclusive? All are fantastic questions and the answers are there in the future, but we're working on them now. Farai’s talk captured me, entranced me, and make me think. I need to stop and assist in the need for tech to make change. A phenomenal talk that I am super glad to have seen.
+<blockquote cite="Josh Clark">How can we use technology in a way that adds meaning?"</blockquote>
 
-After the lunch break, Luke Wroblewski came to the stage and showed us how people use devices today and how design needs to adapt. people spend three hours a day on mobile app and there are four billion mobile devices out there. How conversion rates increased with certain companies when removing things that were bothersome or not needed when it came to mobile devices. Remove all friction that distracts the user from experiencing the product value, don't be afraid to educate contextually when it comes to successful onboarding. Get people to product value as soon as possible, but not faster. Edit distractions and teach in the moment.
+What is it to have machine learning as a design material. What can machine learning do for us? How can we act on patterns we detect in machine learning and bringing them into the products we design and use. Slack, predictive keyboards, forms, survey tools. We can get cozy with casual uses of machine learning. I'm also gunning for that tenth spot on the list Josh!
 
-Mina Markham then took the stage for Full-Featured Art Direction for the Web, creator of the Pantsuit UI Pattern Library for the Hilary Clinton campaign in 2016, Mina took us through progressive enhancement and little design changes that make for huge payoffs in the end design-wise. Localization is important. Mina talked about localization on Slack and how it was rough at the beginning when the team was translating but not localizing. Inclusion and how art direction is inclusive. Very important to many, including myself and for crying out loud Beyonce! HIRE MINA MARKHAM! Mina also reminds us that not only is color contrast important for art and design, but for accessibility sake.
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/jc-tl.jpg" alt="Josh Clark and Todd Libby at An Event Apart Denver in the hallway posing for a photo." />
+    <figcaption>Josh Clark on the left and Todd Libby on the right posing for a photo in the hallway at the Hilton Denver City Center at An Event Apart Denver 2019.</figcaption>
+  </figure>
+</div>
 
-To finish off Day Two was Dan Mall talking about Putting the 'Design' in Design Systems. A deep dive into design systems, again playing the "Name That Design System" game show (which I won at Boston and did not participate in). I could listen to this talk again and again. Dan explains it's not the components, it's about how they relate to each other. How to make your design system distinct, there are multiple design principles you can use, universal principles ("accessible" and "simple"). Dan takes us through some of the most well-known design systems and how many components they have in our search for a comprehensive design system. They why's on why there are certain components with certain design systems. A great way to cap off another phenomenal day at An Event Apart.
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/bd.jpg" alt="Beth Dean on stage at An Event Apart Denver." />
+    <figcaption>Beth Dean speaking at An Event Apart Denver on the impact technology and design has on social aspects of society and technology.</figcaption>
+  </figure>
+</div>
 
-Farai's talk was the highlight of Day Two and the entire conference, in my opinion.
+<a href="http://www.thebethdean.com/">Beth Dean</a> was next, speaking about Unsolved Problems. Talking about the impact of technology and the social impact it has. Design and the effects it has on people, places and things. Taking us through a walk through different places in the world and the designs done that help the social impact that benefits people and economies. Architectural designs that impact certain aspects of environments and places, what happens when designs are good and what happens when designs go bad.
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/fm.jpg" alt="farai Madzima at An Event Apart Denver speaking on diversity and inclusion." />
+    <figcaption>Farai Madzima at An Event Apart Denver speaking about inclusion and diversity and how to make design teams work together and make successful products. (Photo courtsey of Jason Ogle)</figcaption>
+  </figure>
+</div>
+
+<a href="https://faraimadzima.com/">Farai Madzima</a> spoke next about how design teams can  work well together to make products that make the company profitable and make the world a better place. How can we make our teams more diverse? How can we keep those people that are lost when the environments they are in aren't safe and they leave? 
+
+How can we make this industry more diverse and inclusive? All are fantastic questions and the answers are there in the future, but we're working on them now. Farai’s talk captured me, entranced me, and make me think. I need to stop and assist in the need for tech to make change. A phenomenal talk that I am super glad to have seen. 
+
+It was a pleasure and I am grateful to have met Farai, had a great disscussion with him at lunch and was able to be there for his talk.a11y
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/fm-tl.jpg" alt="Farai Madzima and Todd Libby at An Event Apart Denver posing for a photo." />
+    <figcaption>Farai Madzima on the left and Todd Libby on the right posing for a photo in the dining room at the Hilton Denver City Center at An Event Apart Denver 2019.</figcaption>
+  </figure>
+</div>
+
+Then came the lunch break.
+
+#### We Meet Again
+
+I was able to coordinate lunch with my friend and accessibility ally, <a href="http://chrisdemars.com/">Chris DeMars</a>. We met at La Loma restaurant (a great Mexican place in Denver), I had also brought along my good friend Jason Pamental and we had a great lunch. I was bummed it didn't turn out to be a little longer, but it was good to have a good lunch, quick catch-up and as it turns out, we were supposed to attend the General Assembly Denver event that Eric Meyer was supposed to speak at, but the weather was so lousy, the event was cancelled unfortunately.
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/cd-tl-jp.jpg" alt="Chris DeMars, Todd Libby, and Jason Pamental at lunch at La Loma in Denver posing for a photo." />
+    <figcaption>(From L to R) Chris DeMars, Todd Libby, and Jason Pamental posing for a photo at La Loma in Denver at lunch.</figcaption>
+  </figure>
+</div>
+
+After the lunch break, <a href="https://www.lukew.com/">Luke Wroblewski</a> came to the stage and showed us how people use devices today and how design needs to adapt. people spend three hours a day on mobile app and there are four billion mobile devices out there. How conversion rates increased with certain companies when removing things that were bothersome or not needed when it came to mobile devices.
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/lw.jpg" alt="Luke Wroblewski on stage at An Event Apart Denver" />
+    <figcaption>Luke Wroblewski on stage discussing how people use devices todya, mainly mobile devices and how design needs to adapt to the number of mobile devices used.</figcaption>
+  </figure>
+</div>
+
+Remove all friction that distracts the user from experiencing the product value, don't be afraid to educate contextually when it comes to successful onboarding. Get people to product value as soon as possible, but not faster. Edit distractions and teach in the moment.
+
+It was great to hear and see Luke again. The last time I had heard him speak was in Boston in 2008, it was also great to have been at the speaker dinner and had some great and hilarious conversation with him as well.
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/mm.jpg" alt="Mina Markham on stage at An Event Apart Denver" />
+    <figcaption>Mina Markham on stage discussing lots of great topics including progressive enhancement, design, accessibility, localization, and most importantly, inclusion.</figcaption>
+  </figure>
+</div>
+
+<a href="http://mina.codes/">Mina Markham</a> then took the stage for Full-Featured Art Direction for the Web, creator of the Pantsuit UI Pattern Library for the Hilary Clinton campaign in 2016, Mina took us through progressive enhancement and little design changes that make for huge payoffs in the end design-wise. Localization is important. 
+
+Mina talked about localization on Slack and how it was rough at the beginning when the team was translating but not localizing. Inclusion and how art direction is inclusive. Very important to many, including myself and for crying out loud Beyonce! HIRE MINA MARKHAM! Mina also reminds us that not only is color contrast important for art and design, but for accessibility sake.
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/mm-tl.jpg" alt="Mina Markham and Todd Libby sitting on stage at An Event Apart Denver posing for the photo." />
+    <figcaption>Mina Markham and Todd Libby posing for a photo sitting on stage at An Event Apart Denver after Mina's great talk.</figcaption>
+  </figure>
+</div>
+
+Then we all took this photo op, seeing is I had the shirt (one of many colors) and Jen had the idea of taking this photo. Unfortunately Rachel wasn't feeling well and was unable to join us, but I hope one day to wear this with all five women and have that picture taken. That would be epic.
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/ms-tl-mm-js.jpg" alt="Miriam Suzanne, Todd Libby, Mina Markham, and Jen Simmons standing in the conference hall at An Event Apart Denver. Todd has his red Andrew& Simmons& Markham& Soueidan& Jina shirt on." />
+    <figcaption>Miriam Suzanne, Todd Libby, Mina Markham, and Jen Simmons posing for a photo  at An Event Apart Denver.</figcaption>
+  </figure>
+</div>
+
+To finish off Day Two was <a href="https://danmall.me/">Dan Mall</a> talking about Putting the 'Design' in Design Systems. A deep dive into design systems, again playing the _"Name That Design System"_ game show (which I 'won' at Boston and did not participate in). I could listen to this talk again and again, as well as listen to Dan again and again. 
+
+Dan explains it's not the components, it's about how they relate to each other. How to make your design system distinct, there are multiple design principles you can use, universal principles _"accessible"_ and _"simple"_. 
+
+<div class="content__placeholder">
+  <figure>
+    <img class="content__image" src="/img/dm.jpg" alt="Dan Mall at An Event Apart Denver talking about Design Systems." />
+    <figcaption>Dan Mall on stage discussing design systems at An Event Apart Denver.</figcaption>
+  </figure>
+</div>
+
+Dan takes us through some of the most well-known design systems and how many components they have in our search for a comprehensive design system. They why's on why there are certain components with certain design systems. A great way to cap off another phenomenal day at An Event Apart.
+
+Farai's talk was the highlight of Day Two and the entire conference, in my opinion. That ws the enlightenment I had needed in my professional life, most definitely. Now... <a href="https://toddl.dev/posts/an-event-apart-denver-2019-part-three/">on to Day Three. The final day!</a>

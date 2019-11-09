@@ -542,8 +542,8 @@ h2 {
 }
 
 h2.hello {
-  align-self: flex-end;
-  color: white;
+  align-self: center;
+  color: #000;
   font-size: 10em;
   justify-self: center;
   text-transform: none;
@@ -551,8 +551,8 @@ h2.hello {
 }
 
 h3.intro {
-  align-self: start;
-  color: white;
+  align-self: center;
+  color: #000;
   font: 1.4em "Lora";
   justify-self: center;
   text-transform: none;
