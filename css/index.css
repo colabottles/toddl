@@ -233,17 +233,16 @@ span.pre:hover {
 
 /*** NAVIGATION ***/
 .navbar {
-  grid-template-columns: auto 3fr;
+  display: grid;
+  grid-template-columns: auto min-content;
   height: 50px;
-  margin-right: 20px;
+  margin-right: 2rem;
   overflow: hidden;
 }
 
 .navbar ul {
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  justify-self: end;
+  display: flex;  
   list-style: none;
 }
 
@@ -317,16 +316,16 @@ main.splash {
 }
 
 section#left-panel {
-  background-color: black;
+  background-color: #fff;
   grid-row: 1 / 4;
-  max-height: 100%;
-  max-width: 100%;
+  justify-content: center;
 }
 
 section#right-panel {
   background-image: url(/img/tl.jpg);
   background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   grid-row: 1 / 4;
   margin: 0 2rem;
   max-height: 100%;
@@ -551,7 +550,6 @@ h2.hello {
 }
 
 h3.intro {
-  align-self: center;
   color: #000;
   font: 1.4em "Lora";
   justify-self: center;
@@ -1165,7 +1163,7 @@ p.tag-wrap {
 
   h2.hello {
     align-self: flex-end;
-    color: white;
+    color: #000;
     font-size: 8em;
     justify-self: center;
     text-transform: none;
@@ -1174,7 +1172,7 @@ p.tag-wrap {
 
   h3.intro {
     align-self: center;
-    color: white;
+    color: #000;
     font: 1.2em "Lora";
     text-transform: none;
     animation: fadeIn 5s ease-in;
@@ -1407,7 +1405,7 @@ p.tag-wrap {
 
   h2.hello {
     align-self: flex-end;
-    color: white;
+    color: #000;
     font-size: 5em;
     justify-self: center;
     text-transform: none;
@@ -1416,7 +1414,7 @@ p.tag-wrap {
 
   h3.intro {
     align-self: center;
-    color: white;
+    color: #000;
     font: 1em "Lora";
     text-transform: none;
     animation: fadeIn 5s ease-in;

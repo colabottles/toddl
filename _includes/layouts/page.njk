@@ -23,7 +23,7 @@
           </div>
           <ul class="nav no-search">            
             {%- for nav in collections.nav | sort(attribute="date") -%}
-              <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" tabindex="0">
+              <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" tabindex="0" role="option">
                 <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
               </li>
             {%- endfor -%}
