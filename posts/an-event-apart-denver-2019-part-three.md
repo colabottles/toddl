@@ -7,9 +7,9 @@ tags:
 layout: layouts/post.njk
 ---
 
-## An Event Apart Denver 2019, Denver, CO
+### An Event Apart Denver 2019, Denver, CO
 
-### Day Three - The Final Chapter
+#### Day Three - The Final Chapter
 
 I never look forward to the final day because it’s the final day. With all good things however, they must come to an end. 
 
@@ -76,7 +76,7 @@ and as with the last few AEA events I have attended, Gerry McGovern ended the co
 
 and with that, the conference was over.
 
-### The After-Conference
+#### The After-Conference
 
 I consider myself fortunate, lucky, and pretty damn grateful. With that said, I got to hang out with Jason Pamental and Miriam Suzanne and a new conference friend for some time, eating Indian cuisine at a local place Miriam took us too nearby, then hanging out at the restaurant at the hotel and talking for hours. During the way, I had met TJ Pitre and we got to talking as well. This is why I enjoy the conferences I go to. I meet a mix of people far and wide. I don't want to meet the same people over and over and over who are like me. Which is why I strongly advocate for diversity and inclusion. Which is why Farai's talk hit me at the very core.
 
