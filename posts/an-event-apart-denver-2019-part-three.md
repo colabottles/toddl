@@ -38,7 +38,7 @@ Sarah Drasner took the stage after with "Animation on the Bleeding Edge". Sarah 
   </figure>
 </div>
 
-Val Head came up with "Making Motion Inclusive" and started off with motion. Referring to the WCAG, Val took us through the guidelines. Flashing items, movement and animation within content that may be harmful (seizure inducing triggers) on the WCAG 2.0 AA & AAA levels. Val went into animation that affects folks with vestibular orders such as motion sickness and migraines. How those animations and things like parallax can physically make someone with a vestibular order (like myself) sick. Val then went into talking about `refers-reduced-motion`. Another talk I saw in Boston (that you can also read about in the archives) and another talk I was glad to hear again for sure.
+Val Head came up with "Making Motion Inclusive" and started off with motion. Referring to the WCAG, Val took us through the guidelines. Flashing items, movement and animation within content that may be harmful (seizure inducing triggers) on the WCAG 2.0 AA & AAA levels. Val went into animation that affects folks with vestibular orders such as motion sickness and migraines. How those animations and things like parallax can physically make someone with a vestibular order (like myself) sick. Val then went into talking about `prefers-reduced-motion`. Another talk I saw in Boston (that you can also read about in the archives) and another talk I was glad to hear again for sure.
 
 <div class="content__placeholder">
   <figure>
