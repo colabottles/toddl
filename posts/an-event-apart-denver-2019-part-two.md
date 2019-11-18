@@ -60,19 +60,6 @@ It was a pleasure and I am grateful to have met Farai, had a great disscussion w
   </figure>
 </div>
 
-Then came the lunch break.
-
-#### We Meet Again
-
-I was able to coordinate lunch with my friend and accessibility ally, <a href="http://chrisdemars.com/">Chris DeMars</a>. We met at La Loma restaurant (a great Mexican place in Denver), I had also brought along my good friend Jason Pamental and we had a great lunch. I was bummed it didn't turn out to be a little longer, but it was good to have a good lunch, quick catch-up and as it turns out, we were supposed to attend the General Assembly Denver event that Eric Meyer was supposed to speak at, but the weather was so lousy, the event was cancelled unfortunately.
-
-<div class="content__placeholder">
-  <figure>
-    <img class="content__image" src="/img/cd-tl-jp.jpg" alt="Chris DeMars, Todd Libby, and Jason Pamental at lunch at La Loma in Denver posing for a photo." />
-    <figcaption>(From L to R) Chris DeMars, Todd Libby, and Jason Pamental posing for a photo at La Loma in Denver at lunch.</figcaption>
-  </figure>
-</div>
-
 After the lunch break, <a href="https://www.lukew.com/">Luke Wroblewski</a> came to the stage and showed us how people use devices today and how design needs to adapt. people spend three hours a day on mobile app and there are four billion mobile devices out there. How conversion rates increased with certain companies when removing things that were bothersome or not needed when it came to mobile devices.
 
 <div class="content__placeholder">
