@@ -242,7 +242,7 @@ span.pre:hover {
 
 .navbar ul {
   align-items: center;
-  display: flex;  
+  display: flex;
   list-style: none;
 }
 
@@ -540,19 +540,20 @@ h2 {
 
 h2.hello {
   align-self: center;
+  animation: fadeIn 5s ease-in;
   color: #000;
   font-size: 10em;
   justify-self: center;
   text-transform: none;
-  animation: fadeIn 5s ease-in;
 }
 
 h3.intro {
+  animation: fadeIn 5s ease-in;
   color: #000;
   font: 1.4em "Lora";
   justify-self: center;
+  padding: 0 4rem;
   text-transform: none;
-  animation: fadeIn 5s ease-in;
 }
 
 h3 {
