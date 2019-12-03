@@ -14,10 +14,10 @@ Imagine yourself as a person that does not have the best eyesight, whether it is
 
 According to the World Health Organization (WHO); 1
 
-    * Globally, at least 2.2 billion people have a vision impairment or blindness, of whom at least 1 billion have a vision impairment that could have been prevented or has yet to be addressed. 
-    * This 1 billion people includes those with moderate or severe distance vision impairment or blindness due to unaddressed refractive error, as well as near vision impairment caused by unaddressed presbyopia. 
-    * Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts. 
-    * The majority of people with vision impairment are over the age of 50 years.
+* Globally, at least 2.2 billion people have a vision impairment or blindness, of whom at least 1 billion have a vision impairment that could have been prevented or has yet to be addressed. 
+* This 1 billion people includes those with moderate or severe distance vision impairment or blindness due to unaddressed refractive error, as well as near vision impairment caused by unaddressed presbyopia. 
+* Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts. 
+* The majority of people with vision impairment are over the age of 50 years.
 
 Now imagine that you are on the internet, you’re shopping around for information on going to a conference or you’re looking for a newsletter to sign up for that you want to learn something. Now imagine you run into something like this.
 
@@ -25,9 +25,7 @@ This can be daunting. This is where color contrast comes into the conversation. 
 
 “Contrasting colors, also known as complementary colors, are colors from opposing segments of the color wheel. Colors that are directly across from one another on a basic color wheel provide maximum contrast.” 2 – Rachel R. Vasquez
 
-Color contrast is defined as;
-noun
-1. psychol the change in the appearance of a colour surrounded by another colour; for example, grey looks bluish if surrounded by yellow.
+Color contrast is defined as; noun 1. psychol the change in the appearance of a colour surrounded by another colour; for example, grey looks bluish if surrounded by yellow.
 
 I haven’t even mentioned types of color blindness until now either. There are seven total types of color blindness including color blindness (monochromacy) itself. www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness/types-color-blindness
 
@@ -53,8 +51,7 @@ These calculations are made for the size of body text and that a relaxed contras
 
 Chrome and Firefox have add-on’s for their respective browsers when it comes to color contrast checkers. 
 
-The WAVE Web Extension wave.webaim.org/extension/ and the Axe Web Accessibility Extension chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd are a couple of browser extensions/add-on’s I use often.
-WAVE wave.webaim.org and Deque www.deque.com/tools/ have great accessibility testing tools that not only check for color contrast issues, but all accessibility issues as well. 
+The WAVE Web Extension wave.webaim.org/extension/ and the Axe Web Accessibility Extension chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd are a couple of browser extensions/add-on’s I use often. WAVE wave.webaim.org and Deque www.deque.com/tools/ have great accessibility testing tools that not only check for color contrast issues, but all accessibility issues as well. 
 
 If I have submitted a form, I would like to read the message after the submission. I don’t know about other folks, but I just like to read the information relayed to me after submission in case there is anything I shouldn’t miss or some tidbit of information that I need to know.
 
