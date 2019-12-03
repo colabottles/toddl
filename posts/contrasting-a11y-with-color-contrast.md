@@ -19,8 +19,7 @@ According to the World Health Organization (WHO); 1
     * Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts. 
     * The majority of people with vision impairment are over the age of 50 years.
 
-Now imagine that you are on the internet, you’re shopping around for information on going to a conference, or you’re looking for a newsletter to sign up for that you want to learn something. Now imagine you run into something like this.
-
+Now imagine that you are on the internet, you’re shopping around for information on going to a conference or you’re looking for a newsletter to sign up for that you want to learn something. Now imagine you run into something like this.
 
 This can be daunting. This is where color contrast comes into the conversation. A conversation we really need to have. Still.
 
@@ -44,7 +43,6 @@ The same goes for colors and text. Not just text. I want to be able to clearly s
 
 Some colors look good to some people (designers, I’m looking at you) but will they good good to people that have deuteranomaly? What about people with tritanopia? Stargardt's, a type of macular degeneration that means people with it lose vision in the center of the retina. What about them? twoblindbrothers.com/pages/reveal. 3
 
-
 The WCAG Contrast Checker is another option. contrastchecker.com/ as well as the WebAIM Contrast Checker webaim.org/resources/contrastchecker/
 
 A minimum color contrast ratio recommended by ISO-9241-3 and ANSI-HFES-100-1988 is 3:1 for standard text and vision. The 4.5:1 ratio takes into account color deficiencies, low visual acuities, or loss of contrast sensitivity. 4.5:1 is also the chosen level for WCAG AA standards because “it compensated for the loss in contrast sensitivity usually experienced by users with vision loss equivalent to approximately 20/40 vision.” 4
@@ -52,7 +50,6 @@ A minimum color contrast ratio recommended by ISO-9241-3 and ANSI-HFES-100-1988 
 The minimum level for WCAG AAA is 7:1 and the reason for that is “because it compensated for the loss in contrast sensitivity usually experienced by users with vision loss equivalent to approximately 20/80 vision. People with more than this degree of vision loss usually use assistive technologies to access their content (and the assistive technologies usually have contrast enhancing, as well as magnification capability built into them).” 5
 
 These calculations are made for the size of body text and that a relaxed contrast ratio is provided for larger text, such as headings or any other text which is larger than the body copy. Remember to make link text stand out and underlined as well!
-
 
 Chrome and Firefox have add-on’s for their respective browsers when it comes to color contrast checkers. 
 
@@ -66,7 +63,6 @@ If I have submitted a form, I would like to read the message after the submissio
 “Your ticket number is 98765. Check your inbox to confirm receipt.”
 
 Then why are we running into instances of this;
-
 
 How is someone with good vision supposed to read that? How is someone with a vision impairment supposed to read that if they do not use a screen reader?
 
