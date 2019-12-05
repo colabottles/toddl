@@ -1,5 +1,5 @@
 ---
-title: Constrasting Accessibility with Color Contrast
+title: Contrasting Accessibility with Color Contrast
 description: Bringing color contrast in acessibility to the table and why we ned to do more checking of color contrast in our work on the web.
 date: 2019-12-05
 tags:
