@@ -23,6 +23,6 @@ I happily accepted and shot this all on my iPhone 11 Max Pro. I'm glad the video
 
 When hiring and seeking out talent that is diverse for your teams, try keeping that diverse talent and retaining those people. Why do so many folks leave design and business when they have brought in a wealth of knowledge and expertise?
 
-Hear the panel that cosnists of [Mina Markham]https://twitter.com/MinaMarkham/, [Farai Madzima]https://twitter.com/farai_uxguy/, and [Derek Featherstone]https://twitter.com/feather/ as they answer questions and provide thoughtful and useful answers to questions like how do we keep diverse talent and other topics covered in just under an hour at An Event Apart Denver. Moderated by [Jason Ogle](https://twitter.com/jasonogle/), who runs a terrific podcast and I suggest people in UX subscribe, become a patron, and support [User Defenders](https://twitter.com/UserDefenders/).
+Hear the panel that consists of [Mina Markham](https://twitter.com/MinaMarkham/), [Farai Madzima](https://twitter.com/farai_uxguy/), and [Derek Featherstone](https://twitter.com/feather/) as they answer questions and provide thoughtful and useful answers to questions like how do we keep diverse talent and other topics covered in just under an hour at An Event Apart Denver. Moderated by [Jason Ogle](https://twitter.com/jasonogle/), who runs a terrific podcast and I suggest people in UX subscribe, become a patron, and support [User Defenders](https://twitter.com/UserDefenders/).
 
 
