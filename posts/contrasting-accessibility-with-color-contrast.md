@@ -36,7 +36,7 @@ According to the World Health Organization (WHO);
 
 Never assume. Maybe Dad is looking online for a gift for his kids? Maybe the user under 50 has an impairment? You don't know this! So don't assume! 
 
-picture yourself on a website looking for some conference tickets, you're shopping around for information and doing some research on conferences. You're looking for a newsletter to sign up with to keep in the loop or to learn something. Now you run into something like this;
+Picture yourself on a website looking for some conference tickets, you're shopping around for information and doing some research on conferences. You're looking for a newsletter to sign up with to keep in the loop or to learn something. Now you run into something like this;
 
 <div class="content__placeholder">
   <figure>
