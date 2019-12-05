@@ -557,16 +557,16 @@ h3.intro {
 }
 
 h3 {
-  font: 1.4em "Lora";
+  font: 2.25em "BildVariableV2";
   font-style: oblique;
   font-weight: 900;
-  padding: 1rem 0rem;
-  text-transform: uppercase;
+  padding: 1rem 0;
 }
 
 h4 {
   font-family: "Futura", "Trebuchet MS", Arial, Helvetica, sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
+  padding: 1rem 0;
   text-transform: uppercase;
 }
 
