@@ -27,16 +27,16 @@ How do we make it better as a community of designers and developers? We __must__
 
 According to the World Health Organization (WHO);
 
-...* Globally, at least 2.2 billion people have a vision impairment or blindness, of whom at least 1 billion have a vision impairment that could have been prevented or has yet to be addressed.
-...* This 1 billion people includes those with moderate or severe distance vision impairment or blindness due to unaddressed refractive error, as well as near vision impairment caused by unaddressed presbyopia.
-...* Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts.
-...* The majority of people with vision impairments are over the age of 50 years.
+  * Globally, at least 2.2 billion people have a vision impairment or blindness, of whom at least 1 billion have a vision impairment that could have been prevented or has yet to be addressed.
+  * This 1 billion people includes those with moderate or severe distance vision impairment or blindness due to unaddressed refractive error, as well as near vision impairment caused by unaddressed presbyopia.
+  * Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts.
+  * The majority of people with vision impairments are over the age of 50 years.
 
 <blockquote>&ldquo;I don't need to worry about this! Our customers are under 50!&rdquo;</blockquote>
 
-Never assume. Maybe Dad is looking onlienf or a gift for his kids? Maybe the user under 50 has an impairment? You don't know this! So don't assume! 
+Never assume. Maybe Dad is looking online for a gift for his kids? Maybe the user under 50 has an impairment? You don't know this! So don't assume! 
 
-You are on a website looking for some conference tickets, you're shopping around for information and doing some research on conferences. You're looking for a newsletter to sign up with to keep in the loop or to learn something. Now you run into something like this;
+picture yourself on a website looking for some conference tickets, you're shopping around for information and doing some research on conferences. You're looking for a newsletter to sign up with to keep in the loop or to learn something. Now you run into something like this;
 
 <div class="content__placeholder">
   <figure>
@@ -51,9 +51,9 @@ This can be daunting. It was for me when I came across it, so imagine what it mu
 
 Color contrast is defined as;
 
-<blockquote cite="Dictionary.com">__noun__
+<blockquote cite="Dictionary.com"><strong>noun</strong>
 
-1. psychol the change in the appearance of a colour surrounded by another colour; for example, grey looks bluish if surrounded by yellow.</blockquote>
+psychol the change in the appearance of a colour surrounded by another colour; for example, grey looks bluish if surrounded by yellow.</blockquote>
 
 I haven't even mentioned types of color blindness until now either. [There are seven total types of color blindness including monochromacy](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness/types-color-blindness) (the absence of color perception).
 
