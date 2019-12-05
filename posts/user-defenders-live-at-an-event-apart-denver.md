@@ -1,7 +1,7 @@
 ---
 title: User Defenders Live Podcast at An Event Apart Denver
 description: A panel on accessibility, design inclusion and ethics, hiring and retaining diverse talent, and landing a job in UX.
-date: 2019-12-04
+date: 2019-12-05
 tags:
   - conference
   - user experience
