@@ -57,7 +57,7 @@ psychol the change in the appearance of a colour surrounded by another colour; f
 
 I haven't even mentioned types of color blindness until now either. [There are seven total types of color blindness including monochromacy](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness/types-color-blindness) (the absence of color perception).
 
-We should all be working together to make sure that these levels of accessibility are met in our work. It is 2019 and we are still having this conversation, even more now than ever it seems. Why aren't we at a place where this is part of accessibility testing? All it takes, is some really simple testing for color contrast. You can even do it in the Firefox DevTools!
+We should all be working together to make sure that these levels of accessibility are met in our work. It is 2019 and we are still having this conversation, even more now than ever it seems. Why aren't we at a place where this is part of accessibility testing? All it takes, is some really simple testing for color contrast. You can even do it in the [Firefox DevTools](https://developer.mozilla.org/en-US/docs/Tools)!
 
 #### The Tools
 
@@ -85,7 +85,7 @@ The WCAG Contrast Checker is another option.
 
 <div class="content__placeholder">
   <figure>
-    <img class="content__image" src="/img/wcagcc.png" alt="The WCAG Contrast Checker. Which shows foregroudn and background color selection, sample text and ratio information along with pass/fail markers, a button to switch on/off for grayscale view, and much more." />
+    <img class="content__image" src="/img/wcagcc.png" alt="The WCAG Contrast Checker. Which shows foreground and background color selection, sample text and ratio information along with pass/fail markers, a button to switch on/off for grayscale view, and much more." />
     <figcaption>The WCAG Contrast Checker.</figcaption>
   </figure>
 </div>
@@ -94,14 +94,14 @@ Along with the WebAIM Contrast Checker.
 
 <div class="content__placeholder">
   <figure>
-    <img class="content__image" src="/img/wcagcc.png" alt="The WCAG Contrast Checker. Which shows foregroudn and background color selection, sample text and ratio information along with pass/fail markers, a button to switch on/off for grayscale view, and much more." />
+    <img class="content__image" src="/img/webaimcc.png" alt="The WebAIM Contrast Checker. Which shows foreground and background color selection, sample text and ratio information along with pass/fail markers, a button to switch on/off for grayscale view, and much more." />
     <figcaption>The WCAG Contrast Checker.</figcaption>
   </figure>
 </div>
 
 Color contrast checking is super important. Why? Do we really want to have instances in forms where we cannot read the form labels? With flat design being popular still, do we really want to be searching for a text field to input our information into a form we're trying to send to the people that run the website?
 
-The same goes for color and text. Not just text.I want to be able to clearly see a form field so I can enter information into it. So imagine someone with an impairment visually, trying to do this.
+The same goes for color and text. Not just text. I want to be able to clearly see a form field so I can enter information into it. So imagine someone with an impairment visually, trying to do this.
 
 Getting the information to the user is crucial. If you're not getting that information to the user in an effective manner, then that's not good UX and it certainly is not good accessibility.
 
@@ -109,7 +109,7 @@ Have you even tried to read your phone with the glare of the sun on the screen? 
 
 Take a minute and squint at whatever you're looking at. an you read it clearly? Probably not. So remember those who have visual deficiencies and get them the information they are looking for in a clear manner.
 
-Some colors look good to some people (designers, I'm looking at you) but will they look good to people that have deuteranomaly? What about people with tritanopia? How is that information getting to them with your color scheme? 
+Some colors look good to some people (designers, I'm looking at you) but will they look good to people that have deuteranomaly? What about people with tritanopia? How is that information getting to them with your color scheme?
 
 Stargardt's, a type of macular degeneration that means peoplewho have it, lose vision in the center of the retina. What about them? [Here is an example of a site](https://twoblindbrothers.com/pages/reveal) that allows visitors to see through the eyes of the founders, and what they see when they navigate the internet.
 
