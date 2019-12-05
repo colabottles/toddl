@@ -77,7 +77,7 @@ Designers should know about color contrast. Developers should understand color c
 <div class="content__placeholder">
   <figure>
     <img class="content__image" src="/img/wcu.png" alt="The site Who Can Use which gives color combinations, their contrast numbers, simulation of text, and the different impairments and their percentages in population, WCAG grading and much more." />
-    <figcaption>Who Can Use - A phenomenal color contrast checking tool that is amore in depth that most tools for testing against the different types of visual impairments.</figcaption>
+    <figcaption>Who Can Use - A phenomenal color contrast checking tool that is more in depth that most tools for testing against the different types of visual impairments.</figcaption>
   </figure>
 </div>
 
@@ -113,11 +113,11 @@ Some colors look good to some people (designers, I'm looking at you) but will th
 
 Stargardt's, a type of macular degeneration that means peoplewho have it, lose vision in the center of the retina. What about them? [Here is an example of a site](https://twoblindbrothers.com/pages/reveal) that allows visitors to see through the eyes of the founders, and what they see when they navigate the internet.
 
-<blockquote>So what is an acceptable level of color contrast?</blockquote>
+<blockquote cite="Internet Person">So what is an acceptable level of color contrast?</blockquote>
 
 A minimum color contrast ratio recommended by ISO-9241-3 and ANSI-HFES-100-1988 is 3:1 for standard text and vision. The 4.5:1 ratio takes into account color deficiencies, low visual acuities, or loss of contrast sensitivity. 4.5:1 is also the chosen level for WCAG AA standards because &ldquo;*it compensated for the loss in contrast sensitivity usually experienced by users with visiion loss equivalent to approximately 20/40 vision*&rdquo;
 
-The minimum level for WCAG AAA is 7:1and the reason for that is;
+The minimum level for WCAG AAA is 7:1 and the reason for that is;
 
 <blockquote>&hellip;because it compensated for the loss in cotnrast sensitivity usually experienced by users with vision loss equivlent to approximately 20/80 vision. People with more than this degree of vision loss usually use assistive technologies to access their content (and the assistive technologies usually have contrast enhancing, as well as magnification capability built into them).</blockquote>
 
