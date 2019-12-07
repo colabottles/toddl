@@ -32,7 +32,7 @@ According to the World Health Organization (WHO);
   * Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts.
   * The majority of people with vision impairments are over the age of 50 years.
 
-<blockquote>&ldquo;I don't need to worry about this! Our customers are under 50!&rdquo;</blockquote>
+<blockquote cite="Designer/Developer">&ldquo;I don't need to worry about this! Our customers are under 50!&rdquo;</blockquote>
 
 Never assume. Maybe Dad is looking online for a gift for his kids? Maybe the user under 50 has an impairment? You don't know this! So don't assume! 
 
