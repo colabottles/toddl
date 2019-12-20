@@ -238,6 +238,6 @@ Let us remind ourselves of the fact not everyone has perfect or near perfect vis
 
 We as architects and craftspersons of the web community must keep everyone in mind when it comes to not only color contrast with fonts, websites, User Experience, forms, and colors, but all areas of accessibility and inclusive design as well.
 
-While we don't have to follow WCAG rules, we have to remmeber again that certain components of a website or an application have two different types of contrast to them. Toggles, components, text, buttons, form labels. Keep in mind the contrast ratios between each and we can make things that are great.
+While we don't have to follow WCAG rules explicitly, we have to remember again that certain components of a website or an application have two different types of contrast to them. Toggles, components, text, buttons, form labels. Keep in mind the contrast ratios between each and we can make things that are great.
 
 Clear color contrast is just the beginning, but it's one of the great ways to start building, creating, and handcrafting great, accessible sites for all.
