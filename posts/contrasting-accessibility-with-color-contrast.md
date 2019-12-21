@@ -94,7 +94,7 @@ Does color contrast have to meet those standards? No, not necessarily in my opin
 
 Tests have shown that people with visual imapriments find reading white text on a certain colored background are easier than reading the same text in black font. I ran into this when testing color contrast for a project I am working on regarding white and black text on certain orange and blue backgrounds. 
 
-This has since changed my stance on whether color contrast has to be perfectly set to WCAG 2.0 AA or even AAA standards. Text and interface components are different and it took [this article](https://uxmovement.com/buttons/the-myths-of-color-contrast-accessibility/) to remind me that it is indeed true.
+This has since changed my stance on whether color contrast has to be perfectly set to WCAG 2.0 AA or even AAA standards. Text and interface components have different contrast ratios.
 
 Designers should know about color contrast. Developers should understand color contrast. Again, at the least the very basics or theory of color contrast.
 
