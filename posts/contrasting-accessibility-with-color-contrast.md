@@ -27,7 +27,7 @@ Color contrast is defined as;
 
 <blockquote cite="Dictionary.com"><strong>noun</strong>
 
-psychol the change in the appearance of a colour surrounded by another colour; for example, grey looks bluish if surrounded by yellow.</blockquote>
+The change in the appearance of a colour surrounded by another colour; for example, grey looks bluish if surrounded by yellow.</blockquote>
 
 According to the World Health Organization (WHO);
 
@@ -36,7 +36,7 @@ According to the World Health Organization (WHO);
   * Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts.
   * The majority of people with vision impairments are over the age of 50 years.
 
-<blockquote cite="Rachel R. Vasquez">Contrasting colors, also known as complementary colors, are colors from opposing segments of the color wheel. Colors that are directly across from one nother on a basic color wheel provide maximum contrast.</blockquote>
+<blockquote cite="Rachel R. Vasquez">Contrasting colors, also known as complementary colors, are colors from opposing segments of the color wheel. Colors that are directly across from one another on a basic color wheel provide maximum contrast.</blockquote>
 
 #### Types of Color Blindness
 
@@ -88,13 +88,11 @@ Why aren't we at a place where this is part of accessibility testing? All it tak
 
 #### The Tools
 
-Color contrast checkers. There are many. I mean *a lot*. There is one I use to make sure what I am doing uses the correct level of color contrasting, it is the [Colour Contrast Checker](https://colourcontrast.cc).
+Color contrast checkers. There are many. I mean *a lot*. There is one I use to make sure what I am doing uses the correct level of color contrasting, it is the [Colour Contrast Checker](https://colourcontrast.cc). I know there are a lot of tools and resources, and maybe some that aren't covered here. These are a few I use or have as a part of my workflow when checking for accessibility with color contrast.
 
-Does color contrast have to meet those standards? No, not necessarily in my opinion. There is debate around the contrast of white text on backgrounds as opposed to black text on backgrounds of the same color.
+Does color contrast have to meet those standards? In my opinion? Yes. There is debate around the contrast of white text on backgrounds as opposed to black text on backgrounds of the same color.
 
-Tests have shown that people with visual imapriments find reading white text on a certain colored background are easier than reading the same text in black font. I ran into this when testing color contrast for a project I am working on regarding white and black text on certain orange and blue backgrounds. 
-
-This has since changed my stance on whether color contrast has to be perfectly set to WCAG 2.0 AA or even AAA standards. Text and interface components have different contrast ratios.
+Tests have shown that people with visual imapriments find reading white text on a certain colored background are easier than reading the same text in black font. I ran into this when testing color contrast for a project I am working on regarding white and black text on certain orange and blue backgrounds. Text and interface components have different contrast ratios.
 
 Designers should know about color contrast. Developers should understand color contrast. Again, at the least the very basics or theory of color contrast.
 
@@ -138,11 +136,11 @@ Along with the [WebAIM Contrast Checker](https://webaim.org/resources/contrastch
 
 Color contrast checking is super important. Why? Do we really want to have instances in forms where we cannot read the form labels? With flat design being popular still, do we really want to be searching for a text field to input our information into a form we're trying to send to the people that run the website?
 
-I want to be able to clearly see a form field so I can enter information into it. So imagine someone with an impairment visually, trying to do this. Text colors and form components have two differetn kinds of contrast ratios. They are not the same.
+I want to be able to clearly see a form field so I can enter information into it. So imagine someone with an impairment visually, trying to do this. Text colors and form components have two different kinds of contrast ratios. They are not the same.
 
 Getting the information to the user is crucial. If you're not getting that information to the user in an effective manner, then that's not good UX and it certainly is not good accessibility if people can't understand the content.
 
-Have you even tried to read your phone with the glare of the sun on the screen? Probably, and you can't really read what you're trying to look at. You have to adjust so that the sun isn't hitting the screen on the phone in a way that you can read it. 
+Have you even tried to read your phone with the glare of the sun on the screen? Probably, and you can't really read what you're trying to look at. You have to adjust so that the sun isn't hitting the screen on the phone in a way that you can read it.
 
 You want to get the information off the device so you can understand what you're looking at.
 
@@ -208,7 +206,7 @@ So if your form uses a color contrast that isn't as sharp as it needs to be, the
 
 We as designers need to do better, to have a system of checks and balances to make sure that color contrast is an integral part of the design process. We have learned through many mistakes we have seen over the last few years that accessibility reaches a far wider scope that sometimes is ignored by the masses, myself included.
 
-How can we mke sure we are paying attention to color contrast when we design and develop websites?
+How can we make sure we are paying attention to color contrast when we design and develop websites?
 
 __Test with persons with vision impairments.__ If we can ask on Twitter for users of a specific demographic, then we can ask for persons to test with vision impairments. Even going as far as hiring those people to work on your teams to make the process better.
 
@@ -238,6 +236,6 @@ Let us remind ourselves of the fact not everyone has perfect or near perfect vis
 
 We as architects and craftspersons of the web community must keep everyone in mind when it comes to not only color contrast with fonts, websites, User Experience, forms, and colors, but all areas of accessibility and inclusive design as well.
 
-While we don't have to follow WCAG rules explicitly, we have to remember again that certain components of a website or an application have two different types of contrast to them. Toggles, components, text, buttons, form labels. Keep in mind the contrast ratios between each and we can make things that are great.
+While we should follow WCAG rules explicitly, we have to remember again that certain components of a website or an application have two different types of contrast to them. Toggles, components, text, buttons, form labels. Keep in mind the contrast ratios between each and we can make things that are great.
 
 Clear color contrast is just the beginning, but it's one of the great ways to start building, creating, and handcrafting great, accessible sites for all.
