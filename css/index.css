@@ -35,7 +35,7 @@ dl,
 dt,
 dd,
 div,
-section,
+article,
 article,
 main,
 aside,
@@ -102,7 +102,7 @@ aside,
 footer,
 header,
 nav,
-section,
+article,
 main {
   display: grid;
 }
@@ -313,13 +313,13 @@ main.splash {
   height: 85vh;
 }
 
-section#left-panel {
+article#left-panel {
   background-color: #fff;
   grid-row: 1 / 4;
   justify-content: center;
 }
 
-section#right-panel {
+article#right-panel {
   background-image: url(/img/tl.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -614,7 +614,7 @@ li.postlist-item a {
   margin: 1rem 0;
 }
 
-section.style-guide__body ul {
+article.style-guide__body ul {
   list-style-type: none;
 }
 
@@ -1150,11 +1150,11 @@ p.tag-wrap {
     max-height: 100vh;
   }
 
-  section#left-panel {
+  article#left-panel {
     grid-row: 1;
   }
 
-  section#right-panel {
+  article#right-panel {
     justify-self: center;
     grid-row: 2;
     width: 100%;
@@ -1224,7 +1224,7 @@ p.tag-wrap {
     transform: translate(0%) !important;
   }
 
-  /*** SECTIONS ***/
+  /*** articleS ***/
   .headline {
     height: 20vh;
   }
