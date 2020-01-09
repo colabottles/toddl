@@ -15,4 +15,4 @@ It is time for me to go.
 
 I thank everyone, whom along the way, helped carve my journey, who taught me invaluable lessons, and whom I met and enjoyed a coffee, a meal, conversation, or moment with. There are too many to list. 
 
-So I will just say thank you all.
+I will just say thank you all.
