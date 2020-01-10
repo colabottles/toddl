@@ -35,7 +35,7 @@ dl,
 dt,
 dd,
 div,
-article,
+section,
 article,
 main,
 aside,
@@ -614,7 +614,7 @@ li.postlist-item a {
   margin: 1rem 0;
 }
 
-article.style-guide__body ul {
+section.style-guide__body ul {
   list-style-type: none;
 }
 
@@ -1150,11 +1150,11 @@ p.tag-wrap {
     max-height: 100vh;
   }
 
-  article#left-panel {
+  section#left-panel {
     grid-row: 1;
   }
 
-  article#right-panel {
+  section#right-panel {
     justify-self: center;
     grid-row: 2;
     width: 100%;
@@ -1224,7 +1224,7 @@ p.tag-wrap {
     transform: translate(0%) !important;
   }
 
-  /*** articleS ***/
+  /*** SECTIONS ***/
   .headline {
     height: 20vh;
   }
