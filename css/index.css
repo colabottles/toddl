@@ -405,7 +405,7 @@ li.article-list-article:hover {
   padding-bottom: .5em;
 }
 
-section {
+article {
   background-color: #ffffff;
   color: #333333;
   grid-template-columns: 1fr minmax(auto, 73ch) 1fr;
@@ -416,11 +416,11 @@ section {
   max-width: 100vw;
 }
 
-section.about {
+article.about {
   grid-template-rows: 50vh auto;
 }
 
-section.style-guide {
+article.style-guide {
   background-color: #ffffff;
 }
 
