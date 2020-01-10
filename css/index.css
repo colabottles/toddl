@@ -320,7 +320,7 @@ section#left-panel {
 }
 
 section#right-panel {
-  background-image: url(/img/tl.jpg);
+  background-image: url(../img/tl.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -437,6 +437,7 @@ article.style-guide {
 }
 
 .article__header {
+  align-self: flex-start;
   background-color: rgba(0, 0, 0, 0);
   grid-row: 1;
   grid-column: 1;
