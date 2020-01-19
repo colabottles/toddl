@@ -10,9 +10,9 @@ tags:
 layout: layouts/post.njk
 ---
 
-I believe this is a conversation we need to revisit. Color contrast is something that is important when deisgning and developing what we are putting on the web. The strides we have taken are many, but there is still a long way to go and I will show you some examples, as well as why we need to do a better job at making sure color contrast is covered in our work.
+Color contrast is something that is important when designing and developing what we are putting on the web. The strides we have taken are many regarding accessibility, but there is still a long way to go and I will show you some examples, as well as why we need to do a better job at making sure color contrast is covered in our work.
 
-In my adventures on the internet, I was researching some conferences to attend in 2020. One website I stumbled upon had some major accessibility issues regarding color contrast. Forms, an embedded, third-party form from an event website where you buy tickets from that was totally &rdquo;invisible&ldquo;. I couldn't see any of the form. It's as if it was not there at all.
+One day, during my time online doing some research, I was looking into some conferences to attend in 2020. One website I stumbled upon had some major accessibility issues regarding color contrast. Forms, an embedded, third-party form from an event website where you buy tickets from that was totally &rdquo;invisible&ldquo;. I couldn't see any of the form. It's as if it was not there at all.
 
 <div class="content__placeholder">
   <figure>
@@ -37,6 +37,8 @@ According to the World Health Organization (WHO);
   * The majority of people with vision impairments are over the age of 50 years.
 
 <blockquote cite="Rachel R. Vasquez">Contrasting colors, also known as complementary colors, are colors from opposing segments of the color wheel. Colors that are directly across from one another on a basic color wheel provide maximum contrast.</blockquote>
+
+There are at least 2.2 billion people who suffer from a vision impairment or some form of color blindness and I'll share with you some of those types of color blindness and vision impairments below.
 
 #### Types of Color Blindness
 
@@ -74,7 +76,7 @@ What about temporary impairment or injury? Watery eyes by getting punched in the
 
 Use of one eye just for a short period of time? There are times where a temporary impairment comes into play more than likely, just as with other forms of accessibility issues (broken hand, wrist in a cast, eye patch, etc.).
 
-Maybe Dad is looking online for a gift for his kids? Maybe the user under 50 has an impairment? You don't know this, so don't assume. We do not know our users. We do not know who the users are (unless you have done extensive user research, which we shold be doing) of whom will be using the sites we build or the apps we create.
+Maybe Dad is looking online for a gift for his kids? Maybe the user under 50 has an impairment? You don't know this, so we can't assume. We do not know our users. We do not know who the users are (unless you have done extensive user research, which we shold be doing) and of whom will be using the sites we build or the apps we create.
 
 There's no possible way anyone will interview every single user of the product. So assuming we know who the user is, is not something we should be doing. So do not assume that you know all your users or customers.
 
@@ -82,19 +84,21 @@ We as designers and developers should know at the very least, the basics of this
 
 Sure, we have certain color palettes we like, but is the end result of our work we do for us as designers and developers? Or is it for the end user? The people that will view the work we do as we move on to other projects and maybe take a look at what we have done once in a great while?
 
-We should all be working together to make sure that these levels of accessibility are met in our work. It is 2019 and we are still having this conversation, even more now than ever it seems.
+We should all be working together to make sure that these levels of accessibility are met in our work. It is 2020 and we are still having this conversation, even more now than ever it seems.
 
 Why aren't we at a place where this is part of accessibility testing? All it takes, is some really simple testing for color contrast. You can even do it in the [Firefox DevTools](https://developer.mozilla.org/en-US/docs/Tools)!
 
 #### The Tools
 
-Color contrast checkers. There are many. I mean *a lot*. There is one I use to make sure what I am doing uses the correct level of color contrasting, it is the [Colour Contrast Checker](https://colourcontrast.cc). I know there are a lot of tools and resources, and maybe some that aren't covered here. These are a few I use or have as a part of my workflow when checking for accessibility with color contrast.
+Color contrast checkers. There are many. I mean *a lot*. There is one I use to make sure what I am doing uses the correct level of color contrasting, it is the [Colour Contrast Checker](https://colourcontrast.cc) or over at [WhoCanUse](https://whocanuse.com/). for a more thorough look if I am having issues with certain colors regarding background and body copy. I know there are a lot of tools and resources, and maybe some that aren't covered here. These are a few I use or have as a part of my workflow when checking for accessibility with color contrast.
 
-Does color contrast have to meet those standards? In my opinion? Yes. There is debate around the contrast of white text on backgrounds as opposed to black text on backgrounds of the same color.
+Does color contrast have to meet those standards? In my opinion? Yes. There is debate around the contrast of white text on backgrounds as opposed to black text on backgrounds of the same color. We should be finding the right color combinations with regards to text color on background color in our work though.
 
 Tests have shown that people with visual imapriments find reading white text on a certain colored background are easier than reading the same text in black font. I ran into this when testing color contrast for a project I am working on regarding white and black text on certain orange and blue backgrounds. Text and interface components have different contrast ratios.
 
-Designers should know about color contrast. Developers should understand color contrast. Again, at the least the very basics or theory of color contrast.
+While you may want to try and achieve 100% WCAG 2.0 AA compliance, you most likely will meet AAA and AA standards for your project due to different ratios of text contrast and component contrast. 
+
+Designers should know about color contrast. Developers should understand color contrast. Again, at the least the very basics or theory of color contrast. We need to understand this to put this knowledge into our workflows.
 
 <div class="content__placeholder">
   <figure>
@@ -104,6 +108,8 @@ Designers should know about color contrast. Developers should understand color c
 </div>
 
 [Who Can Use](https://whocanuse.com) is another fantastic contrast checker that will become a staple in my accessibility testing most definitely. It gives you a look at the different contrasts and how they stack up versus the many different kinds of visual impairments.
+
+[Lea Verou has an excellent color contrast checker](https://contrast-ratio.com/) she made that is a great tool for checking color contrast as well.
 
 <div class="content__placeholder">
   <figure>
@@ -162,7 +168,7 @@ These calculations are made for the size of body text and a relaxed contrast rat
 
 While these are the minimum and suggested ratios for each level (AA &amp; AAA), interface components do not have the same contrast ratios. While text is 4.5:1 in WCAG AA, interface components are 3:1.
 
-Text requires a higher contrast because people are trying to reead it. Interface components do not and therefore have a lower standard.
+Text requires a higher contrast because people are trying to reead it. Interface components do not and therefore have a lower standard. You can still do your best to get as close as you can to WCAG guidelines when it comes to using an accessibility checker like WAVE, WebAIM, or the Deque Accessibility Checker but having some things AAA compliant and some AA is quite alright, just as long as everything passes you're being an a11y!
 
 #### Forms
 
@@ -171,7 +177,7 @@ Picture yourself on a website looking for some conference tickets, you're shoppi
 <div class="content__placeholder">
   <figure>
     <img class="content__image" src="/img/si1.png" alt="A blue form on a website, with darker blue form fields that aren't very discernable, with black text in the form fields with a hot pink submit button." />
-    <figcaption>A case of dreadful color contrast.</figcaption>
+    <figcaption>A case of bad color contrast in a subscription form.</figcaption>
   </figure>
 </div>
 
@@ -182,13 +188,13 @@ Then why are we running into instances of this?
 <div class="content__placeholder">
   <figure>
     <img class="content__image" src="/img/ewww.png" alt="A form submission message in white font on a neon yellow background which makes reading nearly impossible and color contrast almost non-existant." />
-    <figcaption>Wait, what?</figcaption>
+    <figcaption>Wait, what?! An even worse case of color contrast on a confirmation dialog after form submission.</figcaption>
   </figure>
 </div>
 
-How is someone with good vision supposed to read that? How is someone with a vision impairment supposed to read that if they do not use a screen reader?
+How is someone with good vision supposed to read that? How is someone with a vision impairment supposed to read that if they do not use a screen reader? This kind of color contrast is not helpful.
 
-This kind of color contrast is not helpful. This is unreadable even to someone like myself who has good eyesight, so what about someone that doesn;t have good eyesight, someone that is older? It has to be nex tto impossible to get the information from this confirmation message.
+This is unreadable even to someone like myself who has good eyesight, so what about someone that doesn't have good eyesight, someone that is older? It has to be next to impossible to get the information from this confirmation message.
 
 I had the hardest time reading this and making out the sentence, *"Thanks for subscribing! Please check your email for further instructions."* Why is this happening in this day and age? It got me thinking, my vision (for now) is just fine, but what about people that have visual impairments? How could, and how *would* they read that?!
 
@@ -200,19 +206,19 @@ For example;
 *&ldquo;Your confirmation number will be sent to __user@address.com__&rdquo;* or,
 *&ldquo;Your ticket number is 98765. Check your inbox to confirm receipt.&rdquo;*
 
-So if your form uses a color contrast that isn't as sharp as it needs to be, there could be a lot of peoplenot getting the information you're trying to get to them or unable to get information from your user(s) because they cannot read the information displayed. A confirmation message needs to be relayed clearly so as to also relay anything the user should knnow upon submission as I outlined above.
+So if your form uses a color contrast that isn't as sharp as it needs to be, there could be a lot of people not getting the information you're trying to get to them or unable to get information from your user(s) because they cannot read the information displayed. A confirmation message needs to be relayed clearly so as to get the user the information the user should know upon submission as I mentioned above.
 
 #### What Can We Do?
 
-We as designers need to do better, to have a system of checks and balances to make sure that color contrast is an integral part of the design process. We have learned through many mistakes we have seen over the last few years that accessibility reaches a far wider scope that sometimes is ignored by the masses, myself included.
+We as designers and developers need to do better, to have a system of checks and balances to make sure that color contrast is an integral part of the design process. We have learned through many mistakes we have seen over the last few years that accessibility reaches a far wider scope that sometimes is ignored by the masses, myself included.
 
-How can we make sure we are paying attention to color contrast when we design and develop websites?
+*"How can we make sure we are paying attention to color contrast when we design and develop websites?"* you may ask? Well&hellip;
 
 __Test with persons with vision impairments.__ If we can ask on Twitter for users of a specific demographic, then we can ask for persons to test with vision impairments. Even going as far as hiring those people to work on your teams to make the process better.
 
 __Make accessibility inclusive in the design and developemnt process.__ If we are including time to make sure what we are doing right from the start is accessible, then we are halfway there. And be even more inclusive&hellip; Hire persons with visual impairments to your team to help with the process with their expertise on the matter!
 
-__Don't follow the WCAG guidelines focusing solely on color contrast for text.__ Different components of a site or application have different color contrasts. Forms, buttons, text, interface components. Use good judgment and you will be able to differentiate between them all and use a [color-blindness simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/) [there are some](https://www.colororacle.org/) [to choose](http://www.webexhibits.org/causesofcolor/index.html) fromt hat are good. There is even an extension for Chrome called [Colorblindly](https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg) and one called [Colorblinding](https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa) as well.
+__Don't follow the WCAG guidelines focusing solely on color contrast for text.__ Different components of a site or application have different color contrasts. Forms, buttons, text, interface components. Use good judgment and you will be able to differentiate between them all and use a [color-blindness simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/) [there are some](https://www.colororacle.org/) [to choose](http://www.webexhibits.org/causesofcolor/index.html) fromt hat are good. There is even an extension for Chrome called [Colorblindly](https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg) and one called [Colorblinding](https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa) as well. Make sure *everything passes* and accessibility check!
 
 __Be sensible with colors.__ Ask yourself, &ldquo;Would this color scheme work for others with vision impairments?&rdquo; Use color schemes and palettes that work and that make sense. Pastels are okay, but not in a Miami Vice nightmare landscape kind of horrible way. And&hellip; Color-blind people can tell the difference between colors, they just have  hard time distinguishing between those colors. And&hellip;
 
@@ -220,9 +226,9 @@ __Use the tools!__ Color contrast checkers like in the examples I have provided 
 
 ### Summary
 
-Following the WCAG guidelines is something we should do, but an accessible design is something we have to do. With that said, right now a 100% WCAG compliant site cannot be achieved if you followed every WCAG requirement.
+Following the WCAG guidelines is something we should do,  accessible and inclusive design is something we *must* do. Make sure everything passes an accessibility check through one of these tools you have made a part of your workflow. Adjust colors and contrasts where you can and where you need to in order to fulfill the requirements for AA and AAA compliance.
 
-There is a lot of talk about accessibility and we have taken tremendous strides to making the web more accessible and inclusive but we have a long way to go still from it being all-inclusive. So let's make the web more inclusiv, but also remember how and why. Also reminding ourselves to actually do it!
+There is a lot of talk about accessibility and we have taken tremendous strides to making the web more accessible and inclusive but we have a long way to go still from it being all-inclusive. So let's make the web more inclusive, but also remember how and why. Also reminding ourselves to actually do it!
 
 There is a broad spectrum of vision deficiencies and impairments we need to address during the design phase of the process. Making this process more inclsuive by taking the time to make sure color contrast (and other aspects of accessibility) work.
 
