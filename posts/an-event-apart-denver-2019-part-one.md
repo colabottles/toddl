@@ -3,7 +3,8 @@ title: An Event Apart 2019 - Denver Wrap-Up Edition, Part One
 description: The wrap-up article after An Event Apart in Denver, Colorado.
 date: 2019-10-28
 tags:
-  - conferences
+  - conference
+  - denver
 layout: layouts/post.njk
 ---
 
@@ -124,4 +125,4 @@ The dinner after with Jason Ogle, Jason Pamental, Derek Featherstone and Eric Me
 
 A fantastic kickoff to the conference! I don't think it could have gotten any better than this. Dinner with some of the best people I have had the privilege to meet and get to know over the years. Every time I am at a conference with these folks I learn something new and have a good time doing so.
 
-That was the end of Day One. A day of learning, of friendship and of good food. <a href="https://toddl.dev/posts/an-event-apart-denver-2019-part-two/">On to Day Two</a>!
+That was the end of Day One. A day of learning, of friendship and of good food. <a href="/posts/an-event-apart-denver-2019-part-two/">On to Day Two</a>!

@@ -4,12 +4,12 @@ description: My adventures solving the CORS issue.
 date: 2019-09-06
 tags:
   - development
-  - front-end
+  - frontend
   - fonts
 layout: layouts/post.njk
 ---
 
-## CORS, CodePen and Me
+### CORS, CodePen and Me
 
 I have been experimenting and leaning about Variable Fonts ever since [Jason Pamental](https://rwt.io) spoke at An Event Apart this past May in Boston. I had been following Jason as well as Mandy Michael and Scott Kellum’s works/tweets/articles/talks as well. All great stuff.
 
@@ -27,7 +27,7 @@ So, unbeknownst to me, browsers restrict cross-origin HTTP requests initiated fr
 
 I had tweeted out to Jason if he could take a peek and see what the issue was because I was still unaware of the CORS issue until Scott Kellum (@ScottKellum) tweeted at me about it. So I went right to the search engine (DuckDuckGo for this guy) and did a search which came up with some good stuff.
 
-## How did I solve it?
+### How did I solve it?
 
 The best (and easiest) solution I found came from here http://bit.ly/2U2DV5s
 
@@ -61,6 +61,6 @@ And went to test and they worked! It took about 15 minutes of searching and read
 
 If there is a better, or easier way to implement this, I would be very interested in knowing and learning. The other ways involved a little bit of in-depth command line work and I’m not knocking those methods (nor would I be scared to do them) but this one just seemed a lot easier for what I was trying to accomplish was for me to be able to see the variable font I was calling off my site in CodePen.
 
-## Special Thanks
+### Special Thanks
 
 Thanks to [Jason Pamental - @jpamental](https://twitter.com/@jpamental), [Scott Kellum - @ScottKellum](https://twitter.com/@ScottKellum) and [Sarah Drasner - @sarah_edo](https://twitter.com/@sarah_edo) for their guidance and assistance!

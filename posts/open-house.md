@@ -23,15 +23,19 @@ A pleasant surprise was getting to catch up with [Jason Pamental](https://rwt.io
 
 Back to the weekend. A great breakfast, some great conversation and as much as I would have loved to stay and taken a walk around town for the fair that was going on where we were, I had to drive four hours and the crowd of about thirty people were starting to disperse. I was able to get a picture with DJR and Jason, I was hoping to get Scott, Ana, and Sal for a group photo as well, but they had a long way to travel 8-9 hours back to Washington D.C.
 
-<img src="img/breakfastphotoop.jpg" alt="From left to right, Jason Pamental, Todd Libby, and David Jonathan Ross at breakfast Sunday morning" />
+<div class="content__placeholder">
+  <img src="/img/breakfastphotoop.jpg" alt="From left to right, Jason Pamental, Todd Libby, and David Jonathan Ross at breakfast Sunday morning" class="content__image" />
+</div>
 
 <figcaption>An early morning breakfast photo op, fanboy moment. (L to R - Jason Pamental, myself, David Jonathan Ross)</figcaption>
 
-<img src="img/group-photo.jpg" alt="A group photo at the attendees at David Jonathan Ross's open house. Photo taken at Apex Orchards, courtesy of Matthew Rechs" />
+<div class="content__placeholder">
+  <img src="/img/group-photo.jpg" alt="A group photo at the attendees at David Jonathan Ross's open house. Photo taken at Apex Orchards, courtesy of Matthew Rechs" class="content__image" />
+</div>
 
 <figcaption>and here is the group photo, courtesy of Matthew Rechs, taken at Apex Orchards</figcaption>
 
-## Summary
+### Summary
 
 Overall. I had a blast. I don't get out much and do thing like this. It is rare. It was great meeting people and getting to talk to folks outside the programming world (there were a few programmers there as well). For someone that feels like he is alone in a room full of people sometimes, I can say it helped my hesitation to do social things like this.
 

@@ -3,7 +3,8 @@ title: An Event Apart 2019 - Denver Wrap-Up Edition, Part Two
 description: The wrap-up article after An Event Apart in Denver, Colorado.
 date: 2019-10-29
 tags:
-  - conferences
+  - conference
+  - denver
 layout: layouts/post.njk
 ---
 
@@ -113,4 +114,4 @@ Dan explains it's not the components, it's about how they relate to each other. 
 
 Dan takes us through some of the most well-known design systems and how many components they have in our search for a comprehensive design system. They why's on why there are certain components with certain design systems. A great way to cap off another phenomenal day at An Event Apart.
 
-Farai's talk was the highlight of Day Two and the entire conference, in my opinion. That ws the enlightenment I had needed in my professional life, most definitely. Now... <a href="https://toddl.dev/posts/an-event-apart-denver-2019-part-three/">on to Day Three. The final day!</a>
+Farai's talk was the highlight of Day Two and the entire conference, in my opinion. That ws the enlightenment I had needed in my professional life, most definitely. Now... <a href="/posts/an-event-apart-denver-2019-part-three/">on to Day Three. The final day!</a>

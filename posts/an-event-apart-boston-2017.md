@@ -3,11 +3,12 @@ title: An Event Apart 2017 - Wrap-Up Edition
 description: The wrap-up article I authored in 2017 after An Event Apart.
 date: 2017-05-20
 tags:
-  - conferences
+  - conference
+  - boston
 layout: layouts/post.njk
 ---
 
-## An Event Apart Boston 2017, Boston, MA
+### An Event Apart Boston 2017, Boston, MA
 
 Well, I finally have some free time to sit down and collect my thoughts about the past couple of weeks that have been a whirlwind of activity. Here, however, is the wrap-up for An Event Apart that took place this past Monday through Wednesday.
 
@@ -33,7 +34,7 @@ I joked around when I thanked Brad for his talk, I told him he, &ldquo;helped me
 
 I’ll leave out the bees, I went Twitter happy with that gif I think. Nah, unleash the bees!
 
-<blockquote cite="@bradfrost" class="twitter-tweet">This was still the best from Day One from <a href="https://twitter.com/brad_frost?ref_src=twsrc%5Etfw">@brad_frost</a> <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a> <a href="https://t.co/tcOxG1lmAn">pic.twitter.com/tcOxG1lmAn</a></p>&mdash; Todd (@toddlibby) <a href="https://twitter.com/toddlibby/status/864309047226503172?ref_src=twsrc%5Etfw">May 16, 2017</a></blockquote>
+<blockquote cite="Brad Frost" class="twitter-tweet">This was still the best from Day One from <a href="https://twitter.com/brad_frost?ref_src=twsrc%5Etfw">@brad_frost</a> <a href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw">#aeabos</a> <a href="https://t.co/tcOxG1lmAn">pic.twitter.com/tcOxG1lmAn</a></p>&mdash; Todd (@toddlibby) <a href="https://twitter.com/toddlibby/status/864309047226503172?ref_src=twsrc%5Etfw">May 16, 2017</a></blockquote>
 
 Dan Mall came on after Brad to discuss Gantt charts. No, actually it was about strategy with the design and development process. Collaboration, Should designers code? Should developers design? If they don’t, then it’s okay.
 

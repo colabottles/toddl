@@ -3,17 +3,18 @@ title: UX Burlington 2019
 description: A recap of the conference in Burlington, Vermont. UX Burlington.
 date: 2019-05-03
 tags:
-  - conferences
+  - conference
+  - burlingtonvt
 layout: layouts/post.njk
 ---
 
-## UX Burlington 2019. Burlington, VT
+### UX Burlington 2019 - Burlington, VT
 
-### My First UX Burlington
+#### My First UX Burlington
 
 While scanning the countryside for conferences in the New England area, I was drawn to UX Burlington. So I snagged a ticket. Best decision I made that week. More on the food that I had there on Church Street as well.
 
-### Morning Keynote
+#### Morning Keynote
 
 Victor Yocco gave the morning keynote. &ldquo;Designing For Short Attention Spans&rdquo;. A great way to kick off the conference. Filled with humor, light-heartedness and information, I was glad I had attended because this keynote made me think about a lot of UX things I've been dealing with at work.
 
@@ -48,7 +49,7 @@ Some key points on the Tactical Design Elements were;
 
 There was so much to Victor's talk, it would take me a day to just relay the vast amount of information that was crammed into a 48-minute video. I had three pages of notes myself, so I'll just suggest people watch the video of the keynote. The link to [the video for Victor's keynote can be found here](https://youtu.be/6WBS6YYMAcE) on the UX Burlington YouTube account.
 
-### Frédéric Harper
+#### Frédéric Harper
 
 The first speaker that I saw on the developer track was Frédéric Harper, &ldquo;Building Web Apps That Don’t Suck&rdquo;. Frédéric spoke about tips and tricks to help you optimize your applications. Create a great experience for your users that is fast and with quality. It was a great way to kick off the developer track for sure.
 
@@ -58,7 +59,7 @@ Think about content, think about the comfort zone of the screen and what users a
 
 Minimizing large files, file requests, HTTP requests, using a CDN, running the audit on Webhint, don't make users think about the interface, insulate them from the complexities and make our goals easier and faster. There was an awful lot of information packed into the hour and I'll point you to [Frédéric's video on the UX Burlington YouTube page](https://youtu.be/DWd5cL3ViTY). I highly suggest watching.
 
-### Henri Helvetica
+#### Henri Helvetica
 
 The next speaker was Henri Helvetica, &ldquo;Planet of the APIs: A Tale of Performance and UX&rdquo;. The beginning of Henri's talk was about the good old days of Mosaic, data and web origins such as in November of 2016 (not so long ago) when mobile and tablet internet usage surpassed desktop internet usage.
 
@@ -87,7 +88,7 @@ I'll go back to another quote from Henri;
 
 I had written down a lot of notes, what mobile browsers these are all good in and not implemented in yet, but again, I'll direct and suggest that [folks go to the UX Burlington YouTube page and view his talk there](https://youtu.be/DLvSPYklE4U). Henri articulated everything so well, I don't want to butcher it.
 
-### Chris DeMars
+#### Chris DeMars
 
 Chris DeMars was the last speaker for the day with &ldquo;Focusing on Focus&rdquo;. He nailed it. I had corresponded with Chris (@saltnburnem) on Twitter so it was a treat to see and hear his talk on Focusing on Focus.
 
@@ -113,7 +114,7 @@ Chris also walked people through <span class="pre">:focus</span> <span class="pr
 
 Top notch accessibility talk from Chris, so I was extra glad I got the ticket I got.
 
-### Dr. Robert Moore
+#### Dr. Robert Moore
 
 Witht the closing keynote on a great one-day conference was Dr. Robert Moore and &ldquo;Conversational UX&rdquo;.
 

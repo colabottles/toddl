@@ -3,7 +3,9 @@ title: An Event Apart 2019 - Denver Wrap-Up Edition, Part Three
 description: The wrap-up article after An Event Apart in Denver, Colorado.
 date: 2019-10-31
 tags:
-  - conferences
+  - conference
+  - aeadenver
+  - denver
 layout: layouts/post.njk
 ---
 
@@ -11,7 +13,7 @@ layout: layouts/post.njk
 
 #### Day Three - The Final Chapter
 
-I never look forward to the final day because it’s the final day. With all good things however, they must come to an end. 
+I never look forward to the final day because it’s the final day. With all good things however, they must come to an end.
 
 <div class="content__placeholder">
   <figure>
@@ -47,7 +49,7 @@ Val Head came up with "Making Motion Inclusive" and started off with motion. Ref
   </figure>
 </div>
 
-So for lunch I decided to go out for lunch and meet up with my friend Chris DeMars. I asked if Jason Pamental wanted to go and he agreed and we met Chris at La Loma. Lunch was phenomenal. Not much time to spent, but time well spent indeed and good food, good conversation. Chris and I were supposed to go over to the General Assembly building and hear Eric Meyer talk on Tuesday night but the weather was not good at all and the event was cancelled, which was a bummer, but I got to hear a lot of great stuff this week. I was also bummed I wasn't able to hang out with Chris a bit longer than just lunch. Chris is lso another excellent speaker, a guy that knows his stuff and is a champion for accessibility. His talk at UX Burlington got me fixated in a11y and the need to focus a lot more on that and keep that skill in my arsenal.
+So for lunch I decided to go out for lunch and meet up with my friend Chris DeMars. I asked if Jason Pamental wanted to go and he agreed and we met Chris at La Loma. Lunch was phenomenal. Not much time to spent, but time well spent indeed and good food, good conversation. Chris and I were supposed to go over to the General Assembly building and hear Eric Meyer talk on Tuesday night but the weather was not good at all and the event was cancelled, which was a bummer, but I got to hear a lot of great stuff this week. I was also bummed I wasn't able to hang out with Chris a bit longer than just lunch. Chris is also another excellent speaker, a guy that knows his stuff and is a champion for accessibility. His talk at UX Burlington got me fixated in a11y and the need to focus a lot more on that and keep that skill in my arsenal.
 
 <div class="content__placeholder">
   <figure>
@@ -74,7 +76,7 @@ Back at the conference, Derek Featherstone kicked off the last half of the final
 
 and as with the last few AEA events I have attended, Gerry McGovern ended the conference with his stellar (and very humorous) talk, "Delivering Product 67". I just finished Gerry's book "Top Tasks" and it was brilliant. I have applied things in that book to the company I work for to better our product. Humility, Agility, and Simplicity. Gerry shows us how to enhance those qualities to support our company's business and advance our careers. Master the metrics of customer simplicity. I had the pleasure and privilege to have a couple of great conversations over breakfast with Gerry and he is a delight to speak with. All the speakers are! (More on that later). How to keep the garbage off of our pages, stopping the customer from doing what they really need to do. There is too much garbage on the web. Gerry points this out with the many iterations of the Google homepage.
 
-and with that, the conference was over.
+And with that, the conference was over.
 
 #### The After-Conference
 

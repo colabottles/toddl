@@ -7,6 +7,7 @@ tags:
   - tools
   - color
   - design
+  - colorcontrast
 layout: layouts/post.njk
 ---
 
@@ -31,10 +32,10 @@ The change in the appearance of a colour surrounded by another colour; for examp
 
 According to the World Health Organization (WHO);
 
-  * Globally, at least 2.2 billion people have a vision impairment or blindness, of whom at least 1 billion have a vision impairment that could have been prevented or has yet to be addressed.
-  * This 1 billion people includes those with moderate or severe distance vision impairment or blindness due to unaddressed refractive error, as well as near vision impairment caused by unaddressed presbyopia.
-  * Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts.
-  * The majority of people with vision impairments are over the age of 50 years.
+* Globally, at least 2.2 billion people have a vision impairment or blindness, of whom at least 1 billion have a vision impairment that could have been prevented or has yet to be addressed.
+* This 1 billion people includes those with moderate or severe distance vision impairment or blindness due to unaddressed refractive error, as well as near vision impairment caused by unaddressed presbyopia.
+* Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts.
+* The majority of people with vision impairments are over the age of 50 years.
 
 <blockquote cite="Rachel R. Vasquez">Contrasting colors, also known as complementary colors, are colors from opposing segments of the color wheel. Colors that are directly across from one another on a basic color wheel provide maximum contrast.</blockquote>
 
@@ -44,35 +45,35 @@ There are at least 2.2 billion people who suffer from a vision impairment or som
 
 There are seven total types of color blindness including monochromacy (the abscence of color perception).
 
-__Red-green color blindness.__
+##### Red-green color blindness
 
 The most common type of color blindness amkes it difficult to tell the difference between red and green. There are four types of red-green color blindness;
 
-__Deuteranomaly:__ This is the most common type of red-green color blindness. This type is mild and usually does not hinder normal viewing or activities. It makes green look more red.
+_Deuteranomaly:_ This is the most common type of red-green color blindness. This type is mild and usually does not hinder normal viewing or activities. It makes green look more red.
 
-__Protoanomaly:__ This makes red look more green and less bright. This is also mild as well.
+_Protoanomaly:_ This makes red look more green and less bright. This is also mild as well.
 
-__Protonopia__ and __deutueranopia:__ Both of these make it so that you cannot tell the difference between red and green at all.
+_Protonopia_ and _deutueranopia:_ Both of these make it so that you cannot tell the difference between red and green at all.
 
-__Blue-yellow color blindness.__
+##### Blue-yellow color blindness
 
 This less-common type of color blondness makes it difficult for people to tell the difference between blue and green, and red and yellow. There are two types of blue-yellow color blindness;
 
-__Tritananomaly:__ Which makes it hard to tell the difference between blue and green, and red and yellow.
+_Tritananomaly:_ Which makes it hard to tell the difference between blue and green, and red and yellow.
 
-__Tritanopia:__ Is when you are unable to tell the difference between blue and green, purple and red, and pink and yellow. Colors also look a lot less bright.
+_Tritanopia:_ Is when you are unable to tell the difference between blue and green, purple and red, and pink and yellow. Colors also look a lot less bright.
 
-__Complete Color Blindness.__
+##### Complete Color Blindness
 
-__Monochromacy:__ Is also known as Complete Color Blindness. Where you cannot see colors at all.
+_Monochromacy:_ Is also known as Complete Color Blindness. Where you cannot see colors at all.
 
-__Stargardt's__
+##### Stargardt's
 
 Stargardt's, a type of macular degeneration that means people who have it, lose vision in the center of the retina. It is an inherited disorder of the retina. A disease which causes vision loss during childhood or adolescence, although it may not be noticed until adulthood. [Here is an example of a site](https://twoblindbrothers.com/pages/reveal) that allows visitors to see through the eyes of the founders, and what they see when they navigate the internet.
 
 <blockquote cite="Designer/Developer">&ldquo;I don't need to worry about this! Our customers are under 50!&rdquo;</blockquote>
 
-What about temporary impairment or injury? Watery eyes by getting punched in the nose by an over-enthusiastic pet or child? (Yes, that was me) An eye injury when you socked yourself in the eye trying to adjust the sun visor in your car while driving? (Yes, that was me again). 
+What about temporary impairment or injury? Watery eyes by getting punched in the nose by an over-enthusiastic pet or child? (Yes, that was me) An eye injury when you socked yourself in the eye trying to adjust the sun visor in your car while driving? (Yes, that was me again).
 
 Use of one eye just for a short period of time? There are times where a temporary impairment comes into play more than likely, just as with other forms of accessibility issues (broken hand, wrist in a cast, eye patch, etc.).
 
@@ -96,7 +97,7 @@ Does color contrast have to meet those standards? In my opinion? Yes. There is d
 
 Tests have shown that people with visual imapriments find reading white text on a certain colored background are easier than reading the same text in black font. I ran into this when testing color contrast for a project I am working on regarding white and black text on certain orange and blue backgrounds. Text and interface components have different contrast ratios.
 
-While you may want to try and achieve 100% WCAG 2.0 AA compliance, you most likely will meet AAA and AA standards for your project due to different ratios of text contrast and component contrast. 
+While you may want to try and achieve 100% WCAG 2.0 AA compliance, you most likely will meet AAA and AA standards for your project due to different ratios of text contrast and component contrast.
 
 Designers should know about color contrast. Developers should understand color contrast. Again, at the least the very basics or theory of color contrast. We need to understand this to put this knowledge into our workflows.
 
@@ -162,7 +163,7 @@ A minimum color contrast ratio recommended by ISO-9241-3 and ANSI-HFES-100-1988 
 
 The minimum level for WCAG AAA is 7:1 and the reason for that is;
 
-<blockquote>&hellip;because it compensated for the loss in cotnrast sensitivity usually experienced by users with vision loss equivlent to approximately 20/80 vision. People with more than this degree of vision loss usually use assistive technologies to access their content (and the assistive technologies usually have contrast enhancing, as well as magnification capability built into them).</blockquote>
+<blockquote cite="WCAG">&hellip;because it compensated for the loss in cotnrast sensitivity usually experienced by users with vision loss equivlent to approximately 20/80 vision. People with more than this degree of vision loss usually use assistive technologies to access their content (and the assistive technologies usually have contrast enhancing, as well as magnification capability built into them).</blockquote>
 
 These calculations are made for the size of body text and a relaxed contrast ratio is provided for larger text, such as headings or any other text which is larger than the body copy. Remember to make link text stand out and underlined as well!
 
@@ -208,7 +209,7 @@ For example;
 
 So if your form uses a color contrast that isn't as sharp as it needs to be, there could be a lot of people not getting the information you're trying to get to them or unable to get information from your user(s) because they cannot read the information displayed. A confirmation message needs to be relayed clearly so as to get the user the information the user should know upon submission as I mentioned above.
 
-#### What Can We Do?
+#### What Can We Do&quest;
 
 We as designers and developers need to do better, to have a system of checks and balances to make sure that color contrast is an integral part of the design process. We have learned through many mistakes we have seen over the last few years that accessibility reaches a far wider scope that sometimes is ignored by the masses, myself included.
 

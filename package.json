@@ -11,11 +11,7 @@
     "type": "git",
     "url": "git://github.com/11ty/eleventy-base-blog.git"
   },
-  "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
-  },
+  "author": "Zach Leatherman <zachleatherman@gmail.com> (https://zachleat.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/11ty/eleventy-base-blog/issues"
@@ -37,5 +33,7 @@
     "save": "^2.4.0",
     "semver": "^7.1.1",
     "trash-cli": "^3.0.0"
-  }
+  },
+  "main": ".eleventy.js",
+  "keywords": []
 }

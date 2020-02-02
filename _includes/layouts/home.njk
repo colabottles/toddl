@@ -3,5 +3,58 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 
-        <h2 class="hello">Hello!</h2>
-        <h3 class="intro">My name is Todd, I am a Senior Frontend Developer. I have helped companies and businesses brand their identities and launch their online prescences.</h3>
+<main class="home">
+  <div class="intro-home">
+    <h2>Hello!</h2>
+    <p>Welcome to my site! I am a web designer &amp; developer from South Portland, Maine and I love creating things on the web. Please feel free to have a look around and if you are so inclined, I am for hire!</p>
+  </div>
+
+  <article class="about-intro">
+    <div class="home-container">
+      <div class="home-img"><img src="/img/headshot.png" alt="Todd"></div>
+        <h3>I've been working in some capacity on the web since 1999. I have been working with computers since 1985. I started programming in BASIC on a Commodore 64 and loved it. I have been programming in some capacity since then, whether personal or professional. I love what I do and I love learning new technologies, sharing my experiences, attending web conferences, and meeting new folks in the industry.</h3>
+    </div>
+  </article>
+
+  <div class="articles">
+    <h3>Latest Articles</h3>
+      <ul class="article-sections">
+        <li class="article-wrapper">
+          <img src="/img/fieldnotes.jpg" alt="" loading="lazy" data-src="/img/fieldnotes.jpg" class="lazyload">
+            <h4>
+            {%- for post in collections.colorcontrast | reverse -%}
+              <a href="{{ post.url }}">{{ post.data.title }}<br><br></a>
+            {%- endfor -%}
+            </h4>
+        </li>
+
+        <li class="article-wrapper">
+          <img src="/img/udp.jpg" alt="" loading="lazy" data-src="/img/wcu.png" class="lazyload">
+            <h4>
+            {%- for post in collections.userdefenders | reverse -%}
+              <a href="{{ post.url }}">{{ post.data.title }}<br><br></a>
+            {%- endfor -%}
+            </h4>
+        </li>
+
+        <li class="article-wrapper">
+          <img src="/img/hotel.jpg" alt="" loading="lazy" data-src="/img/denver.jpg" class="lazyload">
+            <h4>
+            {%- for post in collections.aeadenver | reverse -%}
+              <a href="{{ post.url }}">{{ post.data.title }}<br><br></a>
+            {%- endfor -%}
+            </h4>
+        </li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <h3>&copy;1999 &mdash;
+        <script type="text/javascript">
+          var d = new Date();
+          document.write(d.getFullYear());
+        </script>
+        Todd Libby
+      </h3>
+    </div>
+  </main>

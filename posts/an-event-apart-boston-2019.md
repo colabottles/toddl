@@ -3,11 +3,12 @@ title: An Event Apart 2019 - Wrap-Up Edition
 description: The wrap-up article I authored in 2018 after An Event Apart.
 date: 2019-05-09
 tags:
-  - conferences
+  - conference
+  - boston
 layout: layouts/post.njk
 ---
 
-## An Event Apart Boston 2019, Boston, MA
+### An Event Apart Boston 2019, Boston, MA
 
 ### Day One
 

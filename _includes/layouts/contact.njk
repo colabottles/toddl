@@ -5,9 +5,9 @@ templateClass: tmpl-post
 
     <div class="contact">
       <h2 id="hi">say hi!</h2>
-        <form name="contact" method="POST" id="contact-form" netlify-honeypot="bot-field" data-netlify="true">
+        <form name="contact" method="POST" id="contact-form" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true">
           <label for="bot" class="field" id="hidden">Don’t fill this out if you're human: 
-            <input name="bot-field" />
+            <input name="bot-field" type="text" aria-labelledby="contact-form">
           </label>
           <label for="name" class="field">Name:
             <input type="text" name="name" aria-labelledby="contact-form">
@@ -22,9 +22,8 @@ templateClass: tmpl-post
             <input type="text" name="twitter" aria-labelledby="contact-form">
           </label>
           <label for="message" class="field">Message:
-            <textarea name="message" id="" aria-labelledby="contact-form"></textarea>
+            <textarea name="message" id="message" aria-labelledby="contact-form"></textarea>
           </label>
-          <label for="full" data-netlify-recaptcha="true"></label>
-          <button>Submit</button>
+          <button type="submit" value="Submit">Submit</button>
         </form>
       </div>

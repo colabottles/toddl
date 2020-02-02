@@ -2,11 +2,9 @@
 layout: layouts/page.njk
 templateClass: tmpl-post
 ---
-  <article class="about">
-    <figure class="article__featured-image-container">
-      <img src="/img/twolights1.jpg" alt="Maine coastline. Rocks at Two Lights State Park" class="article__featured-image">
-    </figure>
 
+<div class="about-container">
+  <section class="about">
     <header class="article__header">
       <h2 class="article__title">
         {{title}}
@@ -18,5 +16,6 @@ templateClass: tmpl-post
         <div class="shape"><img src="/img/headshot.png" alt="Todd"></div>
           {{ content | safe }}
       </div>
-    </section>
-  </article>
+    </article>
+  </section>
+</div>
