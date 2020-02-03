@@ -4,7 +4,6 @@ description: The wrap-up article after An Event Apart in Denver, Colorado.
 date: 2019-10-31
 tags:
   - conference
-  - aeadenver
   - denver
 layout: layouts/post.njk
 ---

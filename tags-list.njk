@@ -3,12 +3,14 @@ permalink: /tags/
 layout: layouts/page.njk
 ---
 
-<section class="article__body">
-  <h2>Tags</h2>
+<div class="page-container">
+  <section class="article__body">
+    <h3>Tags</h2>
 
-  {% for tag in collections.tagList %}
-    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-    <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-  {% endfor %}
+    {% for tag in collections.tagList %}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+    {% endfor %}
 
-</section>
+  </section>
+</div>

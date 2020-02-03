@@ -20,30 +20,30 @@ templateClass: tmpl-home
     <h3>Latest Articles</h3>
       <ul class="article-sections">
         <li class="article-wrapper">
-          <img src="/img/fieldnotes.jpg" alt="" loading="lazy" data-src="/img/fieldnotes.jpg" class="lazyload">
+          {%- for post in collections.userdefendersbookclub | reverse -%}
+            <a href="{{ post.url }}"><img src="/img/udbc.jpg" alt="" loading="lazy" data-src="/img/udbc.jpg" class="lazyload" />
             <h4>
-            {%- for post in collections.colorcontrast | reverse -%}
-              <a href="{{ post.url }}">{{ post.data.title }}<br><br></a>
-            {%- endfor -%}
-            </h4>
+              {{ post.data.title }}
+          {%- endfor -%}
+            </h4></a>
         </li>
 
         <li class="article-wrapper">
-          <img src="/img/udp.jpg" alt="" loading="lazy" data-src="/img/wcu.png" class="lazyload">
+          {%- for post in collections.colorcontrast | reverse -%}
+          <a href="{{ post.url }}"><img src="/img/fieldnotes.jpg" alt="" loading="lazy" data-src="/img/fieldnotes.jpg" class="lazyload" />
             <h4>
-            {%- for post in collections.userdefenders | reverse -%}
-              <a href="{{ post.url }}">{{ post.data.title }}<br><br></a>
-            {%- endfor -%}
-            </h4>
+              {{ post.data.title }}
+          {%- endfor -%}
+            </h4></a>
         </li>
 
         <li class="article-wrapper">
-          <img src="/img/hotel.jpg" alt="" loading="lazy" data-src="/img/denver.jpg" class="lazyload">
+          {%- for post in collections.userdefenderspodcast | reverse -%}
+          <a href="{{ post.url }}"><img src="/img/udp.jpg" alt="" loading="lazy" data-src="/img/udp.jpg" class="lazyload" />
             <h4>
-            {%- for post in collections.aeadenver | reverse -%}
-              <a href="{{ post.url }}">{{ post.data.title }}<br><br></a>
-            {%- endfor -%}
-            </h4>
+              {{ post.data.title }}
+          {%- endfor -%}
+            </h4></a>
         </li>
       </ul>
     </div>
