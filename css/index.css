@@ -1035,8 +1035,8 @@ h2.project__header {
 }
 
 .home-img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   float: right;
   shape-outside: circle(50% at 50% 50%);
   -webkit-shape-outside: circle(50% at 50% 50%);
@@ -1045,6 +1045,11 @@ h2.project__header {
   shape-margin: 0;
   transform: scale(0.9);
   -webkit-transform: scale(0.9);
+}
+
+.home-img img:hover {
+  transition: transform 750ms, opacity 750ms, -webkit-transform 750ms;
+  transform: scale(1.2);
 }
 
 .container {
