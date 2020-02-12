@@ -883,14 +883,12 @@ h2.article-list-article-title {
 
 .article__header {
   align-self: start;
-  grid-column: 1/2;
-  padding-left: 4rem;
+  grid-column: 1;
   transform: rotate(180deg);
   writing-mode: vertical-rl;
 }
 
 .article__meta {
-  display: flex;
   margin-top: 1rem;
 }
 
