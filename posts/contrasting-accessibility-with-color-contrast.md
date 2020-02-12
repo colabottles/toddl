@@ -1,6 +1,6 @@
 ---
 title: Contrasting Accessibility with Color Contrast
-description: Bringing color contrast in acessibility to the table and why we ned to do more checking of color contrast in our work on the web.
+description: Bringing color contrast in accessibility to the table and why we need to do more checking of color contrast in our work on the web.
 date: 2019-12-20
 tags:
   - accessibility
@@ -43,11 +43,11 @@ There are at least 2.2 billion people who suffer from a vision impairment or som
 
 #### Types of Color Blindness
 
-There are seven total types of color blindness including monochromacy (the abscence of color perception).
+There are seven total types of color blindness including monochromacy (the absence of color perception).
 
 ##### Red-green color blindness
 
-The most common type of color blindness amkes it difficult to tell the difference between red and green. There are four types of red-green color blindness;
+The most common type of color blindness makes it difficult to tell the difference between red and green. There are four types of red-green color blindness;
 
 _Deuteranomaly:_ This is the most common type of red-green color blindness. This type is mild and usually does not hinder normal viewing or activities. It makes green look more red.
 
@@ -77,11 +77,11 @@ What about temporary impairment or injury? Watery eyes by getting punched in the
 
 Use of one eye just for a short period of time? There are times where a temporary impairment comes into play more than likely, just as with other forms of accessibility issues (broken hand, wrist in a cast, eye patch, etc.).
 
-Maybe Dad is looking online for a gift for his kids? Maybe the user under 50 has an impairment? You don't know this, so we can't assume. We do not know our users. We do not know who the users are (unless you have done extensive user research, which we shold be doing) and of whom will be using the sites we build or the apps we create.
+Maybe Dad is looking online for a gift for his kids? Maybe the user under 50 has an impairment? You don't know this, so we can't assume. We do not know our users. We do not know who the users are (unless you have done extensive user research, which we should be doing) and of whom will be using the sites we build or the apps we create.
 
 There's no possible way anyone will interview every single user of the product. So assuming we know who the user is, is not something we should be doing. So do not assume that you know all your users or customers.
 
-We as designers and developers should know at the very least, the basics of this. That ther are people out there with certain visual impairments that make it difficult for them to see certain colors and that we need to make our work more adjusted to them.
+We as designers and developers should know at the very least, the basics of this. That there are people out there with certain visual impairments that make it difficult for them to see certain colors and that we need to make our work more adjusted to them.
 
 Sure, we have certain color palettes we like, but is the end result of our work we do for us as designers and developers? Or is it for the end user? The people that will view the work we do as we move on to other projects and maybe take a look at what we have done once in a great while?
 
@@ -95,7 +95,7 @@ Color contrast checkers. There are many. I mean *a lot*. There is one I use to m
 
 Does color contrast have to meet those standards? In my opinion? Yes. There is debate around the contrast of white text on backgrounds as opposed to black text on backgrounds of the same color. We should be finding the right color combinations with regards to text color on background color in our work though.
 
-Tests have shown that people with visual imapriments find reading white text on a certain colored background are easier than reading the same text in black font. I ran into this when testing color contrast for a project I am working on regarding white and black text on certain orange and blue backgrounds. Text and interface components have different contrast ratios.
+Tests have shown that people with visual impairments find reading white text on a certain colored background are easier than reading the same text in black font. I ran into this when testing color contrast for a project I am working on regarding white and black text on certain orange and blue backgrounds. Text and interface components have different contrast ratios.
 
 While you may want to try and achieve 100% WCAG 2.0 AA compliance, you most likely will meet AAA and AA standards for your project due to different ratios of text contrast and component contrast.
 
@@ -103,8 +103,8 @@ Designers should know about color contrast. Developers should understand color c
 
 <div class="content__placeholder">
   <figure>
-    <img class="content__image" src="/img/ccc.png" alt="The site colourcontrast.cc with a yellow-ish background with black text. A color contrast tool online that measures the color contrasts between background and foreground colors with hex values for colors, sliders for hue, saturation, and lightness. Also pass/fail indicators regarding WCAG 2.0 AA and AAA." />
-    <figcaption>Colorcontrast.cc - A terrific color contrast checking tool for quick testing.</figcaption>
+    <img class="content__image" src="/img/ccc.png" alt="Colorcontrast.cc - A terrific color contrast checking tool for quick testing." />
+    <figcaption>The site colourcontrast.cc with a yellow-ish background with black text. A color contrast tool online that measures the color contrasts between background and foreground colors with hex values for colors, sliders for hue, saturation, and lightness. Also pass/fail indicators regarding WCAG 2.0 AA and AAA.</figcaption>
   </figure>
 </div>
 
@@ -114,8 +114,8 @@ Designers should know about color contrast. Developers should understand color c
 
 <div class="content__placeholder">
   <figure>
-    <img class="content__image" src="/img/wcu.png" alt="The site Who Can Use which gives color combinations, their contrast numbers, simulation of text, and the different impairments and their percentages in population, WCAG grading and much more." />
-    <figcaption>Who Can Use - A phenomenal color contrast checking tool that is more in depth that most tools for testing against the different types of visual impairments.</figcaption>
+    <img class="content__image" src="/img/wcu.png" alt="Who Can Use - A phenomenal color contrast checking tool." />
+    <figcaption>The site Who Can Use which gives color combinations, their contrast numbers, simulation of text, and the different impairments and their percentages in population, WCAG grading and that is more in depth that most tools for testing against the different types of visual impairments.</figcaption>
   </figure>
 </div>
 
@@ -123,8 +123,8 @@ Designers should know about color contrast. Developers should understand color c
 
 <div class="content__placeholder">
   <figure>
-    <img class="content__image" src="/img/wcagcc.png" alt="The WCAG Contrast Checker. Which shows foreground and background color selection, sample text and ratio information along with pass/fail markers, a button to switch on/off for grayscale view, and much more." />
-    <figcaption>The WCAG Contrast Checker.</figcaption>
+    <img class="content__image" src="/img/wcagcc.png" alt="The WCAG Contrast Checker." />
+    <figcaption>The WCAG Contrast Checker. Which shows foreground and background color selection, sample text and ratio information along with pass/fail markers, a button to switch on/off for grayscale view, and much more.</figcaption>
   </figure>
 </div>
 
@@ -132,8 +132,8 @@ Along with the [WebAIM Contrast Checker](https://webaim.org/resources/contrastch
 
 <div class="content__placeholder">
   <figure>
-    <img class="content__image" src="/img/webaimcc.png" alt="The WebAIM Contrast Checker. Which shows foreground and background color selection, sample text and ratio information along with pass/fail markers, a button to switch on/off for grayscale view, and much more." />
-    <figcaption>The WCAG Contrast Checker.</figcaption>
+    <img class="content__image" src="/img/webaimcc.png" alt="The WebAIM Contrast Checker. " />
+    <figcaption>The WCAG Contrast Checker which shows foreground and background color selection, sample text and ratio information along with pass/fail markers, a button to switch on/off for grayscale view, and much more.</figcaption>
   </figure>
 </div>
 
@@ -163,13 +163,13 @@ A minimum color contrast ratio recommended by ISO-9241-3 and ANSI-HFES-100-1988 
 
 The minimum level for WCAG AAA is 7:1 and the reason for that is;
 
-<blockquote cite="WCAG">&hellip;because it compensated for the loss in cotnrast sensitivity usually experienced by users with vision loss equivlent to approximately 20/80 vision. People with more than this degree of vision loss usually use assistive technologies to access their content (and the assistive technologies usually have contrast enhancing, as well as magnification capability built into them).</blockquote>
+<blockquote cite="WCAG">&hellip;because it compensated for the loss in contrast sensitivity usually experienced by users with vision loss equivalent to approximately 20/80 vision. People with more than this degree of vision loss usually use assistive technologies to access their content (and the assistive technologies usually have contrast enhancing, as well as magnification capability built into them).</blockquote>
 
 These calculations are made for the size of body text and a relaxed contrast ratio is provided for larger text, such as headings or any other text which is larger than the body copy. Remember to make link text stand out and underlined as well!
 
 While these are the minimum and suggested ratios for each level (AA &amp; AAA), interface components do not have the same contrast ratios. While text is 4.5:1 in WCAG AA, interface components are 3:1.
 
-Text requires a higher contrast because people are trying to reead it. Interface components do not and therefore have a lower standard. You can still do your best to get as close as you can to WCAG guidelines when it comes to using an accessibility checker like WAVE, WebAIM, or the Deque Accessibility Checker but having some things AAA compliant and some AA is quite alright, just as long as everything passes you're being an a11y!
+Text requires a higher contrast because people are trying to read it. Interface components do not and therefore have a lower standard. You can still do your best to get as close as you can to WCAG guidelines when it comes to using an accessibility checker like WAVE, WebAIM, or the Deque Accessibility Checker but having some things AAA compliant and some AA is quite alright, just as long as everything passes you're being an a11y!
 
 #### Forms
 
@@ -182,7 +182,7 @@ Picture yourself on a website looking for some conference tickets, you're shoppi
   </figure>
 </div>
 
-This was a challenge for me when I came across it, so imagine what it must be like for someone with a visual impairment. Whiel someone with a visual impairment can differentiate between colors, the contrast fo this form andmany others I have seen aren't that good. This is where color contrast comes into the conversation. A conversation we *really* need to have. Still.
+This was a challenge for me when I came across it, so imagine what it must be like for someone with a visual impairment. While someone with a visual impairment can differentiate between colors, the contrast fo this form and many others I have seen aren't that good. This is where color contrast comes into the conversation. A conversation we *really* need to have. Still.
 
 Then why are we running into instances of this?
 
@@ -231,13 +231,13 @@ Following the WCAG guidelines is something we should do,  accessible and inclusi
 
 There is a lot of talk about accessibility and we have taken tremendous strides to making the web more accessible and inclusive but we have a long way to go still from it being all-inclusive. So let's make the web more inclusive, but also remember how and why. Also reminding ourselves to actually do it!
 
-There is a broad spectrum of vision deficiencies and impairments we need to address during the design phase of the process. Making this process more inclsuive by taking the time to make sure color contrast (and other aspects of accessibility) work.
+There is a broad spectrum of vision deficiencies and impairments we need to address during the design phase of the process. Making this process more inclusive by taking the time to make sure color contrast (and other aspects of accessibility) work.
 
 Let us remind ourselves of the fact not everyone has perfect or near perfect vision. Embrace the process of color contrast, avoid illegible parts of websites that are created and unintelligible forms like in the examples I provided.
 
 [Jeffrey Zeldman](https://twitter.com/zeldman) summarized it up in his post on Blue Beanie Day (November 30th) when he wrote;
 
-<blockquote cite="Jeffrey Zeldman">&hellip;our industry as a whole thinks less and less about accessibility (not that we ever had an A game on the subject), and talks less and less about progressive enhancement, preferring to chase the ephemeral goal posts of over-engineered soultions to non-problems.</blockquote>
+<blockquote cite="Jeffrey Zeldman">&hellip;our industry as a whole thinks less and less about accessibility (not that we ever had an A game on the subject), and talks less and less about progressive enhancement, preferring to chase the ephemeral goal posts of over-engineered solutions to non-problems.</blockquote>
 
 #### Closing
 
