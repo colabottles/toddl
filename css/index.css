@@ -444,7 +444,6 @@ main h2 {
 
 .articles {
   grid-column: 2/12;
-  margin-top: 4em;
 }
 
 .article h3 {
@@ -643,7 +642,7 @@ blockquote p {
 .meta {
   font-family: var(--font-family-sans);
   font-size: calc(12px + 0.3vw);
-  margin: 1em 0 1.5em;
+  /* margin: 1em 0 1.5em; */
   color: var(--grey);
   grid-column: 1/12;
 }
@@ -705,7 +704,7 @@ li.article-wrapper {
 }
 
 .about-intro {
-  grid-column: 3/12;
+  grid-column: 2/12;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -716,9 +715,8 @@ li.article-wrapper {
   display: flex;
   flex-wrap: wrap;
   grid-column: 2/10;
-  line-height: 2.2rem;
   font-size: var(--font-size);
-  margin: 2rem 0 1.5rem;
+  /* margin: 2rem 0 1.5rem; */
 }
 
 .copyright h3 {

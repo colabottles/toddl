@@ -22,7 +22,7 @@ One day, during my time online doing some research, I was looking into some conf
   </figure>
 </div>
 
-How do we make it better as a community of designers and developers? We *must* think about these folks and this is where the need for accessibility in the process comes in. While accessibility encompasses a lot of different aspects of design and development, I am focusing right now solely on color contrast in this article.
+How do we make it better as a community of designers and developers? We must think about these folks and this is where the need for accessibility in the process comes in. While accessibility encompasses a lot of different aspects of design and development, I am focusing right now solely on color contrast in this article.
 
 Color contrast is defined as;
 
@@ -57,7 +57,7 @@ _Protonopia_ and _deutueranopia:_ Both of these make it so that you cannot tell 
 
 ##### Blue-yellow color blindness
 
-This less-common type of color blondness makes it difficult for people to tell the difference between blue and green, and red and yellow. There are two types of blue-yellow color blindness;
+This less-common type of color blindness makes it difficult for people to tell the difference between blue and green, and red and yellow. There are two types of blue-yellow color blindness;
 
 _Tritananomaly:_ Which makes it hard to tell the difference between blue and green, and red and yellow.
 
