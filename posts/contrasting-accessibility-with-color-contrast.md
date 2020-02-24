@@ -133,7 +133,7 @@ Along with the [WebAIM Contrast Checker](https://webaim.org/resources/contrastch
 <div class="content__placeholder">
   <figure>
     <img class="content__image" src="/img/webaimcc.png" alt="The WebAIM Contrast Checker. " />
-    <figcaption>The WCAG Contrast Checker which shows foreground and background color selection, sample text and ratio information along with pass/fail markers, a button to switch on/off for grayscale view, and much more.</figcaption>
+    <figcaption>The WebAIM Contrast Checker which shows foreground and background color selection, sample text and ratio information.</figcaption>
   </figure>
 </div>
 

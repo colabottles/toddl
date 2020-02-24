@@ -6,12 +6,12 @@ templateClass: tmpl-home
 <main class="home">
   <div class="intro-home">
     <h2>Hello!</h2>
-    <p>Welcome to my site! I am a web designer &amp; developer from South Portland, Maine and I love creating things on the web. Please feel free to have a look around and if you are so inclined, I am for hire!</p>
+    <p>Welcome to my site! I am a web designer &amp; developer from South Portland, Maine and I love creating things on the web. This is my personal site, where I write about technology and web, other things I run across and my misadventures when traveling Have a look around and enjoy!</p>
   </div>
 
   <article class="about-intro">
     <div class="home-container">
-      <div class="home-img"><img src="/img/headshot.png" alt="Todd"></div>
+      <div class="home-img"><img src="/img/headshot.png" alt="Headshot of Todd" class="lazyload"></div>
         <h3>I've been working in some capacity on the web since 1999. I have been working with computers since 1985. I started programming in BASIC on a Commodore 64 and loved it. I have been programming in some capacity since then, whether personal or professional. I love what I do and I love learning new technologies, sharing my experiences, attending web conferences, and meeting new folks in the industry.</h3>
     </div>
   </article>
@@ -21,7 +21,7 @@ templateClass: tmpl-home
       <ul class="article-sections">
         <li class="article-wrapper">
           {%- for post in collections.userdefendersbookclub | reverse -%}
-            <a href="{{ post.url }}"><img src="/img/udbc.jpg" alt="" loading="lazy" data-src="/img/udbc.jpg" class="lazyload" />
+            <a href="{{ post.url }}"><img src="/img/udbc.jpg" alt="User Defenders Book Club" loading="lazy" data-src="/img/udbc.jpg" class="lazyload" />
             <h4>
               {{ post.data.title }}
           {%- endfor -%}
@@ -30,7 +30,7 @@ templateClass: tmpl-home
 
         <li class="article-wrapper">
           {%- for post in collections.colorcontrast | reverse -%}
-          <a href="{{ post.url }}"><img src="/img/fieldnotes.jpg" alt="" loading="lazy" data-src="/img/fieldnotes.jpg" class="lazyload" />
+          <a href="{{ post.url }}"><img src="/img/fieldnotes.jpg" alt="Some FieldNotes Brand notebooks on a desk" loading="lazy" data-src="/img/fieldnotes.jpg" class="lazyload" />
             <h4>
               {{ post.data.title }}
           {%- endfor -%}
@@ -39,7 +39,7 @@ templateClass: tmpl-home
 
         <li class="article-wrapper">
           {%- for post in collections.userdefenderspodcast | reverse -%}
-          <a href="{{ post.url }}"><img src="/img/udp.jpg" alt="" loading="lazy" data-src="/img/udp.jpg" class="lazyload" />
+          <a href="{{ post.url }}"><img src="/img/udp.jpg" alt="Derek Featherstone, Farai Madzima, and Mina Markham on stage with Jason Ogle at AEA Denver" loading="lazy" data-src="/img/udp.jpg" class="lazyload" />
             <h4>
               {{ post.data.title }}
           {%- endfor -%}
@@ -49,12 +49,6 @@ templateClass: tmpl-home
     </div>
 
     <div class="copyright">
-      <h3>&copy;1999 &mdash;
-        <script type="text/javascript">
-          var d = new Date();
-          document.write(d.getFullYear());
-        </script>
-        Todd Libby
-      </h3>
+      <h3>&copy;1999 &mdash; 2020, Todd Libby</h3>
     </div>
   </main>
