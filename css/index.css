@@ -888,7 +888,7 @@ h2.article__title {
   -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
   font-variation-settings: 'wght'900, 'wdth'60;
-  grid-column: 2/12;
+  grid-column: 3/12;
   margin: 1rem 0;
   padding-left: 3rem;
   text-transform: none;
@@ -896,7 +896,7 @@ h2.article__title {
 
 article.archive-list,
 section.article__body {
-  grid-column: 2/12;
+  grid-column: 3/12;
 }
 
 section.article__body {
