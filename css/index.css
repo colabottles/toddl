@@ -70,11 +70,11 @@ video {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 1rem;
 }
 
 body {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 
@@ -186,26 +186,27 @@ q:before {
   --font-family-serif: 'Lora-VF', Georgia, 'Times New Roman', serif;
   --font-family-heading-sm: 'Raleway', Arial, Helvetica, sans-serif;
 
-  --heading1-font: calc(21px + 0.3vw);
-  --heading2-font: calc(72px + 0.3vw);
-  --heading3-font: calc(28px + 0.3vw);
-  --font-body-home: calc(21px + 0.3vw);
+  --heading1-font: calc(1.3125rem + 0.3vw);
+  --heading2-font: calc(4.5rem + 0.3vw);
+  --heading3-font: calc(1.75rem + 0.3vw);
+  --font-body-home: calc(1.3125rem + 0.3vw);
 
-  --font-body-article-h3: calc(36px + 0.3vw);
-  --font-body-article-h4: calc(28px + 0.3vw);
-  --font-body-article-h5: calc(24px + 0.3vw);
+  --font-body-article-h3: calc(2.25rem + 0.3vw);
+  --font-body-article-h4: calc(1.75rem + 0.3vw);
+  --font-body-article-h5: calc(1.5rem + 0.3vw);
 
-  --font-size-small: calc(10px + 0.3vw);
-  --font-size: calc(12px + 0.3vw);
-  --font-size-article: calc(16px + 0.3vw);
-  --font-size-large: calc(21px + 0.3vw);
-  --font-size-xlarge: calc(28px + 0.3vw);
-  --font-size-xxlarge: calc(56px + 0.3vw);
+  --font-size-xsmall: calc(0.5rem + 0.3vw);
+  --font-size-small: calc(0.75rem + 0.3vw);
+  --font-size: calc(1rem + 0.3vw);
+  --font-size-article: calc(1.25rem + 0.3vw);
+  --font-size-large: calc(1.3125rem + 0.3vw);
+  --font-size-xlarge: calc(2.125rem + 0.3vw);
+  --font-size-xxlarge: calc(3.5rem + 0.3vw);
 
-  --line-height: calc(1rem + 1vw);
+  --line-height: calc(1.5rem + 1vw);
   --line-height-large: calc(8rem + 1vw);
   --line-height-medium: calc(5rem + 1vw);
-  --line-height-small: calc(2rem + 1vw);
+  --line-height-small: calc(2.25rem + 1vw);
 
   --inset: 0.5rem;
   --large: 1100px;
@@ -339,23 +340,20 @@ ul.navigation a:hover {
 
 ul.navigation a.active {
   color: var(--white);
-  font-weight: 600;
 }
 
 .main-nav li {
-  padding: 0 1rem;
   list-style: none;
   display: inline;
 }
 
 header {
-  margin: 8vh 0;
-  grid-column: 1/10;
+  grid-column: 2/10;
+  margin-top: 2rem;
 }
 
-header img#logo {
-  height: 30px;
-  width: 100%;
+.home #logo {
+  scale: 0.7;
 }
 
 nav {
@@ -372,7 +370,6 @@ header h1 {
 
 h1.home {
   color: var(--green);
-  padding: 4rem;
 }
 
 h1.home:hover {
@@ -411,7 +408,7 @@ main h2 {
 
 .page-container {
   display: grid;
-  grid-column: 4/14;
+  grid-column: 2/12;
 }
 
 .about-container,
@@ -423,8 +420,7 @@ main h2 {
 .intro-home {
   grid-column: 2/12;
   font-size: var(--font-body-home);
-  font-weight: 700;
-  line-height: 1em;
+  line-height: var(--line-height);
   letter-spacing: -1px;
 }
 
@@ -454,6 +450,7 @@ main h2 {
 .article-sections {
   display: flex;
   font-family: var(--font-family-sans);
+  padding: 0;
 }
 
 .article-wrapper {
@@ -578,14 +575,14 @@ h2 {
 h3 {
   font-size: var(--font-body-article-h3);
   line-height: var(--line-height-small);
-  padding: 4rem 0;
+  padding: 2rem 0;
   color: var(--ecto);
 }
 
 h4 {
   font-size: var(--font-body-article-h4);
   line-height: var(--line-height-medium);
-  padding: 3rem 0;
+  padding: 2rem 0;
   color: var(--ecto);
 }
 
@@ -607,8 +604,6 @@ h5 {
 
 p {
   font-size: var(--font-size-large);
-  margin: 0.5rem 0;
-  padding: 0;
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
@@ -621,7 +616,8 @@ p+p {
   margin-top: 1em;
 }
 
-.post-list blockquote {
+.post-list blockquote,
+span.archival__link {
   font-family: var(--font-family-serif);
   font-weight: 300;
   font-size: calc(var(--font-size-article) - 0.2vw);
@@ -642,13 +638,12 @@ blockquote p {
 .meta {
   font-family: var(--font-family-sans);
   font-size: calc(12px + 0.3vw);
-  /* margin: 1em 0 1.5em; */
   color: var(--grey);
   grid-column: 1/12;
 }
 
 ul {
-  padding: 4rem 0 4rem 4rem;
+  padding: 0 0 4rem 4rem;
 }
 
 li {
@@ -656,7 +651,7 @@ li {
 }
 
 .container ul {
-  padding: 4rem 0 4rem 4rem;
+  padding: 0 0 4rem 4rem;
 }
 
 .container li {
@@ -681,7 +676,6 @@ li.article-wrapper {
 
 .intro-home p {
   font-size: var(--font-size-xlarge);
-  font-weight: 800;
   font-family: var(--font-family-sans);
   line-height: var(--line-height-small);
   margin-bottom: 1em;
@@ -716,7 +710,6 @@ li.article-wrapper {
   flex-wrap: wrap;
   grid-column: 2/10;
   font-size: var(--font-size);
-  /* margin: 2rem 0 1.5rem; */
 }
 
 .copyright h3 {
@@ -730,7 +723,7 @@ li.article-wrapper {
 .home-container h3 {
   font-size: var(--font-size-xlarge);
   font-family: var(--font-family-sans);
-  font-weight: 900;
+  font-weight: 400;
   color: var(--white);
 }
 
@@ -815,15 +808,14 @@ sup {
 }
 
 .article-category {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.05em;
   border-bottom: 2px solid var(--green);
   display: inline-block;
-  margin-bottom: 1.2em;
-  padding-bottom: 0.375em;
+  font-family: var(--font-family-heading-sm);
+  font-size: var(--font-size-xsmall);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: var(--line-height);
+  margin: 2em 0;
 }
 
 .article-meta {
@@ -863,7 +855,7 @@ a.article-list-article-link:hover {
 }
 
 h2.article-list-article-title {
-  font-size: var(--font-size-article);
+  font-size: var(--font-size-xlarge);
   line-height: var(--line-height-small);
 }
 
@@ -880,10 +872,7 @@ h2.article-list-article-title {
 }
 
 .article__header {
-  align-self: start;
-  grid-column: 1;
-  transform: rotate(180deg);
-  writing-mode: vertical-rl;
+  grid-column: 2;
 }
 
 .article__meta {
@@ -891,21 +880,27 @@ h2.article-list-article-title {
 }
 
 h2.article__title {
-  font: 6em 'BildVariableV2';
+  display: grid;
+  font: 3em 'BildVariableV2';
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
   font-variation-settings: 'wght'900, 'wdth'60;
-  line-height: 1;
+  grid-column: 2/12;
   margin: 1rem 0;
+  padding-left: 3rem;
   text-transform: none;
 }
 
 article.archive-list,
 section.article__body {
   grid-column: 2/12;
+}
+
+section.article__body {
+  padding-left: 3rem;
 }
 
 article.article__body {
@@ -917,7 +912,8 @@ article.article__body {
 }
 
 .article__body a,
-article.archive-list a {
+article.archive-list a,
+span.archival__link a {
   color: var(--ecto);
   text-decoration: underline;
   text-underline-offset: 0.12em;
@@ -927,7 +923,8 @@ article.archive-list a {
 }
 
 .article__body a:hover,
-article.archive-list a:hover {
+article.archive-list a:hover,
+span.arhcival__link a:hover {
   color: var(--white);
 }
 
@@ -951,6 +948,8 @@ li.postlist-item {
 time {
   font-family: var(--font-family-sans);
   color: var(--ecto);
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
 }
 
 h3.project__header {
@@ -1035,7 +1034,7 @@ h2.project__header {
 .home-img {
   width: 300px;
   height: 300px;
-  float: right;
+  float: left;
   shape-outside: circle(50% at 50% 50%);
   -webkit-shape-outside: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
@@ -1420,13 +1419,11 @@ video {
   }
 
   header {
-    margin: 1vh 0 2vh;
-    grid-column: 2/7;
-    justify-content: center;
+    grid-column: 1;
   }
 
   h1.home {
-    padding: 2rem;
+    padding-top: 1rem;
   }
 
   header h1 {
@@ -1436,17 +1433,21 @@ video {
 
   nav {
     display: flex;
+    justify-content: center;
   }
 
   ul.navigation {
     display: flex;
-    flex-direction: row;
+    margin-left: 1rem;
     padding: 0;
   }
 
+  ul.navigation a {
+    padding: 0 1rem;
+  }
+
   .main-nav li {
-    margin-left: -2rem;
-    padding: 2rem 0.25rem;
+    padding: 2rem 0;
   }
 
   main h2 {
@@ -1465,11 +1466,8 @@ video {
   }
 
   .intro-home {
-    grid-column: 2/8;
-    line-height: 1.8rem;
-    margin-top: 1em 2em 1em 1em;
+    grid-column: 1/7;
     font-size: var(--font-size-article);
-    font-weight: 600;
   }
 
   .article-sections {
@@ -1526,7 +1524,7 @@ video {
   }
 
   .page-container {
-    grid-column: 2/11;
+    grid-column: 1/7;
   }
 
   .shape {
