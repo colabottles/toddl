@@ -955,6 +955,8 @@ time {
 time.postlist-date {
   font-family: var(--font-family-sans);
   color: var(--ecto);
+  transform: none;
+  writing-mode: inherit;
 }
 
 h3.project__header {
