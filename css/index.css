@@ -396,6 +396,7 @@ main {
 main h2 {
   font-size: var(--heading2-font);
   font-family: var(--font-family-sans);
+  font-weight: 900;
   line-height: var(--line-height-large);
   padding: 0;
   margin: 0;
@@ -404,6 +405,7 @@ main h2 {
 .intro-home h2 {
   font-size: var(--heading2-home-font);
   font-family: var(--font-family-sans);
+  font-weight: 900;
   line-height: var(--line-height-large);
   padding: 0;
   margin: 0;
