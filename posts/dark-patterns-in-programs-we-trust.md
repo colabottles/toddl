@@ -10,7 +10,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-# Dark Patterns in Programs We Trust
+## Dark Patterns in Programs We Trust
 
 Don't look now but you're probably installing something else other than what you downloaded.
 
@@ -32,7 +32,7 @@ I found several instances of _&ldquo;Reasons Why Google Chrome Is Bad&rdquo;_ or
 
 I have an 80-year-old man that keeps up with family on Facebook and checks e-mail online and that’s it and he’s had programs he and his wife needs and they all had the Download Google Chrome fever. This man does not need Chrome, hasn’t heard of Chrome, and will never use Chrome.
 
-## Applications
+### Applications
 
 Take for instance Piriform, the makers of CCleaner. An app that cleans out extraneous crap out of your hard drive and does a number of other things to help the performance fo your computer. 
 
@@ -68,7 +68,7 @@ That is all my customers who are older want to do. Nothing else. They’re not d
 
 With people being very trusting, one could say even naive, they expect the products they use, the products I am installing, to be free of anything intrusive so they don’t have to call me wondering what Google Chrome is or wondering why they have Google Chrome on their computers.
 
-## Emails
+### Emails
 
 Another instance of dark patterns in UX brought me to the NBA and email. I voted for the All-Star Game and thought, _&ldquo;well… that’s that. Back to work.&rdquo;_and lo and behold that was not that. That was only the beginning of the onslaught of emails from the NBA and NBA.com.
 
@@ -83,7 +83,7 @@ Where is the unsubscribe link? I voted for players for the All-Star Game and whe
 
 Even then, it was going to take 24-48 hours for that to happen! Some I have even seen take fourteen (yes, 14!) business days to unsubscribe! What?! Two business weeks to unsubscribe?! Are you kidding me?!
 
-## Dark Patterns
+### Dark Patterns
 
 Doug Collins, in one of his great videos on UX dark patterns below, talks about some of the ways dark patterns work. The examples I used use reading patterns.
 
@@ -95,7 +95,7 @@ Hiding this little checkbox and blurb in the bottom left corner of a dialog box 
 
 It’s a pattern that I even skip when I am installing programs. I consider myself a bit savvy when it comes to tech, so those times where I am clicking through because I want to install the program, this step can be skipped very easily. So what do we do about it?
 
-## So What Can We Do About This?
+### So What Can We Do About This?
 
 Well, I reached out to Piriform on Twitter. I tweeted that it is a bad thing for them to do since I install their product on my customers computers and they don’t need the extra garbage that their product cleans out in the first place.
 
