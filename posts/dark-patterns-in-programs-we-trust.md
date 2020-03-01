@@ -93,11 +93,11 @@ Hiding this little checkbox and blurb in the bottom left corner of a dialog box 
 
 It’s a pattern that I even skip when I am installing programs. I consider myself a bit savvy when it comes to tech, so those times where I am clicking through because I want to install the program, this step can be skipped very easily. So what do we do about it?
 
-## So What Can We Do About This?
+### So What Can We Do About This?
 
 Well, I reached out to Piriform on Twitter. I tweeted that it is a bad thing for them to do since I install their product on my customers computers and they don’t need the extra garbage that their product cleans out in the first place.
 
-They did respond (which I did not expect) with they were working on bettering their product (which remains to be seen) and they were listening to their customers. 
+They did respond (which I did not expect) with they were working on bettering their product (which remains to be seen) and they were listening to their customers.
 
 Well, if they are listening to their customers, they will take the screen and that option to download Chrome off their products (they also have a paid version of CCleaner (CCleaner Pro).
 
