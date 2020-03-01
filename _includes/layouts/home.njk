@@ -20,6 +20,15 @@ templateClass: tmpl-home
     <h3>Latest Articles</h3>
       <ul class="article-sections">
         <li class="article-wrapper">
+          {%- for post in collections.darkpatterns | reverse -%}
+          <a href="{{ post.url }}"><img src="/img/ccleaner.png" alt="CCleaner by Piriform asking a user to download Google Chrome. This is a dark pattern in UX" loading="lazy" data-src="/img/ccleaner.png" class="lazyload" />
+            <h4>
+              {{ post.data.title }}
+          {%- endfor -%}
+            </h4></a>
+        </li>
+
+        <li class="article-wrapper">
           {%- for post in collections.userdefendersbookclub | reverse -%}
             <a href="{{ post.url }}"><img src="/img/udbc.jpg" alt="User Defenders Book Club" loading="lazy" data-src="/img/udbc.jpg" class="lazyload" />
             <h4>
@@ -31,15 +40,6 @@ templateClass: tmpl-home
         <li class="article-wrapper">
           {%- for post in collections.colorcontrast | reverse -%}
           <a href="{{ post.url }}"><img src="/img/fieldnotes.jpg" alt="Some FieldNotes Brand notebooks on a desk" loading="lazy" data-src="/img/fieldnotes.jpg" class="lazyload" />
-            <h4>
-              {{ post.data.title }}
-          {%- endfor -%}
-            </h4></a>
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.userdefenderspodcast | reverse -%}
-          <a href="{{ post.url }}"><img src="/img/udp.jpg" alt="Derek Featherstone, Farai Madzima, and Mina Markham on stage with Jason Ogle at AEA Denver" loading="lazy" data-src="/img/udp.jpg" class="lazyload" />
             <h4>
               {{ post.data.title }}
           {%- endfor -%}
