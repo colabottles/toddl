@@ -93,10 +93,6 @@ a {
   text-decoration: none;
 }
 
-:focus:not(:focus-visible) {
-  outline: none;
-}
-
 article,
 aside,
 footer,
@@ -218,6 +214,7 @@ q:before {
 @font-face {
   font-family: 'Source Sans Variable';
   font-weight: 200 900;
+  font-display: swap;
   font-style: normal;
   font-stretch: normal;
   src: url('/fonts/SourceSansVariable_Roman_subset.woff2') format('woff2'), url('/fonts/SourceSansVariable_Roman_subset.woff') format('woff'), url('/fonts/SourceSansVariable_Roman_subset.ttf') format('truetype');
@@ -226,6 +223,7 @@ q:before {
 @font-face {
   font-family: 'Source Sans Variable';
   font-weight: 200 900;
+  font-display: swap;
   font-style: italic;
   font-stretch: normal;
   src: url('/fonts/SourceSansVariable_Italic_subset.woff2') format('woff2'), url('/fonts/SourceSansVariable_Italic_subset.woff') format('woff'), url('/fonts/SourceSansVariable_Italic_subset.ttf') format('truetype');
@@ -304,6 +302,7 @@ q:before {
 @font-face {
   src: url('/fonts/RoslindaleDisplayUltraVariable-VF.woff2') format("woff2"), url('/fonts/RoslindaleDisplayUltraVariable-VF.woff') format("woff");
   font-family: 'Roslindale Display Ultra Web';
+  font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
