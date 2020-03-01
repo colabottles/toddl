@@ -34,7 +34,7 @@ I have an 80-year-old man that keeps up with family on Facebook and checks e-mai
 
 Take for instance Piriform, the makers of CCleaner. An app that cleans out extraneous crap out of your hard drive and does a number of other things to help the performance fo your computer. 
 
-Mac and Windows have versions and both have their little differences (Windows cleans you registry for instance). When installing the program, you reach a screen that looks something similar to this;
+Mac and Windows have versions and both have their little differences (Windows versions cleans your registry for instance). When installing the program, you reach a screen that looks something similar to this;
 
 <div class="content__placeholder">
   <figure>
