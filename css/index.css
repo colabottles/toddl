@@ -187,7 +187,7 @@ q:before {
   --font-family-heading-sm: 'Raleway', Arial, Helvetica, sans-serif;
 
   --heading1-font: calc(1.3125rem + 0.3vw);
-  --heading2-font: calc(4.5rem + 0.3vw);
+  --heading2-font: calc(2.5rem + 0.3vw);
   --heading3-font: calc(1.75rem + 0.3vw);
   --font-body-home: calc(1.3125rem + 0.3vw);
 
