@@ -933,6 +933,7 @@ ul.project__list {
   font-size: var(--font-size-article);
 }
 
+ul.article-list,
 ul.blogroll-list {
   display: grid;
   grid-gap: 0.5em;
@@ -1582,10 +1583,6 @@ video {
     padding: 0 1rem;
   }
 
-  ul.article-list {
-    display: grid;
-    padding: 0;
-  }
 
   span.alltags {
     font-size: var(--font-size-article);
