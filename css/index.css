@@ -367,7 +367,8 @@ main h2 {
 .page-container,
 .about-container,
 .article-container,
-.blogroll-container {
+.blogroll-container,
+.uses-links {
   grid-column: 2/12;
 }
 
@@ -776,7 +777,8 @@ sup {
   margin: 2em 0;
 }
 
-.article-meta {
+.article-meta,
+.links-list li {
   display: inline;
   font-family: var(--font-family-sans);
   font-size: var(--font-size-article);
@@ -795,7 +797,8 @@ li.article-list-article.newest a {
   text-decoration: none;
 }
 
-li.article-list-article.newest a:hover {
+li.article-list-article.newest a:hover,
+ul.links-list a:hover {
   color: var(--ecto);
   transition: color 0.5s ease-in;
 }
@@ -813,12 +816,26 @@ a.blogroll-list-blogroll-link:hover {
   text-decoration: none;
 }
 
-.blogroll-container h1,
-.article-container h1 {
-  font-size: var(--font-size-xxlarge);
+ul.links-list a {
+  border-bottom: none;
+  color: var(--green);
+  font-family: var(--font-family-sans);
+  text-underline-position: auto;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: var(--green);
+  transition: color 1s ease-in;
 }
 
-h2.article-list-article-title {
+.blogroll-container h1,
+.article-container h1,
+.uses-links h1 {
+  font-size: var(--font-size-xxlarge);
+  font-weight: 900;
+}
+
+h2.article-list-article-title,
+.uses-links h2 {
   font-size: var(--font-size-xlarge);
   line-height: var(--line-height-small);
 }
@@ -934,7 +951,8 @@ ul.project__list {
 }
 
 ul.article-list,
-ul.blogroll-list {
+ul.blogroll-list,
+ul.links-list {
   display: grid;
   grid-gap: 0.5em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
