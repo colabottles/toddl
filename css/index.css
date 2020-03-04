@@ -122,7 +122,8 @@ table {
 }
 
 ol,
-ul {
+ul,
+li {
   list-style: none;
 }
 
@@ -157,10 +158,6 @@ q:before {
 
 [disabled] {
   cursor: not-allowed;
-}
-
-:focus:not(:focus-visible) {
-  outline: none;
 }
 
 .sr-only {
@@ -257,54 +254,6 @@ q:before {
   font-weight: 1 999;
   font-stretch: 10% 100%;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lora-Italic-VF';
-  src: url('/fonts/Lora-Italic-VF.woff2');
-  src: url('/fonts/Lora-Italic-VF.woff2') format('woff2-variations');
-  font-display: swap;
-  font-weight: 1 999;
-  font-stretch: 75% 100%;
-  font-style: oblique 0 12deg;
-}
-
-@font-face {
-  font-family: 'Lora-Italic-VF';
-  src: url('/fonts/Lora-Italic-VF.ttf');
-  src: url('/fonts/Lora-Italic-VF.ttf') format('ttf');
-  font-display: swap;
-  font-weight: 1 999;
-  font-stretch: 75% 100%;
-  font-style: oblique 0 12deg;
-}
-
-@font-face {
-  font-family: 'Lora-VF';
-  src: url('/fonts/Lora-VF.woff2');
-  src: url('/fonts/Lora-VF.woff2') format('woff2-variations');
-  font-display: swap;
-  font-weight: 1 999;
-  font-stretch: 75% 100%;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lora-VF';
-  src: url('/fonts/Lora-VF.ttf');
-  src: url('/fonts/Lora-VF.ttf') format('ttf');
-  font-display: swap;
-  font-weight: 1 999;
-  font-stretch: 75% 100%;
-  font-style: normal;
-}
-
-@font-face {
-  src: url('/fonts/RoslindaleDisplayUltraVariable-VF.woff2') format("woff2"), url('/fonts/RoslindaleDisplayUltraVariable-VF.woff') format("woff");
-  font-family: 'Roslindale Display Ultra Web';
-  font-display: swap;
-  font-style: normal;
-  font-weight: normal;
 }
 
 body {
@@ -419,7 +368,6 @@ main h2 {
 .about-container,
 .article-container,
 .blogroll-container {
-  display: grid;
   grid-column: 2/12;
 }
 
@@ -649,10 +597,6 @@ ul.article-list,
   padding: 0 0 4rem 4rem;
 }
 
-li {
-  list-style: disc;
-}
-
 .container li {
   font-size: var(--font-size-large);
 }
@@ -669,7 +613,9 @@ li {
   margin-right: 1rem;
 }
 
-li.article-wrapper {
+li.article-wrapper,
+li.postitem-item,
+li.blogroll-list-blogroll {
   list-style: none;
 }
 
@@ -806,7 +752,8 @@ sup {
   line-height: var(--line-height);
 }
 
-.article-category {
+.article-category,
+.blogroll-category {
   border-bottom: 2px solid var(--green);
   display: inline-block;
   font-family: var(--font-family-heading-sm);
@@ -828,7 +775,6 @@ sup {
 
 li.article-list-article {
   padding: 1.25rem;
-  width: 100%;
   list-style: none;
 }
 
@@ -842,15 +788,21 @@ li.article-list-article.newest a:hover {
   transition: color 0.5s ease-in;
 }
 
-a.article-list-article-link {
+a.article-list-article-link,
+a.blogroll-list-blogroll-link {
   color: var(--white);
   display: block;
 }
 
-a.article-list-article-link:hover {
+a.article-list-article-link:hover,
+a.blogroll-list-blogroll-link:hover {
   color: var(--green);
   transition: color 1s ease-in;
   text-decoration: none;
+}
+
+.blogroll-container h1 {
+  font-size: var(--font-size-xxlarge);
 }
 
 h2.article-list-article-title {
@@ -943,10 +895,6 @@ a.postlist-link {
   text-decoration-color: var(--white);
 }
 
-li.postlist-item {
-  list-style: none;
-}
-
 time {
   font-family: var(--font-family-sans);
   color: var(--ecto);
@@ -970,6 +918,12 @@ h3.project__header {
 ul.project__list {
   font-family: var(--font-family-sans);
   font-size: var(--font-size-article);
+}
+
+ul.blogroll-list {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 blockquote {
@@ -1552,7 +1506,8 @@ video {
     width: calc(99% + 1vw);
   }
 
-  .article__header {
+  .article__header,
+  .blogroll-container {
     grid-column: 2/8;
   }
 
@@ -1581,7 +1536,8 @@ video {
     font-size: var(--font-size-article);
   }
 
-  span.article-category {
+  span.article-category,
+  span.blogroll-category {
     font-size: var(--font-size);
   }
 
@@ -1602,8 +1558,7 @@ video {
   article.archive-list,
   ul.postlist {
     grid-column: 1/8;
-    width: 100vw;
-    margin-left: -0.25rem;
+    width: 90vw;
     padding: 0 1rem;
   }
 
@@ -1616,17 +1571,7 @@ video {
 
   ul.article-list {
     display: grid;
-    padding: 0 1rem;
-  }
-
-  ul.blogroll-list {
-    display: grid;
-    grid-gap: 3em;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    list-style-type: none;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 3em;
+    padding: 0;
   }
 
   span.alltags {
@@ -1639,13 +1584,20 @@ video {
     padding: 0;
   }
 
-  .home-container h3 {
+  .home-container h3,
+  .blogroll-container p {
     grid-column: 2/8;
     font-size: var(--font-size-article);
   }
 
-  .page-container {
-    grid-column: 1/8;
+  .blogroll-container h1 {
+    font-size: var(--font-size-xlarge);
+    padding: 2rem 0;
+  }
+
+  .blogroll-container h2 {
+    font-size: var(--font-size-heading2);
+    line-height: var(--line-height);
   }
 
   .about-container {
