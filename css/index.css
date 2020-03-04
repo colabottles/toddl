@@ -813,7 +813,8 @@ a.blogroll-list-blogroll-link:hover {
   text-decoration: none;
 }
 
-.blogroll-container h1 {
+.blogroll-container h1,
+.article-container h1 {
   font-size: var(--font-size-xxlarge);
 }
 
