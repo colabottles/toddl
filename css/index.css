@@ -585,11 +585,16 @@ blockquote p {
   color: var(--grey);
 }
 
-ul.event-list li {
+ul.event-list li,
+ul.podcast-list li {
   font-family: var(--font-family-sans);
   font-size: calc(16px + 0.3vw);
   color: var(--white);
   grid-column: 1/12;
+}
+
+ul.podcast-list li a {
+  color: var(--ecto);
 }
 
 ul.event-past li {
