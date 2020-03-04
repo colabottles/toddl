@@ -585,9 +585,16 @@ blockquote p {
   color: var(--grey);
 }
 
-.meta {
+ul.event-list li {
   font-family: var(--font-family-sans);
-  font-size: calc(12px + 0.3vw);
+  font-size: calc(16px + 0.3vw);
+  color: var(--white);
+  grid-column: 1/12;
+}
+
+ul.event-past li {
+  font-family: var(--font-family-sans);
+  font-size: calc(16px + 0.3vw);
   color: var(--grey);
   grid-column: 1/12;
 }
@@ -1061,7 +1068,7 @@ h2.project__header {
 .social {
   font-size: var(--font-size);
   grid-column: 2/10;
-  padding-bottom: 2.25rem;
+  margin: 4rem 0;
 }
 
 .social h2 {
@@ -1241,7 +1248,7 @@ textarea:focus {
 }
 
 h2#hi {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-family-sans);
   font-size: 2em;
   font-weight: 700;
   letter-spacing: 0.05em;
