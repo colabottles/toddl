@@ -405,6 +405,7 @@ main h2 {
 .article-sections {
   display: flex;
   font-family: var(--font-family-sans);
+  grid-gap: 0.5rem;
   padding: 0;
 }
 
@@ -426,11 +427,11 @@ main h2 {
   color: var(--ecto);
 }
 
-.article-wrapper:first-child,
+/* .article-wrapper:first-child,
 .article-wrapper:last-child,
 .article-wrapper:nth-child(2) {
   margin-right: 2rem;
-}
+} */
 
 article li a {
   color: var(--ecto);
