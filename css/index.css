@@ -877,7 +877,7 @@ h2.article__title {
   font-variation-settings: 'wght'900, 'wdth'60;
   grid-column: 3/12;
   margin: 1rem 0;
-  padding-left: 2rem;
+  padding-left: 2.5rem;
   text-transform: none;
 }
 
@@ -887,7 +887,7 @@ section.article__body {
 }
 
 section.article__body {
-  padding-left: 2rem;
+  padding-left: 2.5rem;
 }
 
 article.article__body {
