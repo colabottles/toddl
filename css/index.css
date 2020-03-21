@@ -267,6 +267,7 @@ body {
 }
 
 ul.navigation {
+  align-self: center;
   flex: revert;
 }
 
@@ -293,7 +294,7 @@ ul.navigation a.active {
 
 .main-nav li {
   list-style: none;
-  display: inline;
+  display: inline-flex;
 }
 
 header {
@@ -306,7 +307,7 @@ header {
 }
 
 nav {
-  align-items: baseline;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -414,9 +415,9 @@ main h2 {
 }
 
 .article-wrapper h4 {
-  padding-top: 2rem;
-  font-size: var(--font-size-article);
-  line-height: var(--line-height-small);
+  padding-top: 1rem;
+  font-size: var(--font-size-large);
+  line-height: var(--line-height);
 }
 
 .article-wrapper h4 a {
