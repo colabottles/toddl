@@ -124,7 +124,7 @@ table {
 ol,
 ul,
 li {
-  padding-left: 1rem;
+  margin-left: 2rem;
 }
 
 iframe,
@@ -1065,7 +1065,7 @@ h2.project__header {
   -webkit-transform: scale(0.9);
 }
 
-.list-inline {
+ul .list-inline {
   margin: 0;
   padding: 0;
   display: flex;
