@@ -80,7 +80,7 @@ The example Eric used, was Facebook. Facebook and their &ldquo;On This Day&rdquo
 
 <div class="content__placeholder">
   <figure>
-    <img class="content__image" src="/img/onthisday.jpg" alt="Example of Facebook filter for On This Day" />
+    <img class="content__image" src="https://res.cloudinary.com/colabottles/image/upload/v1585002454/images/onthisday_ablvla.jpg" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585002454/images/onthisday_ablvla.jpg" class="lazy" alt="Example of Facebook filter for On This Day" />
     <figcaption>Now Facebook allows users to go in and filter people or dates.</figcaption>
   </figure>
 </div>
