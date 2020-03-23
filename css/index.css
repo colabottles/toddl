@@ -434,6 +434,7 @@ main h2 {
   margin-right: 2rem;
 } */
 
+li,
 article li a {
   color: var(--ecto);
 }

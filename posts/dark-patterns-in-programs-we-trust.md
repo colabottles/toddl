@@ -1,7 +1,7 @@
 ---
 title: Dark Patterns In Programs We Trust
 description: Bringing color contrast in accessibility to the table and why we need to do more checking of color contrast in our work on the web.
-date: 2019-02-24
+date: 2020-02-24
 tags:
   - ux
   - userexperience
