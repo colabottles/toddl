@@ -1572,7 +1572,7 @@ video {
 
   section.article__body p,
   .blogroll-container p {
-    font-size: var(--font-size);
+    font-size: var(--font-size-article);
   }
 
   section.article__body ul,
