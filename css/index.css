@@ -362,8 +362,15 @@ main h2 {
 }
 
 .inner {
-  display: grid;
-  grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
+  grid-tempalte-columns: subgrid;
+  grid-column: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
+}
+
+@supports (display: grid) {
+  .inner {
+    grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
+    grid-column: full;
+  }
 }
 
 .page-container,
@@ -434,12 +441,6 @@ section.article__body ul {
 .article-wrapper h4 a:hover {
   color: var(--ecto);
 }
-
-/* .article-wrapper:first-child,
-.article-wrapper:last-child,
-.article-wrapper:nth-child(2) {
-  margin-right: 2rem;
-} */
 
 li,
 article li a {
@@ -1397,7 +1398,7 @@ video {
   }
 
   .page-container {
-    grid-column: 2/12;
+    grid-column: 1/7;
   }
 
   h2.project__header {
