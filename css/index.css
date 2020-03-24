@@ -413,7 +413,6 @@ section.article__body ul {
 .article-sections {
   display: flex;
   font-family: var(--font-family-sans);
-  gap: 0.5em;
   padding: 0;
 }
 
@@ -433,6 +432,12 @@ section.article__body ul {
 
 .article-wrapper h4 a:hover {
   color: var(--ecto);
+}
+
+.article-wrapper:first-child,
+.article-wrapper:last-child,
+.article-wrapper:nth-child(2) {
+  margin: 2rem 0 0;
 }
 
 li,
@@ -1454,20 +1459,18 @@ video {
 @media only screen and (max-width: 540px) {
   .wrapper {
     display: grid;
-    grid-template-columns: [full-start] minmax(calc(calc(100% - 540px)/2),0.3fr)
-    [main-start] repeat(5,[col-start] 1fr) [main-end] minmax(calc(calc(100% - 540px)/2),0.3fr) [full-end];
+    grid-template-columns: [full-start] minmax(calc(calc(100% - 540px)/2), 0.3fr) [main-start] repeat(5, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 540px)/2), 0.3fr) [full-end];
   }
 
   main {
     display: grid;
-    grid-template-columns: [full-start] minmax(calc(calc(100% - 540px)/2),0.3fr)
-    [main-start] repeat(5,[col-start] 1fr) [main-end] minmax(calc(calc(100% - 540px)/2),0.3fr) [full-end];
+    grid-template-columns: [full-start] minmax(calc(calc(100% - 540px)/2), 0.3fr) [main-start] repeat(5, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 540px)/2), 0.3fr) [full-end];
     grid-column: full;
   }
 
   .inner {
     display: grid;
-    grid-template-columns: [full-start] minmax(calc(calc(100% - 540px)/2),0.3fr) [main-start] repeat(5,[col-start] 1fr) [main-end] minmax(calc(calc(100% - 540px)/2),0.3fr) [full-end];
+    grid-template-columns: [full-start] minmax(calc(calc(100% - 540px)/2), 0.3fr) [main-start] repeat(5, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 540px)/2), 0.3fr) [full-end];
     grid-column: full;
   }
 
