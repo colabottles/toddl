@@ -389,7 +389,7 @@ main h2 {
 }
 
 .sections li {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-family-sans);
   line-height: var(--line-height-small);
   margin: 0 1rem 1.5rem 0;
   width: calc(50% + 1vw);
@@ -1535,7 +1535,7 @@ video {
   }
 
   .sections li {
-    font-family: var(--font-family-serif);
+    font-family: var(--font-family-sans);
     margin: 0 0 1.5rem;
     width: calc(99% + 1vw);
   }
