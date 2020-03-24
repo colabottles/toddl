@@ -404,8 +404,8 @@ main h2 {
   padding: 1rem 0;
 }
 
-section .article__body ol,
-section .article__body ul {
+section.article__body ol,
+section.article__body ul {
   margin-left: 5rem;
   padding: 3rem 0;
 }
