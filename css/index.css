@@ -124,7 +124,8 @@ table {
 ol,
 ul,
 li {
-  margin-left: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 iframe,
@@ -1567,6 +1568,12 @@ video {
 
   section.article__body p {
     font-size: var(--font-size-article);
+  }
+
+  section.article__body ol,
+  section.article__body ul,
+  section.article__body li {
+    margin-left: 2rem;
   }
 
   span.article-category,
