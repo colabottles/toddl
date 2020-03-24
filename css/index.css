@@ -437,7 +437,7 @@ section.article__body ul {
 .article-wrapper:first-child,
 .article-wrapper:last-child,
 .article-wrapper:nth-child(2) {
-  margin: 2rem 0 0;
+  margin: 0 0.5rem 0;
 }
 
 li,
