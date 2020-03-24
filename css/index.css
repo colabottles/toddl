@@ -1570,9 +1570,9 @@ video {
     font-size: var(--font-size-article);
   }
 
-  .article__body ol,
-  .article__body ul,
-  .article__body li {
+  ol.article__body,
+  ul.article__body,
+  li.article__body {
     margin-left: 2rem;
   }
 
