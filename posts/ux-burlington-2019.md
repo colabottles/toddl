@@ -20,9 +20,9 @@ Victor Yocco gave the morning keynote. &ldquo;Designing For Short Attention Span
 
 Three main points of the talk were:
 
-1. What's an Attention Span?
-2. Decision Making Heuristics
-3. Tactical Design Elements
+  1. What's an Attention Span?
+  2. Decision Making Heuristics
+  3. Tactical Design Elements
 
 We all have an attention span that is less than that of a goldfish. Designers need to care about their users' attention though. Victor touched upon the questions we have to be asking not only our team and stakeholders, but for our users as well.
 
