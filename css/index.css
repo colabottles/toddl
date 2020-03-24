@@ -404,6 +404,12 @@ main h2 {
   padding: 1rem 0;
 }
 
+.article ol,
+.article ul {
+  margin-left: 5rem;
+  padding: 3rem 0;
+}
+
 .article-sections {
   display: flex;
   font-family: var(--font-family-sans);
