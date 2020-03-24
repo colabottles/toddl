@@ -413,7 +413,7 @@ section.article__body ul {
 .article-sections {
   display: flex;
   font-family: var(--font-family-sans);
-  grid-gap: 0.5em;
+  gap: 0.5em;
   padding: 0;
 }
 
