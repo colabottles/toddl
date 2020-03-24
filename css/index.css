@@ -121,12 +121,12 @@ table {
   border-spacing: 0;
 }
 
-/* ol,
+ol,
 ul,
 li {
-  margin: 0;
-  padding: 0;
-} */
+  margin-left: 5rem;
+  padding: 3rem 0;
+}
 
 iframe,
 img,
@@ -1568,11 +1568,6 @@ video {
 
   section.article__body p {
     font-size: var(--font-size-article);
-  }
-
-  section.article__body ul,
-  section.article__body ol {
-    margin-left: 2rem;
   }
 
   span.article-category,
