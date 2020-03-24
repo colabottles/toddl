@@ -362,13 +362,14 @@ main h2 {
 }
 
 .inner {
-  grid-tempalte-columns: subgrid;
+  grid-template-columns: subgrid;
   grid-column: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
+  grid-column: full;
 }
 
 @supports (display: grid) {
   .inner {
-    grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
+    grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(6, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
     grid-column: full;
   }
 }
