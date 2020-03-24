@@ -389,7 +389,7 @@ main h2 {
 }
 
 .sections li {
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-serif);
   line-height: var(--line-height-small);
   margin: 0 1rem 1.5rem 0;
   width: calc(50% + 1vw);
@@ -1535,7 +1535,7 @@ video {
   }
 
   .sections li {
-    font-family: var(--font-family-sans);
+    font-family: var(--font-family-serif);
     margin: 0 0 1.5rem;
     width: calc(99% + 1vw);
   }
@@ -1570,9 +1570,9 @@ video {
     font-size: var(--font-size-article);
   }
 
-  section.article__body ol,
-  section.article__body ul,
-  section.article__body li {
+  .article__body ol,
+  .article__body ul,
+  .article__body li {
     margin-left: 2rem;
   }
 
