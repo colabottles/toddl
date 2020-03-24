@@ -362,16 +362,8 @@ main h2 {
 }
 
 .inner {
-  grid-template-columns: subgrid;
-  grid-column: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
-  grid-column: full;
-}
-
-@supports (display: grid) {
-  .inner {
-    grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(6, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
-    grid-column: full;
-  }
+  display: grid;
+  grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
 }
 
 .page-container,
@@ -1399,7 +1391,7 @@ video {
   }
 
   .page-container {
-    grid-column: 1/7;
+    grid-column: 2/12;
   }
 
   h2.project__header {
@@ -1465,7 +1457,7 @@ video {
     grid-template-columns: [full-start] minmax(calc(calc(100% - 540px)/2), 0.3fr) [main-start] repeat(6, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 540px)/2), 0.3fr) [full-end];
   }
 
-  .inner {
+  main {
     display: grid;
     grid-template-columns: [full-start] minmax(calc(calc(100% - 540px)/2), 0.3fr) [main-start] repeat(6, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 540px)/2), 0.3fr) [full-end];
     grid-column: full;
