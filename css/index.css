@@ -1465,7 +1465,7 @@ video {
     grid-template-columns: [full-start] minmax(calc(calc(100% - 540px)/2), 0.3fr) [main-start] repeat(6, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 540px)/2), 0.3fr) [full-end];
   }
 
-  main {
+  .inner {
     display: grid;
     grid-template-columns: [full-start] minmax(calc(calc(100% - 540px)/2), 0.3fr) [main-start] repeat(6, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 540px)/2), 0.3fr) [full-end];
     grid-column: full;
