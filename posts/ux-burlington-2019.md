@@ -32,20 +32,20 @@ A lot of tech giants need to start asking themselves that very question.
 
 Some of the many points touched on in the fantastic morning keynote were;
 
-1. We need to capture users' attention.
-2. We need to understand why we want and deserve users' attention.
-3. We must navigate ethical decisions and issues when we design for attention.
-4. We need to conduct research with users.
-5. Users can't pay close attention to each decision.
-6. Heuristics are mental shortcutsfor making decisions.
-7. Accounting for heuristics may increase user adoption and decrease mental load.
+  1. We need to capture users' attention.
+  2. We need to understand why we want and deserve users' attention.
+  3. We must navigate ethical decisions and issues when we design for attention.
+  4. We need to conduct research with users.
+  5. Users can't pay close attention to each decision.
+  6. Heuristics are mental shortcutsfor making decisions.
+  7. Accounting for heuristics may increase user adoption and decrease mental load.
 
 Some key points on the Tactical Design Elements were;
 
-1. Clear the clutter.
-2. Remove distractions.
-3. Animation. What is the goal of it?
-4. Give users something to do.
+  1. Clear the clutter.
+  2. Remove distractions.
+  3. Animation. What is the goal of it?
+  4. Give users something to do.
 
 There was so much to Victor's talk, it would take me a day to just relay the vast amount of information that was crammed into a 48-minute video. I had three pages of notes myself, so I'll just suggest people watch the video of the keynote. The link to [the video for Victor's keynote can be found here](https://youtu.be/6WBS6YYMAcE) on the UX Burlington YouTube account.
 
@@ -75,12 +75,12 @@ Here is a quote from Henri I loved.
 
 I won't (and possibly have not a chance to explain these as well as Henri did) go into the API's in-depth, but I will give you and overview of what they are and [point you to the video on the UX Burlington YouTube page](https://youtu.be/DLvSPYklE4U).
 
-1. Paint Timing API
-2. Intersection Observer API
-3. Media Capabilities API
-4. Network Information API
-5. Cache API
-6. Battery Status API
+  1. Paint Timing API
+  2. Intersection Observer API
+  3. Media Capabilities API
+  4. Network Information API
+  5. Cache API
+  6. Battery Status API
 
 I'll go back to another quote from Henri;
 
