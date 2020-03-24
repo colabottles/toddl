@@ -11,7 +11,7 @@ templateClass: tmpl-home
 
   <article class="about-intro">
     <div class="home-container">
-      <div class="home-img"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585057528/images/headshot_vjnedz.webp" alt="Headshot of Todd" class="lazyload" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585057528/images/headshot_vjnedz.webp"></div>
+      <div class="home-img"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585063762/images/headshot_rwa3rm.png" alt="Headshot of Todd" class="lazyload" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585063762/images/headshot_rwa3rm.png"></div>
         <h3>I have an obsession with learning things on the web. I am currently re-sharpening my vanilla JavaScript skills, learning Vue and React, playing around with Gatsby, immersed in some User Experience courses. I just finished and became certified in a W3C Introduction to Accessibility course and I am very passionate about accessibility on the web as well as diversity and inclusion in tech.</h3>
     </div>
   </article>
@@ -21,21 +21,21 @@ templateClass: tmpl-home
       <ul class="article-sections">
         <li class="article-wrapper">
           {%- for post in collections.zoom | reverse -%}
-          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585058508/images/zoom_apohxc.webp" alt="A Zoom chat start screen with options to start a meeting." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585058508/images/zoom_apohxc.webp" class="lazyload" />
+          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585063623/images/zoom_jjcvfy.png" alt="A Zoom chat start screen with options to start a meeting." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585063623/images/zoom_jjcvfy.png" class="lazyload" />
             <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
         </li>
 
         <li class="article-wrapper">
           {%- for post in collections.darkpatterns | reverse -%}
-          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585061988/images/ccleaner_ayqur0.webp" alt="CCleaner by Piriform asking a user to download Google Chrome. This is a dark pattern in UX" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585061988/images/ccleaner_ayqur0.webp" class="lazyload" />
+          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585063602/images/ccleaner_qevvfm.png" alt="CCleaner by Piriform asking a user to download Google Chrome. This is a dark pattern in UX" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585063602/images/ccleaner_qevvfm.png" class="lazyload" />
             <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
         </li>
 
         <li class="article-wrapper">
           {%- for post in collections.userdefendersbookclub | reverse -%}
-            <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585061998/images/udbc_kokkfj.webp" alt="User Defenders Book Club" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585061998/images/udbc_kokkfj.webp" class="lazyload" />
+            <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585063614/images/udbc_ojrlaw.png" alt="User Defenders Book Club" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585063614/images/udbc_ojrlaw.png" class="lazyload" />
             <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
         </li>
