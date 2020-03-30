@@ -594,6 +594,18 @@ blockquote p {
   color: var(--grey);
 }
 
+ul.event-list,
+ul.event-past,
+ul.podcast-list {
+  margin-left: 5em;
+}
+
+ul.event-list li,
+ul.event-past li,
+ul.podcast-list li {
+  list-style: none;
+}
+
 ul.event-list li,
 ul.podcast-list li {
   font-family: var(--font-family-sans);
@@ -1624,12 +1636,6 @@ video {
   ul.event-past,
   ul.podcast-list {
     list-style: none;
-  }
-
-  ul.event-list,
-  ul.event-past,
-  ul.podcast-list {
-    margin-left: 5em;
   }
 
   li.postlist-item,
