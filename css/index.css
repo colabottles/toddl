@@ -1624,6 +1624,11 @@ video {
   ul.event-past,
   ul.podcast-list {
     list-style: none;
+  }
+
+  ul.event-list,
+  ul.event-past,
+  ul.podcast-list {
     margin-left: 5em;
   }
 
