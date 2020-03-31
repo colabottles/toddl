@@ -1421,6 +1421,12 @@ video {
   blockquote p {
     line-height: var(--line-height-small);
   }
+
+  ul.event-list,
+  ul.event-past,
+  ul.podcast-list {
+    margin-left: 3em;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -1612,6 +1618,12 @@ video {
   ul.blogroll-list,
   ul.links-list {
     padding: 0;
+  }
+
+  ul.event-list,
+  ul.event-past,
+  ul.podcast-list {
+    margin-left: 1em;
   }
 
   .contact {
