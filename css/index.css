@@ -621,7 +621,7 @@ ul.podcast-list li a {
 ul.event-past li {
   font-family: var(--font-family-sans);
   font-size: calc(16px + 0.3vw);
-  color: var(--grey);
+  color: var(--white);
   grid-column: 1/12;
 }
 
