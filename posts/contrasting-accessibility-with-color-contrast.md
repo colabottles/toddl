@@ -227,7 +227,7 @@ __Use the tools!__ Color contrast checkers like in the examples I have provided 
 
 ### Summary
 
-Following the WCAG guidelines is something we should do,  accessible and inclusive design is something we *must* do. Make sure everything passes an accessibility check through one of these tools you have made a part of your workflow. Adjust colors and contrasts where you can and where you need to in order to fulfill the requirements for AA and AAA compliance.
+Following the WCAG guidelines is something we should do, accessible and inclusive design is something we *must* do. Make sure everything passes an accessibility check through one of these tools you have made a part of your workflow. Adjust colors and contrasts where you can and where you need to in order to fulfill the requirements for AA and AAA compliance.
 
 There is a lot of talk about accessibility and we have taken tremendous strides to making the web more accessible and inclusive but we have a long way to go still from it being all-inclusive. So let's make the web more inclusive, but also remember how and why. Also reminding ourselves to actually do it!
 
