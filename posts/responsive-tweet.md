@@ -1,9 +1,7 @@
 ---
 title: Testing Embedded Tweets
-description: Findign a responsive solution to embedded tweets.
+description: Finding a responsive solution to embedded tweets.
 date: 2020-04-19
-tags:
-  - experiments
 layout: layouts/post.njk
 ---
 
