@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.e308ff8e.css">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer@1/dist/bouncer.polyfills.min.js"></script>
+<script src="/style.e308ff8e.js"></script></head>
+
+<body>
+  <div class="wrapper" role="main">
+    <form role="form" id="login" aria-label="Login Form" method="post">
+      <h1>Login</h1>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" pattern="level" required="">
+      </div>
+
+      <div class="pass">
+        <label for="password">Password <span class="pattern">At least
+            1 uppercase, 1 lowercase character, and 1
+            number.</span></label>
+        <input type="password" name="password" id="password" data-bouncer-message="Please choose a password that includes at least 1 uppercase character, 1 lowercase character, and 1 number." pattern="Access123" required="" data-input="">
+      </div>
+
+      <div class="pass">
+        <label for="confirm-password">Confirm Password <span class="pattern">Must match the field above.</span></label>
+        <input type="password" name="confirm-password" id="confirm-password" data-bouncer-match="#password" data-bouncer-mismatch-message="Your passwords do not match." pattern="Access123" required="" data-input="">
+      </div>
+
+      <div>
+        <input type="checkbox" name="show-passwords" id="show-passwords" aria-labelledby="show-passwords">
+        <label for="show-passwords">Show password</label>
+      </div>
+
+      <button type="submit" class="btn btn-large" id="login-btn">Log In</button>
+    </form>
+  </div>
+
+  <script>var validate = new Bouncer('form');</script>
+
+  <script src="/login.e31bb0bc.js"></script>
+</body>
+</html>
