@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../login/style.css">
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer@1/dist/bouncer.polyfills.min.js"></script>
 </head>
 <body>
   <div class="wrapper" role="main">
@@ -42,13 +44,6 @@
 
   <script>
     var validate = new Bouncer('form');
-  </script>
-
-  <script>
-    form.addEventListener("bouncerFormValid", function (event) {
-      // redirect to new page if form is valid
-      window.location.href("../login/success.html");
-    });
   </script>
 
   <script src="../login/index.js"></script>

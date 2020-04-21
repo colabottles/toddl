@@ -19,3 +19,12 @@ function toggleAll(event) {
 
 // Show/hide passwords, on toggle, in the checkbox
 toggle.addEventListener("change", toggleAll, false);
+
+function loginForm(){
+  var login = document.querySelector("login").value;
+  window.location.href = "/login/success.html";
+}
+
+// form.addEventListener("bouncerFormValid", function(form) {
+//   window.location.replace("/login/success.html");
+// });
