@@ -22,7 +22,7 @@ toggle.addEventListener("change", toggleAll, false);
 
 function loginForm(){
   var login = document.querySelector("login").value;
-  window.location.protocol + "//" + window.location.host + "/login/success.html";
+  window.location.replace("https://toddl.dev/login/success.html");
 }
 
 // form.addEventListener("bouncerFormValid", function(form) {
