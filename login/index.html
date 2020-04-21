@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./login/style.css">
+  <link rel="stylesheet" href="style.css">
   <script
     src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer@1/dist/bouncer.polyfills.min.js"></script>
 </head>
@@ -38,14 +38,14 @@
         <label for="show-passwords">Show password</label>
       </div>
 
-      <button type="submit" class="btn btn-large" id="login-btn">Log In</button>
+      <button type="submit" class="btn btn-large" id="login-btn" onload="loginForm()">Log In</button>
     </form>
   </div>
 
   <script>
     var validate = new Bouncer('form');
   </script>
-
-  <script src="../login/index.js"></script>
+  
+  <script src="index.js"></script>
 </body>
 </html>

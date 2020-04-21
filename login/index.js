@@ -20,11 +20,19 @@ function toggleAll(event) {
 // Show/hide passwords, on toggle, in the checkbox
 toggle.addEventListener("change", toggleAll, false);
 
-function loginForm(){
-  var login = document.querySelector("login").value;
-  window.location.replace("https://toddl.dev/login/success.html");
-}
+const loginForm = document.getElementById("login");
+const loginButton = document.getElementById("login-btn");
+const loginErrorMsg = document.getElementById("login-error-msg");
 
-// form.addEventListener("bouncerFormValid", function(form) {
-//   window.location.replace("/login/success.html");
-// });
+loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+
+    if (username === "level" && password === "Access123") {
+        alert("You have successfully logged in.");
+        location.reload();
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+})

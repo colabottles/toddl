@@ -62,9 +62,6 @@ input {
   box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2),
     0 1px 1px rgba(255, 255, 255, 0.2);
   -webkit-transition: box-shadow 0.5s ease;
-  -moz-transition: box-shadow 0.5s ease;
-  -o-transition: box-shadow 0.5s ease;
-  -ms-transition: box-shadow 0.5s ease;
   transition: box-shadow 0.5s ease;
   width: 100%;
 }
@@ -89,11 +86,8 @@ input:focus {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   border: 1px solid #e6e6e6;
   -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 20px;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
-    0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
     0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
     0 1px 2px rgba(0, 0, 0, 0.05);
@@ -113,7 +107,6 @@ input:focus {
   font-size: 1.3em;
   line-height: normal;
   -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 10px;
 }
 
@@ -123,9 +116,6 @@ input:focus {
   background-color: #e6e6e6;
   background-position: 0 -15px;
   -webkit-transition: background-position 0.1s linear;
-  -moz-transition: background-position 0.1s linear;
-  -ms-transition: background-position 0.1s linear;
-  -o-transition: background-position 0.1s linear;
   transition: background-position 0.1s linear;
 }
 
@@ -156,17 +146,4 @@ input:focus {
 .btn-large {
   width: 100%;
   display: block;
-}
-
-/**
- * Form Validation Errors
- */
-.error {
-  border-color: red;
-}
-
-.error-message {
-  color: red;
-  font-style: italic;
-  margin-bottom: 1em;
 }
