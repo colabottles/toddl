@@ -14,9 +14,9 @@ I have over twenty one years of experience with the web. It all started with see
 
 I have a passion for the web and making things on the web. Taking things apart and re-building them. I am interested in a lot of different things, mainly outdoors, food, and travel. Photography, typography, design and User Experience. Web conferences and meeting people in the web industry.
 
-My skills include HTML/CSS, JavaScript, PHP, Perl, SQL, ColdFusion (CFML), and Ruby/Rails to name a few. I have experience using many content management systems, namely WordPress since it was forked from b2/Cafelog, Drupal, and a host of others. Open source experience and design and branding experience with the Adobe Creative Cloud and such programs as QuarkXPress, Maya, Cinema4D, Final Cut Pro, and Flash (I know, dead in the water).
+My skills include HTML/CSS, JavaScript, PHP, Perl, SQL, ColdFusion (CFML), and Ruby/Rails to name a few. I have experience using many content management systems, namely WordPress (since it was forked from b2/Cafelog), Drupal, and a host of others. Open source experience and design. Branding experience with the Adobe Creative Cloud and such programs as QuarkXPress, Maya, Cinema4D, Final Cut Pro, and Flash (I know, dead in the water).
 
-I have never settled for being an expert in just one thing and have always dabbled in many. WHich is why I have a host of experience with hardware and software over the years. My thirst to learn in great and it started as a kid and continues right up to this very day.
+I have never settled for being an expert in just one thing and have always dabbled in many. Which is why I have a host of experience with hardware and software over the years. My thirst to learn in great and it started as a kid and continues right up to this very day.
 
 I have worked with many different people and places on projects, and the list of clients whom I have done work for in some capacity is long but I can send a list if anyone is interested. They are not current or even recent projects though and the work is not on the web anymore (though it may be on the Wayback Machine).
 
