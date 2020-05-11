@@ -85,7 +85,7 @@ Even then, it was going to take 24-48 hours for that to happen! Some I have even
 
 Doug Collins, in one of his great videos on UX dark patterns below, talks about some of the ways dark patterns work. The examples I used use reading patterns.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wo3OPM6jmOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wo3OPM6jmOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title=""></iframe>
 
 The &ldquo;Google Chrome Download&rdquo; uses trust and perceived value. Trust that you need to download Chrome. The perceived value that Chrome is the right browser for you to use. It’s almost as if Piriform is saying, &ldquo;Piriform uses Google Chrome and since you use our software, you should use what we use!&rdquo;
 

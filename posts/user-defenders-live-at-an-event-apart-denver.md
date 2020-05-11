@@ -17,7 +17,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/i9mTeKl3NVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i9mTeKl3NVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  title=""></iframe>
 
 [If you follow me on Twitter](https://twitter.com/toddlibby/) then you know I was at An Event Apart in October out in Denver, Colorado. I was asked to video this panel of wonderful people for the [User Defenders](https://userdefenders.com/) Live Podcast by Jason Ogle.
 

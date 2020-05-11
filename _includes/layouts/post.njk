@@ -6,13 +6,13 @@ templateClass: tmpl-page
 <div class="article-container">
   <article>
     <h2 class="article__title">{{title}}</h2>
-    <header class="article__header" role="banner">
+    <header class="article__header">
       <div class="article__meta">
         <time>{{page.date | htmlDateString}}</time>
       </div>
     </header>
     
-    <section class="article__body" role="region">
+    <section class="article__body">
       {{ content | safe }}
     </section>
   </article>
