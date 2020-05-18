@@ -27,8 +27,8 @@ templateClass: tmpl-home
         </li>
 
         <li class="article-wrapper">
-          {%- for post in collections.darkpatterns | reverse -%}
-          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585073035/images/ccleaner_armwz6.png" alt="CCleaner by Piriform asking a user to download Google Chrome. This is a dark pattern in UX" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585073035/images/ccleaner_armwz6.png" class="lazyload" />
+          {%- for post in collections.patterns | reverse -%}
+          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585073035/images/ccleaner_armwz6.png" alt="CCleaner by Piriform asking a user to download Google Chrome. This is a deceptive pattern in UX" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585073035/images/ccleaner_armwz6.png" class="lazyload" />
             <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
         </li>
