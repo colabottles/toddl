@@ -1,11 +1,12 @@
 ---
-title: Dark Patterns In Programs We Trust
-description: Exploring dark patterns in UX and why companies have to do better to their customers.
+title: Deceptive Patterns In Programs We Trust
+description: Exploring deceptive patterns in UX and why companies have to do better to their customers.
 date: 2020-02-24
 tags:
   - ux
   - userexperience
-  - darkpatterns
+  - deceptive
+  - patterns
   - design
 layout: layouts/post.njk
 ---
@@ -14,7 +15,7 @@ Don't look now but you're probably installing something else other than what you
 
 When I was doing computer work for people (installing, networking, tutoring, etc.) I would install software for people that they could afford. Whether it was open source, or whether it was paid software. Usually, open source or freeware.
 
-Then in the past decade I noticed a huge increase in a dark pattern which at the time I thought was just something to click by and not give too much thought to. The &ldquo;Download Google Chrome&rdquo; epidemic.
+Then in the past decade I noticed a huge increase in a deceptive pattern which at the time I thought was just something to click by and not give too much thought to. The &ldquo;Download Google Chrome&rdquo; epidemic.
 
 Yes, I said epidemic because it is everywhere it seems. Software companies are in bed with Google (or Alphabet, if you prefer) and they are cashing in, in ways you couldn’t even imagine. Your data.
 
@@ -22,9 +23,9 @@ Then I started to get calls about how _&ldquo;Chrome is on my computer and I don
 
 These people (mainly older folks) do not know what to do with software the majority of the time I have found. Or they just don’t care. They want to click through and get things done.
 
-Why is this company putting this dark pattern in their software? I decided to do a bit of research into why. I couldn’t find **anything** about the topic, but I figured there was only one reason why. Money. The thing that makes big tech run rampant.
+Why is this company putting this deceptive pattern in their software? I decided to do a bit of research into why. I couldn’t find **anything** about the topic, but I figured there was only one reason why. Money. The thing that makes big tech run rampant.
 
-I did a few searches for these dark patterns and how they are being addressed and I could find absolutely nothing. No mention of these little shady checkboxes and these little tucked away &ldquo;Here, we suggest you to download Chrome!&rdquo; content areas. Nothing at all.
+I did a few searches for these deceptive patterns and how they are being addressed and I could find absolutely nothing. No mention of these little shady checkboxes and these little tucked away &ldquo;Here, we suggest you to download Chrome!&rdquo; content areas. Nothing at all.
 
 I found several instances of _&ldquo;Reasons Why Google Chrome Is Bad&rdquo;_ or _&ldquo;Top 10 Reasons Not To Download Chrome&rdquo;_ I already know these reasons because I am a little tech savvy. My customers are not.
 
@@ -49,12 +50,12 @@ Yet, they skip over it because they either click through wanting to install the 
 
 Some folks do not! Your **&ldquo;recommendation&rdquo;** may not be wanted, needed, or even cared about. I know none of my customers wants Google Chrome and if they already have it, they don’t need this extra, unnecessary step.
 
-The worst part about this is, that it is probably one of the worst pieces of surveillance software there is out there that is available to consumers. Here is yet another example of this dark pattern in action.
+The worst part about this is, that it is probably one of the worst pieces of surveillance software there is out there that is available to consumers. Here is yet another example of this deceptive pattern in action.
 
 <div class="content__placeholder">
   <figure>
     <img class="content__image" src="/img/avgfree.jpg" alt="AVG Anti-Virus program installation screen." />
-    <figcaption>As you can see, the checkbox is checked. They are 100% of the time when I deal with software that uses this dark pattern through deception.</figcaption>
+    <figcaption>As you can see, the checkbox is checked. They are 100% of the time when I deal with software that uses this deceptive pattern through deception.</figcaption>
   </figure>
 </div> 
 
@@ -68,7 +69,7 @@ With people being very trusting, one could say even naive, they expect the produ
 
 ## Emails
 
-Another instance of dark patterns in UX brought me to the NBA and email. I voted for the All-Star Game and thought, _&ldquo;well… that’s that. Back to work.&rdquo;_and lo and behold that was not that. That was only the beginning of the onslaught of emails from the NBA and NBA.com.
+Another instance of deceptive patterns in UX brought me to the NBA and email. I voted for the All-Star Game and thought, _&ldquo;well… that’s that. Back to work.&rdquo;_and lo and behold that was not that. That was only the beginning of the onslaught of emails from the NBA and NBA.com.
 
 <div class="content__placeholder">
   <figure>
@@ -81,15 +82,15 @@ Where is the unsubscribe link? I voted for players for the All-Star Game and whe
 
 Even then, it was going to take 24-48 hours for that to happen! Some I have even seen take fourteen (yes, 14!) business days to unsubscribe! What?! Two business weeks to unsubscribe?! Are you kidding me?!
 
-## Dark Patterns
+## Deceptive Patterns
 
-Doug Collins, in one of his great videos on UX dark patterns below, talks about some of the ways dark patterns work. The examples I used use reading patterns.
+Doug Collins, in one of his great videos on UX deceptive patterns below, talks about some of the ways deceptive patterns work. The examples I used use reading patterns.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wo3OPM6jmOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title=""></iframe>
 
 The &ldquo;Google Chrome Download&rdquo; uses trust and perceived value. Trust that you need to download Chrome. The perceived value that Chrome is the right browser for you to use. It’s almost as if Piriform is saying, &ldquo;Piriform uses Google Chrome and since you use our software, you should use what we use!&rdquo;
 
-Hiding this little checkbox and blurb in the bottom left corner of a dialog box is a dark pattern Don’t let anyone fool you. More than likely (and in about 9 out of 10 cases I have seen first hand) people are going to click through and not pay any attention to that step. They want to download the software and use it.
+Hiding this little checkbox and blurb in the bottom left corner of a dialog box is a deceptive pattern Don’t let anyone fool you. More than likely (and in about 9 out of 10 cases I have seen first hand) people are going to click through and not pay any attention to that step. They want to download the software and use it.
 
 It’s a pattern that I even skip when I am installing programs. I consider myself a bit savvy when it comes to tech, so those times where I am clicking through because I want to install the program, this step can be skipped very easily. So what do we do about it?
 
@@ -105,6 +106,6 @@ We need to be vigilant. I have to be more vigilant.
 
 With the latest in the saga that is Avast and their problems with data, I am not going to be installing their products (Avast or AVG Anti Virus) on computers any longer (Windows Defender and Malwarebytes are enough protection in my opinion).
 
-Calling out these companies, calling out these dark patterns and making sure they are not being used to mislead or misdirect people, especially older folks like my customers is the key to at least slowing down this practice.
+Calling out these companies, calling out these deceptive patterns and making sure they are not being used to mislead or misdirect people, especially older folks like my customers is the key to at least slowing down this practice.
 
-Until consumers start pressuring these companies to stop this practice, it will keep going on until they start losing money. Let’s start getting on these companies and get them to stop these dark patterns in programs we trust.
+Until consumers start pressuring these companies to stop this practice, it will keep going on until they start losing money. Let’s start getting on these companies and get them to stop these deceptive patterns in programs we trust.
