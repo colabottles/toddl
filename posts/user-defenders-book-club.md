@@ -16,7 +16,7 @@ layout: layouts/post.njk
 
 It was a pleasure being a part of this discussion about a book I really liked. Mike Monteiro's _Ruined By Design_. Have a look at the video below and join User Defenders for more community events and more book club discussions!
 
-<width="560" height="315" src="https://www.youtube.com/embed/OfxEJvJ5GsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title=""></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OfxEJvJ5GsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title=""></iframe>
 
 This took place in November of 2019, I was just getting around to posting this after the holidays, new year, busy times and lots of stuff going on in life. My book club companions for the discussion are Jason Ogle and Ross Beitzel.
 
