@@ -1338,7 +1338,7 @@ img.content__image {
 
 .article-wrapper img.lazyload {
   width: 100vw;
-  height: 55vh;
+  height: 25vh;
 }
 
 iframe,
