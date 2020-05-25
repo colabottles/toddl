@@ -40,13 +40,6 @@ templateClass: tmpl-home
             <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
         </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.userdefendersbookclub | reverse -%}
-            <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585073035/images/udbc_vwebsy.png" alt="User Defenders Book Club" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1585073035/images/udbc_vwebsy.png" class="lazyload" />
-            <h4>{{ post.data.title }}</h4></a>
-          {%- endfor -%}
-        </li>
       </ul>
     </div>
   </main>
