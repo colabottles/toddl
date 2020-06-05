@@ -20,4 +20,4 @@ I have never settled for being an expert in just one thing and have always dabbl
 
 I have worked with many different people and places on projects, and the list of clients whom I have done work for in some capacity is long but I can send a list if anyone is interested. They are not current or even recent projects though and the work is not on the web anymore (though it may be on the Wayback Machine).
 
-Thanks for reading and <a href="{{ '/' | url }}/contact">use the contact form to get in touch</a> so we can talk about whatever questions you may have or maybe about me filling a role at your company. I am also willing (very willing if it a warm climate) to relocate.
+Thanks for reading and <a href="https://toddl.dev/contact/">use the contact form to get in touch</a> so we can talk about whatever questions you may have or maybe about me filling a role at your company. I am also willing (very willing if it a warm climate) to relocate.
