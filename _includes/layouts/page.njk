@@ -14,7 +14,7 @@
     <div class="wrapper">
       <header role="group">
         <nav title="main-navigation" role="navigation">
-          <a href="{{ '/' | url }}"><h1 class="home"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585002460/images/tl_ubumtq.svg" alt="Red Letters T and L" class="lazy"  id="logo" /></h1></a>
+          <h1 class="home"><a href="{{ '/' | url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585002460/images/tl_ubumtq.svg" alt="Red Letters T and L" class="lazy"  id="logo" /></a></h1>
             <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation">            
               {%- for nav in collections.nav | sort(attribute="date") -%}
               <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" tabindex="0" role="option" aria-selected="true">
