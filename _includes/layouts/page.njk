@@ -13,7 +13,7 @@
   <body>
     <div class="wrapper">
       <header role="group">
-        <nav role="banner">
+        <nav title="main-navigation" role="navigation">
           <a href="{{ '/' | url }}"><h1 class="home"><img src="https://res.cloudinary.com/colabottles/image/upload/v1585002460/images/tl_ubumtq.svg" alt="Red Letters T and L" class="lazy"  id="logo" /></h1></a>
             <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation">            
               {%- for nav in collections.nav | sort(attribute="date") -%}
@@ -29,7 +29,7 @@
         {{ content | safe }}
       </main>
 
-      <div class="social" role="navigation">
+      <div class="social" title="sub-navigation" role="navigation">
         <h2>&copy;1999 &mdash; 2020, Todd Libby.</h2>
           <ul class="nav list-inline">
             <li class="nav-item"><a href="{{ '/archives' | url }}">Archives</a></li>
