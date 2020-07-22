@@ -315,7 +315,7 @@ header {
 nav {
   align-items: center;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 nav.foot {
