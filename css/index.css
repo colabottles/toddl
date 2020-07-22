@@ -451,6 +451,10 @@ section.article__body ul {
   margin: 0 0.5rem 0;
 }
 
+.article-wrapper img {
+  aspect-ratio: 1 / 1;
+}
+
 li,
 article li a {
   color: var(--ecto);
