@@ -309,14 +309,13 @@ header {
 .home #logo {
   height: 107px;
   width: 111px;
-  float: left;
+  scale: 0.9;
 }
 
 nav {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: right;
 }
 
 header h1 {
