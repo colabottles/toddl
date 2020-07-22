@@ -451,10 +451,6 @@ section.article__body ul {
   margin: 0 0.5rem 0;
 }
 
-.article-wrapper img {
-  aspect-ratio: 1 / 1;
-}
-
 li,
 article li a {
   color: var(--ecto);
@@ -1353,8 +1349,7 @@ img.content__image {
 }
 
 .article-wrapper img.lazyload {
-  width: 100vw;
-  height: 35vh;
+  aspect-ratio: 1 / 1;
 }
 
 iframe,
