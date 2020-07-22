@@ -307,7 +307,9 @@ header {
 }
 
 .home #logo {
-  scale: 0.2;
+  height: 107px;
+  width: 111px;
+  float: left;
 }
 
 nav {
