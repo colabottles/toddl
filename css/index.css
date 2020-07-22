@@ -1057,8 +1057,8 @@ h2.project__header {
 }
 
 .home-img {
-  width: 295px;
-  height: 295px;
+  width: 400px;
+  height: 400px;
   float: left;
   shape-outside: circle(50% at 50% 50%);
   -webkit-shape-outside: circle(50% at 50% 50%);
