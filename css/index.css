@@ -318,6 +318,11 @@ nav {
   justify-content: right;
 }
 
+nav.foot {
+  display: flex;
+  justify-content: space-between;
+}
+
 header h1 {
   font-size: var(--heading1-font);
   font-family: var(--font-family-serif);
