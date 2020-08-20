@@ -330,6 +330,7 @@ header h1 {
 
 h1.home {
   color: var(--green);
+  width: 9ch;
 }
 
 h1.home:hover {
