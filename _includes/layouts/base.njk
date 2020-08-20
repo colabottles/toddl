@@ -20,13 +20,13 @@
           </a>
         </h1>
         <nav title="main-navigation" role="navigation">
-            <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation">            
-              {%- for nav in collections.nav | sort(attribute="date") -%}
+          <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation">            
+            {%- for nav in collections.nav | sort(attribute="date") -%}
               <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" tabindex="0" role="option" aria-selected="true">
                 <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
               </li>
-              {%- endfor -%}
-            </ul>
+            {%- endfor -%}
+          </ul>
         </nav>
       </header>
 
@@ -51,7 +51,7 @@
           <ul class="list-inline">
             <li>
               <a href="https://codepen.io/colabottles/#" class="codepen" aria-label="A link to my CodePen repository">
-                <svg class="icon icon-codepen" role="img" aria-label="A link to my CodePen repository">
+                <svg class="icon icon-codepen" role="img" aria-label="An icon that links to my CodePen repository">
                   <title>A link to my CodePen repository</title>
                   <desc id="codepen">A white icon in the shape of the CodePen logo which is a 3D cube.</desc>
                   <use href="/img/symbol-defs.svg#icon-codepen" alt="A link to my CodePen repository"></use>
@@ -60,7 +60,7 @@
             </li>
             <li>
               <a href="https://dribbble.com/colabottles/" class="dribbble" aria-label="A link to my Dribbble page">
-                <svg class="icon icon-dribbble" role="img" aria-label="A link to my Dribbble portfolio">
+                <svg class="icon icon-dribbble" role="img" aria-label="An icon that links to my Dribbble portfolio">
                   <title>A link to my Dribbble portfolio</title>
                   <desc id="dribbble">A white icon in the shape of the Dribbble logo which is a basketball.</desc>
                   <use href="/img/symbol-defs.svg#icon-dribbble"></use>
@@ -69,7 +69,7 @@
             </li>
             <li>
               <a href="https://github.com/colabottles/" class="github" aria-label="A link to my GitHub page">
-                <svg class="icon icon-github" role="img" aria-label="A link to my GitHub repository">
+                <svg class="icon icon-github" role="img" aria-label="An icon that links to my GitHub repository">
                   <title>A link to my GitHub repository</title>
                   <desc id="github">A white icon in the shape of the GitHub logo which is the OctoCat.</desc>
                   <use href="/img/symbol-defs.svg#icon-github"></use>
@@ -78,7 +78,7 @@
             </li>
             <li>
               <a href="https://twitter.com/toddlibby" class="twitter" aria-label="A link to my Twitter page">
-                <svg class="icon icon-twitter" role="img" aria-label="A link to my Dribbble portfolio">
+                <svg class="icon icon-twitter" role="img" aria-label="An icon that links to my Dribbble portfolio">
                   <title>A link to my Twitter page</title>
                   <desc id="twitter">A white icon in the shape of the Twitter logo which is a bird.</desc>
                   <use href="/img/symbol-defs.svg#icon-twitter"></use>
@@ -87,7 +87,7 @@
             </li>
             <li>
               <a href="https://toddl.dev/feed/feed.xml" class="rss" aria-label="A link to my RSS page">
-                <svg class="icon icon-rss" role="img" aria-label="A link to this site's RSS feed">
+                <svg class="icon icon-rss" role="img" aria-label="An icon that links to this site's RSS feed">
                   <title>A link to the RSS feed for this site</title>
                   <desc id="rss">A white icon in the shape of the RSS logo which is a group of lines shaped like a speaker.</desc>
                   <use href="/img/symbol-defs.svg#icon-rss"></use>
@@ -96,7 +96,7 @@
             </li>
             <li>
               <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y" aria-label="WCAG 2.0 AA Passed a11y">
-                <svg class="icon icon-accessible-icon" role="img" aria-label="A link to this site's WCAG 2.0 Accessibility test results">
+                <svg class="icon icon-accessible-icon" role="img" aria-label="An icon that links to this pages WCAG 2.0 Accessibility test results">
                   <title>A link to the WCAG 2.0 Accessibility test results for this site</title>
                   <desc id="a11y">A white icon in the shape of a person in a wheelchair.</desc>
                   <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
