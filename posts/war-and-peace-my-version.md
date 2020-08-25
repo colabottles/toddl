@@ -48,7 +48,7 @@ It is almost as if I'm Robert Johnson at the crossroads of highways 61 and 49 an
 
 Now I'm at the crossroads. Do I quit&quest; Do I remain&quest; Do I sail off into the sunset or do I ride that atom bomb down to the ground like Slim Pickens&quest; Or do I remain the whipping boy to a process that is so broken and fractured&quest;
 
-<img src="https://res.cloudinary.com/colabottles/image/upload/v1598380281/images/slim_dv7unj.webp" alt="Slim Pickens in Dr. Strangelove riding the atom bomb out of the plane like a rodeo cowboy" />
+<img src="https://res.cloudinary.com/colabottles/image/upload/v1598383747/images/slim_tcpmre.webp" alt="Slim Pickens in Dr. Strangelove riding the atom bomb out of the plane like a rodeo cowboy" />
 
 This was the one that got to me. Granted, I let my emtions get the better of me sometimes, that is a work in progress, but the fact remains a 0.0009358914&percnt; success rate is not what I would call stellar.
 
@@ -63,6 +63,8 @@ But this. Just the chance. The chance to learn, to work in a group, to work and 
 <blockquote cite="Sylvia Plath">The worst enemy to creativity is self-doubt.</blockquote>
 
 I've been doubted my entire life. That I'll never work in tech, that I'd never be a programmer, that I'd never do some of the things I wanted to do. I proved them all wrong. Friends. Family. Everyone. This time though. This time I'm trying to prove myself wrong and it's waged a war in my head that is constant.
+
+I have been beaten down too much and been told I am not good enough too many times and I know that is not the case, but the fact remains, those voices still are there, they still speak and when another rejection email comes in the inbox, it is just another case of I am never going to be good enough even with the skills I have and the learning I do daily. Never good enough.
 
 My heart tells me to quit. that it can't take any more rejection. There are issues behind that which I won't go into. My gut, my gut tells me to keep fighting like I always have and never quit. I have ten to fifteen years left in me and I'm not to stop now.
 
