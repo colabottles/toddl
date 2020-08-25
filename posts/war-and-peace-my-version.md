@@ -14,7 +14,13 @@ layout: layouts/post.njk
 
 <blockquote cite="Winston Churchill">If you are going through hell, keep going.</blockquote>
 
-Usually I see that quote attributed to Winston Churchill. Whom I do not particularly care for, but the quote is something I have long subscribed to since I could remember first seeing the quote some time in middle school.
+Usually I see that quote attributed to Winston Churchill, of whom I do not particularly care for, but the quote is something I have long subscribed to since I could remember first seeing the quote some time in middle school.
+
+Also, I know there are others who have had a rougher time. I know there are those who have had more hurdles and barriers than I. I also know I am a white guy in tech and that comes with privilege. Privilege that I know I have benefitted from in the past in and out of tech. This is not a story about &laquo;Oh woe is me&raquo;.
+
+It's a story of how the constant beating down has worn me out to the end. There is only so much someone can take. I have seen this with all my friends and peole in tech. Not just me. This is a story though of how it sucks to be in a place where you no longer know what to do or feel.
+
+<blockquote cite="Plato">Only the dead have seen the end of war.</blockquote>
 
 I have been doing web for a little over twenty-one years now. In that time, I have applied to *a lot* of companies. I didn't keep a tab until after my first year of designing and developing websites. I think in that first year alone, I probably applied to approximately 5-6 companies. It really wasn't a thing where I lived.
 
@@ -68,7 +74,7 @@ I have been beaten down too much and been told I am not good enough too many tim
 
 My heart tells me to quit. that it can't take any more rejection. There are issues behind that which I won't go into. My gut, my gut tells me to keep fighting like I always have and never quit. I have ten to fifteen years left in me and I'm not to stop now.
 
-I don't know or think I have it in me anymore.
+I don't know or think I have it in me anymore. The constant being beaten down needs to end.
 
 Something I loved to do since the age of nine, forty years plus ago. I'm ready to leave it all behind but the question is, do I walk away now or hold out hope for yet another day&quest;
 
