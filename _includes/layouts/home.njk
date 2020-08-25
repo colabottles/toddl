@@ -20,6 +20,13 @@ templateClass: tmpl-home
       <ul class="article-sections">
 
         <li class="article-wrapper">
+          {%- for post in collections.career | reverse -%}
+          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1598380281/images/slim_dv7unj.webp" alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1598380281/images/slim_dv7unj.webp" class="lazyload" />
+            <h4>{{ post.data.title }}</h4></a>
+          {%- endfor -%}
+        </li>
+
+        <li class="article-wrapper">
           {%- for post in collections.rwd | reverse -%}
             <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1595396482/images/rwd.webp" alt="The A Book Apart book number four, Responsive Web Design by Ethan Marcotte" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1595396482/images/rwd.webp" class="lazyload" />
             <h4>{{ post.data.title }}</h4></a>
@@ -29,13 +36,6 @@ templateClass: tmpl-home
         <li class="article-wrapper">
           {%- for post in collections.zoom | reverse -%}
           <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1595395519/images/zoom.webp" alt="The Zoom logo on a blue background." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1595395519/images/zoom.webp" class="lazyload" />
-            <h4>{{ post.data.title }}</h4></a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.patterns | reverse -%}
-          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1595394956/images/ccleaner.webp" alt="CCleaner by Piriform logo." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1595394956/images/ccleaner.webp" class="lazyload" />
             <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
         </li>
