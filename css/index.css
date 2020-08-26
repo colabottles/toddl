@@ -906,8 +906,9 @@ h2.article__title {
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -ms-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -o-font-feature-settings: "kern"on, "liga"on, "calt"on;
-  font-variation-settings: 'wght'900, 'wdth'60;
+  font-variation-settings: 'wght'900, 'wdth'100;
   grid-column: 3/12;
+  letter-spacing: -0.017em;
   margin: 1rem 0;
   padding-left: 2.5rem;
   text-transform: none;
