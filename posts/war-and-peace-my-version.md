@@ -63,7 +63,7 @@ Now I'm at the crossroads. Do I quit&quest; Do I remain&quest; Do I sail off int
 
 This was the one that got to me. Granted, I let my emtions get the better of me sometimes, that is a work in progress, but the fact remains a 0.0009358914&percnt; success rate is not what I would call stellar.
 
-I see it all the time, folks getting jobs, you can learn at the job while on the job, such great succcess stories that I am very happy for all those people, don't get me wrong. If you have applied to as many places I have you start to wonder when the hell am I going to get a shot&quest;
+I see it all the time. Folks getting jobs like it was candy being handed out at a candy store. You can learn at the job while on the job, such great succcess stories that I am very happy for all those people, don't get me wrong. If you have applied to as many places I have you start to wonder when the hell am I going to get a shot&quest;
 
 That is what I am facing now. I feel like giving up, to saying, &ldquo;To hell with all this!&rdquo; and I have to some people. I am drained and tired of trying to find a home with a company that wil have me because none of them don't. Maybe that's a sign.
 
@@ -77,7 +77,7 @@ I've been doubted my entire life. That I'll never work in tech, that I'd never b
 
 I have been beaten down too much and been told I am not good enough too many times and I know that is not the case, but the fact remains, those voices still are there, they still speak and when another rejection email comes in the inbox, it is just another case of I am never going to be good enough even with the skills I have and the learning I do daily. Never good enough.
 
-My heart tells me to quit. that it can't take any more rejection. There are issues behind that which I won't go into. My gut, my gut tells me to keep fighting like I always have and never quit. I have ten to fifteen years left in me and I'm not to stop now.
+My heart tells me to quit. That it can't take any more rejection. There are issues behind that which I won't go into. My gut, my gut tells me to keep fighting like I always have and never quit. I have ten to fifteen years left in me and I'm not to stop now.
 
 I don't know or think I have it in me anymore. The constant being beaten down needs to end.
 
