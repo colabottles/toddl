@@ -16,7 +16,7 @@ layout: layouts/post.njk
 
 Usually I see that quote attributed to Winston Churchill, of whom I do not particularly care for, but the quote is something I have long subscribed to since I could remember first seeing the quote some time in middle school.
 
-Also, I know there are others who have had a rougher time. I know there are those who have had more hurdles and barriers than I. I also know I am a white guy in tech and that comes with privilege. Privilege that I know I have benefitted from in the past in and out of tech. This is not a story about &laquo;Oh woe is me&raquo;.
+Also, I know there are others who have had a rougher time. I know there are those who have had more hurdles and barriers than I. I also know I am a white guy in tech and that comes with privilege. Privilege that I know I have benefitted from in the past in and out of tech. This is not a story about &lquot;Oh woe is me&rquot;.
 
 It's a story of how the constant beating down has worn me out to the end. There is only so much someone can take. I have seen this with all my friends and peole in tech. Not just me. This is a story though of how it sucks to be in a place where you no longer know what to do or feel.
 
@@ -32,7 +32,7 @@ I knew this was something I **HAD** to do as a career.
 
 So I learned. And learned. And kept learning up until this very day.
 
-So when I started doing websites back around 1997 for kicks, I decided maybe I could do this thing professionally and started my first &laquo;company&raquo;. &laquo;North Country Web Design&raquo;. Even bought a overpriced ad for the Yellow Pages.
+So when I started doing websites back around 1997 for kicks, I decided maybe I could do this thing professionally and started my first &lquot;company&rquot;. &lquot;North Country Web Design&rquot;. Even bought a overpriced ad for the Yellow Pages.
 
 <blockquote cite="H.G. Wells">If you fell down yesterday, stand up today.</blockquote>
 
@@ -65,9 +65,9 @@ This was the one that got to me. Granted, I let my emtions get the better of me 
 
 I see it all the time, folks getting jobs, you can learn at the job while on the job, such great succcess stories that I am very happy for all those people, don't get me wrong. If you have applied to as many places I have you start to wonder when the hell am I going to get a shot&quest;
 
-That is what I am facing now. I feel like giving up, to saying, &laquo;To hell with all this!&raquo; and I have to some people. I am drained and tired of trying to find a home with a company that wil have me because none of them don't. Maybe that's a sign.
+That is what I am facing now. I feel like giving up, to saying, &lquot;To hell with all this!&rquot; and I have to some people. I am drained and tired of trying to find a home with a company that wil have me because none of them don't. Maybe that's a sign.
 
-Then I was saying last night, that a friend of mine once told me, &laquo;I'm so happy I didn't get all the things I ever wanted, because I wouldn't be where I am today if I had.&raquo; And you know what&quest; He is right.
+Then I was saying last night, that a friend of mine once told me, &lquot;I'm so happy I didn't get all the things I ever wanted, because I wouldn't be where I am today if I had.&rquot; And you know what&quest; He is right.
 
 But this. Just the chance. The chance to learn, to work in a group, to work and succeed. To make great things that benefit and create accessible, inclusive things. You begin to wonder.
 
