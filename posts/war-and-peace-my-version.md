@@ -28,7 +28,7 @@ Then however, the more I poured my heart and soul into making things, creating w
 
 I saw a Commodore PET 2001 series running in that classroom I remember so vividly walking by. Then, when we moved from Maine to New Hampshire, I saw them again. Math classroom, one was open, one was running Oregon Trail. I was mesmerised. I wanted to know how they worked and what made them tick.
 
-I knew this was something I **HAD** to do as a career.
+I knew this was something I *had* to do as a career.
 
 So I learned. And learned. And kept learning up until this very day.
 
