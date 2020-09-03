@@ -1328,9 +1328,9 @@ img.content__image {
   aspect-ratio: 1 / 1;
 }
 
-img.lazyload .article-image {
+/* img.lazyload .article-image {
   transform: scale(0.5);
-}
+} */
 
 iframe,
 video {
