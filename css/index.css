@@ -1325,11 +1325,12 @@ img.content__image {
 }
 
 .article-wrapper img.lazyload {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
 }
 
 img.lazyload .article-image {
-  aspect-ratio: 4 / 3;
+  
 }
 
 iframe,
