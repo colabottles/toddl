@@ -20,7 +20,11 @@ templateClass: tmpl-home
 
         <li class="article-wrapper">
           {%- for post in collections.career | reverse -%}
-          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1599926412/images/slim_ulrpbc.webp" alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1599926412/images/slim_ulrpbc.webp" class="lazyload" />
+          <a href="{{ post.url }}">
+            <picture>
+              <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1599930329/images/slim_orig_y3gys6.webp" media="(min-width: 800px)">
+              <img src="https://res.cloudinary.com/colabottles/image/upload/v1599930905/images/slim_comp_boxwtg.jpg" alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1599930905/images/slim_comp_boxwtg.jpg" class="lazyload" />
+            </picture>
             <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
         </li>
@@ -38,7 +42,11 @@ templateClass: tmpl-home
 
         <li class="article-wrapper">
           {%- for post in collections.zoom | reverse -%}
-          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload/v1599926412/images/zoom_efm0et.webp" alt="The Zoom logo on a blue background." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1599926412/images/zoom_efm0et.webp" class="lazyload" />
+          <a href="{{ post.url }}">
+            <picture>
+              <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1599930332/images/zoom_hfuqld.webp" media="(min-width: 800px)">
+              <img src="https://res.cloudinary.com/colabottles/image/upload/v1599930908/images/zoom_comp_ritoto.jpg" alt="The Zoom logo on a blue background." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1599930908/images/zoom_comp_ritoto.jpg" class="lazyload" />
+            </picture>
         <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
         </li>
