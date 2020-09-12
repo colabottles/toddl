@@ -1425,7 +1425,8 @@ video {
   }
 
   header h1 {
-    font-size: var(--heading3-font);
+    font-size: var(--heading1-font);
+    font-family: var(--font-family-heading-sm)
     line-height: var(--line-height-medium);
   }
 
