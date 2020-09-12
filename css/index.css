@@ -1321,8 +1321,8 @@ img.content__image {
 }
 
 .article-wrapper img.lazyload {
-  aspect-ratio: 4 / 3;
   object-fit: contain;
+  transform: scale(0.75);
 }
 
 iframe,
