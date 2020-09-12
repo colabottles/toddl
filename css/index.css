@@ -275,13 +275,10 @@ nav.foot {
   justify-content: space-between;
 }
 
-header h1 {
-  font-size: var(--heading1-font);
-  font-family: var(--font-family-sans);
-}
-
 h1.home {
   color: var(--green);
+  font-size: var(--heading1-font);
+  font-family: var(--font-family-sans);
   width: 9ch;
 }
 
@@ -315,7 +312,8 @@ main h2 {
 }
 
 .about-intro h2 {
-  font-size: var(--heading2-home-font); /* TODO - Change font size lower */
+  font-size: var(--heading2-home-font);
+  /* TODO - Change font size lower */
   font-family: var(--font-family-sans);
   font-weight: 900;
   line-height: var(--line-height-large);
