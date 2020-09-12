@@ -20,7 +20,15 @@ templateClass: tmpl-home
 
         <li class="article-wrapper">
           {%- for post in collections.career | reverse -%}
-          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/slim.webp" alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/slim.webp" class="lazyload" srcset="small.jpg 256w, medium.jpg 480w, large.jpg 512w" />
+          <a href="{{ post.url }}"><img
+        sizes="(min-width: 30em) 28em, 100vw"
+        srcset="https://res.cloudinary.com/colabottles/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/slim.webp 256w,
+                https://res.cloudinary.com/colabottles/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/slim.webp 512w,
+                https://res.cloudinary.com/colabottles/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/slim.webp 768w,
+                https://res.cloudinary.com/colabottles/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/slim.webp 1024w,
+                https://res.cloudinary.com/colabottles/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/slim.webp 1280w"
+        src="https://res.cloudinary.com/colabottles/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/slim.webp"
+        alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/slim.webp" class="lazyload" />
             <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
         </li>
