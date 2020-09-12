@@ -35,15 +35,31 @@ templateClass: tmpl-home
 
         <li class="article-wrapper">
           {%- for post in collections.rwd | reverse -%}
-            <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/rwd.webp" alt="The A Book Apart book number four, Responsive Web Design by Ethan Marcotte" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/rwd.webp" class="lazyload" srcset="small.jpg 256w, medium.jpg 480w, large.jpg 512w" />
+            <a href="{{ post.url }}"><img
+        sizes="(min-width: 30em) 28em, 100vw"
+        srcset="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/rwd.webp 256w,
+                https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/rwd.webp 512w,
+                https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/rwd.webp 768w,
+                https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/rwd.webp 1024w,
+                https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/rwd.webp 1280w"
+        src="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/rwd.webp"
+        alt="The A Book Apart book number four, Responsive Web Design by Ethan Marcotte" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/rwd.webp" class="lazyload" />
             <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
         </li>
 
         <li class="article-wrapper">
           {%- for post in collections.zoom | reverse -%}
-          <a href="{{ post.url }}"><img src="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/zoom.webp" alt="The Zoom logo on a blue background." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/zoom.webp" class="lazyload" srcset="small.jpg 256w, medium.jpg 480w, large.jpg 512w" />
-            <h4>{{ post.data.title }}</h4></a>
+          <a href="{{ post.url }}"><img
+        sizes="(min-width: 30em) 28em, 100vw"
+        srcset="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/zoom.webp 256w,
+                https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/zoom.webp 512w,
+                https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/zoom.webp 768w,
+                https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/zoom.webp 1024w,
+                https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/zoom.webp 1280w"
+        src="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/zoom.webp"
+        alt="The Zoom logo on a blue background." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload//ar_4:3,c_fill/c_scale,w_auto,dpr_auto/images/zoom.webp" class="lazyload" />
+        <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
         </li>
       </ul>
