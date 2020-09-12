@@ -213,7 +213,7 @@ q:before {
   --small: 515px;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Source Sans Variable';
   font-weight: 200 900;
   font-display: swap;
@@ -259,7 +259,7 @@ q:before {
   font-weight: 1 999;
   font-stretch: 10% 100%;
   font-style: normal;
-}
+} */
 
 body {
   background-color: var(--dark);
@@ -919,10 +919,6 @@ section.article__body {
   grid-column: 3/12;
 }
 
-section.article__body {
-  padding-left: 5rem;
-}
-
 article.article__body {
   align-content: start;
   display: grid;
@@ -1329,9 +1325,7 @@ img.content__image {
   object-fit: contain;
 }
 
-img.lazyload .article-image {
-  
-}
+img.lazyload .article-image {}
 
 iframe,
 video {
@@ -1541,7 +1535,7 @@ video {
 
   h2.article__title {
     font: 3em 'BildVariableV2';
-    font-variation-settings: 'wght'600, 'wdth'40;
+    font-variation-settings: 'wght'600, 'wdth'100;
     grid-column: 2/7;
     padding: 0;
     width: 90vw;
