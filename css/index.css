@@ -187,7 +187,7 @@ q:before {
   --heading1-font: calc(1.3125rem + 0.3vw);
   --heading2-font: calc(2.5rem + 0.3vw);
   --heading3-font: calc(1.75rem + 0.3vw);
-  --heading2-home-font: calc(3rem + 0.3vw);
+  --heading2-home-font: calc(3.5rem + 0.3vw);
   --font-body-home: calc(1.3125rem + 0.3vw);
 
   --font-body-article-h3: calc(2.25rem + 0.3vw);
@@ -313,7 +313,6 @@ main h2 {
 
 .about-intro h2 {
   font-size: var(--heading2-home-font);
-  /* TODO - Change font size lower */
   font-family: var(--font-family-sans);
   font-weight: 900;
   line-height: var(--line-height-large);
@@ -662,7 +661,7 @@ li.blogroll-list-blogroll {
 }
 
 .home-container h3 {
-  font-size: var(--font-size-article);
+  font-size: var(--font-size-large);
   font-family: var(--font-family-sans);
   font-weight: 400;
   color: var(--white);
