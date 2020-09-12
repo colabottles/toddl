@@ -180,8 +180,8 @@ q:before {
   --ecto: #a3af7c;
   --dark: #232323;
 
-  --font-family-sans: 'Source Sans Variable', 'Open Sans', Arial, Helvetica, sans-serif;
-  --font-family-serif: 'Lora-VF', Georgia, 'Times New Roman', serif;
+  --font-family-sans: 'Open Sans', Arial, Helvetica, sans-serif;
+  --font-family-serif: Georgia, 'Times New Roman', serif;
   --font-family-heading-sm: 'Raleway', Arial, Helvetica, sans-serif;
 
   --heading1-font: calc(1.3125rem + 0.3vw);
@@ -212,54 +212,6 @@ q:before {
   --medium: 960px;
   --small: 515px;
 }
-
-/* @font-face {
-  font-family: 'Source Sans Variable';
-  font-weight: 200 900;
-  font-display: swap;
-  font-style: normal;
-  font-stretch: normal;
-  src: url('/fonts/SourceSansVariable_Roman_subset.woff2') format('woff2'), url('/fonts/SourceSansVariable_Roman_subset.woff') format('woff'), url('/fonts/SourceSansVariable_Roman_subset.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Source Sans Variable';
-  font-weight: 200 900;
-  font-display: swap;
-  font-style: italic;
-  font-stretch: normal;
-  src: url('/fonts/SourceSansVariable_Italic_subset.woff2') format('woff2'), url('/fonts/SourceSansVariable_Italic_subset.woff') format('woff'), url('/fonts/SourceSansVariable_Italic_subset.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'BildVariableV2';
-  src: url('/fonts/BildVariableV2-VF.woff2');
-  src: url('/fonts/BildVariableV2-VF.woff2') format('woff2-variations');
-  font-display: swap;
-  font-weight: 1 999;
-  font-stretch: 10% 100%;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BildVariableV2';
-  src: url('/fonts/BildVariableV2-VF.woff');
-  src: url('/fonts/BildVariableV2-VF.woff') format('woff');
-  font-display: swap;
-  font-weight: 1 999;
-  font-stretch: 10% 100%;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BildVariableV2';
-  src: url('/fonts/BildVariableV2-VF.ttf');
-  src: url('/fonts/BildVariableV2-VF.ttf') format('ttf');
-  font-display: swap;
-  font-weight: 1 999;
-  font-stretch: 10% 100%;
-  font-style: normal;
-} */
 
 body {
   background-color: var(--dark);
