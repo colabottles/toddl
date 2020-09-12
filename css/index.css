@@ -438,9 +438,9 @@ a[href]:hover {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   text-decoration: underline;
-  text-decoration-color: var(--white);
+  /* text-decoration-color: var(--white);
   text-decoration-skip: ink;
-  text-underline-position: under;
+  text-underline-position: under; */
 }
 
 a.button {
