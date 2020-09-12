@@ -1325,8 +1325,6 @@ img.content__image {
   object-fit: contain;
 }
 
-img.lazyload .article-image {}
-
 iframe,
 video {
   justify-self: center;
