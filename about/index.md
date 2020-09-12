@@ -10,7 +10,7 @@ templateClass: tmpl-post
 
 Hi, I'm Todd. I am a Senior Front End Developer and Accessibility Advocate.
 
-I have over twenty one years of experience with the web. It all started with seeing a Commodore PET running Oregon Trail in fifth grade. That fascination with moving pixels on a computer screen led to a Commodore64 and the user manual that came with it and programming in BASIC.
+I have over twenty one years of experience with the web. It all started with seeing a Commodore PET running Oregon Trail in fifth grade. That fascination with moving pixels on a computer screen led to a Commodore64 and the user manual that came with it and programming in BASIC. I am currently self-taught in all areas of HTML, CSS, and vanilla JavaScript, and proficient with React. I am learning Vue and NextJS, experimenting with all sorts of cool CSS features.
 
 I have a passion for the web and making things on the web. Taking things apart and re-building them. I am interested in a lot of different things, mainly outdoors, food, and travel. Photography, typography, design and User Experience. Web conferences and meeting people in the web industry.
 
