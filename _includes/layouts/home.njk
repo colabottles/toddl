@@ -16,8 +16,8 @@ templateClass: tmpl-home
         <li class="article-wrapper">
           {%- for post in collections.career | reverse -%}
           <a href="{{ post.url }}">
-            <picture sizes="33.3vw, 50vw, 100vw">
-              <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1599930329/images/slim_orig_y3gys6.webp" media="(min-width: 400px)">
+            <picture>
+              <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1599930329/images/slim_orig_y3gys6.webp" sizes="33.3vw, 50vw, 100vw" media="(min-width: 400px)">
               <img src="https://res.cloudinary.com/colabottles/image/upload/v1599930905/images/slim_comp_boxwtg.jpg" alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1599930905/images/slim_comp_boxwtg.jpg" class="lazyload" />
             </picture>
             <h4>{{ post.data.title }}</h4></a>
@@ -27,8 +27,8 @@ templateClass: tmpl-home
         <li class="article-wrapper">
           {%- for post in collections.rwd | reverse -%}
             <a href="{{ post.url }}">
-              <picture sizes="33.3vw, 50vw, 100vw">
-                <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1599930326/images/rwd_cznuuv.webp" media="(min-width: 400px)">
+              <picture>
+                <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1599930326/images/rwd_cznuuv.webp" sizes="33.3vw, 50vw, 100vw" media="(min-width: 400px)">
                 <img src="https://res.cloudinary.com/colabottles/image/upload/v1599930903/images/rwd_comp_drn0al.jpg" alt="The A Book Apart book number four, Responsive Web Design by Ethan Marcotte" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1599930903/images/rwd_comp_drn0al.jpg" class="lazyload" />
               </picture>
             <h4>{{ post.data.title }}</h4></a>
@@ -38,8 +38,8 @@ templateClass: tmpl-home
         <li class="article-wrapper">
           {%- for post in collections.zoom | reverse -%}
           <a href="{{ post.url }}">
-            <picture sizes="33.3vw, 50vw, 100vw">
-              <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1599930332/images/zoom_hfuqld.webp" media="(min-width: 400px)">
+            <picture>
+              <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1599930332/images/zoom_hfuqld.webp" sizes="33.3vw, 50vw, 100vw" media="(min-width: 400px)">
               <img src="https://res.cloudinary.com/colabottles/image/upload/v1599930908/images/zoom_comp_ritoto.jpg" alt="The Zoom logo on a blue background." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1599930908/images/zoom_comp_ritoto.jpg" class="lazyload" />
             </picture>
         <h4>{{ post.data.title }}</h4></a>
