@@ -664,7 +664,7 @@ li.blogroll-list-blogroll {
 }
 
 .home-container h3 {
-  font-size: var(--font-size-xlarge);
+  font-size: var(--font-size-large);
   font-family: var(--font-family-sans);
   font-weight: 400;
   color: var(--white);
