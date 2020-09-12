@@ -891,7 +891,7 @@ h2.blogroll-list-blogroll-title {
 }
 
 .article__header {
-  grid-column: 2;
+  grid-row: 1;
 }
 
 .article__meta {
