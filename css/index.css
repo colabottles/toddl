@@ -907,8 +907,6 @@ a.postlist-link {
 time {
   font-family: var(--font-family-sans);
   color: var(--ecto);
-  transform: rotate(180deg);
-  writing-mode: vertical-lr;
 }
 
 time.postlist-date {
@@ -935,6 +933,13 @@ ul.links-list {
   display: grid;
   grid-gap: 0.5em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+picture {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 100vw;
 }
 
 blockquote {
