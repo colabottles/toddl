@@ -17,8 +17,16 @@ templateClass: tmpl-home
           {%- for post in collections.career | reverse -%}
           <a href="{{ post.url }}">
             <picture>
-              <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/slim_lg.jpg">
-              <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/slim_lg.jpg" alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/slim_lg.jpg" class="lazyload" />
+              <source srcset="
+                https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg_c_scale,w_200.jpg 200w,
+                https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg_c_scale,w_547.jpg 547w,
+                https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg_c_scale,w_788.jpg 788w,
+                https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg_c_scale,w_987.jpg 987w,
+                https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg_c_scale,w_1200.jpg 1200w,
+                https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg_c_scale,w_1383.jpg 1383w,
+                https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg_c_scale,w_1400.jpg 1400w 
+              ">
+              <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg_c_scale,w_1400.jpg" alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg_c_scale,w_1400.jpg" class="lazyload" />
             </picture>
             <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
