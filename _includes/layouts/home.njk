@@ -16,33 +16,27 @@ templateClass: tmpl-home
         <li class="article-wrapper">
           {%- for post in collections.career | reverse -%}
           <a href="{{ post.url }}">
-            <picture>
-              <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/slim_lg.jpg">
-              <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/slim_lg.jpg" alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/slim_lg.jpg" class="lazyload" />
-            </picture>
-            <h4>{{ post.data.title }}</h4></a>
+            <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/slim_lg.jpg" alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/slim_lg.jpg" class="lazyload" />
+            <h4>{{ post.data.title }}</h4>
+          </a>
           {%- endfor -%}
         </li>
 
         <li class="article-wrapper">
           {%- for post in collections.rwd | reverse -%}
             <a href="{{ post.url }}">
-              <picture>
-                <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg.jpg">
-                <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg.jpg" alt="The A Book Apart book number four, Responsive Web Design by Ethan Marcotte" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg.jpg" class="lazyload" />
-              </picture>
-            <h4>{{ post.data.title }}</h4></a>
+              <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg.jpg" alt="The A Book Apart book number four, Responsive Web Design by Ethan Marcotte" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg.jpg" class="lazyload" />
+              <h4>{{ post.data.title }}</h4>
+            </a>
           {%- endfor -%}
         </li>
 
         <li class="article-wrapper">
           {%- for post in collections.zoom | reverse -%}
           <a href="{{ post.url }}">
-            <picture>
-              <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/zoom_lg.jpg">
-              <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/zoom_lg.jpg" alt="The Zoom logo on a blue background." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/zoom_lg.jpg" class="lazyload" />
-            </picture>
-        <h4>{{ post.data.title }}</h4></a>
+            <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/zoom_lg.jpg" alt="The Zoom logo on a blue background." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/zoom_lg.jpg" class="lazyload" />
+            <h4>{{ post.data.title }}</h4>
+          </a>
           {%- endfor -%}
         </li>
       </ul>
