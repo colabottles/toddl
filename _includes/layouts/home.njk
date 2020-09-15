@@ -44,9 +44,26 @@ templateClass: tmpl-home
         <li class="article-wrapper">
           {%- for post in collections.rwd | reverse -%}
             <a href="{{ post.url }}">
-              <picture>
+              {# <picture>
                 <source srcset="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg.jpg">
                 <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg.jpg" alt="The A Book Apart book number four, Responsive Web Design by Ethan Marcotte" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg.jpg" class="cld-responsive lazyload" />
+              </picture> #}
+              <picture>
+                <img
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                rwd_lg_d8ygjy_c_scale,w_200.jpg 200w,
+                rwd_lg_d8ygjy_c_scale,w_423.jpg 423w,
+                rwd_lg_d8ygjy_c_scale,w_592.jpg 592w,
+                rwd_lg_d8ygjy_c_scale,w_727.jpg 727w,
+                rwd_lg_d8ygjy_c_scale,w_866.jpg 866w,
+                rwd_lg_d8ygjy_c_scale,w_980.jpg 980w,
+                rwd_lg_d8ygjy_c_scale,w_1104.jpg 1104w,
+                rwd_lg_d8ygjy_c_scale,w_1217.jpg 1217w,
+                rwd_lg_d8ygjy_c_scale,w_1325.jpg 1325w,
+                rwd_lg_d8ygjy_c_scale,w_1400.jpg 1400w"
+                src="rwd_lg_d8ygjy_c_scale,w_1400.jpg"
+                alt="Slim Pickens in Doctor Strangelove riding the atom bomb.">
               </picture>
             <h4>{{ post.data.title }}</h4></a>
           {%- endfor -%}
