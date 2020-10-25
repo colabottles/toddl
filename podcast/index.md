@@ -1,6 +1,6 @@
 ---
 layout: layouts/podcast.njk
-title: Events
+title: Podcast
 date: 2020-25-10
 tags:
   - nav
