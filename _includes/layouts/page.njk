@@ -19,7 +19,7 @@
           </a>
         </h1>
         <nav title="main-navigation" role="navigation">
-          <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation">            
+          <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation">
             {%- for nav in collections.nav | sort(attribute="date") -%}
               <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" tabindex="0" role="option" aria-selected="true">
                 <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
@@ -40,7 +40,7 @@
             <li class="nav-item"><a href="{{ '/blogroll' | url }}">Blogroll</a></li>
             <li class="nav-item"><a href="{{ '/events' | url }}">Events</a></li>
             <li class="nav-item"><a href="{{ '/uses' | url }}">Uses</a></li>
-            <li class="nav-item"><a href="{{ '/podcast' | url }}">Podcast</a></li>
+            <li class="nav-item"><a href="{{ '/resources' | url }}">Resources</a></li>
             <li class="nav-item"><a href="{{ '/a11y' | url }}">A11y</a></li>
           </ul>
         <h2>#BlackLivesMatter</h2>
