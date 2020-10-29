@@ -12,7 +12,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-<img src="https://res.cloudinary.com/colabottles/image/upload/v1603962096/images/anxiety.jpg" alt="A woman clutching at the neck line of her shirt with eyes closed in contemplation with the photo having a red overlay." />
+![A woman clutching at the neck line of her shirt with eyes closed in contemplation with the photo having a red overlay.](https://res.cloudinary.com/colabottles/image/upload/v1603962096/images/anxiety.jpg "A woman clutching at the neck line of her shirt with eyes closed in contemplation with the photo having a red overlay.")
 
 <caption>Photo by Chaozzy Lin on Unsplash</caption>
 
@@ -30,7 +30,7 @@ The every three years skipping to a new role has me shaking my head. Maybe it&#8
 
 I&#8217;ll be 50 in January. I&#8217;ve applied to places I have familiarity with the product and because I am not some twenty-something kid with plenty of time to spend hours upon hours in front of a computer reading and soaking everything in, I am disposable to young millennial tech. Not needed. Not wanted.
 
-My skills are just not wanted at all. I believe this to be fact. I believe this to be truth. Not only an opinion. There is **always** an element of some sort of framework knowledge that &#8220;needs&#8221; to be a &#8220;requirement&#8221; in a front-end position which makes me think of the articles written by Chris Coyier about just this thing here: [https://css-tricks.com/the-widening-responsibility-for-front-end-developers/](The Widening Responsibility for Front-End Developers) and here [https://css-tricks.com/the-great-divide/](The Great Divide).
+My skills are just not wanted at all. I believe this to be fact. I believe this to be truth. Not only an opinion. There is **always** an element of some sort of framework knowledge that &#8220;needs&#8221; to be a &#8220;requirement&#8221; in a front-end position which makes me think of the articles written by Chris Coyier about just this thing here: [The Widening Responsibility for Front-End Developers](https://css-tricks.com/the-widening-responsibility-for-front-end-developers/) and here [The Great Divide](https://css-tricks.com/the-great-divide/).
 
 I am down but not out and I have 10&#8211;15 years left in me and no one in tech is going to tell me when I am out. I am going to dictate when that happens. I have a thirst for knowledge and a desire to learn and I learn by doing. That&#8217;s how I have rolled for 21+ years. The window of opportunity closes little by little, day-by-day.
 
