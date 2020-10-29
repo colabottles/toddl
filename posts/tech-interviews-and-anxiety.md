@@ -9,12 +9,11 @@ tags:
   - interviews
   - anxiety
   - jobsearch
+  - career
 layout: layouts/post.njk
 ---
 
-![A woman clutching at the neck line of her shirt with eyes closed in contemplation with the photo having a red overlay.](https://res.cloudinary.com/colabottles/image/upload/v1603962096/images/anxiety.jpg "A woman clutching at the neck line of her shirt with eyes closed in contemplation with the photo having a red overlay.")
-
-<caption>Photo by Chaozzy Lin on Unsplash</caption>
+![A woman clutching at the neck line of her shirt with eyes closed in contemplation with the photo having a red overlay.](https://res.cloudinary.com/colabottles/image/upload/v1603962096/images/anxiety.jpg "Photo by Chaozzy Lin on Unsplash.")
 
 I recently went through the interview phase for a job and it was the furthest I have got in an interview phase in 5 years. I did not end up getting the job. I feel the deciding factor was the fact that I do no interview well.
 
