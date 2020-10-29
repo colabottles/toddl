@@ -9,7 +9,6 @@ tags:
   - interviews
   - anxiety
   - jobsearch
-  - career
 layout: layouts/post.njk
 ---
 
