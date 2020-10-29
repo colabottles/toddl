@@ -8,8 +8,14 @@ tags:
   - hiring
   - interviews
   - anxiety
+  - jobsearch
+  - career
 layout: layouts/post.njk
 ---
+
+<img src="https://res.cloudinary.com/colabottles/image/upload/v1603962096/images/anxiety.jpg" alt="A woman clutching at the neck line of her shirt with eyes closed in contemplation with the photo having a red overlay." />
+
+<summary>Photo by <a href="https://unsplash.com/@chaozzy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Chaozzy Lin</a> on <a href="https://unsplash.com/s/photos/anxiety?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></summary>
 
 I recently went through the interview phase for a job and it was the furthest I have got in an interview phase in 5 years. I did not end up getting the job. I feel the deciding factor was the fact that I do no interview well.
 
