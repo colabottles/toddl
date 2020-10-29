@@ -3,7 +3,9 @@
   "version": "5.0.0",
   "description": "The personal webiste of Todd Libby.",
   "scripts": {
+    "test": "echo “Error: no test specified” && exit 1",
     "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy"
   },
