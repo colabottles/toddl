@@ -3,7 +3,7 @@ title: RWD Turns Ten
 description: The tenth anniversary of the birth of a revolution in web design.
 date: 2020-05-25
 tags:
-  - respeonsive
+  - responsive
   - web
   - design
   - rwd

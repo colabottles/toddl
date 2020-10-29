@@ -14,6 +14,15 @@ templateClass: tmpl-home
     <h3>Latest Articles</h3>
       <ul class="article-sections">
         <li class="article-wrapper">
+          {%- for post in collections.anxiety | reverse -%}
+          <a href="{{ post.url }}">
+            <img src="https://res.cloudinary.com/colabottles/image/upload/v1603962096/images/anxiety.jpg" alt="A woman clutching at the neck line of her shirt with eyes closed in contemplation with the photo having a red overlay." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1603962096/images/anxiety.jpg" class="lazyload" />
+            <h4>{{ post.data.title }}</h4>
+          </a>
+          {%- endfor -%}
+        </li>
+
+        <li class="article-wrapper">
           {%- for post in collections.career | reverse -%}
           <a href="{{ post.url }}">
             <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/slim_lg.jpg" alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/slim_lg.jpg" class="lazyload" />
@@ -28,15 +37,6 @@ templateClass: tmpl-home
               <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg.jpg" alt="The A Book Apart book number four, Responsive Web Design by Ethan Marcotte" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/rwd_lg.jpg" class="lazyload" />
               <h4>{{ post.data.title }}</h4>
             </a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.zoom | reverse -%}
-          <a href="{{ post.url }}">
-            <img src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/zoom_lg.jpg" alt="The Zoom logo on a blue background." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1600115489/images/zoom_lg.jpg" class="lazyload" />
-            <h4>{{ post.data.title }}</h4>
-          </a>
           {%- endfor -%}
         </li>
       </ul>
