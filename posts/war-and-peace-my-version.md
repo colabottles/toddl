@@ -56,7 +56,7 @@ Now I'm at the crossroads. Do I quit&quest; Do I remain&quest; Do I sail off int
 
 <div class="content__placeholder">
   <figure>
-    <img class="content__image" src="https://res.cloudinary.com/colabottles/image/upload/v1598383747/images/slim_tcpmre.webp" alt="Slim Pickens in Dr. Strangelove riding the atom bomb out of the plane like a rodeo cowboy" />
+    <img class="content__image" src="https://res.cloudinary.com/colabottles/image/upload/v1603978187/images/dr_strangelove.jpg" alt="Slim Pickens in Dr. Strangelove riding the atom bomb out of the plane like a rodeo cowboy" />
     <figcaption>Slim Pickens in Dr. Strangelove riding the atom bomb out of the plane like a rodeo cowboy.</figcaption>
   </figure>
 </div>
