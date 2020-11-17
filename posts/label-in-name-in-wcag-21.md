@@ -14,7 +14,7 @@ layout: layouts/post.njk
 
 ## Label in Name
 
-![A user sitting in front of a computer using a Braille reader.](https://res.cloudinary.com/colabottles/image/upload/v1605614362/images/accessibility.jpg "Photo by Sigmund on Unsplash.")
+![A user sitting in front of a computer using a Braille reader.](https://res.cloudinary.com/colabottles/image/upload/v1605616284/images/accessibility.jpg "Photo by Sigmund on Unsplash.")
 
 Imagine yourself sitting in front of your computer and you're filling out a very long form with a lot of imfornation. It is taking you a few minutes to gather the niformation needed to submit to Company XYZ we shall name them regarding a new product you are looking to purchase.
 
