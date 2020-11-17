@@ -16,7 +16,7 @@ layout: layouts/post.njk
 
 ![A user sitting in front of a computer using a Braille reader.](https://res.cloudinary.com/colabottles/image/upload/v1605616284/images/accessibility.jpg "Photo by Sigmund on Unsplash.")
 
-Imagine yourself sitting in front of your computer and you're filling out a very long form with a lot of imfornation. It is taking you a few minutes to gather the niformation needed to submit to Company XYZ we shall name them regarding a new product you are looking to purchase.
+Imagine yourself sitting in front of your computer and you're filling out a very long form with a lot of information. It is taking you a few minutes to gather the information needed to submit to Company XYZ we shall name them regarding a new product you are looking to purchase.
 
 Then at the end of the form where the &ldquo;Send&rdquo; button is, you click the button and nothing happens. You click it again. Again nothing. You feverishly click and _still_ nothing happens. Now if you are like me, you tend to look at the source code to find out what is going on. So you check it out because you know as a developer to do so and the source code reads:
 
