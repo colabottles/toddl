@@ -6,13 +6,22 @@ templateClass: tmpl-home
   <article class="about-intro">
     <div class="home-container">
       <h2>Hello!</h2>
-      <h3>My name is Todd and I enjoy learning programming and design on the web and have done so professionally for over twenty-one years. I am very passionate about accessibility on the web as well as diversity and inclusion in tech.</h3>
+      <h3>Welcome to my website. Here you will see what I do, what I think, and what I have to share with you, the visitor. Want to hire me because you need accessible websites or applications&quest; Looking to make those pesky React apps fully accessible and inclusive&quest; Feel free to contact me, I am looking for full-time employment. I love what I do and I am damn good at my job. Making things accessible and inclusive.</h3>
     </div>
   </article>
 
   <div class="articles">
     <h3>Latest Articles</h3>
       <ul class="article-sections">
+        <li class="article-wrapper">
+          {%- for post in collections.screenreader | reverse -%}
+            <a href="{{ post.url }}">
+              <img src="https://res.cloudinary.com/colabottles/image/upload/v1605609914/images/accessibility.jpg" alt="A user sitting in front of a computer using a Braille reader" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1605609914/images/accessibility.jpg" class="lazyload" />
+              <h4>{{ post.data.title }}</h4>
+            </a>
+          {%- endfor -%}
+        </li>
+
         <li class="article-wrapper">
           {%- for post in collections.anxiety | reverse -%}
           <a href="{{ post.url }}">
@@ -28,15 +37,6 @@ templateClass: tmpl-home
             <img src="https://res.cloudinary.com/colabottles/image/upload/v1603978187/images/dr_strangelove.jpg" alt="Slim Pickens in Doctor Strangelove riding the atom bomb." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1603978187/images/dr_strangelove.jpg" class="lazyload" />
             <h4>{{ post.data.title }}</h4>
           </a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.rwd | reverse -%}
-            <a href="{{ post.url }}">
-              <img src="https://res.cloudinary.com/colabottles/image/upload/v1603978190/images/responsive_web_design.jpg" alt="The A Book Apart book number four, Responsive Web Design by Ethan Marcotte" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1603978190/images/responsive_web_design.jpg" class="lazyload" />
-              <h4>{{ post.data.title }}</h4>
-            </a>
           {%- endfor -%}
         </li>
       </ul>
