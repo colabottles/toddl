@@ -1,7 +1,7 @@
 ---
 title: Label in Name in WCAG 2.1
 description: What is new in WCAG 2.1 Label in Name.
-date: 2019-08-23
+date: 2020-11-17
 tags:
   - accessibility
   - a11y
