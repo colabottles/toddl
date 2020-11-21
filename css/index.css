@@ -605,7 +605,7 @@ li.postitem-item {
 }
 
 .about-intro p {
-  font-size: var(--font-size-xlarge);
+  font-size: var(--font-size-large);
   font-family: var(--font-family-sans);
   line-height: var(--line-height-small);
   margin-bottom: 1em
