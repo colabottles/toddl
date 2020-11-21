@@ -944,14 +944,14 @@ blockquote {
   width: auto
 }
 
-blockquote:after {
+/* blockquote:after {
   color: var(--ecto);
   content: "\2013 \2003"attr(cite);
   display: block;
   font-size: var(--font-size-article);
   text-align: right;
   padding: 0.5rem 1rem 0 0
-}
+} */
 
 blockquote a {
   cursor: pointer;

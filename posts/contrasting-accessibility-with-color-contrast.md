@@ -17,7 +17,8 @@ How do we make it better as a community of designers and developers? We must thi
 
 How do we make it better as a community of designers and developers? We must think about these folks and this is where the need for accessibility in the process comes in. While accessibility encompasses a lot of different aspects of design and development, I am focusing right now solely on color contrast in this article.
 
-How do we improve accessibility for the visually impaired? According to the World Health Organization (WHO);[1]
+How do we improve accessibility for the visually impaired? According to the World Health Organization (WHO); [1]
+
     - Globally, at least 2.2 billion people have a vision impairment or blindness, of whom at least 1 billion have a vision impairment that could have been prevented or has yet to be addressed.
     - Of these 1 billion people, this includes those with moderate or severe distance vision impairment or blindness due to unaddressed refractive error, as well as near vision impairment caused by unaddressed presbyopia.
     - Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts.
@@ -33,7 +34,7 @@ Color contrast is defined as;
 
 1. the change in the appearance of a colour surrounded by another colour; for example, grey looks bluish if surrounded by yellow.
 
-> “Contrasting colors, also known as complementary colors, are colors from opposing segments of the color wheel. Colors that are directly across from one another on a basic color wheel provide maximum contrast.”[2] — Rachel R. Vasquez
+> “Contrasting colors, also known as complementary colors, are colors from opposing segments of the color > wheel. Colors that are directly across from one another on a basic color wheel provide maximum contrast.” [2]
 
 There are at least 2.2 billion people who suffer from a vision impairment or some form of color blindness and I'll share with you some of those types of color blindness and vision impairments below.
 
@@ -63,7 +64,8 @@ _Tritanopia:_ Is when you are unable to tell the difference between blue and gre
 
 _Monochromacy_: Is also known as Complete Color Blindness. Where you cannot see colors at all. This does not mean a person is entirely blind, it means they cannot see colors.
 
-Men have a much higher risk than women for color blindness. You’re also more likely to have color blindness if you:[3]
+Men have a much higher risk than women for color blindness. You’re also more likely to have color blindness if you: [3]
+
     - Have a family history of color blindness.
     - Have certain eye diseases, like glaucoma or age-related macular degeneration. (AMD)
     - Have certain health problems, like diabetes, Alzheimer’s disease, or multiple sclerosis. (MS)
@@ -92,7 +94,9 @@ Alpha, the opacity or transparency of a color, will impact contrast. Alpha is pr
 
 ![The WCAG Contrast Checker](https://res.cloudinary.com/colabottles/image/upload/v1585002465/images/wcagcc_g30ecf.png)
 
-Along with the ![WebAIM Contrast Checker](https://res.cloudinary.com/colabottles/image/upload/v1585002466/images/webaimcc_xmujlm.png).
+Along with the WebAIM Color Contrast Checker
+
+![WebAIM Contrast Checker](https://res.cloudinary.com/colabottles/image/upload/v1585002466/images/webaimcc_xmujlm.png).
 
 [The WAVE Web Extension](https://wave.webaim.org/extension/) and the [Axe Web Accessibility Extension](https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd) are a couple of browser extensions/add-on's I use among other color contrast checking sites and tools.
 
