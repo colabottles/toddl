@@ -838,9 +838,29 @@ h2.blogroll-list-blogroll-title {
   width: 100%;
 }
 
+@font-face {
+  font-family: 'Source Sans 3 VF';
+  font-weight: 200 900;
+  font-style: normal;
+  font-stretch: normal;
+  src: url('WOFF2/VAR/SourceSans3VF-Roman.ttf.woff2') format('woff2'),
+    url('WOFF/VAR/SourceSans3VF-Roman.ttf.woff') format('woff'),
+    url('VAR/SourceSans3VF-Roman.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans 3 VF';
+  font-weight: 200 900;
+  font-style: italic;
+  font-stretch: normal;
+  src: url('WOFF2/VAR/SourceSans3VF-Italic.ttf.woff2') format('woff2'),
+    url('WOFF/VAR/SourceSans3VF-Italic.ttf.woff') format('woff'),
+    url('VAR/SourceSans3VF-Italic.ttf') format('truetype');
+}
+
 h2.article__title {
   display: grid;
-  font: 3em SourceSansVariable_Roman;
+  font: 3em 'Source Sans 3 VF';
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
