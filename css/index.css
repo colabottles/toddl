@@ -869,8 +869,8 @@ h2.article__title {
   font-variation-settings: 'wght'900, 'wdth'100;
   grid-column: 3/12;
   letter-spacing: -.017em;
-  margin: 1rem 0;
-  padding-left: 2.5rem;
+  /* margin: 1rem 0;
+  padding-left: 2.5rem; */
   text-transform: none
 }
 
