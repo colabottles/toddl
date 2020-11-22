@@ -19,10 +19,10 @@ How do we make it better as a community of designers and developers? We must thi
 
 How do we improve accessibility for the visually impaired? According to the World Health Organization (WHO); [1]
 
-    * Globally, at least 2.2 billion people have a vision impairment or blindness, of whom at least 1 billion have a vision impairment that could have been prevented or has yet to be addressed.
-    * Of these 1 billion people, this includes those with moderate or severe distance vision impairment or blindness due to unaddressed refractive error, as well as near vision impairment caused by unaddressed presbyopia.
-    * Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts.
-    * The majority of people with vision impairment are over the age of 50 years.
+* Globally, at least 2.2 billion people have a vision impairment or blindness, of whom at least 1 billion have a vision impairment that could have been prevented or has yet to be addressed.
+* Of these 1 billion people, this includes those with moderate or severe distance vision impairment or blindness due to unaddressed refractive error, as well as near vision impairment caused by unaddressed presbyopia.
+* Globally, the leading causes of vision impairment are uncorrected refractive errors and cataracts.
+* The majority of people with vision impairment are over the age of 50 years.
 
 If your website's target viewers are under age 50, please do not assume that visual impairments do not apply, or that accessibility is not important for all of your viewers. Imagine, visually impaired or not, trying to navigate something like this:
 
@@ -66,11 +66,11 @@ _Monochromacy_: Is also known as Complete Color Blindness. Where you cannot see 
 
 Men have a much higher risk than women for color blindness. You’re also more likely to have color blindness if you: [3]
 
-    * Have a family history of color blindness.
-    * Have certain eye diseases, like glaucoma or age-related macular degeneration(AMD).
-    * Have certain health problems, like diabetes, Alzheimer’s disease, or multiple sclerosis(MS).
-    * Take certain medicines.
-    * Are white.
+* Have a family history of color blindness.
+* Have certain eye diseases, like glaucoma or age-related macular degeneration(AMD).
+* Have certain health problems, like diabetes, Alzheimer’s disease, or multiple sclerosis(MS).
+* Take certain medicines.
+* Are white.
 
 ##### Stargardt's
 

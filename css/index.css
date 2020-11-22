@@ -840,7 +840,7 @@ h2.blogroll-list-blogroll-title {
 
 h2.article__title {
   display: grid;
-  font: 3em SourceSansVariable;
+  font: 3em SourceSansVariable_Roman;
   font-feature-settings: "kern"on, "liga"on, "calt"on;
   -moz-font-feature-settings: "kern"on, "liga"on, "calt"on;
   -webkit-font-feature-settings: "kern"on, "liga"on, "calt"on;
