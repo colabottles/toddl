@@ -94,9 +94,9 @@ Alpha, the opacity or transparency of a color, will impact contrast. Alpha is pr
 
 ![The WCAG Contrast Checker](https://res.cloudinary.com/colabottles/image/upload/v1585002465/images/wcagcc_g30ecf.png)
 
-Along with the WebAIM Color Contrast Checker
+Along with the WebAIM Color Contrast Checker.
 
-![WebAIM Contrast Checker](https://res.cloudinary.com/colabottles/image/upload/v1585002466/images/webaimcc_xmujlm.png).
+![WebAIM Contrast Checker](https://res.cloudinary.com/colabottles/image/upload/v1585002466/images/webaimcc_xmujlm.png)
 
 [The WAVE Web Extension](https://wave.webaim.org/extension/) and the [Axe Web Accessibility Extension](https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd) are a couple of browser extensions/add-on's I use among other color contrast checking sites and tools.
 
@@ -131,12 +131,18 @@ Text requires a higher contrast because people need to read it. Interface compon
 Confirmation messages are important. They confirm that the information requested was submitted; and provide other pertinent information or other instructions. Contrast in forms is crucial to relay that information to users. For example;
 
 > “Please check your inbox to confirm your subscription.”
-> “Your confirmation number will be sent to user@address.com” or
+
+or&hellip;
+
+> “Your confirmation number will be sent to user@address.com”
+
+or&hellip;
+
 > “Your ticket number is 98765. Check your inbox to confirm receipt.”
 
 ![A form submission message in white font on a neon yellow background](https://res.cloudinary.com/colabottles/image/upload/v1585002437/images/ewww_xczuk2.png)
 
-#### WHAT CAN WE DO?
+#### WHAT WE CAN DO
 
 We as designers and developers need to do better, to have a system of checks to make sure that color contrast is an integral part of the design process. We have learned through many mistakes we have seen over the last few years that accessibility reaches a far scope that sometimes is ignored by the masses, myself included.
 
@@ -150,7 +156,7 @@ How can we make sure we’re paying attention to color contrast when we design a
 
 **Use the tools!** Color contrast checkers and accessibility tools. Use them, that's why they are there! They will inform you of any issues before you push to production or go live, saving you (or your company) time and money.
 
-### SUMMARY
+#### SUMMARY
 
 There is a lot of talk about accessibility and we have taken tremendous strides to making the web more accessible but we’re a long way from it being all-inclusive. So let's make the web more inclusive, but also remember how and why.
 
@@ -161,8 +167,6 @@ Let’s remind ourselves of the fact everyone doesn’t have ‘perfect’ or go
 [Jeffrey Zeldman summarized it](https://www.zeldman.com/2019/12/01/bluebeanieday2019/) in his post on Blue Beanie Day (November 30th) when he wrote;
 
 > “...our industry as a whole thinks less and less about accessibility (not that we ever had an A game on the subject), and talks less and less about progressive enhancement, preferring to chase the ephemeral goal posts of over-engineered solutions to non-problems.”[6]
-
-#### CLOSING
 
 We as architects and craftspersons of the web community must keep everyone in mind when it comes to color contrast with websites, apps, fonts, and colors.
 
