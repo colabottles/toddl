@@ -79,7 +79,7 @@ Here are three different failure states.
 
 Again, these are all examples of poor practices, according to the 2.5.3 Label in Name SC.
 
-> In 2020 the WebAIM Million project evaluated 4.2 million form inputs and found that 55% were improperly unlabeled, either via `<label>`, `aria-label`, or `aria-labelledby`.
+> In 2020 [the WebAIM Million project](https://webaim.org/projects/million/) evaluated 4.2 million form inputs and found that 55% were improperly unlabeled, either via `<label>`, `aria-label`, or `aria-labelledby`.
 
 When working with forms, most of us are pretty used to pairing a `<label>` with an `<input>` or some other form control. That’s awesome and a great way to indicate what the control does, but there’s also the control’s **programmatic name**, which is also known as the “accessible name” using an `aria-label`.
 

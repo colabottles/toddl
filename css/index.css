@@ -179,6 +179,7 @@ q:before {
   --green: #4a7a00;
   --ecto: #a3af7c;
   --dark: #232323;
+  --night: #555555;
   --font-family-sans: 'Open Sans', Arial, Helvetica, sans-serif;
   --font-family-serif: Georgia, 'Times New Roman', serif;
   --font-family-heading-sm: 'Raleway', Arial, Helvetica, sans-serif;
@@ -991,12 +992,13 @@ blockquote cite:before {
 }
 
 figcaption {
+  color: var(--black);
   font-family: var(--font-family-sans);
   font-style: oblique;
   font-size: var(--font-size-small);
   margin-top: -2rem;
   padding: 0 0 3rem;
-  text-align: center
+  text-align: center;
 }
 
 span.italic {
@@ -1269,13 +1271,14 @@ twitter-widget.twitter-tweet {
 }
 
 figure {
-  display: grid
+  display: inline-grid;
 }
 
 div.content__placeholder {
+  background-color: var(--night);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto
+  grid-template-rows: auto;
 }
 
 img.content__image {
