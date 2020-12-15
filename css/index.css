@@ -996,7 +996,6 @@ figcaption {
   font-family: var(--font-family-sans);
   font-style: oblique;
   font-size: var(--font-size-small);
-  margin-top: -2rem;
   padding: 0 0 3rem;
   text-align: center;
 }
@@ -1275,10 +1274,11 @@ figure {
 }
 
 div.content__placeholder {
-  background-color: var(--night);
+  background-color: var(--white);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  margin-bttom: 2rem;
 }
 
 img.content__image {
