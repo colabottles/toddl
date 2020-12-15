@@ -106,12 +106,16 @@ To match the label text and accessible name with one another, it is important to
 * immediately to the right of checkboxes and radio buttons.
 * inside buttons or tabs or immediately below icons serving as buttons.
 
+<div class="content__placeholder">
+<figure>
 ![Labels to the left of inputs and dropdown select menus](https://res.cloudinary.com/colabottles/image/upload/v1608072520/images/Group-6.png)
 Labels to the left of inputs and dropdown select menus
 ![Labels to the right of checkbox and radio buttons](https://res.cloudinary.com/colabottles/image/upload/v1608072559/images/Group-7.webp)
 Labels to the right of checkbox and radio buttons
 ![Labels inside or below a button, depending on the symbol](https://res.cloudinary.com/colabottles/image/upload/v1608072559/images/Group-8.webp)
 Labels inside or below a button, depending on the symbol
+</figure>
+</div>
 
 Punctuation and capitalization may also be considered optional if used in a symbolic manner. For example, “First Name” is just fine instead of “First Name:” and “Next” is okay instead of “Next…” and so on.
 
