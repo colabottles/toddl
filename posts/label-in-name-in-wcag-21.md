@@ -87,12 +87,10 @@ We get a better user experience when the name of the `<label>` can be associated
 
 Here are those three examples from above fixed up!
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="colabottles" data-slug-hash="OJRPGYO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Label in Name: Ex 4 - Correct Usage of Label in Name">
-  <span>See the Pen <a href="https://codepen.io/colabottles/pen/OJRPGYO">
-  Label in Name: Ex 4 - Correct Usage of Label in Name</a> by Todd Libby (<a href="https://codepen.io/colabottles">@colabottles</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="265" style="width: 100%;" scrolling="no" title="Label in Name: Ex 4 - Correct Usage of Label in Name" src="https://codepen.io/colabottles/embed/OJRPGYO?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/colabottles/pen/OJRPGYO'>Label in Name: Ex 4 - Correct Usage of Label in Name</a> by Todd Libby
+  (<a href='https://codepen.io/colabottles'>@colabottles</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ## Text in Label specifics
 
