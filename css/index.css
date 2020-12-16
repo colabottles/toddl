@@ -692,7 +692,7 @@ li.postitem-item {
 }
 
 p img {
-  width: 50%;
+  scale: 0.5;
 }
 
 img {
@@ -704,7 +704,7 @@ img {
 }
 
 p+p img {
-  margin: 1.5rem 0 2rem
+  margin: 0;
 }
 
 code,
