@@ -31,7 +31,8 @@ So, getting back to things, [2.5.3 Label in Name](https://www.w3.org/TR/WCAG21/#
 The intent of this Success Criterion (SC) is to ensure **the words which a label has visually on the component are also included in the words that are associated with the component programatically**. This helps ensure that anyone — whether it’s someone using voice recognition software or someone who is visually abled — can rely on labels to describe the intent of a component, or how to interact with it. The visual text label and the **programmatic name** do not have to be exact, mind you, but they should contain a common work that associates them (e.g., “Submit” with “Submit Now”).
 
 The point is that there isn’t confusion, because of a discrepancy, between what is read and what is seen.
-Assistive technology in action
+
+## Assistive technology in action
 
 Let’s use the example of an HTML contact form. A user may use voice recognition software to fill out a form and come to the end where the form is submitted and the form is sent.
 
