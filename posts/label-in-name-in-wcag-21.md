@@ -1,7 +1,7 @@
 ---
 title: Label in Name in WCAG 2.1
 description: What is new in WCAG 2.1 Label in Name.
-date: 2020-11-17
+date: 2020-12-15
 tags:
   - accessibility
   - a11y
@@ -24,7 +24,7 @@ WCAG 2.1 is backwards-compatible with WCAG 2.0, meaning it’s an extension of W
 
 ## Label in Name
 
-So, getting back to things, [2.5.3 Label in Name](https://www.w3.org/TR/WCAG21/#label-in-name) (Level A) is new and defined in the WCAG 2.1 Success Criterion. Here’s how it’s described:
+So, getting back to things, [2.5.3 Label in Name](https://www.w3.org/TR/WCAG21/#label-in-name)(Level A) is new and defined in the WCAG 2.1 Success Criterion. Here’s how it’s described:
 
 > For user interface components with labels that include text or images of text, the name contains the text that is presented visually.
 
@@ -79,7 +79,7 @@ Here are three different failure states.
 
 Again, these are all examples of poor practices, according to the 2.5.3 Label in Name SC.
 
-> In 2020 [the WebAIM Million project](https://webaim.org/projects/million/) evaluated 4.2 million form inputs and found that 55% were improperly unlabeled, either via `<label>`, `aria-label`, or `aria-labelledby`.
+> In 2020 the WebAIM Million project evaluated 4.2 million form inputs and found that 55% were improperly unlabeled, either via `<label>`, `aria-label`, or `aria-labelledby`.
 
 When working with forms, most of us are pretty used to pairing a `<label>` with an `<input>` or some other form control. That’s awesome and a great way to indicate what the control does, but there’s also the control’s **programmatic name**, which is also known as the “accessible name” using an `aria-label`.
 
@@ -87,10 +87,12 @@ We get a better user experience when the name of the `<label>` can be associated
 
 Here are those three examples from above fixed up!
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Label in Name: Ex 4 - Correct Usage of Label in Name" src="https://codepen.io/colabottles/embed/OJRPGYO?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/colabottles/pen/OJRPGYO'>Label in Name: Ex 4 - Correct Usage of Label in Name</a> by Todd Libby
-  (<a href='https://codepen.io/colabottles'>@colabottles</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="colabottles" data-slug-hash="OJRPGYO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Label in Name: Ex 4 - Correct Usage of Label in Name">
+  <span>See the Pen <a href="https://codepen.io/colabottles/pen/OJRPGYO">
+  Label in Name: Ex 4 - Correct Usage of Label in Name</a> by Todd Libby (<a href="https://codepen.io/colabottles">@colabottles</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Text in Label specifics
 
@@ -104,16 +106,12 @@ To match the label text and accessible name with one another, it is important to
 * immediately to the right of checkboxes and radio buttons.
 * inside buttons or tabs or immediately below icons serving as buttons.
 
-<div class="content__placeholder">
-  <figure>
-    <img class="content__image" src="https://res.cloudinary.com/colabottles/image/upload/v1608072520/images/Group-6.png" alt="Labels to the left of inputs and dropdown select menus" />
-    <figcaption>Labels to the left of inputs and dropdown select menus</figcaption>
-    <img class="content__image" src="https://res.cloudinary.com/colabottles/image/upload/v1608072559/images/Group-7.webp" alt="Labels to the right of checkbox and radio buttons" />
-    <figcaption>Labels to the right of checkbox and radio buttons</figcaption>
-    <img class="content__image" src="https://res.cloudinary.com/colabottles/image/upload/v1608072559/images/Group-8.webp" alt="Labels inside or below a button, depending on the symbol" />
-    <figcaption>Labels inside or below a button, depending on the symbol</figcaption>
-  </figure>
-</div>
+![Labels to the left of inputs and dropdown select menus](https://res.cloudinary.com/colabottles/image/upload/v1608072520/images/Group-6.png)
+Labels to the left of inputs and dropdown select menus
+![Labels to the right of checkbox and radio buttons](https://res.cloudinary.com/colabottles/image/upload/v1608072559/images/Group-7.webp)
+Labels to the right of checkbox and radio buttons
+![Labels inside or below a button, depending on the symbol](https://res.cloudinary.com/colabottles/image/upload/v1608072559/images/Group-8.webp)
+Labels inside or below a button, depending on the symbol
 
 Punctuation and capitalization may also be considered optional if used in a symbolic manner. For example, “First Name” is just fine instead of “First Name:” and “Next” is okay instead of “Next…” and so on.
 
