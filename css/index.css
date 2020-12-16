@@ -456,7 +456,6 @@ article {
 }
 
 section {
-  margin: 2em 0;
   display: grid;
   font-family: var(--font-family-serif);
   grid-column: 2
