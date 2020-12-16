@@ -180,7 +180,7 @@ q:before {
   --ecto: #a3af7c;
   --dark: #232323;
   --night: #555555;
-  --font-family-sans: 'Open Sans', Arial, Helvetica, sans-serif;
+  --font-family-sans: 'Source Sans 3 VF', 'Open Sans', Arial, Helvetica, sans-serif;
   --font-family-serif: Georgia, 'Times New Roman', serif;
   --font-family-heading-sm: 'Raleway', Arial, Helvetica, sans-serif;
   --heading1-font: calc(1.3125rem + 0.3vw);
