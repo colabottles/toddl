@@ -535,7 +535,7 @@ p+p {
   font-size: calc(var(--font-size-article) - .2vw);
   font-style: italic;
   margin: 1.5rem 0 1.5rem 2em;
-  color: var(--grey)
+  color: var(--ecto)
 }
 
 blockquote p {
@@ -544,7 +544,7 @@ blockquote p {
   font-size: calc(var(--font-size-large) - .2vw);
   font-style: italic;
   margin: 1.5rem 0;
-  color: var(--grey)
+  color: var(--ecto)
 }
 
 ul.event-list,
