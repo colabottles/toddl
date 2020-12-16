@@ -24,7 +24,7 @@ WCAG 2.1 is backwards-compatible with WCAG 2.0, meaning it’s an extension of W
 
 ## Label in Name
 
-So, getting back to things, [2.5.3 Label in Name](https://www.w3.org/TR/WCAG21/#label-in-name)(Level A) is new and defined in the WCAG 2.1 Success Criterion. Here’s how it’s described:
+So, getting back to things, [2.5.3 Label in Name](https://www.w3.org/TR/WCAG21/#label-in-name) (Level A) is new and defined in the WCAG 2.1 Success Criterion. Here’s how it’s described:
 
 > For user interface components with labels that include text or images of text, the name contains the text that is presented visually.
 
