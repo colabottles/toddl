@@ -992,7 +992,6 @@ blockquote cite:before {
 }
 
 figcaption {
-  color: var(--black);
   font-family: var(--font-family-sans);
   font-style: oblique;
   font-size: var(--font-size-small);
@@ -1274,11 +1273,10 @@ figure {
 }
 
 div.content__placeholder {
-  background-color: var(--white);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  margin-bttom: 2rem;
+  margin-bottom: 2rem;
 }
 
 img.content__image {
