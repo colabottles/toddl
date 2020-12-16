@@ -691,6 +691,10 @@ li.postitem-item {
   grid-column: 2/4
 }
 
+p img {
+  width: 50%;
+}
+
 img {
   border-style: none;
   display: block;
