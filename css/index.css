@@ -1519,9 +1519,11 @@ video {
   .article__header,
   .blogroll-container,
   section.article__body {
-    grid-column: 2/7;
+    display: inline-block;
+    grid-column: 2/12;
     margin: 0;
-    padding: 0
+    padding: 0;
+    width: 90vw;
   }
 
   .blogroll-container p,
