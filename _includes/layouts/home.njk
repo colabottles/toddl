@@ -16,7 +16,7 @@ templateClass: tmpl-home
     <h3>Latest Articles</h3>
       <ul class="article-sections">
         <li class="article-wrapper">
-          {%- for post in collections.2020 | reverse -%}
+          {%- for post in collections.twentytwenty | reverse -%}
           <a href="{{ post.url }}">
             <img src="https://res.cloudinary.com/colabottles/image/upload/v1609329482/images/2021.jpg" alt="The numbers 2021 in sparkler." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1609329482/images/2021.jpg" class="lazyload" />
             <h4>{{ post.data.title }}</h4>

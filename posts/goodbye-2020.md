@@ -5,7 +5,7 @@ date: 2020-12-31
 tags:
   - general
   - life
-  - 2020
+  - twentytwenty
 layout: layouts/post.njk
 ---
 
