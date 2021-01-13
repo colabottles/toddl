@@ -349,7 +349,7 @@ main h2 {
 }
 
 .articles {
-  grid-column: 2/12
+  grid-column: 2 / 12
 }
 
 .article h3 {
