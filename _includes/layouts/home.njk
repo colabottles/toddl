@@ -16,6 +16,15 @@ templateClass: tmpl-home
     <h3>Latest Articles</h3>
       <ul class="article-sections">
         <li class="article-wrapper">
+          {%- for post in collections.anxiety | reverse -%}
+          <a href="{{ post.url }}">
+            <img src="https://res.cloudinary.com/colabottles/image/upload/v1611591059/images/staycation.jpg" alt="A person sitting on a bed or couch and holding a coffee mug in one hand and reading a book an dturning a page with the other hand." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1611591059/images/staycation.jpg" class="lazyload" />
+            <h4>{{ post.data.title }}</h4>
+          </a>
+          {%- endfor -%}
+        </li>
+
+        <li class="article-wrapper">
           {%- for post in collections.twentytwenty | reverse -%}
           <a href="{{ post.url }}">
             <img src="https://res.cloudinary.com/colabottles/image/upload/v1609329482/images/2021.jpg" alt="The numbers 2021 in sparkler." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1609329482/images/2021.jpg" class="lazyload" />
@@ -30,15 +39,6 @@ templateClass: tmpl-home
               <img src="https://res.cloudinary.com/colabottles/image/upload/v1605616284/images/accessibility.jpg" alt="A user sitting in front of a computer using a Braille reader" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1605616284/images/accessibility.jpg" class="lazyload" />
               <h4>{{ post.data.title }}</h4>
             </a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.anxiety | reverse -%}
-          <a href="{{ post.url }}">
-            <img src="https://res.cloudinary.com/colabottles/image/upload/v1605623948/images/anxiety.jpg" alt="A woman clutching at the neck line of her shirt with eyes closed in contemplation." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1605623948/images/anxiety.jpg" class="lazyload" />
-            <h4>{{ post.data.title }}</h4>
-          </a>
           {%- endfor -%}
         </li>
       </ul>
