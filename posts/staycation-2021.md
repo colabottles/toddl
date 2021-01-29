@@ -39,7 +39,7 @@ Yes you can. You certainly can. I can and did. Here is how.
 
 You save up a chunk of your earnings and set that into an account or a place where you forget about it for a time. You save up two months worth of money and you use that (three in times where there isn't a pandemic and we are free to travel and do our thing without fear) to pay for your vacation.
 
-Granted, I kept a few of my commitments that I had previously scheduled, I also attended W3C meetings and that was pretty much ot. I barely touched any code. I wrote, I read, I relaxed. Towards the end, I could feel myself itching to do some coding, but instead, I used that time to binge some Hulu or Netflix. Something other than code.
+Granted, I kept a few of my commitments that I had previously scheduled, I also attended W3C meetings and that was pretty much it. I barely touched any code. I wrote, I read, I relaxed. Towards the end, I could feel myself itching to do some coding, but instead, I used that time to binge some Hulu or Netflix. Something other than code.
 
 You have that extra money, and in other circumstance, use it. Treat yourself. In these times where we have to be careful, do things like read, write, blog, watch movies or TV, _spend time with your family_! I cannot stress that last one enough. Kids grow up fast. Make sure you're there when they do and not nose in the screen and head down and coding. Commit a block of your day to your family.
 
