@@ -116,7 +116,8 @@ dist
 .pnp.*
 
 # VS Code Workspace generated file
-.code-workspace
+*.code-workspace
+.vscode
 
 # 11ty ignore file
 .eleventyignore
