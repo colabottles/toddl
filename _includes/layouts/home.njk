@@ -6,13 +6,22 @@ templateClass: tmpl-home
   <article class="about-intro">
     <div class="home-container">
       <h2>Hello!</h2>
-      <h3>I'm Todd. I am a web developer and designer, accessibility advocate, CSS nerd, and web standards proponent with over 20 years of design and development experience.</h3>
+      <h3>I'm Todd. I am an Accessibility and Training Specialist for Knowbility and also an accessibility advocate and consultant.</h3>
     </div>
   </article>
 
   <div class="articles">
     <h3>Latest Articles</h3>
       <ul class="article-sections">
+        <li class="article-wrapper">
+          {%- for post in collections.employed | reverse -%}
+            <a href="{{ post.url }}">
+              <img src="https://res.cloudinary.com/colabottles/image/upload/v1617229521/images/employed.jpg" alt="The symbol for a handicapped parking space with the blue square and white figure sitting in a wheelchair" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1617229521/images/employed.jpg" class="lazyload" />
+              <h4>{{ post.data.title }}</h4>
+            </a>
+          {%- endfor -%}
+        </li>
+
         <li class="article-wrapper">
           {%- for post in collections.staycation | reverse -%}
           <a href="{{ post.url }}">
@@ -30,14 +39,8 @@ templateClass: tmpl-home
           </a>
           {%- endfor -%}
         </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.screenreader | reverse -%}
-            <a href="{{ post.url }}">
-              <img src="https://res.cloudinary.com/colabottles/image/upload/v1605616284/images/accessibility.jpg" alt="A user sitting in front of a computer using a Braille reader" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1605616284/images/accessibility.jpg" class="lazyload" />
-              <h4>{{ post.data.title }}</h4>
-            </a>
-          {%- endfor -%}
-        </li>
       </ul>
     </div>
+
+
+    Photo by <a href="https://unsplash.com/@freegraphictoday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AbsolutVision</a> on <a href="https://unsplash.com/collections/8605847/accessibility?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
