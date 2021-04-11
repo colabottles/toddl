@@ -4,10 +4,6 @@ description: A look at my first week at work for Knowbility.
 date: 2021-04-05
 tags:
   - knowbility
-  - employed
-  - accessibility
-  - web
-  - perseverance
 layout: layouts/post.njk
 ---
 
