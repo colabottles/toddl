@@ -21,8 +21,16 @@ Wednesday was a day off of sorts. I finished filling out the last of the paperwo
 
 At some point, I have to pinch myself because it all seems like a dream but it is in fact, not a dream. I couldn't be any more happier.
 
+### The Present
+
+I'll be jumping in more in the following weeks and going forward, I am eager, anxious (in a good way), and excited to get going even more and contribute more. Hopefully I cna get into more speaking and writing roles as well.
+
+Accessibility has been a focus for all my career, even more the last decade and even more advocating in the past 2-3 years. I plan to do a lot more, and now that I am with an accessibility-focused company, multiply that tenfold.
+
+I am beyond thrilled at this point.
+
 ### The Future
 
 The future looks great. I already have the feeling like I am home in a company that values its people. That it's juts not a 9-5 grind, that they value their people and their well-being.
 
-I hope to be a part of Knowbility for a very long time.
+I hope to be a part of Knowbility for a very long time. I have about 10-15 years left in me. 20 if I am lucky and I think this part of the ride into the sunset is going to be the best one yet.
