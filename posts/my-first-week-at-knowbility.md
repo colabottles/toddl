@@ -7,6 +7,8 @@ tags:
 layout: layouts/post.njk
 ---
 
+![The Knowbility logo.](https://res.cloudinary.com/colabottles/image/upload/v1618106597/images/knowbility-logo.png "The Knowbility logo.")
+
 ### Onboarding
 
 Well, my first day was the usual day of paperwork and chaos with some family issues. I started a week earlier, so to keep my mind off things that I cannot control outside of myself. This was Monday.
