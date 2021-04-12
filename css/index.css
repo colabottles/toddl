@@ -741,10 +741,6 @@ sup {
   line-height: var(--line-height)
 }
 
-.headshot {
-  clip-path: circle(50% at 50% 50%);
-}
-
 .article-category,
 .blogroll-category {
   border-bottom: 2px solid var(--green);
