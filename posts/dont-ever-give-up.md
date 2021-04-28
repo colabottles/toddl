@@ -28,26 +28,26 @@ I am keeping all my commitments to not only the W3C groups and subgroups I am a 
 
 The job search is over.
 
-I have found the job that I want to close my career out at.. I have another 10-20 years left in the tank. I am renewed, I am re-energized. I plan to crush this and put the rubber to the road.
+I have found the job that I want to close my career out at. I have another 10-20 years left in the tank. I am renewed, I am re-energized. I plan to crush this and put the rubber to the road.
 
 ### That's Great. I'm Still Jobless
 
-Through the thousands (literally) of resumes, and meails and rejections and ghosting that I endured. Through the amount of times when I thought:
+Through the thousands (literally) of resumes, and emails and rejections and ghosting that I endured. Through the amount of times when I thought:
 
-> Am I good enough? Am I too old? SHoudl I just give up? Should I just quit?
+> Am I good enough? Am I too old? Should I just give up? Should I just quit?
 
 I kept going and finding the things I was good at. I applied to the jobs even if I didn't have all the qualifications. I was so numbed to the:
 
-> We likes you resume and it was impressive but you're not the right fit.
+> We liked your resume and it was impressive but you're not the right fit.
 
 I kept going. Kept the bar low as low can be. I don't know how and I don't know why, but I kept going and I finally got my Holy Grail.
 
 I used to tweet the literal numbers, 2 for 2,126. That was the last one I knew of in my count though I stopped tweeting the numbers, I kept record for the last twenty years of applying. Now I can gladly say, 3 for 2,157 and that's alright by me.
 
-You can succeed and you can achieve your goal, it is a monumental mountain to climb, moreso others than myself because I am a white man in tech. It was difficult to say the least still, however. Age made a huge difference, but not anymore.
+You can succeed and you can achieve your goal, it is a monumental mountain to climb, more so others than myself because I am a mediocre white man in tech. It was difficult to say the least still, however. Age made a huge difference, but not anymore.
 
 I want you to ask yourselves if you really love what you do on the web or in tech, is it worth throwing it all away? No matter if it is people teeling you that you cannot do it, undervaluing you, doubting, demeaning, ghosting you. Is it worth letting that rent space in your head.
 
-You can do it. I know it is easy for me, a white man, of privilege to say all this, but I say to you the reader, or if you're a friend of mine that isn't like me, KEEP GOING!
+You can do it. I know it is easy for me, a mediocre, white man of privilege to say all this, but I say to you the reader, or if you're a friend of mine that isn't white like me, KEEP GOING!
 
 DON'T EVER GIVE UP!
