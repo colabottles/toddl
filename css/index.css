@@ -1222,8 +1222,11 @@ button[type=submit]:active {
 }
 
 input:focus,
-textarea:focus {
-  border: 1px solid var(--ecto)
+textarea:focus,
+input:focus-visible,
+textarea:focus-visible {
+  border: 1px solid var(--ecto);
+
 }
 
 ::-webkit-input-placeholder {
