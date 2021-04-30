@@ -1176,7 +1176,6 @@ textarea {
   margin: 0 0 1rem;
   padding: 0 0 0 0.25rem;
   font-size: 2rem;
-  font-family: var(--font-family-sans)
 }
 
 input[type=email]:focus,
@@ -1269,7 +1268,7 @@ label.field {
 
 .contact form input,
 .contact form textarea {
-  font-family: var(--font-family-serif)
+  font-family: var(--font-family-sans)
 }
 
 twitter-widget.twitter-tweet {
