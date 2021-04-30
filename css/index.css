@@ -1260,6 +1260,10 @@ h2#hi {
   display: table-column
 }
 
+label.field {
+  color: var(--white)
+}
+
 .contact form input,
 .contact form textarea {
   font-family: var(--font-family-serif)
