@@ -1174,8 +1174,9 @@ textarea {
   border-left: none;
   background: var(--white);
   margin: 0 0 1rem;
-  padding: 0.75rem;
-  font-size: 2rem
+  padding: 0 0 0 0.25rem;
+  font-size: 2rem;
+  font-family: var(--font-family-sans)
 }
 
 input[type=email]:focus,
