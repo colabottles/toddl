@@ -1261,7 +1261,9 @@ h2#hi {
 }
 
 label.field {
-  color: var(--white)
+  color: var(--white);
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .contact form input,
