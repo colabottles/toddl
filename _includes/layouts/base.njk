@@ -18,7 +18,7 @@
           <a href="{{ '/' | url }}">Todd Libby</a>
         </h1>
         <nav title="main-navigation" role="navigation">
-          <ul class="navigation main-nav" role="navigation" title="main navigation">
+          <ul class="navigation main-nav" role="listbox" title="main navigation">
             {%- for nav in collections.nav | sort(attribute="date") -%}
               <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" role="option" aria-selected="true">
                 <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
