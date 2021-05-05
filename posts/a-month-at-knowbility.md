@@ -57,6 +57,6 @@ There is also a lot of learning. How the workflow is, how the team does audits, 
 
 One month in and I couldn't be any happier. My short-term goal is rech the 6-month mark and get good feedback and remarks from the team and the company. I've **finally** broken into the accessibility space twenty-two years and over 2,200 resumes later, after my professional journey started in 1999. Forty-one years after I first touched a computer and knew this is what I wanted to do for a living in some capacity in 1980 at age nine.
 
-Long-term? I am trying not to think that far down the road because the landscape of employment can change in the blink of an eye in tech. I hope that I am with Knowbility for awhile. I said I'd like to close out my career in tech here, I hope I can, if I can;t then I hope I can continue on in the accessibility space and who knows where or when or if that will happen.
+Long-term? I am trying not to think that far down the road because the landscape of employment can change in the blink of an eye in tech. I hope that I am with Knowbility for awhile. I said I'd like to close out my career in tech here, I hope I can, if I can't then I hope I can continue on in the accessibility space and who knows where or when or if that will happen.
 
 Right now though? One month in? I couldn't be any happier to have the past behind me and a good-looking future ahead of me.
