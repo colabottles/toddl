@@ -18,6 +18,15 @@ templateClass: tmpl-home
     <h3>Latest Articles</h3>
       <ul class="article-sections">
         <li class="article-wrapper">
+          {%- for post in collections.knowbilityorg | reverse -%}
+          <a href="{{ post.url }}">
+            <img src="https://res.cloudinary.com/colabottles/image/upload/v1618107008/images/knowbility.jpg" alt="The Knowbility logo." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1618107008/images/knowbility.jpg" class="lazyload" />
+            <h4>{{ post.data.title }}</h4>
+          </a>
+          {%- endfor -%}
+        </li>
+
+        <li class="article-wrapper">
           {%- for post in collections.knowbility | reverse -%}
           <a href="{{ post.url }}">
             <img src="https://res.cloudinary.com/colabottles/image/upload/v1618107008/images/knowbility.jpg" alt="The Knowbility logo." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1618107008/images/knowbility.jpg" class="lazyload" />
@@ -32,15 +41,6 @@ templateClass: tmpl-home
               <img src="https://res.cloudinary.com/colabottles/image/upload/v1617229521/images/employed.jpg" alt="The symbol for a handicapped parking space with the blue square and white figure sitting in a wheelchair" loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1617229521/images/employed.jpg" class="lazyload" />
               <h4>{{ post.data.title }}</h4>
             </a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.staycation | reverse -%}
-          <a href="{{ post.url }}">
-            <img src="https://res.cloudinary.com/colabottles/image/upload/v1611591059/images/staycation.jpg" alt="A person sitting on a bed or couch and holding a coffee mug in one hand and reading a book an dturning a page with the other hand." loading="lazy" data-src="https://res.cloudinary.com/colabottles/image/upload/v1611591059/images/staycation.jpg" class="lazyload" />
-            <h4>{{ post.data.title }}</h4>
-          </a>
           {%- endfor -%}
         </li>
       </ul>
