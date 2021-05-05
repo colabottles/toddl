@@ -15,9 +15,9 @@ One month in and things couldn't be any better. I wrote a first week post becaus
 
 ### How I got here
 
-I was getting some food at the local pizza joint in my neighborhood on a pretty decent afternoon. I had just done the onterviews and felt okay about them with the good folks at Knowbility, so I decided to treat myself to a pizza. Who doesn't?
+I was getting some food at the local pizza joint in my neighborhood on a pretty decent afternoon. I had just done the interviews and felt okay about them with the good folks at Knowbility, so I decided to treat myself to a pizza. Who doesn't?
 
-Standing in line and waiting to order (masked, of course) and I got the email. Now if you have followed my search that I have documented a bit, you'll know it has been a long process. A defeating, debilitating process that beat me down pretty good. Rejecection after rejection, over the phone, over email, being ghosted. By any and all means it seemed.
+Standing in line and waiting to order (masked, of course) and I got the email. Now if you have followed my search that I have documented a bit, you'll know it has been a long process. A defeating, debilitating process that beat me down pretty good. Rejection after rejection, over the phone, over email, being ghosted. By any and all means it seemed.
 
 I started sweating. I had applied at a couple places that focused on accessibility and knew it was a great fit for me, but who was I a great fit for? Anyone? I was mired in depression, self-doubt, imposter syndrome. I applied for roles I knew I wasn't going to get anyway. I just wanted something to stick.
 
@@ -43,15 +43,15 @@ My brain, who likes to play a lot of practical jokes on me, actually decided to 
 
 First week or so was onboarding and getting used to how things are done. Forms to fill out naturally, meeting the team and some of my colleagues. All that first week stuff you do at a new job. Or in my case, a new career.
 
-The people are great, friendly, and welcoming. My team is made up of some terrific people who are smart and talented. I worked with a colleague who is very patient with my first week jitters and oversights and we worked on a project and audited a site in no time flat. I'm getting the process more and more each day and the Accessibility Services Team is phenomenal in their support and help.
+The people are great, friendly, and welcoming. My team is made up of some terrific people who are smart and talented. I worked with a colleague who is very patient with my first week jitters and oversights and we worked on a project, audited a site in no time flat. I'm getting the process more and more each day and the Accessibility Services Team is phenomenal in their support and help.
 
 As I moved forward I got another project to audit and have one that we just started that I am teaming up again with. Auditing sites for accessibility issues so that companies and entities can make their sites more accessible. I am here for that.
 
 ### What do you do?
 
-I audit websites for accessibility issues with automatic and manual testing and file those issues in Jira and then send that off for review and eventually a report handed off to the client on recommended changes. No coding. It's a bit of a refreshing break.
+I audit websites for accessibility issues with automatic and manual testing and file those issues in Jira and then send that off for review and eventually a report handed off to the client on recommended changes. No coding. It's a bit of a refreshing break. My title is _Accessibility & Training Specialist_. I don't do any training right now, however.
 
-There is also a lot of learning. How the workflow is and how the team does audits, how they do other things also like Masterclasses, webinars, and online events. Having to learn Jira has been the most challenging thing, it's not an easy job. It's a fun and challenging career for me.
+There is also a lot of learning. How the workflow is, how the team does audits, how they do other things also like Masterclasses, webinars, and online events. Having to learn Jira has been the most challenging thing, it's not an easy job. It's a fun and challenging career for me.
 
 ### Where do I go from here?
 
