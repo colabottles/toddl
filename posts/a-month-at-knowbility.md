@@ -33,7 +33,7 @@ Well, usually the process was me reading who the email is from, panic ensuing, t
 
 > Mar 31 Knowbility Offer Letter of Employment
 
-I got to say, I "bricked" in my pants figuratively. I had to contain myself from fist-pumping and jumping up and down, screaming and celebrating. I maintained my composure, acted as if nothing had happened, got my food, went home and then I completely game unglued and went bonkers. Jumping, fist-pumping, celebrating, even dancing at age fifty, yeah I did it. I earned it.
+I got to say, I "bricked" in my pants figuratively. I had to contain myself from fist-pumping and jumping up and down, screaming and celebrating. I maintained my composure, acted as if nothing had happened, got my food, went home and then I completely came unglued and went bonkers. Jumping, fist-pumping, celebrating, even dancing at age fifty, yeah I did it. I earned it.
 
 > We finally did it. Wow.
 
@@ -55,7 +55,7 @@ There is also a lot of learning. How the workflow is, how the team does audits, 
 
 ### Where do I go from here?
 
-One month in and I couldn't be any happier. My short-term goal is rech the 6-month mark and get good feedback and remarks from the team and the company. I've **finally** broken into the accessibility space twenty-two years and over 2,200 resumes later, after my professional journey started in 1999. Forty-one years after I first touched a computer and knew this is what I wanted to do for a living in some capacity in 1980 at age nine.
+One month in and I couldn't be any happier. My short-term goal is reach the 6-month mark and get good feedback and remarks from the team and the company. I've **finally** broken into the accessibility space twenty-two years and over 2,200 resumes later, after my professional journey started in 1999. Forty-one years after I first touched a computer and knew this is what I wanted to do for a living in some capacity in 1980 at age nine.
 
 Long-term? I am trying not to think that far down the road because the landscape of employment can change in the blink of an eye in tech. I hope that I am with Knowbility for awhile. I said I'd like to close out my career in tech here, I hope I can, if I can't then I hope I can continue on in the accessibility space and who knows where or when or if that will happen.
 
