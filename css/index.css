@@ -847,6 +847,7 @@ h2.blogroll-list-blogroll-title {
   font-weight: 200 900;
   font-style: normal;
   font-stretch: normal;
+  font-display: swap;
   src: url('../fonts/SourceSans3VF-Roman.ttf.woff2') format('woff2'),
     url('../fonts/SourceSans3VF-Roman.ttf.woff') format('woff'),
     url('../fonts/SourceSans3VF-Roman.ttf') format('truetype');
@@ -857,6 +858,7 @@ h2.blogroll-list-blogroll-title {
   font-weight: 200 900;
   font-style: italic;
   font-stretch: normal;
+  font-display: swap;
   src: url('../fonts/SourceSans3VF-Italic.ttf.woff2') format('woff2'),
     url('../fonts/SourceSans3VF-Italic.ttf.woff') format('woff'),
     url('../fonts/SourceSans3VF-Italic.ttf') format('truetype');
@@ -878,7 +880,7 @@ h2.article__title {
 
 article.archive-list,
 section.article__body {
-  grid-column: 3/12
+  grid-column: 3 / 12
 }
 
 article.article__body {
