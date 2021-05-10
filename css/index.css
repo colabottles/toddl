@@ -364,7 +364,7 @@ section.article__body ul {
 }
 
 .article-sections {
-  display: flex;
+  display: grid;
   font-family: var(--font-family-sans);
   padding: 0
 }
