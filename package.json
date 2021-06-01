@@ -17,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-cache-assets": "^2.2.1",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
     "luxon": "^1.26.0",
@@ -30,7 +31,8 @@
     "netlify-cli": "^3.21.1",
     "npm-upgrade": "^3.0.0",
     "save": "^2.4.0",
-    "semver": "^7.3.5"
+    "semver": "^7.3.5",
+    "speedlify-score": "^2.0.2"
   },
   "main": ".eleventy.js",
   "keywords": []
