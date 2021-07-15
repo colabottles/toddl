@@ -702,7 +702,7 @@ img {
 
 p+p img {
   margin: 0;
-  min-width: 100%;
+  max-width: 100%;
 }
 
 code,
