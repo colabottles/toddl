@@ -690,10 +690,6 @@ li.postitem-item {
   grid-column: 2/4
 }
 
-p img {
-  scale: 0.5;
-}
-
 img {
   border-style: none;
   display: block;
