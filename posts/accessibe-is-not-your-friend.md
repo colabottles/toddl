@@ -50,14 +50,10 @@ Well, as evidenced by the attack on Karl Groves today (as of this writing), you 
 
 Let's revisit some of those, shall we?
 
-_ Lies about reviews, those reviews removed because they were fake about the WordPress plugin they offer (which still doesn't make you rsite 100% accessible).
-
-- [being ableist](https://adrianroselli.com/2020/06/accessibe-will-get-you-sued.html#Update05)
-
+- Lies about reviews, those reviews removed because they were fake about the WordPress plugin they offer (which still doesn't make you rsite 100% accessible).
+- [Being ableist](https://adrianroselli.com/2020/06/accessibe-will-get-you-sued.html#Update05)
 - Attacking accessibility professionals in the accessibility space.
-
 - Fake Twitter accounts (?)
-
 - Lies about other assistive technologies.
 
 and those are just a few.
