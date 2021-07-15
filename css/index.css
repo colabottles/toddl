@@ -696,7 +696,7 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1
+  aspect-ratio: auto 4 / 3
 }
 
 p+p img {
