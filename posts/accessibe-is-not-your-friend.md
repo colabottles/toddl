@@ -12,6 +12,8 @@ layout: layouts/post.njk
 
 ![A snake oil salesman on his wagon where he sells snake oil that has the AccessiBe logo Photoshopped on the side of the wagon.](https://res.cloudinary.com/colabottles/image/upload/v1626382025/images/snakeoil.jpg "A snake oil salesman on his wagon where he sells snake oil that has the AccessiBe logo Photoshopped on the side of the wagon.")
 
+The following view does not represent my employer, or any other entity I am involved with. The views expressed here are strictly my own.
+
 ### The Shot
 
 A recent thread on Twitter caught my eye and it was probably the most ridiculous thing I have read in a very long time.
