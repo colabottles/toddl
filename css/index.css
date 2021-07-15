@@ -887,7 +887,7 @@ article.article__body {
   word-break: break-word
 }
 
-article.article__body p img {
+section.article__body p img {
   scale: 0.5;
 }
 
