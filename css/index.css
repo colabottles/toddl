@@ -456,9 +456,11 @@ article {
 }
 
 section {
-  display: grid;
+  display: flex;
   font-family: var(--font-family-serif);
-  grid-column: 2
+  flex-direction: column;
+  justify-content: center;
+  gap: 1ch;
 }
 
 h1,
@@ -700,6 +702,7 @@ img {
 
 p+p img {
   margin: 0;
+  min-width: 100%;
 }
 
 code,
