@@ -28,7 +28,7 @@ There is a bit to unpack here.
 
 !['Sheldon' just joined Twitter today to throw shade. His picture may be from This Person Does Not Exist.](https://res.cloudinary.com/colabottles/image/upload/v1626383178/images/sock_puppet.png "'Sheldon' just joined Twitter today to throw shade. His picture may be from This Person Does Not Exist.")
 
-&lquo;Sheldon&rquo; looks like he just joined today to throw shade at Karl. I smell something rotten and suspect an "executive" with the mindset of a child went and created an account, got an AI generated profile photo, then decided to play with the accessibility community.
+&ldquo;Sheldon&rdquo; looks like he just joined today to throw shade at Karl. I smell something rotten and suspect an "executive" with the mindset of a child went and created an account, got an AI generated profile photo, then decided to play with the accessibility community.
 
 I aske for a list of the "professionals" that support AccessiBe. No list has been made public yet. A lot of "pot meet kettle" especially when others have come to the conclusion that AccessiBe needs the benefit of the doubt.
 
