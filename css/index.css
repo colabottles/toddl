@@ -696,7 +696,6 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto;
-  aspect-ratio: auto 4 / 3
 }
 
 p+p img {
@@ -884,8 +883,12 @@ article.article__body {
   align-content: start;
   display: grid;
   justify-content: center;
-  padding: 0 2.5rem 0rem;
+  padding: 0 2.5rem 3rem;
   word-break: break-word
+}
+
+article.article__body p img {
+  scale: 0.5;
 }
 
 .article__body a,
