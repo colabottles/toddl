@@ -700,9 +700,9 @@ img {
   height: auto;
 }
 
-p+p img {
+p img, p+p img {
   margin: 0 auto;
-  width: 10em;
+  width: 20em;
 }
 
 code,
