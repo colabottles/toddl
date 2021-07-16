@@ -32,7 +32,7 @@ There is a bit to unpack here.
 
 I asked for a list of the "professionals" that support AccessiBe. No list has been made public yet. A lot of "pot meet kettle" especially when others have come to the conclusion that AccessiBe needs the benefit of the doubt.
 
-They had that benefit of the doubt moment and they squandered it. Personal attacks, fear-based attacks, attacks against professionals in the industry with decades of experience and knowledge. Even going as far as this schoolyar dbully behavior. What's next? I think the attacks get worse.
+They had that benefit of the doubt moment and they squandered it. Personal attacks, fear-based attacks, attacks against professionals in the industry with decades of experience and knowledge. Even going as far as this schoolyard bully behavior. What's next? I think the attacks get worse.
 
 AccessiBe execs get defensive real quick when there is any opposition to their product and they hunch down like a trapped cat in a corner and they hiss and arch their backs, spewing bile and venom at those who oppose them. Which indicates they know their prodcut is bullshit, yet the money they get from telling corporations and organizations that they can make their sites work even though they don't. Their product is a modern-day Ponzi scheme.
 
