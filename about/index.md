@@ -8,7 +8,7 @@ navtitle: About
 templateClass: tmpl-post
 ---
 
-Hi, I'm Todd. I am an Accessibility Analyist at Knowbility.
+Hi, I'm Todd. I am an Accessibility Analyst at Knowbility.
 
 I have over twenty years of experience with web programming and design. I have experience in a number of web technologies, including:
 
