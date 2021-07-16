@@ -700,7 +700,7 @@ img {
   height: auto;
 }
 
-p img, p+p img {
+section img, p+p img {
   margin: 0 auto;
   width: 20em;
 }
