@@ -30,7 +30,7 @@ There is a bit to unpack here.
 
 &ldquo;Sheldon&rdquo; looks like he just joined today to throw shade at Karl. I smell something rotten and suspect an "executive" with the mindset of a child went and created an account, got an AI generated profile photo, then decided to play with the accessibility community.
 
-I aske for a list of the "professionals" that support AccessiBe. No list has been made public yet. A lot of "pot meet kettle" especially when others have come to the conclusion that AccessiBe needs the benefit of the doubt.
+I asked for a list of the "professionals" that support AccessiBe. No list has been made public yet. A lot of "pot meet kettle" especially when others have come to the conclusion that AccessiBe needs the benefit of the doubt.
 
 They had that benefit of the doubt moment and they squandered it. Personal attacks, fear-based attacks, attacks against professionals in the industry with decades of experience and knowledge. Even going as far as this schoolyar dbully behavior. What's next? I think the attacks get worse.
 
