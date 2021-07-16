@@ -701,8 +701,8 @@ img {
 }
 
 p+p img {
-  margin: 0;
-  width: 20em;
+  margin: 0 auto;
+  width: 10em;
 }
 
 code,
