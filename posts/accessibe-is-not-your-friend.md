@@ -78,7 +78,7 @@ After some research when seeing a tweet, I looked up Sheldon, who is in fact rea
 
 Sheldon is real. Sheldon is also a person with a disability. Yet, Sheldon created a Twitter account to disparage remarks made by Karl. The account was created in July. Had one follower. Which reeks of new.
 
-![Sheldon is real and Sheldon has a great LinkedIn profile.](https://res.cloudinary.com/colabottles/image/upload/v1627482530/images/sheldon.png" "Sheldon is real and Sheldon has a great LinkedIn profile.")
+![Sheldon is real and Sheldon has a great LinkedIn profile.](https://res.cloudinary.com/colabottles/image/upload/v1627483084/images/sheldon.png "Sheldon is real and Sheldon has a great LinkedIn profile.")
 
 There are lots of people in the disabled community that are on the side of AccessiBe, and that's their choice, of course. But for a manager to make an account just for the sole fact of leaning into a conversation and throwing hasoline on an already out of control tire fire is beyond me.
 
@@ -89,7 +89,7 @@ Two things that are apparent in the accessibility community:
 
 Which brings me this last point.
 
-![Sheldon has goals and aspirations yet joins in the divide that AccessiBe hammers between people in the disabled and accessibility communities.](https://res.cloudinary.com/colabottles/image/upload/v1627482525/images/sheldon2.png" "Sheldon has goals and aspirations yet joins in the divide that AccessiBe hammers between people in the disabled and accessibility communities.")
+![Sheldon has goals and aspirations yet joins in the divide that AccessiBe hammers between people in the disabled and accessibility communities.](https://res.cloudinary.com/colabottles/image/upload/v1627482525/images/sheldon2.png "Sheldon has goals and aspirations yet joins in the divide that AccessiBe hammers between people in the disabled and accessibility communities.")
 
 > We are on a mission to make the internet accessible to all by 2025
 
@@ -107,7 +107,7 @@ For someone that preaches bridging the ever-growing digital divide, it strikes m
 
 By the by, Sheldon is back and still peddaling the same farcical, muck.
 
-![Guess who's back, back again. Sheldon's back, tell a friend.](https://res.cloudinary.com/colabottles/image/upload/v1627486307/images/sheldon3.png" "Guess who's back, back again. Sheldon's back, tell a friend.")
+![Guess who's back, back again. Sheldon's back, tell a friend.](https://res.cloudinary.com/colabottles/image/upload/v1627486307/images/sheldon3.png "Guess who's back, back again. Sheldon's back, tell a friend.")
 
 It just doesn't end. That's the real problem, and with a boat load of money behind them, and the company reaching out to unaware entities and asking them if they need a solution just to sell uneducated stakeholders and managers snake oil, is the biggest problem.
 
