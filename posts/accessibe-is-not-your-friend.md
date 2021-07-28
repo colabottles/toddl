@@ -71,3 +71,46 @@ Take it from the people that are in the disabled community that have experience 
 Don't take the easy way out. Companies that like to spend money just to throw it at a company that says they can do one thing, yet it prodcues another are just not educated enough. [I wrote an article that touched upon how to get stakeholder and managerial buy-in at your organization](https://www.smashingmagazine.com/2021/07/strong-case-for-accessibility/) it even stresses the importance of getting peers and colleagues in on accessibility as well.
 
 Don't believe the hype. Overlays, no matter who they are from, and there are many companies out there selling the snake oil these days, do not work. It has been proven they don't. Consult a professional or a company that is reputable in the accessibility space. There are plenty of those companies out there looking out for you as well.
+
+## EDIT (28 July, 2021)
+
+After some research when seeing a tweet, I looked up Shldon, who is in fact real. And a person with a disability. However, the irony remains.
+
+Sheldon is real. Sheldon is also a person with a disability. Yet, Sheldon created a Twitter account to disparage remarks made by Karl. The account was created in July. Had one follower. Which reeks of new.
+
+![Sheldon is real and Sheldon has a great LinkedIn profile.](https://res.cloudinary.com/colabottles/image/upload/v1627482530/images/sheldon.png" "Sheldon is real and Sheldon has a great LinkedIn profile.")
+
+There are lots of people in the disabled community that are on the side of AccessiBe, and that's their choice, of course. But for a manager to make an account just for the sole fact of leaning into a conversation and throwing hasoline on an already out of control tire fire is beyond me.
+
+Two things that are apparent in the accessibility community:
+
+- Karl has decades experience.
+- Karl does not "own his own manual coding business".
+
+Which brings me this last point.
+
+![Sheldon has goals and aspirations yet joins in the divide that AccessiBe hammers between people in the disabled and accessibility communities.](https://res.cloudinary.com/colabottles/image/upload/v1627482525/images/sheldon2.png" "Sheldon has goals and aspirations yet joins in the divide that AccessiBe hammers between people in the disabled and accessibility communities.")
+
+> We are on a mission to make the internet accessible to all by 2025
+
+Hard to achieve that dream when the company you stump for doesn't make the web accessible.
+
+> The current state of the internet where only 2% of websites are accessible to people with disabilities is unjust and together with the use of technology we can bridge the ever-growing digital divide.
+
+There is a lot to unpack there. First, that 2 percent is probably higher due to AccessiBe being implemented by entities that do not know how the product affects users. So it may even be 99%+.
+
+It is unjust, but AccessiBe contributes to that unjust.
+
+Technology has shown (as has the people that create it) that ML, AI, cannot be trusted to solve all the problems. It doesn't bridge, is creates barriers.
+
+For someone that preaches bridging the ever-growing digital divide, it strikes me as ironic that Sheldon would create a Twitter account, tweet a disparaging tweet, deactivate the account, and contribute to a company that is well-known for guerilla-style attacks on people with decades in the accessibility community.
+
+By the by, Sheldon is back and still peddaling the same farcical, muck.
+
+![Guess who's back, back again. Sheldon's back, tell a friend.](https://res.cloudinary.com/colabottles/image/upload/v1627486307/images/sheldon3.png" "Guess who's back, back again. Sheldon's back, tell a friend.")
+
+It just doesn't end. That's the real problem, and with a boat load of money behind them, and the company reaching out to unaware entities and asking them if they need a solution just to sell uneducated stakeholders and managers snake oil, is the biggest problem.
+
+Sheldon just exacerbates it.
+
+Sheldon may be a very nice human being, I'm not saying Sheldon isn't. However, what I am saying is Sheldon is part of the problem. What woks in your browser doesn't work in everyone else's.
