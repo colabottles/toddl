@@ -74,7 +74,7 @@ Don't believe the hype. Overlays, no matter who they are from, and there are man
 
 ## EDIT (28 July, 2021)
 
-After some research when seeing a tweet, I looked up Shldon, who is in fact real. And a person with a disability. However, the irony remains.
+After some research when seeing a tweet, I looked up Sheldon, who is in fact real. And a person with a disability. Don't come at me with "You're attacking a disabled person." I'm not, I'm questioning professional ethics and confirmation bias. However, the irony remains.
 
 Sheldon is real. Sheldon is also a person with a disability. Yet, Sheldon created a Twitter account to disparage remarks made by Karl. The account was created in July. Had one follower. Which reeks of new.
 
