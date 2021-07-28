@@ -72,7 +72,7 @@ Don't take the easy way out. Companies that like to spend money just to throw it
 
 Don't believe the hype. Overlays, no matter who they are from, and there are many companies out there selling the snake oil these days, do not work. It has been proven they don't. Consult a professional or a company that is reputable in the accessibility space. There are plenty of those companies out there looking out for you as well.
 
-## EDIT (28 July, 2021)
+## CORRECTION (28 July, 2021)
 
 After some research when seeing a tweet, I looked up Sheldon, who is in fact real. And a person with a disability. Don't come at me with "You're attacking a disabled person." I'm not, I'm questioning professional ethics and confirmation bias. However, the irony remains.
 
