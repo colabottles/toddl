@@ -21,10 +21,10 @@ I touched (no pun intended) on Success Criterion in [a previous article](https:/
 
 If you’re wondering whether there’s a criterion for target size, the answers is yes. It’s WCAG 2.5.5. Pulling straight from the guidelines. passing [WCAG 2.5.5](https://www.w3.org/TR/WCAG21/#target-size) with a AAA grade requires “the size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:
 
-    - Equivalent: The target is available through an equivalent link or control on the same page that is at least 44×44 CSS pixels;
-    - Inline: The target is in a sentence or block of text;
-    - User Agent Control: The size of the target is determined by the user agent and is not modified by the author;
-    - Essential: A particular presentation of the target is essential to the information being conveyed.”
+* Equivalent: The target is available through an equivalent link or control on the same page that is at least 44×44 CSS pixels;
+* Inline: The target is in a sentence or block of text;
+* User Agent Control: The size of the target is determined by the user agent and is not modified by the author;
+* Essential: A particular presentation of the target is essential to the information being conveyed.”
 
 ### What could possibly go wrong?
 
