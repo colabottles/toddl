@@ -42,7 +42,7 @@ I don’t mean to pick on Twitter here, but it’s the first notable example I f
 
 Another favorite example I see quite often? Ads. Have you ever struggled to click the minuscule “X” button to close them?
 
-![An ad for a bike with a very difficult way to close the ad and small target area.](https://res.cloudinary.com/colabottles/image/upload/v1627617965/images/ad-close.webp "An ad for a bike with a very difficult way to close the ad and small target area.")
+![An ad for a bike with a very difficult way to close the ad and small target area.](https://res.cloudinary.com/colabottles/image/upload/v1627624154/images/ad-close.webp "An ad for a bike with a very difficult way to close the ad and small target area.")
 
 Having no motor skill or cognitive disabilities personally, I find myself fumbling around and taking multiple times to hit some target areas. The fact that someone who needs to use something like a pen or stylus on a target size that is not a minimum of 44×44 pixels can be a difficult task. These targets shouldn’t need multiple attempts to activate when the target size doesn’t meet recommended guidelines.
 
