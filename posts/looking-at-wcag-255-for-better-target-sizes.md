@@ -117,7 +117,7 @@ Notice that Apple’s platform requirements refer to a “tappable area” when 
 
 That’s right, we’ve gotta consider how things shift and move around in a design that’s meant to respond to different viewport sizes. One example might be buttons that stack on small screens but are inline on larger screen. We want to make sure that transition accounts for the placement of surrounding elements in order to prevent overlapping elements or targets.
 
-[picture]
+![Two mobile devices showing inline button styles and their repective target areas.](https://res.cloudinary.com/colabottles/image/upload/v1627859821/images/target-size-button-inline.webp)
 
 Speaking of inline, there’s a particular piece of the WCAG’s exception for inline targets that’s worth highlighting:
 
