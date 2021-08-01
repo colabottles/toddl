@@ -36,9 +36,9 @@ Small target sizes can cause accessibility hurdles for many people. Have you eve
 
 I don’t mean to pick on Twitter here, but it’s the first notable example I found while hunting for examples of small targets.
 
-![A timeline from Twitter with some really small target area to close out topics if you don't want to see them and plus icons if you want to add them.](https://res.cloudinary.com/colabottles/image/upload/v1627617619/images/timeline.webp "A timeline from Twitter with some really small target area to close out topics if you don't want to see them and plus icons if you want to add them.")
+![A timeline from Twitter with some really small target area to close out topics if you don't want to see them and plus icons if you want to add them.](https://res.cloudinary.com/colabottles/image/upload/v1627617619/images/timeline.webp)
 
-<caption>There are some good examples of small targets in here, from the tiny contextual menu to the actions in the footer of a tweet, and even the small icons to add topics to a timeline. And notice that even with a properly sized target, like the floating button to compose a tweet, it overlaps with another target, obstructing access to it.</caption>
+<figcaption>There are some good examples of small targets in here, from the tiny contextual menu to the actions in the footer of a tweet, and even the small icons to add topics to a timeline. And notice that even with a properly sized target, like the floating button to compose a tweet, it overlaps with another target, obstructing access to it.</figcaption>
 
 Another favorite example I see quite often? Ads. Have you ever struggled to click the minuscule “X” button to close them?
 
@@ -58,15 +58,15 @@ This success criteria ensures that target sizes are large enough for users to ea
 
 Mice and similar input devices use a pointer on the screen, which is considered “fine” precision because it allows a user to access an element on the screen with exact precision. Fine precision makes it easier to access smaller target sizes in theory. The trouble is, that sort of input device can be tough for some users, whether it’s with gripping the device, or some other cognitive or motor skill. So, even with fine precision, having a clear target is still a benefit.
 
-![A comparison of mobile screens side-by-side comparing targets of links as opposed to buttons.](https://res.cloudinary.com/colabottles/image/upload/v1627620899/images/mobile1.webp "A comparison of mobile screens side-by-side comparing targets of links as opposed to buttons.")
+![A comparison of mobile screens side-by-side comparing targets of links as opposed to buttons.](https://res.cloudinary.com/colabottles/image/upload/v1627620899/images/mobile1.webp)
 
-<caption>A Tale of Two Targets: Combining padding and color can help increase the size of a tap target while making it visually clear.</caption>
+<figcaption>A Tale of Two Targets: Combining padding and color can help increase the size of a tap target while making it visually clear.</figcaption>
 
 Touch, on the other hand, can be problematic as it is an input mechanism with very “coarse” precision. Users can lack a level of fine control when using a mouse or stylus, for example. A finger, which is larger than a mouse pointer, generally obstructs a user’s view of the exact location on the screen that is being activated or touched. Hence, “coarse” precision.
 
-![A mobile device with two sections, the bottom section with a thumb shown clicking the target area as opposed to the upper half using a pointer.](https://res.cloudinary.com/colabottles/image/upload/v1627621013/images/mobile2.webp "A mobile device with two sections, the bottom section with a thumb shown clicking the target area as opposed to the upper half using a pointer.")
+![A mobile device with two sections, the bottom section with a thumb shown clicking the target area as opposed to the upper half using a pointer.](https://res.cloudinary.com/colabottles/image/upload/v1627621013/images/mobile2.webp)
 
-<caption>A smaller pointer offers more precision than a larger thumb when it comes to interacting with an element.</caption>
+<figcaption>A smaller pointer offers more precision than a larger thumb when it comes to interacting with an element.</figcaption>
 
 This issue is exacerbated in responsive design, which needs to accommodate for numerous types of fine and coarse inputs. Both input types must be supported for a site that can be accessed by a desktop or laptop with a mouse, as well as a mobile device or tablet with a touch screen.
 
@@ -93,12 +93,12 @@ When WCAG specifies exact values, it’s worth paying attention. Notice that we�
 
 However, you may have also seen similar requirements with different guidance from the likes of Apple’s “Human Interface Guidelines” for iOS, and Google’s “Material Design” in their platform design requirements.
 
-[picture][picture]
+![Side by side iPhones showing target size dimensions on two different devices.](https://res.cloudinary.com/colabottles/image/upload/v1627666743/images/apple1.webp)![Material Design target sizes.](https://res.cloudinary.com/colabottles/image/upload/v1627666769/images/android1.webp)
 
-<caption>“Try to maintain a minimum tappable area of 44pt x 44pt for all controls.” (Apple, [“Human Interface Guidelines”](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/))</caption>
+<figcaption>“Try to maintain a minimum tappable area of 44pt x 44pt for all controls.” (Apple, [“Human Interface Guidelines”](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/))</figcaption>
 
-<caption>“Consider making pointer targets at least 44 x 44 dp.”
-(Material Design, [“Accessibility”](https://www.material.io/design/usability/accessibility.html#layout-and-typography))</caption>
+<figcaption>“Consider making pointer targets at least 44 x 44 dp.”
+(Material Design, [“Accessibility”](https://www.material.io/design/usability/accessibility.html#layout-and-typography))</figcaption>
 
 #### Consider the “tappable area” of a target
 
@@ -106,7 +106,12 @@ Notice that Apple’s platform requirements refer to a “tappable area” when 
 
 > Touch targets are the parts of the screen that respond to user input. They extend beyond the visual bounds of an element. For example, an icon may appear to be 24×24 dp, but the padding surrounding it comprises the full 48×48 dp touch target.
 
-[codepen]
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYZWzZm" data-user="css-tricks" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/team/css-tricks/pen/zYZWzZm">
+  </a> by CSS-Tricks (<a href="https://codepen.io/team/css-tricks">@css-tricks</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 #### Consider responsive layout behavior
 
