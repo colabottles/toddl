@@ -93,9 +93,11 @@ When WCAG specifies exact values, it’s worth paying attention. Notice that we�
 
 However, you may have also seen similar requirements with different guidance from the likes of Apple’s “Human Interface Guidelines” for iOS, and Google’s “Material Design” in their platform design requirements.
 
-![Side by side iPhones showing target size dimensions on two different devices.](https://res.cloudinary.com/colabottles/image/upload/v1627666743/images/apple1.webp)![Material Design target sizes.](https://res.cloudinary.com/colabottles/image/upload/v1627666769/images/android1.webp)
+![Side by side iPhones showing target size dimensions on two different devices.](https://res.cloudinary.com/colabottles/image/upload/v1627666743/images/apple1.webp)
 
 <figcaption>“Try to maintain a minimum tappable area of 44pt x 44pt for all controls.” (Apple, [“Human Interface Guidelines”](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/))</figcaption>
+
+![Material Design target sizes.](https://res.cloudinary.com/colabottles/image/upload/v1627666769/images/android1.webp)
 
 <figcaption>“Consider making pointer targets at least 44 x 44 dp.”
 (Material Design, [“Accessibility”](https://www.material.io/design/usability/accessibility.html#layout-and-typography))</figcaption>
@@ -125,9 +127,9 @@ Speaking of inline, there’s a particular piece of the WCAG’s exception for i
 
 Now, we’re not necessarily talking about buttons that are side-by-side here. We can links within text and that text might break the target’s placement, possibly into two lines.
 
-[picture]
+![A mobile device showing inline links and their target sizes](https://res.cloudinary.com/colabottles/image/upload/v1627860493/images/target-size-inline-links.webp)
 
-<caption>While it might be difficult to tap one target without inadvertently tapping the other, the WCAG makes an exception for inline targets, like links within paragraphs.</caption>
+<figcaption>While it might be difficult to tap one target without inadvertently tapping the other, the WCAG makes an exception for inline targets, like links within paragraphs.</figcaption>
 
 #### Consider the target’s relationship to its surroundings
 
@@ -139,15 +141,20 @@ Let’s take the example that the WCAG explainer provides, again, in it’s desc
 
 That’s a good one. We ought to consider whether the target is its own block or part of a larger block of text. If the target is its own block, then it needs to abide by the rules, whether it’s a button with a short label, or a complete sentence that’s linked up. On the flip side, a complete sentence that’s linked up inside another block of text doesn’t have to meet the target size requirements.
 
-[picture]
+![Target size relation between two mobile devices one showing buttons and theother showing links in an article for each respectively.](https://res.cloudinary.com/colabottles/image/upload/v1627860568/images/target-size-relation.webp)
 
-<caption>If the target is its own block of text (left), then it needs to adhere to the WCAG criterion. Otherwise, it is exempt (right).</caption>
+<figcaption>If the target is its own block of text (left), then it needs to adhere to the WCAG criterion. Otherwise, it is exempt (right).</figcaption>
 
 You might think that something like a linked icon at the end of a sentence or paragraph would need to play by the rules, but the WCAG is clear that these targets are exempt:
 
 > A footnote or an icon within or at the end of a sentence is considered to be part of a sentence and therefore are excluded from the minimum target size.
 
-[codepen]
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="rNydzOE" data-user="css-tricks" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/team/css-tricks/pen/rNydzOE">
+  WCAG 2.5.5: Icons at the end of a sentence are exempt</a> by CSS-Tricks (<a href="https://codepen.io/team/css-tricks">@css-tricks</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 And that makes sense. Imagine content with a line height of, say 32 pixels and an icon at the end that’s all padded up to be 44×44 pixels and how easy it would be to inadvertently activate the icon.
 
@@ -155,9 +162,9 @@ And that makes sense. Imagine content with a line height of, say 32 pixels and a
 
 If the target is completely un-styled — in the sense that you’ve added no CSS to it — and instead takes on the default styles provided by the browser, then there’s no need to stress the 44×44 rule. That makes sense. The User Agent is like system-level UI so changing it superficially with our own styles would be overriding an entire system which could lead to inconsistencies in that UI.
 
-[picutre]
+![A submit button.](https://res.cloudinary.com/colabottles/image/upload/v1627861573/images/form-input-submit.webp)
 
-<caption>You’re fine just as you are, little button.</caption>
+<figcaption>You’re fine just as you are, little button.</figcaption>
 
 So, yeah, if you’re rockin’ a default `<button>` or the like, and there are no other styles or sizing applied to it, then it’s good to go. But lots of us use resets to normalize UI elements across browsers, so watch for that in your codebase because that’s going to affect the User Agent styles of your target.
 
@@ -165,9 +172,9 @@ So, yeah, if you’re rockin’ a default `<button>` or the like, and there are 
 
 We’ve all used in-page anchor links, right? Heck, CSS-Tricks often has a table of contents at the top of an article that’s merely a list of anchor links.
 
-[picture]
+![A table of contents.](https://res.cloudinary.com/colabottles/image/upload/v1627861624/images/toc.webp)
 
-<caption>Should these be at least 44×44 pixels?</caption>
+<figcaption>Should these be at least 44×44 pixels?</figcaption>
 
 WCAG actually uses anchor links as an example of something that’s off the hook as far as meeting the target size requirements. Why? Because it’s just as possible to manually scroll down to a specific location on a page as it is to click a link to jump there. There are two ways to accomplish the same thing, and one of those ways is built right into the browser.
 
