@@ -32,25 +32,25 @@ Practicing accessibility in your workflows and methodologies ensures people — 
 
 ### Examples Of Practical Digital Accessibility
 
-* Your site has a color scheme that looks great after the designers are done with the mock-ups or the color scheme your brand uses is “perfect” in the eyes of people that do not have a visual disability. For people that have a visual disability like glaucoma, cataracts, or tritanopia (the deficiency of blue in one’s vision) they cannot make out that particular color and it does not meet [WCAG standards](https://shop.bsigroup.com/upload/Download/30317424.pdf).
+1. Your site has a color scheme that looks great after the designers are done with the mock-ups or the color scheme your brand uses is “perfect” in the eyes of people that do not have a visual disability. For people that have a visual disability like glaucoma, cataracts, or tritanopia (the deficiency of blue in one’s vision) they cannot make out that particular color and it does not meet [WCAG standards](https://shop.bsigroup.com/upload/Download/30317424.pdf).
 
-* If your light blue font color on a darker blue background did not meet those guidelines set in WCAG, then it would be inaccessible. If you switched to a lighter blue or white font within the [4.5 to 1 ratio guideline](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html) that you can read about in [(Success Criterion 1.4.3: Contrast (Minimum))](https://www.w3.org/TR/WCAG21/#contrast-minimum), then it would meet the standard and be accessible to more people.
+1. If your light blue font color on a darker blue background did not meet those guidelines set in WCAG, then it would be inaccessible. If you switched to a lighter blue or white font within the [4.5 to 1 ratio guideline](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html) that you can read about in [(Success Criterion 1.4.3: Contrast (Minimum))](https://www.w3.org/TR/WCAG21/#contrast-minimum), then it would meet the standard and be accessible to more people.
 
 ![Different font colors and their respective WCAG color contrast ratios for text on a light blue background for a use case.](https://res.cloudinary.com/colabottles/image/upload/v1627868024/images/font-contrasts.webp)
 
-* You have a site that does not traverse well (or at all) when disabled users use assistive technologies such as a screen reader, keyboard, or voice recognition to navigate around the site because they lack the motor skills or dexterity to do so. An accessible site makes sure there is a way for those users to navigate through the site with no issues. Examples of keyboard navigation [can be seen in this video](https://youtu.be/FvpUNiB-2T0) and in [this short video about voice recognition](https://youtu.be/7RHG_XiQ0ck).
+1. You have a site that does not traverse well (or at all) when disabled users use assistive technologies such as a screen reader, keyboard, or voice recognition to navigate around the site because they lack the motor skills or dexterity to do so. An accessible site makes sure there is a way for those users to navigate through the site with no issues. Examples of keyboard navigation [can be seen in this video](https://youtu.be/FvpUNiB-2T0) and in [this short video about voice recognition](https://youtu.be/7RHG_XiQ0ck).
 
-* An accordion component with information that creates content that is not scrollable. It is inaccessible to people that use the keyboard for navigation. Make sure that the content is accessible by keyboard in that instance.
+1. An accordion component with information that creates content that is not scrollable. It is inaccessible to people that use the keyboard for navigation. Make sure that the content is accessible by keyboard in that instance.
 
-* Using alternative text to describe the information in a picture for Blind users. [Images that do not have alternative text that describes to screen reader users what the picture conveys](https://www.smashingmagazine.com/2021/06/img-alt-attribute-alternate-description-decorative/) are a barrier to blind people. e.g.
+1. Using alternative text to describe the information in a picture for Blind users. [Images that do not have alternative text that describes to screen reader users what the picture conveys](https://www.smashingmagazine.com/2021/06/img-alt-attribute-alternate-description-decorative/) are a barrier to blind people. e.g.
 
 `<img src=“” alt=“This is my favorite kind of animal, a Maine Coon cat.”>`
 
-* Users of newer technologies, people that live in metropolitan areas, or people that can afford to buy the latest tech, for example, have fewer barriers to break through than people that cannot afford a new phone or tablet, or are in very remote or rural areas.
+1. Users of newer technologies, people that live in metropolitan areas, or people that can afford to buy the latest tech, for example, have fewer barriers to break through than people that cannot afford a new phone or tablet, or are in very remote or rural areas.
 
-* The glare of the sun on your mobile device as you’re on the beach on a sunny day. You’re shielding the screen or squinting to see the screen to read what restaurant to go to after you’re day at the beach is done. That is a situational impairment.
+1. The glare of the sun on your mobile device as you’re on the beach on a sunny day. You’re shielding the screen or squinting to see the screen to read what restaurant to go to after you’re day at the beach is done. That is a situational impairment.
 
-* A fussy child on your lap moving around while you are trying to read an email or an injured arm as you try to answer an email, hindering your ability to type as you normally would is a situational impairment.
+1. A fussy child on your lap moving around while you are trying to read an email or an injured arm as you try to answer an email, hindering your ability to type as you normally would is a situational impairment.
 
 There are a lot more examples of accessibility I could mention but that would take a very long time to write, so these are just a few examples.
 
