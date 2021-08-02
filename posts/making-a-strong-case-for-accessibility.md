@@ -12,7 +12,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-(Originally posted on Smashing Magazine on 9 July, 2021)
+(Originally posted on [Smashing Magazine](https://www.smashingmagazine.com/2021/07/strong-case-for-accessibility/) on 9 July, 2021)
 
 **Quick summary** ↬ Accessibility is often overlooked or bolted on to the end of a project from the experiences in Todd’s career in web development and design. The case for accessibility is something we as people who create and build things for the web should be implementing and advocating for from the inception of a project to the release or handoff and beyond.
 
@@ -36,7 +36,7 @@ Examples Of Practical Digital Accessibility #
 
 * If your light blue font color on a darker blue background did not meet those guidelines set in WCAG, then it would be inaccessible. If you switched to a lighter blue or white font within the 4.5 to 1 ratio guideline that you can read about in (Success Criterion 1.4.3: Contrast (Minimum)), then it would be accessible.
 
-[picture]
+![Different font colors and their respective WCAG color contrast ratios for text on a light blue background for a use case.](https://res.cloudinary.com/colabottles/image/upload/v1627868024/images/strong-case-for-accessibility-1_qluzpv.webp)
 
 * You have a site that does not traverse well (or at all) when disabled users use assistive technologies such as a screen reader, keyboard, or voice recognition to navigate around the site because they lack the motor skills or dexterity to do so. An accessible site makes sure there is a way for those users to navigate through the site with no issues. Examples of keyboard navigation can be seen in this video and in this short video about voice recognition.
 
