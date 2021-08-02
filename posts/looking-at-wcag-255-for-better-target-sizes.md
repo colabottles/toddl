@@ -42,7 +42,7 @@ I don’t mean to pick on Twitter here, but it’s the first notable example I f
 
 Another favorite example I see quite often? Ads. Have you ever struggled to click the minuscule “X” button to close them?
 
-![Ad for a bike with a very small target area and difficult way to close the ad.](https://res.cloudinary.com/colabottles/image/upload/v1627864312/images/ad-close.jpg)
+![Ad for a bike with a very small target area and difficult way to close the ad.](https://res.cloudinary.com/colabottles/image/upload/v1627864531/images/ad-close.webp)
 
 <figcaption>You’re not alone if you’ve ever struggled to click, let alone even locate, the close button.</figcaption>
 
