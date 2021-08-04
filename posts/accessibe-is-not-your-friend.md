@@ -105,7 +105,7 @@ Technology has shown (as has the people that create it) that ML, AI, cannot be t
 
 For someone that preaches bridging the ever-growing digital divide, it strikes me as ironic that Sheldon would create a Twitter account, tweet a disparaging tweet, deactivate the account, and contribute to a company that is well-known for guerilla-style attacks on people with decades in the accessibility community.
 
-By the by, Sheldon is back and still peddaling the same farcical, muck.
+By the by, Sheldon is back and still pedaling the same farcical, muck.
 
 ![Guess who's back, back again. Sheldon's back, tell a friend.](https://res.cloudinary.com/colabottles/image/upload/v1627486307/images/sheldon3.png "Guess who's back, back again. Sheldon's back, tell a friend.")
 
