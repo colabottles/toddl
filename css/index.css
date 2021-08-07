@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
 a,
 abbr,
 address,
@@ -180,7 +182,7 @@ q:before {
   --ecto: #a3af7c;
   --dark: #232323;
   --night: #555555;
-  --font-family-sans: 'Source Sans 3 VF', 'Open Sans', Arial, Helvetica, sans-serif;
+  --font-family-sans: 'Work Sans', 'Open Sans', Arial, Helvetica, sans-serif;
   --font-family-serif: Georgia, 'Times New Roman', serif;
   --font-family-heading-sm: 'Raleway', Arial, Helvetica, sans-serif;
   --heading1-font: calc(1.3125rem + 0.3vw);
@@ -700,7 +702,7 @@ img {
   height: auto;
 }
 
-p ~ p img {
+p~p img {
   margin: 0 auto;
   width: 20em;
 }
