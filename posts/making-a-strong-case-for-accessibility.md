@@ -14,7 +14,7 @@ layout: layouts/post.njk
 
 (Originally posted on [Smashing Magazine](https://www.smashingmagazine.com/2021/07/strong-case-for-accessibility/) on 9 July, 2021)
 
-**Quick summary** ↬ Accessibility is often overlooked or bolted on to the end of a project from the experiences in Todd’s career in web development and design. The case for accessibility is something we as people who create and build things for the web should be implementing and advocating for from the inception of a project to the release or handoff and beyond.
+_Accessibility is often overlooked or bolted on to the end of a project from the experiences in my career in web development and design. The case for accessibility is something we as people who create and build things for the web should be implementing and advocating for from the inception of a project to the release or handoff and beyond._
 
 Imagine yourself as someone with a visual disability. Cataracts, or totally blind even. A site is not accessible because of many factors, willing and unwillingly. Accessibility may have been attended to at the end of the project or not in the budget, or maybe they just didn’t practice it. You can’t access the vital information on the site because it’s not accessible to people with visual disabilities.
 
