@@ -1,7 +1,7 @@
 ---
 title: Dan Cederholm
 description: My Interview with Dan Cederholm
-date: 2021-29-09
+date: 2021-09-29
 layout: layouts/post.njk
 ---
 
