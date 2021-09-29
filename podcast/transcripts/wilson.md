@@ -1,7 +1,7 @@
 ---
 title: Prince Wilson
 description: My Interview with Prince Wilson
-date: 2021-29-09
+date: 2021-09-29
 layout: layouts/post.njk
 ---
 

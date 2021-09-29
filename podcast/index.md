@@ -1,7 +1,7 @@
 ---
 layout: layouts/podcast.njk
 title: Podcast
-date: 2020-25-10
+date: 2020-10-25
 navtitle: Podcast
 templateClass: tmpl-post
 ---
