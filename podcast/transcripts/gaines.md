@@ -1,0 +1,616 @@
+---
+title: Homer Gaines
+description: My Interview with Homer Gaines
+date: 2021-09-29
+layout: layouts/post.njk
+---
+
+## S1:E2
+
+Todd Libby: Alright. Welcome to the Front End Nerdery Podcast. The podcast about front end development and design. I'm your host Todd Libby. And I'll be talking with people in tech about a number of different topics focused on front end development and design as well. Today I have with me Homer Gaines Homer Gain—
+
+Homer is an interactive designer, front end developer, certified accessibility professional. Yes, and a musical producer and artist. The music you hear at the start and finish of each episode of this podcast is from my friend and wizard at changing shirts, midway through conference talks, Homer Gaines.
+
+Homer, thank you for joining me today.
+
+Homer Gaines: I'm never going to let me live that down. Are you?
+
+Todd Libby: No, that was awesome though. So why don't you tell the listeners a little bit about yourself?
+
+Homer Gaines: You literally just did.
+
+Like you said, I—front end end developer that focuses on accessibility. My primary role for the past, I wanna say five, six years has been working with companies to help set up design systems and integrate accessibility into those design systems. You know, to help out the teams with the applications that they're building.
+
+But yeah, I've been doing this. I've been doing this for going on 25, 26 years now. Yeah. So, been in this for a minute. It's funny too, you know, been here long enough to see the good grief. Hold up. Let me turn off Slack.
+
+Todd Libby: No worries.
+
+Homer Gaines: Okay. That was hilarious.
+
+All right, let's get back to it. So, anyway, while, I'm getting Slack in. See I was set up correctly on the other machine. This one here, everything is just bubbling. Buzzing up. But, you know, yeah I've been doing this for a very long time back when it seemed like when we all started, we all had to be full stack developers, you know, because no one knew what was going on.
+
+You were designing it, building it, setting up the emails, setting up the servers because nobody was doing that stuff. And then, you know, time went on and we all became specialists and it seems like we're going back to the, everybody has to do everything in the kitchen sink mode again, which is strange. But yeah, that's me in a nutshell.
+
+And yeah, like you said, I write music. I've been doing that—good grief, man. I started drumming when I was able to pick up sticks. You know, my mom's side of the family is very musical. they've been in the industry for years, you know, grew up in Detroit. My parents did around Motown, so I was always around, you know, that creative energy.
+
+And it just has always stayed with me. And, you know, I I've been able to, I've been blessed enough to be able to compose music for plays independent films, commercials, you know, and for myself. So, you know, it's been a fun ride and I'm still on it. So loving it.
+
+Todd Libby: Yeah. And I'm a big fan of the music by the way.
+Homer Gaines: Thanks, I appreciate it. I really appreciate you. And like I was listening to the podcast and even though I remember you asking me, “Hey, can I use one of your songs to lead into the podcast?” I forgot about it. And so when I listened to the one that you did with Zeldman, that song started playing and my wife perked up, she was like, yeah, "Wait is that you, are you playing your song right now?"
+
+I said, "No, Todd has it at the beginning of the podcast." I like, so I appreciate that. Love it. Love it.
+
+Todd Libby: Yeah. I hear the first one I thought about, cause I was like, I need some nice relaxing music to lead in and out of the podcast. So you're, you know, you came to mind right away because. You know, when I, when we started following each other on Twitter and I found out you did music, I'm like, okay, I gotta check this guy's music out.
+
+And when I did, I was like, all right, I'm all aboard this train because this is just one nice, chill ride. So—helps  me get through a work day too.
+
+Homer Gaines: You know what, and it's funny enough. that's what, that's what I write the music for. You know, a friend of mine, he told me he was like, "You write for the listener."
+I said, yeah, because I don't do a whole lot of promotion or anything like that because I'm just releasing music because I want to release music—and, but when I checked my stats, what I noticed is that during the work week, my stats are high. So that means that people are actually streaming me while they're at work, doing something and, you know, back in school When I was releasing my little mix tapes and handing them out around campus and things like that.
+
+One of my friends back then he was like, "You write 'do it to it' music." You know, I was like, wait, what? Where are you going with this? Do it to it music? He's like, "No, no, no, no, no, no." He's like, "No, you write music that we can do anything to is like, we put on your tape and we, you can go drive to it. We can study to it.
+
+We can clean the house to it. We can chill to it. Do whatever it's you just write really nice ambient background music that just kind of like breaks the monotony of the day, but still helps you get in. Helps you get through it." and  I was like, Oh, all right, cool. So I had got, you know, have been going under the moniker of "do it to it" music and you know, ever since, ever since he said that ever since Bruce told me that that day.
+
+So yeah. I mean, it's, I'm glad that people listen to it like yourself, you know, to help get through the day because that's why I write it.
+
+Todd Libby: Yeah. Yeah. It's super, so I would like to touch on, you know, what people would that I have on the podcast that what they do. So as an interactive designer, can you tell the listeners what you do as an interactive designer and what you enjoy most out of it?
+
+Homer Gaines: Yeah. Well, interactive design kind of came. that's what I refer to myself ever since the Flash days, because. You know, we were designing, granted every website is an interactive experience, but when we were doing, you know, the multimedia type presentations that Flash allowed us to do back in the day it was a lot more than just design because you actually had to think through the UX and everything else about how you're actually going to create this animation that allows them, the visuals to still do what they want to do, whether it was for.
+
+An e-commerce site or whether it's for play. So designing the interactions is where interactive designer comes from, which in today's term is yeah, I'm focused on UI, I'm focused on UX and when I really started getting heavy into accessibility, obviously Flash wasn't accessible. So yeah, it was great for the beginning of my career, but towards the towards the era where Flash started to fade out, you know, it made sense to leave it alone, especially when I needed to start building things that were more accessible.
+
+And so from there, yeah, I took my design skills and my UX skills and threw it back into the web, which is how I ended up where I am now. So with HTML, CSS, JavaScript, those three, everything else is just cake.
+
+Todd Libby: Yeah. Yeah. So how has front end evolved from your perspective since those days in—and what do you think has changed the most?
+
+Homer Gaines: It's evolved a lot. I mean, especially when you think about how we have all these different frameworks and libraries that didn't exist back then being able to build design systems to help, you know, small and large teams quickly prototype something out. you know, I remember when—even with CSS, even if you just take CSS, I remember building websites before we even had CSS and doing complex table structures.
+
+And, you know, whether you were using using Photoshop or what was it Freehand that Macromedia had? And, and then Fireworks. And you can sit there and cut out all the slices.
+
+Todd Libby: Yep.
+
+Homer Gaines:  In those small table grids and everything. And, you know, having like umpteen thousand GIF images uploaded, and you had to choose which one was going to be a PNG, GIF, or a JPEG, you know, just, just based on the way that the image was rendering, you know, going from that to be being able to draw a complete UI inside CSS.
+
+It's just amazing, you know. My day to day, I love CSS. I'm always in there. I'm always doing some, Sass is my friend and, you know, it's just wild when I think back to where we were doing, we were doing so much to get these, these smaller websites up and going to where now we can, you can literally just put out something quality and you see, you see this trend on Twitter now, which is what  I find funny, you can put out some quality just using CSS and HTML. You don't even need to have JavaScript depending on the level of interactivity that you want.
+
+Todd Libby: Right.
+
+Homer Gaines: You know, but even though we've had these, these advancements with the libraries and components pick your flavor, whether it's, you know, you're writing in extensile, whether you're writing it and React or, you know, or Angular or anything like that.
+
+Not, not a whole lot has changed in the form of HTML, CSS and JavaScript in how we actually use them. You know, those foundations are just always going to be there. And I say always with the limited knowledge of what the future is going to bring, you know There are times where I sit here and I'll think it was like, what is, what, what will, what will building a website like, you know, 90 years from now?
+
+Well, we still have HTML. I mean, granted HTML is currently the foundation. It is the markup. It is, the structure, is the DOM, that's what gets spit out. Will we come up with some way to make that evolve into some other scaffolding? Don't know, don't know what that looks like. But right now, this is what we have and what HTML5?
+
+Todd Libby: Yep.
+
+Homer Gaines: HTML5 is where we are. And I saw a post the other day where someone was asking for additional HTML tags. And I was thinking to myself, well, damn, we have so many HTML tags right now. I mean, there's a ton of them that I don't even use, I don't even need to use, so how many more do we need?
+
+And I remember a guy on Twitter hit me up. He replied to one of my posts. it was a couple of weeks ago. He was like, "As a front end developer, all you need is div."
+
+I was like, wow. Like technically yes. But yeah. And we're not going to go that route. I like to write semantic markup.
+
+Todd Libby: Yes. Yes. semantic markup is always nice.
+
+Homer Gaines: Oh man. Semantic markup is just lovely. It—it affords you all of the nice accessibility features that otherwise you wouldn't have to remember to add to your custom component. Guaranteed you're going to miss something.
+
+Todd Libby: Yeah.
+
+Homer Gaines: Always do. Always do well. Yeah. I mean, the web is the web has evolved, but I think how we use the web has evolved more.
+
+Todd Libby: Yeah.
+
+Homer Gaines: That's what it is.
+
+Todd Libby: Yeah. So I'm going to softball this one in to ya.
+
+Homer Gaines: Uh-oh.
+
+Todd Libby: So you and I, as well as a lot of other great folks in this, and you know, the accessibility space on Twitter, talked a lot about, you know, inclusiveness in accessibility and all the stuff that comes with it. So here's the saw— here's the pitch. How important would you say is the role of accessibility in not only development, but design as well?
+
+Homer Gaines: Oh, bro.  What?! That's crazy. Hella important.
+
+Todd Libby: Yep.
+
+Homer Gaines: It's—
+
+Todd Libby: Told you what, I told you it was a softball.
+
+Homer Gaines: Yeah. Yeah. I saw the stitching on that one coming through. You're trying to do start a fight? No, I'm kid—yo—
+
+Todd Libby: Well, if you look on my Twitter.
+
+Homer Gaines: Yeah. Yeah. Yeah. You need to stop. You need to need to behave yourself.
+
+Todd Libby: I do.
+
+Homer Gaines: No keep doing you. Accessibility is everybody's job, man. It's not just the devs. It's not just design. It's also, you know, the PMs, the copywriters, leadership. Everybody needs to be aware of that, but pointing to your question, it really does.
+
+Dev and design need to be in lockstep when it comes to accessibility and reason being when we start developing something, we start developing an idea that happened sometime in the past, somebody had an idea, came up with it, decided to mock it up, to see what it would look like. See how would it actually work?
+
+Before it actually lands on the developer's desk for us to actually build it because before we can start building something, we need those specs. Those specs, you know, are oftentimes visual. Going into that visual process, designers really do have to understand how the designs that they will—yeah, they have to understand what they're designing and how it actually affects the user.
+
+They need to think about that user journey when they are designing it before it even gets to the point to where we're writing a stitch of code, that user journey should be planned out. How are our users with keyboards going to navigate through this in the event that they are designing some new widget that doesn't have.
+
+Historical context on, you know, for users on how to use it? You know, anything. They really need to think about the user journey and they can't think of it in that binary sense where it's you either have, for instance, screen readers, you're either a sighted user or you're a blind user. Can't think about that.
+
+What about the users in between that have low vision? No.
+
+Todd Libby: Yep.
+
+Homer Gaines: How you design form elements, impacts them how you group content together, the proximity of the content, related content, you know, that affects individuals with low vision. You've got screen magnification and—and browser zoom. You know, you have two elements that are at extreme sides of the screen.
+
+You can lose that context because now depending on how that individual is browsing the site. That content is now separate from one another, you know, things like that. color contrast, easy, you know, definitely think about that. Don't sit up there and just because it looks cool or whatnot, put light gray text on a white background because you want this clean aesthetic.
+
+I get it. Minimalism is dope. I love minimalism, especially in websites, the cleaner, the better, but, you know, I like Sumi-e at Sumi-e uses, you know, ink, breaks it down to the bare minimum but still conveys the message.
+
+Designers have to do that as well. And then it comes, you know, even with copywriting, because as they're working through designs, if they're not using Lorem, you know, they're putting in some other mock copy, but as they do it, we as designers tend to get attached to the design that we've done and therefore, when someone comes back and says, "Hey, you need to make this change," there's that resistance there.
+
+So the designers have to understand what that resistance is, why that resistance is there to changing it and understand that they need to make changes for the better.
+
+It's not about the portfolio piece. It's about the end user itself case in point, you know, if you have links that aren't descriptive enough, like granted, you and I, you know, we have sight, we can see a link that says, "click here". We, we can understand what that actually means, but for someone who may have a cognitive disability or whatnot, they come in and they see "click here", they don't have the context of that.
+
+So providing more context in these call to actions, you know, is definitely key for helping out accessibility from that aspect, but all that comes from the design and the conversations that happen during the design process before they even make it to dev and you know we're starting to—being in the industry we're starting to talk about shift left or, you know, you get it, get ahead of this as much as you can.
+
+When I worked for an e-commerce company, a lot of times, my team wasn't brought in until, you know, weeks before the project had to be built. And we would constantly butt heads with marketing and creative and even leadership telling them we need to be involved in the process earlier because you guys are asking us to build something because you saw it someplace else.
+
+Without intimate knowledge of how our system works. So you're asking for X, Y, and Z, when our system doesn't support that. We have to build something for that same thing with design. If you go off and set the expectation of how a design should look versus how it actually works, then you've got a problem.
+
+And far too often, That problem—solving that problem falls on the dev team when it shouldn't, it needs to start upstream. It needs to start upstream where leadership is buying into it and the actual project itself is being sold. So setting those expectations. So, yeah, for designers, like I said, it's everybody's responsibility, but at the end, the embryonic stages of a project's idea.
+
+Accessibility definitely needs to be inside the fold.
+
+Todd Libby: Yeah. Yeah. I am a big supporter of, from kickoff to handoff. Accessibility is crucial. So that's—I hear you on that.
+
+Homer Gaines: And what, what's the regular tweet that you'd like to put out? Accessibility is a right.
+
+Todd Libby: Accessibility is a right. Not a privilege.
+
+Homer Gaines: Not a privilege, exactly.
+
+Todd Libby: Yeah. so I know you and I both talk to a lot of people that are curious and interested in getting into the accessibility space. What would you say to folks that, you know, we haven't spoken to on Twitter or in other places that are looking to get into that space and start their journey in accessibility?
+
+Homer Gaines: The first step is always just to start doing it, start doing the research understanding how accessibility fits into what you're doing at that moment. speaking to the developer who. It started to realize that the product that they're working on isn't accessible and they want to understand how do an inventory learn, how to do those testings.
+
+For individuals who are not comfortable using screen readers or any other assistive tech that's built into the machines often, I like to suggest that, all right, let's go to automated route first. So I often recommend using Axe. You know it'd be a Chrome plugin for doing some automated testing, do an audit of one of your page views.
+
+See what happens. And when that comes back, research, how to fix those. And then when you start researching how to fix those, you actually start learning about how accessibility plays into your product. And then, you know, the next question I get was, "well, what if I received pushback for, you know, wanting to integrate this?", then I ask them candidly.
+
+You really got somebody who's going to push back on you for doing the right thing, take it off you and put it on them. Have them answer that question when you ask somebody else. So you really don't want to do the right thing. They usually back off because no one wants to appear as a jerk or come off as an asshole.
+
+You know, it's like, Oh no, I had one guy. He was just like, I really want to start implementing these things, but I don't know how I said, start putting them in. Yep. He said, what do you mean put him in? I said, when you're writing your code, if you come, if you are working on a particular view at that point in time, you recognize that there are accessibility issues in there.
+
+Fix those issues, emerge those issues in what somebody's going to do. When it goes through code review, they ain't going to tell you, Hey, this this, you gotta take this accessibility par out. Again, nobody wants to look like that jerk going in there and you saw the light bulb go off over his head. He was like, Oh yeah, I can just do that.
+
+It's like, yeah, that's all you need to do. Yeah. You start the fact that you're showing interest and wanting to build better products that are accessible shows that you are willing to take the steps. So it's learn what those issues are. Learn how to fix them often. It starts at the market level. You know, I tell people, what's your market look like?
+
+Is it div soup? Are you using semantic markup? Are you adding on clicks to spans and divs? Yeah. Why? Well, because, you know, I was just styling a Dave. I said, you know, you can stall a button the same way and you get all the accessibility that you need from that button.
+
+And it's semantic. Oh, yeah. Again, I love it.
+
+When the light bulbs go off it's grit. When you start to really show individually that start with the basics, then it makes it easier for them to transition into, you know, building accessible things. So, yeah, I start— that's me. I tell them, start here, start implementing it.
+
+Implementation means that you were actually working in, in working to actually make things better, start introducing it and then after you've, after you've worked it into like, say for instance, a couple of iterations of your project, tell your team about it, tell leadership about it and be like, look, this is, this is how our product, or this particular view behaved before I made the accessibility enhancements. And then walk them through the benefits of those enhancements.
+
+And I've seen, you know, people in leadership actually start to get it. They, unfortunately people have to see the results before they actually believe them. Yep. You know, so a lot of times it's, you know, you just got to do the work, show them the benefit, and then when they see the benefit everybody's on board with it.
+
+Todd Libby: Yeah.
+
+Homer Gaines: So, but yeah. Anyone starting off new, do the research. There's plenty of resources out there. You have the WCAG that you can read through. Yes. That is that. That is the de facto. but there's tons of blogs out there, you know, chatting with people like you and I on Twitter is another way, you know, Chris DeMars, Maria Lamardo, Scott Davis, Marcy Sutton, you know, hitting up.
+
+The accessibility community on Twitter is a good one. And then there's also the—the A11y Slack channel. We're all in there, always talking about everything. even— even the Design System Slack channel has an accessibility site or accessibility channel in there. So, you know, just get involved in the community.
+
+And you'll start to pick those things up. You start to gain that knowledge and gain that experience and gain that confidence to move forward, to incorporate accessibility into, you know, your day to day and whatever it is that you're working on.
+
+Todd Libby: Right. And so you, you triggered a memory.
+
+Homer Gaines: You have memories?
+
+Todd Libby: I—well, they're fading fast at this, this advancement in age, but yes, few and far between now, but I worked for a company and I think we've talked about this before, maybe I went to a stakeholder and I said, okay. I would like, you know, to put time into our projects for accessibility and he shot back with, "We don't have disabled users." So it does happen.
+
+Homer Gaines: Yeah. Yeah, it does. It does. I'm not saying it doesn't, I've had to deal with that before, but that's where it goes. That's where it falls back to showing them, proving to them. You know, one of my coworkers the other day he was so happy because. We actually had a customer write in who had, who has low vision and she uses browser zoom and everything.
+
+And there was a particular section of the app that she had a problem with. And he was so happy that you know, that she contacted him and he interviewed her and everything. And we were able to work out a fix because it was, it was a part of the app that. We weren't actually looking at it at that point, if we didn't have it slated to do any work, but when the surface even leadership was like, Oh, we didn't realize that this was a problem.
+
+You know? those, those real world interactions like that often shine a whole light, a whole lot of light on the situation and then make them understand it's like, "Oh yeah, maybe we do need to deal with this." But yeah, man, I've had—I've had leadership, I've had designers somehow, and— "we don't have disability, disabled users using our website."
+
+I'm like, really? Are you, are you that naive? You kidding?
+
+Todd Libby: Yeah. And this, this certain stakeholder It was funny too, because he was wearing glasses. And I said, you do know you're you have an ex, an assistive technology—
+
+Homer Gaines: On your face.
+
+Todd Libby: Yes. So it was—
+
+Homer Gaines: What happens if you take your glasses off, read that, read this for me when you take your glasses off. "Well I can't see that, make the font bigger." Oh!
+
+Todd Libby: That and, uh you know, You— and I had to explain situational , temporary impairments, disabilities and, and, you know, you know, you know, you got a child in the arm and you have something, you have your phone on the other hand, and you're trying to, you know,  engage in a meeting for instance, ya—
+
+Homer Gaines: Yes. Situational that was.
+
+You've seen me with, with my son, you know, having I got him here and yeah, my wife just cracks up. She was like, I'm glad that things are accessible because if it wasn't you have problems right now, like you were right about that.
+Todd Libby: And I got— yep—.
+
+Homer Gaines: Or mess with just jam your— jam your clicking finger. Yeah, jam, your index
+finger.
+
+Todd Libby: That's another story too. Cause—
+
+Homer Gaines: Gosh what did you do? Did you injure yourself?
+
+Todd Libby: I did. I—I was working on something and I said, okay, time to take a break. It was lunchtime or something like that. I'll drive down the store, you know, grab a bite to eat and come back and, you know, finish working.
+
+So I got in the car and I'm driving down. It's very sunny day and I go to take the sun visor and pull it down. Well, I missed as I was pulling it and I socked myself in the eye and I had to literally tell this stakeholder that things like that happen now, granted. It's at my own self-deprecation but it happened, I'm glad to be, you know, patient zero. But it did happen.
+
+Homer Gaines: Yup. Yup, exactly. I mean, I've, I've injured myself before and, you know, just getting around and you're like, thank God for the curb cuts. Thank God for the ramps and things like that, you know, as it pertains to the web. Yeah. Not everybody uses the web, computers, mice, keyboards. We don't use technology the same way. We just don't.
+
+Todd Libby: Right.
+
+Homer Gaines: You know, and it's is really bad. Well, it's not bad. It's unfortunate that. The norm has been, the norm has been to build and design with that—with that bias that developers or designers or whomever they use themselves as the template for everything that goes out because they are building it for themselves.
+
+Instead of looking outside at the real world. And that the various possibilities of how someone can actually use things. you know, you've seen that meme before where it says design user experience and you see the design and it's a nice man—it's a nice manicure pathway that's going through.
+
+And the connects, 90 degree angles, user experience, the person just wore a path through the grass.
+
+Todd Libby: Yep.
+
+Homer Gaines: Shortcuts, you know, a lot of times people don't think that way.
+
+Todd Libby: Right.
+
+Homer Gaines: And, and it's really true. I mean, there are, there are, there's just a range of use cases, cases out there that fall on that bell curve.
+
+And we, we have to remember to design for those outer edges. You catch those outer edges. You definitely gonna catch the center of the bell curve, you know and like you said, situational, are you being blinded right now? Yep. All right. How do you fix that? Use your visor. There was one—
+
+Todd Libby: Just don’t punch yourself in the eye.
+
+Homer Gaines: Just don't punch yourself in the face either.
+
+I mean, you don't have to put up, good grief. Oh. You know, when one day my my wife was, was was driving. This is Atlanta, pre pandemic line of traffic as well. And, you know, we had a Subaru with the with the stop assist, the brake assist. Yep. You know, I look at that as assistive tech because brake assist kicks in when the driver doesn't react fast enough, which means that if you're not reacting fast enough, you were distracted.
+
+Distraction is cognitive. Yep. And she was in the car one day headed up to work, I believe. And you know, something caught her attention over here. Like I think a driver swerve, she looked over here to make sure that this driver wasn't going to hit her, not knowing that the person in front had just slammed on their brakes driver assist, caught everything well.
+
+You know, that's real-world example of how tech can help with some type of impairment.
+
+Think about when we apply that to the web. Error handling inside forms, being able to fill out a form, what type of affordances do we allow for filling out forms on—online? You know, Is the person coming in on a touch device? Are they using the keyboard? how is it that they're actually able to interact input, move through each of the fields?
+
+Do we do the autocomplete for them, which helps in some cases to be a problem and others do we do auto masking for them so that it automatically formats the data it goes through. You have someone, you don't want to design a complex form that is going to require, you know, a, a ton of interaction to be able to get the information through, because you have no idea.
+
+If that person has two hands, one hand, no hands, what they're doing to actually get it through. I'm thinking about ease of use and reducing friction will definitely help, you know, make the products that we are building a lot more user-friendly and, and robust because now they can be, you know, you can apply, you can apply them to various situations or various individuals that have, you know, any method of manipulating or interacting with it.
+
+So, yeah. But yeah, situational, permanent, temporary. No, all those things have to be taken into account, but again, it goes back to that to understanding the user's journey.
+
+Todd Libby: Yep.
+
+Homer Gaines: How do you set that journey up? How do you go from Point A to Point B successfully without tripping up the individual, doing those empathy tests where you have your team go through it or do you have a team that's not familiar with what it is that you're building, go through it and finding those sticky points, do that user testing, you know, do those evaluations. That's how you catch all of that.
+
+Todd Libby: Yeah.
+
+Homer Gaines: It's great. Especially if you have individuals with various disabilities on your team or working at the company, you know, I had, you know, it was great.
+
+Last company that I worked with, we actually did and, you know, they were valuable teammates because they gave us some insight to some of the product to, or to some of the friction points inside our product that we didn't even know existed. Even though we were doing manual testing and things like that, they were like, "Ah yeah, no, I have a problem with this."
+
+Word, really? Cool. Thanks for pointing that out. You know, being you know, and also just being open to even leading to fix it. It was great.
+Todd Libby: Yeah. I had received a great piece of advice a couple of years ago I think, it was from Derek Featherstone and, you know, we were talking about my, my situation with the, with the stakeholder, giving a little pushback and he told me, and I like to tell people this too and would pass this little tidbit along is "when they push back, push back a little harder."
+
+And like you, like, you had alluded to, you know, earlier, you know, make them realize it, you ask them the questions that they're asking of you. and a lot of the time it works. If not, if not all, granted my situation was a lot different because they kept waffling back and forth. An extreme circumstance I'll call it. But—
+
+Homer Gaines: Right.
+
+Todd Libby: There, there's a lot of, you know, with, with my case, there was a lot of unknowns. one being—one being a lack of knowledge, as far as where technical goes.
+
+Homer Gaines: Yeah, yeah.  Unfortunately, there is a lot of that. You know. Let alone having limited knowledge in how the tech actually comes together and works and then when you throw accessibility into that, if you didn't understand the basics, there's no way in the world you catching this over here.
+
+Todd Libby: Right.
+
+Homer Gaines: And you know, it's just like these big corporations that are there, especially like the high profile ones, you know, last year and year before where they were like, Oh my gosh, we got caught our sites.
+
+Aren't accessible and it's going to cost us, you know, umpteen million dollars to the building accessibility into it. And you're like, why? Why? Who told you that? Well, we got to do X, Y, and Z. Okay. Do it.
+
+Todd Libby: Yeah. Yeah. Just get it done.
+
+Homer Gaines: Literally when you upgrade something retrofitted, because obviously you're in a retrofitting phase of things now get your developers to build it correctly.
+
+Todd Libby: Yep.
+
+Homer Gaines: Is that a span? Yes. Is it clickable? Yes. change it to a button. Does it go someplace? Yes. Make it a link.
+
+Todd Libby: Yep.
+
+Homer Gaines: But it's that knowledge that they don't have?
+
+Todd Libby: Yeah. So we're coming up on our time almost are we? Yes.
+
+Homer Gaines: Are we?! That was quick.
+
+Todd Libby: A little bit, a little bit. So I'm going to swing this over to the music side of things.
+
+Homer Gaines: Oh goodness.
+
+Todd Libby: When's the new album dropping, is my first one.
+
+Homer Gaines: It  is in the works, honestly started working on some new music during the Christmas. during Christmas break over the holiday felt inspired, started putting some new stuff down. It's going to be another low fi chilled out album. Just like before.
+
+Also got a few more I got some more soundtrack stuff that's coming up. So I've been working with on that. We're talking with a, an old friend of mine who I used to write music with back in college. he and I are still really good friends and he is still heavily active in the music industry.
+
+And he recently approached me and he was like, “look, I asked some, some ideas to actually start doing more film composing and things like that. You want to join up?” So talking with him about that, more information on that, as it develops, you know, I'll let you know, but yeah, I've got a couple of things.
+
+I got a couple of irons in the fire right now that I'm—that  I'm working on, but this is new project. I'm actually having fun with it. And my little one when he comes in, like he he likes to sit on my lap as I'm either, you know, producing the tracks and whatnot. And then he wants to reach over in his little one-year-old fingers, started beating on the keys and things does great, but I love having him in here with me cause he just bounces off beat right now.
+
+Come on, boy. I hope he gets some good. He comes in, he starts bouncing around and enjoying the music. And I love the look on his face when he hits. A key or he hits something on the drum pad and he hears the sound and he looks back at me like, did you hear that? Like, for my approval is awesome. I'm like, yup.
+
+Keep going, go, keep going. I'm just looking forward to the day where, you know, I come in here and I hear some music playing and it's him putting something together. Yeah.
+
+Todd Libby: I'll, I'll look forward to that day, too. When I'm in my rocking chair, snacking on a lobster roll.
+
+Homer Gaines: Man, who knows by the time who knows how we're going to be listening to music, then it might just be a direct download just straight to your brains. Just call us Neo.
+
+But so, yeah, I've got a couple, a couple of projects coming. I'll let you know when they when they drop. I have not decided if it's going to be a full album yet or an EP, mainly because. You know, in the industry. the music industry, now let me think about it. We really consume music in a different way. We don't listen to music like we did, like in the early two thousands, you know people listen to songs.
+
+People don't listen to albums, you know? So a lot of times it's not even, it's not even worth putting out like a full album. Just put out some singles, put out EPs with, you know, four or five tracks on it and then keep it moving. Also helps to keep things fresh too. You know? Cause a lot of times when you put an album together, there's the pressure of making sure that you have, you know, seven plus songs on there.
+
+What if you have writer's block? And you have a project that you want to get out and you get stuck writing it, and then you fall out of love with it. And then the project starts to suffer as opposed to, Hey, I'm really in the mood right now. I have these, you know, these four tracks that I put together, these four records that I've put together, let me go ahead and release them and, you know, get them out there.
+
+That's where I am. Now. If, if I start to get bored with a project, I'll just start writing. I'll go back to the pieces that are already finished, mix 'em, master 'em, make sure that they are production ready and, and go, and then revisit the other ones, chop them up, use them as samples in something new, you know, find a different route of inspiration for them.
+
+So, yeah, I got some new stuff though.
+
+Todd Libby: Well, that's good to know. Cause I need some more chill music to snack on my lobster rolls to.
+
+Homer Gaines: Gotcha. I got a couple of them. I like the two that I have right now. One is called "Warm Water" and the other one is, "Oh Yeah" and when, when either one of those tracks come on, my little one immediately starts dancing. He loves the—
+
+Todd Libby: Nice, nice.
+
+Homer Gaines: "Warm Water", puts him to sleep, which is, it's a nice chill, relaxing, dusty. When you listen to it, it will. It has a nostalgic feel to it. when you hear it, it will remind you of listening to like, say Art of Noise on an old de-magnetised cassette.
+
+Todd Libby: Yup.
+
+Homer Gaines: You know, that's the field that's gonna, you'll hear that hum and granted now it's artificial, you know, as we had the special effects in to make it sound like it's coming off of a tape player, you know, you had the machine noise and things like that, but yeah. Yeah, stuff like that is coming. So I got you.
+
+Todd Libby: That's awesome. So let me ask you this. What kind of music do you like and what do you listen to when you're working or do you listen to music while you're working?
+
+Homer Gaines: Actually, I do. and my tastes of music is all over the place too. I mean, I have everything from, from death metal to classical, to hip hop to country, you know one genre that I'm really stuck on right now is Japanese math rock, you know, JYOCHO coming out of Japan and Elephant Gym.
+
+Yo, listening to those arrangements, the mathematical complication, it's just the complexity, mathematical complexity of how they arrange their music is just astounding to me.
+
+I love the way that they play, I love that. the syncopation of the rhythms, the mixed-matched time signatures that go in, but they all gel just so nice. You know, very group of this is a serious group of talented people. but yeah, it's, it really depends on, on my mood for that day. Like when I produced tracks, I produced tracks.
+
+At the temple of my heartbeat. So if I'm having a chill day, obviously to sit down temple, you know, if I'm having a hype day where everything has been moving fast, then yeah. Then you know, the music is up there. Same with what I listened to. you know, I'll put, I can go from, you know, listening to death metal, you know, Killswitch Engage to listening to, you know, The Planets or a classical piece, you know, sometimes I, I really like I'll, I'll throw in soundtracks, listening to soundtracks, listening to anything, and then I'll go, I've even have this playlist of white noise.
+
+Todd Libby: Yeah. Yeah.
+
+Homer Gaines: Yep. So yeah, it goes everywhere. Yeah.
+
+Todd Libby: I have a playlist of indigenous music. I have a playlist of nature sounds, which puts me right out. and you know, whenever I'm on Twitter, I'm usually listening to death metal. It was about that's how fast my heart beats going.
+
+Homer Gaines: Well, I got to put together a Twitter playlist for you. Cause I need to calm you down?
+
+Todd Libby: Yeah, you do!
+
+Homer Gaines: He'll be raging.
+
+Todd Libby: Yeah. If anybody see my timeline. Oh, they did—
+
+Homer Gaines: That explains a lot, bro.
+
+Todd Libby: Yeah, exactly.
+
+Homer Gaines: Okay. Yeah that explains a lot man. Now I know I'll be like, Todd, what are you listening to?
+
+Todd Libby: I'm listening to the Slayer today.
+
+Homer Gaines: Yeah no, I'm gonna need you to put on Elmo.
+
+Todd Libby: Yes. There have been days I've been tempted to do that. but no, the, the, the wide variety, I love it because that's the same with me now. I, I don't do country. I just never really got into it. Yeah, I just, I don't know.
+
+Homer Gaines: I get it. I get it. I know a lot of people that do not do it for me. It's good music is good music, regardless of the genre,
+
+Todd Libby: Yeah. I mean, I shouldn't say that I'm not into it totally. I mean, Johnny Cash is country and I love Johnny Cash I mean—
+
+Homer Gaines: Yeah.
+
+Todd Libby: Who doesn't? I mean, I'm sure there's somebody, but—
+
+Homer Gaines: Probably.
+
+Todd Libby: It's Johnny Cash, it's, it's very limited, I should say. But you know, the classical stuff, the I mean, I do, you know, a lot of the eighties you know, now that I—
+
+Homer Gaines: Oh yeah.
+
+Todd Libby: Look back in the 80 stuff, you know, that's stuff we grew up on.
+
+Homer Gaines: Oh yeah.
+
+Todd Libby: Now that I look and say, Oh my God, that was 40 years ago?! I bo—I go into a little ball and I start weeping a little bit and then I have to turn on some ambient stuff.
+
+Homer Gaines: Man, road trip music, eighties genre is great for road trips and I'm miss road trips are—my family. We like to travel a lot. We jumped in the car, we'll go out. Or if we're not on a plane, But one of our favorite tracks to drive to is "Everybody Wants to Rule the World" Tears for Fears. So for years it's just when that song kicks in and it just marries the road, you know, but yeah, your eighties, Oh gosh.
+There's some great music that came out of the eighties and UK was definitely owning it then. But then you had, you had the, the eighties rock coming out, but then you had the US R&B in the eighties that was killing it. And then you jump up into the nineties and then nineties, R and B and nineties hip hop was just kind of like, that was it. They took over.
+
+Todd Libby: Yeah. That was on a separate plane in itself.
+
+Homer Gaines: And then we got to 2000 and, and I don't know what the hell happened.
+
+Todd Libby: Yeah I don't know either, but we won't go there.
+
+Homer Gaines: Oh yeah. We're not going to go there.
+
+Todd Libby: Here's something, a lot of people that I talk to when I talk music with them, they're very, I guess, surprised to hear this, you know, I love jazz. I love it.
+
+Homer Gaines: That doesn't surprise me though. I mean, why would they be surprised by that? The reason it doesn't surprise me because you listen to my music and my music has a strong jazz influence.
+
+Todd Libby: It does. It does. When I say, yeah, I listen to Miles Davis or a—Thelonious Monk they're like, "Whoa! Pasty man listens to that?!"
+
+Homer Gaines: Like I, like I told you before, you know, growing up with a family that was around, you know, Motown and all that. I started listening to jazz at a very, very, very young age. and you know, and one of like the alias that my friends gave me growing up. Cause you mentioned Monk. They called me Monk.
+
+Todd Libby: Yeah.
+
+Homer Gaines: Oh, I'm not saying that I play like Sphere at all. No. But I was, I was that one that they knew that played jazz piano. And so that's how they may be association. So yeah, it's to this day, people still refer to me as "Monk", especially even people that are still in the industry.
+
+Todd Libby: I can see that.
+
+Homer Gaines: There's just a respect thing. You know, I had a friend of mine in high school.
+His name is Kevin Anchor, professional, jazz pianist, dude who's amazing. And he and I used to. Just have jam sessions on the piano. And one day he told me, he said, “You know who you play like?”, and I was like, who? He said, “you played like Ramsey Lewis.” I was like word, really? And, you know, I started thinking about it.
+
+It was like, I listened to Ramsey, but I haven't listened to Ramsey since I was a kid. He was, his music was good, but it wasn't his CD and his records were not the ones that I would always go to. And then one day I was talking with my mom and I told her what Kevin said, and I said, that's fine. And she said, that's funny.
+
+I said, why? She goes, because when I was pregnant with you, I used to put headphones on my belly and play Miles Davis and Ramsey Lewis albums. I was like, Oh, like interesting. Hmm. Okay. All right. I get it. So there was, there was some influence there. And you, you brought up Miles Davis and my mom told me one day while they were all out
+she said they actually had a chance to meet Miles Davis. I was like, that's cool. She goes, yeah. What you don't know is that you were two years old at the time and he actually held you.
+
+Todd Libby: Oh wow.
+
+Homer Gaines:  I said, what? I was like, yeah.
+
+Todd Libby: There you go.
+
+Homer Gaines: I came in direct contact with greatness.
+
+Todd Libby: Absolutely. So I know we're coming up on time because you've got a hard stop and—
+
+Homer Gaines: Yeah.
+
+Todd Libby: But no one I got a few questions about these ones are pretty, pretty straightforward and easy. I I'd like to wrap up the podcast with these questions, so—
+
+Homer Gaines: Okay.
+
+Todd Libby: What about the web these days excites you and keeps you excited in what you do?
+
+Homer Gaines: CSS.
+
+Todd Libby: Okay.
+
+Homer Gaines: CSS for real what we're able to do now with CSS versus, you know, how it's come I love it.
+
+You know, remember when we had to do interactions using JavaScript or States, things like that. I love being able to use CSS in place of JS to make something happen.
+
+Todd Libby: Yep.
+
+Homer Gaines: Just the level of flexibility that we have from a creative standpoint, being able to draw with it, you know, it's freaking amazing. You see these amazing CodePen's come out. From individuals that are just, just pushing CSS just to that edge. Absolutely love it. Absolutely love it. So yeah, CSS it is.
+
+Todd Libby: Absolutely. If there were one thing you could change about the web today, what would that be?
+
+Homer Gaines: Tech bros.
+
+Todd Libby: Absolutely and if anybody's seen my timeline—
+
+Homer Gaines: Man, you know, no, but all in all honesty, what I would love to see change is, and I guess it's already going there, but I would love to see, you know, more and more people embrace accessibility because like you and I, we grew up in at the end of the space race, but—
+We had technology, you know, we had the Ataris, we had Nintendo and everything, and then all of a sudden we got Apple computers and you know, when we're in school, we've got Apple's all over the place. And then all of a sudden we have the internet, we grew up with this. We are tech savvy going forward.
+
+It's not like all this is brand new to us. And as we get older, we're still going to expect things to work as they should. But the thing is. As we get older, it's almost inevitable that at some point in time, we're going to have some form of disability, eyesight, hearing, motor, you know, I want to see more and more developers change their way of thinking and start incorporating accessibility and getting serious about accessibility and the products that they build because we as tech savvy individuals will never stop being tech savvy.
+
+It's not like we just reach an age and then just forget all about it. No, it doesn't work like that. We're still gonna I'm I'm pretty sure that you and that people like you and I individuals, all of us, we're still going to be using computers all the way up until we can't anymore. You know, mobile phones come on just about everybody.
+
+And their mom has a mobile phone that wasn't, they're not going anywhere. We're not leaving tech behind. So we need more. We need more teams to actually step up. We need more creatives. We need, we need more PMs and executives and developers to actually start stepping up and making sure that they are building accessible products because you know, everybody gets old.
+
+Everybody has some, some need and technology just is always going to be there with us. So yeah. I like to see that. Yep.
+
+Todd Libby: So we've spoken a lot about this today, but I'm going to ask this anyways, favorite part of front end development that you love the most. And I know what you're going to say, and we've already, like I said, we've already said it, but what do you like to this goes along with the theme of the podcast, is nerd out over?
+
+Homer Gaines: Yeah. I nerd out over accessibility. I nerd out over semantic markup. You know, it's funny. I had an interview a few years ago and me and the individual that was interviewing me, literally nerded out about CSS to the point to where the third person that was in the interview. Was like, "Are you guys really done?"
+
+"You guys cause you guys just, all of a sudden became best friends and just get the hell out about CSS?" And I was like, yup. Yup, sure did. But yeah, that that's, I nerd out hard on semantic markup and accessibility and CSS for real.
+
+Todd Libby: So. Whereas we get to time, we've got a few minutes left. I'm going to do what I'm, you know, let everybody do on the podcast. And that is let my guests, this being you today. let the listeners know what you have currently going on, where people can find you?
+
+Homer Gaines: Ah, currently going on. Well, you know, we already spoke about it working on new new music project. I'm looking forward to release in that probably early the summer.
+
+Todd Libby: Okay.
+
+Homer Gaines: So that'll be coming out. I want to say early summer, I'm talking like late May, early June is when that's probably going to hit. and also too, you know, I'm looking for, I've been wanting to do this for awhile and I want to build a platform agnostic component library that's focused on accessibility and you know, I've had people come up and they're like, “Why are you going to do that?” So many people have already done it. And if I listened to that type of rhetoric, then it would stop me. But when you think about it, there are, that's the case. Why do we have React?
+
+Why do we have all the various frameworks that are out there now is because the current ones that are out there, it didn't solve the need that that individual needed. And from what I've been seeing a lot of times where things that target accessibility falls short is in the documentation.
+
+Todd Libby: Yep.
+
+Homer Gaines: But then also in the, the practicality of it, you know, they, they they're built for a specific use case instead of thinking about the project or thinking about the use.
+
+Holistically, you know, who can use it? I don't, that's why I say platform agnostic. I don't care who uses this. I want them to be able to use it. And it's going to start from, you know, a semantic level and work from the ground up. So yeah, regardless of the naysayers that say, Oh, you shouldn't do one, you should just start contributing to one that exists.
+
+No. So that's another, that's the next thing that I have coming down? yeah. And it's going to be called Alison.
+
+Todd Libby: Okay. Looking forward to that.
+
+Homer Gaines: Yep. So that's our already in play. it will be open source. It will be on GitHub.
+
+Todd Libby: Okay.
+
+Homer Gaines: So hopefully I have that in play towards the end of the year.
+
+Todd Libby: Yep. And you're on Spotify. I know. And you're on TIDAL and TIDAL and the music players.
+
+Homer Gaines: All, all underneath my name, Homer Gaines. Yeah. yeah, all the major streaming services globally, worldwide. You know, I was really excited when I got notification that my music was actually being played on internet radio over in Africa and in Japan, I was like, Oh, cool, good deal.
+
+Todd Libby: Nice. Very nice.
+
+Homer Gaines: So, yeah, I just got recently added over there, so that's, that's a good thing. So yeah. All global, you can find me on Twitter xirclebox X I R C L E B O X that's me. you have primarily there running my mouth about tech chiming in with you, starting fires. Going after tech bros.
+
+Todd Libby: We—we won't go after that. We won't go any further on my Twitter experience today.
+
+Homer Gaines: You have a very colorful Twitter experience.
+
+Todd Libby: Yeah, I do. And yeah, that's. I won't even go, I'm not going to go into that right now. so you got your music, you have all this stuff going on. If you know anything else, your personal site, we can, you know, we can put a bunch of things in the show notes.
+
+Homer Gaines: Yeah. You've heard that. You've heard the saying, "The cobbler's kids need new shoes?" Yeah. That's that apply that to my website. I'm pretty sure anybody can say that, but yeah. Put it this way. The last time I updated my website, I used Bootstrap because I just wanted to get it up quickly. And granted, when you look at it, it doesn't look like Bootstrap, but I had one guy go, "Oh yeah, I can see you're using a WordPress theme."
+
+I'm like, Nope, that's actually homegrown. He was like, "no, it's not." As it looked at the source code, he goes, Oh, you did write this behind has not worked for us. But when I look at him like, I don't need all this bloat, so yeah, I'm going to be rebuilding my website and pairing it down. It'll be just nice and simple HTML CSS and some JavaScript if I want to add it.
+
+Todd Libby: Yeah. I knew it was Bootstrap when I visited your website. Cause I do—
+
+Homer Gaines: Everybody does, you saw the columns in there didn't you?
+
+Todd Libby: Yes I did. Yes, I did.
+
+Homer Gaines: Got it. Yeah. So again, what, I what? I put that up, maybe, good grief man that things probably seven years old now, you know, that was back when, when Bootstrap was, was shiny.
+
+Todd Libby: Yep.
+
+Homer Gaines: That and jQuery. Everybody was doing Bootstrap and jQuery at that time.
+Todd Libby: jQuery still works.
+
+Homer Gaines: Yeah, it does. It does.
+
+Todd Libby: So I know we gotta wrap it up. I want to thank you Homer, for, for coming on today and talking with me, it's always a pleasure.
+
+Homer Gaines: Thanks for the invite. I appreciate it.
+
+Todd Libby: Absolutely.
+
+Homer Gaines: This is good.
+
+Todd Libby: Yeah. And Lobster rolls are in the mail.
+
+Homer Gaines: All right, dude, for real when the pandemic is over I'm—Todd open up, I'm coming up to Maine, we're going to do some, we're going to do some lobster rolls.
+
+Todd Libby: We're going to go drive up and down the coast with 80—eighties music blaring in the, on the, on the radio.
+
+Homer Gaines: I'm okay with that. Just just know that when that happens, if the right song comes on, we will probably have to get over. So my wife can get out and dance.
+
+Todd Libby: I can dance. Well, I won't use the word dance, but I will, I will get out and move as best as I can to the music. How's that?
+
+Homer Gaines: I will move to the music. alright, we'll take that. We'll take that. Definitely take that.
+Todd Libby: All right, go ahead.
+
+Homer Gaines: I was just gonna say, I appreciate the invite. I appreciate having me on, I love the podcast that you're doing.
+
+It's dope. You know, this Zeldman interview that you did was great. Cause yeah, that brought, that was nostalgic for me. Cause I remember reading his book back in the day and it's hilarious because dude has not changed his avatar since day one.
+
+Todd Libby: Nope.
+
+Homer Gaines: Nope. Yeah. I mean, it's that I can't that iconic blue hat and here hearing the bit about how the designers through and came up with the cover.
+
+How was all pixelated and it was jacked up and they try to make it clean and made him look all great. That, that was funny. That had me dying.
+
+Todd Libby: Well, I appreciate the kind words. Thank you. I you know, I, I took the leap and I said, you know what, I'm going to do a podcast. I've been wanting to do a podcast for years.
+So and I found it fitting because he's been a big influence on my career as well as probably yours and everybody else. You know, everybody else's we know that does front end too. So—
+
+Homer Gaines: You know, you know who I'm miss in the game? Remember Hillman Curtis?
+
+Todd Libby: Yes. Yes. Jeffrey and I spoke about him briefly.
+
+Homer Gaines: Yeah. I think about the work that Hillman Curtis did per as a person and then also as a company cause they were a big influence on me in the back then, them, 2advanced, Gabbo Court, all those. Yeah. But, but Hillman Curtis, they put out some really nice. Really nice work.
+
+Todd Libby: Yep. Yep. Totally agree. Yup. Well, again, thank you so much for coming on.
+
+Homer Gaines: Thank you.
+
+Todd Libby: Always a pleasure to talk to you. Pleasure to see you. We're definitely when the pandemic's over, it's going to be lobster rolls and eighties music and, and dancing. Well, you know, I'll try anyways. so. we'll wrap it up here.
+
+Thank you listeners for tuning into the Front End Nerdery Podcast. I'll be back next month with a new guest new topics and conversation about front-end design development more. If you would please rate this podcast on you podcast device of choice. I'm Todd Libby, and this has been the Front End Nerdery Podcast. Thanks and see you next time.

@@ -1,0 +1,460 @@
+---
+title: Stephanie Eckles
+description: My Interview with Stephanie Eckles
+date: 2021-09-29
+layout: layouts/post.njk
+---
+
+## S1:E3
+
+Todd Libby: [00:00:00] Okay, here we go. Alright. Welcome to the Front End Nerdery podcast. A podcast about front end development and design. I'll be talking with people in tech about a number of different topics focused on front end development, design, and others topics as well.
+
+I'm your host Todd Libby. Today I have with me the creator of Style Stage, Eleventy dot Rocks, instructor at egghead.io and a laboratory mastermind with CSS and accessibility.
+
+My pleasure to introduce today, my guest, Stephanie Eckles, Stephanie, how are you today?
+
+Stephanie Eckles: [00:00:37] Doing pretty good, Todd. We had a lot of snow and that's melting that's lifting my spirits.
+
+Todd Libby: [00:00:46] Same here. Yeah, same here. And we just got some last night as a matter of fact.
+
+So why don't you tell yourselves a little—you know, why don't you tell the listeners a little bit about yourself.
+
+Stephanie Eckles: [00:00:57] Yeah, so I've been a front end focused web developer for over 13 years, almost 14 now, in terms of the professional capacity of all that, started learning before that.
+
+My career started—I spent most of my career in a marketing agency and you probably see remnants of that reflected in the type of work that I put out there. In particular how I promote it, probably something I can't shake.
+
+I also have a degree in advertising, so that's where that kind of came from too. But I—about two and a half years ago, almost three now I shifted to the product side of the house.
+
+Still front end focused had the opportunity to, in my previous position, lead development of a design system and got really into that, really expanded my understanding of accessibility and then beginning of last year, when the pandemic kind of. forced us all home, my coping strategy was apparently just kind of happened to start spinning up side projects so here we are.
+
+And that's, that's kinda where I'm at now.
+
+Todd Libby: [00:02:07] Yeah.
+
+Stephanie Eckles: [00:02:08] Yeah.
+
+Todd Libby: [00:02:10] Alright. Yeah, I, yeah, I know about the side projects. I—I have too many of them so. First question I usually ask is how did you get started in your journey in web design and development?
+
+Stephanie Eckles: [00:02:25] Yeah, so for me, I went to a camp as a teenager and that was advertised as for Flash animation.
+
+So at the end of the five day camp, I knew a little bit more about keyframe animation and I was sent home with a copy of Macromedia Flash.
+
+And as I kind of started learning that I—I—I enjoyed art as a kid. So I was like, I'm gonna use this to put art on the web.
+
+And then I realized there was a few other bits involved to actually get it on the web and started learning, you know, at the time that was manual FTP, dealing with DNS and a lot more convoluted way than what hosts offer for us now.
+
+Table layout, while I really only cared about a one cell table to throw my Flash embed in. Centering that on the page set background color and away you go!
+
+And then in college I was like, "Hmm, I'm kind of liking this." Started to hear about WordPress, so I try to customize a WordPress theme and at the time, because responsive design was not quite there.
+
+I remember Ethan's (Marcotte) article coming out, actually. so it was before that and I wanted to do the notorious, especially in WordPress land, double sidebar layout. And I could not figure that out.
+
+I was using—attempting to use floats, attempting to use absolute positioning, mega struggle. And so I saw a free class advertised and, at my college, that helped me at least figure out what absolute positioning meant.
+
+And then, you know, a few things clicked and kind of got more and more into the WordPress side was able to have a couple internships where that was involved.
+
+Very fortunate to have some managers that kind of pushed me in the right direction. Gently pushed me, I should say you know, and encouraged me and spent 10 years with WordPress.
+
+So again, that's significantly flavors what I'm drawn to.
+
+Todd Libby: [00:04:29] Right, yeah.
+
+Stephanie Eckles: [00:04:31] Really enjoyed that, you know, I—as I said, I was in marketing, so that was a very, very useful tool. But always we—we—I was also fortunate to be with folks who put a big emphasis on usability.
+
+We weren't quite ready for accessibility cause it just wasn't talked about as much when I was first getting into the marketing agency world. We were focused on usability and so we were not purchasing things.
+
+We were doing completely custom themes, a lot of custom PHP lots of custom jQuery and, you know, whatever you needed to do to get the job done, which is not so different from today. Like they say "Right tool for the right job." and in an agency environment WordPress, jQuery gets the job done. For sure.
+
+Todd Libby: [00:05:10] Yup. Yup.
+
+Stephanie Eckles: [00:05:11] So yeah, I—I—I was always craving that like easier workflow though. And I think just in the last year, The things like Eleventy, I've kind of like found my happy place with workflow and tools.
+
+And so it was kind of, it's been interesting to like kind of, I always feel like I've kind of evolved with the web, obviously not the entire length of time, but a significant portion.
+
+And I've always enjoyed playing with the new stuff that comes out and things like that. But yeah, I'm happy to—happy to use static things and advocate for accessibility here in the modern world.
+
+Todd Libby: [00:05:48] Yup. Yup. And I see you do that a lot too, which is awesome. and you had mentioned in the form you filled out, you know, you grew up in a small town.
+
+I kind of I grew up in a small town too, and I don't know about your small town, but my small town didn't have anything other than me sitting behind a computer learning how to program. So yeah. Yeah.
+
+It's a—it's—it was a great journey for me. And it sounds like yours was—yours was a great journey too.
+
+Stephanie Eckles: [00:06:16] Yeah. Yeah. I did grow up in a town of 800 as a farm kid and yeah, it was, it definitely shaped what I thought my opportunities were for a significant portion of my career. which again, the pandemic and companies being open to remote, has—it basically un-geofenced me, which has been amazing.
+
+And I'm sure a lot of folks have experienced that even just like having conferences and things more accessible online and things like that.
+
+It's been a positive in all this.
+
+Todd Libby: [00:06:51] Yeah. And all your work has culminated. I just, I saw your tweet earlier today. You have a—an article on Smashing Magazine. Congratulations.
+
+Stephanie Eckles: [00:07:01] Yeah, thank you.
+
+Todd Libby: [00:07:01] Can you tell us more about that?
+
+Stephanie Eckles: [00:07:05] Yeah. So the article is about—it's it's quite a mix of things, in the end you end up with some—the demo shows you, how you set image sizes within kind of a card construct using aspect ratio, which is not quite in every browser, but we're getting super close.
+
+But also how to incorporate that with object-fit, so you can, it discusses the different fallbacks there. But what kind of tipped that article off?
+
+So I—I'm a big proponent of play as well, which is where my project Style Stage came out of, I was trying to encourage other people to play too, so—that article I discovered what tipped it off was I discovered that you can use some functions like min and max within gradient syntax to set their gradient stops.
+
+So anyway, that's kind of the hidden gem of that article, what kind of led to the whole thing. So, yeah, it was a fun exploration and happy to—happy to join the Smashing crew. They're really awesome. Yeah.
+
+Todd Libby: [00:08:08] Yeah, definitely and that sounds like I have some reading to do later, so that's going to be great.
+
+You mentioned Style Stage and that's how I think you and I were introduced to each other and I, submitted a—what do you call—what would you say? Theme? Yeah, and working on another one, but that's been on the back burner for a long time.
+
+So what gave you the inspiration behind Style Stage? And could you tell the listeners a little about, a little bit about that and how they could possibly, you know, create a theme and, and submit that as well?
+
+Stephanie Eckles: [00:08:46] Absolutely. So Style Stage is a—as I mentioned, I kind of grew up with the web. So one of the kind of cornerstone projects, especially for folks interested in CSS was CSS Zen Garden.
+
+And—by Dave Shea and a â€”I just fondly remembered that I enjoyed. You know, I really enjoyed tools like CodePen and these things where you can quickly iterate an idea, throw it out there.
+
+It doesn't have to be super formal and—and it does encourage play. but I also was interested in providing a format that would encourage play, but also encourage standards like semantic HTML and accessibility.
+
+So what Style Stage is—every contributor, re-styles the same base HTML. So basically when you can go to stylestage.dev, you are going to provide a brand new style sheet, but use that exact same HTML.
+
+So we have over 50 styles at this point, and they're definitely all very different. The hope is that folks learn more kind of use it as an exercise to learn more about CSS, whether—it is for all skill levels.
+
+So that might mean learning more about the fundamentals, or it might be a chance to look into the more modern properties and explore those, which has a nice list on the homepage.
+
+Of those, if you're not sure, what's kind of meant by modern. I keep thinking, what am I going to do in a few years when it's not modern anymore, but anyway, we'll worry about that later.
+
+So yeah, it's—it's been awesome. you contribute, establish a style sheet on GitHub, and I've actually heard from a lot of early stage folks that.
+
+They appreciated that because they hadn't really been introduced to GitHub. So it was kind of a bonus learning for some people. So you submit a PR.
+
+Pu—pull request with your style sheet and I'll help you review it. Things are connected to Netlify. And what that means is that we're using their feature where you get an instant preview of your style sheet.
+
+So you can double-check that it did what you intended. And that way I can also double check very easily.
+
+There are some guidelines they mostly have to do with meeting some basic accessibility things like contrast and visible focus. Making sure you remember to at some point, make the included, skip link visible.
+
+So again, if these are new terms to you, more learning opportunities. So yeah, there's lots to learn there, you know?
+
+It's not a beauty contest, so it doesn't have to be the pretty established—if you've learned something and you meet the guidelines, I will absolutely add it. So yeah, it's really for everybody to play.
+
+Todd Libby: [00:11:24] Yeah. And you know, like you said, I went through and looked at all the different styles and themes and they were, they're all great. And I would encourage, and I do encourage people to jump right in, create a theme, you know, submit it.
+
+Stephanie Eckles: [00:11:40] Yeah.
+
+Todd Libby: [00:11:41] Learn if they, you know, if they're at that stage, like you said. So yeah, it's great—I love it.
+
+And I, at some point will get to my, my—my second one, that's sitting in CodePen right now, just collecting dust. I'm fine. Sometime I hope, hopefully this year so—
+
+Stephanie Eckles: [00:12:00] Well, a ways to go. Yeah. You know.
+
+Todd Libby: [00:12:02] Yeah, yeah. Plenty of time. You also have another site Eleventy Rocks, which it does. It rocks it's a great resource for Eleventy can people submit resources? And what was your idea behind that site as well?
+
+Stephanie Eckles: [00:12:20] Yeah. Good question. So I'd started—so Eleventy, if you're not familiar, it is one of the available static site generators. One of the key differentiating features is that there is zero client side boilerplate JavaScript.
+
+And so what that means is you can literally get started with an index HTML file and it will essentially just help you provide the environment around it. Like it comes with Browsersync. And then as your site grows in complexity, you can start to use some of the 10 templating languages that are available.
+
+So for example, my sites generally end up being marked down and then Nunjucks, and then Sass. So Eleventy rocks, I, like I said, the pandemic kind of caused me to suddenly have way too many ideas to chase and Eleventy is—I call it my enabler because I can spin up something from idea to launch in a few hours.
+
+And that's—that's because it really like, especially being able to write in Markdown, you know, that's—that's such a fast workflow, especially if you're just working on content and so I had started to make quite a few different projects and I wanted a place to pull them together.
+
+So that's where Eleventy rocks as the site, came about. I was starting to just like copy paste links across everything, and I'm like, Oh, let's have a place.
+
+This actually lives. I reached out to Zach (Leatherman) to see if he was like approving of that URL cause I want to be cognizant that I'm like, you know, I realize I'm kind of grabbing that as a brand, so he's like, yeah, that's cool. So it's been fun. It's a good question about contribution. So I've thought about that a lot.
+
+What I launched with and what's the solution quote unquote right now is there is a web ring at the bottom of every page. So that's a little web component. You can actually add your resources to. Haven't had anybody self submit yet, but if anybody has something cool be sure to add it. Cause I know I'm not catching everything in the community to properly keep that updated.
+
+I—I would like to experiment with like Netlify CMS or something and maybe get a contributor flow actually in place. It would be awesome. So we'll see again, I like—I like your point maybe sometime this year. Okay. That gives me 10 months to maybe work that in. But yeah, it's been fun. So it kind of encourages me to keep—keep learning as well.
+
+You know, when you have a place where you're actually publishing, even like when you should add some content, maybe.
+
+Todd Libby: [00:14:44] Well, I've been checking out the site and you know, I'm undergoing the initial stages of a—not only a redesign, but a kind of a rebuild on my personal site, which is Eleventy as well.
+
+So that's going to be a good—a great resource for me to just say, okay, well, why don't I just do the things cause like, cause right now on me using the—the starter theme name.
+
+Stephanie Eckles: [00:15:09] The official one?
+
+Todd Libby: [00:15:10] Yes. Yes. The official—I was—I was lazy when I hopped into it. But yeah, I—I've—I've briefly, quickly gone through the site, you know, and I mean I like to point anybody to the resource site I said, you know. Well, I mean, you know, the thought process is probably, "Where you want to go first?"
+
+Stephanie Eckles: [00:15:32] Yeah. Awesome. Thank you.
+
+Todd Libby: [00:15:33] And go from there. I also saw recently you have the Netlify Jumpstart repo?
+
+Stephanie Eckles: [00:15:42] Yep. That's the starter as well for Eleventy. Yeah.
+
+Todd Libby: [00:15:48] So I was interested in that because I have—it. My—my ears perked up and I perked up when I saw there was Sass. I'm not using Sass right now, but I want to use Sass. So I know that uses Sass, could you tell the listeners a little bit about that one as well?
+
+Stephanie Eckles: [00:16:03] Yeah! So my—currently, only Eleventy starter which I recently kind of disclaimed that it was created really early in my—journey, so—but like the—the core of it is, is solid and it's probably just missing some features that maybe I would add if I remade it today, which I probably should update it.
+
+But—it, the other thing that it uses was I have a very small CSS framework, which again, that was like my second project at pandemic. And I've changed my mind. A lot about how I did that one as well, but it will give you—it's like two kilobytes. So it's like a theme, like a minimal color theme system, buttons, cards, and then a couple of layout structures, which that's the part I would update if I re-did it today.
+
+So, in other words, it's not a fully designed starter, but it gives you enough that you can make some kind of nice looking content easily. Change the colors, that kind of thing. So—I think there's still value to that being, you know, as minimal as it is in that regard, if, again, just boost other people.
+
+Todd Libby: [00:17:08] Right, right.
+
+Stephanie Eckles: [00:17:09] Yeah, so it's—it—I'm actually surprised how much traction that one's gotten. But again, I'm—that's been a fascinating part of this year and doing projects too, is like seeing what people are attracted to. It doesn't always match what—it usually surprises me. I'm like, Oh, okay, well then it gives me another rabbit to chase.
+
+Todd Libby: [00:17:27] Yeah, yeah. I saw the tweets—what was it? It must've been yesterday I saw some tweets or recently where you've had a lot of people, you know, retweeting that. Dave Rupert and Brad Frost was another one I saw, so yeah, that's getting a lot of traction in—, I might actually just take it for a spin and do a little side project as well.
+
+Stephanie Eckles: [00:17:50] Yeah, let me know what—what issues you have either with setup or like features you wish it kind of had out of the box and, yeah, cause I think I definitely—I should rephrase. I definitely will be making another one sometime with some evolved preferences going into it.
+
+Todd Libby: [00:18:07] Right. Now and it's—it kinda reminds me of, and you probably stumbled across this, to those—those really bare bones themes with WordPress, where it's just, you know, you add on as you go or, you know, you suggest changes as you—as you've worked with it so yeah, it should be a lot of fun.
+
+I—I'm—Again, not only a big Eleventy fan, but, you know, the, the—the stuff that you have done recently has been awesome. So I can't—I can't get enough of it. Keep going. I love it.
+
+I know a lot of people that love it too so—and I took—gonna shift a little bit, kind of a good segue here. I, I took what I, I watched some videos over to egghead.io where you are an instructor and you know, I should have been more prepared to tell you which one I took and I can't remember the title of it, but you do instructional videos over at Egghead.
+
+Stephanie Eckles: [00:19:10] Yes.
+
+Todd Libby: [00:19:10] So, you know, what's the best part about making content like that for you? And if you want to go into, you know, telling people about that as well, Go for it.
+
+Stephanie Eckles: [00:19:25] Yeah—yeah, so I've enjoyed my time at Egghead. If you're not familiar, it's completely video tutorials, video instruction. They're starting to add some written content, but that's very new.
+
+And they have a very particular format. So every video is going to be—the huge majority of videos are going to be under five minutes, probably even less. Right. I think probably the majority of mine are under three or four and that's intentional. The idea is that it's just enough. Basically you think of a video as the size of a small commit, like a change that you're making.
+
+So small enough that you can easily explain it, you can summarize it and that it's easy to follow, of course, in that duration for whatever the topic is that you have at hand. So, yeah, I really enjoyed that format. It's—it would be quite a change if you're not used to it. If you're used to watching like YouTube or I can go on for a few hours sometimes.
+
+You know, and—and obviously there's content that fits both types of formats. but Egghead is intended to be like, You want to get upgraded, updated very quickly. Like you're there to learn. You're going to pick a very dedicated topic, which that's the other really good thing as useful, useful for is a very honed in topic that you can either do a one-off lesson or you can do a course.
+
+So of course, it's going to just be a series of lessons that are more related. You probably end up with a—some sort of project at the end or something, you know, kind of a bigger takeaway.
+
+Todd Libby: [00:20:51] Yeah.
+
+Stepahnie Eckles: [00:20:51] So, yeah, it's been, it's been fun. Most of mine are front end focused. I was just checking my email to see I have my first course coming out today.
+
+So this recording day, February 23rd, about accessibility and creating accessible styles for form fields.
+
+Todd Libby: [00:21:07] Nice.
+
+Stephanie Eckles: [00:21:07] So that was exciting. And that's 17 lessons. I think it's just over an hour for that length of a course. But you'll get a mini form design system at the end of it. So, yeah, it's been fun.
+
+Todd Libby: [00:21:23] We'll make sure we have links in the show notes as well to those resources that— Now, I also stumbled upon across your podcast. Which I've listened to everything and you seem like you're on a little bit of a hiatus right now?
+
+Stephanie Eckles: [00:21:43] We—we were, we recorded one this past week we both have had various life events, so I—that should be coming out soon. I'm sure by the time this podcast is updated we'll have our next one out there. So, yeah.
+
+Todd Libby: [00:21:59] So it's called—Well, I'll let you, I'll let you go ahead. It's—
+
+Stephanie Eckles: [00:22:01] Sure, it's called—
+
+Todd Libby: [00:22:02] you know, you, you—you—
+
+Stephanie Eckles: [00:22:03] Word Wrap.
+
+Todd Libby: [00:22:04] Yup, go ahead.
+
+Stephanie Eckles: [00:22:07] It's called Word Wrap. That was an adventure just to choose a name, tell you what? You probably had the same thing, although I really like yours, just like very straight forward.
+
+Todd Libby: [00:22:17] Jeffrey—Jeffrey Zeldman asked me how I came up with the name, I said it was the first thing that popped into my head. So I started running with it.
+
+Stephanie Eckles: [00:22:26] Nice. So I co-host it, my co-host is Claire and she and I have a previous working history and we would have stayed in touch and we have fun. So we—we feel similarly about some of the topics and, you know, our life experiences have made us feel different about others.
+
+So we—it's fun to kind of each—it seems like the last couple episodes, we've kind of like, one or the other of us has kind of own the topic and then we kind of either banter interview about it, which is it's been a fun format.
+
+We want to start doing the guests thing, but we are still figuring out what technology to use, which obviously Zoom would be—be okay most of the time.
+
+So but anyway, so we're still learning a lot. that's been a fun part of it too, but it's, you know, it's been a fun, just kind of social and mental reprieve for both of us, even if you know whether or not listeners enjoy it.
+
+Todd Libby: [00:23:23] Well, I enjoy it. Yeah. Yeah. I enjoy it. And again, you know, I—people ask me—new podcasts?
+
+I say, “Nope, Word Wrap is a good one. I like it.” I'll have to check for the new episode too. So you said, you know, it's basically, you know, banter where one person runs with a topic. So I—will you be doing any like themed shows?
+
+I, I—I've listened to a lot of podcasts where they focus on, say for instance, accessibility or, you know CSS, for instance, is there any, you know, topics you're going to be covering that are—I know, specific or very specific in the future?
+
+Stephanie Eckles: [00:24:09] Good question. We kind of so far have been choosing them a little ad hoc. They do, you know, each episode has ended up revolving around a theme cause it's easier to talk to them. We try and keep them a little on the—on the shorter side. And so let's see, we've had CSS, we've had a little bit about accessibility.
+
+We ended up hitting like color contrast and I think both of us we've talked about doing more themes of accessibility. But it's also been a learning experience to try to only talk when you're describing code, right? I look to the CSS Podcast with Una (Kravetz) and Adam Argyle from Google they do an excellent job.
+
+Like it's amazingly entertaining. They're great personalities, but like, you know, you just hear the description. Oh, they're going to talk about CSS properties. We were like, "Oh no, this is—this is great!" So it's hard to like, learn how to make that interesting. So anyways, so that's why I think, you know, we've kind of gone to the banter or discussion around a little more so far.
+
+But we've talked about some kind of juicy or more technical topics that we're both interested in exploring. So stay tuned I guess.
+
+Todd Libby: [00:25:17] Yeah, definitely.
+
+So my next question, is about CSS as a matter of fact which I see you tweeting about a lot, often. A little bit. What about CSS first attracted you to it?
+
+And what about it now? you know, that excites you, looking towards the advancements that have been made with, you know, everything from maybe, I guess the past—you know, five years or so it's I think there's been a lot of advancements. And so what's, you know, what's attracted you to CSS?
+
+Stephanie Eckles: [00:25:58] Yeah. So I definitely haven't always had the same level of fondness.
+
+But that's had a lot to do with the evolution of the language itself. And coincidentally is why I am so fond of it now, in the sense of—in my experience, if you care about CSS, if you have engineers, developers that care about CSS, they probably care a little bit more about usability. They probably care a little bit more about accessibility because those things go hand in hand.
+
+So, I am—basically I enjoy CSS as a language. I enjoy that it lets me again, play. I'm going to hit that because I really think it's so critical.
+
+Todd Libby: [00:26:39] Yep, yeah.
+
+Stephanie Eckles: [00:26:40] You know?
+
+And—and so I, you know, initially what got me into development and part of the reason Flash was so attractive is. I do a little code or in that case, some type, you know, mix of code and drawing, but you know and immediately get that feedback, you know, what's happening and yes, you get that with JavaScript, but CSS, like you get the visual feedback.
+
+And that's just really satisfying. So you know, it's yeah, I'm—I'm basically at this point passionate about teaching it and—and, you know, my projects have been a journey of like finding different ways to teach it.
+
+Kind of, you know, some people love the long tutorials, some people prefer just a one off code demo, and then the SmolCSS, people apparently really been liking that format where you—it's kind of a mix, like you get more description than you can offer on a CodePen, but it's less than a tutorial.
+
+So you can still kind of get in, get out with the solution you're after. And so that's been fun too, just because of how I operate to like, explore different formats as much as anything.
+
+But yeah, it keeps me energized and kind of engaged with the community that's been a huge benefit. Like you said we met because of Style Stage.
+
+So hugely expanded my network, which has been really fun. Just like learning about people, events, resources that I didn't, you know, would've not otherwise entered my own network, so selfishly, you know, that's why I keep going.
+
+Todd Libby: [00:28:07] Right
+
+Stephnaie Eckles: [00:28:07] So that's been awesome.
+
+Yeah. It, you know, especially in. When I, when I very first started making content last year we—we as in, people in the U.S. weren't quite sure the pandemic was coming to us, right? Okay. So it ended up like being able to evolve that content and have those connections has, I mean, that's just been an even additional benefit during this last year.
+
+So. All those things combined, you know, CSS happens to be the topic, but meeting awesome people and, you know, trying to help do my part to move the web forward is also the goal.
+
+Todd Libby: [00:28:51] Yeah. That's the way I look at it too. When I do stuff with CSS or when I do stuff with—well me, I'm mostly accessibility lately, but yeah.
+
+Always had fun with CSS. So I'm a little bit more of a fanatic, but the changes that—the advancements I should say that have been made are just great. So, cool.
+
+So SmolCSS dot dev, you just mentioned that I haven't had a chance to look at it in depth yet, but when I checked it out this morning, I'm like, "Another thing I got to look at?" Which is great. I don't mind, I like doing the homework and everything. So it's CSS snippets for modern CSS, layouts and components. Now, how did you come up with this?
+
+Stephanie Eckles: [00:29:44] Another white rabbit that I chased and led me way into Wonderland.
+
+At this, you know—again at this exact moment, it's still less than two weeks old. so that one was so Colby Fayock, who's a Egghead instructor and he's also Developer Advocate, I believe is the correct title for Apple tools, he invited me to come on his kind of, his fun Twitch show that he started.
+
+It's Colbyashi Maru, which is a play on Star Trek, I believe. I've only watched those once, like the series Next Generation ones I think it's Star Trek, but anyway, it's supposed to be, it's a play on it, but the original is supposed to be like, kind of an impossible challenge. Like, so it's an hour to explore something that, yeah.
+
+You know, his guest is interested in, so I wanted to do—I have a hard time doing something that's not going to have a—result at the end. So in trying to think of what I wanted to explore, came up with SmolCSS. So we initially built that as an extremely bare bones Eleventy site and then I kept pulling in content.
+
+So the idea is that it's small snippets that feature modern CSS properties but they're also intended to be practical and useful. So the most fancy one that I have there is an avatar list. Does everybody need an avatar list? No, but as a micro component, there's a lot going on there with modern CSS properties that were really fun to explore and—and describe and also I emphasize the accessibility part of everything.
+
+So for example, I won't show something on that site that would absolutely require JavaScript to be accessible. The emphasis is going to stay honed in on CSS.
+
+So—I also used it for my latest example for scroll snap, which has a lot of accessibility and usability issues and I sort of took it.
+
+I added it specifically, so I could call out those issues. Anyway. So we'll see, had a couple of requests to see if it could take contributions. So again, yeah, I—I want to explore that, but it's so young, I got kind of, it's almost like the cart before the horse situation happened.
+
+So I was kind of frantically adding content and while still trying to make it meaningful, because of course, anything that gets added, I want it to be meaningful.
+
+I want it to retain the accessibility, the practicality You know, and so, you know, it's worthwhile to repeat topics, but since it's kind of—the format is kind of a page that you can kind of scroll through and skip through, you know, kind of try to limit some repetition to an extent. There's also— it also kind of shows how you can of course, build between utilities.
+
+So we start with the Flexbox and Grid example, and then later stuff uses those, that kind of thing.
+
+So in a way it's attached to my other mission to let folks know they may not need a framework for some simple stuff. So—
+
+Todd Libby: [00:32:43] Yeah.
+
+Stephanie Eckles: [00:32:43] So again it all comes back to learning and playing and understanding what's even available to make that kind of decision. So—
+
+Todd Libby: [00:32:56] Yeah, yeah that's great. I—I think the framework discussion is for another, another episode.
+
+Stephanie Eckles: [00:33:01] Stay away. (Stephanie motions with her hands if reeling back from a contentious discussion)
+
+I dipped into it the other night, but I usually stay away.
+
+Todd Libby: [00:33:05] Yeah, yeah. I got—I took the bait in something last week and I said, Oh, I can't do that. Oh, no. so we've talked about, you know, all the stuff you have going on. And, and I know that, you know, like I said, that stuff excites you.
+
+And it excites me when I see content like that, especially with a focus on accessibility as well. So I appreciate that and I absolutely respect that. You're doing that, so it's, it's great. It's awesome.
+
+What else about the web is there that excites you and keeps you excited in what you do?
+
+Stephanie Eckles: [00:33:46] Yeah. Great question.
+
+I—I'm kind of wired to love systems. So I really loved getting into the design system side of things and using that as an avenue to kind of try to advance the idea of front end as an extremely worthwhile standalone, you know, segment.
+
+And so I would say just, you know, I have a few—few different topics I've mentioned like kind of just trying to boost general advocacy on a variety of things.
+
+Definitely. That's usually what drives new ideas—and—I'm very interested in—in improving workflows and collaboration between different team members, whether it's, you know, freelance first client, like or whether it's, you know, in an established organization. So I liked that part of like the work work side of things, but yeah.
+
+Todd Libby: [00:34:38] Yep. Okay. If there were one thing about the web that you could change today, what would that be?
+
+Stephanie Eckles: [00:34:45] Ooh, that's a giant question.
+
+Todd Libby: [00:34:50] It certainly is.
+
+Stephanie Eckles: [00:34:53] Aw, man. I—I think that the web itself, like as a platform is in pretty good place. Like it's headed in the right direction for any improvements that still need to be made. I think that I would look more to the community to keep advocating for things like accessibility. Like I just want to see that wider. I'm sure you do too.
+
+Todd Libby: [00:35:16] Yup.
+
+Stephanie Eckles: [00:35:17] You know, just from the start, like shift that left to, you know, everybody has to have a bit essential understanding. so I just hope that as we moved the web forward, you know, that's what happens so more about the community and—and involvement and, you know, incorporating that in tools.
+
+And as I said, the other day, demos and tutorials, like. Let's all do our best. We know better. Let's all do better kind of a thing.
+
+Todd Libby: [00:35:44] Yeah. Yup.
+
+And I'm reminded of that daily when I'm working on something, whether it's, you know, personal project or whether it's, you know, something else. Professional and with the client or whatever. That—that advocacy is very important.
+
+And I talked about this on the last episode you know, from—from kickoff to handoff, but it even goes further and beyond handoff. It's always a—yeah. I mean, even with you know, CSS, that's always an—evolutionary thing that's going on that, I mean, that's the web, that's been the web since it was created. It's been evolutionary, so yeah.
+
+Now I think I know the answer to this next question, but I'm—I've asked it anyways even though this is—what? Podcast number three? But anyways, favorite part of front end development. You really like the most that you nerd out over?
+
+Stephanie Eckles: [00:36:47] Well—yeah, it still goes back to CSS. I don't have a different answer.
+
+Todd Libby: [00:36:53] Yeah, yeah.
+
+Stephanie Eckles: [00:36:56] Yeah. I—I get pretty nerdy about the basic structure though. The more that I've learned about accessibility, I've—I've enjoyed that more. You think, you know HTML until you get a slightly weird hierarchy to deal with or a slightly weird relationship to make. So, yeah, that's been fun too.
+
+Todd Libby: [00:37:17] Yeah. And for me anyways, there was a test on HTML tags, "How many HTML tags do you know?"
+
+Stephanie Eckles: [00:37:25] I saw that, didn't touch it.
+
+Todd Libby: [00:37:28] And I said, I—there—they were probably, there are a handful that I didn't know even existed. I was like, Oh, well, that's good to know. Now that I know that. You know—yeah, the CSS stuff is shaping things and creating things for me was the—yeah, you know, really behind when I got into it and learned it.
+
+And I remember even the web before CSS and that was a cold and desolate place, but that's for another podcast episode.
+
+Stephanie Eckles: [00:38:05] When I very first, very, very, very first start learning, I did our church website really randomly. That was a weird part of my past with framesets. Good times. I do react to similar—
+
+Todd Libby: [00:38:00] I started off in framesets.
+
+Stephanie Eckles: [00:38:21] but anyways, that's a tangent.
+
+Todd Libby: [00:38:23] Yeah, yeah, yeah. I did framesets too.
+
+Matter of fact, I worked somewhere where they were still using framesets. What, four years? Five years ago.
+
+Stephanie Eckles: [00:38:34] That's impressive.
+
+Todd Libby: [00:38:34] Again, that's a whole different episode. You know, we're getting—yeah, we're getting close to time. I li—I like to close out the podcast with my guests letting the listeners know what they have going on, but we that's, all we've been talking about is what you've got going on.
+
+I—if there's anything else that's going on that you want to know, any other projects you have going on and let you know, you can let the people know about that and where people can find you online.
+
+Stephanie Eckles: [00:39:00] Yeah, I think we definitely did cover the majority of the projects. I'm always, I'm always open to feedback.
+
+I am also a mother with two small children. So between full time work and motherhood, I don't always see your comments, but I try to capture them and try to get back to you if they're respectful and that sort of thing. and aren't trying to pick a fight. I don't answer to those either.
+
+Todd Libby: [00:39:25] Yup.
+
+Stephanie Eckles: [00:39:26] And otherwise, please always let me know if you find a general bug or particularly an accessibility bug in my projects or my tutorials.
+
+I, you know, I—I give it best effort, but I want to know about it because I want to fix it for the next person. So I'm always open to that feedback. I'm also open to feedback on topics to explore on Modern CSS as tutorials. So, yeah. Just-just feel free to reach out.
+
+Todd Libby: [00:39:52] And you are 5 T 3 P H on Twitter, CodePen, and GitHub.
+
+Stephanie Eckles: [00:40:03] Yes.
+
+Todd Libby: [00:40:06] You're—I want to say personal site is moderncss.dev?
+
+Stephanie Eckles: [00:40:14] It's definitely my main—main link and my portfolio is thinkdobecreate(.com), which along with my username is very legacy, personal legacy. Which that kind of links out to everything else then, but yeah.
+
+Todd Libby: [00:40:30] Okay. And the rest of the links, you know, I'll throw it in the show notes.
+
+If you've got anything, let me know. And I'll throw those in the show notes as well. And I mean, we got a few minutes left.
+
+Teaching. I like teaching, I don't do it a lot. I am not a content creator per se. What attracted you to the teaching side of the—of the stuff you do?
+
+Stephanie Eckles: [00:40:56] Yeah, great question.
+
+Todd Libby [00:40:56] I'll close it out with that.
+
+Stephanie Eckles: [00:40:56] Cause you're right. It's not, it's not—it—well, it's something that requires some kind of muscle exercise I think, to get into whether you're writing, you know, whatever format you choose. I—I've always enjoyed writing. I tried blogging several times throughout my career. I thought—because again, think of 13 years ago there was not Twitter.
+
+So I think, I think Smashing and CSS-Tricks came on. I think Smashing was a little bit earlier, like 13 or 14 years ago maybe. And CSS(Tricks) a little bit later. You know, but when those came online, then you're like, "Oh! These people are amazing and I need to write to their level, or what's the point?" Which is silly.
+
+Please ditch that thought if you are currently having that thought So here I am 13 years later finally figured that out. you know, if you have a topic that you're passionate about, it doesn't have to be an in-depth tutorial, you know, it can be just something you learned that day. So with that said, I found Dev.to, and they actually have, like, one of the topics you can do is like "Today I Learned", which I think is great because that's—I think that's a really good intro point to kind of start.
+
+I guess I'd kind of exercising your—if you're going to write writing muscle you know, cause video is also not for everyone. I've enjoyed Egghead video because I'm not really the personally the kind of YouTube put my face in the screen corner type of an instructor. I don't mind doing, you know, chats like this, but yeah. So it's—it's—it's definitely about finding a format that works for you and because if you don't enjoy, you know, creating the content, you're not going to enjoy teaching it at the end either.
+
+So, but yeah, so just it's—it's been an evolution kind of right alongside my projects.
+
+Todd Libby: [00:42:47] Yeah.
+
+Stephanie Eckles: [00:42:47] Definitely still learning how to manage the different formats too.
+
+Todd Libby: [00:42:54] I have fun learning. I learn every day I learned when I see your stuff and it's great and I want to thank you for coming on today. always a pleasure chatting, we—tweeting back and forth. I just want to say, you know, I know a lot of people that are singing your praises for the content you have, so it is awesome work.
+
+Keep it up and I’ll have to have you back on with your next—next batch of projects in the future.
+
+Stephanie Eckles: [00:43:25] Sounds good. Well, thank you so much for inviting me on today. It's been awesome chatting with, with you.
+
+Todd Libby: [00:43:33] Well, thank you. And we're going to close out. Thank you listeners for tuning in to the Front End Nerdery podcast.
+
+I'll be back next month with a new guest, new topics, and conversation about front end design, development, and more. If you would please rate this podcast on your podcast device of choice. Like, subscribe, and watch on the Front End Nerdery YouTube channel. Links to transcripts and show notes are there in the description on the YouTube channel.
+
+I'm Todd Libby and this has been the Front End Nerdery podcast. Thanks and see you next time.
