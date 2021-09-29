@@ -1,7 +1,7 @@
 ---
 title: Homer Gaines
 description: My Interview with Homer Gaines
-date: 2021-09-29
+date: 2021-29-09
 layout: layouts/post.njk
 ---
 

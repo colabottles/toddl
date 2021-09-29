@@ -1,7 +1,7 @@
 ---
 title: David Dylan Thomas
 description: My Interview with David Dylan Thomas
-date: 2021-09-29
+date: 2021-29-09
 layout: layouts/post.njk
 ---
 

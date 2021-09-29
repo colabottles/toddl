@@ -1,7 +1,7 @@
 ---
 title: Jeffrey Zeldman Part One
 description: First part of my interview with Jeffrey Zeldman
-date: 2021-09-29
+date: 2021-29-09
 layout: layouts/post.njk
 ---
 

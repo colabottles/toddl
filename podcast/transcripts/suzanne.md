@@ -1,7 +1,7 @@
 ---
 title: Miriam Suzanne
 description: My Interview with Miriam Suzanne
-date: 2021-09-29
+date: 2021-29-09
 layout: layouts/post.njk
 ---
 

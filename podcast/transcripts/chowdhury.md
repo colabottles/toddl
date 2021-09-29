@@ -1,7 +1,7 @@
 ---
 title: Rahat Chowdhury
 description: My Interview with Rahat Chowdhury
-date: 2021-09-29
+date: 2021-29-09
 layout: layouts/post.njk
 ---
 

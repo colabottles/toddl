@@ -1,7 +1,7 @@
 ---
 title: Preston So
 description: My Interview with Preston So
-date: 2021-09-29
+date: 2021-29-09
 layout: layouts/post.njk
 ---
 
