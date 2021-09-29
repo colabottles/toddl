@@ -1,0 +1,436 @@
+---
+title: Preston So
+description: My Interview with Preston So
+date: 2021-09-29
+layout: layouts/post.njk
+---
+
+## S1:E7
+
+Todd Libby: [00:00:00] Welcome to the Front End Nerdery podcast, a podcast about front end development and design. I'm your host, Todd Libby. Each month I talk to a new guest about front end development, design and whatever else comes up. Today my guest is the Senior Director of Product Strategy at Oracle. Developer advocate, speaker, author, and a little bit, I'm a little bit envious at this, part multi-lingual master because of all the, the, the languages you speak. Preston So. Preston, how are you today?
+
+Preston So: [00:00:37] Hey Todd, thanks so much for having me here on the Front End Nerdery podcast. Real pleasure to be here with you today. And thanks for having me on the show.
+
+Todd Libby: [00:00:47] Yeah, not a problem. So why don't you tell the listeners a little bit about yourself.
+
+Preston So: [00:00:51] Sure. My name is Preston So, I use he / him pronouns and I'm best known currently as a person who really works at the intersection of content architectures and content design or content strategy. And what that really means is I self-styled myself as a digital experience, futurist and developer advocate and designer advocate and all of these things.
+
+But what I really like to do is work, live and write about that really interesting nexus between the ways in which we deliver information and content to our users and our valued customers, while at the same time, making sure that the technology works well and that the actual design approaches, and these are experience approaches that we pursue are available to everyone of a variety of different lived experiences.
+
+And my focus these days is not only on the web development side of things and the content management system side of things, which are things I'm already very well known for. But nowadays I'm really focused also on design and user experience, which is a little bit of me coming back full circle because my, I actually started out in my career as a computer programmer slash web and print designer way back in the early two thousands during the quirks mode era and boxed model hacking era.
+
+So, a lot of the topics around web design and development are very near and dear to my heart, but these days I'm really interested in how we can make sure that a lot of these things that we've enabled for the web are also things that can enfranchise, enable and extend to those who are working with our user interfaces, in our content and our digital experiences on the web as well.
+
+Todd Libby: [00:02:35] Nice, nice. And you touched upon it. So, I usually ask my guests, this is my first question to all my guests. And you just touched upon it, like I said, how did you get started in your web development and design journey?
+
+Preston So: [00:02:47] Yeah, it's a, I've had a very serpentine career. It's been a lot of twists and turns. I started programming in visual basic. This is actually probably a fact that I haven't shared on any other podcast yet, but visual basic was my first programming language back in 1999. And in 2001, I started getting into more of these elements of print design and web design that I was really interested in.
+
+I started out working for a very small agency in Southern Colorado that did not only trifolds and brochures and wedding photography and that sort of thing, but also made Drupal websites using the Drupal content management system. And one of the things that I had the opportunity to do at that time was to transition over into some of the more interesting aspects of web development beyond pure web design, which I had been doing since 2001.
+
+So, in 2007, I started getting really involved in content management systems. Some of the really interesting ways in which we can systematize and codify and really turn into a process. Some of these things that we were doing through hand coding back in HTML in the early two thousands. Ever since then, I've been working and have had the privilege to work along a variety of different axes and dimensions when it comes to these content architectures and user experience.
+
+Not only from the consultancy side and the platform side or the partner side or integration partner side but also, from the standpoint of a lot of the sort of industry publications in this area. Today, I have the opportunity to work with A List Apart as an editor. I also write a column for CMSwire, the industry publication about content management.
+
+And I also organize an event called Decoupled Days, which is the only nonprofit event about headless content management systems or the future of content management architectures. However, my world has been increasingly widening. I got into of course, developer advocacy very, very early on back when it wasn't really called developer advocacy.
+
+And also got into voice interface is actually back in 2015, 2016 as a lot of the folks who had already moved over to websites and driving a lot of their websites through content management systems with all of their bells and whistles, but also certain pros and cons.
+
+We're looking towards how those sorts. of things could also work for realms beyond the web, like voice interfaces and, immersive content like augmented and virtual reality, as well as some of the digital signage that we have coming out. And other things that are really interesting these days, especially as, at least the most privileged of us are able to begin emerging from the events of the past year and a half.
+
+Todd Libby: [00:05:22] Right, right. Yeah, and that's that's. That is that is a lot packed in there. Very, very serpentine like you said, you mentioned Decoupled Days and I had done my due diligence and checked it out. It's a conference as you said focused on headless CMS architectures. Can you tell the listeners a little bit more about that?
+
+Preston So: [00:05:42] Sure. Decoupled Days is a really unusual conference. I think a lot of people are very surprised by the fact not only that it exists, but it's also, the kind of event that it is. We started the event back in 2016 and essentially it was really a conversation born out of several discussions that we had in what's called the hallway track or the kind of you know, casual, hallway conversation track at DrupalCon, which is the conference for the Drupal content management system.
+
+And a lot of us were thinking, you know, why is there no way for us to get together with other people who are building interesting solutions for content management systems that go beyond, let's say the traditional front ends of those CMSs and delve into things like JavaScript or static sites or mobile applications, even voice interfaces.
+
+So, Decoupled Days started in 2016 as a nonprofit community led, volunteer run conference that is entirely funded through the generous contributions of our sponsors. And also of course, through paid registrations. We have no corporate ties. We have no link to any corporate entity, and we take that, that responsibility very seriously, not only as a nonprofit conference, but also as a gatekeeper for those who are trying to get into technology conferences or speaking About software or web development.
+
+And this is our fifth year. We've taken some interesting twists and turns as well over the course of our five-year history. One of those is very early on we decided to not have a keynote speaker, which is very unusual for a lot of conferences. What we do is we invite a lot of people to just come and have some great sessions that are really focused on some technical aspects or architectural aspects that they're very interested in.
+
+And we try to give everyone the spotlight. What we do is we limit our opening remarks and our closing remarks to about five or 15 minutes, and then just kind of have at it with the content, which makes us a very unusual conference. We're also a conference that really focuses on diversity and inclusion and equity in particular.
+
+One example of that is ever since the beginning of our conference, we've really worked hard to create a very inclusive conference when it comes to representing those who are marginalized or historically oppressed or traumatized to be able to have the ability to speak at a conference where they can see, you know, basically people from all sorts of lived experiences share their expertise.
+
+So, what that means is every year, we, we increase our goal of marginalized speakers. We didn't quite meet our goal this year of 50% marginalized speakers at our event. But that's a very high bar, I would say, especially for a virtual conference. We also set a goal of at least 10% of all sessions being given by first-time presenters or first-time speakers who have never been able to have the opportunity to speak at a conference before.
+
+And we've far exceeded that goal this year. In addition, we have a very, very inclusive organizing team. We focus a great deal on obviously a, a very solid code of conduct, anti-harassment policy. We always, you know, provide accessible and inclusive venues. And our team itself has also diversified in recent years as well. Our team is now entirely made up of people of color.
+
+Is nearly half made up of women. So, we've made a lot of progress in that regard. Still a long ways to go, obviously. But this year, our, for our fifth year, because we're having a second virtual conference in a row, we're going to be having the first ever free edition of Decoupled Days in the history of our conference. And probably likely the only free edition in our conferences, history.
+
+July 14th through 15th. 45 incredible talks about headless CMS, JAMstack JavaScript, Drupal, WordPress, Contentful, Netlify, everything you can imagine along those lines of web development. And it's all going to be on July 14th and 15th at decoupleddays.com. It was a very long information infomercials, sorry Todd.
+
+Todd Libby: [00:09:35] No worries. No worries. That's fantastic. Actually, you know, the big, the big thing with me when I look at conferences and in the prospects of attending is, you know, the, the diversity of those conferences and, and inclusivity and accessibility. So that, that is great.
+
+So, let's get to the bread and butter of what we're going to talk about today, and that is your new book. And if you want to hold that up, Voice Content and Usability, I just, as I, as I had mentioned to you before we started recording finished it this morning, fantastic book. You know, if anybody doesn't have it, I urge you to go out and get it. You know, I, I’m no voice content. Novice even. But it was fantastic.
+
+So how about first let's do a little overview of the book and then we'll go into some questions that I had.
+
+Preston So: [00:10:32] Sure. So, Voice Content and Usability, first of all, it's it's, it's, it's my third book. It's a book about basically the really interesting emerging fields of voice content strategy, and voice content design, which is really interesting for me because it's not only my first ever book about user experience and design and a lot of these topics that I think in a technology world, we tend to give a lot of short shrift to, especially with regards to things like multimodal accessibility, but it's also the first book from my publisher, A Book Apart, that is written by an author of Asian heritage.
+
+It's their first book on voice, and it’s also the first ever book on voice content at large. So, the book itself is a really interesting overview of a lot of the things that everyone from all different walks of life in the technology world should know about.
+
+And one of the things I want to stress, especially because this has come up a couple of times, is you don't need to have any experience with voice or even any experience with anything related to conversational interfaces to get a copy of my book, pick it up and actually, read it because the audience is really for web designers, web developers, content strategists, content designers, UX writers, copywriters, everyone who operates in the realm of content, even if they only touch content tangentially.
+
+And that includes people like stakeholders and executives and marketing teams and product managers as well and compliance officers too. There's a little bit of a section about compliance in there too.
+
+So, my book is really a summary that's rooted in a case study of a real-world voice interface that I had the opportunity to work with a wonderful team on back in 2016 and 2017 called ask Georgia gov, which is the first ever voice interface built for residents of the state of Georgia, the digital services, Georgia team.
+
+They were an absolute joy to work with, especially their chief digital officer, Nikhil Deshpande who’s a very dear friend of mine, as well as so many other team members that we had the opportunity to work with like Kendra Skeene, Jenna Tollerson, Rachel Hart, Donna Sumner.
+
+And one of the things that I think was really interesting about this project is it was among the very first ever implementations in Alexa of a content driven voice interface, the overwhelming majority of voice interfaces today, even today in 2021 are rooted in primarily what Amir Shevat calls, task lead, or what I call transactional voice interactions.
+
+Which means they're really focused on serving the user by performing tasks on their behalf, ordering a pizza, reserving a hotel room, checking their credit card balance, but not so much about those questions that users might have about what's in that pizza or what's the hotel room like, can you tell it to me, you know, can you give me a description of the hotel room or tell me about the new movie Cruella or the movie In the Heights?
+
+So, a lot of these interfaces really have now surfaced that are focused on content and delivering content. So, this is a really unusual book because in, up until now in the entirety of voice literature that exists out there, a lot of the voice interface literature that's for people who want to get into conversation design or voice interface design is really rooted either in these transactional use cases or they're rooted in hardware, which means you've got to understand, for example, how to do these certain things and processes and practices in voice interface design.
+
+So, you can do something with, let's say Alexa or so you can do something with a bot framework that exists out there, but the book takes a very different tack. It says, “Hey, we're going to be agnostic. We're not going to focus on any specific technical implementation.” It does mention some platforms. It tells you some about what these platforms are and what you should consider when evaluating them.
+
+But I really wanted to stay away from making decisions for people who want to make their own decisions about technology. So, the book focuses on a very kind of bird's-eye view and a low-level overview of some of the dynamics and systems that come into play when you're working with spoken content, as opposed to written content. And when you're working with informational voice interfaces, as opposed to transactional voice interfaces.
+
+Chapter one covers what voice even is why you should be thinking about voice. What are some of the interesting nuances between spoken and written user interfaces, which is a very, very big topic that isn't even covered probably in you know, it could be covered in multiple books, but is really just a few pages in that first chapter.
+
+Chapter two is really about how to take that web content that we've got. And all of us has that, right? Todd, you've got a website, I've got a website, everyone in the world that is working with web content, has content that over the past few decades has really been trapped in a lot of the tropes of the web that we've taken for granted like links and calls to action and so on and so forth.
+
+So, my book really talks about how to extricate ourselves from some of these structures that we've taken for granted like breadcrumbs and navigation bars, and site maps, and begin to think about how to apply those into what are known as peer voice interfaces or voice interfaces that don't have a screen or a visual or physical component whatsoever.
+
+So, chapter three and four really cover the design artifacts, the design systems and design processes that you should be thinking about as you build a voice interface. And I'm really excited personally, because one of the things I really want to start thinking about in the next few months, myself, is what can we do to take our design systems that have been so pixel perfected for the web and think about how those design systems would manifest in the voice world.
+
+A lot of these things have to do with that Sonic access that, that dimension of sound and space or sorry the end of sound in time that we have to operate in as opposed to physical space. So, chapter three deals with writing dialogues. How do you actually write this voice content in a way that makes sense to voice listeners?
+
+Chapter four talks about the mental maps and flows and journeys that we take as users through voice interfaces and why these journeys and flows are very, very different from the kinds of flows that we might design for a website, visitor or somebody who is looking at a web information, architecture.
+
+Chapter five deals with usability testing, and a lot of the things that we need to do to make our content ready. And chapter six really ties the book together and deals with a lot of the issues that I think have been often ignored in voice interface literature at large, which is what are we thinking about when it comes to voice in the future with regard to some of the systems of oppression that many of us face today.
+
+How do we serve disabled users better who want to be able to use these voice interfaces in a way that's reflective of our society and not just a subset of our society? And finally, what are some of the ways in which voice interfaces might change in the future? So, it covers a lot of ground.
+
+All of that, of course is rooted in the ask Georgia gov case study that we built for the georgia.gov website. And I'm also, you know, given that, I know that you and I share a deep, deep passion for accessibility. I'm very happy to note as well. That from chapter one, the chapter six, you know, there is accessibility strewn throughout, even though there wasn't enough for it to have its own chapter in the book, unfortunately. Next time though, next time.
+
+Todd Libby: [00:17:29] No, it was great. Chapter six, especially really like you said, it did tie it all together and, you know, there's, there's a lot in that chapter that I was yeah, it was just. The last three paragraphs of that chapter really resonated with me as far as diversity inclusivity and, and all that.
+
+So, and I appreciate, you know, you know, your passion for accessibility and how, you know, you sprinkled it in the book. It was and you touched upon it in places where normally I don't see a lot of, of books written with accessibility, unless they're accessibility themed of course. But yeah.
+
+So, let's talk about something that right off the start from the book intrigued me one of the things anyways, and that's omni-channel content and content strategy for voice. Because as you say in the book content auditing is more than just compliance. Can you tell us what Omni channel content is and the importance of content strategy regarding voice content?
+
+Preston So: [00:18:34] That's a great question. And I think this is one of the examples of how people are dealing with this problem of content today, where nowadays one of the pieces of really interesting news that we have coming out of you know, at least for some of us here in the, in the pandemic is the fact that over the course of our homebound experiences at home, we have found that sales have skyrocketed for smart home systems for smart speakers for virtual reality headsets.
+
+And I think one of the things that a lot of brands and organizations are beginning to come to terms with, especially as we go through what McKinsey calls, the technological quickening around remote work and collaboration that's a distributed is what do we do with all this content that's currently trapped on websites or is currently relegated to these?
+
+Really in some ways visual structures that are not so much ready for prime time in these immersive situations or voice contexts. And one of the things that I think is really important to recognize, and I mentioned this at length in my recent omni-channel X talk about how we need to think about omni-channel content.
+
+Is that when we think about content today, a lot of the ideas that we've had about moving our content to the web have been really focused on the website as the primary destination. But these days our destination could be anything. And, for example, at Oracle, we talk about the fact that content now needs to be page less.
+
+It could be something that is semantically valuable in a variety of different settings, but for all intents and purposes, a lot of us have written content that's very much focused on an oriented toward the web.
+
+So, what I mean by omni-channel content is let's think about, for example, the early days of voice interfaces that early days of chatbots, a lot of people would hard-code certain utterances or certain data into the chat bot and not actually put that in a separately maintained environment where that actually manifests as web content, voice content, ominent reality content, mobile content, wearable content you know, smart TV content.
+
+And this really illustrates I think one of the big issues that we have coming up, which is this notion of content that where if we've gone into all these silos and have you know created all these other editorial environments where we're editing content, administering content.
+
+That creates a maintenance nightmare and also a compliance nightmare as well, because how do we manage to keep all of this content in sync when it's all going in these different environments? So, Omnichannel content in my view is really this idea that we should be managing our content as a single source of truth in a single repository that is semantically rich enough and structured enough in, in a, in such a way where any potential digital experience or user experience could be pulling from that content, and it makes sense that the user in that environment.
+
+And what I mean by that is for example, in a voice interface, there's no way to color, text blue and underline it. So how do we treat things like links and calls to action in what Aaron Gustafson in conversational semantics and A List Apart calls, these headless user interfaces that really enforce and obligate the users to not follow the same visual patterns that we see on the web. So, this is where I bring up the whole notion of a content audit.
+
+And I think there's a lot of things that we're used to when it comes to auditing for our user experiences. There's an accessibility audit, right? That end-to-end work that we do to make sure every single page is accessible. That, you know, end to end testing, we can do with certain accessibility tools.
+
+There's also content auditing when it comes to editorial silos and looking for pages that might not have any links to them, or it might be completely orphaned over in a silo somewhere. There's also regulatory audits, right? We want to make sure that here in the U.S. our content is HIPAA compliant.
+
+Where certain pieces of content have to be above the fold on pharmaceutical websites, as well as GDPR compliance. Where certain pieces of content about cookies and privacy policies also have to be surfaced in a very visible way. But none, there's not really been a whole lot of discussion about content auditing for purposes that really run the gamut of how we think about content beyond the web.
+
+And I think it's really interesting and really important for organizations, especially those that might not have much of a focus these days on content strategy to take a look at how their content manifests in all these different scenarios and to gauge well, are these things that we should be accounting for within this universal rendition of content that we want to make sure is appropriate for every channel?
+
+Are there maybe some things that we can do to enrich the semantic nature of this content or enrich the structure of this content or how it's written or, or its voice? In order for it to really be able to manifest as various types of content. Now, one of the things that I think is a big paradox, and this is something I don't really talk about in my book, is that there is a paradox and a bit of a conflict of interest in some ways between the fact that there is certain content, like long form content that, you know, is what I call macro content.
+
+And I do talk about the section in my book, I just realized that isn't really meant to be in a voice context. Right? So how do you deal with some of these more, let's say channel specific pieces of content. And this gets into, I think some of the more, let's say complex and nuanced areas of content management and content strategy, especially around things like content planning and content modeling and content schemas that really began to kind of show how this amazing idea of content that we have to be Omni channel isn't necessarily as easy as you know, easy to do as it is to say it.
+
+Todd Libby: [00:23:58] Right. Yeah. Yeah, that's it, it, it, just from the, from that moment when I started reading, it was, I was just engulfed in that book. So that's great. And, and I've dabbled in content strategy throughout my career here and there, of course, just for web.
+
+And it just the, the, the, the thought of the process that as I was getting further, along in the book that you described, you know, you went through in the ask Georgia gov project was just a fascinating, and I'll probably use the word fascinating a lot today regarding the book, because it was absolutely fascinating to me.
+
+So, so you also said that content strategy differs from voice to web, of course. I believe you said that in the book, how are voice interfaces focused in, how can we, and when should we focus more on the humanness of voice content rather than just, and for the lack of a better term, I use robotic voice, you know, answering questions when we talk to a machine or providing instructions, when, you know, we talk to a machine.
+
+Preston So: [00:25:02] There's a lot to unpack there, Todd, and, and, and I think that there's several dimensions we can focus on. Several, you know, things that we can tug at there. The first of course, is that the ways in which we write voice content differs completely from the ways in which we write web content or written content at large, even when it's destined for, let's say a magazine.
+
+And that's really rooted in the fact that we as humans have a very interesting approach to written language. Written language is much younger in the grand scheme of this species you know, of our species history. And it's also really interesting because written content and written interfaces, especially written conversational interfaces like chat bots or WhatsApp bots or Facebook messenger bots are really more stayed or cemented or concretized examples of content.
+
+And I like to use the term fossil record where a lot of the terms that we use in written texts are things that we no longer use in speech because of the fact that written text tends to really solidify and codify a lot of these things that we say. For example, we really don't say the phrase to whom it may concern.
+
+Even though we write that all the time whenever we write an email or send a letter, and by the same token, we use the word literally a lot more when we speak, then when we write an article. So, a lot of these little foibles and nuances are things that are really important for designers to pay attention to, and especially content designers and those who are, who are writing user interfaces.
+
+Now the really important thing I think for us to remember as well, is that a lot of these written conversational interfaces and then the, and the written word has a big benefit, right? And that big benefit is that they operate as what Erica Hall calls a conversational design documents in a space where what we have with chat bot is we can scroll up and look at a back scroll that stretches for infinitely long miles, like the microfilm archive.
+
+And we can see exactly what happened 15 minutes ago when we had this conversation about how my flights delayed which airline, I should be flying with because of their safety record by the, you know, on the other hand, however, the problem with voice content is it's very ephemeral. It's very transient.
+
+For example, I don't remember anything that I've said on this podcast about five minutes ago. And if you were to quote it back to me, I might say, wow, did I really say that? And a lot of conversations we have with voice interfaces are very much the same because who really remembers, right?
+
+What someone said to them as an Alexa device, right? What someone said to them maybe 15 minutes ago when they were having a different sort of interaction. So when it comes to content delivery, I think this is one of the underlying reasons for the fact that voice interfaces and conversational interfaces that are spoken, dealing with content are still so rare because it's much easier to conduct a transaction and remember a result that happened from us, booking a flight or checking a credit card balance than it is to remember, for example, the details of what that credit card promotion is, or, you know, what that flight safety record is or what that jet was on that flight.
+
+So, a lot of these things can be very tough to handle in a voice context. And one of the things that I always like to tell those who are getting into voice interface, design is voice interface is about good writing, right? And it's it's really about making sure you write well, but fundamentally you can't really design for a good voice interface if all you're doing is writing, you have to be able to do things like what are called table reads, where you're going to actually read those things aloud.
+
+I've even heard of voice interface designers that will use screenwriting software, like Celtx that people use to write film scripts in order to actually really come up with a way to make voice interfaces sound more human. So that’s number one. Number two. And I'll try to keep this a little shorter because I know I can go on for a long time. But the second aspect of this I think is really the part that you've dug into with that second part of the question, which is the fact that voice interfaces are the most human of interfaces.
+
+In conversational design, Erika Hall says that voice interfaces are and conversational interfaces. You know, conversation is the oldest interface. And in some ways the it's a very big distinction that we have today, between the voice interfaces that we deal with and the other interfaces that we play in the sandboxes of, because of the fact that voice interfaces reflect our speech back to us, it's a very primordial way of interacting with each other.
+
+One of the things that's really interesting about our user interfaces today is that if you think about our ergonomic mechanical keyboards or our computer mice or our video game controllers. Those things are artificial. Those things are learned and acquired over time.
+
+When it comes to us as children, we're learning language at a very different kind of level in terms of our evolutionary capabilities than we are learning how to use a keyboard, how to get that WPM up, how to actually use a Bluetooth mouse and a lot of these things that really are very, very unique to the ways in which the information age has worked.
+
+For example, if we were to go back in time 500 years ago, or 1500 years ago, and bring along a Logitech keyboard with us, or a mouse with us or a game boy, a Nintendo switch back with us, those folks back in the, you know, middle English era or the late Roman empire would have absolutely no idea what to do with any of these things that we brought back in time with us.
+
+But if we spoke middle English or if we spoke Latin, we can certainly have a conversation with them and really easily by that sack of whatever it is that we want to buy from the market.
+
+So, one of the things that I think is very important for us to recognize is that because of that establishing humanity in a voice interface is very different because unlike us, as designers, having to work in the terms, and then the conditions of these interfaces that are artificial and acquired, it's now the machines that have to play on our playing fields.
+
+And they're the ones that have to be able to speak with us. And this really instigates a whole lot of interesting conversation that you'll want to have within design teams about things like, well, how do we establish personality?
+
+Because you know, a keyboard doesn't really have a personality, a website, okay, sure there's some personality in a website and that's rooted in the content and the color palette and you know, a lot of these things and the typography, but it's not really the sort of thing where it's literally something where we talk with a voice interface.
+
+We're actually thinking that we're talking with a person. When we're using a website, we're not necessarily thinking that we're talking with a person or interacting with a person, even though there are ways that we can suggest that.
+
+And it makes things really hard because all of the things that we have to do to establish that personality, to humanize a voice interface are rooted in not only those low level synthesize speech elements that we have access to within these platforms, but also the ways in which we write the rhetoric and the lilt and tone of our speech that we actually code into that voice interface.
+
+It becomes a very interesting question of how we operate at all these different levels of language and rhetoric.
+
+Todd Libby: [00:32:02] Right, very interesting. So, the accessibility part of voice content how, how accessible is or how accessible can voice content be? Is my next question.
+
+Preston So: [00:32:23] It's a great question. And the first and foremost, you know, I think we've heard a lot about some of the really important notions around multimodal accessibility, multi-channel accessibility that really are challenging some of the preconceived notions that we've had on the web.
+
+First and foremost, what I want to note is that voice interfaces are not the end all be all solution for accessibility. They are not the end all be all solution for oftentimes people who have cognitive disabilities or those who are unable to, for example, use a voice interface because they're members of the Deaf community or the Deafblind community.
+
+Voice interfaces fundamentally of course, especially peer voice interfaces that operate entirely without a visual component are entirely inaccessible for Deaf people and Deafblind folks who are going to, you know, for example, who might use something like a refreshable braille display or might use a voice interface that has a captioned component on a screen like the Amazon Echo Show.
+
+So, with that preface though, I think there's a lot of interesting ways in which voice interfaces can fit into not solve of course, all of the problems of, but fit into some of the ways in which we can make user experiences more accessible, writ large. And Todd, I think you remember this, there's a very prominent blind voice interface designer named Chris Maury, who writes in wired that he never understood why screen readers are built the way they are.
+
+Right? Why do we build this amazing visual website with all these bells and whistles and all these amazing colors and typography and ligatures and all these things? And then, and only then we translate all of those visual structures and those visual components into oral or verbal settings.
+
+Todd Libby: [00:35:55] Yeah.
+
+Preston So: [00:35:56] And he has a great point, right? Which is that for blind people, like him, it's really inexcusable that a voice interface really presents this in some ways, much more inefficient way to interact with content. And I think we see this, even when we, as people who work in web accessibility experienced this, right?
+
+Yes, you need to have that accessible equivalent for your website, but just think about some of the ways in which a voice interface could accelerate some of those interactions a user is going to have while they sift through things like skip to main content or a link with a destination to this and announcement of images with this alt text and this, you know, sort of information that really in some ways can be a detriment or an obstacle or barriers to just getting that piece of information that they need.
+
+And one of the things that we did for ask Georgia gov this first ever voice interface for the residents of the state of Georgia was exactly that. We said, okay, we've got this amazing georgia.gov website it's extraordinarily accessible.
+
+And the Georgia.gov website is I believe as of the last I checked that he, you know, that that website adheres to the WCAG, the web content accessibility guidelines up until two, you know, two dot oh very much at the forefront of all of the principles that we know about when it comes to things like color, contrast and typography and all these things.
+
+However, one of the things that the state of Georgia has always found, as well, as, you know, in addition to being at the forefront of web accessibility, they've also been thinking a lot about multimodal accessibility and how to really reach underserved Georgians.
+
+And they looked at two audiences when it came to ask Georgia gov. The first was let's look at disabled Georgians, right?
+
+Those who might be you know, they might not want to necessarily, or might not be able to drive to an agency office really easily to ask questions in person. They might not be able to stare at a screen for very long.
+
+They might be blind and want to be able to use a voice interface to answer their questions and have a less cumbersome experience than a screen reader might provide.
+
+The second demographic that we focused on was elderly Georgians because let's face it even today there are so many people who do not know very well how to use a computer or how to use a mouse or how to use a keyboard.
+
+And those are very important sets of people and populations that we need to make sure to serve with state government and local government content. So, ask Georgia gov really focused on these two audiences and said, okay, if somebody has an Alexa device at home, but they might not have a smartphone, they might not have a computer you know, how can we best serve them and how can we best deliver information that they want to know about to them?
+
+And one of the really sort of fulfilling and exciting things about this is that, well after we completed the project, we did a retrospective we looked at some of the analytics.
+
+One of the most surprising finding that came about, is that the kinds of searches that people would conduct and the kinds of keywords and topics people would search for on the georgia.gov website in their browser on their cell phones was completely different from the kinds of topics that people would search for using an Alexa device.
+
+Now that really indicates that the kinds of people that we're getting to with these voice interfaces with these other interesting clients are very different from the profiles of the people that we traditionally think of as web users. And that really surfaces a lot of interesting sort of ideas here, right?
+
+Because what are we doing when we focus too much at the expense of so many other users who are out there on just the web practitioner on just those who know how to use websites like their bread and butter, but not necessarily those who are really interested in using voice interfaces for a variety of different reasons and have a variety of different motivations to do so.
+
+So, accessibility wise, I think it's a very interesting time. Obviously with voice interfaces, I think that they don't replace screen readers. Right? And, and by no means am I asking that everyone, you know, stop using their alt texts or, you know, stop using ChromeVox or JAWS to listen to their content.
+
+I am also, you know, suggesting that a voice interface could be a really interesting add on to a lot of these things that we know that a lot of people want to be looking for in their content on the web.
+
+Todd Libby: [00:38:23] Yeah. That's great. And so, you mentioned the engagement in, in everything. How successful was that project when it, when it was launched?
+
+Preston So: [00:38:36] Great question. So, we definitely, we had a lot of usage, and it was, you know, by no means was it as, as popular as the website, georgia.gov, I'm not gonna, you know, I'm not going to miss any worse to suggest that everyone was galloping over to Alexa to talk with georgia.gov.
+
+But we did have some really interesting results, which is that you know, as I said, the, the demographics of those, that fact that we found, you know, based on the searches that were being conducted were, were very different. One example of this is that people were searching for state sales tax very often.
+
+More often than people were searching for those topics on the website and the website, it was somewhere further down on the list. And that really showed some interesting things. We got, you know, with all of these new interfaces, you always get an initial burst of usage.
+
+And then it kind of has a long tail. And we found, we, we heard from a lot of different Georgians who said that they really appreciated this option of using an Alexa device and of course, one of the biggest examples of proof in the pudding is that now, even though we've, we've decommissioned the Alexa skill, because it was getting a little bit up there in years.
+
+Ask Georgia gov is now also a chat bot that's available that you can use on georgia.gov as a written chat bot. So, this is by no means the only foray that Georgia has made into conversational interfaces at large.
+
+But what we found is that a lot of people would try to do searches and we did a bunch of you know, work to really look at some of the logging and reports that came out afterwards.
+
+And some of the things that came out were really interesting. And one of the funnier anecdotes from this that is, you know, basically, is, is, you know, evidence that it was real Georgians using this.
+
+It wasn't just us testing it, or, you know, others was, there was this one result that kept on coming up. And one of the things that we did for the Georgia team, because they could only afford to Administer and manage one single version of content.
+
+We put there reports and logs for the web content right next to the voice content. So they can see in the same kind of view, whether they're 404 errors in their website, were getting more triggered more often, or whether it was the voice content searches that were getting, that were triggering those 404 errors more often and no search results more often.
+
+And what we found is that obviously the website, you know, people type in stuff and, and you kinda know how that's going to go, because we know about how the web works, but there was this one result that kept on popping up that wouldn't return any results on Alexa and this person, it was 16, at least 16 different entries of this in the in the logs.
+
+And it was the, a query for L A W S O N S like L A W S O N ‘S. And we were like, what, what is this? Who is this? You know, who is this Georgian somewhere in the state of Georgia who was searching for this like brand name or this proper proper noun. And we kind of sat there and scratched our heads for a while.
+
+We were all in this meeting together and eventually one of the native Georgians in the room, she she kind of perked up and she said, you know, I was saying this over and over to myself in my head.
+
+And I think it might be somebody who is a native Georgian resident who was saying the word license in a Southern Georgian drawl, but just can't be understood by Alexa, no matter how many times she's tried.
+
+So of course, it was that right, of course it was somebody trying to search for the word license and wasn't able to get Alexa to understand. And I think what this indicates is that in terms of where we are in voice interface, design, and where we are today with voice content, we're still very much in the early days.
+
+And I think back once again, to some of those things that we had to deal with with you know, browser issues and cross browser compatibility and quirks mode and all of that, which is that the platform is still very unstable.
+
+And I'm really you know, sort of astonished by the fact that, you know, Alexa doesn't yet understand that the the, the, the richness of all the American dialects that we have in the United States because that really shows one thing, which is that just like with websites back in the early two thousands, we can design our voice interfaces and our voice content to be within an inch of perfection.
+
+But sometimes it's the platform that underlies all of that. That is actually at fault when we have an issue, like, for example, misunderstanding the word license in a perfectly logical and reasonable American English dialect.
+
+And for that reason, I think one of the things that I really like to kind of say is that, you know, we're nowhere near the point where these voice interfaces are going to beat us at our own game of human conversation. And we can rest easy that there's still a ways to go for them to really be able to beat us at our own game of human speech.
+
+Todd Libby: [00:42:56] Yeah, yeah, I was at, that was one of my questions was about the Lawson's issue. So, I'm glad you mentioned that that was, I have issues with, you know, if I'm speaking into a device or or or using, you know, voice content, with, with the Maine accent, sometimes when something comes out that it just doesn't seem right.
+
+And it comes back with a, with another word, with another word dumps in this you know, scratching my head. Well, that's not what I said, but yeah, that, that was that issue was, yeah, that made me, that made me laugh. Cause I was thinking Lawson and you know; I would have never had thought about the word license, but that was, that was great.
+
+So, I wanted to touch upon as we get close to the end of the questions that I have before we get into the three that I usually ask everybody. Why do we have female named interfaces?  And what are some of the costs of voice content sounding human?
+
+Preston So: [00:43:57] Yeah. As, as you know, Todd, this is what I get into in chapter six of my book. It really should be, I think, a much bigger focus for not only those who are interested in getting into voice interface design, but also those who are at the, at the reins of voice interfaces and their platforms.
+
+When we think about some of these personalities that we have established in voice interfaces like Alexa, Cortana, Siri, they all have one thing in common, which is they're all generally personified as white cisgender heterosexual women who speak with the general American or a middle American dialect.
+
+And I think one of the things that this represents is a really interesting kind of external factor that comes about from, you know, when we think about broadcast journalism and the focus on that general American dialect.
+
+And what's interesting though, is that the ways in which we look at our voice interfaces and treat them, and in some ways oftentimes disrespect them as well, because we've all seen those videos that have gone viral with people saying shut up, Alexa, or shut up, you know, Siri is that, well, you don't really treat a voice interface like the machines that we treat on a daily basis, we don't, you know, we're not really, you know, calling our keyboards names like Sam or Terrance, right?
+
+We're not really calling computer mice, Kevin. And this really indicates, I think a really important facet of the ways in which voice interfaces are the most human of interfaces, which is that this whole idea of voice interfaces is problematic.
+
+Not only from the fact that users are really having a tough time hearing themselves in them, where, for example, you very seldom find voice interfaces that speak using AAVE or using Indian English, or that are potentially able to code switch between English and Spanish, especially for families that are bilingual or those who are members of queer or trans communities that code switch between straight passing and lavender or LGBTQ forms of speech.
+
+And these are really important considerations because the ways in which people perceive voice interfaces can really undermine or establish the amount of credibility or trust they have in these voice interfaces. If we always keep the same kind of voice interface with the same kind of demographic constantly represented, what does that do?
+
+Especially when it comes to the entire purpose and the underlying rationale of these voice interfaces. One example of this is the fact that, for example, when I think about a lot of these organizations today that are adopting voice interfaces and looking at voice interfaces as a means to help deliver content or conduct transactions.
+
+Generally speaking, it's for economic reasons. And generally speaking, it's because they might have a call center somewhere in the Philippines, or they have a large team of customer service agents working in India.
+
+And the big question, I think that we all have to answer not just about voice interface, design, and how they're engineered to sound human in ways that might actually intensify the biases and oppression that so many communities face today in our, in our society is also what that does in terms of the economic class, not just the social costs, but the economic costs.
+
+Because when you think about all of these people who are going to have their jobs replaced by a faceless agent that is fundamentally somebody who is Cortana or Alexa or Siri, and we perceive them to be that.
+
+What does that do when it comes to not only the fact that a lot of these folks will lose their jobs in the global south, those who are in Manila or those who are in Kolkata, who are not able to actually make a living because they've lost these jobs in call centers.
+
+What does that do also to our sense of the richness of human language, when I can no longer call somebody or kick off a voice interface, and here's somebody who has a dialect, that's very different from my own or here's somebody who has a very different lived experience from me.
+
+What does that do in terms of the monoculture that, that facilitates and cultivates within our concept of the world and how we really trust in the brands and organizations that we build and design for?
+
+So, very important question. And one of the big questions, I think a lot of voice interface platforms and designers have to ask themselves today is, well, who are you designing for ultimately, and how do they hear themselves in the voices that you're deploying for these use cases, because if they're not hearing themselves, ultimately, is that alienating, is that something that's suppressing potentially? Is that something that is exclusionary?
+
+And it's a very tough question that I don't think we'll have a very good answer to for some time.
+
+Todd Libby: [00:48:31] Yeah, yean and that's yeah, that makes it, that makes me think a lot, because, you know, like I said, the last three paragraphs in the, in chapter six really resonated with me and, you know, you just having people, I would think hearing somebody like them on the other end would make them feel more included or you know, a lot better about using whatever they're using. Whatever technology. So, yeah.
+
+Preston So: [00:49:05] It’s a hard one, right? Because that's the other thing that I think is really hard. And, and, and, you know, because we come from the English language standpoint and from a largely monolingual standpoint, I think a lot of people forget that there are so many places in the world where people will switch between English and other languages in the middle of a sentence.
+
+And if the voice interfaces don't reflect that same thing like for example, if you traveled to India, and you go to Mumbai or some of these large cities, a lot of these billboards, and a lot of these mobile apps are written in a mix of English and Hindi that cross boundaries within the middle of a sentence. And you know, I think that's a really, you know, think about Singapore, for example, right?
+
+Where a lot of the English is interspersed with so many other linguistic elements that really, I think are potentially really problematic in the same ways in which English has taken over the world in the world of commerce.
+
+What I'm very worried about is that we're going to lose a lot of this richness when it comes to hearing a lot of these really amazing things represented in the voices that we reproduce in our voice interfaces.
+
+Because let me tell you, I don't think I've ever heard a voice interface that's capable of speaking the way that Singaporeans do an English or the way that South Africans do in English or the way that folks in India speak in English.
+
+Todd Libby: [00:50:17] Yeah, yup. So, let's talk about w let's let's shift now to your other books cause I know you have a couple other books and I wanted to get, you know, one in particular that I had that caught my eye. So, I'll let you talk about those. The, the, the Gatsby book that you have is that out?
+
+Preston So: [00:50:37] It is on its way out. So currently it's a great segue into my books. So, Gatsby Definitive Guide is the other book I've been working on over the over the course of the pandemic, to very say diametrically opposed realms subjects as it were.
+
+And the Gatsby Definitive Guide, is really about Gatsby JS, which is the static site generator framework that is written on top of react and really is about this new JAMstack paradigm that's emerging for static sites.
+
+And it's out with O'Reilly, it's coming out this fall, but you can already, if you have early access to O’Reilly’s books through their O'Reilly program, you can actually read the book right now. That's in progress. There's a lot of issues with.
+
+There's a lot of problems that I'm actually working on this weekend and will be resolved by the end of the weekend. But it's coming out in a couple of, in a, in a few months here and I'm very excited about it because it's the first ever comprehensive book on Gatsby.
+
+And it's going to have a foreword written by Jason Lengstorf. Who's one of my dear colleagues from Gatsby and it's going to be a wonderful book. I'm really excited about it.
+
+Todd Libby: [00:51:43] Yeah, yeah. So, I am too, because I had I had been doing a little bit of Gatsby and it's been a while since I've been doing some other projects but was looking forward to getting back into that and getting better having a look at that book. And you had another book as well as as other than the, the two that we've met.
+
+Preston So: [00:52:04] Yeah. So, the other book I have that is already published right now and actually I will share a little bit of you know, sort of amazing news as well. The first is that yeah, so three years ago in 2018, I wrote Decoupled Drupal in Practice, which is the first book comprehensive book as well about decoupled Drupal architectures and implementations.
+
+If you're using the Drupal content management system, and you want to know about how to deliver your content out to things like JavaScript or JAMstack or mobile apps or react native or virtual reality. Decoupled Drupal in Practices is really the book that is the end-to-end full stack overview of how to do that with a content management system.
+
+It's a little out of date, but it's still valid. and I have, I actually, a lot of copies still left of that book. So, Todd, I can send you one if you'd like.
+
+Todd Libby: [00:56:11] That’d be great.
+
+Preston So: [00:56:12] And absolutely, I'd love to, and I've also got another book coming out next year. So this is something that I haven't shared with the whole lot of people yet, but A Book Apart was a very kind to be in such a you know to, to be such fans of my book that I'll be writing a sequel to Voice Content and Usability called Immersive Content and Usability for A Book Apart, which covers everything that is part of these immersive experiences that we now have to deal with beyond the realm of voice.
+
+So, things like augmented reality, virtual reality things like digital signage, things like beacon driven content and technologies, locational content, content as navigable space.
+
+A lot of these really interesting ideas that are just beginning to surface and have really, really interesting and very significant implications, not only for user experience and usability and content strategy and content design and information architecture. But most importantly for accessibility as well.
+
+Todd Libby: [00:53:50] Oh, that's awesome. And congratulations on that and I'm already looking forward to it. So, all right. As we wind down here, here's my three questions that I usually ask all my guests. So, hope you're ready. And here we go. What about the web these days excites you and keeps you excited in what you do?
+
+Preston So: [00:54:12] I think the biggest thing that keeps me excited about the web these days is the amazing adoption of some of these new standards that are emerging. And the continued innovation that we see around some of these new standards. First and foremost, I'm really excited about container queries and CSS.
+
+I'm very excited about some of the new ways in which people are writing CSS. Of course, I just admitted just the other day to Jen Simmons that I haven't actually converted some of the layout system on my website over to even grid or Flexbox yet.
+
+So, it's still using floats and all of that. But those are things that I'm really excited about because ultimately, I think what it really creates is a web that is really fundamentally strong when it comes to adapting to a lot of the demands that we now put on the web.
+
+So yeah, I'll, I'll say CSS and CSS container queries. If you want specific answer and just the ways in which the W3C is innovating these days, is really, really awesome to see.
+
+Todd Libby: [00:55:10] Yeah. Yeah. That's one thing I'm looking forward to as well. Yeah. So, second question. If there are one thing that you could change about the web that we know today, what would that one thing be?
+
+Preston So: [00:55:23] Oh gosh, well, you know, I think that. You limit me to one thing, huh? Well, I'll say one thing that I think will, will will make everything better in a variety of different axes and dimensions that I'm thinking about. And that is the web as an industry needs to become a more inclusive and equitable place.
+
+And what I mean by that is we need to have more black and brown voices. We need to have more disabled and neurodiverse voices. We need to have more LGBTQ and, you know, folks who really are not like the norm of what we currently see in terms of the web industry today.
+
+And whether that means that somebody is neurodivergent, whether that means that somebody you know, has a cognitive disability, whether that means really focusing on those audiences that we know are underserved, but also underrepresented in the leadership structures and the upper echelons of the reigns of the web.
+
+That's something that I really think we need to resolve. And one of the things that I think would be a great way to fix a lot of the issues that we have around the adoption of accessibility guidelines around the adoption of better experiences for everyone at large of a variety of lived experiences is let's put those people in power.
+
+Let's put those people at the head of these processes and some of these practices and paradigms that we have in place right now.
+
+And I personally would love to see a way in which a lot of us can begin to see how we can really fight some of the misogyny and misogynoir, the racism and sexism and the queer phobia, transphobia, Islamophobia that we see so pervasively spreading across a lot of the elements of the web that we really need to do a lot more work on addressing. And I think that will improve accessibility outcomes that will improve so many of the things that we have to think about as web designers and developers.
+
+Todd Libby: [00:57:12] Yeah, yeah. I'm with you on that 100%. Definitely. Yeah. So, my last question is what is your favorite part of front-end development or design? And what about that do you really like the most that you to go along with the theme, the title of my podcast nerd out over?
+
+Preston So: [00:57:34] Sure. Oh my gosh. So, as you could probably tell from my mention of container queries, I've always been at heart, a person who really loves CSS and CSS has always been one of my favorite languages, my biggest passions.
+
+And I think one of the things that I've seen that is really tough to watch sometimes is some of the ways in which CSS has been undervalued as a skill in the web design and web development industry.
+
+Especially as of late and semantic HTML, as well as experiencing that as well. But I would say that my favorite thing about what development today is how easy CSS makes it to do to design in the browser, which is the only way I design nowadays. It's the only way I build my websites nowadays. And I really think that it's a revolutionary approach to design at large.
+
+Because if you think about Photoshop, right? And creating these, you know, Photoshop pixel perfect comps, a lot of these mock-ups are basically the same thing as what we used to do with InDesign or print media, where we would design basically from the very top left to the very bottom Right.
+
+As opposed to thinking about how exactly our designs should fit around the content that we're producing. It's not so much filling a layout, like a lot of these tabloids and magazines and newspapers have long had to do.
+
+It's really about how do we create a structure around this content that has a content first approach that allows for a lot of these things to really shine through and designing in the browser is I think one of those things that I don't think a lot of people recognize as being this revolutionary art form.
+
+But I think it really is. And there's a lot of folks who who to talk about this. You know, for example, Jen Simmons has talked about this with regard to intrinsic design also, you know, there'll be a piece out in A List Apart very soon as well about this topic.
+
+And I'm really excited about the ways in which people are shifting away from some of these more rigid approaches to more flexible design, more intrinsic design, more in browser design that really challenges the medium and the meaning of what it means to do design on the web and visual design in general.
+
+It's much more, I think, along the lines of things that are related to industrial design, or you know, civic design or, or, or, or, or urban design in some ways, as opposed to some of these more stayed environments.
+
+So, things like, you know print or, or magazine design or things of that nature. So, for that reason, I'm very excited about more people adopting, designing in the browser through CSS.
+
+Todd Libby: [01:00:05] Definitely. That kind of reminds me of when, you know, slicing up a Photoshop comp or, or even Macromedia Fireworks, for example. So, yeah. Yeah.
+
+Preston So: [01:00:18] Oh, Fireworks. Wow I haven't heard that name a long time. I do remember Fireworks though. What a tool.
+
+Todd Libby: [01:00:20] Yes, it was.
+
+Preston So: [01:00:21] Oh man.
+
+Todd Libby: [01:00:28] One of my favorites. Yeah, yeah.
+
+Preston So: [01:00:29] It was actually one of my favorites too.
+
+Todd Libby: [01:00:33] Yeah, yeah. And I know somebody who still uses it. And
+
+Preston So: [01:00:38] More power to them.
+
+Todd Libby: [01:00:39] Yeah, exactly. Exactly. So, I'd like to, I like to close out the podcast with my guests, letting the listeners know what they currently have going on. And we've touched on that a little bit throughout the the chat here, but you know, let them know what you have going on, where people can find you online.
+
+Preston So: [01:00:59] Absolutely. So, you can find out all about me and all of the work I do in terms of my writing at this intersection of con of content architectures, and content strategy and content design at my website, Preston.So.
+
+If you want to order the book, voice Content and Usability is out now, it's available right now on bookshelves, virtual bookshelves at abookapart.com and I'm doing a book giveaway right now, actually and there'll probably be many more to come on my Twitter, which you can follow @PrestonSo.
+
+I've also got a lot of things I post on LinkedIn at my name Preston So as well, if you want to email me, get in touch with me, you can email me at Preson.So@Oracle.com. And I also do a lot of work for A List Apart. You can find some of the articles I've written, and I also edit a lot of articles there.
+
+I've also contributed to Smashing Magazine. I'm a columnist for CMSWire. So, you can find some of my pieces about some of the more interesting technical implications of voice content over there and finally join us for Decoupled Days July 14th through 15th decoupleddays.com.
+
+45 Incredible talks by various practitioners from around the web and off the web using a headless content management systems and unprecedented content architectures. It's a free conference this year for the very first time in our history, likely the only time in our history that's decoupleddays.com.
+
+And once again, you'll see my book Gatsby the Definitive Guide coming out this fall from O'Reilly. You can go to O'Reilly.com for more details on that, abookapart.com for details about Voice Content and Usability, and also my website, Preston.so to check out more of what I've done and to get a preview of some of the books I'm working on here and also into the future.
+
+Todd Libby: [01:02:38] Excellent. And we'll, and I'll have those, I'll put those in the show notes for everybody so that they can check those all out. So, we'll have all that. Preston, thank you very much for joining me today. Thank you for your time. It was a great talk. I, I had a pleasure. It was a pleasure to talk to you and hope we can do this again.
+
+Preston So: [01:03:01] Absolutely Todd. Let me say it was a real pleasure to be here on the Front End Nerdery podcast. Wonderful pleasure to speak with you today, Todd, and I hope not only that we can do this in the future with, of course, some of my books coming out, I'll probably get in touch with you for Gatsby, but also that one day we can do this in person as well. That would be a wonderful pleasure as well. So, thanks so much for having me.
+
+Todd Libby: [01:03:24] Yeah, absolutely. So, thank you listeners for tuning into the Front End Nerdery podcast. I'll be back next month with a new guest new conversation about front end design development and other stuff as well.
+
+If you'd please rate this podcast on your podcast device choice, like subscribe and watch on the Front End Nerdery YouTube channel links to transcripts and show notes are there. I'm Todd Libby, and this has been the Front End Nerdery podcast. Thanks. And we'll see you next time.

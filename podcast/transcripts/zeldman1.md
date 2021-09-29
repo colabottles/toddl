@@ -1,6 +1,6 @@
 ---
 title: Jeffrey Zeldman Part One
-description: First part of the podcast with Jeffrey Zeldman
+description: First part of my interview with Jeffrey Zeldman
 date: 2021-09-29
 layout: layouts/post.njk
 ---
@@ -211,4 +211,4 @@ Todd Libby: [00:47:27] So what I'll do is, I'll close it right here.
 I want to thank you, Jeffrey for joining us for this first part. We'll coordinate to get to–– do a second part as well. And thank you listeners for tuning into the Front End Nerdery Podcast.
 We'll be back in, you know, as soon as schedules permit to continue this conversation and as far as the podcast goes, if you would please rate this podcast on your podcast device of choice, I'm Todd Libby, and this has been the Front End Nerdery Podcast.
 Thank you. And we'll see you next time.
-END
+ENDgit
