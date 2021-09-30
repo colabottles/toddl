@@ -7,6 +7,7 @@ layout: layouts/post.njk
 
 ## Season One Transcripts
 
+[Intro](https://toddl.dev/podcast/transcripts/intro)
 [Jeffrey Zeldman Part One](https://toddl.dev/podcast/transcripts/zeldman1)
 [Jeffrey Zeldman Part Two](https://toddl.dev/podcast/transcripts/zeldman2)
 [Homer Gaines](https://toddl.dev/podcast/transcripts/gaines)
