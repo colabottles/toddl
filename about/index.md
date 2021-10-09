@@ -1,10 +1,10 @@
 ---
 layout: layouts/about.njk
-title: About Me
+title: About Todd
 date: 2019-06-05
 tags:
   - nav
-navtitle: About
+navtitle: About Todd
 templateClass: tmpl-post
 ---
 
