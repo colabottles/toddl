@@ -22,7 +22,7 @@
         <nav>
           <ul class="navigation main-nav">
             {%- for nav in collections.nav | sort(attribute="date") -%}
-              <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"  aria-selected="true">
+              <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
                 <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
               </li>
             {%- endfor -%}
@@ -67,7 +67,7 @@
                 <svg class="icon icon-codepen" focusable="false">
                   <title>My CodePen repository</title>
                   <desc id="codepen">A white 3D cube.</desc>
-                  <use href="/img/symbol-defs.svg#icon-codepen" alt="A link to my CodePen repository"></use>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
                 </svg>
               </a>
             </li>
