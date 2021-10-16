@@ -16,7 +16,7 @@
     <a href="#main" class="visible-hidden">Jump directly to main content</a>
     <div class="wrapper">
       <header role="banner">
-        <a href="{{ '/' | url }}" class="home">Todd Libby</a>
+        <a href="{{ '/' | url }}" id="title">Todd Libby</a>
         <nav role="navigation">
           <ul class="navigation main-nav" role="listbox">
             {%- for nav in collections.nav | sort(attribute="date") -%}
