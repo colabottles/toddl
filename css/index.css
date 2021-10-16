@@ -267,7 +267,6 @@ nav {
 }
 
 nav.foot {
-  display: flex;
   place-content: center
 }
 
@@ -996,8 +995,7 @@ h2.project__header {
 
 ul.list-inline {
   margin: 0;
-  padding: 0;
-  display: flex
+  padding: 0
 }
 
 .list-inline li {
