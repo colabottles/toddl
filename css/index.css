@@ -1020,13 +1020,13 @@ ul.list-inline {
   text-decoration-color: var(--ecto)
 }
 
-.social {
+section.social {
   font-size: var(--font-size);
   grid-column: 2/10;
   margin: 4rem 0
 }
 
-.social h2 {
+section.social h2 {
   font-size: var(--font-size)
 }
 
@@ -1592,7 +1592,7 @@ video {
     margin-left: 1rem
   }
 
-  .social {
+  section.social {
     grid-column: 2/7
   }
 
