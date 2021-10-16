@@ -7,7 +7,7 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
-    <link rel="stylesheet" rel="preload" href="{{ '/css/index.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}" />
     <link rel="icon" href="{{ '/img/favicon.png' | url }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,6 +113,6 @@
     </div>
 
     <!-- Current page: {{ page.url | url }} -->
-    <link rel="prefetch" as="script" href="{{ '../svgxuse.min.js' | url }}" defer>
+    <link rel="prefetch" as="script" href="{{ '../svgxuse.min.js' | url }}">
   </body>
 </html>
