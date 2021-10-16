@@ -19,7 +19,7 @@
     <div class="wrapper">
       <header>
         <a href="{{ '/' | url }}" id="title">Todd Libby</a>
-        <nav>
+        <nav aria-labelledby="primary-navigation">
           <ul class="navigation main-nav">
             {%- for nav in collections.nav | sort(attribute="date") -%}
               <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
@@ -34,6 +34,7 @@
         {{ content | safe }}
       </main>
 
+      <footer class="meta">
       <div class="social">
         <h2>&copy;1999 &mdash; 2021, Todd Libby.</h2>
           <ul class="nav list-inline">
@@ -50,8 +51,7 @@
         <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; <a href="{{ '/a11y' | url }}">A11y Statement</a></h2>
       </div>
 
-      <footer class="meta">
-        <nav class="foot">
+        <nav class="foot" aria-labelledby="footer-navigation">
           <ul class="list-inline">
             <li>
               <a href="https://twitter.com/toddlibby" class="twitter">
