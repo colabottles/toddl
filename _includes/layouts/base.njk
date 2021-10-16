@@ -20,7 +20,7 @@
       <header role="banner">
         <a href="{{ '/' | url }}" id="title">Todd Libby</a>
         <nav>
-          <ul class="navigation main-nav" role="listbox">
+          <ul class="navigation main-nav">
             {%- for nav in collections.nav | sort(attribute="date") -%}
               <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" role="option" aria-selected="true">
                 <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
