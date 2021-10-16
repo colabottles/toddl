@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-    <link rel="stylesheet" as="style" rel="preload" href="{{ '/css/index.css' | url }}" />
+    <link rel="stylesheet" rel="preload" href="{{ '/css/index.css' | url }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
         <nav role="navigation">
           <ul class="navigation main-nav">
             {%- for nav in collections.nav | sort(attribute="date") -%}
-              <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" role="option" aria-selected="true">
+              <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" aria-selected="true">
                 <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
               </li>
             {%- endfor -%}
