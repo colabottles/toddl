@@ -20,7 +20,7 @@
       <header>
         <a href="{{ '/' | url }}" id="title">Todd Libby</a>
         <nav aria-labelledby="primary-navigation">
-          <ul class="navigation main-nav">
+          <ul class="navigation main-nav" id="primary-navigation">
             {%- for nav in collections.nav | sort(attribute="date") -%}
               <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
                 <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
@@ -30,7 +30,7 @@
         </nav>
       </header>
 
-      <main class="home" id="main" tabindex="-1">
+      <main id="main" class="home" tabindex="-1">
         {{ content | safe }}
       </main>
 
@@ -52,7 +52,7 @@
 
       <footer class="meta">
         <nav class="foot" aria-labelledby="footer-navigation">
-          <ul class="list-inline">
+          <ul class="list-inline" id="footer-navigation">
             <li>
               <a href="https://twitter.com/toddlibby" class="twitter">
                 <svg class="icon icon-twitter" focusable="false">
