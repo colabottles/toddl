@@ -1034,7 +1034,7 @@ section.social h2 {
 .meta {
   font-family: var(--font-family-sans);
   font-size: calc(12px + .3vw);
-  grid-column: 1/12;
+  grid-column: 5/10;
   margin: 5px 0 1.5em;
   color: var(--white)
 }
