@@ -1,0 +1,421 @@
+---
+title: Chris DeMars
+description: My Interview with Chris DeMars
+date: 2021-10-16
+layout: layouts/post.njk
+---
+
+## S1:E12
+
+[00:00:00] Todd Libby: Welcome to the Front End Nerdery podcast. A podcast about front end development and design. I'm your host Todd Libby. My guest today is developer advocate, accessibility advocate, speaker, fashion icon and clothing mogul, Chris DeMars. Chris, how are you today?
+[00:00:18] Chris: *Chris makes DJ horn noise* I'm doing all right, brother. How are you?
+[00:00:24] Todd: I am doing well. Or as much as well as I can be. I guess
+[00:00:28] Chris: I hear that. I hear that.
+[00:00:29] Todd: During all this, during all this stuff. So, why don't you introduce yourself? Tell listeners a little about a little bit about yourself.
+[00:00:37] Chris: Yep. So, the name's Chris DeMars. A lot of people just call me to DeMars. If you call me Chris, I might look around as if you're talking to somebody behind me.
+I am a developer advocate at Rocket Mortgage. I focus a lot on front end. A lot of accessibility stuff, designing systems UX. So that's kind of the work in a nutshell. Outside of work, let's see, I am heavily tattooed, so I love getting tattooed. I am a pizza connoisseur. Favorite style being in Detroit style.
+And if you don't agree with that, you can't be my friend. I love cryptozoology, a Ufology, paranormal, supernatural, all that fun stuff. I like riding dirt bikes, paint ball, fishing, being in the woods, all that cool stuff. So, yeah, that's kind of me. And my life revolves around horror. I love horror, everything horror, horror movies, horror memorabilia, all of it. I even have horror tattoos. So.
+[00:01:38] Todd: You even got the horror, horror themed podcast too, right?
+[00:01:45] Chris: Yes. I do Tales From the Script. Tales From the Script. Front end podcast, mixed with a little bit of horror. I just haven't, I haven't recorded in a long time. Since I moved, since when, right at the end of living in Denver, I think the last episode I recorded was either with Diana Rodriguez or it was with Jesse Weigel. Or it could have been Gant Laborde. I don't know. I forgot but all my podcasting shit is in storage. So, it'll come once I get this office finished. It'll, it'll come back.
+[00:02:16] Todd: Yeah, yeah. Can't wait for that. I've been jonesing about that too.
+[00:02:20] Chris: Gotta get you on that too by the way. It'll happen.
+[00:02:22] Todd: Yeah
+[00:02:22] Chris: I promise
+[00:02:25] Todd: Definitely, definitely. So, let's get started. I have some questions for you, and we'll jump right in. So, my, my first question is it's a standard question really, to everybody that I have on. How did you get started in your web development or design journey?
+[00:02:43] Chris: I got started as a young, young child. I first got started in QBasic when I was probably 10 or 11. Just little things here and there writing like little, little programs. A friend of mine in school told me about QBasic. And then we also had HTML like a web class in grade school, which is really cool.
+So that's where I learned like HTML 4.0. Right? And then I kind of just stuck with it, the whole entire time. I think there was like a, a, a break somewhere in there, but it wasn't too long. And then let's see if so, I started in 90, like 96 I started in web development when webmasters were a thing. I would consider myself a webmaster and, I did it on and off.
+I did it as a hobby, a freelance independent contractor. And then, later down the line, I decided to go back into school, I didn't need a degree just to prove people wrong because people didn't think I would do anything with my life. So, it was kind of a big F U and got a job with legit benefits and a real paycheck.
+And it's just been uphill ever since.
+[00:03:59] Todd: So, yeah, the QBasic I had to dabbled in a little bit. Kinda skipped that. And, cause I was a little bit before that, you know, the time when there wasn't CSS. Being long in the tooth.
+[00:04:23] Chris: Oh, yeah.
+[00:04:27] Todd: I wanted to touch upon the developer advocate role that you have, and you've had a few, right?
+[00:04:35] Chris: What do you, what do you mean?
+[00:04:38] Todd: Like you you've had a couple of developer, developer, yeah if I can say it right. Developer advocate roles.
+[00:04:45] Chris: Actually, this is the first one.
+[00:04:47] Todd: That's the first one. Oh okay.
+[00:04:48] Chris: It would seem like I was a developer advocate.
+Yeah. I guess you could say I was like an unofficial dev advocate from all the community work I did. Right? But my title at previous companies has always been front end developer.
+[00:04:58] Todd: Oh gotcha, gotcha.
+[00:04:59] Chris: but the community stuff was, you know, I hold community near dear to my heart.
+[00:05:03] Todd: Right
+[00:04:59] Chris: So, I always considered myself an unofficial developer, advocate. So.
+[00:05:08] Todd: OK, so anyways, let's get into the question. Now that I know, now that I know the full background. What is a developer advocate for our people that are listening that don't know.
+[00:05:22] Chris: Such a loaded question. There's so many different answers that you can get depending on who you talk.
+[00:05:27] Todd: Right.
+[00:05:28] Chris: What I always tell people in the community and even like internal or external is I am the, the voice for the internal and internal, external developer communities.
+I am here to teach, learn, mentor and provide knowledge on web technology for everybody. Like that's what I, to me, that's what developer advocacy is. I mean that can take many different forms. Right? I have three technical community, community managers on my team who I think they are the backbone of my team hands down.
+They are the backbone of my team. And they are amazing, amazing, amazing people. They're not so like quote unquote technical, but they're DevRel. They are the voice for the community both internally and externally, depending on what piece that they're doing.
+So, to name drop a little bit, Cassandra Faris, she is the very first ever technical community manager at Rocket Mortgage, for sure, but maybe all across the FOC. So, she does a lot of the conferences, handles a lot of that work, external stuff. Alyssa, she is also a technical community manager. She handles a lot of the internal stuff that we do, as far as different events that our team puts on. Stuff that we do, where we bring external people into the company to do events.
+And then Rachel, Rachel does a lot of the university outreach in the developer, in the, in the community or people that are going into the developer space and the software space. She does a lot of that. And she also has a recruiting background and she's, she's awesome. She's a bundle of joy. If you ever get a chance to meet her. Always has a smile on her face.
+She handles a lot of the, the university stuff, so, and she's also getting into speaking as well. So, she just gave a talk a couple of days ago at, I believe it was MSU. I think it was virtual, but I know she nailed it out of the park. So those three women definitely are the backbone of, of our team.
+But you know, you don't have to be a technologist to be DevRel. If you’re, if you’re in DevRel, you’re in DevRel. So.
+[00:07:47] Todd: So, on that note how does one get into developer advocacy?
+[00:07:52] Chris: You just got to find some place that's hiring. Like if you're already doing the work, you know, the, the main thing is getting involved in the community.
+There is an article out there about black matter developers. It's called black matter developers. And it's about like the, the 1%, either the 99% or the 1% of people who don't do anything at all. Which is completely cool. Whatever's clever, whatever suits you, your mileage may vary your lifestyle, whatever, whatever the case may be.
+But those are the people. Who, if they did actively contribute, they could make their foot into the DevRel world? Speaking at meetups, podcasts like this, streaming, community work, just attending events, writing blog posts, doing those things are going to put the, put the stones in place to lay the path to developer advocacy.
+Right? And I mean, there are companies that hire, you know, associate developer advocacy advocates to like, get your foot in the door. Like, yeah, you might do a little bit of writing here and content creation and you might, you know, stream, which you never really thought of doing developer advocacy, but you love giving back to the community.
+You're already in that right direction to, to be in a role like that. So, but they're out there. There's a lot of places hiring for developer advocacy roles right now, and you don't have to speak always like you don't have to do that. You can be a content creator, a technical blog editor. Like all of these things are DevRel.
+Like it's not just developer focus. There are a lot of facets within this genre, I guess you could say of the community in development.
+[00:09:28] Todd: Yeah. I see a lot of on Twitter, especially a lot of, you know, we're hiring a DevRel lately, so, yeah. On that, what is the, what is, what is the best thing or the one thing about, being a DevRel that you enjoy?
+[00:09:50] Chris: Being in the community.
+Like, you know, you know, as well as I do, I love the community. And when we were locked down with COVID, everything got stopped, events got stopped. That sucked. That was a shitty, shitty experience because I had conferences planned. I was supposed to go to Lithuania to do an event. And then everything came to a halt. And it's like, great now what do I do?
+Like, how am I going to connect? So, we, we had to find more outlets and at that time, and I know you noticed this as well, Twitch streaming took off for the community. Because that was a way to interact in real time. With people all around the world, like it like the, I, I, I don't know the numbers, but I am sure pre COVID to during COVID the number of Twitch streamers sky, had to have skyrocketed, had to of.
+Everybody, I started my own Twitch stream because I needed a way to talk to my people and communicate in real time with people all over the place, you know, chatting in slack is cool and Twitter is cool and whatever you're out, discord, whatever your outlet is, but being able for somebody to see you on camera. And yet you can't see them but being able to see you and interact and vibe, and you know, if you're playing music during your stream, you know, that gives them something to listen to.
+That was the way to, to connect. And I think we all lost a lot of disconnection. During the pandemic. And then we were still fighting the pandemic, of course.
+[00:11:15] Todd: Right.
+[00:11:16] Chris: But now that in-person events are coming back because I just came back from Kansas City Developer Conference, KCDC last week, it was an in-person event.
+It was, you know, there was definitely policies and stuff like that to make sure everybody was safe. If you didn't have a mask on, you'd get booted from the event, the mask always had to be on at the event unless you were speaking. And as long as there were six feet between you and your audience, you could take the mask off and you didn't, you know, encroach on that, which was great.
+We needed that. We needed that in-person event. We needed that energy. We needed that vibe. It was cathartic. I needed that because the only in-person that I've been to since COVID was that conference, was at Wisconsin Dells, Kalahari. That was cool. But there was a bunch of people from the Midwest at KCDC cause that's one of the best, in my opinion, one of the best Midwest events to ever go to.
+And it was needed. Big time. And you will, you'll get that feedback from anybody that you talked to, you know, that you know, is friends with you is friends with me or just anybody in the community that was at KCDC.
+It's something that we needed and it's good to see that in-person events are coming back. As long as there's COVID policies in place.
+[00:12:30] Todd: Right. Yeah. That's, that's one thing that, I'm looking at, you know, with. But I have one conference Connect.Tech that I have tickets for.
+[00:12:44] Chris: I'll be there. I’ll be there. I'll see you there.
+[00:12:47] Todd: Yeah. That would be the first time we've seen each other since Burlington in 2019.
+[00:12:44] Chris: Yeah. Two years
+[00:12:53] Todd: It's, it’s been a while.
+[00:12:53] Chris: Dude that's what I'm saying. I, the people I saw, KCDC and good, good friends, I haven't seen them in two years
+[00:13:01] Todd: Yeah
+[00:13:02] Chris: and we'd be at events together all over the place around the country. And I mean, you know, cause Cass, Cassandra who's on my team, her and I are really good friends. And when we flew out there was, I think there was at least 10 of us that flew out from Detroit that work at Rocket Mortgage or other companies around, you know, the state, but we're all good friends.
+And the moment she saw me in the airport, she ran up to me and we just held each other. Like that was an amazing fucking feeling. And it was something that was needed, but yeah dude we haven't seen each other in two years. That was the year, that month was May, May of 2019 is the month I quit smoking and I haven't smoked a cigarette since.
+[00:13:44] Todd: Nice
+[00:13:44] Chris: So that's, you know, that stands out to me. Cause UX Burlington was the last time I smoked a cigarette, but yeah, dude, it's been two years since
+[00:13:51] Todd: Yeah
+[00:13:51] Chris: we've seen each other in person. So, I mean
+[00:13:54] Todd: And
+[00:13:54] Chris: that's a long time.
+[00:13:55] Todd: Yeah, it is. And, and I've told you this in, you know, you've heard me say it as well that Burlington event that you're talk, was you lit a fire, fire under my ass, again, as far as accessibility goes. I had been kind of, you know, getting sloppy and getting lazy about it.
+[00:14:15] Chris: Yeah
+[00:13:55] Todd: But, your talk, Henri Helvetica’s talk and Fred Harper’s talk, you guys knocked it out of the park. I'm glad I did that track instead of the other track. Cause you guys were great.
+And, yeah, it has been a long time. I was, I was thinking about that the other day too. Cause right after that talk, right after that conference, I went right down to Boston for An Event Apart, I was at, I was at that one. And then the last conference of 2019 that I had gone to was in Denver at An Event Apart and that’s, that’s it. And I'm itching to get back out there and I'm even itching to start talking at these conferences.
+[00:14:58] Chris: Yeah, speaking of Denver, was that An Event Apart or was that Smashing?
+[00:15:06] Todd: That was An Event Apart and we got together for lunch.
+[00:15:07] Chris: Because I forgot we saw each other. Yeah, we got there too. So that hasn't been two years,
+[00:15:11] Todd: Right
+[00:15:11] Chris: but it's been, it's been over a year because I, I moved back to Michigan and end of May, beginning of June. So, it's
+[00:15:19] Todd: Yeah
+[00:15:19] Chris: been well over a year since we've seen each other. So yeah, maybe a year and a half.
+[00:15:22] Todd: Yeah, that was October 2019 was
+[00:15:26] Chris: Yup
+[00:15:22] Todd: Denver. So yeah,
+[00:15:27] Chris: So, it's almost been two. It will be two years.
+[00:15:31] Todd: Yeah.
+[00:15:31] Chris: So Yeah
+[00:15:32] Todd: Yeah. So, we're still right.
+[00:15:32] Chris: That Mexican, that Mexican place we went to was bomb.
+[00:15:35] Todd: Oh yeah it was.
+[00:15:36] Chris: That food was bomb.
+[00:15:39] Todd: Yeah, it was, I'm glad we, we picked that.
+[00:15:41] Chris: Yeah, that was a good spot.
+[00:15:44] Todd: Yeah, it was. So yeah, yeah, I've got, you know, Connect.Tech, you know, I'm doing two, two talks myself coming up in October, virtual. But I'm, you know, like you, I want to be, you know, with people to actually see people and talk to people face to face. So
+[00:16:11] Chris: Yup
+[00:16:14] Todd: Yeah, you know, the, the, the community thing you spoke of, you know, that resonates with me because, you know, when I, when I'm not having to recharge after, you know, a full day of conference
+[00:16:26] Chris: Yeah
+[00:16:27] Todd: talks and information, you know, I, I want to be mingling with everybody, meeting everybody, so.
+[00:16:33] Chris: For sure.
+[00:16:34] Todd: So, with that, let's swing over to, the front end side of things for a second. What is one of your, and I think I have a good idea what one of your
+[00:16:52] Chris: I have a feeling I know what you’re going to ask me too
+[00:16:52] Todd: what is one of your, I won't, I guess that's the way to put it. What, what's, what's something about front end that you really don't like that's a pet peeve or, and I don't like using pet peeve really, but you know, something that really
+[00:17:10] Chris: There’s so many things.
+[00:17:11] Todd: Why don't, why don’t I just say it. What's, you know what’s, what’s the thing about front end development that frosts your ass, really?
+[00:17:16] Chris: JavaScript
+[00:17:18] Todd: Yeah, yeah
+[00:17:19] Chris: JavaScript, let's see people that don't care about accessibility, what else? Responsive CSS frameworks and or utility libraries, I don't like those for personal reasons. Let's see, what else perform people that just don't think about performance or don't just care about performance and how their stuff loads that that gets on my nerves.
+There's a, there's a, there's a whole slew of things that, and I think that just comes with experience and being in the industry for so long. Like, let's say you're six months in and you might just, you don't know what you don't know. You know what I mean? And that's not your fault. That's nobody's fault. But you can fix that situation.
+You know what I mean? But when you're behind, you know, when you're behind the line and you're seeing all these things happening, and especially if you work at a company and you start talking about these things now, and this has happened prior years, way back in the day, you know, you talk about accessibility and why it's important, performance why it’s important, all these things you can do, then you get pushback.
+Then six months later, shit hits the fan. And then they come calling crawling back to you asking, can you fix it? Can you fix it? And it's like, why don't you just listen to me from the beginning? You know what I mean?
+[00:18:33] Todd: Right
+[00:18:34] Chris: Those are my things that I don't like.
+[00:18:39] Todd: Yeah, yeah. And, and you know, I, I’m on you know the same page as you, but I, I, I, even lately will go as far as saying, you know, if somebody's got a use case for it, fine knock yourself out and do it.
+I prefer not to use, you know, libraries or frameworks. There are some
+[00:19:01] Chris: yeah
+[00:18:39] Todd: frameworks that I will use that I, you know, check out, tinker around with toy around with Next.JS, Gatsby, blah, blah, blah,
+[00:19:11] Chris: yeah
+[00:19:11] Todd: you know, all that stuff that we've experimented with. But it all boils down to, for me, anyways, is how accessible is it? You know, and what, you know, if, if not in most, you know, 9.5 times out of 10, they're not,
+[00:19:28] Chris: nope
+[00:19:28] Todd: and you, you know, what, how can they, how can it be fixed?
+[00:19:33] Chris: Yeah.
+[00:19:34] Todd: Because it's just seemed like, you know, they're shoved in our faces.
+[00:19:38] Chris: Oh yeah.
+[00:19:39] Todd: Every, every so often you know.
+[00:19:40] Chris: Always, always. And I think that's a big problem with JavaScript too, is like, no, I'm not harping on JavaScript.
+Okay. It's it does what it does. And I write a little bit of stuff in react. I know how to do just a tad bit in Angular, a small bit in View, you know, but I, I know how to mess around with Gatsby a little bit, and I can do a little bit of vanilla JS, whatever the case may be. But it's just, the more we progress in this industry, the more JavaScript is making things harder.
+[00:20:05] Todd: Yeah
+[00:20:06] Chris: In my opinion, you know, you, you take the JS to do something that can natively be done in HTML. You take the JS that can natively be done with CSS, but you want to just make it, do CSS and make it do HTML. It's like, why, what are we doing here?
+[00:20:24] Todd: Yeah
+[00:20:24] Chris: You know, JavaScript isn't accessible for one. And two, all these, you know, SPA frameworks, whether it's view Angular or React, they're not accessible by default out of the box.
+I, you know, I did, the a11y rules podcast with Nic Steenhout, and we talked about that.
+[00:20:43] Todd: Yup
+[00:20:43] Chris: The one major issue with those types of frameworks and libraries is they're JavaScript. There is no markup. You, the developer are creating the markup. Right? It's not accessible out of the box. I think what, Reach is it was, it Reach one, that one that Ryan, Ryan Florence did.
+It was like an ex, like a react counterpart, but it is accessible. I think it was called Reach. I don't know, check that out. I know it wasn't accessible, like React Clone, but I could be totally wrong. And if I am, let me know, because I talk about it at conferences. I should probably stop.
+But I mean, that's the problem, like your, your React app, your, if you're using Create React app, whatever the case may be, it's not going to be accessible out of the box.
+It's just not because you're the one that's creating the components and the other components that you're creating the base of those components with JavaScript, but everything that goes between that return statement, that's markup or JSX, and that's not, you know, if you don't create that with accessibility in mind, your app's going to be jank and it's going to be inaccessible to your users straight up, flat out.
+[00:21:52] Todd: I think you're yeah, it's Reach, yup, yeah. And I’ll throw those links in the show notes too.
+Yeah. Yeah. I just found a site the other day that isn't SPA. And so, I w of course checking it out and it had over 200 span, empty span elements in it. And an absolute nightmare with a screen reader, an absolute nightmare, you know, keyboard, accessibility wise, and a, a, a complete cluster accessibility wise period.
+And, you know, I give the benefit of the doubt. Maybe they don't know. More times than often, I don't know about you, but I come across people that they just don't know.
+[00:22:51] Chris: Right
+[00:21:52] Todd: And that's why going back to what, you know why we advocate, you know, cause we have people in our lives, you and I and pr and you know, a lot of other people in, in accessibility that have disabled, you know, people in their lives.
+[00:23:08] Chris: Yeah
+[00:23:11] Todd: So why do people need to address accessibility in their projects is my next question.
+[00:23:21] Chris: Because the answer is simple. We, we are not the users.
+[00:23:27] Todd: Right
+[00:23:28] Chris: Like we are, we are the user. I mean to, to, to put a fine point on it, we are the users. But what we are designing and developing and what we think look cool does not matter. Let's be real here.
+It doesn't matter what we think looks cool. My favorite color combination is lime green and black. Yeah, does that pass contrast, color contrast? Sure, it does. Is that a great experience? Probably not. You know what I mean? Or like, like a dark purple and black, like, I think that's a dope color combination. That's how I used to do stuff back in the day.
+It'd either be lime green and black or purple and black. You know, black background and then the text. That was cool in 96, 97. Is that cool in 2021? Probably not. Was it cool in 2020, 2019? Probably not. We ultimately times we think, we don't think, I should say we don't think about the bigger picture and the user base, you know, the, the user base is everybody, anybody that can access the web is a you is a user, you don't know if they have a disability, they're not going to outright come out and be like, “Yo, hey. How you doing? I'm so-and-so with A, B and C disability or impairment.”
+You know what I mean? And I say this a lot too. And I brought this up in my last, in my talk at KCDC than I did. I did two talks. I did one with me and Cass. Her and I did a talk on mental health, neuro diversity and web accessibility. Amazing talk.
+First time we ever did a co-presenting talk together. We had about 70 people. Great, great feedback from that. The next day I did a solo session on common access. it's called common accessibility pitfalls climbing out when you fall. And it's all about low-hanging fruit. And, you know, that's, we're not making separate experiences for separate disabilities or impairments.
+We're making one experience that works for everybody. And then I brought up the, you know, the whole, the whole accessibility overlay tool, not mentioning any names. I brought that up because I used to think accessibility simulators were cool. I thought they were cool back in the day. And by back in the day, maybe like a couple of years ago, when they first hit the scene, I thought that was sweet.
+Like, oh, this is awesome. You're doing your pride in this user. But come to find out, not all of them are that accessible when it's just throwing a skin over the actual, you know, the actual experience. And I was, you know, I was telling the, the audience like, don't do that. Don't you, you shouldn't need an accessibility simulator or a skin, to put over your experience. Because if you do something's wrong, right?
+One experience for everybody, that's the way it should be in my opinion.
+[00:26:19] Todd: Yeah, those overlays don't work. I've had, I've had a, back and forth with a couple of people from a certain company that will re name remain unnamed, about their product. And I, I, I, I put it like this, adding a line of JavaScript to somebody's website code makes it about as accessible as me putting on a pair of Nike's in me becoming Usain Bolt.
+[00:26:52] Chris: Right
+[00:26:53] Todd: It’s never going to happen.
+[00:26:55] Chris: No
+[00:26:56] Todd: Never
+[00:26:55] Chris: No, there's no way. There's no way.
+[00:27:00] Todd: And, if those talks are online, I'd really like to watch them. I don’t know if they were recorded, but.
+[00:27:07] Chris: No KCDC wasn't recorded. I am doing this talk. I got 1, 2, I think I got 3 or 4 more events, till the end of the year. But I don't know if any of them are going to be recorded, but I have slides if anybody wants to, you know I don't even want to give out the slides because the slide deck is such a surprise for people that have
+[00:27:29] Todd: Yeah
+[00:27:30] Chris: never seen the talk before.
+Like, I don't want to, I don't want somebody going to Connect.Tech to see the slides because then it'll just ruin the experience
+[00:27:36] Todd: Right, right.
+[00:27:37] Chris: But more or less it’s about the why behind the accessibility of my why, which I always start off with. People around the world, what, you know, how many people have a disability, what kind of disabilities are out there?
+I talk a little bit about POUR. I had these conversations with you the other day when I was writing my talk up until the time I gave my talk, you know, about POUR and levels of conformance and what that's going to look like in the future.
+[00:28:00] Todd: Right.
+[00:28:01] Chris: I talk about, you know, Colors. I talk about, you know, semantic markup and ARIA, and when to use ARIA and when not to use ARIA and roles and all of these things that I consider low-hanging fruit.
+That's what that talk is about. Common accessibility pitfalls climbing out when you fall in. It's a really, really rad talk. It's not horror themed like a couple, couple of my talks, but it's got a different theme to it. But if you can, it's a clever title, common accessibility pitfalls climbing out when you fall in.
+If you kind of just go down that rabbit hole, you might understand the theme of the talk. Just sayin’.
+[00:28:41] Todd: Well, I'll look forward to it. Cause Connect.Tech is in November. So,
+[00:28:45] Chris: Yeah, I think I'm doing, I know for, for a fact I'm doing a CSS talk at Connect.Tech that one the common accessibility pitfalls might be a backup talk.
+But I think I'm doing that at Momentum Devcon in Cincinnati. Next month, October 15th. I think I'm doing that one.
+Momentum's a cool event. Yeah, Momentum Devcon. It's going to be at the Hyatt. I think it's the Hyatt Regency downtown Cincinnati. I know it's at the Hyatt October 15th in Cincy. I'll be there 14th, 15th heading back to Detroit, the 16th. Next week, me and Cass are going to be in Columbus. Cass's from that area, I'm driving down in a, we're doing our co-talk, our mental health and accessibility talk at the Women in Tech Con Columbus, which is going to be really, really cool.
+So that was picked up. And I just found out recently that, hey, this is what we're working. We're doing this, you know, on the 29th of September, you know, I’m sorry 28th. So,
+[00:29:51] Todd: Cool. And definitely looking forward to Connect.Tech. Cause I gotta, you know, meet our mutual, mutual friend, Homer. He’ll be there too. So,
+[00:30:02] Chris: Oh yeah, Homer's great dude. You've never met, you haven't met Homer yet in real life, have you?
+[00:30:07] Todd: Haven't, haven’t, well, not in real life. We've talked over and he was a guest on my podcast.
+[00:30:13] Chris: Yeah, Homer’s great, man.
+[00:30:15] Todd: Yeah, yeah, so looking forward to that, looking forward to the whole thing and meeting a bunch of new people
+[00:30:19] Chris: Yeah.
+[00:30:20] Todd: But anyways, get back to the, to the questions here.
+[00:30:27] Chris: Yeah, we want off tangent a little bit.
+[00:30:28] Todd: What are, yeah, well, that's all right.
+[00:30:30] Chris: Hey, it’s we're free flowing dude. We're vibing it’s organic. Who cares?
+[00:30:34] Todd: It happens, and I, to be honest with you, I was going off the script a little bit. So,
+[00:30:39] Chris: Yeah
+[00:30:40] Todd: You know, I'm still, you know, it's a low budget production on this end.
+[00:30:43] Chris: Hey man. We're here for the ride brother.
+[00:30:47] Todd: Absolutely. So, here
+[00:30:48] Chris: YOLO
+[00:30:49] Todd: give me, yeah YOLO indeed. What is, what is a barrier that dis, disabled people face on the web that most people, most, I, I, I want to say devs or designers, what is a barrier that disabled people face on the web that they would not think about?
+[00:31:18] Chris: What is a barrier that disabled people on the web encounter that design teams don't think, devs and design teams don't think about?
+[00:31:27] Todd: Devs, design teams, you name it, organizations.
+[00:31:32] Chris: Oh, there’s dude, there are so many answers to this and it kind of all goes back to that. Low-hanging fruit.
+[00:31:37] Todd: Yeah, you can give me one or, you can give me one or two.
+[00:31:38] Chris: Color contrast.
+[00:31:39] Todd: Yep.
+[00:31:40] Chris: Is a big one. One of the biggest ones.
+[00:31:43] Todd: Yep.
+[00:31:44] Chris:  Color contrast, and I think, keyboard, you know, usage screen reader, screen reader uses with the keyboard. Those things are not thought of at all in my opinion. Design team, yeah, they might know a little bit about color, but like I always say accessibility starts with your design team. You know what I mean? Your, your devs, aren't building the designs. I mean, unless they have a little bit of, you know, that kind of experience. But nine times out of 10, they're not designing the experience.
+It's the designer, or the marketing team or the branding team that's doing that. Design teams have to understand a little bit about the web content accessibility guidelines. In order to create components, design components, UI components that are accessible. They have to understand Nielsen's design principles in my opinion, so they can understand how to build out the UX and what a good UX looks like.
+They should know color contrast, and the, they like the ratios behind them. You know, like 7 to 1 for AAA and the other, you know, for AA. You don't have to memorize it. You don't have to know the algorithm behind that
+[00:32:52] Todd: Right
+[00:32:53] Chris:  but knowing what works and what doesn't work. And that's as simple as not as simple, but as painless as using just a contrast checker, taking color A and taking color B, seeing if it works. Flip those colors, see if it works.
+If it works, you’re gravy, you're golden. Okay. Now what? Well, run it through a color vision simulator. But, you know, change it to deuteranopia. protanopia, tritanopia, monochromatic. See what that looks like. If you know somebody that has a color, vision deficiency on your team, have them come over and look at it.
+You know? Cause I, I didn't know there were people that I worked with at a company once who were color blind and I knew one person, she was deaf, she was a developer. When people like QAs and stuff like that on the teams that were colorblind. And they came up to me like, Hey Chris, you know, I can't really make this out.
+You know, I have deuteranopia. And I'm like, oh, damn, I didn't know that. Like, thanks for telling me because we're building these experiences and we were designing them to cause we kind of did both sides, but we were using, you know, branded colors from a color scheme and all this other stuff. And I'm like, all right, well, we need to change these things around because clearly if this person can't see it and this person can't see it, then chances are the hundreds and or thousands and millions of other people around the country are not going to be able to see it either.
+So, I think that's a huge, huge one. Color contrast, keyboard accessibility, and screen readers, because nobody's closing their monitor to test with a screen reader.
+Nobody. Some. I don't want to make that statement, but most people they're listening to the screen reader while they're looking at the screen and using a mouse, but, or using the keyboard, but tabbing through the experience, but also with their hand hovering over the mouse, just in case, you know what I mean?
+You can't do that. You can't do that. Take the mouse away, close your monitor a little bit. Or like if you're on a, like a big monitor or something like dim the screen, there's plugins that, that do that. Or like put something dark or something that translucent that blurs the screen over the monitor. So, you can just listen to what's going on.
+Use the keyboard. Control, option, shift tab, et cetera, to get through that experience. See what happens. You you'd be surprised.
+[00:35:03] Todd: Yeah, I used the squint test.
+[00:35:05] Chris: Yeah
+[00:35:06] Todd: A lot.
+[00:35:07] Chris: Yup
+[00:35:08] Todd: I also use the, cause I'm primarily a Firefox user.
+[00:35:14] Chris: Same, same
+[00:35:15] Todd: So, I use the, the vision simulator on, on the, on the dev tools.
+[00:35:18] Chris: There's a vision simulator or the dev tools and Firefox?
+[00:35:21] Todd: Oh yeah.
+[00:35:22] Chris: How come I never knew about this? I literally had no idea.
+[00:35:26] Todd: I'll have to show you after we stop recording.
+[00:35:28] Chris: Yeah. Yeah. Definitely. Show me, share, share your screen and show me, cause I'm like, what the hell, or maybe I did, and I just forgot. Cause I still have COVID brain and COVID brain is a thing.
+[00:35:38] Todd: It is a thing yes.
+[00:35:39] Chris: Yeah, it sucks.
+[00:35:40] Todd: Yup. So, you know, I, I know from the time we've known each other, how you do this, but for the, for the listeners out there, how do you advocate or, I don't want to say persuade. I have it down, I have it written down here as persuade, but I don't like you can use persuade. So, how do you advocate to clients or people or, or organizations to start practicing accessibility?
+[00:36:05] Chris: I don't beat around the bush. And I say there are plenty of companies that got sued. Do you want to join the list?
+[00:36:12] Todd: Yeah
+[00:36:13] Chris: That's all I say. And if they're like, oh, you're full of shit, Chris. Then that's what I break out the numbers and the statistics and the graphs and the, the case statements and the articles of all of these other places.
+That have been sued and all these other places that are just like your company that have been sued. You know, I, I like to bring up bank of America. It's one of the biggest banks in the country, right? You think, oh, they're, they're high and mighty on a, on a, you know, a pedestal, nothing bad can happen to them.
+No, that's not right because they're the same, you know, electronic entity, web entity that everybody else is. You don't get, you don't get special rights for having a website. You know what I'm saying? Everybody is the same. It's that it's a level playing field. I don't give a shit who you are, you know, but I mean, depending on the organization, you know, you have stricter conformance levels to follow.
+But still, if everybody's trying to hit AA and people aren't hitting AA, you know, you, you have a chance to get sued and there are plenty of people out there that will sue you for everything that you have. So that's, that's kind of the road I go.
+[00:37:23] Todd: Yeah, I do, I do a little bit of a different approach. I do a little diff diplomacy, but when that reaches its end then I use what I call a Domino's pizza card.
+[00:37:35] Chris: And I don't even eat Dominos anymore because of all that shit that went down with Dominos.
+[00:37:41] Todd: Same here. Yeah, and, and, you know, they could have spent what, 32 grand to fix it?
+[00:37:46] Chris: It was like 32 or 35 to fix it.
+[00:37:50] Todd: Yeah
+[00:37:51] Chris: How many, I mean, that's, that's chump change.
+[00:37:53] Todd: Exactly
+[00:37:54] Chris: That's chump change in this industry. Like, just you don’t even have to pay me to fix it. I'll just do it. You know what I mean? But yeah, they wouldn't, they wouldn't do that. And they'd lost big time on that.
+And when I find out what I find is so funny is that I did, I went to Dominos.com one day and I ran an ally audit and that was using Action Lighthouse, whatever the case may be. And the homepage scored really well. It scored really well, but the problem wasn't the homepage. It was the mobile app because the mobile app wasn't accessible to the user who needed it because they were parked, they had low vision, or they were blind.
+That's what the problem was. It wasn't dominos.com the actual website. It was the mobile app where they could not order a pizza because they couldn't, couldn’t use it.
+[00:38:35] Todd: And I remember reading, cause I read it a little bit more into it that when they were in court and I think it was, it may have been like the federal, the federal court that they said, well, he could have used the phone, but he had been
+[00:38:56] Chris: Yeah, yup
+[00:38:57] Todd: he'd been on the phone twice for 45 minutes.
+[00:39:01] Chris: Yup, yeah.
+[00:39:02] Todd: That's not accessible either.
+[00:39:03] Chris: Yeah. Well, he could have just drove to the store.
+[00:39:06] Todd: Yeah, yeah. Blind guy.
+[00:39:07] Chris: But you know, that's not, speaking of driving that, that bothers me too, is like, you know, people make the assumption like, well, blind people don't drive. What, why do blind people need cars? Are you, are you serious right now?
+Oh, what does it kind of statement does that mean? Just because they're blind. They shouldn't have a car?
+[00:39:26] Todd: Right.
+[00:39:27] Chris: Get out of here with that shit.
+[00:39:28] Todd: Yeah
+[00:39:29] Chris:  Blind people can have a car if they want.
+[00:39:31] Todd: Yeah, and be touching on that. Why do people, why do blind people need an ATM machine?
+[00:39:38] Chris:  Right?
+[00:39:39] Todd: That's one I've heard a lot too.
+[00:39:39] Chris:  Yeah
+[00:39:40] Todd: It's like, why is, why is there braille on an ATM machine? Blind people don’t drive. It’s like come on.
+[00:39:48] Chris: Right, yeah, I know. I know, dude, trust me, it’s just this, this idiocrasy out there in this community, and not, and not just the, the society, the community as a society, not the developer community,
+[00:40:02] Todd: Right
+[00:40:03] Chris: you get these dumb things that people say, and yes, I'm going to use the word dumb cause it is it's it's dumb. You know what I mean?
+[00:40:07] Todd: Yeah
+[00:40:08] Chris: Well, why, why people don't need cars and ATMs, and it’s like, what do you kind of, what do you think these people are? They're human fucking beings.
+[00:40:19] Todd: Right, exactly
+[00:40:20] Chris: Get real
+[00:40:19] Todd: Yes, yes
+[00:40:22] Chris: Jesus, shit gets on my nerves.
+[00:40:24] Todd: Yeah. Yep. So, my last question before we get to the final three is, yeah, we've probably touched upon this a little a lot actually, but I'm going to ask it anyways.
+What's the number one thing as accessibility professionals we can do as far as advocating for accessibility? In your opinion.
+[00:40:49] Chris: Just talk about it more.
+[00:40:50] Todd: Yeah.
+[00:40:51] Chris: Talk about it a lot more. You know, when I got into the accessibility space, there wasn't a whole lot of talking about it. The only person, one of the, one of the few people I know who was actively talking about it was Marcy.
+And if you don't follow Marcy on Twitter, definitely fellow Marcy Sutton. If you're listening, she's amazing. I'm friends with her for a long time now. She was really the only one, besides, you know, other people that I watched but I kind of, she had a different vibe to her talks and that kind of just resonated with me.
+She's the reason I got into accessibility. You know, when I started on the web, you know, accessib, they didn't write about accessibility in web books or in HTML books. Yes, all attributes of has been a thing for a long time. Accessible tables have always been a thing for a long time because tables are technically semantic and semantic market by default is accessible.
+But she, she is the one that kind of lit that fire for me, as I did for you to, to see that the world is bigger and accessibility is very, very important, and this is something we need to care about and we need to be cognizant of it and be practicing it and by doing what she's doing, advocating, teaching and knowledge sharing all about it.
+So, I think that's the one thing that we can do because I mean, you can sit behind the computer all day long and build accessible experiences, but if you're not sharing what you're doing, nobody else is going to know that that's what you're doing. Right? That it matters like it needs to be talked about.
+It needs to be shared. It needs to be normalized like mental health in the workplace and mental health in general. It needs to be normalized because it's a thing it's not, it's not something that you can ignore.
+[00:42:40] Todd: Yeah. Yeah. Yeah. I, I will mention to another person that I had been following for the longest time that really got to me.
+More in, into accessibility in the past when I first started. And that was their Derek Featherstone.
+[00:43:00] Chris: Derek's awesome.
+[00:43:02] Todd: Yeah, so two people that I really enjoy, not only reading their stuff, but listening to what Marcy just had a webinar on the other day in fact.
+[00:43:14] Chris: It was on egghead, egghead, right?
+[00:43:15] Todd: Egghead yeah.
+[00:43:14] Chris: Yeah, yup, yeah.
+[00:43:18] Todd: It was real good.
+[00:43:19] Chris: I didn't get a chance to see it.
+[00:43:20] Todd: Real good. So, let's get to the final three questions.
+[00:43:22] Chris: Right
+[00:43:23] Todd: These ones are easy, you can you know, answer one word answer or, you know, going to go into it a little bit. It's the first one is what about the web these days that excites you and keeps you excited in what you do?
+[00:43:38] Chris: The new stuff that I keep seeing in the world of CSS, that's getting me excited. Adam Argyle and Yuna and all the people, Miriam. All the people in that space, just the newest tweets that are coming out with like accent colors and nesting, and there's, there's so much cool stuff coming down the pipeline, you know, next to accessibility, CSS is my jam.
+But not in the JAMstack. You see what I did there?
+[00:44:06] Todd: Yes, I did
+[00:44:07] Chris: It's like my jelly, but I love CSS. I am a huge advocate and supporter of, of CSS and CSS developers because yes, we are out there.
+I am not a JavaScript developer. I specialize in accessibility, and I specialize in CSS and SASS and design systems UX. There's so many cool things. So that talk that I'm giving at Connect.Tech. So, there's, there's a talk that's being featured. I'm no longer giving that talk. There's another one that's being replaced with the talk I'm giving, and it's called It Came From the Browser.
+This is a sequel to my belief, believe in the power of CSS talk. This talk is horror themed, and it's going to focus and talk about, well, I'm going to be talking to all about the newest stuff. That's coming down the pipeline. I'm not going to share too much, but I still have to write it, but it's going to be a dope, dope talk.
+And, yeah, I'm really, really stoked, really looking forward to it. I think the audience is going to really enjoy it. So,
+[00:45:07] Todd: Yeah. Cool. If there was one thing that you could change about the web today that we know, what would this be?
+[00:45:19] Chris: Less JavaScript. But the reality is, I mean, we need it. I get it. We need it. We need it. One thing I would change about the web. I don't know. I honestly don't know.
+[00:45:35] Todd: Well, to help you out, I've had a wide variety of answers to getting rid of tech bros all the way to the web was a mistake. So,
+[00:45:44] Chris: Oh, wow. Well, I guess that runs the gamut then doesn't it. Elitism. I think, I, I think I would say elitism, elitism, and it's, it's not just, you know, tech bros, it's elitism across the board.
+Like nobody deserves to be up on a high horse. I'm sorry. Like you are equal as, just as I am equal. We're all equal in this. We're all human. Nobody should be put up on a pedestal. And I think there's a lot of that in this community. And, you know, I think that needs to end a lot. I don't like it.
+[00:46:25] Todd: Yeah. A total agreement there. And I would add to that, hero worship kills.
+[00:46:34] Chris: Yes.
+[00:46:35] Todd: And, I keep thinking, whenever I discuss this kind of a topic, the elitism it brings me to that, you know, argument that we see on Twitter, what every other day it seems
+[00:46:54] Chris: All the time.
+[00:46:55] Todd: is HTML CSS, a programming language.
+[00:46:57] Chris: Yup
+[00:46:58] Todd: You have, you know, whatever, your, whatever, and I tell people, if you think it is, go with that
+[00:47:05] Chris: Right
+[00:46:58] Todd: You're right with that.
+[00:47:06] Chris: Yeah.
+[00:47:07] Todd: And if you don't think it is, that's, you know, that's your, you know, thought and I, I will respectfully, you know, you know, disagree, but
+[00:47:17] Chris: Yeah
+[00:47:18] Todd: You know, that's, that's your, look at it and I, you know, I have to respect that.
+[00:47:24] Chris: Yeah, for sure.
+[00:47:25] Todd: So, so last question for, you know, our time here is going to be, what's your favorite part of front-end development that you really like the most that you nerd out over? See what I did there with the nerd out over?
+[00:47:42] Chris: Nerd out oh ah yes, yes. It, it, it would have to be accessibility stuff and CSS stuff
+[00:47:53] Todd: Yeah
+[00:47:54] Chris: and design system stuff like design systems are so, so awesome to me, you know, I've worked on them at other companies and advocated for them at other companies.
+I just, the, the front facing stuff is the, the coolest in my opinion. You know what I mean? Like, like the layouts and the colors and, and trying to dissect Flexbox and dissect grid and making things that, you know, in years past we weren't able to do because everything was one dimensional, you know what I mean? And like Flexbox, yes, Flexbox is one dimensional, but with grid being two dimensional, you know, it offers stuff that, you know, years prior with other, you know, other, like bootstrap and 960 and Foundation, like early on in, in those days, you just couldn't do it.
+It was either all vertical or yeah, all vertical or all horizontal. Well now, you know, with grid, you can lay out things vertically and horizontally, have them sit on top of each other and lay them out in, in ways, just like a magazine, you know, like, like Jen Simmons says, you can, you can do and Miriam, you can do so many things like magazine layouts today.
+And I, you know, I highlight some of that. I highlight both of them and Rachel Andrew in my one CSS talk, which I'm going to highlight them again in my new CSS talk. It's just the, the possibilities at this point are endless. And I think that starting to scare some people, because you know, now we have variables in CSS where before you had used SASS.
+And if you weren't using SASS, you might have to do some fancy Javascripty stuff. Right? You have like Houdini, which I don't know much about Houdini, but it's like a mix between the CSS and JS world. SVG. I mean, I know SVG is an older thing, but you can do so much with SVG and CSS nowadays. There's just, it's, it’s awesome. It's awesome to be working on the web right now. I think.
+[00:49:49] Todd: Yeah, yeah and our friend Carie Fisher does some greats talks about system SVGs.
+[00:49:57] Chris: Yeah. Carie's awesome.
+[00:49:59] Todd: She just did an awesome talk at ID24 today. So
+[00:50:04] Chris: yeah, I probably missed it cause this machine is still, any money this is not going to be done by the end of the night.
+[00:50:15] Todd: Well, they’re recorded, so that's a good thing.
+[00:50:18] Chris: Yeah, well I'll have to check it out then for sure.
+[00:50:20] Todd: So, yeah, those are all the questions and it seemed like this went by quick.
+[00:50:29] Chris: Well, we did start a little bit early, and we started before 4. So,
+[00:50:33] Todd: We did, we did, and I, you know, I, I still don't have my shit together in this time zone thing. It's totally screwed me up.
+[00:50:40] Chris: You gotta get it figured dude, when, when, when it comes time, when you guys don't do daylight savings time. That's really going to freak you out.
+[00:50:48] Todd: It is
+[00:50:49] Chris: Because when I was, when I used to fly to Phoenix, when I worked, you know, at the last company I was at, you know, I found out, oh, we don't do daylight savings time.
+I'm like, what, what do you, what do you mean? They're like, oh yeah, we're we don't, we don't follow that. Like sometimes out of the year, like, like how do you just not follow it?
+[00:51:06] Todd: Yeah
+[00:51:07] Chris: So, it's really going to screw you up, dude. Trust me.
+[00:51:08] Todd: Yeah, oh yeah it is.
+[00:51:10] Chris: So, what time is it right now in Phoenix?
+[00:51:12] Todd: Right now, it's quarter to 2.
+[00:51:15] Chris: Quarter to 2. So, it's a quarter to 5 here. So that's what, 3, 3 hours? 3 hour difference.
+[00:51:23] Todd: Yeah
+[00:51:24] Chris: I can't math. So yeah. So, you're in Pacific time.
+[00:51:29] Todd: Mountain.
+[00:51:30] Chris: No three hours for me is California.
+[00:51:36] Todd: Right
+[00:51:37] Chris: Mountain is two hours. Central is one hour. So, you're in Pacific time right now. But you should be in general mountain time. See what I'm saying?
+[00:51:47] Todd: Exactly
+[00:51:48] Chris: Cause you're direct you're directly below den or you're, you're below Colorado and that's mountain time.
+[00:51:55] Todd: Well below, below Utah in the mountain time zone, but with the same time as Pacific.
+[00:52:00] Chris: See, see
+[00:52:01] Todd: That’s messing me up
+[00:52:02] Chris: See, yeah, yeah
+[00:52:03] Todd: I had to pull up a time zone map for this shit
+[00:52:05] Chris: See that's what I'm saying. And like half of the year, you guys are back in general mountain time. So then half of the year you're 2 hours behind me, half the year you're 3 hours behind me on Pacific time.
+[00:52:13] Todd: Yes
+[00:52:14] Chris: It's really, really wonky.
+[00:52:15] Todd: Yeah
+[00:52:16] Chris: I don't know why you moved there.
+[00:52:17] Todd: Well, it's one step closer to the San Diego.
+[00:52:20] Chris: Okay. It's too hot, man. I, I love going to Phoenix, but wow. Like I'd never went to Phoenix in the summer.
+[00:52:28] Todd: Oh. When I came out here in June and I landed it had rained for like five or 10 minutes before I landed.
+[00:52:38] Chris: Yeah
+[00:52:39] Todd: And it was 116 with 40% humidity.
+[00:52:41] Chris: Nope
+[00:52:42] Todd: It was like, absolutely not.
+[00:52:43] Chris: Nope
+[00:52:43] Todd: This is gross. I need to get inside immediately
+[00:52:43] Chris: Yup
+[00:52:43] Todd: and I'm not going back outside until the temperature drops.
+[00:52:49] Chris: Wait until a wait until you get hit with a sandstorm.
+[00:52:53] Todd: There was one, I guess, a few days before I came up. So yeah, that'll be, that'll be great.
+[00:53:01] Chris: Yeah. Yeah. I apparently, they happen a lot. They're called what are they? They're called haboobs?
+[00:53:06] Todd:. Haboobs
+[00:53:07] Chris: It's an, it's an Arabic term
+[00:53:09] Todd: Yup
+[00:53:10] Chris: and a couple of guy, a couple of people I work with at the office down in Phoenix, they get hit with them all the time. Cause I think they live right outside of Phoenix in more of like a, a, like a, a more like rural area ish. And they get hit with them all the time.
+[00:53:25] Todd: Yeah, we're in that we're in that area. So, I like to close the podcast with my guests, letting the listeners know what they have currently going on and where people can find them.
+[00:53:35] Chris: Sure. Yeah, no problem. One thing I do want to do, disclaimer, anything I've talked about in this podcast, any opinions are my opinions and not the opinions of my employer, it's all me, all me G.
+[00:53:50] Todd: Yup
+[00:53:51] Chris: Let's see, you can catch me on Twitter @SaltNBurnem, S A L T N B U R N E M. If you're a Supernatural fan, you'll understand that reference. Our friend Homer is a Supernatural fan. Let's see, I am going to be next week, I'll be in Columbus at WitCon. I will be in Cincinnati in October, October 15th at Momentum Devcon. I'll be at Atlanta code camp in October, I think like the first week of October.
+Doing a talk that I have to rehash it's on an Electron in React. I haven't done that in three years, so that's oh, that's going to be, that was the first ever Electron in React talk I've ever done, or like React talk I've ever done. And it got picked up for this event. So, I have to go back and redo the talk to make sure it works.
+Cause like there hooks wasn't the thing then like Component Did Mount was a thing. So now I gotta go back and
+[00:54:47] Todd: Gotcha
+[00:54:48] Chris: refactor all that and then Connect.Tech in November in Atlanta, Georgia, which is going to be dope. So far, that's all the, the rest of the events I had for the year. I was going to be at TechBash, but TechBash canceled their event at the Kalahari in the Poconos. So, but yeah, those are the events I'll be at. I don't think I'm doing any virtual events. I wrote off virtual events. I'm done with those. I won't do another virtual event again. So, yeah. And also, I'm going to plug the DevRel team at Rocket Mortgage tech, Rocket Mortgage.
+We are streaming now on Twitch. We had our kickoff yesterday, meet the DevRel team. It's myself, Jason Bach and Cassandra Faris. My stream is called Front End Fun Zone with Chris DeMars or as my teammate, Alyssa likes to call it Friyays with DeMars. So that's tomorrow, actually 10:00 AM Eastern time. I will be doing a, a, a little bit of accessibility work.
+I'm going to be building an accessible component, a common pattern, a social media component using fun, awesome React. And ARIA and explain concepts of ARIA. I'll be doing that Friday. And then this, you can check the schedule on Twitch. It's Twitch.TV/RocketDevRel for the, the other schedules and the people Jason Bach is doing his stream is going to be all .Net/C#. And Cass is going to be doing the human side of tech and branding and mental health. And we're going to also be doing interviews with people both internally and externally. So, check that out if you're not following, give us a follow, yeah, yeah, just a little shameless plug there for the, for the stream.
+[00:56:28] Todd: Yeah, I’ll try to show up and give you a follow definitely.
+[00:56:31] Chris: Hell yeah
+[00:56:33] Todd: Well, I want to thank you brother for coming on.
+[00:56:34] Chris: It's been a pleasure, man. I know we tried to like do this multiple times, but with COVID then I lost my voice. It's been, it's been hectic, and you can't figure out time zones. So
+[00:56:48] Todd: No, I can't.
+[00:56:46] Chris: It’s all your fault.
+[00:56:47] Todd: Well, yeah, and I still probably won't by the next time we meet in November. So,
+[00:56:52] Chris: So yeah, in November, you're going to be in the Eastern times just like you were before you moved
+[00:56:58] Todd: Right, exactly. Yeah, and you know, I have no reservations about moving now that I found that place that has a North Atlantic, North Atlantic lobster nearby.
+[00:57:09] Chris: Do you trust it though, but you trust, like there's no ocean right there, dude.
+[00:57:13] Todd: I did, I did, and you know what? I trusted it and I didn’t regret it.
+[00:57:15] Chris: Okay. Well, hey if you signed off on it, then that must mean it's good.
+[00:57:20] Todd: It is, it is signed off. All right. So again, thank you listeners for tuning into the Front End Nerdery podcast. I'll be back next time with a new guest, new conversation about front end design, development and other topics. If you would please rate this podcast on your podcast device of choice, like, subscribe and watch on the Front End Nerdery YouTube channel, links, transcripts and show notes will be there. And I'm Todd Libby. This has been a Front End Nerdery podcast. Thank you. And we'll see you again next time.
+[00:57:52] Chris: Peace.
