@@ -646,7 +646,8 @@ li.postitem-item {
 }
 
 .home-container h1 {
-  font-size: var(--font-size-xxlarge)
+  font-size: var(--font-size-xxlarge);
+  line-height: var(--line-height-large)
 }
 
 .home-container h3 {
