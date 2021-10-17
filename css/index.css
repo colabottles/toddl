@@ -1343,7 +1343,8 @@ video {
   main {
     display: grid;
     grid-template-columns: [full-start] minmax(calc(calc(100% - 960px)/ 2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 960px)/ 2), 1fr) [full-end];
-    grid-column: full
+    grid-column: full;
+    padding-top: 5em
   }
 
   header {
