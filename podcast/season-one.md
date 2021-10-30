@@ -21,3 +21,4 @@ layout: layouts/post.njk
 [Dan Cederholm](https://toddl.dev/podcast/transcripts/cederholm)
 [Nicolas Steenhout](https://toddl.dev/podcast/transcripts/steenhout)
 [Chris DeMars](https://toddl.dev/podcast/transcripts/demars)
+[Marcy Sutton](https://toddl.dev/podcast/transcripts/sutton)
