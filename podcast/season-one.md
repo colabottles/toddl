@@ -22,3 +22,4 @@ layout: layouts/post.njk
 [Nicolas Steenhout](https://toddl.dev/podcast/transcripts/steenhout)
 [Chris DeMars](https://toddl.dev/podcast/transcripts/demars)
 [Marcy Sutton](https://toddl.dev/podcast/transcripts/sutton)
+[Erika Hall](https://toddl.dev/podcast/transcripts/hall)
