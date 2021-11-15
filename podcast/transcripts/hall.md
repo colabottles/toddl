@@ -289,7 +289,7 @@ People are just super interesting. So, I can nerd out about people all the time 
 [00:52:37] Erika: Oh thanks. Oh, what I currently have going on, I mean, I'm doing my mix of like we do our consulting and workshops and writing, and the place to find if I’m like, always extremely on Twitter @mulegirl. I'm on LinkedIn.
 A lot of people have gone to LinkedIn as the less toxic social network. so, you can find me there and then muledesign.com. Our, our company website, which is kind of neglected cause we've been busy. It's one of those things cobbler's children
 [00:53:12] Todd: Yep
-[00:53:13] Erika: can get in touch with us there and let’s do some stuff and I'm on Medium. You can find me on medium. I write stuff there, but yeah, on the internet around, I haven't started my Tik Tok yet.
+[00:53:13] Erika: can get in touch with us there and let’s do some stuff and I'm on Medium. You can find me on Medium. I write stuff there, but yeah, on the internet around, I haven't started my Tik Tok yet.
 [00:53:31] Todd: I tried that and I just I, I couldn't get into it for whatever, I, well, I did get into it, but it took me down a rabbit hole of I'll only go on for five minutes and then I’ll go back to doing work. And then four or five hours later, I'm like, where did the day go? Where did the day go?
 [00:53:45] Erika: Right
 [00:53:46] Todd: So, I can't do, I can't do that anymore, but I wanted to thank you for coming on the podcast.
@@ -304,4 +304,4 @@ I really appreciate it, appreciate it, Erika. It's been a great conversation and
 [00:54:35] Todd: Yep, I have them all. So.
 [00:54:39] Erika: Excellent.
 [00:54:40] Todd: Yes. Yep. So, I want to thank you again for coming on and thank you listeners for tuning in to the Front End Nerdery Podcast. I'll be back next time with a new guest, new conversation about front end design development and other topics.
-If you would please rate this podcast on your podcasts device of choice, like, subscribe and watch on the Front Ender Nerdery YouTube channel. The links to transcripts and show notes are there. I'm Todd Libby, and this has been the Front End Nerdery Podcast. Thanks. And we'll see you next time.
+If you would please rate this podcast on your podcasts device of choice, like, subscribe and watch on the Front End Nerdery YouTube channel. The links to transcripts and show notes are there. I'm Todd Libby, and this has been the Front End Nerdery Podcast. Thanks. And we'll see you next time.
