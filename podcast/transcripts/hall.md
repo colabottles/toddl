@@ -304,4 +304,4 @@ I really appreciate it, appreciate it, Erika. It's been a great conversation and
 [00:54:35] Todd: Yep, I have them all. So.
 [00:54:39] Erika: Excellent.
 [00:54:40] Todd: Yes. Yep. So, I want to thank you again for coming on and thank you listeners for tuning in to the Front End Nerdery Podcast. I'll be back next time with a new guest, new conversation about front end design development and other topics.
-If you would please rate this podcast on your podcasts device of choice, like, subscribe and watch on the Front End Nerdery YouTube channel. The links to transcripts and show notes are there. I'm Todd Libby, and this has been the Front End Nerdery Podcast. Thanks. And we'll see you next time.
+If you would please rate this podcast on your podcast device of choice, like, subscribe and watch on the Front End Nerdery YouTube channel. The links to transcripts and show notes are there. I'm Todd Libby, and this has been the Front End Nerdery Podcast. Thanks. And we'll see you next time.
