@@ -24,3 +24,4 @@ layout: layouts/post.njk
 [Marcy Sutton](https://toddl.dev/podcast/transcripts/sutton)
 [Erika Hall](https://toddl.dev/podcast/transcripts/hall)
 [Joe Natoli Part One](https://toddl.dev/podcast/transcripts/natoli1)
+[Joe Natoli Part Two](https://toddl.dev/podcast/transcripts/natoli2)
