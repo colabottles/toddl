@@ -1,44 +1,39 @@
 const { DateTime } = require("luxon");
+const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-// Import filters
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.setDataDeepMerge(true);
 
-module.exports = function (config) {
-  config.addPlugin(pluginRss);
-  config.addPlugin(syntaxHighlight);
-  config.setDataDeepMerge(true);
+  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
-  config.addLayoutAlias("post", "layouts/post.njk");
-
-  config.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLLL, yyyy"
-    );
+  eleventyConfig.addFilter("readableDate", dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLLL, yyyy");
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  config.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLLL, yyyy"
-    );
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('dd LLLL, yyyy');
   });
 
   // Get the first `n` elements of a collection.
-  config.addFilter("head", (array, n) => {
-    if (n < 0) {
+  eleventyConfig.addFilter("head", (array, n) => {
+    if( n < 0 ) {
       return array.slice(n);
     }
 
     return array.slice(0, n);
   });
 
-  config.addCollection("tagList", require("./_11ty/getTagList"));
+  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
-  config.addPassthroughCopy("img");
-  config.addPassthroughCopy("css");
-  config.addPassthroughCopy("js");
-  config.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("fonts");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
@@ -46,32 +41,31 @@ module.exports = function (config) {
   let options = {
     html: true,
     breaks: true,
-    linkify: true,
+    linkify: true
   };
   let opts = {
     permalink: false,
     permalinkClass: "direct-link",
-    permalinkSymbol: "#",
+    permalinkSymbol: "#"
   };
 
-  config.setLibrary(
-    "md",
-    markdownIt(options).use(markdownItAnchor, opts)
+  eleventyConfig.setLibrary("md", markdownIt(options)
+    .use(markdownItAnchor, opts)
   );
 
-  // config.setBrowserSyncConfig({
-  //   callbacks: {
-  //     ready: function (err, browserSync) {
-  //       const content_404 = fs.readFileSync("_site/404.html");
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, browserSync) {
+        const content_404 = fs.readFileSync('_site/404.html');
 
-  //       browserSync.addMiddleware("*", (req, res) => {
-  //         // Provides the 404 content without redirect.
-  //         res.write(content_404);
-  //         res.end();
-  //       });
-  //     },
-  //   },
-  // });
+        browserSync.addMiddleware("*", (req, res) => {
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      }
+    }
+  });
 
   return {
     templateFormats: ["md", "njk", "html", "liquid", "js"],
@@ -90,7 +84,7 @@ module.exports = function (config) {
       input: ".",
       includes: "_includes",
       data: "_data",
-      output: "_site",
-    },
+      output: "_site"
+    }
   };
 };
