@@ -1,5 +1,5 @@
 ---
-title: Front End Nerdery Podcast Season Directory Transcripts
+title: Front End Nerdery Podcast Season One Directory Transcripts
 description: List of podcast transcripts by season.
 date: 2021-09-29
 layout: layouts/post.njk
@@ -26,3 +26,4 @@ layout: layouts/post.njk
 [Joe Natoli Part One](https://toddl.dev/podcast/transcripts/natoli1)
 [Joe Natoli Part Two](https://toddl.dev/podcast/transcripts/natoli2)
 [Eric Meyer](https://toddl.dev/podcast/transcripts/meyer)
+[Season One Wrap-Up](https://toddl.dev/podcast/transcripts/season1finale)
