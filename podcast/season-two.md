@@ -8,3 +8,4 @@ layout: layouts/post.njk
 ## Season Two Transcripts
 
 [Jason Pamental](https://toddl.dev/podcast/transcripts/pamental)
+<!-- [Anna E. Cook](https://toddl.dev/podcast/transcripts/cook) -->
