@@ -1,11 +1,11 @@
 ---
-title: Front End Nerdery Podcast Season Two Directory Transcripts
+title: Front End Nerdery Podcast Season Two
 description: List of podcast transcripts by season.
 date: 2021-01-19
 layout: layouts/post.njk
 ---
 
-## Season Two Transcripts
+## Transcripts
 
 [Jason Pamental](https://toddl.dev/podcast/transcripts/pamental)
 [Anna E. Cook](https://toddl.dev/podcast/transcripts/cook)

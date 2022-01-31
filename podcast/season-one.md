@@ -1,11 +1,11 @@
 ---
-title: Front End Nerdery Podcast Season One Directory Transcripts
+title: Front End Nerdery Podcast Season One
 description: List of podcast transcripts by season.
 date: 2021-09-29
 layout: layouts/post.njk
 ---
 
-## Season One Transcripts
+## Transcripts
 
 [Intro](https://toddl.dev/podcast/transcripts/intro)
 [Jeffrey Zeldman Part One](https://toddl.dev/podcast/transcripts/zeldman1)
