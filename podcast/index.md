@@ -6,4 +6,4 @@ navtitle: Podcast
 templateClass: tmpl-post
 ---
 
-{{ content | safe }}
+{{ content }}

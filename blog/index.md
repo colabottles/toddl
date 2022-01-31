@@ -8,4 +8,4 @@ navtitle: Blog
 templateClass: tmpl-post
 ---
 
-{{ content | safe }}
+{{ content }}

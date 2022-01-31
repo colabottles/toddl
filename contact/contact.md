@@ -8,4 +8,4 @@ navtitle: Contact
 templateClass: tmpl-page
 ---
 
-{{ layoutContent | safe }}
+{{ layoutContent }}

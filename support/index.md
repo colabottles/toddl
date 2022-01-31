@@ -6,4 +6,4 @@ navtitle: Support
 templateClass: tmpl-post
 ---
 
-{{ content | safe }}
+{{ content }}

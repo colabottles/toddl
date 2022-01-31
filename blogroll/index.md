@@ -6,4 +6,4 @@ permalink: /blogroll/
 templateClass: tmpl-post
 ---
 
-{{ content | safe }}
+{{ content }}

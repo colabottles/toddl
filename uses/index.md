@@ -6,4 +6,4 @@ permalink: /uses/
 templateClass: tmpl-post
 ---
 
-{{ content | safe }}
+{{ content }}

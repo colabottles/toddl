@@ -6,4 +6,4 @@ navtitle: Projects
 templateClass: tmpl-post
 ---
 
-{{ content | safe }}
+{{ content }}

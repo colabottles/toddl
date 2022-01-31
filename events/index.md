@@ -6,4 +6,4 @@ permalink: /events/
 templateClass: tmpl-post
 ---
 
-{{ content | safe }}
+{{ content }}
