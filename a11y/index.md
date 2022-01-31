@@ -2,7 +2,7 @@
 layout: layouts/a11y.njk
 title: Accessibility Statement
 date: 2020-04-10
-permalink: /a11y/
+navtitle: A11y
 templateClass: tmpl-post
 ---
 
