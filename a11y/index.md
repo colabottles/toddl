@@ -2,8 +2,8 @@
 layout: layouts/a11y.njk
 title: Accessibility Statement
 date: 2020-04-10
-navtitle: A11y
+permalink: /a11y/
 templateClass: tmpl-post
 ---
 
-{{ content | safe }}
+{{ content }}
