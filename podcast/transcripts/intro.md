@@ -17,4 +17,4 @@ Episodes will run uninterrupted for the time being. I want to make this as authe
 
 I plan to reach out and try to get my first guest booked shortly. Until then, it’s a secret as to whom that may be. I am not going to spoil it and I certainly won’t give away any clues. I think it is fitting that this person be my first guest. So hopefully they will agree.
 
-Until then, thanks for stopping by. Please subscribe and star these episodes as soon as they are released. You can find out more about me at my website https://toddl.dev or on Twitter, where I am @toddlibby. Thanks for listening and see you next time.
+Until then, thanks for stopping by. Please subscribe and star these episodes as soon as they are released. You can find out more about me at my website [https://toddl.dev](https://toddl.dev) or on Twitter, where I am [@toddlibby](https://twitter.com/toddlibby). Thanks for listening and see you next time.
