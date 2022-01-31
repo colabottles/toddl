@@ -6,4 +6,4 @@ permalink: /unsub/
 templateClass: tmpl-post
 ---
 
-{{ content | safe }}
+{{ content }}
