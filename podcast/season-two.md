@@ -8,5 +8,5 @@ layout: layouts/post.njk
 ## Transcripts
 
 [Jason Pamental](https://toddl.dev/podcast/transcripts/pamental)
-<!-- [Anna E. Cook](https://toddl.dev/podcast/transcripts/cook) -->
+[Anna E. Cook](https://toddl.dev/podcast/transcripts/cook)
 <!-- [Shop Talk Show](https://toddl.dev/podcast/transcripts/shoptalkshow) -->
