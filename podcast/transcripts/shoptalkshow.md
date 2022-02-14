@@ -6,3 +6,330 @@ layout: layouts/post.njk
 ---
 
 ## S2:E3
+
+[00:00:00] Todd Libby: Welcome to the Front End Nerdery Podcast, a podcast about front end development and design. I'm your host, Todd Libby. My guests today. Plural are two people you may know very well. And I'm glad we could work this out today and, you know, get on the call here. Co-founder of CodePen, Chris Coyier and lead developer at Paravel Dave Rupert, and you know them from the Shoptalk show.
+Guys how you doing today?
+[00:00:32] Chris Coyier: Good, good, good, good.
+[00:00:33] Dave Rupert: Wonderful, great to be here. Thanks.
+[00:00:37] Chris: Yeah, it is really appreciate it, Todd. Yeah. Yeah. We know, we know what it's like running a, a podcast about front end nerdery. You just
+[00:00:37] Todd: Yeah
+[00:00:37] Chris: have the coo, you just have the cooler name.
+[00:00:46] Todd: it came to me in a dream.
+[00:00:47] Dave: There I was in the desert.
+[00:00:50] Todd: Exactly. How about, each of you, tell the listeners a little bit more about yourselves. I know, you know, you guys are well known, but go ahead if you want.
+[00:00:58] Chris: Oh, that's cool. You introduced me as the co-founder of CodePen, which I am so that's most of my day is just working on that app, you know, which is not a spring chicken anymore we’re celebrating our 10th year this year. So, though we're just a little app for, you know, kind of practicing and building front end code, you know, so nice little synergy with this podcast, I'd say.
+[00:01:24] Todd: Yep
+[00:00:58] Chris: and lots of people sign up for it and do it. And they do it in all kinds of different contexts, like educationally they're learning, or they work at some agency and they're testing things or, or whatever. There's all kinds of different reasons people end up using the app, but they find it some way or another, cause it was linked up in a stack overflow thread, or it was part of their curriculum, or they saw it embedded on CSS-Tricks, which is another website I do a where that's more of just a blog and it's me, and staff, and guest writers. And, you know, I'm always kind of looking for content for that. Publish a couple articles a day about front end stuff, usually front end stuff. I mean, I don't venture into backend that much, but you know, it's got, it's this name where you'd think it would be a blog about CSS-Tricks, but alas, it isn't, it's just about whatever.
+[00:02:13] Todd: Yeah.
+[00:02:14] Chris: Yeah. And then of course, me and Dave hang out every week through the show
+[00:02:20] Todd: Yeah.
+[00:02:20] Dave: That's right. Every Monday or so we do ShopTalk Show. So, I, I can go I'm Dave Rupert. I like, I have a blog too, but I, but, yeah, it's not as good as Chris’s, but then, I work at a company called Paravel we’re a design agency, design, web design and development agency based in Austin, Texas.
+We've kind of, just slowly grown the business over the last, like 14, 15 years. And now we do kind of big websites. But, and then kind of, like in addition to that, like this year, I've kind of like started a whole new company, like I’m, like Linda incorporated in Delaware and everything like so called LuroApp and that's, or it's just called Luro, but the website is LuroApp.com.
+So, we're just kind of starting that not really much you can do or anything there yet, but it's just, we're kind of starting down that path, so.
+[00:03:10] Todd: Nice, nice. So, now it's time for the hard hitting questions. So, the first one is for each, you know,
+[00:03:17] Dave: My parents divorced when I was 10. Sorry
+[00:03:24] Todd: How did you get started in your web development or design journey?
+[00:03:29] Chris: Yeah. I wonder if I could do Dave's and Dave could do mine?
+[00:03:33] Todd: You can do that.
+[00:03:33] Dave: Chris was in university, learning, majoring in pottery, and he had some bands, an Irish punk band and needed a website for that band. So that's what Chris did made a website.
+[00:03:44] Chris: Oh yeah.
+[00:03:44] Dave: What am I close? Am I close?
+[00:03:46] Chris: Yeah, yeah, I’ve heard. I think that's pretty much it
+[00:03:48] Dave: And then you worked for Wufoo, just a few steps in between there.
+[00:03:51] Chris: Yeah. There's a couple of steps in between there, but now I feel bad because I don't remember yours as clearly, although I know you've made you joke about majoring in anime, which really meant majoring in Japanese and then living in Japan for a minute.
+And then I, it may have been when you came back from that. And then, and then, but you were always buddies with the, the, the your fellow co-founders of Paravel for a long time. I think it probably means that means high school, even?
+[00:04:17] Dave: Yeah
+[00:04:17] Chris: I don’t know if it predates that
+[00:04:18] Dave: That's correct. You're right. Yeah.
+[00:04:19] Chris: But high school, and then I'm not sure when, when the, the forage was fired with, with, with Paravel exactly thought. What is that? Cause you did client, it’s always been
+[00:04:30] Dave: Yeah
+[00:04:30] Chris: client work things. It was Trent getting the clients and then asked you for help. Was it something like that?
+[00:04:33] Dave: Yeah, basically like, this is fun when we did our [inaudible] but like, so I, I've been making websites since I was like 15, like on AOL pages and stuff like, like just blogs before there were blogs, it was just, like, just, I think my first website was called Fart University.
+[00:04:50] Chris: Wow
+[00:04:33] Dave: I mean, it was really high quality stuff there, but then, and then like I made like websites for like organizations as a part of ultimate frisbee teams or whatever, you know? And then like, cause I was just, I made websites. That's what I did in my spare time and thought about that.
+And then, but I majored in Japanese and then I lived in Japan. And then I taught Trent and over remotely, I taught him how to make websites a lot. And then he had a job making websites. And then, I came back from Japan, Reagan and I worked on real estate websites in Phoenix in 2006 and 7. And that did not end up well, like, that was a bad time for real estate in Phoenix.
+And so shortly after that, we, Trent just kind of had some work. And so, we started making websites off of that. So, and maybe I think at one point, Trent and I made a couple of websites for 300 whole dollars. So,
+[00:05:47] Chris: Ooh.
+[00:05:48] Dave: Yeah. Big money. Big.
+[00:05:51] Todd: I remember those days. I remember those days. Yeah, I can do that for 200 bucks.
+[00:05:57] Dave: Yeah, sure. And then you spend like eight weeks.
+[00:06:03] Chris: Yeah, I kind of got yelled at early on by a, like, I had a neighbor who was like, oh, you do you, you know, I can tell that, you know, you have the talent to do this particular freelance job. And they, they hooked me up with some local business that was a pretty big business that needed some, some work done.
+And I, and I you know, cause they asked me to my face, like what my rate was or something I, I can't remember, but it was something like $10 an hour or something. I just spit out. Cause I was totally unprepared to answer that question. And they took me aside and said, it was sorta like, you can't do that. Cause it's like, it won't, it they were looking out for me cause they knew I was there, I was like undervaluing myself so dramatically on this project that it like. It would actually cause problems for them to quote so low
+[00:06:48] Dave: Oh
+[00:06:49] Chris: because that looks like they're taking advantage of them or it doesn't look like it has the right worth, you know, like how can we hire someone so cheap to do, to do this project that actually matters to our company? You know?
+[00:07:01] Dave: Yeah. It's kind of like an appearance thing. Like, yeah. I don't know. Cause they're, they’re like early on you're, you're like, am I, am I like, you know, kind of like, we call it like McDonald's price. Like, or is it, are you a car mechanic price or are you like a contractor price or a lawyer price, you know?
+And so, you just have to figure out what costs you are and, yeah,
+[00:07:27] Chris: Cause people will treat you differently. If you say
+[00:07:30] Dave: Unfortunately, yeah
+[00:07:27] Chris: a hundred thousand dollars to talk to me for a week, they're going to come in super prepared.
+[00:07:35] Todd: Yep
+[00:07:35] Dave: Yeah
+[00:07:35] Chris: And they're going to have stuff. And then, then you can really talk as professionals. They're going to listen to what you say.
+They'll probably even do what you say. You know, it's just,
+[00:07:44] Todd: Yeah
+[00:07:45] Chris: that's the thing, but you have to be able to pull that off. So, you know, you can't, I'm not saying people with one year of experience should try that because it probably won't go very well for you.
+[00:07:54] Dave: Right, right,
+[00:07:54] Todd: Right. Yeah.
+[00:07:55] Dave: Got to have a few credentials under the belt.
+[00:07:56] Chris: Yeah indeed
+[00:07:59] Todd: So, I wanted to talk about the, the podcast, the ShopTalk Show podcast, because you're almost at 500 episodes. I just listened to 498, another good, great episode. And what are you planning for the big five zero zero?
+[00:08:14] Chris: Oh, you'd think it would be something
+[00:08:18] Todd: And what
+[00:08:19] Dave: And oh boy, those plans they are hot. I'll tell you. you know, I, I don't know, Chris, I like, you've kind of said just, we don't have much of a plan.
+[00:08:30] Chris: We've never once did anything special at a 100, 200, 300, 400. Some of them we acknowledged and some of them, we just bowled right through, I think. but this one does feel like a big one with the, with it roughly representing 10 years and, and stuff like that.
+What I think will be fun is to kind of chunk them up into 100, 200, 300, 400 and like, look back and get the vibe of what was happening during those chunks of time. Because it was really interesting. I mean, there was periods, long periods of time where all anybody wanted to know was, was like really specific stuff about WordPress.
+[00:09:05] Todd: Yeah
+[00:08:30] Chris: That's like all that we got, we had to make an FAQ page. That's like, here's some basic WordPress FAQ stuff that, because we just can't answer it anymore. People will go nuts. We'll go nuts. You know? And there's like some, you know, there's other things like that, you know, the very, very early days where, you know, a lot of us embarrassing ourselves with certain things, probably getting guests that were too big for our britches and things like that.
+It'll be fun to reflect on some of the bigger moments of ShopTalk Show, but I'm more interested in the trends of like what, what happened during those couple of year periods that was that dominated the, the conversation. Cause I'd like to think that it's part of our partly our journey, but partly reflective of the industry as a whole, you know, cause the shows a write in show.
+So, it's not only out of our brains, it's what's happening in the industry.
+[00:10:00] Todd: Yeah. I have big plans for episode 30 of my, my podcast. So maybe a cake?
+[00:10:10] Dave: You should for serious get into celebrating milestones. It's probably one of the things we haven't done enough, but they're fun. You know, you, you, I don't know. You start off make a podcast. I always say, get to 10 episodes, figure that out. And then,
+[00:10:25] Chris: You guys know about the Laura Hogan donut thing?
+[00:10:29] Dave: Yeah
+[00:10:29] Chris: Is that common, common knowledge in the world.
+Y'all both know what I'm talking about. Good.
+[00:10:32] Todd: Yep
+[00:10:32] Chris: So, I don't have to dig too much into it, but for your audience, Laura Hogan is just a great person. Just has written all kinds of, she was deep deepen tech stuff for a while in the performance world. And then has recently kind of stepped, stepped deeper into like management stuff.
+But yeah, she, I think she even has a public page on her site of when something really good happens. I go eat a dang donut and you know; I'm not giving away too much. She doesn't look like the kind of person that eats a terribly lot of donuts, you know. So, I can tell that this is a, a special thing for her, but it's a, it's a metaphorical, it's a real doughnut, but it's also a metaphor saying this thing really, I'm going to stop and have a breath and do something special for me because that was, that was a big deal and mattered.
+And I've known about it forever. I really like the concept and I never do it. I can accomplish something huge and immediately my dumb brain is just like I'm behind on writing blog posts. I only wrote two blog posts this week. What is happening?
+[00:11:33] Todd: Yeah
+[00:11:33] Chris: I need to get on that. I celebrate nothing, you know, and that's not good. It's not, that's not something to I should, I should go get a donut or whatever, my metaphor of a donut is.
+[00:11:43] Dave: I started, like, because she was on our podcast and like episode 59, I'm looking back through it episode 59. so that would have been the second year. she, I started getting, doing milkshakes. I just, whenever I give a talk or do a demo, like at work or whatever, for a client, like a big client demo milkshake, getting a milkshake, just the
+[00:12:03] Chris: Yeah
+[00:12:04] Dave: biggest dumbest one in like, my kids are like, oh, no fair I didn’t get a milkshake and I'm just drinking it in front of them. And I'm like,
+[00:12:11] Chris: Yeah
+[00:12:11] Dave: you did not give a presentation kid. Yeah. But no, I just, I'm just kidding. But, Yeah, I just, you gotta celebrate, you gotta build something. I don't know. It's, it's, it's, it's fun. So, I'm getting a milkshake when we record 500.
+[00:12:25] Chris: I like that one because it's also, it's not like, I mean, you have kids, right? You can't be like, oh, I get it. I'm going skiing or something here.
+[00:12:33] Dave: Yeah
+[00:12:34] Chris: You're like stepping away from some other responsibility and whatever, but I really anyone can do that, drive through.
+[00:12:42] Dave: Drive through.
+[00:12:45] Todd:  So, you know, as, as I listened to the podcasts, I, I enjoy when you both mentioned accessibility, I'm in the accessibility space and I have been for, I guess, way too long at this point, but I think we all need to talk about accessibility a lot.
+So, and especially from the start. When it comes to design, you know, at the beginning or development throughout the project, what are you both doing? Cause I mentioned this on practically every episode that I can, that it pertains to.
+What are you both doing to practice accessibility? And what would you say to those starting out their journey as far as implementing or learning about accessibility from the start of their projects?
+[00:13:30] Dave: I mean, I can go like. accessibility is one of those things that I learned way too late that I wasn't doing. You know what I mean? Like it I, I'd read Zeldman’s book, and you read it and it’s like, good HTML is, is makes accessible websites. I'm like, heck yeah, thumbs up. You know, that's why I won't do flash anymore.
+That's basically easy. Okay. I don't do flash anymore and I'll tell everyone we don't do flash anymore and they'll get really mad at me, but hey, we did it. We made a positive choice. But you know you, for me, it was kind of like the nuance and accessibility kind of got me, you know, it was like, well, you can't use that color on that background.
+And I'm like, what? Like, ah, like I figured this out, you know. And you know, and, you know, the answer's always like pull up the color, contrast picker and pick the colors and you know, it's like, I'm not going to do that for every color. I, I, I like you guys and everything, but I'm not doing that for every single color combination on the page.
+You know, that could be thousands, millions, I don't know of, of variations. So, you know, I have like really enjoyed the, the new automated tools that have come, I say new, but we're like five years into this whole era. Right. like Axe, obviously, what, I'm trying to think of like Tennon has one. but, even like what WebAIM?
+The like, WAVE, is that what the tool is called? WAVE?
+[00:14:56] Todd: Yeah. Yep.
+[00:14:57] Dave: Like those are
+[00:14:57] Chris: Go in click a button. Tell me what’s wrong?
+[00:15:00] Dave: Yeah, yeah. Like a bookmarklet almost, I think. And it's just like, and it'll like overlay all these like broken kind of things. Oh. And Accessibility Insights from Microsoft is another really good banger.
+I've been really trying to use these tools, like in like daily practice, running Lighthouse audits, which runs Axe under the hood. just so that I have not a, a like, I, I'm not, like, I, I think for me, it's just having a pulse on what's wrong and how out of control it's going to get, you know, cause for, for me, a lot of my work is sometimes like client-based, you know, or, or it's like, I have a client and you know, okay.
+The like the color combination you somehow chose. I, I was not involved in the process, but the color combination you put a, I don't know, now the very recent example. Now the website is just a bunch of H2’s that are links. Okay. This is not great. But let's like, at least I can like audit these things and I get a sheet of like, what's wrong.
+Like you have too many H2’s or whatever, you know? And I can kind of like start a discussion there with a little bit of data. you know, do they always want to fix it? I don't know. Sometimes they just want to binary is this accessible yes or no. And you're like, well, it depends to who. Right. And so, so I like these tools because they give like a lot of, yes, and yes, and no’s, which is what people are asking for, you know?
+And then from what I understand, you know, we decided this thing, it was a social media content person and she's blind and she wrote a post and I cited it the other day, and I found it now, I don't have it cited a post for like five things I wish everyone knew, like when I'm using the web, here's, here's the five things that bother me.
+[00:16:53] Chris: Oh, I remember that. And she like it was a video and she liked busted her phone and showed you and like this sucks and this sucks.
+[00:16:59] Dave: Yeah. And it's, its literally labels, heading structure, alt text, you know, like the super basics that are all automated bull, and you can catch that. And then you look at like, I spoke at axe-con this last year, which is a total privilege or last year.
+And, you know, is Glenda Sims @goodwitch she kind of like was pouring over all the Axe data that Deque has. And they kind of were like, you know, automated tests, only catch. I want to get this right in my brain. She's like, they only catch like 20% of the WICAG. Right? So, like, and so that's something you need to know, but the, but representative of issues that are like the bulk of issues, they catch actually like 57%, the automated tests.
+So, and then if you do like the little walkthrough things that they have, like the manual test, you can catch like 80%. So that was really encouraging to me. Cause I always thought it was like 10 or 20%. But knowing now that it's just in the represented representation of issues, it's like 57. Isn't that better?
+Like you can just run a test and you made it 57% better if you just make it 100 on Lighthouse. That's pretty cool. I don't know. So, I've been like really trying to for lack of a better term, lean into these tools and like use these tools and I just hope they get better, and I hope problems get solved more and, I'm want the web platform to solve some of these problems for us.
+No one should have to write tabs. So, I'm working on that. So, we'll see one day.
+[00:18:42] Todd: Yeah. Yeah. What about you, Chris?
+[00:18:45] Chris: Yeah, I mean, Dave makes a good point about the tooling. That's so cool. I'm interested in also like, not only the usage of them, but how can you promote the idea of like, how could it be easier to be when I do get commit that it runs like can more projects, leverage things like get hooks and continuous integration to do those kinds of things, because that's what makes cultural change happen at the org.
+[00:19:09] Todd: Yeah.
+[00:19:09] Chris: If somebody wires up a thing that spits out a little automatic GitHub message that says like, oh, there's a color contrast issue here. Or this input doesn't have a label or. Whatever, there's an unclick handler on this div who did that dummy, you know, that that will change. And then it'll like get fixed and then kind of like stay fixed. That seems pretty cool.
+[00:19:31] Todd: Yeah.
+[00:19:31] Chris: I don't know that I've done a lot of work promoting that or whatever. So, I guess thanks for having us on your podcast to, to spread that up. I think that's, that's cool and good. And it seems like more people are leveraging that kind of thing. I mean, think of every site on that's on Netlify now, if there's just zillions of, you know, really took over people's workflows and in a lot of ways and people like they see, they see continuous integration for the first time because they're using Netlify and they see those little boxes and you're Git commits that say like, yours your site has been built or there was a problem building your site, or it's been built and now the preview is ready, click this link and you can go see the preview.
+That's continuous integration. And it's not a terrible stretch to add one more little line to that thing that says it has passed Axe or whichever one you pick from the thing. Yeah. That's neat.
+[00:20:29] Todd: Definitely. So on the topic of front end, what are you both seeing as far as front end goes, that's really stood out for you as being something that we've seen, you know, 2021 or that even going, I know it's early this year, but you know, something that really stands out to you as being really cool, really awesome as far as the front end goes?
+[00:20:58] Chris: there's it seems like there's at least three projects that are, they have this weird quality of we're going to make a static site for you with no JavaScript by default, but you get to bring whatever JavaScript framework you want with it. So, there's this one called Astro that does that
+[00:21:18] Todd: Yep
+[00:21:18] Chris: and has their own format. And they say, oh, you bring your bring your solid components. Bring your VUE components, bring your React components, whatever. And even if you put div on click, whatever on them, that's just going to be gone in the output. Unless you put specific directives that say, it's okay to work under these circumstances or whatever, that's pretty neat, but they're not alone.
+Then all of a sudden this one Isles dropped this kind of VUE focused, but also says, hey, bring your React components, bring your spell components, whatever we're going to do the same thing. And then there's Ben Holmes thing Slinkity, things that brings those renderers hope. Hopefully I think soonish or something, or I'm not sure what the state of the project is, but it leans into Eleventy.
+[00:22:01] So Eleventy is this great static site generator. No JavaScript by default but supports only what I might call kind of like old school HTML processors like Nunjucks, which is like, I kinda liked Nunjucks, but like literally nobody works on Nunjucks. I don't think the future is super bright for Nunjucks.
+[00:22:19] Todd: Yeah
+[00:22:20] Chris: But the future is super bright for React still like it or not because a zillion developers know that syntax.
+So how cool is it? If there's this project it's like, fine, fine, fine, fine. Write your components in JavaScript, but we're still going to barf it out as static HTML. That's good for, it's probably good for accessibility. I mean, it depends on how you write that HTML and all that, but at least it's not requiring JavaScript to load that could die and yadda yadda. Good for performance.
+All these, all these reasons like do the right thing by default is so cool. It's cool to see at least three projects go that way. And it seems like what people latch onto are those ideas more than the framework itself. They're like, whoa, that's cool that, that framework can do that. I wouldn't doubt that we'll see more frameworks adopt that.
+Like, I don't care how you write components. We'll take, we'll take whatever you, you want to throw at us. And I think that's great. It leverages people's knowledge kind of in a good way. Like we'll meet you where you are, and we'll still do a good job for you. And what I like about it is like brings more people into the idea of building sites with components, which isn't particularly new, but it's a little new for people that aren't necessarily JavaScript people.
+JavaScript people just have it good with componentry and that shoehorned it’s way so nicely with design systems because design systems are like, here's the components that build this design system, but design system people don't always care how you build the component, but it just so happened to be this like movement that happened at the same time, as you know, JavaScript’s based sites were becoming the most popular way to build the sites are like, cool.
+The designers going to build a tabs component, which Dave is saying, I hope you don't have to, but for the moment you basically do. I'll build that as a capital T tabs component in VUE or whatever.
+And those two things are like matched up to each, each other, but it turns out that it's nice. It means you can isolate your JavaScript that has to do with tabs into that tabs component. It means you can isolate the CSS that has to do with that tabs component into that component. And you have these little boxes of, of componentry and it turns out like that's just a really good idea.
+I don't think it’s; I think it's just a good idea, period yet, I think it's unfortunate that that's not the first class citizen for how we make all the websites. It bums me out when I go back to my old school WordPress site that I'm not building in componentry in that way. It just makes sense conceptually
+It makes sense as a, as like a paradigm way of programming. It's like, this is how digital products should be built. I don't really care about the language or anything. I just care about that. Give me a box that represents this concept on this website, and I will use it.
+[00:25:00] Dave: Yeah, I was going to say the same thing there's like with this, like Astro, well, we'll just call it.
+It's kind of the entity that's kind of inspiring some of these thoughts, just like there's a bit of a swing in front end a, away from like single page app-y kind of stuff. Cause because now I can have interactive components and I can use React without it being the whole entire site takeover. There's a lot of it, it, it has become infinitely easier to use this stuff outside of a giant React app, like context.
+Cause I mean like, you know that you may actually want to use like React tabs for your tabs component, because guess what? It's been tested. Like a lot of people have used it. Like it hopefully has really good accessibility, like, you know, like there's, there's like. But, but to use React tabs, two, three years ago, you'd have to spin up a whole React situation in order to like, get it stuck onto the page and that'd be a lot harder.
+So, I feel like this is just, I don't know, a, a good, kind of novel invention that we can use different tools. Now, simultaneously I could have spell tabs. I could have React tabs and I could have VUE tabs all on the same page. Why would you do that? I don't know, but you could now. So, it's theoretically possible.
+And so, like under the hood, there's been a lot of like esbuild. We talked about a lot on Shoptalk. is, is, it is like, it basically is lightning fast webpack and, and it can build this stuff so incredibly fast. And the projects that are being spun off of this, like Vite which is from Evan You from VUE, Vite is just a lightning fast local development server.
+And it can bundle your stuff and split it up and spit it out. Even last week we found out, or we talked about Parcel is another like bundler, JavaScript bundler, processed CSS as well, but they, it has a new CSS processor built in Rust and it's like under four milliseconds to like compile CSS into like a full, like bundle.
+That's incredible, like in the blink of an eye, literally one frame on a what on a 60 frames per second, you can have new CSS, one, one frame of, of, like 60 FPS display. That's incredible.
+[00:27:27] Todd: So, I wanted to touch on CodePen for a little bit. I have been a CodePen Pro user for maybe three years now and I always do like testing and everything on there. And it's great.
+[00:27:41] Chris: Well, thank you.
+[00:27:43] Todd: Thank you for, for making a great tool for me and for, for people. Do you have anything as far as CodePen coming up for people that we can look forward to, that you can, that you can talk about?
+[00:27:58] Chris: Well, that's that you can talk about is a clutch answer to this. And I know that makes for a bummer podcast and you're like, no, not really, but of course we are. I mean, if you've been following CodePen closely, you probably are aware that we haven't dropped anything super big in like a while. The behind the scenes from that isn't that we're just like, eh, we don't care about this app anymore.
+We work on, there's a team at CodePen, we work on it all day, every day. It's a, it's, it's still a highly, active project. It's just that we haven't dropped anything huge. And obviously user-facing in a while, cause there's, you know, an app that's 10 years old as CodePen is there was some technical debt problems to address.
+You know, we just dropped a podcast where we switched our whole database from MySQL to PostgreSQL, which is like, you know, a relatively large undertaking that nobody cares about that affects Todd Libby’s life in no way, you know. But we did it because we knew we, you know, we have reasons we needed to prepare for this and that.
+And there's all these features of CodePen that needs support and maintenance and nurturing over time. And if you make the wrong choices, you pay for those yada yada. So, we get done with projects like that. but the real news is that the most of the time is going into like, what is the next generation of CodePen going to be like? Like, how can we really like reinvent what CodePen can do?
+Addressing the things that we think users will want to do, but doesn't turn its back on anything that, you know, because wouldn't that be a bummer too? You’ve seen apps that do that where they, you know, they're like we don't do the thing that you've paid for it to do anymore. We do this totally new thing. Pivot town buy buy.
+[00:29:40] Todd: Right
+[00:29:41] Chris: No, I mean, CodePen has been really good to us for a long time or was able to, you know, quit job, but we have full-time employees. I mean, there's nothing to be except for proud of what, what CodePen has done now. So, we're looking to like retain that, like the ability to just go to CodePen, start typing some code, start seeing the result of it, having that great moment that people have with code.
+You're like, wow, I can make a website. I can type an H1 tag, and it's a big, bold header. And I can put a picture of my cat and it'll show a cat there. And now tooling of websites exists that is so good that you can essentially click a button and literally make it a real website. You know, things like Netlify that I already mentioned, blast that thing up there, or any number of, lots of hosts that have trivialized hosting lately.
+I think that's cool. And I hope CodePen is a part of that movement going forward as well. Like, like why don't, you know, you can do that in CodePen now make a little cat website, but you know, deploying, it's kind of a different story and all that, and that's not all what we're working. I want to be like, but what about all these hot tools?
+You know, we mentioned Astro a bunch. I think that's fairly obvious why can’t CodePen run Astro? It can't if you're asking today right now. So those are the kinds of some obvious things. And I can't even promise that when this launches though, we'll necessarily have Astro, I'm just, those are the types of things we're thinking about and prototyping.
+And moving forward on cause when we release it, this is, you start, you know, you start getting old, Todd, you start thinking about your life a little bit. What am I even doing here on this one spin around this rock or whatever the metaphor it is?
+[00:31:20] Todd: Yep
+[00:31:21] Chris: I want to make sure that what we're doing matters. Cause if it doesn't matter, I want to do something else because at some point you just get too old and you're too tired and you stop caring or whatever.
+Like, I, I'm worried that I want to make sure that the hours I spend in the day matter. And so, we've, we've taken that into account how, what we're doing at CodePen, this is a very intentional swing on something that we think matters for us. And for people that use CodePen in the world, hopefully, and all that.
+And I have no, I have nothing else to tell you. I can't, I can't show it to you. I can't, you know, cause I I'd be, I'd be doing a disservice cause I would, I don't know if it will ship in that way, or I'll get people excited about one thing and then we won't be able to ship that thing or whatever. It's not me being cagey.
+It's me being like protective of disappointment and stuff and adding stress to a situation that doesn't need any more stress. So,
+[00:32:12] Todd: Yeah
+[00:32:13] Chris: That's the case. Is there a new world? You know, I get to work on it and look at it every day and think about the nuances of all these little aspects and such, and it's just such a, it's such a fun thing to work on, but yeah, that's it.
+So, yeah, yeah, yeah. Stay tuned. You know, you might even want to go pro now because I'll tell you when this thing drops. If the, the all the talk is, this is going to be so much more valuable of a tool that is going to cost more money. So, you might as well be on a grandfathered plan. Like Todd is, just saying.
+[00:32:41] Todd: Yeah definitely
+[00:32:42] Dave: Nice. leak leaks. I was gonna say it's a really, like you said, it's a tool, like people like typing in H1 and like, enjoy, I like made websites with my son. Who's like eight, you know, and his cousin, you know, and his cousin, the first thing she writes is my mom has big poops, I think, or something like that.
+And I'm just like another generation learns.
+[00:33:12] Chris: Yeah.
+[00:33:13] Dave: And you know, it's, it's a great
+[00:33:15] Chris: It's been fun to watch, not as, as, as we haven't released a lot of very new dramatics [inaudible], is that it hasn't mattered all that much is that it hasn't changed a whole lot of, it's not like people are like, dah screw them. Like you know, there's not people aren't upset.
+If anything, they're just more comfortable with it and almost trust it more because it's just this thing that reliably does what it does. And even that reliability has been a big factor for us. And that a lot of that work we do behind the scenes is that is like, what if we get, you know, what if we get this replicated across zones and what if we deal with these 15 bugs that have been sitting here forever?
+And what if we, you know, just all kinds of, really things to shore up the back. So even if you don't notice what you might notice is that it just never fails you. It's just such a solid thing that just sits there and works and tries to not cause you bugs because we get a lot of support tickets. And so, if we solve the root of that support ticket, then we don't get that support ticket anymore.
+And if you do that a thousand times, you have this app that people understand.
+[00:34:25] Dave: And then our company of 7 people can continue to be a company of 7 people or whatever.
+[00:34:30] Chris: Yeah. And that's, and that, that isn't losing their mind. You know?
+[00:34:36] Todd: Yeah.
+[00:34:37] Dave: Yeah, yeah.
+[00:34:37] Chris: Thanks for asking.
+[00:34:38] Todd: So, yeah, yeah, definitely. I know listening to the podcast, the last episode you guys did, and I'm a frequent, checker of lineups on the Event Apart website.
+I know you'll both be both, you'll both be, get my English right today, in Seattle, in April, and can you give us anything about what you're going to talk about? I know that, you know, Chris, you're going to be talking about front end dev and Dave, you're going to be talking about web components is there anything that you can go in a little bit of detail about those talks?
+[00:35:09] Chris: Yeah, we got an email, a bummer email yesterday that said, they're gonna, they're going to pull that sucker online. Which is everybody's a little bummed out about, but, or, or maybe they're very happy about it. I don't know. I'm a little bummed out just cause I've been, you know, just from a mental perspective of like, oh my friends, you know, I don't want to put anybody at risk or anything, and this was a very risk-based decision.
+So, so, so be it in that way, but yeah, it sounds like we're going to be pointing the camera at ourselves one more year. Yeah. Dave, you go.
+[00:35:38] Dave: Yeah. Well, so I'm going to, so, I guess it was like, I've written about web components before, or like quite a while ago, but last year I joined the web components community group, which is a W3C group, kind of trying to fix all the, how should I say politically marketing problems that, have arisen from the overzealous, sort of evangelism, from certain browser companies about web components.
+And so, I've joined this group and, you know, I just, for me, like, I look, I, I was kind of a late adopter of JavaScript based systems, like component systems. Why didn't I use web components? You know, like, they're basically that, but in native platform level stuff, there's a few reasons. And, and I kind of go over that in the talk, but it's really just kind of like looking at the, this is HTML.
+They, they, you write your own custom elements with, with web components or not, but like you write your own custom elements, and you can give HTML, you're still offering in HTML, you're still using HTML. You're still using like native JavaScript DOM. You're not using like a virtual DOM you’re; you're just using HTML as Sir Tim Berners-Lee intended.
+And you, and I, I feel like there's a lot of advantages to that. So, I'm basically doing a web, a, a talk about web components in the way I feel like I understand web components first. Like I do it from my concentric circles. Like first, like the base is like HTML understanding how, how do I even use a web component with just HTML?
+And you can import a script tag and use the element, any like web component on the web should work kind of like. and then the second question I have is how do I style an element with CSS? And this is maybe the one that the biggest gotchas with, with web components is how to style them, because it can be a major foot gun.
+And then level three is like, how do you write your own custom element with JavaScript? How do you make your own web component with JavaScript? And there's a, it's not the nicest API, like, like for coding, like way to like program a component. but there's libraries and it is actually designed to have libraries built on top of it.
+That's one thing you got to know, so that there's libraries to help you author these things a lot easier and, and, and kind of make sense of things in a really, nice way. So, so that's kinda what I go through in the talk, and then I'm actually going to do a workshop too for front end masters and kind of on the same topic.
+So that’ll be a more like, let's get our hands dirty and do this kind of thing, but yeah. So, I'm excited
+[00:38:33] Chris: Web components
+[00:38:34] Dave: to talk about it. I think it's a big year for web components. That's what I'm saying. So.
+[00:38:37] Todd: Yeah.
+[00:38:38] Chris: I think that's cool. I think what's cool about them. I think especially is that they ultimately, they win and that we've been both of us getting highly critical of aspects of them over the years.
+And yet they here they are. And now that they're in the web platform, they cannot go anywhere. The web doesn't just remove stuff like that.
+[00:39:00] Dave: Yeah
+[00:39:00] Chris: So here they are. And it's not even to get used to them, is that they literally are getting better.
+[00:39:06] Dave: They are getting better. And you know, I think the shadow Dom, which is a part of web components, it's, it’s like the encapsulation, like the, I think of it as like a shell of an egg, you know, things don't go inside of it, and nothing leaks out of it.
+The, the shadow Dom there, it was confusing. But I think at this point when you see all the developer tooling built around, like preventing bleeding and, and creating encapsulation and stuff like the style and components, all this stuff. Like, guess what it's all built in into the shadows. It all exists. And we can use it today. There’s a few
+[00:39:44] Chris: Probably it’s top strength, right? All that encapsulation.
+[00:39:45] Dave: Yeah, and now it becomes a superpower. Right. Whereas when it first came out, it was like major foot gun. But now it's kind of, it's superpower it's that no other component systems have this, they could, but then they would basically be web components.
+So, but it might be a cool thing for JavaScript framework to like turn it off and on. That might be a cool thing, but they don't. So
+[00:40:08] Chris: Yeah, certainly there'll be a bunch of accessibility considerations, cause it's like, wow, there's all these little DOM’s stitched together. I hope they behave. I hope nobody even notices.
+[00:40:17] Dave: Yeah. Fingers crossed
+[00:40:18] Todd: Yeah
+[00:40:19] Dave: And, and you know, there's a few gotchas. With accessibility. And there's like, focus management is kind of hard. Like if I go tap, tap, tap, and then I opened like a emoji picker, guess what? The focus where's the focus go. And then how do I remember to go back to web component link 400?
+Because my web, my web component, when I hit close, I can't go back to document.active.development or like, I guess, document that previously active element. I don't know. So, like, you have to, focus management is hard in JavaScript, and now we have these kind of boundaries to kind of jump through. People are working on it, and I think it's possible, but it's just that like gotcha.
+Where it's like not, it's hard and it's also hard in web components, I guess it'd be how you, and then like form data. Like, like one thing you would do is my input element. Right? And my input takes label as a attribute. And then in my web component, what spits out is a label and an input. Right? So, or my text area spits out a label and a text area.
+[00:41:25] Chris: Sure, React people do that all the time. Make one input that spits out both, you know?
+[00:41:29] Dave: And we can do like error handling and stuff in there too. Like, so it's like, boom, boom, boom. Like all like all encapsulated into like one element, right? One little line of HTML.
+[00:41:40] Chris: Yeah, but how does it tell its parent form the data that has to send?
+[00:41:43] Dave: That, that, so that's the problem is like the first gen couldn't. And so, like the form would just be like, I don't don't know what you mean, so, but now you can use this thing called element internals. So, it's like, if you write an input in your web component, it'll like, like grab the idea of a input, attach it to that behavior.
+But then there's another thing called form data. So, like, you know, when you're like, I don't know if you guys don't know if your audience has ever done this, but like when you submitted a form in like PHP land and you'd like in PHP, you'd like echo post or something. And like, just, just see what it was sending.
+Cause it sends like a formatted sort of array. So now you can, like add data to the form data, which is what posts, you know, which is what the form is going to send when you hit submit. So, kind of like a React component or, or, or like you're just building up JavaScript a job you're just adding and removing from a JavaScript object.
+You're not like, I, I don't have to like manipulate some weird whatever variable that then I have to then intercept and spit at. You know, it's like, I just add and remove to this form data object. So, it's, again, this is not my, like, I need to like really hone in, especially if I'm doing a workshop on it, like how this all works and, and how, cause my brain is always like, how does it fail exactly.
+Like why do web components and react and posts not quite work. I'd really like to know. but anyway, so I need to like, get more exact on this, but there's just a few gotchas and accessibility world, so
+[00:43:28] Todd: Yeah
+[00:43:29] Chris: No doubt.
+[00:43:30] Todd: So, I got to ask these questions because I’m kind of curious. Chris, why would you rather be a graphic designer?
+[00:43:45] Chris: That's just jealousy based. Why, you know, when you see some like great design, you know, that like it, like in the end, it looks obvious, but it's so, it's so beautiful and so cool. It feels like that's like; I just wish I could do that. It's like jealousy, you know.
+[00:44:05] Todd: Yeah,
+[00:44:06] Chris: Like, oh my God, it's so awesome. I wish that was my, that was my, I wish I could do it. That's all really.
+[00:44:12] Todd: Yeah
+[00:44:13] Chris: I don’t know the money is quite there.
+[00:44:16] Todd: That, that's how I feel whenever I look at Dan Cederholm’s fonts that he's releasing, and it's like, it’s yeah, yeah, I know the feeling so.
+[00:44:27] Dave: He’s prolific. He, everyone, everyone he makes, I'm just like he made another good one.
+[00:44:34] Todd: Yeah.
+[00:44:35] Dave: Does he make bad ones that I don’t get to see?
+[00:44:36] Todd: I don’t know
+[00:44:41] Dave: And so, you should message him.
+[00:44:42] Todd: I don't think so. I've had him on and, we talked about his fonts and then I think shortly after that he released another one and I'm like, man, I, I, I think I might be keeping him afloat with all the stuff I buy from him.
+[00:44:56] Dave: We need to get on the affiliate. get those affiliate links going.
+[00:44:59] Chris: I gotta go listen to that but did you ask him about the it feels like such a, I dunno, there's like infighting and stuff in that world. Just like there is in any other, you know, people getting snarky with each other and stuff.
+And I feel like a criticism I've heard, you know, like why, why, you know, why don’t you just grab a font off DaFont, whatever there's a million fonts on there they look great.
+And you, and the reason that you don't is that people are like, well, they just, they don't, you know, like care, isn't quite put into them in the same way. And even if they are the chances of it just being like, just like the English capital letters are pretty high and that there's no way they thought about the same way that you got to think about accessibility and internationalizing, a website, you kind of have to deal with that for, for a font too.
+Like, isn't it unfair if you have a special accent character in your name, but you downloaded some font that just doesn't have that or worse it just maps it to that character that doesn't have the accent character on it in some way?
+And so, it's, I'm not trying to like call out Dan, but I wonder what he thinks about stuff like that? Or maybe his fonts, like just absolutely have every single possible character that matters like that. Or does it kind of not matter when it's just a novelty font or what?
+[00:46:15] Todd: I, I, I don’t know about the, the, the novelty, you know, he has a couple, maybe a few actually that I can think of that have their, they have a pretty extensive, special care, I guess lineup
+[00:46:32] Chris: Right.
+[00:46:33] Todd: you could say, I mean this last one, that the, the Cartridge one, and then there's,
+[00:46:38] Chris: He's got one called Captain Edward that looks super cool.
+[00:46:41] Todd: Yeah
+[00:46:42] Chris: And just a, just a cursory glance. He's got all the accent characters in there.
+[00:46:45] Todd: Yeah, yeah.
+[00:46:45] Chris: You know?
+[00:46:46] Todd: I mean, he's, he's very thorough and that he's probably got them all covered. I have them all and I should know this, but,
+[00:46:56] Dave: And I think it's too, like, it's, you know, we, we’ve at Paravel have like worked with a couple typographers, like people who make high-end fonts. And I tell you that these are not, not always, but like, it takes like a bit of type a, like I'm going to make this really good.
+Like, because you kind of are in a situation where like you ship it once and it goes out to a million people and they'll either use it or not use it or yell at you. If it's something's even, you're talking, you're sending it to designers who are the dorkiest dorks about fonts. And they're going to have to, they're going to give you feedback on the S because the whatever curvatures 8.3 degrees off on the S and will, woah.
+[00:47:47] Todd: They, they go all in on the, on the, on the critique.
+[00:47:51] Dave: Yeah. I mean, have you ever watched, what is that logo? The brand, where they review the logos. They're like when somebody does a logo redesign and they, they like compare the logos.
+[00:48:03] Todd: Oh, I know what you're talking about too.
+[00:48:04] Dave: I, I can't remember anyway, ah, there's a website for anyway, people just, just give the most nuanced feedback like anyway, anyway.
+[00:48:18] Todd: So, now I got one more question for you, Dave and how good is the Japanese?
+[00:48:21] Dave: [Speaking Japanese] So I have like over the last 15 years since I've left Japan, like slowly forgotten all my Japanese and it's getting worse and worse and worse. and I don't know what can you do? That’s
+[00:48:48] Todd: Yeah
+[00:48:49] Dave: maybe I, you think like I learned a language and I should know it forever. But that's not how human brains work unless you learn it before the age of seven. So, so I should, I don't know. I, I ideally like I could get into some like Japanese conversation or something like that regularly, but I promise you
+[00:49:07] Chris: Watching anime doesn’t help?
+[00:49:09] Dave: Watching anime does a lot, which is fun because I just watched one, which this is a new anime podcast now called Ko, Komi Can’t Communicate.
+And it's about this, girl high school student who has a huge fear of public speaking or talking to anybody that's on Netflix. But, anyway, so she writes a lot of her like notes and so she like write in a notebook and show it to the person.
+And I did a lot of like pausing to like read the actual note and then read the translation and kind of judge what I thought about it. And so that was kind of, that was fun. So, the anime helps I get into the more Japanese mood. If I watch anime, I get more like.
+[00:49:51] Chris: I bet.
+[00:49:52] Dave: It's, it’s exciting. And I love, I, I like, there's a lot of nostalgia. [Speaking Japanese]
+[00:49:59] Chris: Yep
+[00:49:59] Nostalgia about a J Japan itself inside anime. So
+[00:50:05] Chris: We should go. I should make you; we could drive around Japan on trains.
+[00:50:10] Dave: Oh, that would be so great because, we'll, we'll have fun. So, I know some Japanese drinking songs we're going to be in good shape. We’ll be, they will be the, it’ll be a good time.
+[00:50:23] Todd: Yeah. And you can do a Shoptalk show from the Tokyo Dome.
+[00:50:26] Dave: I know they haven't called us, but I guess they will, we should put a broadcast out. So, if anyone wants us to come to Japan. So.
+[00:50:40] Todd: So, as we come down on time, I want to ask these three questions. I ask all my guests when they come on the show. So, I will ask you, number one is, and you know, short answer, long answer, it doesn't matter.
+What about the web these days excites you and keeps you excited in what you do?
+[00:50:59] Dave: Hmm, good question. Well, I think the tooling is getting better, like we said, and that's actually how I live for the day where it's easy to make a website again. So, I want to do that. I don't know, the thrill of self-publishing is still there for me. I don't know if it is for y'all, but just that you hit publish and it's out, you know, couldn't do that before.
+[00:51:22] Chris: And that was such a good one.
+[00:51:24] Dave: Not with books or music or any, you know, like, but now guess what I click save and it's out, you know, and that's too cool.
+[00:51:34] Chris: Truly, truly, truly, I'm still just so like, curious if, it’s weird to say this, but is the web going to win? Which seems like a weird question. Cause you're like, I dunno, how could it lose.
+But you're like, I feel like it could, it could still lose somehow to some, some deeper play into native apps or some, you know, some weird takeover of Metaverse crap. If the, if, you know, it turns out the Zuck was actually right somehow, and that's, that's all we do now is just that or whatever.
+[00:52:12] Todd: Yeah
+[00:52:13] Chris: And then websites don't make their way into that world quite well, enough that they get forgotten or whatever, whatever it will be, it would be a long, slow decline, but it doesn't seem like that.
+Is that where the web is headed or is it, this, is it on the way up? And I kinda want to, I like, like I, something about me makes me want to fight for it in a way that's hard to articulate, you know, because, it's not even like, my career is attached to it, but it wouldn't have to be necessarily, I'm sure I could do something else valuable in the world of computers or, or something else, you know, but I don't want to, I like, I'm excited about like sticking up for the web and making it and making it better.
+[00:52:57] Todd: Yeah, definitely. If there were one thing you could change about the web that we know today, what would that be?
+[00:53:09] Dave: Hmm, man, these are tough ones. I'm going to go. Okay. I'm good to go. A controversial. I think we need to radically eliminate some of the nuance from accessibility. So, I, I think like there's a way too many questions for your average Joe or Joanne developer to know, or, or designer for that matter. And, and so it just needs to be simple in like, anyway, I'm, I’m hopeful, like it's, those questions are in, and there are situations, of course he can't answer, you know?
+But it would just be really cool to have kind of sorted out. So, yeah.
+[00:53:52] Todd: So, if there were one thing you could change about the web that we know today, what would that be?
+[00:53:54] Chris: I kinda want to pick on Dave and be like, yeah, I wish I liked web components. Like a little more than I do.
+[00:53:58] Dave: Let me, how would we make them better? What needs to be better?
+[00:54:04] Chris: The, well, the HTML instantiation would be nice. Having an official styling story would be nice. Like a, I don't know.
+[00:54:16] Dave: A global styling story, like a
+[00:54:19] Chris: Yeah, but an internal styling story and an external styling story that needs 2 stories. One of them is, well, how do I normally write CSS that doesn't leak out?
+And that CSS does doesn't weaken. Cause I think that's a good default, but then what's the official way of reaching inside a web component. Right now, there's a bunch of ways. There's the custom properties way and there's the part way. And I like, don't like either of them, I want there to be the like, I'm know what I'm doing way.
+Just let me reach inside this thing way. At least that's like opt in. You know, isn't there this concept of like, there's an open shadow DOM and a closed shadow DOM. But to me they're like, meaninglessly different and I don't get it.
+[00:56:32] Dave: Yeah, it only makes sense to people who, not even me Google it,
+[00:56:37] Chris: It feels like in the weeds but the reason I'm saying this is because I think digital products should be built with components.
+And I don't want to reach for a third party stuff to deliver me the DX of just the concept of using components in isolation. I think the web platform is absolutely at its best when those big things are answered by the platform itself. And that's the promise of web components. I get stoked about them when Dave talks about them.
+And sometimes I struggle to explain exactly what I wish was better. And so, some of it's just like a weird gut feeling thing. Maybe some of it's just better marketing or whatever, like Dave said, but I think that would be a big deal for the web is if somehow, I was like stoked about it. And it was my default choice was like, oh, of course, I'm going to wire up this website with components, but I just made this little, like dumb little website about breakfast burritos.
+Right? And it's all, it's just simple. It's just some markdown files. And the markdown files turn themselves into card components on a web, a grid of cards. And that's it. My brain didn't go, oh, obviously those cards should be a web component in my mind. I was like, I'll just do it in Astro, because Astro will just make a real basic, you know capital c card component that'll take some props and the, like the designing story of that is great.
+And I can just put a style tag in there and it'll scope the styles too. I was just kind of how I prefer to operate even on little, one little baby websites and that tool solved the job for me in a way that I wish I didn't have to use any tool.
+[00:56:38] Todd: Yeah. The last question I have, for today, is this a favorite part of front end development you really like to nerd out over?
+[00:56:51] Chris: I like CSS tricks.
+[00:56:55] Dave: Good answer. Good answer.
+[00:56:57] Todd: Exactly
+[00:56:57] Dave: Good answer.
+[00:56:58] Todd: Yeah.
+[00:56:59] Dave: That's a good one. I, you know, I don't know for me, I have so many different, I think just through client services I’ve like messed with like almost every piece of the web platform, you know. And, and there's really weird ones. I wish I spent more time in like Canvas or something like that, you know, or, or the Web Audio API or something like that. So, Yeah, that's interesting. I don't have a really good answer. So, I do like,
+[00:57:26] Chris: We have a whole podcast on, so we get to, we get to nerd out all the time.
+[00:57:29] Todd: Yeah.
+[00:57:30] Dave:  I do like web performance. I like thinking about what performance I like measuring web performance. So that's maybe something I, I geek out on quite a bit, but, or like, want to know. So
+[00:57:42] Todd: Yeah, yeah
+[00:57:44] Dave: Like did a new web design website builder come out and did I run perf tests on it today? Yeah. Did I spend way too much time?
+Yeah, I did. Did they only score 76? Yep. So, so I just, the stuff I do is, I don't know. I'm just like, I don't know. I like, I like it. I like, like to measure that stuff. So.
+[00:58:07] Todd: So, I like to close the podcast with letting my or letting my guests know, let the listeners know what they currently have going on and where people can find you.
+So, and I know that, I don't know, maybe all seven people that listened to this podcast now there's more than that actually, but know you fairly well, but yeah. What do you have going on? Where can people find you?
+[00:58:30] Dave: I can go first. I'm DaveRupert.com and DavaTron5000. D A V A tron5000 on Twitter, GitHub, et cetera.
+And I'm, working on an app called LuroApp and you can check it out again there's not much to, see right now, but hopefully soon, so,
+[00:58:50] Chris: Yeah cheers, Chris Coyier. My name C O Y I E R. That's me on twitter.net a well as my personal website. That's me on CodePen and all the stuff. I'm a big username kind of guy.
+It's just been, it’s tricky, you know, it's like not cool on, on Reddit. It's like not cool on the web 3 world, you’re not supposed to use, you're not even supposed to use your own faces as an avatar anymore. I'm thinking it'll swing back though. I'm like, come on. Personal brand personal brand, right?
+[00:59:17] Dave: Trust, you got trust. Yeah. Also, we do YouTubes. We started doing YouTube around the Real CSS Tricks YouTube channel. So, if you like coding videos, we do those now. So awesome.
+[00:59:29] Todd: So, I want to thank you both for coming on today and sharing part of your day with me and answering all these questions, it has been a pleasure talking with you both and having you on.
+[00:59:43] Dave: Thank you
+[00:59:43] Chris: I think it’s all ours, I’ll speak for everyone
+[00:59:46] Dave: Thank you.
+[00:59:48] Todd: And thank you listeners for tuning into the Front End Nerdery Podcast. I'll be back next time with a new guest, new conversation about front end design, development or other topics. If you'd please rate this podcast on your podcast device of choice, like, subscribe and watch on the Front End Nerdery YouTube channel. Links to transcripts and show notes are there. I'm Todd Libby, and this has been the Front End Nerdery Podcast. Thanks. And we'll see you next time.
