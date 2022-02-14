@@ -1,7 +1,7 @@
 ---
 title: Front End Nerdery Podcast Season Two
 description: List of podcast transcripts by season.
-date: 2021-01-19
+date: 2021-02-14
 layout: layouts/post.njk
 ---
 
