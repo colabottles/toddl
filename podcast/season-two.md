@@ -9,4 +9,4 @@ layout: layouts/post.njk
 
 [Jason Pamental](https://toddl.dev/podcast/transcripts/pamental)
 [Anna E. Cook](https://toddl.dev/podcast/transcripts/cook)
-<!-- [Shop Talk Show](https://toddl.dev/podcast/transcripts/shoptalkshow) -->
+[Shop Talk Show: Chris Coyier & Dave Rupert](https://toddl.dev/podcast/transcripts/shoptalkshow)
