@@ -10,4 +10,4 @@ layout: layouts/post.njk
 [Jason Pamental](https://toddl.dev/podcast/transcripts/pamental)
 [Anna E. Cook](https://toddl.dev/podcast/transcripts/cook)
 [Shop Talk Show: Chris Coyier & Dave Rupert](https://toddl.dev/podcast/transcripts/shoptalkshow)
-<!-- [Molly Holzschlag](https://toddl.dev/podcast/transcripts/holzschlag) -->
+[Molly Holzschlag](https://toddl.dev/podcast/transcripts/holzschlag)
