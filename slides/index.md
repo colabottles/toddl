@@ -1,8 +1,8 @@
 ---
 layout: layouts/links.njk
-title: Uses
+title: Slide Links
 date: 2021-04-03
-permalink: /links/
+permalink: /slides/
 templateClass: tmpl-post
 ---
 
