@@ -11,4 +11,4 @@ layout: layouts/post.njk
 [Anna E. Cook](https://toddl.dev/podcast/transcripts/cook)
 [Shop Talk Show: Chris Coyier & Dave Rupert](https://toddl.dev/podcast/transcripts/shoptalkshow)
 [Molly Holzschlag](https://toddl.dev/podcast/transcripts/holzschlag)
-<!-- [Chris Ferdinandi](https://toddl.dev/podcast/transcripts/ferdinandi) -->
+[Chris Ferdinandi](https://toddl.dev/podcast/transcripts/ferdinandi)
