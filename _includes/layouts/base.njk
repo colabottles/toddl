@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml">
-    <link rel="icon" href="{{ '/img/favicon.png' | url }}" />
+    <title>{{ renderData.title or title or metadata.title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}" />
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml">
+    <link rel="icon" href="{{ '/img/favicon.png' | url }}" />
   </head>
   <body>
     <div class="wrapper">
