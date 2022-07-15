@@ -1,0 +1,384 @@
+---
+title: Kayla Sween
+description: My Interview with Kayla Sween
+date: 2022-09-09
+layout: layouts/post.njk
+---
+
+## S2:E8
+
+[00:00:00] Todd Libby: Welcome to the Front End Nerdery Podcast, a podcast about front end development and design. I'm your host Todd Libby. My guest today is senior JavaScript engineer, power lifter, dog mom, speaker, and my twin cause we were born on January 23rd. Kayla Sween, Kayla, how are you today?
+[00:00:22] Kayla Sween: I'm doing good. How are you?
+[00:00:23] Todd: I'm doing well, thank you. Would you tell us a little bit more about yourself?
+[00:00:27] Kayla: Yeah. Well, like you said, I'm a senior JavaScript engineer at, I guess technically we're Nelnet Community Engagement now, but I work on the Aware3 platform. And they're, yeah, a really chill company doing stuff for churches and nonprofits and schools.
+So, it's a good place to work. Shameless plug there. But yeah, currently doing that. Organizing the next Magnolia JS. And that's pretty much my whole life right now.
+[00:00:53] Todd: All right. Well, let's dive right into the questions then. So how did you get started in your web development journey?
+[00:01:01] Kayla: Well, I had the traditional path. I went to school for computer science and, you know, graduated did that. I did start my master's degree cuz I thought I wanted to be in academia. But when I was getting my master's degree, I got a job doing front end development and with a UX group and I learned that, well, a, it is much nicer, you know, having money than going to school all the time.
+And B it's like I felt like I was learning a lot more on the job than I ever did at school. So, yeah, I stopped getting my master's degree and the rest is history.
+[00:01:34] Todd: Well, let's actually talk about Magnolia JS cuz that's why I wanted to have you on. It's one of my top five conferences even though I haven't even been there. The
+[00:01:44] Kayla: You and mostly everybody else at this point out, be like there's so much hype.
+And then like we, we only had one in prison event before everything got shut down, but yeah.
+[00:01:53] Todd: The, the virtual conferences were great. You gave a talk at the one in 2019, which I stood up. I literally got out of my office chair, cuz you spoke about, or you gave a talk called, How to Avoid SUX. And I literally, when I saw the words accessibility on that slide, I stood up out of my chair and I gave you a standing ovation because I was just somebody's talking about this.
+Okay. And I was like, heck yeah. You know, and then 2020 you talked about progressive enhancement for React. And again, got me outta my chair. Cause you know, someone's talking about, you know, progressive enhancement and accessibility at a JavaScript conference and I loved it. So, my question is what would you tell JavaScript developers about the importance of those two things, accessibility and progressive enhancement?
+[00:02:49] Kayla: Well, I mean, I, I feel like you could speak to that better than just about anybody else as to why it's important. But yeah, it just knowing that if you're not thinking about like different types of users when you're developing stuff and even when it ties into progressive enhancement is like users with like, you know, lower, slower network speeds or just stuff like that.
+I live in Mississippi. So that's a, a real problem because you know, a lot of Mississippi is rural.
+[00:03:20] Todd: Yep
+[00:03:20] Kayla: And so yeah, we might have like some people on like 3g connections still, who can say. But yeah, you need to make sure that your, your stuff's gonna work for as many people as possible. And yeah, making sure that your JavaScript code is accessible is a good way to do that.
+And also making sure that you're doing as much as you can with like, I don't wanna say the bare, you know, technologies, but like, make sure you're doing as much as you can with like HTML and CSS and like using it properly and not just shoving, like Aria rules on stuff.
+[00:03:49] Todd: Right
+[00:03:49] Kayla: You know, is a huge thing. And even like if you can move your web app into like some kind of static site generator to make it load a little faster on the client side, that's even better.
+[00:04:00] Todd: Yeah. Now how about the importance of implementing accessibility from the start of any project? What would you, what would you say about that?
+[00:04:08] Kayla: Well, cuz I I'm sure you're super familiar with this and anybody else who, you know, has worked in accessibility for any amount of time, but like yeah, nobody ever really thinks about it until either the tail end of it or they're about to get sued. And so yeah, it's a lot harder to refactor stuff.
+Because, I mean, accessibility starts from the design of the site.
+[00:04:30] Todd: Yeah
+[00:04:30] Kayla: Like laying out the content in a way that makes sense and making sure that the colors that your design team pick out for buttons and headings and links and whatever all makes sense and hit the sufficient color contrast and things of that nature.
+So, I mean, once, once you start thinking about that stuff after the site's implemented and after you've already made all those decisions, well, it takes, if nothing else, it's just so much more work to try to do it. And at that point, nobody wants to do it anymore.
+[00:04:58] Todd: Yeah
+[00:04:58] Kayla: And so that's, I mean, that's the biggest thing is like, if you don't do it at the beginning, it's probably not gonna get done.
+[00:05:04] Todd: Yeah, definitely. I've seen, okay. A lot of, like you said, a lot of people wait until they get sued. And now, especially with accessibility overlays, people are getting sued and now they have to go back to the drawing board and say, okay, we gotta take this off. And we gotta, you know, go back and redo things.
+And I've in my experiences talked with stakeholders and, and you know, managers and they've been like, well, we just don't have the time or the budget. Well, yes, you do. Because if you implement that from the start, you know, and, you know, carry that through, it's already there. You're paying your people to do the work.
+And if you have to, if you're gonna wait until the end, then you gotta to pay those people again, because they gotta go back and fix things. So
+[00:06:09] Kayla: Yeah, basically double.
+[00:06:11] Todd: Yeah
+[00:06:11] Kayla: You're doing double the work. Yeah, exactly.
+[00:06:13] Todd: Yeah, yeah.
+[00:06:14] Kayla: Yeah.
+[00:06:15] Todd: It's funny, cuz I talked with one person, and I've mentioned this before on the podcast and I said, When I was working for this company, I said, well, we gotta make sure everything's accessible.
+Cuz, they had a SAAS product, and they had a public facing website and the answer to, or the reply to what I said when I said, you know, we gotta make things accessible. Well, we don't have disabled users. And
+[00:06:42] Kayla: I've been told that before.
+[00:06:44] Todd: Yeah.
+[00:06:45] Kayla: Yep.
+[00:06:46] Todd: Yeah. And it, I just, I, it, it doesn't, I guess surprise me, but it kind of, well, it's kinda, it, it doesn't surprise me, but it shocks me a little bit still, you know, how can anybody think that?
+And then of course you get, you go into the whole situational thing and blah, blah, blah.
+But this person I was talking to, they had eyeglasses on. I was like, well, your eyeglasses are in assistive technology. So, you know. Do you find that you hear from developers the same thing, or have you, you know, anybody that you pretty much, you know, had to deal with this for, or as that goes, have you heard, you know, you know, things like that before?
+[00:07:34] Kayla: I've mostly heard things like that from like product owners. So, I think from a, a lot of the developers I've talked to about this kind of stuff is like it's not really a like, it's not a malicious thing or anything that they have, didn't want to do the work. It's just that a, they didn't know that they were needed to.
+And B they, of course did not know how. And it's also, I mean, it's kind of daunting when you get started. Right. It's like, there's a lot, the WICAG spec is a lot and hard to read.
+[00:07:56] Todd: Yup
+[00:07:56] Kayla: And, and I mean, cuz yeah, I have ADHD. I'm not gonna sit there and, you know, read through that whole, whole spec cuz I just will not get through it.
+[00:08:03] Todd: Right.
+[00:08:03] Kayla: And so like, yeah, it's a lot of the develop from a developer standpoint. Yeah. I haven't had a lot of it. Hasn't been a hard sell, I guess. It's just a lot of, well, how do I do that? And then it's just kind of training out old patterns to, for the most part. It's just like, yeah, you can put a click listener on a button, but like, I mean, on a div, but like why not use a button instead?
+[00:08:24] Todd: Right.
+[00:08:24] Kayla: Kind of thing. And that's like, yeah, that's just, that's been, the biggest thing is just like little, little tricks here and there just to like kind of, you know, tweak, tweak patterns that they have developed over time.
+[00:08:35] Todd: Yeah.
+[00:08:35] Kayla: But yeah, it's mostly been product owners that have just been like, no, we don't have the time to do that.
+No, we don't have any disabled users. You know, no, this isn't, this isn't a thing that affects us, even though it absolutely did if they had listened to anything I had said before that but
+[00:08:52] Todd: Right. Yeah. Do you think developers, you know, no matter what they are Full Stack, you know, JavaScript, whatever, do you think they undervalue accessibility or is it a lack of, I guess for, you know, a lack of education on about accessibility?
+[00:09:12] Kayla: I mean, I think it's a little bit of both. I think it's just like, cuz you know, it, like I said, it does seem like a lot of work at the beginning. I mean, whenever you get down to it, like it, it kind of is right. Just trying to make sure that you're actually just double checking the color contrast of stuff, making sure that you're in a lot of that design decisions made by not, not developers, but make sure the content makes sense on the page and like in that right layout and I mean, making sure that you can actually navigate to everything on the page, via the keyboard or via a screen reader or whatever.
+But, yeah, it's just, I think, I think it's a, it is mostly an education thing. It's like, whenever people hear about accessibility, they don't, you know, they think it's a lot of work and they don't really know how to get started. And I think as much as people don't, you know, wanna go handhold developers into doing that kind of stuff.
+I think that's what it's gonna take. And especially in, in the developers, like day to day cuz if they don't have anybody at the company, like showing them tangible things that they can change to make something better, then it, that, that becomes a lot harder. So yeah.
+[00:10:10] Todd: Yeah. And I know, you know, being a developer myself, not as much anymore.
+But in the past, there's a lot to learn.
+[00:10:21] Kayla: Oh yeah
+[00:10:21] Todd: There's a, there's a lot to, especially now. So, for instance, it's a lot different today, I think, than it was, let's just say 20 years ago when I was doing PHP development. I didn't, you know, there, there wasn't, you know, there wasn't MPM or YARN, there wasn't, you know, Netlify there wasn't, you know, GitHub wasn't around.
+I mean we had versioning control, but you know, it was what was it? Subversion and
+[00:10:50] Kayla: Oh my gosh, I used SVN when I started too yeah.
+[00:10:55] Todd: yeah.
+[00:10:55] Kayla: It was rough.
+[00:10:56] Todd: So, so you know yeah, you know
+[00:10:58] Kayla: and TFS,
+[00:10:59] Todd: Yes
+[00:10:59] Kayla: that was the other one that I started with.
+[00:11:00] Todd: Yeah. So, the, the tools are a lot different. There's a lot more to learn. There's all these different frameworks, there's all these different, you know libraries and I think it is both a lack of education and, you know, it's, it's undervalued, you know, it, it on my day to day
+[00:11:23] Kayla: and I'm sure, I'm sure they feel like it's not a money maker for them, right?
+[00:11:26] Todd: Yeah
+[00:11:26] Kayla: Like I get paid to write JavaScript period, the end.
+[00:11:31] Todd: Right
+[00:11:32] Kayla: And like,
+[00:11:32] Todd: yeah. Yeah. I don't, I get paid to, to write JavaScript I feel like I don't have to go any further than that.
+[00:11:41] Kayla: Right. Yeah.
+[00:11:43] Todd: So, it it's, and, and sometimes like in my day to day, when I look on Twitter and I see, you know, why do I have to do this? Or why do I have to do that? Well, I have told people before, that you know, it's not, you you're designing the product for. You that you're writing the code for. It's the user, the other people, you know, the people that are using the product, so, or buying the product even.
+So, yeah.
+[00:12:16] Kayla: I think that's the biggest thing that like for people in general is not being able to, you know, separate their experiences from everybody else's. And so, I, I mean, if, if the pandemic has taught me nothing else, it's, it's that, you know, people were just worried more worried about themselves than they are other people.
+[00:12:33] Todd: Yeah
+[00:12:34] Kayla: And that sounds really jaded to say, but, but it's, I mean, that's the way it is. And so, yeah, it's, it's not gonna be a priority for a lot of people until something happens to them. And I, I guess that's just an unfortunate truth, but it's just trying to find little ways to, you know, introduce it into their day to day lives.
+[00:12:52] Todd: Yeah
+[00:12:52] Kayla: That's as unobtrusive as possible. And like, yeah, I see a lot of people on Twitter will attack folks for, you know, for not doing stuff that's accessible and whatever. And it's like, I mean, having been the sole person at a company that cares about accessibility multiple times.
+You know, that's certainly not the way you can go about it. and actually, enact change
+[00:13:14] Todd: Right
+[00:13:14] Kayla: And I am a super aggressive person. Like I will, I'll just, you know, straight up fight with folks about stuff. About stuff I feel strongly about.
+[00:13:23] Todd: Yeah
+[00:13:23] Kayla:  So, I, I get, I get the want to do that, but you know, it's, it's the same thing is that you don't.
+And you don't really understand where those people are coming from and they don't understand where you're coming from and you just have to have to be able to kind of be open minded to their experiences and your, and you know, vice versa. So,
+[00:13:41] Todd: Yeah, and that, you know, you bring up a great point. So back let's just say again, 20 years ago was, it was the shame game, you know,
+[00:13:49] Kayla: Oh yeah
+[00:13:49] Todd: Shame on you. And it kind of still is today, but not, you know, I don't see the people I used to see doing it, doing it anymore. You know, it was, you know, shame on you, blah, blah, blah. And I mean, there are instances where, I mean, I think that it's valid to say, you know, you and I've done it recently.
+Shame on you. You're you have an accessibility overlay on your website. Those do not work. You're only putting up another barrier for disabled people. But then again.
+[00:14:19] Kayla: And I feel like that's even an ignorance thing, right?
+[00:14:21] Todd: Yeah
+[00:14:21] Kayla: It's like, cuz those companies are marketing to other companies saying
+[00:14:24] Todd: Yes
+[00:14:24] Kayla: This is what makes your website accessible.
+[00:14:26] Todd: Yeah
+[00:14:26] Kayla: When it clearly is not
+[00:14:28] Todd: Right
+[00:14:28] Kayla: So, yeah.
+[00:14:28] Todd: Yea, yeah. It's, it's not just a flip of the switch.
+[00:14:31] Kayla: I wish
+[00:14:33] Todd: Yeah, I wish too
+[00:14:36] Kayla: honestly.
+[00:14:36] Todd: Yeah, it would be nice. You know, it would be nice. So, you know, getting, I guess what, so I'll just, I think, yeah, I've, I've pretty much answered that question. You have anyway. My next question was going to be, I kind of go a little off track here, but.
+[00:15:02] Kayla: No worries
+[00:15:02] Todd: What kind of, what kind of tools or things that, that are you're using that you're working with, that you would recommend to people, to devs and, or even devs like me who, you know, I, I, I'm not doing it really professionally, but I'm kind of doing things on the side to learn to, to under. Basically, for the accessibility knowledge about the say Next, or, you know Svelte for instance, just, you know, throwing those out there.
+You know, people like me that are learning different technologies for whatever reason, what, what are you using that you highly recommend?
+[00:15:38] Kayla: As far as like tools for accessibility stuff?
+[00:15:41] Todd: Tools for accessibility or even tools in general, really?
+[00:15:45] Kayla: Oh okay. Yeah. Well, for accessibility, I always go to the you know, the Jackson Black’s colorable for color contrast, classic.
+Well, not as classic as like the Web Aim one, but it I like it a little bit more now that I've gotten used to it.
+[00:15:58] Todd: Yeah
+[00:15:59] Kayla: And then like, even just like looking at some browser extensions for accessibility stuff, I like Dalton to like simulate certain things like color blindness and or like different kinds of color blindness.
+But like for regular tools, regular development tools, I guess like, I mean, my biggest thing right now is Notion.
+[00:16:19] Todd: Yeah
+[00:16:19] Kayla: Everything goes into Notion.
+[00:16:21] Todd: Yeah
+[00:16:21] Kayla: And I, you know, I'll forget anything and everything all the time. So
+[00:16:26] Todd: I know the feeling.
+[00:16:28] Kayla: Yeah, and yeah. Any notes I take on what, what I'm learning about or anything like that.
+Everything goes into Notion.
+[00:16:38] Todd: Yeah
+[00:16:38] Kayla: And so that's, that's probably like my, my biggest thing that I always plug, but yeah, but as far as like just development, development stuff, I mean, I'm just, I'm in vs code all day, every day. I'm, you know, yeah.
+[00:16:52] Todd: Yeah
+[00:16:52] Kayla: Yeah. Yeah. I don't, I don't use anything too fancy,
+[00:16:54] Todd: Yeah
+[00:16:54] Kayla: but I'm always looking to try out new stuff.
+[00:16:58] Todd: Yeah. Yeah. So aren’t I, I'm still using an FTP client, so, you know, I still use Filezilla on occasion, so
+[00:17:06] Kayla: Oh my gosh. Yeah. I yeah, I was doing that until recently because the hosting provider, my website was on was,
+[00:17:12] Todd: Yeah
+[00:17:12] Kayla: was kind of janky to be honest.
+[00:17:14] Todd: Yeah
+[00:17:14] Kayla: But yeah, it's thankfully I'm switched over to Netlify now.
+[00:17:18] Todd: Yeah
+[00:17:18] Kayla: So yeah. A lot better.
+[00:17:20] Todd: Lot easier
+[00:17:21] Kayla: So much nicer to not have to like start up WAMP these days, you know what I mean?
+[00:17:24] Todd: Yeah
+[00:17:25] Kayla: Like,
+[00:17:27] Todd: Yeah
+[00:17:27] Kayla: I don't even have to think about what is happening to get my code on a website now. And it’s amazing.
+[00:17:31] Todd: Yeah, definitely. So going back to Magnolia JS. You know, those two talks that we talked about before and then we met this year in person at Connect.Tech.
+[00:17:44] Kayla: Finally. Yes
+[00:17:45] Todd: Finally. And that was great. And it was safe for everybody. So, I wanna throw that out there. It was,
+[00:17:50] Kayla: Yeah
+[00:17:50] Todd: You know, everybody was, it was, a great conference
+[00:17:52] Kayla: and I’m super cautious. Like I, I, I'm, I'm the kind of person I won't go eat in a restaurant still. Like I've eaten in a restaurant once I think since the pandemic started.
+And that was like, May 2021, right after getting like fully vaccinated. But yeah, so I, I will not go somewhere if it, if I don't feel like it'll be safe. And so yeah. Connect.Tech was like that. Pratik talked me into, going into Connect.Tech at Render because I was like, I'm, I'm only going to Render cuz they're testing and because they're requiring vaccinations, you know, that's it.
+[00:18:22] Todd: Yeah.
+[00:18:22] Kayla: And Pratik was like, well, we're changing ours now. So. Think about it. And so, yeah, Richard and I decided to come Richard's my husband.
+[00:18:31] Todd: Yeah.
+[00:18:31] Kayla: And so, yeah, that will, and we intend to do the same thing at Magnolia too, as like, we're obviously still trying to find out logistics and stuff for and if we need to do daily testing, but we'll see, obviously feel out the situation.
+I would love to not have to swap everybody's noses when they come in. But
+[00:18:45] Todd: Yeah, yeah.
+[00:18:46] Kayla: And I will personally not be doing that. I'll note, like we'll hire, we'll hire an actual nurse to do that. I won't be doing it.
+[00:18:51] Todd: Yeah, yeah.
+[00:18:52] Kayla: But yeah, what. That's you know, that, that's my biggest thing with Magnolia. I'm not going to have Magnolia if I wouldn't feel comfortable going to it.
+[00:18:59] Todd: Right
+[00:19:00] Kayla: And yeah, cuz COVID is super serious to me, and I certainly do not want anybody to feel unsafe.
+[00:19:07] Todd: Yeah, definitely. So that was, I was actually gonna go into asking you, you know, what, what do we have to look forward to as far as Magnolia goes? And is it still gonna be in person? If you decide to say, okay, things aren't as good as we want them to be.
+Will you postpone it, or will you put it will, will you do virtual again?
+[00:19:32] Kayla: I would lean more towards postponing it than I would go virtual again.
+[00:19:35] Todd: Yeah.
+[00:19:36] Kayla: As, as fun as it was like, seeing everybody get their, like swag in the mail and stuff like It's just, it's hard to get sponsors for virtual events.
+Because, you know, just from, you know, financially because, and I get it. There's not a huge return on investment for them. They're not able to go meet developers and potentially do some recruiting and networking that they would normally be able to do. But yeah, plus it was just kind of chaotic, right?
+Like
+[00:20:03] Todd: Yeah.
+[00:20:03] Kayla: and I, I think people just don't care about virtual events anymore. I think that's really what it boils down to.
+[00:20:07] Todd: Yeah.
+[00:20:07] Kayla: Cause we had probably a third of what we had at the Magnolia JS 2020 just in signups just because yeah. I'm sure people have learned that. What, whatever, you know? So yeah, it's, it's important to me to keep, to have it in person this year.
+And if it, if worse comes to worst, then yeah, we will postpone it probably to the fall, if we can. Depending on the situation, I guess. But yeah, that's, and we'll, that's something I hope to have on the website soon is like all of our COVID protocols and yeah. The game plan in case something goes awry.
+[00:20:43] Todd: Definitely. And I definitely will be submitting a talk.
+[00:20:47] Kayla: And we won't have a CFP, but
+[00:20:50] Todd: Oh, you won’t, okay.
+[00:20:51] Kayla: I will, I will reach out to you though.
+[00:20:53] Todd: Okay
+[00:20:53] Kayla: Yeah, cuz it's just me and Richard doing this whole thing, so.
+[00:20:56] Todd: Gotcha.
+[00:20:57] Kayla: Yeah. I was like, CFP is not gonna happen.
+[00:20:59] Todd: Okay.
+[00:20:59] Kayla: I'm not gonna have the time for it, but
+[00:21:01] Todd: Yeah.
+[00:21:01] Kayla: I'm hoping to hire a team for next year so that yeah,
+[00:21:04] Todd: Okay.
+[00:21:04] Kayla: we will be able to have like a proper CFP and then
+[00:21:06] Todd: Right
+[00:21:07] Kayla: Open it up some more
+[00:21:08] Todd: Okay well, I'll look forward to hearing from you then. And
+[00:21:11] Kayla: Yeah, well, I was hoping to do it this week, but the, the venue is having issues cuz they
+[00:21:18] Todd: Gotcha
+[00:21:18] Kayla: they're having their grand opening this week. And also, the person I've been in contact with is sick. Cuz feels like everybody's sick right now.
+[00:21:25] Todd: Yeah.
+[00:21:26] Kayla: So that's it's kind of delayed my plans a little bit, but
+[00:21:29] Todd: So, did you have a time or, you know, a, a date range where, where you were gonna
+[00:21:36] Kayla: Oh, yes.
+[00:21:37] Todd: Okay. When would that be?
+[00:21:39] Kayla: So, it is if we, if we, for sure have it in May, which that is the current plan we're having it May 10th and 11th.
+[00:21:44] Todd: Okay
+[00:21:44] Kayla: So, it'll be a two day conference.
+And I'll go ahead and say, because that, I mean, that's, this is pretty finalized at this point, but we're gonna have it at the Capri theater in Jackson, Mississippi which is like, an old historic theater. It’s super cool in there. It's attached to a bowling alley. So, we'll have the bowling alley too.
+And we may have like a lounge next door to that as well, but we're still working on that
+[00:22:06] Todd: Okay
+[00:22:06] Kayla: on getting those final details, but
+[00:22:08] Todd: Yeah.
+[00:22:08] Kayla: Yeah. It's I'm really pumped about
+[00:22:11] Todd: Nice
+[00:22:11] Kayla: the venue, cuz yeah, it's like the, the inside's super cool. And yeah, I mean, it's just a theater. You've got like the recliners that theaters have these days.
+[00:22:19] Todd: Gotcha
+[00:22:19] Kayla: And there's like a, a table cuz they, they do kind of like an Alamo kind of thing where you can order food and they deliver it to your seat.
+[00:22:27] Todd: Okay
+[00:22:27] Kayla: And so, yeah, and then of course, if you get tired of, you know, seeing me or Kenneth LaFrance up on the phage, talking about talks, then, you can go hang out in the bowling alley, take a break a little while, talk to some sponsors and yeah.
+[00:22:43] Todd: Yeah, that sounds awesome.
+[00:22:44] Kayla: Very excited about that.
+[00:22:45] Todd: I'll have to, I'll have to inquire to see if they have any lobster or lobster rolls
+[00:22:50] Kayla: that that's on my list to things. The next thing, next time I'm gonna talk to them. We're gonna talk about catering and I'll be like, all right. Where's the lobsters, Todd needs lobsters.
+[00:22:59] Todd: Right. That'd be great. So that's, that's awesome. Definitely, you know,
+[00:23:05] Kayla: super excited.
+[00:23:06] Todd: The, the, I I'm sure the vibe will be the same as it was as it was virtual, you know, in person cuz. You know, like you said, you're very cautious. I'm very cautious as well. Okay. So, I have, I'm actually going to Devnexus.
+I'll be, I'll be speaking there. I'll be given the same, the, the top there, the same one I, I gave at Connect.Tech and you know the, the traveling. The, the only worry I have about the traveling is going viral, my flight going viral. As far as, you know, somebody's, you know, somebody's acting up and then I just, you know, for whatever reason, lose my cool and wanna, and want to help the air marshals escort the people off.
+So
+[00:23:55] Kayla: Yeah.
+[00:23:55] Todd: I mean, that's that, that's my only concern is, is that. You know, so I, I'm definitely looking forward to that. So, and I definitely will keep my eye out for you reaching out. Definitely.
+[00:24:07] Kayla: Yeah. Hopefully in the next couple weeks, for sure.
+[00:24:11] Todd: Cool
+[00:24:11] Kayla: Gonna aim for that.
+[00:24:12] Todd: Yeah.
+[00:24:13] Kayla: Cuz yeah, the, the contact of the venue was like, yeah, as soon as am not stuck in bed but I, I was like, take care of you first and foremost.
+[00:24:23] Todd: Yes
+[00:24:23] Kayla: Like I'll be here later.
+But yeah,
+[00:24:25] Todd: Yeah.
+[00:24:25] Kayla: I just obviously wanted to make absolutely positively, you know, 10 trillion percent sure that that was gonna be the dates before I started reaching out to speakers and have anything
+[00:24:35] Todd: Yeah.
+[00:24:35] Kayla: having y'all plan and
+[00:24:37] Todd: Yeah.
+[00:24:38] Kayla: And then
+[00:24:39] Todd: Okay
+[00:24:39] Kayla: hopefully not having cancel, but
+[00:24:41] Todd: yeah
+[00:24:41] Kayla: yeah
+[00:24:41] Todd: fingers crossed; fingers crossed definitely.
+[00:24:45] Kayla: Oh yeah
+[00:24:45] Todd: So, I wanted to ask. I know and it's, I've been so busy lately with things. I saw a video of you doing bench. So, I wanted to ask how's the power lifting going. I saw the video with you and Richard.
+[00:25:01] Kayla: Yep.
+[00:25:01] Todd: See, have you said any personal records so far?
+[00:25:05] Kayla: So, I yeah, I was gonna compete a couple weekends ago.
+[00:25:08] Todd: Okay
+[00:25:08] Kayla: But we had some winter weather and, you know, we, I live in the south and I'm not gonna be going anywhere, if there's ice or snow.
+[00:25:17] Todd: Yeah.
+[00:25:17] Kayla: But I also that was like starting to peak Omicron for us. And I was like, I am not gonna be the only person there wearing a mask and it's just not worth it to me. And so decided to do a little like mock meat at home.
+I was doing bench only anyway, cuz my knees have been acting up it's you know, it happens.
+[00:25:37] Todd: Yes, I know how
+[00:25:37] Kayla: But yeah
+[00:25:37] Todd: that feels too.
+[00:25:40] Kayla: Thankfully, yeah, I was able to set like a body weight personal record. So, I benched 187 and a half pounds
+[00:25:46] Todd: Nice
+[00:25:46] Kayla: which was the highest I had done at my current body weight and like beat my past competition PR by one pound.
+So, I was hoping to, to go to the meet, set a state record and I would have, I would've set a state record there if I had gone. But yeah, just wasn't. Wasn't the right time, I guess.
+[00:26:03] Todd: Right
+[00:26:03] Kayla: Hoping to hit like 200 next time though. That's my goal.
+[00:26:06] Todd: There you go.
+[00:26:07] Kayla: That's this year's goal is 200 on bench. Yeah.
+[00:26:09] Todd: Yeah. You got this. Definitely.
+[00:26:12] Kayla: Oh yeah, let's do it consistently. Yeah.
+[00:26:17] Todd: I don't even remember what I, I, when I was. When I was doing stuff, I wasn't, you know, competitive, I, I didn't do anything competitive as far as weights or anything, but no, I kinda, when I was playing sports and in high school and in the, in the gym regularly, I was such a scrawny kid that I, I don't think I could even do my own body weight. So, you know, I, I applaud people that could do it. I'm like, you know,
+[00:26:53] Kayla: I was the least athletic kid growing up, like, like both of my parents did, like, my dad played football when he was in school and my mom ran track and whatever, and here I am like, can't.
+Not really that great at anything sports related. Not at all athletic. And so, yeah, thankfully when I was like 24, I started doing power lifting, but I tried to lift weights when I was in college, but I could not even bench the bar, like, and no, that's like 45 pounds. So, yeah, I everybody's gotta start somewhere.
+[00:27:25] Todd: Yeah, yeah.
+[00:27:26] Kayla: Yeah, it took me. 8, 8, 9, maybe 10 years to get to the point where I'm at now, but yep.
+[00:27:34] Todd: I was actually in the gym. So, let's see. I've been out here for four months. So last year I was so 2020, I was going to a gym, and I managed to go from 290 to 255 pounds. So, it does take time, like you said.
+[00:27:56] Kayla: Oh yeah.
+[00:27:57] Todd: But then I had two operations and then I moved from Maine to Arizona.
+[00:28:03] Kayla: Gosh, moving alone is like, it's rough to try to stick with anything when you're moving, but then yes. On top of that, having two surgeries, just,
+[00:28:14] Todd: yeah.
+[00:28:14] Kayla: Yeah
+[00:28:15] Todd: So, I'm back up to where I don't wanna belong, but, walking, walking around the block here.
+And I do go to the gym, but, you know, mask up all the time. I haven't hit the weights as much as I have been. So, one of, you know, one of the operations I had was for a hernia, so it's taken a, a while. So, I tested out the, the ab machine. And boy didn't I pay for that.
+[00:28:44] Kayla: Gosh. Yeah.
+[00:28:46] Todd: I'm, I'm, I'm apparently all healed and everything. Everything's fine down there, but oh Lord.
+[00:28:54] Kayla: It's, it's like that though. Like, cuz I, I mean I had knee surgery in like, Fall 2019. My doctor told me that I would be fine within like a month is what I heard. I'd be back to almost normal within a month. So, I started training as soon as he gave me the go ahead and oh my God.
+I was not fine. and so, yeah, it I mean, it wasn't until like, probably a year later before my, the knee I had surgery on was good to go. And then, yeah. Now my other one is starting to act up, so gotta love that.
+[00:29:27] Todd: Yeah.
+[00:29:27] Kayla: But yeah,
+[00:29:29] Todd: yeah. Takes a while.
+[00:29:31] Kayla: Oh yeah.
+[00:29:31] Todd: Takes a while after coming back. Yeah. So last question. I gotta ask about saxophone playing.
+[00:29:36] Kayla: Oh yeah. I, I do have a sax. Oh yeah. It's over here too. I can even like, it’s in its case. But I, I haven't been planning as much cuz my dogs are afraid of it.
+[00:29:53] Todd: they don't like jazz.
+[00:29:56] Kayla: They're well I guess it's cuz like I got my older dog Captain, I got him after, after I'd stopped, you know, being in band. And so he was, he didn't grow up around me playing saxophone all the time and Piper, my other dog, she's just afraid of every noise ever. And so yeah, I'm hoping, hoping to get like an electronic wind instrument.
+So that, you know, I just put my earbuds in, and they won't hear anything, and I'll still be able to, play again, but
+[00:30:20] Todd: Yeah.
+[00:30:21] Kayla:  Yeah.
+[00:30:21] Todd: Yeah, yeah. Okay. Coming down on time here. So, I'm gonna ask final three questions that I ask all my guests. You ready? It's kind of,
+[00:30:29] Kayla:  I’m ready
+[00:30:29] Todd: you know, these are the hard hitting questions.
+[00:30:32] Kayla: Oh, maybe I'm not ready.
+[00:30:33] Todd: So, first question. What about the web these days excites you and keeps you excited in what you do?
+[00:30:42] Kayla: I guess it's, it's not really things about the web in particular that excite me. It's just the amount of people that we've got coming into development that excites me. And like the change that I've seen since I've been a developer away from focusing on people who have CS degrees and towards people who are like, you know, second career devs or like, came from boot camps or whatever.
+Like that's the thing that excites me the most is like that change and that kind of diversity that comes with people who are doing that, that don't just have CS degrees, so yeah.
+[00:31:16] Todd: Yeah. So, the second question, if there were one thing you could change about the web that we know today, what would that be?
+[00:31:27] Kayla: Man, that is a hard hitting question. Oh man. Yeah. I, I, I feel like I could have a lot of answers for this, and I don't know which ones are like, appropriate to speak about publicly. You know what I mean? Like I it's, I, I feel like sometimes, especially when you're on Twitter all day. Right? Like sometimes you're like, man, the internet was a mistake.
+ And then
+[00:31:53] Todd: I've actually I've
+[00:31:53] Kayla: Other times
+[00:31:55] Todd: yeah, go ahead. I've actually
+[00:31:57] Kayla: Other times, yeah
+[00:31:57] Todd: had that as answer. Yeah. I've actually had that as an answer, so, and you know, you could, you could say anything.
+[00:32:05] Kayla: Oh yeah, yeah.
+[00:32:06] Todd: Yeah.
+[00:32:07] Kayla:  But yeah, it's just, there's, there's a lot of just, you know, I, I see people even just locally to Mississippi, sometimes like folks arguing with like actual, real life doctors about stuff that they specialize in, like the doctors specialize in and they're like, no, you're wrong.
+And I'm like,
+[00:32:25] Todd: Yeah.
+[00:32:26] Kayla:  I'm sorry. Who went to school for this? Like not you.
+[00:32:30] Todd: Yeah, yeah, yeah.
+[00:32:32] Kayla:  But yeah, I mean, if I could change anything, it would just be like, I think for, for the people who are on the web, just to remember that there's a person on the other side of that. I mean, sometimes there's not, sometimes it is a bot, but you know, there, there is an actual person on the other side of that conversation that then they've had, you know, a whole lifetime to develop their opinions and beliefs.
+And they've just had a lot of experiences. So just, you know, and also you don't know what's going on in their life. You don't know what's happened lately. If they've gotten their tragedy has befallen their family or they've gotten laid off or, you know
+[00:33:09] Todd: Yeah.
+[00:33:10] Kayla:  There's just, there's a person on the other side of that conversation is really the
+[00:33:15] Todd: Yeah.
+[00:33:15] Kayla:  The thing that I would like to change.
+[00:33:17] Todd: Yeah, definitely. It's so thinking back to when I first, you know, was on, in, in, you know, message boards and chat rooms and all that stuff, it has. There's been a constant. And of course, those constant is that those constants, I should say, are the trolls. I mean, I call 'em what they are.
+And actually, confessional having been one myself, always looking for an argument, but no longer.
+[00:33:51] Kayla: That was me. That was me after my dad passed away from COVID. I got on Twitter, looking for people to, that would dare tell me that, you know, vaccines weren't anything or whatever, like masks didn't work or cause yeah, my dad was one of those people.
+My dad was a troll on Twitter, telling people all those same things, you know?
+[00:34:11] Todd: Yeah, yeah.
+[00:34:12] Kayla:  And like I was, and so I, I was just waiting for people to tell me at, and I'd be like, we'll see what happened to him.
+[00:34:17] Todd: Yeah.
+[00:34:18] Kayla:  For believing the same stuff you did. So
+[00:34:20] Todd: Yeah.
+[00:34:20] Kayla:  Yeah. I've thankfully gotten past that and chilled out little bit but yeah.
+[00:34:26] Todd: Well, these days, Facebook, Twitter, any kind of platform, really now it's all emotionally driven to make CEOs and stakeholders money.
+[00:34:39] Kayla: Oh absolutely.
+[00:34:40] Todd: And you know, you know, as well as I do, and pretty much everybody knows now we are the product. It wasn't that case as much. I don't think anyways back then, but
+[00:34:52] Kayla: it feels like it wasn't as much the case back then.
+[00:34:54] Todd: Yeah.
+[00:34:55] Kayla:  But yeah
+[00:34:56] Todd: Yeah. Is, is of course it's a whole different time. I mean, I don't even re you know, remember some of the arguments I used to get in, but they were so petty, and it seems like these days it's about anything and everything that anybody can just say, oh, you're, you're you want to talk about? You wanna argue about COVID let's you know, let's
+[00:35:20] Kayla:  Yeah.
+[00:35:20] Todd: Let’s go on Twitter
+[00:35:21] Kayla: Your favorite color is green screw you
+[00:35:23] Todd: Like exactly
+[00:35:23] Kayla:  like my favorite color is blue. Like.
+[00:35:26] Todd: Right?
+[00:35:27] Kayla:  Yeah.
+[00:35:28] Todd: Yeah. So, the last question I got here is favorite part of front end development that you really like to nerd out over?
+[00:35:37] Kayla: Hmm. I just like, and anytime I learn something new, I guess is like a new way of doing something or like a new technology or whatever, cuz like, I mean I already gets like super excited about all the like JavaScript frameworks, there are out there.
+It's like, cuz there's just so many. And like, I mean I started out using Angular JS, like Angular one. And I was like, when, when I started doing that, I was, I was regretting my career decisions, you know, doing Angular one after you know, and this was even as recently as like 2018 doing Angular one.
+Because that's just what enterprise environments still use sometimes. But I was like, maybe I'm not doing, maybe I don't need to be doing JavaScript. You know, maybe I need to be like doing design or something like that. I tried doing design for a little while and that wasn't for me, cuz I wanted to write code again.
+And but yeah, that's just the amount of new technologies and new frameworks that are out there and like as easy as they're getting to use. Like right. Relatively, right. Like they're just not, the learning curve is less steep. now than it had been in the past. And I feel like that's awesome cuz yeah, that just leads away for more, more different kinds of people to come and be developers and even make those frameworks better.
+Like,
+[00:36:53] Todd: Yeah.
+[00:36:53] Kayla:  That's awesome.
+[00:36:54] Todd: Yeah. So that's all the questions I have in this hour kind of flew right by. So, I
+[00:37:01] Kayla: feel like we've been here for like five minutes.
+[00:37:03] Todd: Exactly. Yeah. So, I'd like to close the podcast out with my guests, letting the listeners know what they currently have going on and where people can find you online.
+So, the, the floors yours go, go for it.
+[00:37:17] Kayla: Well, I, you can find me, me personally, on Twitter @_KaylaSween, still trying to get Kayla Sween, the other Kayla Sween to give up her handle, cuz she hasn't been on it in like eight years, but
+[00:37:30] Todd: Oh yeah
+[00:37:31] Kayla:  But, yeah, one of these days. But yeah, so there's that you can see Magnolia JS @MagnoliaJSConf on Twitter.
+We also have, or at magnoliajs.com. If your company is looking to sponsor some in-person events this year, we've got a interest form on the website, or you can just email sponsors@magnoliajs.com or just DM me on Twitter or the Magnolia account. And we'll get you the information. But yeah, those are the, those are the biggest things I'm working on right now.
+I don't think my company is hiring currently, but they're amazing. Everybody there is amazing. And if we are hiring, then I'll, I'll be posting about that on Twitter as well.
+[00:38:06] Todd: Nice, nice. So that's it. Thank you, Kayla, for joining me today and
+[00:38:12] Kayla:  Thank you for having me
+[00:38:12] Todd: sharing part of your, yeah, definitely. Thank you for sharing part of your day with me and the listeners.
+I can't wait for Magnolia. Hopefully again, fingers crossed that everything goes as well as we want. And we'll be getting back together again in May, and I can see you and Richard again, and
+[00:38:31] Kayla: I sure hope so. Yeah. It'd be fun to have everybody in Mississippi.
+[00:38:35] Todd: Yeah definitely. So again, thank you for being here and thank you listeners for tuning into the Front End Nerdery Podcast.
+I'll be back next time with a new guest, new conversation about front end design, development and other topics as well. If you would please rate this podcast on your podcast device of choice, like, subscribe and watch on the Front End Nerdery YouTube channel. Links to transcripts and show notes are there because this podcast is fully accessible, I hope.
+And with that, I'm Todd Libby and this has been the Front End Nerdery Podcast. Thanks. And we'll see you next time.

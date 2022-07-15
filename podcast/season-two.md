@@ -14,3 +14,4 @@ layout: layouts/post.njk
 [Chris Ferdinandi](https://toddl.dev/podcast/transcripts/ferdinandi)
 [Rachele DiTullio](https://toddl.dev/podcast/transcripts/ditullio)
 [Ben Myers](https://toddl.dev/podcast/transcripts/myers)
+[Kayla Sween](https://toddl.dev/podcast/transcripts/sween)
