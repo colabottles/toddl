@@ -15,3 +15,4 @@ layout: layouts/post.njk
 [Rachele DiTullio](https://toddl.dev/podcast/transcripts/ditullio)
 [Ben Myers](https://toddl.dev/podcast/transcripts/myers)
 [Kayla Sween](https://toddl.dev/podcast/transcripts/sween)
+[Paul Boag](https://toddl.dev/podcast/transcripts/boag)
