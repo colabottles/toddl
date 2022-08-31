@@ -1,7 +1,7 @@
 {
   "name": "eleventy-base-blog",
   "version": "5.0.0",
-  "description": "The personal webiste of Todd Libby.",
+  "description": "The personal website of Todd Libby.",
   "scripts": {
     "test": "echo “Error: no test specified” && exit 1",
     "build": "npx eleventy",
