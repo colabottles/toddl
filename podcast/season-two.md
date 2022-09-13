@@ -1,7 +1,7 @@
 ---
 title: Front End Nerdery Podcast Season Two
 description: List of podcast transcripts by season.
-date: 2022-05-24
+date: 2022-09-13
 layout: layouts/post.njk
 ---
 
@@ -16,3 +16,4 @@ layout: layouts/post.njk
 [Ben Myers](https://toddl.dev/podcast/transcripts/myers)
 [Kayla Sween](https://toddl.dev/podcast/transcripts/sween)
 [Paul Boag](https://toddl.dev/podcast/transcripts/boag)
+[Dan Mall](https://toddl.dev/podcast/transcripts/mall)
