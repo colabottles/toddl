@@ -227,8 +227,8 @@ ul.navigation {
 ul.navigation a {
   color: var(--white);
   font-family: var(--font-family-sans);
-  font-size: var(--font-size-large);
-  padding: 0 1.5rem;
+  font-size: var(--font-size);
+  padding: 1.5rem;
   text-decoration: underline
 }
 
