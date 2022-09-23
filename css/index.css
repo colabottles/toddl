@@ -229,7 +229,7 @@ ul.navigation a {
   color: var(--white);
   font-family: var(--font-family-sans);
   font-size: var(--font-size);
-  padding: 1.5rem;
+  padding: 2em;
   text-decoration: underline
 }
 
