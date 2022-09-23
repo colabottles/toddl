@@ -221,7 +221,8 @@ body {
 
 ul.navigation {
   align-self: center;
-  flex: revert
+  flex: revert;
+  margin: 2em 0
 }
 
 ul.navigation a {
