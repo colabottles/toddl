@@ -17,3 +17,4 @@ layout: layouts/post.njk
 [Kayla Sween](https://toddl.dev/podcast/transcripts/sween)
 [Paul Boag](https://toddl.dev/podcast/transcripts/boag)
 [Dan Mall](https://toddl.dev/podcast/transcripts/mall)
+<!-- [Bekah Hawrot-Weigel](https://toddl.dev/podcast/transcripts/hawrotweigel) -->
