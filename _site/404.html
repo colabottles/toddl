@@ -94,18 +94,18 @@ eleventyExcludeFromCollections: true
       <a href="{{ '/' | url }}" id="title">Todd Libby</a>
       <nav>
         <ul class="navigation main-nav">
-          {%- for nav in collections.nav | sort(attribute="date") -%}
+          <!-- {%- for nav in collections.nav | sort(attribute="date") -%} -->
           <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
-            <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
+            <!-- <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a> -->
           </li>
-          {%- endfor -%}
+          <!-- {%- endfor -%} -->
         </ul>
       </nav>
     </header>
 
     <main id="main" tabindex="-1">
       <section class="article__body">
-        {{ content | safe }}
+        <!-- {{ content | safe }} -->
       </section>
 
       <section class="social">
