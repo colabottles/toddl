@@ -1,6 +1,8 @@
 ---
 title: Oops! Not Found
+layout: layouts/404.html
 permalink: 404.html
+eleventyExcludeFromCollections: true
 ---
 
 <!doctype html>
@@ -17,7 +19,7 @@ permalink: 404.html
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml">
   <link rel="icon" href="{{ '/img/favicon.png' | url }}" />
   <style>
-    /* latin */
+    /*latin*/
     @font-face {
       font-family: 'Work Sans';
       font-style: normal;
@@ -184,4 +186,5 @@ permalink: 404.html
   </div>
 
   <!-- Current page: {{ page.url | url }} -->
+
 </html>
