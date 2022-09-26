@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}" />
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml">
     <link rel="icon" href="{{ '/img/favicon.png' | url }}" />
-    <style>
+    <link rel="prefetch" as="script" href="{{ '../../svgxuse.min.js' | url }}">
       /* latin */
       @font-face {
         font-family: 'Work Sans';
@@ -174,8 +174,5 @@
         </div>
       </footer>
     </div>
-
-    <!-- Current page: {{ page.url | url }} -->
-    <link rel="prefetch" as="script" href="{{ '../../svgxuse.min.js' | url }}">
   </body>
 </html>
