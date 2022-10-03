@@ -1417,7 +1417,8 @@ video {
 
   ul.navigation {
     display: flex;
-    padding: 0
+    padding: 0;
+    min-width: 100vw;
   }
 
   ul.navigation a {
