@@ -199,6 +199,7 @@ q:before {
   --line-height-large: calc(8rem + 1vw);
   --line-height-medium: calc(5rem + 1vw);
   --line-height-small: 1.4;
+  --line-height-heading: 1;
   --inset: .5rem;
   --large: 1100px;
   --medium: 960px;
@@ -639,7 +640,7 @@ li.postitem-item {
 
 .home-container h1 {
   font-size: var(--font-size-xxlarge);
-  line-height: var(--line-height-small)
+  line-height: var(--line-height-heading)
 }
 
 .home-container h3 {
