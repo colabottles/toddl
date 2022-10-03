@@ -1406,6 +1406,7 @@ video {
 
   p {
     font-size: var(--font-size);
+    font-weight: 400;
     padding: 1rem 0
   }
 
