@@ -294,7 +294,7 @@ main h2 {
   font-size: var(--heading2-font);
   font-family: var(--font-family-sans);
   font-weight: 900;
-  line-height: var(--line-height-small);
+  line-height: var(--line-height-heading);
   padding: 1rem 0;
   margin: 1rem 0
 }
@@ -370,7 +370,7 @@ section.article__body ul {
 .article-wrapper h4 {
   padding-top: 1rem;
   font-size: var(--font-size-large);
-  line-height: var(--line-height)
+  line-height: var(--line-height-heading)
 }
 
 .article-wrapper h4 a {
@@ -462,12 +462,11 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-sans);
-  line-height: 1.5rem;
+  line-height: 1;
   font-weight: 600
 }
 
 h1 {
-  line-height: 1.1;
   margin-bottom: 0
 }
 
@@ -479,21 +478,21 @@ h2 {
 
 h3 {
   font-size: var(--font-body-article-h3);
-  line-height: var(--line-height-small);
+  line-height: var(--line-height-heading);
   padding: 2rem 0;
   color: var(--ecto)
 }
 
 h4 {
   font-size: var(--font-body-article-h4);
-  line-height: var(--line-height-medium);
+  line-height: var(--line-height-heading);
   padding: 2rem 0;
   color: var(--ecto)
 }
 
 h5 {
   font-size: var(--font-body-article-h5);
-  line-height: var(--line-height-medium);
+  line-height: var(--line-height-heading);
   padding: 2rem 0;
   color: var(--ecto)
 }
@@ -1313,7 +1312,8 @@ video {
   }
 
   p {
-    font-size: var(--font-size-article)
+    font-size: var(--font-size-article);
+    font-weight: 400
   }
 
   blockquote p {
