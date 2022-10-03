@@ -1462,7 +1462,7 @@ video {
   }
 
   h2.article__title {
-    font: 3em 'Source Sans 3 VF';
+    font: 3em var(--font-family-sans);
     font-variation-settings: 'wght'600, 'wdth'100;
     grid-column: 2/7;
     padding: 0;
