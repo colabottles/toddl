@@ -848,6 +848,7 @@ article.article__body {
 .article__body a,
 article.archive-list a {
   color: var(--ecto);
+  font-family: var(--font-family-sans);
   text-decoration: underline;
   text-underline-offset: .12em;
   text-decoration-thickness: .07em;
