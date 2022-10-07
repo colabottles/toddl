@@ -317,7 +317,10 @@ main h2 {
 .article-container,
 .blogroll-container,
 .page-container,
-.uses-links {
+.uses-links,
+.articles,
+section.article__body,
+article.archive-list {
   grid-column: 2/12
 }
 
@@ -340,10 +343,6 @@ main h2 {
   line-height: var(--line-height-small);
   margin: 0 1rem 1.5rem 0;
   width: calc(50% + 1vw)
-}
-
-.articles {
-  grid-column: 2/12
 }
 
 .article h3 {
@@ -836,14 +835,6 @@ h2.article__title {
   letter-spacing: -.017em;
   text-transform: none;
   grid-column: 1/12
-}
-
-article.archive-list {
-  grid-column: 1/12
-}
-
-section.article__body {
-  grid-column: 2/12
 }
 
 article.article__body {
