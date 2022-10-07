@@ -38,3 +38,17 @@ I have over twenty-three years of professional experience with web programming a
 - Analytics
 - Technical Writing
 - and a lot more.
+
+Some random facts:
+
+- Freemasons strive to learn MY secret handshake.
+- Bigfoot tries to get pictures of me.
+- Roses stop to smell me.
+- When I was young, I once sent my parents to their room.
+- I once won a fist fight, only using my beard.
+- I can speak French... in Spanish.
+- My pillow is cool on BOTH sides.
+- I once won the World Series of Poker using UNO cards.
+- CSS has more style when I write it.
+- JavaScript functions function better when I write them.
+- and code formats itself in my editor.
