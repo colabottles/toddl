@@ -68,11 +68,6 @@ video {
   border: 0
 }
 
-html {
-  font-size: 140%;
-  line-height: 1.5
-}
-
 * {
   font-family: inherit;
   font-size: inherit;
@@ -190,12 +185,12 @@ q:before {
   --font-body-article-h5: calc(1.5rem + .3vw);
   --font-size-xsmall: calc(.5rem + .3vw);
   --font-size-small: calc(.75rem + .3vw);
-  --font-size: calc(1rem + .3vw);
+  --font-size: 140%;
   --font-size-article: calc(1.25rem + .3vw);
   --font-size-large: calc(1.3125rem + .3vw);
   --font-size-xlarge: calc(2.125rem + .3vw);
   --font-size-xxlarge: calc(3.5rem + .3vw);
-  --line-height: calc(1.5rem + 1vw);
+  --line-height: 1.5;
   --line-height-large: calc(8rem + 1vw);
   --line-height-medium: calc(5rem + 1vw);
   --line-height-small: 1.4;
@@ -206,7 +201,9 @@ q:before {
   --small: 515px
 }
 
-body {
+html {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
   background-color: var(--dark);
   color: var(--white)
 }
