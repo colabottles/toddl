@@ -29,13 +29,10 @@ So what is holding you back from doing it? Helping others out so they can unders
 
 ## Let's Start Off With Some Tips
 
-Twitter.
-
-Step 1:
-
 ## Let's Take a Look at Some Things
 
 1. There are people with disabilities in this world that have to do with vision.
 2. Not all developers are people with no disabilities and they do development work too.
 3. When you are sharing content, especially as a content creator, don't you want to have reach to the largest amount of people?
 4. There is a strong probability you know someone who has a visual disability.
+
