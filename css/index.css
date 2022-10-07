@@ -863,7 +863,7 @@ article.archive-list a:hover {
 
 p.tag-wrap {
   display: inline-flex;
-  font-size: var(--font-size)
+  font-size: var(--font-size-xsmall)
 }
 
 a.postlist-link {
