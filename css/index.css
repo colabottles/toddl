@@ -840,7 +840,7 @@ h2.article__title {
 
 article.archive-list,
 section.article__body {
-  grid-column: 3/12
+  grid-column: 1/12
 }
 
 article.article__body {
