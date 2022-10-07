@@ -838,9 +838,12 @@ h2.article__title {
   grid-column: 1/12
 }
 
-article.archive-list,
-section.article__body {
+article.archive-list {
   grid-column: 1/12
+}
+
+section.article__body {
+  grid-column: 2/12
 }
 
 article.article__body {
