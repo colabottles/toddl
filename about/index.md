@@ -51,4 +51,5 @@ Some random facts:
 - I once won the World Series of Poker using UNO cards.
 - CSS has more style when I write it.
 - JavaScript functions function better when I write them.
+- Lobsters jump in the pot after handing me the rolls to make lobster rolls.
 - and code formats itself in my editor.
