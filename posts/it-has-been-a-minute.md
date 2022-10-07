@@ -1,7 +1,7 @@
 ---
 title: It Has Been A Minute
 description: It's been a while since I've added content here.
-date: 2021-10-07 ## YYYY-MM-DD
+date: 2022-10-07 ## YYYY-MM-DD
 tags:
   - random
   - general
