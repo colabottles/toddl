@@ -3,35 +3,98 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exploring deceptive patterns in UX and why companies have to do better to their customers.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>Deceptive Patterns In Programs We Trust</title>
-    <meta name="Description" content="Exploring deceptive patterns in UX and why companies have to do better to their customers.">
-    <link rel="stylesheet" href="/css/index.css" media="all" />
-    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css" />
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" media="all" />
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Home of Todd Libby - Senior Front End Developer" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+    <style>
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      </style>
   </head>
   <body>
     <div class="wrapper">
-      <header role="banner">
-        <h1 class="home">
-          <a href="/">
-            Todd Libby
-          </a>
-        </h1>
-        <nav title="main-navigation" role="navigation">
-          <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation"><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/about/">About</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/blog/">Blog</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/contact/">Contact</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/resources/">Resources</a>
-              </li></ul>
-        </nav>
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
       </header>
 
-      <main class="inner">
+      <main id="main" class="inner" tabindex="-1">
         
 <div class="article-container">
   <article>
@@ -53,7 +116,7 @@
 <p>I did a few searches for these deceptive patterns and how they are being addressed and I could find absolutely nothing. No mention of these little shady checkboxes and these little tucked away “Here, we suggest you to download Chrome!” content areas. Nothing at all.</p>
 <p>I found several instances of <em>“Reasons Why Google Chrome Is Bad”</em> or <em>“Top 10 Reasons Not To Download Chrome”</em> I already know these reasons because I am a little tech savvy. My customers are not.</p>
 <p>I have an 80-year-old man that keeps up with family on Facebook and checks e-mail online and that’s it and he’s had programs he and his wife needs and they all had the Download Google Chrome fever. This man does not need Chrome, hasn’t heard of Chrome, and will never use Chrome.</p>
-<h2 id="applications">Applications</h2>
+<h2 id="applications" tabindex="-1">Applications</h2>
 <p>Take for instance Piriform, the makers of CCleaner. An app that cleans out extraneous crap out of your hard drive and does a number of other things to help the performance fo your computer.</p>
 <p>Mac and Windows have versions and both have their little differences (Windows versions cleans your registry for instance). When installing the program, you reach a screen that looks something similar to this;</p>
 <div class="content__placeholder">
@@ -76,7 +139,7 @@
 <p>100% of my customers, that’s 27 customers whom I do computer work for and teach them how to use things all have said the same thing. <em>“I don’t care what I use for a browser I just want to check Facebook, look at my grandkids photos and check my e-mail.”</em>.</p>
 <p>That is all my customers who are older want to do. Nothing else. They’re not doing development, graphic design or anything other than playing games, Facebook, e-mail, and _maybe_video chat.</p>
 <p>With people being very trusting, one could say even naive, they expect the products they use, the products I am installing, to be free of anything intrusive so they don’t have to call me wondering what Google Chrome is or wondering why they have Google Chrome on their computers.</p>
-<h2 id="emails">Emails</h2>
+<h2 id="emails" tabindex="-1">Emails</h2>
 <p>Another instance of deceptive patterns in UX brought me to the NBA and email. I voted for the All-Star Game and thought, _“well… that’s that. Back to work.”_and lo and behold that was not that. That was only the beginning of the onslaught of emails from the NBA and <a href="http://NBA.com">NBA.com</a>.</p>
 <div class="content__placeholder">
   <figure>
@@ -86,13 +149,13 @@
 </div>
 <p>Where is the unsubscribe link? I voted for players for the All-Star Game and when I finished I got bombarded with emails so I had to refer to another email that I had been inundated with to find an unsubscribe link to actually unsubscribe.</p>
 <p>Even then, it was going to take 24-48 hours for that to happen! Some I have even seen take fourteen (yes, 14!) business days to unsubscribe! What?! Two business weeks to unsubscribe?! Are you kidding me?!</p>
-<h2 id="deceptive-patterns">Deceptive Patterns</h2>
+<h2 id="deceptive-patterns" tabindex="-1">Deceptive Patterns</h2>
 <p>Doug Collins, in one of his great videos on UX deceptive patterns below, talks about some of the ways deceptive patterns work. The examples I used use reading patterns.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wo3OPM6jmOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title=""></iframe>
 <p>The “Google Chrome Download” uses trust and perceived value. Trust that you need to download Chrome. The perceived value that Chrome is the right browser for you to use. It’s almost as if Piriform is saying, “Piriform uses Google Chrome and since you use our software, you should use what we use!”</p>
 <p>Hiding this little checkbox and blurb in the bottom left corner of a dialog box is a deceptive pattern Don’t let anyone fool you. More than likely (and in about 9 out of 10 cases I have seen first hand) people are going to click through and not pay any attention to that step. They want to download the software and use it.</p>
 <p>It’s a pattern that I even skip when I am installing programs. I consider myself a bit savvy when it comes to tech, so those times where I am clicking through because I want to install the program, this step can be skipped very easily. So what do we do about it?</p>
-<h3 id="so-what-can-we-do-about-this%3F">So What Can We Do About This?</h3>
+<h3 id="so-what-can-we-do-about-this%3F" tabindex="-1">So What Can We Do About This?</h3>
 <p>Well, I reached out to Piriform on Twitter. I tweeted that it is a bad thing for them to do since I install their product on my customers computers and they don’t need the extra garbage that their product cleans out in the first place.</p>
 <p>They did respond (which I did not expect) with they were working on bettering their product (which remains to be seen) and they were listening to their customers.</p>
 <p>Well, if they are listening to their customers, they will take the screen and that option to download Chrome off their products (they also have a paid version of CCleaner (CCleaner Pro).</p>
@@ -104,83 +167,84 @@
     </section>
   </article>
 </div>
+
+        <section class="social">
+          <h2>&copy;1999 &mdash; 2022, Todd Libby.</h2>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+            </ul>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            </ul>
+          <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; <a href="/a11y">A11y Statement</a></h2>
+        </section>
       </main>
 
-      <div class="social" title="sub-navigation" role="navigation">
-        <h2>&copy;1999 &mdash; 2020, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/a11y">A11y</a></li>
-          </ul>
-        <h2>#BlackLivesMatter</h2>
-      </div>
-
-      <footer class="meta" role="contentinfo">
-        <nav class="foot" title="footer-navigtion">
+      <footer class="meta">
+        <div class="foot">
           <ul class="list-inline">
             <li>
-              <a href="https://codepen.io/colabottles/#" class="codepen" aria-label="A link to my CodePen repository">
-                <svg class="icon icon-codepen" role="img" aria-label="An icon that links to my CodePen repository">
-                  <title>A link to my CodePen repository</title>
-                  <desc id="codepen">A white icon in the shape of the CodePen logo which is a 3D cube.</desc>
-                  <use href="/img/symbol-defs.svg#icon-codepen" alt="A link to my CodePen repository"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://dribbble.com/colabottles/" class="dribbble" aria-label="A link to my Dribbble page">
-                <svg class="icon icon-dribbble" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Dribbble portfolio</title>
-                  <desc id="dribbble">A white icon in the shape of the Dribbble logo which is a basketball.</desc>
-                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/colabottles/" class="github" aria-label="A link to my GitHub page">
-                <svg class="icon icon-github" role="img" aria-label="An icon that links to my GitHub repository">
-                  <title>A link to my GitHub repository</title>
-                  <desc id="github">A white icon in the shape of the GitHub logo which is the OctoCat.</desc>
-                  <use href="/img/symbol-defs.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/toddlibby" class="twitter" aria-label="A link to my Twitter page">
-                <svg class="icon icon-twitter" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Twitter page</title>
-                  <desc id="twitter">A white icon in the shape of the Twitter logo which is a bird.</desc>
+              <a href="https://twitter.com/toddlibby" class="twitter">
+                <svg class="icon icon-twitter" focusable="false">
+                  <title>My Twitter profile</title>
+                  <desc id="twitter">A white bird.</desc>
                   <use href="/img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://toddl.dev/feed/feed.xml" class="rss" aria-label="A link to my RSS page">
-                <svg class="icon icon-rss" role="img" aria-label="An icon that links to this site's RSS feed">
-                  <title>A link to the RSS feed for this site</title>
-                  <desc id="rss">A white icon in the shape of the RSS logo which is a group of lines shaped like a speaker.</desc>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
                   <use href="/img/symbol-defs.svg#icon-rss"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y" aria-label="WCAG 2.0 AA Passed a11y">
-                <svg class="icon icon-accessible-icon" role="img" aria-label="An icon that links to this pages WCAG 2.0 Accessibility test results">
-                  <title>A link to the WCAG 2.0 Accessibility test results for this site</title>
-                  <desc id="a11y">A white icon in the shape of a person in a wheelchair.</desc>
+              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
                   <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
                 </svg>
               </a>
             </li>
+            <li>
+              <a href="https://dribbble.com/colabottles/" class="dribbble">
+                <svg class="icon icon-dribbble" focusable="false">
+                  <title>My Dribbble portfolio</title>
+                  <desc id="dribbble">A white basketball.</desc>
+                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
-
-    <!-- Current page: /posts/deceptive-patterns-in-programs-we-trust/ -->
-    <script src="../svgxuse.min.js" defer></script>
   </body>
 </html>

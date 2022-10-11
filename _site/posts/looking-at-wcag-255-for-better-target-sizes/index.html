@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Looking at better target sizes for mobile devices to improve the user experience.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+    <title>Looking at WCAG 2.5.5 for Better Target Sizes</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+    <style>
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
+      </header>
+
+      <main id="main" class="inner" tabindex="-1">
+        
+<div class="article-container">
+  <article>
+    <h2 class="article__title">Looking at WCAG 2.5.5 for Better Target Sizes</h2>
+    <header class="article__header">
+      <div class="article__meta">
+        <time>29 July, 2021</time>
+      </div>
+    </header>
+    
+    <section class="article__body">
+      <p>Have you ever experienced the frustration of trying to tap a button on a mobile device only to have it do nothing because the target size is just not large enough **and it’s not picking up on your press? Maybe you have larger fingers, like I do, or maybe it’s due to limited dexterity. This is because the sadly ever-decreasing target area of elements we, the users, have to interact with.</p>
+<p>Let’s talk about target size and how to make it large enough for users to easily interact with an element. This is an especially big deal if a user is accessing content on a small hand-held touch screen device where real estate is much tighter.</p>
+<h3 id="success-criterion-revisited" tabindex="-1">Success criterion revisited</h3>
+<p>I touched (no pun intended) on Success Criterion in <a href="https://css-tricks.com/whats-new-in-wcag-2-1-label-in-name/#you-lost-me-at-success-criterion">a previous article</a> covering the WCAG 2.1 criterion, Label in Name. In short, the WCAG criteria is the baseline from which we determine whether our work is “accessible.”</p>
+<p>If you’re wondering whether there’s a criterion for target size, the answers is yes. It’s WCAG 2.5.5. Pulling straight from the guidelines. passing <a href="https://www.w3.org/TR/WCAG21/#target-size">WCAG 2.5.5</a> with a AAA grade requires “the size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:</p>
+<ul>
+<li>Equivalent: The target is available through an equivalent link or control on the same page that is at least 44×44 CSS pixels;</li>
+<li>Inline: The target is in a sentence or block of text;</li>
+<li>User Agent Control: The size of the target is determined by the user agent and is not modified by the author;</li>
+<li>Essential: A particular presentation of the target is essential to the information being conveyed.”</li>
+</ul>
+<h3 id="what-could-possibly-go-wrong%3F" tabindex="-1">What could possibly go wrong?</h3>
+<p>It’s just a size, right? Easy peasy. Nothing can possibly go awry.</p>
+<p>Or can it?</p>
+<p>Small target sizes can cause accessibility hurdles for many people. Have you ever been traveling in a vehicle on a bumpy road and you’re trying to interact with an app on your mobile can not press on an element? That is an accessibility hurdle. Those with motor skill or cognitive impairments will have a much harder time because it is much harder for them if the target size is too small and does not meet WCAG requirements.</p>
+<p>I don’t mean to pick on Twitter here, but it’s the first notable example I found while hunting for examples of small targets.</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1627617619/images/timeline.webp" alt="A timeline from Twitter with some really small target area to close out topics if you don't want to see them and plus icons if you want to add them."></p>
+<figcaption>There are some good examples of small targets in here, from the tiny contextual menu to the actions in the footer of a tweet, and even the small icons to add topics to a timeline. And notice that even with a properly sized target, like the floating button to compose a tweet, it overlaps with another target, obstructing access to it.</figcaption>
+<p>Another favorite example I see quite often? Ads. Have you ever struggled to click the minuscule “X” button to close them?</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1627864886/images/cookie.webp" alt="Cookie policy modal with a very small target area and difficult way to close the ad."></p>
+<figcaption>You’re not alone if you’ve ever struggled to click, let alone even locate, the close button.</figcaption>
+<p>Having no motor skill or cognitive disabilities personally, I find myself fumbling around and taking multiple times to hit some target areas. The fact that someone who needs to use something like a pen or stylus on a target size that is not a minimum of 44×44 pixels can be a difficult task. These targets shouldn’t need multiple attempts to activate when the target size doesn’t meet recommended guidelines.</p>
+<h3 id="target-size-considerations" tabindex="-1">Target size considerations</h3>
+<p>WCAG 2.5.5 goes into specific detail to help us account for these things by defining the four types of controls we just saw: equivalent, inline, User Agent, and essential.</p>
+<p>We’re going to look at different considerations for determining target sizes and hold them up next to the WCAG guidelines to help steer us toward making good, accessible design decisions.</p>
+<h4 id="consider-the-difference-between-%E2%80%9Cclick%E2%80%9D-and-%E2%80%9Ctap%E2%80%9D" tabindex="-1">Consider the difference between “click” and “tap”</h4>
+<p>This success criteria ensures that target sizes are large enough for users to easily activate targets, even if the user is accessing these targets on handheld devices. We typically associate small screens with “taps” instead of “clicks” when it comes to activating targets. And that’s something we need to consider in our target sizing.</p>
+<p>Mice and similar input devices use a pointer on the screen, which is considered “fine” precision because it allows a user to access an element on the screen with exact precision. Fine precision makes it easier to access smaller target sizes in theory. The trouble is, that sort of input device can be tough for some users, whether it’s with gripping the device, or some other cognitive or motor skill. So, even with fine precision, having a clear target is still a benefit.</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1627620899/images/mobile1.webp" alt="A comparison of mobile screens side-by-side comparing targets of links as opposed to buttons."></p>
+<figcaption>A Tale of Two Targets: Combining padding and color can help increase the size of a tap target while making it visually clear.</figcaption>
+<p>Touch, on the other hand, can be problematic as it is an input mechanism with very “coarse” precision. Users can lack a level of fine control when using a mouse or stylus, for example. A finger, which is larger than a mouse pointer, generally obstructs a user’s view of the exact location on the screen that is being activated or touched. Hence, “coarse” precision.</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1627621013/images/mobile2.webp" alt="A mobile device with two sections, the bottom section with a thumb shown clicking the target area as opposed to the upper half using a pointer."></p>
+<figcaption>A smaller pointer offers more precision than a larger thumb when it comes to interacting with an element.</figcaption>
+<p>This issue is exacerbated in responsive design, which needs to accommodate for numerous types of fine and coarse inputs. Both input types must be supported for a site that can be accessed by a desktop or laptop with a mouse, as well as a mobile device or tablet with a touch screen.</p>
+<p>That makes the actual size we use for a target a pretty important detail. Depending on who is using a control, what that control does, how often it’s used, and where it’s located, we ought to consider using larger, clearer targets to prevent things like unintended actions.</p>
+<p>But with all this said, <a href="https://www.w3.org/TR/mediaqueries-4/#pointer">we do actually have a CSS media query</a> that can detect a pointer device so we can target certain styles to either fine or coarse input interactions, <a href="https://caniuse.com/css-media-interaction">and it’s well-supported</a>. Here’s an example pulled right out of the spec:</p>
+<pre class="language-css"><code class="language-css">  <span class="token comment">/* Make radio buttons and check boxes larger if we have an inaccurate primary pointing device */</span><br>    <span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">pointer</span><span class="token punctuation">:</span> coarse<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>      <span class="token selector">input[type="checkbox"], input[type="radio"]</span> <span class="token punctuation">{</span><br>        <span class="token property">min-width</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span><br>        <span class="token property">min-height</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span><br>        <span class="token property">background</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span></code></pre>
+<p>But wait. While this is great and all, Patrick H. Lauke offers a word of caution about this interaction media query and <a href="https://css-tricks.com/interaction-media-features-and-their-potential-for-incorrect-assumptions/">it’s potential for making incorrect assumptions</a>.</p>
+<h4 id="consider-that-different-platforms-have-different-requirements" tabindex="-1">Consider that different platforms have different requirements</h4>
+<p>When WCAG specifies exact values, it’s worth paying attention. Notice that we’re advised to make target sizes at least 44×44 pixels, which is mentioned no fewer than 18 times in the <a href="https://www.w3.org/WAI/WCAG21/Understanding/target-size.html">WCAG 2.5.5 explainer</a>.</p>
+<p>However, you may have also seen similar requirements with different guidance from the likes of Apple’s “Human Interface Guidelines” for iOS, and Google’s “Material Design” in their platform design requirements.</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1627666743/images/apple1.webp" alt="Side by side iPhones showing target size dimensions on two different devices."></p>
+<figcaption>“Try to maintain a minimum tappable area of 44pt x 44pt for all controls.” (Apple, [“Human Interface Guidelines”](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/))</figcaption>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1627666769/images/android1.webp" alt="Material Design target sizes."></p>
+<figcaption>“Consider making pointer targets at least 44 x 44 dp.”
+(Material Design, [“Accessibility”](https://www.material.io/design/usability/accessibility.html#layout-and-typography))</figcaption>
+<h4 id="consider-the-%E2%80%9Ctappable-area%E2%80%9D-of-a-target" tabindex="-1">Consider the “tappable area” of a target</h4>
+<p>Notice that Apple’s platform requirements refer to a “tappable area” when describing the ideal target size. That means that we’re talking about space as much as we are about the appearance of a target. For example, Google’s Material Design suggests at least a 48×48 dp (density-independent pixels) target size for interactive elements. But what if your design requirements call for a 24×24 dp icon? It’s totally legit to use padding in our favor to create more interactive space around the icon, comprising the 48×48 dp target size. Or, <a href="https://www.material.io/design/usability/accessibility.html#layout-and-typography">as it’s documented</a> in Material Design:</p>
+<blockquote>
+<p>Touch targets are the parts of the screen that respond to user input. They extend beyond the visual bounds of an element. For example, an icon may appear to be 24×24 dp, but the padding surrounding it comprises the full 48×48 dp touch target.</p>
+</blockquote>
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYZWzZm" data-user="css-tricks" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/team/css-tricks/pen/zYZWzZm">
+  </a> by CSS-Tricks (<a href="https://codepen.io/team/css-tricks">@css-tricks</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<h4 id="consider-responsive-layout-behavior" tabindex="-1">Consider responsive layout behavior</h4>
+<p>That’s right, we’ve gotta consider how things shift and move around in a design that’s meant to respond to different viewport sizes. One example might be buttons that stack on small screens but are inline on larger screen. We want to make sure that transition accounts for the placement of surrounding elements in order to prevent overlapping elements or targets.</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1627859821/images/target-size-button-inline.webp" alt="Two mobile devices showing inline button styles and their repective target areas."></p>
+<p>Speaking of inline, there’s a particular piece of the WCAG’s exception for inline targets that’s worth highlighting:</p>
+<blockquote>
+<p><em>Inline: Content displayed can often be reflowed based on the screen width available (responsive design). In reflowed content, the targets can appear anywhere on a line and can change position based on the width of the available screen. Since targets can appear anywhere on the line, the size cannot be larger than the available text and spacing between the sentences or paragraphs, otherwise the targets could overlap. It is for this reason targets which are contained within one or more sentences are excluded from the target size requirements. (Emphasis mine)</em></p>
+</blockquote>
+<p>Now, we’re not necessarily talking about buttons that are side-by-side here. We can links within text and that text might break the target’s placement, possibly into two lines.</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1627860493/images/target-size-inline-links.webp" alt="A mobile device showing inline links and their target sizes"></p>
+<figcaption>While it might be difficult to tap one target without inadvertently tapping the other, the WCAG makes an exception for inline targets, like links within paragraphs.</figcaption>
+<h4 id="consider-the-target%E2%80%99s-relationship-to-its-surroundings" tabindex="-1">Consider the target’s relationship to its surroundings</h4>
+<p>We just saw how inline links within a block of text are exempt from the 44×44 rule. There are similar exceptions depending on the target’s relationship to the elements around it.</p>
+<p>Let’s take the example that the WCAG explainer provides, again, in it’s description of inline target exceptions:</p>
+<blockquote>
+<p>If the target is the full sentence and the sentence is not in a block of text, then the target needs to be at least 44 by 44 CSS pixels.</p>
+</blockquote>
+<p>That’s a good one. We ought to consider whether the target is its own block or part of a larger block of text. If the target is its own block, then it needs to abide by the rules, whether it’s a button with a short label, or a complete sentence that’s linked up. On the flip side, a complete sentence that’s linked up inside another block of text doesn’t have to meet the target size requirements.</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1627860568/images/target-size-relation.webp" alt="Target size relation between two mobile devices one showing buttons and theother showing links in an article for each respectively."></p>
+<figcaption>If the target is its own block of text (left), then it needs to adhere to the WCAG criterion. Otherwise, it is exempt (right).</figcaption>
+<p>You might think that something like a linked icon at the end of a sentence or paragraph would need to play by the rules, but the WCAG is clear that these targets are exempt:</p>
+<blockquote>
+<p>A footnote or an icon within or at the end of a sentence is considered to be part of a sentence and therefore are excluded from the minimum target size.</p>
+</blockquote>
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="rNydzOE" data-user="css-tricks" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/team/css-tricks/pen/rNydzOE">
+  WCAG 2.5.5: Icons at the end of a sentence are exempt</a> by CSS-Tricks (<a href="https://codepen.io/team/css-tricks">@css-tricks</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<p>And that makes sense. Imagine content with a line height of, say 32 pixels and an icon at the end that’s all padded up to be 44×44 pixels and how easy it would be to inadvertently activate the icon.</p>
+<h4 id="consider-whether-the-target-is-styled-by-the-user-agent" tabindex="-1">Consider whether the target is styled by the User Agent</h4>
+<p>If the target is completely un-styled — in the sense that you’ve added no CSS to it — and instead takes on the default styles provided by the browser, then there’s no need to stress the 44×44 rule. That makes sense. The User Agent is like system-level UI so changing it superficially with our own styles would be overriding an entire system which could lead to inconsistencies in that UI.</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1627861573/images/form-input-submit.webp" alt="A submit button."></p>
+<figcaption>You’re fine just as you are, little button.</figcaption>
+<p>So, yeah, if you’re rockin’ a default <code>&lt;button&gt;</code> or the like, and there are no other styles or sizing applied to it, then it’s good to go. But lots of us use resets to normalize UI elements across browsers, so watch for that in your codebase because that’s going to affect the User Agent styles of your target.</p>
+<h4 id="consider-if-there-are-other-ways-to-activate-the-functionality" tabindex="-1">Consider if there are other ways to activate the functionality</h4>
+<p>We’ve all used in-page anchor links, right? Heck, CSS-Tricks often has a table of contents at the top of an article that’s merely a list of anchor links.</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1627861624/images/toc.webp" alt="A table of contents."></p>
+<figcaption>Should these be at least 44×44 pixels?</figcaption>
+<p>WCAG actually uses anchor links as an example of something that’s off the hook as far as meeting the target size requirements. Why? Because it’s just as possible to manually scroll down to a specific location on a page as it is to click a link to jump there. There are two ways to accomplish the same thing, and one of those ways is built right into the browser.</p>
+<p>But we still ought to use care when working with something like a table of contents. I’m not entirely clear here, but given that a table of contents is list of links, each link may very well constitute its own block of text that’s not part of a larger block of a text, like a paragraph. So, in this sort of case, maybe a little extra space between list items is still a good idea. There’s less change of accidentally clipping or tapping two or more targets at once.</p>
+<h3 id="wrapping-up" tabindex="-1">Wrapping up</h3>
+<p>WCAG 2.5.5 criterion provides guidance for applying target sizes that are clear, unobstructed, and easy to activate. As we saw, there are plenty of cases where the size of a target can make all the difference in the world when it comes to completing an action.</p>
+<p>The interesting thing about the target size guidelines is what is exempted from them. While we didn’t cover each specific exemption on its own, we did look at a bunch situations that require careful consideration for sizing a target, from the type of input device that’s in use to the relationship of the target to its surrounding elements, and plenty of things between.</p>
+<p>The key to accessible target sizing isn’t necessary about using less styling on a target (although we did see that default User Agent styles are exempt), but rather having context and styling accordingly. There are probably dozens more situations we could have covered here and examined how styles come into play — so if you have some, share!</p>
+<p>And as far as styling goes, CSS specifications have specific features, like the interation media query for pointer, to make target sizing even better for people. Used well, it could be a great way to detect if a visitor is using a fine or coarse input device. That way, we can tailor things to make their experience better than if we treated those differences the same.</p>
+<p>So, yes, target sizes are an easy thing to brush off and ignore. But hopefully now you’re like me and have a genuine appreciation for targets that are correctly sized now that you have the information to make correctly sized targets of your own.</p>
+<h3 id="edit%3A-30-july%2C-2021" tabindex="-1">EDIT: 30 July, 2021</h3>
+<p>Adrian Roselli added:</p>
+<blockquote>
+<p>There is a <a href="https://codepen.io/aardrian/pen/eYZWNyv">bookmarklet to test 2.5.5</a> that Jared Smith made last year and which I modified to allow you to dismiss on Esc.<br>
+There is plenty of evidence beyond Apple and Material Design (the latter being easy to dismiss for usability failures). <a href="https://www.nngroup.com/articles/touch-target-size/">Nielsen Norman Group writes about</a> a 1cm × 1cm (0.4in × 0.4in) tap area, <a href="https://www.bbc.co.uk/gel/guidelines/how-to-design-for-touch">BBC GEL recommends</a> 7mm, <a href="https://docs.microsoft.com/en-us/windows/uwp/design/input/guidelines-for-targeting#target-size">Microsoft’s Fluent recommends</a> 40 × 40 effective pixels.<br>
+Hopefully the coming <a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html">2.5.8 Target Size (Minimum) SC</a> at Level AA will cover the gap that 2.5.5 at Level AAA left.</p>
+</blockquote>
+<p>Patrick H. Lauke added:</p>
+<blockquote>
+<p>If you must use a <code>pointer</code> query, strongly suggest using <code>any-pointer:coarse</code> to detect the presence of <em>any</em> coarse (generally, touch) pointer input (not just going by whatever the UA believes to be the primary).</p>
+</blockquote>
+
+    </section>
+  </article>
+</div>
+
+        <section class="social">
+          <h2>&copy;1999 &mdash; 2022, Todd Libby.</h2>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+            </ul>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            </ul>
+          <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; <a href="/a11y">A11y Statement</a></h2>
+        </section>
+      </main>
+
+      <footer class="meta">
+        <div class="foot">
+          <ul class="list-inline">
+            <li>
+              <a href="https://twitter.com/toddlibby" class="twitter">
+                <svg class="icon icon-twitter" focusable="false">
+                  <title>My Twitter profile</title>
+                  <desc id="twitter">A white bird.</desc>
+                  <use href="/img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://dribbble.com/colabottles/" class="dribbble">
+                <svg class="icon icon-dribbble" focusable="false">
+                  <title>My Dribbble portfolio</title>
+                  <desc id="dribbble">A white basketball.</desc>
+                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

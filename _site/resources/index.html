@@ -1,721 +1,850 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web development, design and technology blog.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>Resources</title>
-    <meta
-      name="Description"
-      content="A web development, design and technology blog."
-    />
-    <link rel="stylesheet" href="/css/index.css" media="all" />
-    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="/img/favicon.png"
-      media="all"
-    />
-    <link
-      rel="alternate"
-      href="/feed/feed.xml"
-      type="application/atom+xml"
-      title="Home of Todd Libby - Senior Front End Developer"
-    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+    <style>
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      </style>
   </head>
   <body>
     <div class="wrapper">
-      <header role="banner">
-        <h1 class="home">
-          <a href="/"> Todd Libby </a>
-        </h1>
-        <nav title="main-navigation" role="navigation">
-          <ul
-            class="navigation main-nav"
-            role="listbox"
-            tabindex="0"
-            title="navigation"
-          >
-            <li
-              class="nav-item"
-              tabindex="0"
-              role="option"
-              aria-selected="true"
-            >
-              <a href="/about/">About</a>
-            </li>
-            <li
-              class="nav-item"
-              tabindex="0"
-              role="option"
-              aria-selected="true"
-            >
-              <a href="/blog/">Blog</a>
-            </li>
-            <li
-              class="nav-item"
-              tabindex="0"
-              role="option"
-              aria-selected="true"
-            >
-              <a href="/contact/">Contact</a>
-            </li>
-            <li
-              class="nav-item nav-item-active"
-              tabindex="0"
-              role="option"
-              aria-selected="true"
-            >
-              <a href="/resources/">Resources</a>
-            </li>
-          </ul>
-        </nav>
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
       </header>
 
-      <main class="inner">
-        <div class="page-container">
-          <ul class="article-list">
-            <li class="article-list-article newest">
-              <a
-                class="article-list-article-link"
-                href="https://contrast-ratio.com/"
-              >
-                <span class="article-category">
-                  Tools, Color, Accessibility, Contrast
-                </span>
-                <h2 class="article-list-article-title">Contrast Ratio</h2>
-                <h3 class="article-meta">from Lea Verou</h3>
-              </a>
-            </li>
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://variablefonts.io/"
-              >
-                <span class="article-category">
-                  Tools, Variable Fonts, Typography
-                </span>
-                <h2 class="article-list-article-title">
-                  A Variable Fonts Primer
-                </h2>
-                <h3 class="article-meta">from Jason Pamental</h3>
-              </a>
-            </li>
+      <main id="main" class="inner" tabindex="-1">
+        
+<div class="page-container">
+  <ul class="article-list">
+    <li class="article-list-article newest">
+      <a class="article-list-article-link" href="https://11ty.rocks">
+        <span class="article-category">
+          Eleventy
+        </span>
+        <h2 class="article-list-article-title">
+          A collection of Eleventy (11ty) starters, projects, plugins, and resources created
+        </h2>
+        <h3 class="article-meta">
+          from Stephanie Eckles
+        </h3>
+      </a>
+    </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://moderncss.dev/">
+        <span class="article-category">
+          CSS
+        </span>
+        <h2 class="article-list-article-title">
+          Modern CSS Solutions for Old CSS Problems
+        </h2>
+        <h3 class="article-meta">
+          from Stephanie Eckles
+        </h3>
+      </a>
+    </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://stylestage.dev/">
+        <span class="article-category">
+          CSS
+        </span>
+        <h2 class="article-list-article-title">
+          Style Stage
+        </h2>
+        <h3 class="article-meta">
+          from Stephanie Eckles
+        </h3>
+      </a>
+    </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://contrast-ratio.com/">
+        <span class="article-category">
+          Tools, Color, Accessibility, Contrast
+        </span>
+        <h2 class="article-list-article-title">
+          Contrast Ratio
+        </h2>
+        <h3 class="article-meta">
+          from Lea Verou
+        </h3>
+      </a>
+    </li>
+    <li class="article-list-article">
+        <a class="article-list-article-link" href="https://variablefonts.io/">
+          <span class="article-category">
+            Tools, Variable Fonts, Typography
+          </span>
+          <h2 class="article-list-article-title">
+            A Variable Fonts Primer
+          </h2>
+          <h3 class="article-meta">
+            from Jason Pamental
+          </h3>
+        </a>
+      </li>
 
-            <li class="article-list-article">
-              <a class="article-list-article-link" href="https://whocanuse.com">
-                <span class="article-category"> Tools, Accessibility </span>
-                <h2 class="article-list-article-title">Who Can Use</h2>
-                <h3 class="article-meta">from Corey Ginnivan</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+        <a class="article-list-article-link" href="https://whocanuse.com">
+          <span class="article-category">
+            Tools, Accessibility
+          </span>
+          <h2 class="article-list-article-title">
+            Who Can Use
+          </h2>
+          <h3 class="article-meta">
+            from Corey Ginnivan
+          </h3>
+        </a>
+      </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://www.youtube.com/mozilladeveloper"
-              >
-                <span class="article-category"> Resource, Videos </span>
-                <h2 class="article-list-article-title">Mozilla Developer</h2>
-                <h3 class="article-meta">from Mozilla</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+        <a class="article-list-article-link" href="https://www.youtube.com/mozilladeveloper">
+          <span class="article-category">
+            Resource, Videos
+          </span>
+          <h2 class="article-list-article-title">
+            Mozilla Developer
+          </h2>
+          <h3 class="article-meta">
+            from Mozilla
+          </h3>
+        </a>
+      </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://userdefenders.com/"
-              >
-                <span class="article-category">
-                  Resource, User Experience, Podcast
-                </span>
-                <h2 class="article-list-article-title">User Defenders</h2>
-                <h3 class="article-meta">from Jason Ogle</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+        <a class="article-list-article-link" href="https://userdefenders.com/">
+          <span class="article-category">
+            Resource, User Experience, Podcast
+          </span>
+          <h2 class="article-list-article-title">
+            User Defenders
+          </h2>
+          <h3 class="article-meta">
+            from Jason Ogle
+          </h3>
+        </a>
+      </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://stephaniewalter.design/blog/fun-places-to-learn-css-layout-part-2-grid-layout/"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">
-                  Fun places to learn CSS Layout – Part 2: Grid Layout
-                </h2>
-                <h3 class="article-meta">from Stéphanie Walter</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://stephaniewalter.design/blog/fun-places-to-learn-css-layout-part-2-grid-layout/">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          Fun places to learn CSS Layout –  Part 2: Grid Layout
+        </h2>
+        <h3 class="article-meta">
+          from Stéphanie Walter
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://stephaniewalter.design/blog/fun-places-learn-css-layout-part-1-flexbox/"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">
-                  Fun places to learn CSS Layout – Part 1: Flexbox
-                </h2>
-                <h3 class="article-meta">from Stéphanie Walter</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://stephaniewalter.design/blog/fun-places-learn-css-layout-part-1-flexbox/">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          Fun places to learn CSS Layout –  Part 1: Flexbox
+        </h2>
+        <h3 class="article-meta">
+          from Stéphanie Walter
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">CSS Grid Layout</h2>
-                <h3 class="article-meta">from Mozilla Developer Network</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          CSS Grid Layout
+        </h2>
+        <h3 class="article-meta">
+          from Mozilla Developer Network
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://css-tricks.com/snippets/css/complete-guide-grid/"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">
-                  A Complete Guide to Grid
-                </h2>
-                <h3 class="article-meta">from CSS-Tricks</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://css-tricks.com/snippets/css/complete-guide-grid/">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          A Complete Guide to Grid
+        </h2>
+        <h3 class="article-meta">
+          from CSS-Tricks
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">
-                  A Complete Guide to Flexbox
-                </h2>
-                <h3 class="article-meta">from CSS-Tricks</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          A Complete Guide to Flexbox
+        </h2>
+        <h3 class="article-meta">
+          from CSS-Tricks
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">Grids</h2>
-                <h3 class="article-meta">from Mozilla Developer Network</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          Grids
+        </h2>
+        <h3 class="article-meta">
+          from Mozilla Developer Network
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://www.youtube.com/channel/UCJ0_R6U3ZClQDGpVJNjuPAQ"
-              >
-                <span class="article-category"> Resource, Videos </span>
-                <h2 class="article-list-article-title">
-                  Rachel Andrew on YouTube
-                </h2>
-                <h3 class="article-meta">from Rachel Andrew</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://www.youtube.com/channel/UCJ0_R6U3ZClQDGpVJNjuPAQ">
+        <span class="article-category">
+          Resource, Videos
+        </span>
+        <h2 class="article-list-article-title">
+          Rachel Andrew on YouTube
+        </h2>
+        <h3 class="article-meta">
+          from Rachel Andrew
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://www.youtube.com/layoutland"
-              >
-                <span class="article-category"> Resource, Videos </span>
-                <h2 class="article-list-article-title">Layout Land</h2>
-                <h3 class="article-meta">from Jen Simmons</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://www.youtube.com/layoutland">
+        <span class="article-category">
+          Resource, Videos
+        </span>
+        <h2 class="article-list-article-title">
+          Layout Land
+        </h2>
+        <h3 class="article-meta">
+          from Jen Simmons
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://labs.jensimmons.com/"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">
-                  Web Design Experiments
-                </h2>
-                <h3 class="article-meta">from Jen Simmons</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://labs.jensimmons.com/">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          Web Design Experiments
+        </h2>
+        <h3 class="article-meta">
+          from Jen Simmons
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">Flexbox</h2>
-                <h3 class="article-meta">from Mozilla Developer Network</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          Flexbox
+        </h2>
+        <h3 class="article-meta">
+          from Mozilla Developer Network
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://gridbyexample.com/"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">Grid By Example</h2>
-                <h3 class="article-meta">from Rachel Andrew</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://gridbyexample.com/">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          Grid By Example
+        </h2>
+        <h3 class="article-meta">
+          from Rachel Andrew
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://learncssgrid.com/"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">Learn CSS Grid</h2>
-                <h3 class="article-meta">from Jonathan Suh</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://learncssgrid.com/">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          Learn CSS Grid
+        </h2>
+        <h3 class="article-meta">
+          from Jonathan Suh
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://cssgrid-generator.netlify.com/"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">CSS Grid Generator</h2>
-                <h3 class="article-meta">from Sarah Drasner</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://cssgrid-generator.netlify.com/">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          CSS Grid Generator
+        </h2>
+        <h3 class="article-meta">
+          from Sarah Drasner
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://rachelandrew.co.uk/"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">Rachel Andrew</h2>
-                <h3 class="article-meta">from Rachel Andrew</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://rachelandrew.co.uk/">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          Rachel Andrew
+        </h2>
+        <h3 class="article-meta">
+          from Rachel Andrew
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://jensimmons.com/"
-              >
-                <span class="article-category"> Resource, CSS </span>
-                <h2 class="article-list-article-title">Jen Simmons</h2>
-                <h3 class="article-meta">from Jen Simmons</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://jensimmons.com/">
+        <span class="article-category">
+          Resource, CSS
+        </span>
+        <h2 class="article-list-article-title">
+          Jen Simmons
+        </h2>
+        <h3 class="article-meta">
+          from Jen Simmons
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a class="article-list-article-link" href="https://typetura.com/">
-                <span class="article-category"> Resource, Fonts </span>
-                <h2 class="article-list-article-title">Typetura</h2>
-                <h3 class="article-meta">
-                  from Scott Kellum &amp; Sal Hernanadez
-                </h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://typetura.com/">
+        <span class="article-category">
+          Resource, Fonts
+        </span>
+        <h2 class="article-list-article-title">
+          Typetura
+        </h2>
+        <h3 class="article-meta">
+          from Scott Kellum &amp; Sal Hernanadez
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://carbon.now.sh/"
-              >
-                <span class="article-category"> Resource, Code </span>
-                <h2 class="article-list-article-title">Carbon</h2>
-                <h3 class="article-meta">from Dawn Labs</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://carbon.now.sh/">
+        <span class="article-category">
+          Resource, Code
+        </span>
+        <h2 class="article-list-article-title">
+          Carbon
+        </h2>
+        <h3 class="article-meta">
+          from Dawn Labs
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a class="article-list-article-link" href="https://rwt.io/">
-                <span class="article-category"> Resource, Fonts </span>
-                <h2 class="article-list-article-title">
-                  Responsive Web Typography
-                </h2>
-                <h3 class="article-meta">from Jason Pamental</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://rwt.io/">
+        <span class="article-category">
+          Resource, Fonts
+        </span>
+        <h2 class="article-list-article-title">
+          Responsive Web Typography
+        </h2>
+        <h3 class="article-meta">
+          from Jason Pamental
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://www.axis-praxis.org/"
-              >
-                <span class="article-category"> Resource, Fonts </span>
-                <h2 class="article-list-article-title">Axis-Praxis</h2>
-                <h3 class="article-meta">from Laurence Penney</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://www.axis-praxis.org/">
+        <span class="article-category">
+          Resource, Fonts
+        </span>
+        <h2 class="article-list-article-title">
+          Axis-Praxis
+        </h2>
+        <h3 class="article-meta">
+          from Laurence Penney
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a class="article-list-article-link" href="https://v-fonts.com">
-                <span class="article-category"> Resource, Fonts </span>
-                <h2 class="article-list-article-title">V-Fonts</h2>
-                <h3 class="article-meta">from Nick Sherman</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://v-fonts.com">
+        <span class="article-category">
+          Resource, Fonts
+        </span>
+        <h2 class="article-list-article-title">
+          V-Fonts
+        </h2>
+        <h3 class="article-meta">
+          from Nick Sherman
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://wakamaifondue.com/"
-              >
-                <span class="article-category"> Resource, Fonts </span>
-                <h2 class="article-list-article-title">Wakami Fondue</h2>
-                <h3 class="article-meta">from Roel Nieskens/PixelAmbacht</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://wakamaifondue.com/">
+        <span class="article-category">
+          Resource, Fonts
+        </span>
+        <h2 class="article-list-article-title">
+          Wakami Fondue
+        </h2>
+        <h3 class="article-meta">
+          from Roel Nieskens/PixelAmbacht
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://www.marksimonson.com/"
-              >
-                <span class="article-category"> Resource, Fonts </span>
-                <h2 class="article-list-article-title">Mark Simonson Studio</h2>
-                <h3 class="article-meta">from Mark Simonson</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://www.marksimonson.com/">
+        <span class="article-category">
+          Resource, Fonts
+        </span>
+        <h2 class="article-list-article-title">
+          Mark Simonson Studio
+        </h2>
+        <h3 class="article-meta">
+          from Mark Simonson
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a class="article-list-article-link" href="https://djr.com/">
-                <span class="article-category"> Resource, Fonts </span>
-                <h2 class="article-list-article-title">David Jonathan Ross</h2>
-                <h3 class="article-meta">from David Jonathan Ross</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://djr.com/">
+        <span class="article-category">
+          Resource, Fonts
+        </span>
+        <h2 class="article-list-article-title">
+          David Jonathan Ross
+        </h2>
+        <h3 class="article-meta">
+          from David Jonathan Ross
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://fontofthemonth.club/"
-              >
-                <span class="article-category"> Resource, Fonts </span>
-                <h2 class="article-list-article-title">
-                  Font of the Month Club
-                </h2>
-                <h3 class="article-meta">from David Jonathan Ross</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://fontofthemonth.club/">
+        <span class="article-category">
+          Resource, Fonts
+        </span>
+        <h2 class="article-list-article-title">
+          Font of the Month Club
+        </h2>
+        <h3 class="article-meta">
+          from David Jonathan Ross
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://developer.mozilla.org/en-US/"
-              >
-                <span class="article-category"> Resource </span>
-                <h2 class="article-list-article-title">MDN Web Docs</h2>
-                <h3 class="article-meta">from Mozilla Developer Network</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://developer.mozilla.org/en-US/">
+        <span class="article-category">
+          Resource
+        </span>
+        <h2 class="article-list-article-title">
+          MDN Web Docs
+        </h2>
+        <h3 class="article-meta">
+          from Mozilla Developer Network
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a class="article-list-article-link" href="https://github.com/">
-                <span class="article-category"> Software </span>
-                <h2 class="article-list-article-title">GitHub</h2>
-                <h3 class="article-meta">from GitHub</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://github.com/">
+        <span class="article-category">
+          Software
+        </span>
+        <h2 class="article-list-article-title">
+          GitHub
+        </h2>
+        <h3 class="article-meta">
+          from GitHub
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://wave.webaim.org/"
-              >
-                <span class="article-category"> Tools </span>
-                <h2 class="article-list-article-title">
-                  WAVE Web Accessibility Evalutation Tool
-                </h2>
-                <h3 class="article-meta">from WebAIM</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://wave.webaim.org/">
+        <span class="article-category">
+          Tools
+        </span>
+        <h2 class="article-list-article-title">
+          WAVE Web Accessibility Evalutation Tool
+        </h2>
+        <h3 class="article-meta">
+          from WebAIM
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://www.smashingmagazine.com/"
-              >
-                <span class="article-category"> Resource </span>
-                <h2 class="article-list-article-title">Smashing Magazine</h2>
-                <h3 class="article-meta">from Impressum</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://www.smashingmagazine.com/">
+        <span class="article-category">
+          Resource
+        </span>
+        <h2 class="article-list-article-title">
+          Smashing Magazine
+        </h2>
+        <h3 class="article-meta">
+          from Impressum
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://www.mozilla.org/en-US/firefox/"
-              >
-                <span class="article-category"> Browsers </span>
-                <h2 class="article-list-article-title">Firefox</h2>
-                <h3 class="article-meta">from Mozilla</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://www.mozilla.org/en-US/firefox/">
+        <span class="article-category">
+          Browsers
+        </span>
+        <h2 class="article-list-article-title">
+          Firefox
+        </h2>
+        <h3 class="article-meta">
+          from Mozilla
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly"
-              >
-                <span class="article-category"> Browsers </span>
-                <h2 class="article-list-article-title">Firefox Nightly</h2>
-                <h3 class="article-meta">from Mozilla</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">
+        <span class="article-category">
+          Browsers
+        </span>
+        <h2 class="article-list-article-title">
+          Firefox Nightly
+        </h2>
+        <h3 class="article-meta">
+          from Mozilla
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://alistapart.com/"
-              >
-                <span class="article-category"> Resource </span>
-                <h2 class="article-list-article-title">A List Apart</h2>
-                <h3 class="article-meta">from A List Apart</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://alistapart.com/">
+        <span class="article-category">
+          Resource
+        </span>
+        <h2 class="article-list-article-title">
+          A List Apart
+        </h2>
+        <h3 class="article-meta">
+          from A List Apart
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://www.netlify.com/"
-              >
-                <span class="article-category"> Platform </span>
-                <h2 class="article-list-article-title">Netlify</h2>
-                <h3 class="article-meta">from Netlify</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://www.netlify.com/">
+        <span class="article-category">
+          Platform
+        </span>
+        <h2 class="article-list-article-title">
+          Netlify
+        </h2>
+        <h3 class="article-meta">
+          from Netlify
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a class="article-list-article-link" href="https://www.11ty.io/">
-                <span class="article-category"> Tools </span>
-                <h2 class="article-list-article-title">11ty</h2>
-                <h3 class="article-meta">from Zach Leatherman</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://www.11ty.io/">
+        <span class="article-category">
+          Tools
+        </span>
+        <h2 class="article-list-article-title">
+          11ty
+        </h2>
+        <h3 class="article-meta">
+          from Zach Leatherman
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a class="article-list-article-link" href="https://www.w3.org/">
-                <span class="article-category"> Resource </span>
-                <h2 class="article-list-article-title">W3C</h2>
-                <h3 class="article-meta">from W3C</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://www.w3.org/">
+        <span class="article-category">
+          Resource
+        </span>
+        <h2 class="article-list-article-title">
+          W3C
+        </h2>
+        <h3 class="article-meta">
+          from W3C
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a class="article-list-article-link" href="https://codepen.io/">
-                <span class="article-category"> Tools </span>
-                <h2 class="article-list-article-title">Codepen</h2>
-                <h3 class="article-meta">From Codepen</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://codepen.io/">
+        <span class="article-category">
+          Tools
+        </span>
+        <h2 class="article-list-article-title">
+          Codepen
+        </h2>
+        <h3 class="article-meta">
+          From Codepen
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://css-tricks.com/"
-              >
-                <span class="article-category"> Resource </span>
-                <h2 class="article-list-article-title">CSS-Tricks</h2>
-                <h3 class="article-meta">from Chris Coyier</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://css-tricks.com/">
+        <span class="article-category">
+          Resource
+        </span>
+        <h2 class="article-list-article-title">
+          CSS-Tricks
+        </h2>
+        <h3 class="article-meta">
+          from Chris Coyier
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a class="article-list-article-link" href="https://webaim.org/">
-                <span class="article-category"> Resource </span>
-                <h2 class="article-list-article-title">WebAIM</h2>
-                <h3 class="article-meta">from WebAIM</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://webaim.org/">
+        <span class="article-category">
+          Resource
+        </span>
+        <h2 class="article-list-article-title">
+          WebAIM
+        </h2>
+        <h3 class="article-meta">
+          from WebAIM
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://uxburlington.com/"
-              >
-                <span class="article-category"> Conference </span>
-                <h2 class="article-list-article-title">UX Burlington</h2>
-                <h3 class="article-meta">from UX Burlington</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://uxburlington.com/">
+        <span class="article-category">
+          Conference
+        </span>
+        <h2 class="article-list-article-title">
+          UX Burlington
+        </h2>
+        <h3 class="article-meta">
+          from UX Burlington
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://aneventapart.com/"
-              >
-                <span class="article-category"> Conference </span>
-                <h2 class="article-list-article-title">An Event Apart</h2>
-                <h3 class="article-meta">from An Event Apart</h3>
-              </a>
-            </li>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://aneventapart.com/">
+        <span class="article-category">
+          Conference
+        </span>
+        <h2 class="article-list-article-title">
+          An Event Apart
+        </h2>
+        <h3 class="article-meta">
+          from An Event Apart
+        </h3>
+      </a>
+    </li>
 
-            <li class="article-list-article">
-              <a
-                class="article-list-article-link"
-                href="https://abookapart.com/"
-              >
-                <span class="article-category"> Resource </span>
-                <h2 class="article-list-article-title">A Book Apart</h2>
-                <h3 class="article-meta">from A Book Apart</h3>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <li class="article-list-article">
+      <a class="article-list-article-link" href="https://abookapart.com/">
+        <span class="article-category">
+          Resource
+        </span>
+        <h2 class="article-list-article-title">
+          A Book Apart
+        </h2>
+        <h3 class="article-meta">
+          from A Book Apart
+        </h3>
+      </a>
+    </li>
+  </ul>
+</div>
+
+        <section class="social">
+          <h2>&copy;1999 &mdash; 2022, Todd Libby.</h2>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+            </ul>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            </ul>
+          <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; <a href="/a11y">A11y Statement</a></h2>
+        </section>
       </main>
 
-      <div class="social" title="sub-navigation" role="navigation">
-        <h2>&copy;1999 &mdash; 2020, Todd Libby.</h2>
-        <ul class="nav list-inline">
-          <li class="nav-item"><a href="/archives">Archives</a></li>
-          <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-          <li class="nav-item"><a href="/events">Events</a></li>
-          <li class="nav-item"><a href="/uses">Uses</a></li>
-          <li class="nav-item"><a href="/a11y">A11y</a></li>
-        </ul>
-        <h2>#BlackLivesMatter</h2>
-      </div>
-
-      <footer class="meta" role="contentinfo">
-        <nav class="foot" title="footer-navigtion">
+      <footer class="meta">
+        <div class="foot">
           <ul class="list-inline">
             <li>
-              <a
-                href="https://codepen.io/colabottles/#"
-                class="codepen"
-                aria-label="A link to my CodePen repository"
-              >
-                <svg
-                  class="icon icon-codepen"
-                  role="img"
-                  aria-label="An icon that links to my CodePen repository"
-                >
-                  <title>A link to my CodePen repository</title>
-                  <desc id="codepen">
-                    A white icon in the shape of the CodePen logo which is a 3D
-                    cube.
-                  </desc>
-                  <use
-                    href="/img/symbol-defs.svg#icon-codepen"
-                    alt="A link to my CodePen repository"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://dribbble.com/colabottles/"
-                class="dribbble"
-                aria-label="A link to my Dribbble page"
-              >
-                <svg
-                  class="icon icon-dribbble"
-                  role="img"
-                  aria-label="An icon that links to my Dribbble portfolio"
-                >
-                  <title>A link to my Dribbble portfolio</title>
-                  <desc id="dribbble">
-                    A white icon in the shape of the Dribbble logo which is a
-                    basketball.
-                  </desc>
-                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/colabottles/"
-                class="github"
-                aria-label="A link to my GitHub page"
-              >
-                <svg
-                  class="icon icon-github"
-                  role="img"
-                  aria-label="An icon that links to my GitHub repository"
-                >
-                  <title>A link to my GitHub repository</title>
-                  <desc id="github">
-                    A white icon in the shape of the GitHub logo which is the
-                    OctoCat.
-                  </desc>
-                  <use href="/img/symbol-defs.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/toddlibby"
-                class="twitter"
-                aria-label="A link to my Twitter page"
-              >
-                <svg
-                  class="icon icon-twitter"
-                  role="img"
-                  aria-label="An icon that links to my Dribbble portfolio"
-                >
-                  <title>A link to my Twitter page</title>
-                  <desc id="twitter">
-                    A white icon in the shape of the Twitter logo which is a
-                    bird.
-                  </desc>
+              <a href="https://twitter.com/toddlibby" class="twitter">
+                <svg class="icon icon-twitter" focusable="false">
+                  <title>My Twitter profile</title>
+                  <desc id="twitter">A white bird.</desc>
                   <use href="/img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a
-                href="https://toddl.dev/feed/feed.xml"
-                class="rss"
-                aria-label="A link to my RSS page"
-              >
-                <svg
-                  class="icon icon-rss"
-                  role="img"
-                  aria-label="An icon that links to this site's RSS feed"
-                >
-                  <title>A link to the RSS feed for this site</title>
-                  <desc id="rss">
-                    A white icon in the shape of the RSS logo which is a group
-                    of lines shaped like a speaker.
-                  </desc>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
                   <use href="/img/symbol-defs.svg#icon-rss"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a
-                href="http://wave.webaim.org/report#/https://toddl.dev/"
-                class="a11y"
-                aria-label="WCAG 2.0 AA Passed a11y"
-              >
-                <svg
-                  class="icon icon-accessible-icon"
-                  role="img"
-                  aria-label="An icon that links to this pages WCAG 2.0 Accessibility test results"
-                >
-                  <title>
-                    A link to the WCAG 2.0 Accessibility test results for this
-                    site
-                  </title>
-                  <desc id="a11y">
-                    A white icon in the shape of a person in a wheelchair.
-                  </desc>
+              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
                   <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
                 </svg>
               </a>
             </li>
+            <li>
+              <a href="https://dribbble.com/colabottles/" class="dribbble">
+                <svg class="icon icon-dribbble" focusable="false">
+                  <title>My Dribbble portfolio</title>
+                  <desc id="dribbble">A white basketball.</desc>
+                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
-
-    <!-- Current page: /resources/ -->
-    <script src="../svgxuse.min.js" defer></script>
   </body>
 </html>

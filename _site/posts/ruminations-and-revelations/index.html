@@ -3,35 +3,98 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A retrospective on my life and the recent battles with depression, anxiety, and imposter syndrome.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>Ruminations &amp; Revelations</title>
-    <meta name="Description" content="A retrospective on my life and the recent battles with depression, anxiety, and imposter syndrome.">
-    <link rel="stylesheet" href="/css/index.css" media="all" />
-    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css" />
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" media="all" />
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Home of Todd Libby - Senior Front End Developer" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+    <style>
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      </style>
   </head>
   <body>
     <div class="wrapper">
-      <header role="banner">
-        <h1 class="home">
-          <a href="/">
-            Todd Libby
-          </a>
-        </h1>
-        <nav title="main-navigation" role="navigation">
-          <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation"><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/about/">About</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/blog/">Blog</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/contact/">Contact</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/resources/">Resources</a>
-              </li></ul>
-        </nav>
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
       </header>
 
-      <main class="inner">
+      <main id="main" class="inner" tabindex="-1">
         
 <div class="article-container">
   <article>
@@ -43,31 +106,31 @@
     </header>
     
     <section class="article__body">
-      <h1 id="ruminations-%26-revelations">Ruminations &amp; Revelations</h1>
+      <h1 id="ruminations-%26-revelations" tabindex="-1">Ruminations &amp; Revelations</h1>
 <blockquote>
 <p>Lately it occurs to me what a long, strange trip it's been.</p>
 <p>— The Grateful Dead</p>
 </blockquote>
-<h2 id="2%3A33-am-on-a-cold%2C-dark-morning">2:33 am On A Cold, Dark Morning</h2>
+<h2 id="2%3A33-am-on-a-cold%2C-dark-morning" tabindex="-1">2:33 am On A Cold, Dark Morning</h2>
 <p>I awoke after nodding off to sleep early, as I usually do now that I approaching fifty years of age, with a feeling of despair. With that hollow feeling of emptiness and loneliness that is a part of living alone. I had just decided to take a break from tech. I usually do when I feel like I have been pushed to the brink of going batty.</p>
 <p>I thought about back when I was a kid. When I found computing, programming, it was an amazing time to be alive. Simple, privileged, tucked away from the madness that had gone on around me (unknowingly) for decades. The things you only heard and read in school texts as a kid growing up about the South and the horrible things that went on there during the Civil Rights marches and era of the Sixties.</p>
 <p>These thoughts criss-crossed my mind in a woven pattern, such is my brain, of wires that were just an utter mess. When I found programming and computing it had been able to take me away from the blight of being a skinny, tall, and awkward white kid from the ‘burbs of Portland, Maine, who had been yanked out of his home in the city and brought not too far away, yet far away enough that it felt like an eternity and exiled to a rural area in northern New Hampshire.</p>
 <p>Programming took my mind off of things that I had resented my father about and how I held onto those resentments for nearly thirty-five years. My parents had purchased a Commodore 64. Whether it was for the entire family, or just for myself, I do not recall, but I took that computer and hijacked it from the living room to my bedroom and it never saw another room for the entirety of the times we owned it.</p>
 <p>I read the manual cover to cover in a day. I poured through books that I had purchased at book stores. I wanted to learn and program because it was an escape from an otherwise not-so-great, but privileged childhood. Little did I know the teen years would be a huge test and a test that I would fail.</p>
-<h2 id="the-dawn-of-my-internet">The Dawn of My Internet</h2>
+<h2 id="the-dawn-of-my-internet" tabindex="-1">The Dawn of My Internet</h2>
 <p>When I discovered the internet back in its infancy when it became public I was gobsmacked to say the least. I remember we got an America Online subscription with a 286 desktop computer we purchased. I still had the C64 and still programmed in BASIC on it. Creating “Choose Your Own Adventure” games I had copied right from the book series. Text versions of books I had found turning those into “Choose Your Own Adventure” games as well.</p>
 <p>But when that desktop was plugged into that phone line and that 2400 baud modem kicked on and that dial tone began, converting over to that screech and pinging we who lived that era all know very well, was the beginning of something that some thirty-six years later, I would have never thought I would be involved in and had a passion for deeply.</p>
 <p>Conversing with some people in other countries blew my mind. I also was playing RPG’s online as well. The first incantation of Neverwinter Nights was something I started to play.</p>
 <p>And it all started with a big blue book, and one week of my life.</p>
-<h2 id="html.-how-todd-mastered-the-language">HTML. How Todd Mastered the Language</h2>
+<h2 id="html.-how-todd-mastered-the-language" tabindex="-1">HTML. How Todd Mastered the Language</h2>
 <p>I read that SAMS book “Teach Yourself Web Publishing with HTML and XHTML in 21 Days” in one week. I used Notepad as my code editor after reading about how it could be used to do so and I hit the ground running.</p>
 <p>It took my mind off the things I was struggling with. School. Very few friends. Isolation. Having moved away from where I called “home”. It took my mind and made me think, made me want to create and made me want to learn. I poured through that book and did everything to the letter in that book and understood it all. School did not captivate my mind like this. Math didn’t. History didn’t. Nothing did. Except this book.</p>
-<h2 id="web-standards%3F-what-is-this%3F">Web Standards? What Is This?</h2>
+<h2 id="web-standards%3F-what-is-this%3F" tabindex="-1">Web Standards? What Is This?</h2>
 <p>I don’t quite remember how, or why, but I do remember it was in the Waldenbooks store in the local mall in the small little town I had lived near that was as close to the city as I would get for a number of years of growing up and I found this orange book with a picture of a bearded fellow that seemed to be blurred or pixelated. Bright colors always grabbed my attention, this book did just that. I purchased the book and proceeded to go home and read a little bit of it. That little bit turned into a day of reading the entire first edition of “Designing with Web Standards” by Jeffrey Zeldman.</p>
 <p>The rest is history. A history fraught with highs and lows, ups and downs, the good, the bad, and the downright ugly. Such is life.</p>
 <p>Through thirty years of addictions, alcoholism, drugs, and horrible decisions I had strayed away from the thing that I found as a young kid and moved to do with the passion that I had only had in one other thing and that was playing basketball. When I chose the party scene after my sophomore year of high school, my dream of being the small forward for the Boston Celtics disintegrated before my very eyes as ego and addiction took over my life.</p>
 <p>Though I always kept that orange book. I sometimes would open up that orange book in times of being low, having nothing to do. Reading about the man who wrote the book, visiting and reading his site in the early days like that was my main news source. Never knowing that someday, as an adult, I would finally meet that man and get to thank him and even call him friend.</p>
-<h2 id="the-times%2C-they-are-%E2%80%98a-changin%E2%80%99">The Times, They Are ‘A Changin’</h2>
+<h2 id="the-times%2C-they-are-%E2%80%98a-changin%E2%80%99" tabindex="-1">The Times, They Are ‘A Changin’</h2>
 <p>Fast forward to now. I’m forty-nine years old. I have seen the browser wars, I have seen the advent of pop up’s, pop overs, pop unders, advertisements clogging up our web landscape, the monetization of the web. The dark underbelly of the web in its infancy. All the way to the dark web of now and only a small fraction of that dark web.</p>
 <p>We turned something so simple, into something so complex and perverted like human beings always do with anything we come in contact with. Such is the way with the web and such is the way with programming languages. Simple is never enough. We always look to and stumble into a way to convolute and fuck up everything.</p>
 <p>I have also seen the glimpses of good, the glimmers of hope. The advent of CSS, Eric Meyer’s “Eric Meyer on CSS”, The Mosaic and Netscape browsers, chat rooms and mIRC. ICQ and BBSs. Gopher and Telnet.</p>
@@ -77,14 +140,14 @@
 <p>I sank into depression and more drinking and spiraled out of control. Drugs soon entered again. I did not care anymore about a lot of things. I thought I did not care about anything. I did. I just wasn’t aware of it.</p>
 <p>I awoke in the mornings or in most cases, came to in the morning and didn’t want to live. I wished I hadn’t woken up. I wish that I did not have to go to the same shitty jobs i had outside of the web that I had.</p>
 <p>To this day, I still awake sometimes, and wish that I hadn’t. When I look at Twitter, when I used to read news. When I used to try and converse with people I followed on Twitter and got back not a single reply. I just wish I hadn’t woken up that morning. I took it all too personal. Yet, I took it all and just did not care and beat myself into the ground with the thousand ways why this was all so horribly bad.</p>
-<h2 id="sobriety%2C-perseverance%2C-and-fight">Sobriety, Perseverance, and Fight</h2>
+<h2 id="sobriety%2C-perseverance%2C-and-fight" tabindex="-1">Sobriety, Perseverance, and Fight</h2>
 <p>In 2013 I decided it would be a good idea to get sober. A decision I do not regret to this day. It did not however go as smoothly as I wanted it to. Then again, does anything major we live through go as smoothly as we wish it to be?</p>
 <p>My first web conference was in Boston in 2008 at An Event Apart. My first meeting with Jeffrey Zeldman was of me having a nervous breakdown because of a credit card mixup. Right in front of the man who wrote the book that I had poured over a hundred times over. I was unfazed at the time because alcohol took that away, but now when I look back I look back with a little sense of embarrassment and shame.</p>
 <p>I did not get back until 2017. I don’t remember much about the 2008 AEA except for what I had written down on an old blog and moved the archive over to this incantation. Of all the things I remember it was my first meeting with Jeffrey, Eric, and Bruce Lawson in that dining room at the hotel.</p>
 <p>Back to 2013. I worked on a lot of things but a lot of things were in my life that should never have been and never would be again. The wreckage of all that has been cleared and I have lived with much peace and serenity of late. Then Twitter came back into the picture. I also found web design again as a passion.</p>
 <p>I had always tried to brand myself and get my name out there so I could land a great job with a great design studio or firm doing what I loved to do. Between 2008 and 2013 I was unable to do any of that because of life events. From 2013-2017 I was able to do a little bit of it. In the meantime from 1999 to this point in, roughly 2017, I was able to keep my head barely above water doing things with computers whether it was hardware repair or web design.</p>
 <p>After a few more conferences the past couple of years and getting the nerve to walk up to the people whom I admired and their work helped shape who I was as a web designer, and meeting a ton of great people and having a lot of great conversations along the way, it started to deteriorate within myself.</p>
-<h2 id="2017.-why%3F">2017. Why?</h2>
+<h2 id="2017.-why%3F" tabindex="-1">2017. Why?</h2>
 <p>Someone entered the White House and as fast as the landscape in this country has decayed past any corrupt government I had ever read about or heard of, so did my mental health. Especially on social media.</p>
 <p>I had been removed from Facebook for quite some time, Twitter I figured would remain rock solid and it would be a great place to pitch myself and maybe someday get those bucket list items out of the way.</p>
 <ul>
@@ -97,12 +160,12 @@
 <p>Then the landscape of Twitter eroded quickly. Then the factions of certain developers and their giant egos started to lash out at people. Things got ugly and all I saw (and continued to see) was human beings at their ugliest. I started to shut down like I always do and retract back into myself.</p>
 <p>With each passing conference though, I got the courage to put on that face, to engage with the speakers, and mingle. I remember the first time I met Rachel Andrew, I sat down as she worked form the table, and I had adored her work from afar for many years, her and husband Drew McLellan were folks I had learned from, and all I could do is nervously eat my breakfast and talk very little because I was absolutely wrought with anxiety and fear.</p>
 <p>I persisted even if I looked like a complete idiot. The first time I met Jen Simmons I probably babbled on and on. I remember meeting Dm Mall and completely asked a question not even remotely relevant to the talk he gave. It was those kinds of moments that you want to take back but never can, but regardless, I met those people even if I seemed like a giant bumbling fool.</p>
-<h2 id="why-don%E2%80%99t-people-like-me%3F">Why Don’t People Like Me?</h2>
+<h2 id="why-don%E2%80%99t-people-like-me%3F" tabindex="-1">Why Don’t People Like Me?</h2>
 <p>I have always been a people pleaser. I have always wanted people to like me. That will never be the case because not everyone will like me and not everyone does, this I do know. A friend once told me, “It doesn’t matter what people think of you, it’s none of your business.”</p>
 <p>That made me think a long time, until I finally realized what it meant. They will think whatever they want about you, let them. You can’t get inside their head and what they do, think, say, it is none of your business. Sometime ignorance can be bliss.</p>
 <p>Oh, that person unfriended me on Twitter, what did I do or say? This always crossed my mind when that happened. Full of self-doubt and guilt about “what was it I said?” I am a likable person! Hours spent wondering why? Lost.</p>
 <p>People come and people go fro our lives and until I fully realized this, I fully realized that’s going to happen on social media.</p>
-<h2 id="the-present">The Present</h2>
+<h2 id="the-present" tabindex="-1">The Present</h2>
 <p>With all the negative on Twitter. With all the failed job applications and rejection emails that are in the hundreds, approaching the thousands.With the current landscape of being self-quarantined, social media being cesspits for the degenerative society we live in today. The lies, the misinformation, the scandals, and the horrible truths and new low that happen every day it has just become too much.</p>
 <p>With a job I had that was just in the final stages of breaking me and my spirit. A broken system, with an even more broken process, with a leadership that has blinders on, pushing back when suggestions for modernization are put on the table, I just couldn’t take it any longer. It was soul crushing and morale destroying.</p>
 <p>I had to take a break. This was written up because I couldn’t sleep. Now that I am at the point where I might be able to get another couple hours in I’ll wrap this up. When I commit this to the server and it goes live I’ll still be in my little self-isolation bubble. Not ready to come out yet. I just want to decompress and listen to music.</p>
@@ -115,83 +178,84 @@
     </section>
   </article>
 </div>
+
+        <section class="social">
+          <h2>&copy;1999 &mdash; 2022, Todd Libby.</h2>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+            </ul>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            </ul>
+          <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; <a href="/a11y">A11y Statement</a></h2>
+        </section>
       </main>
 
-      <div class="social" title="sub-navigation" role="navigation">
-        <h2>&copy;1999 &mdash; 2020, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/a11y">A11y</a></li>
-          </ul>
-        <h2>#BlackLivesMatter</h2>
-      </div>
-
-      <footer class="meta" role="contentinfo">
-        <nav class="foot" title="footer-navigtion">
+      <footer class="meta">
+        <div class="foot">
           <ul class="list-inline">
             <li>
-              <a href="https://codepen.io/colabottles/#" class="codepen" aria-label="A link to my CodePen repository">
-                <svg class="icon icon-codepen" role="img" aria-label="An icon that links to my CodePen repository">
-                  <title>A link to my CodePen repository</title>
-                  <desc id="codepen">A white icon in the shape of the CodePen logo which is a 3D cube.</desc>
-                  <use href="/img/symbol-defs.svg#icon-codepen" alt="A link to my CodePen repository"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://dribbble.com/colabottles/" class="dribbble" aria-label="A link to my Dribbble page">
-                <svg class="icon icon-dribbble" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Dribbble portfolio</title>
-                  <desc id="dribbble">A white icon in the shape of the Dribbble logo which is a basketball.</desc>
-                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/colabottles/" class="github" aria-label="A link to my GitHub page">
-                <svg class="icon icon-github" role="img" aria-label="An icon that links to my GitHub repository">
-                  <title>A link to my GitHub repository</title>
-                  <desc id="github">A white icon in the shape of the GitHub logo which is the OctoCat.</desc>
-                  <use href="/img/symbol-defs.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/toddlibby" class="twitter" aria-label="A link to my Twitter page">
-                <svg class="icon icon-twitter" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Twitter page</title>
-                  <desc id="twitter">A white icon in the shape of the Twitter logo which is a bird.</desc>
+              <a href="https://twitter.com/toddlibby" class="twitter">
+                <svg class="icon icon-twitter" focusable="false">
+                  <title>My Twitter profile</title>
+                  <desc id="twitter">A white bird.</desc>
                   <use href="/img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://toddl.dev/feed/feed.xml" class="rss" aria-label="A link to my RSS page">
-                <svg class="icon icon-rss" role="img" aria-label="An icon that links to this site's RSS feed">
-                  <title>A link to the RSS feed for this site</title>
-                  <desc id="rss">A white icon in the shape of the RSS logo which is a group of lines shaped like a speaker.</desc>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
                   <use href="/img/symbol-defs.svg#icon-rss"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y" aria-label="WCAG 2.0 AA Passed a11y">
-                <svg class="icon icon-accessible-icon" role="img" aria-label="An icon that links to this pages WCAG 2.0 Accessibility test results">
-                  <title>A link to the WCAG 2.0 Accessibility test results for this site</title>
-                  <desc id="a11y">A white icon in the shape of a person in a wheelchair.</desc>
+              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
                   <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
                 </svg>
               </a>
             </li>
+            <li>
+              <a href="https://dribbble.com/colabottles/" class="dribbble">
+                <svg class="icon icon-dribbble" focusable="false">
+                  <title>My Dribbble portfolio</title>
+                  <desc id="dribbble">A white basketball.</desc>
+                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
-
-    <!-- Current page: /posts/ruminations-and-revelations/ -->
-    <script src="../svgxuse.min.js" defer></script>
   </body>
 </html>

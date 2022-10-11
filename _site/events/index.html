@@ -1,291 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web development, design and technology blog.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>Events</title>
-    <meta
-      name="description"
-      content="A web development, design and technology blog."
-    />
-    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917" />
-    <link rel="stylesheet" href="/css/index.css" media="all" />
-    <link
-      rel="stylesheet"
-      href="/css/prism-base16-monokai.dark.css"
-      media="all"
-    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
     <link rel="icon" href="/img/favicon.png" />
-    <link
-      rel="alternate"
-      href="/feed/feed.xml"
-      type="application/atom+xml"
-      title="Home of Todd Libby - Senior Front End Developer"
-    />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+    <style>
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      </style>
   </head>
   <body>
     <div class="wrapper">
-      <header role="banner">
-        <h1 class="home" id="title">
-          <a href="/"> Todd Libby </a>
-        </h1>
-        <nav title="main-navigation" role="navigation">
-          <ul
-            class="navigation main-nav"
-            role="listbox"
-            tabindex="0"
-            title="navigation"
-          >
-            <li
-              class="nav-item"
-              tabindex="0"
-              role="option"
-              aria-selected="true"
-            >
-              <a href="/about/">About</a>
-            </li>
-            <li
-              class="nav-item"
-              tabindex="0"
-              role="option"
-              aria-selected="true"
-            >
-              <a href="/blog/">Blog</a>
-            </li>
-            <li
-              class="nav-item"
-              tabindex="0"
-              role="option"
-              aria-selected="true"
-            >
-              <a href="/contact/">Contact</a>
-            </li>
-            <li
-              class="nav-item"
-              tabindex="0"
-              role="option"
-              aria-selected="true"
-            >
-              <a href="/resources/">Resources</a>
-            </li>
-          </ul>
-        </nav>
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
       </header>
 
-      <main class="home" role="main">
-        <div class="article-container">
-          <h1>Events</h1>
-          <h2>Upcoming</h2>
-          <ul class="event-list">
-            <li>17 September, 2020 - Config Europe, ONLINE</li>
-            <li>
-              26-28 October, 2020 - An Event Apart, Online Together, Fall
-              Summit, ONLINE
-            </li>
+      <main id="main" class="home" tabindex="-1">
+        
+<div class="article-container">
+  <h1>Events</h1>
 
-            <li><h3>2021</h3></li>
-            <li>18-20 November 2021 - UI Arch Conference, New Orleans, LA</li>
-            <li>15-17 September 2021 - Refactr.Tech, Atlanta, GA</li>
-          </ul>
-          <h2>Past Events</h2>
-          <ul class="event-past">
-            <li>2020 - LondonCSS, ONLINE</li>
-            <li>2020 - Design 4 Drupal, ONLINE</li>
-            <li>2020 - Clarity Conference, ONLINE</li>
-            <li>2020 - An Event Apart, Front End Focus, ONLINE</li>
-            <li>2020 - Juneteenth Conference, ONLINE</li>
-            <li>2020 - JAMStack Virtual, ONLINE</li>
-            <li>2020 - MagnoliaJS, ONLINE</li>
-            <li>2020 - CodePen Meetup, ONLINE</li>
-            <li>2019 - An Event Apart, Denver, CO</li>
-            <li>2019 - An Event Apart, Boston, MA</li>
-            <li>2019 - UX Burlington, Burlington, VT</li>
-            <li>2018 - An Event Apart, Boston, MA</li>
-            <li>2017 - An Event Apart, Boston, MA</li>
-            <li>2008 - An Event Apart, Boston, MA</li>
-          </ul>
-          <h2>Podcasts</h2>
-          <ul class="podcast-list">
-            <li>
-              June 2020: Ep. 237
-              <a href="https://youtu.be/5MKfiNZjSVg">Thunder Nerds</a>
-            </li>
-            <li>
-              June 2020: Ep. 236
-              <a href="https://youtu.be/VIvmyl00G-8">Thunder Nerds</a>
-            </li>
-            <li>
-              March 2020: Ep. 23
-              <a href="https://thatsmyjamstack.com/posts/todd-libby/"
-                >That's My JAMStack</a
-              >
-            </li>
-          </ul>
-          <h2>Elsewhere</h2>
-          <ul class="event-list">
-            <li>
-              2019 - Videographer,
-              <a href="https://youtu.be/i9mTeKl3NVQ"
-                >User Defenders Podcast An Event Apart, Denver, CO</a
-              >
-            </li>
-            <li>
-              2019 - Participant,
-              <a href="https://youtu.be/OfxEJvJ5GsQ"
-                >User Defenders Book Club Discussion</a
-              >
-            </li>
-          </ul>
-        </div>
+  <h2>Upcoming Events</h2>
+
+  <ul class="event-list">
+    <li><h3>2023</h3></li>
+    <li>10-13 January - Codemash 2023 - Sandusky, OH</li>
+
+    <li><h3>2022</h3></li>
+    <li><h4>Speaking</h4></li>
+    <li>7-9 November - ConnectTech, Atlanta, GA</li>
+    <li>17-18 November - Modern Frontends Live, London, ENG</li>
+
+    <li><h4>Attendee</h4></li>
+  </ul>
+
+  <h2>Past Events</h2>
+  <ul class="event-past">
+    <li><h3>Speaker</h3></li>
+    <li>2022 - MagnoliaJS, Jackson, MS</li>
+    <li>2022 - Code PaLOUsa, Louisville, KY</li>
+    <li>2022 - KCDC, Kansas City, MO</li>
+    <li>2022 - Beer City Code, Grand Rapids, MI</li>
+    <li>2022 - Code on the Beach, Atlantic Beach, FL</li>
+    <li>2022 - DevNexus, Atlanta, GA</li>
+    <li>2021 - Connect Tech, Atlanta, GA - <a href="https://youtu.be/hNNl-t3Zx7Q">VIDEO</a></li>
+    <li>2021 - Web Directions AAA - VIRTUAL</li>
+    <li>2021 - #a11yTOConf - VIRTUAL <a href="https://conf.a11yto.com/">#a11yTO Conf</a></li>
+    <li>2021 - Virtual Coffee Lunch &amp; Learn - VIRTUAL <a href="https://youtu.be/BhUtMZtv-DQ">VIDEO</a></li>
+    <li>2021 - Virtual Coffee Lunch &amp; Learn - VIRTUAL <a href="https://youtu.be/MbLRilx7IXA">VIDEO</a></li>
+    <li>2021 - HelloA11y GAAD 2021 - VIRTUAL <a href="https://youtu.be/6QxjNGCNptE?t=10595">VIDEO</a>&nbsp; <a href="https://noti.st/colabottles/Wu7yc5/start-your-a11y-journey-how-to-become-an-accessibility-advocate">SLIDES</a></li>
+    <li>2020 - Virtual Coffee Lightning Talks - VIRTUAL <a href="https://youtu.be/ZHIgB3AKPkA">VIDEO</a>&nbsp; <a href="https://noti.st/colabottles/NJDuFV/start-your-a11y-journey-how-to-become-an-accessibility-advocate">SLIDES</a></li>
+    <li>2020 - BarCamp Philly, VIRTUAL - <a href="https://youtu.be/_Jw1KTpcnVw">VIDEO</a>&nbsp; <a href="https://noti.st/colabottles/NGPAzX/contrasting-accessibility-with-color-contrast">SLIDES</a></li>
+  </ul>
+
+  <h2>Podcasts &amp; Streams</h2>
+  <ul class="podcast-list">
+    <li>September 2022: <a href="https://someantics.dev/deceptive-patterns-and-fast/">SomeAntics w/Ben Myers</a></li>
+    <li>September 2022: <a href="https://a11ytalks.com/posts/2022-SEP">A11y Talks</a></li>
+    <li>December 2021: <a href="https://youtu.be/edhzUEO79ds">How To Business with Fredrick Weiss</a></li>
+    <li>October 2021: <a href="https://www.learnwithjason.dev/understanding-color-contrast-for-accessibility">Learn With Jason</a></li>
+    <li>October 2021: <a href="https://youtu.be/BhUtMZtv-DQ">Virtual Coffee Lunch &amp; Learn</a></li>
+    <li>October 2021: <a href="https://youtu.be/8R2Zv8Ic0Cc">Virtual Coffee Twitch Channel</a></li>
+    <li>October 2021: <a href="https://virtualcoffee.io/podcast/0402-todd-libby/">Virtual Coffee</a></li>
+    <li>September 2021: <a href="https://www.greaterthancode.com/diplomatic-accessibility-advocacy">Greater Than Code</a></li>
+    <li>August 2021: <a href="https://youtu.be/eTJKI1q_k5w">Dev Roulette</a></li>
+    <li>July 2021: Ep. 285 <a href="https://youtu.be/6ttbKtIRFMo">Thunder Nerds</a></li>
+    <li>February 2021: <a href="https://anchor.fm/sparkyarcster/episodes/Episode-2---Todd-Libby-etlr45">Spark Connections</a></li>
+    <li>February 2021: <a href="https://youtu.be/idyqPHD9uGA">The Practical Dev</a></li>
+    <li>February 2021: <a href="https://youtu.be/aChBL4fsr2E">SomeAntics</a></li>
+    <li>December 2020: <a href="https://www.twitch.tv/videos/824499882">Auth0</a></li>
+    <li>June 2020: Ep. 237 <a href="https://youtu.be/5MKfiNZjSVg">Thunder Nerds</a></li>
+    <li>June 2020: Ep. 236 <a href="https://youtu.be/VIvmyl00G-8">Thunder Nerds</a></li>
+    <li>March 2020: Ep. 23 <a href="https://thatsmyjamstack.com/posts/todd-libby/">That's My Jamstack</a></li>
+    <li>2020 - Participant, <a href="https://youtu.be/bT1YXw6MySc">User Defenders Book Club</a></li>
+    <li>2019 - Participant, <a href="https://youtu.be/OfxEJvJ5GsQ">User Defenders Book Club Discussion</a></li>
+  </ul>
+
+  <h2>Articles</h2>
+  <ul class="event-list">
+    <li>July 2022: <a href="https://www.a11yproject.com/posts/using-firefox-for-accessibility-testing/">Use Firefox for Accessibility Testing</a></li>
+    <li>July 2021: <a href="https://www.smashingmagazine.com/2021/07/strong-case-for-accessibility/">Making A Strong Case For Accessibility</a></li>
+    <li>June 2021: <a href="https://css-tricks.com/looking-at-wcag-2-5-5-for-better-target-sizes/">Looking at WCAG 2.5.5 for Better Target Sizes</a></li>
+    <li>December 2020: <a href="https://css-tricks.com/whats-new-in-wcag-2-1-label-in-name/">What's New in WCAG 2.1: Label in Name</a></li>
+  </ul>
+</div>
+
+        <section class="social">
+          <h2>&copy;1999 &mdash; 2022, Todd Libby.</h2>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+            </ul>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            </ul>
+          <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; <a href="/a11y">A11y Statement</a></h2>
+        </section>
       </main>
 
-      <div class="social" title="sub-navigation" role="navigation">
-        <h2>&copy;1999 &mdash; 2020, Todd Libby.</h2>
-        <ul class="nav list-inline">
-          <li class="nav-item"><a href="/archives">Archives</a></li>
-          <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-          <li class="nav-item"><a href="/events">Events</a></li>
-          <li class="nav-item"><a href="/uses">Uses</a></li>
-          <li class="nav-item"><a href="/a11y">A11y</a></li>
-        </ul>
-        <h2>#BlackLivesMatter</h2>
-      </div>
-
-      <footer class="meta" role="contentinfo">
-        <nav class="foot" title="footer-navigtion">
+      <footer class="meta">
+        <div class="foot">
           <ul class="list-inline">
             <li>
-              <a
-                href="https://codepen.io/colabottles/#"
-                class="codepen"
-                aria-label="A link to my CodePen repository"
-              >
-                <svg
-                  class="icon icon-codepen"
-                  role="img"
-                  aria-label="An icon that links to my CodePen repository"
-                >
-                  <title>A link to my CodePen repository</title>
-                  <desc id="codepen">
-                    A white icon in the shape of the CodePen logo which is a 3D
-                    cube.
-                  </desc>
-                  <use
-                    href="/img/symbol-defs.svg#icon-codepen"
-                    alt="A link to my CodePen repository"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://dribbble.com/colabottles/"
-                class="dribbble"
-                aria-label="A link to my Dribbble page"
-              >
-                <svg
-                  class="icon icon-dribbble"
-                  role="img"
-                  aria-label="An icon that links to my Dribbble portfolio"
-                >
-                  <title>A link to my Dribbble portfolio</title>
-                  <desc id="dribbble">
-                    A white icon in the shape of the Dribbble logo which is a
-                    basketball.
-                  </desc>
-                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/colabottles/"
-                class="github"
-                aria-label="A link to my GitHub page"
-              >
-                <svg
-                  class="icon icon-github"
-                  role="img"
-                  aria-label="An icon that links to my GitHub repository"
-                >
-                  <title>A link to my GitHub repository</title>
-                  <desc id="github">
-                    A white icon in the shape of the GitHub logo which is the
-                    OctoCat.
-                  </desc>
-                  <use href="/img/symbol-defs.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/toddlibby"
-                class="twitter"
-                aria-label="A link to my Twitter page"
-              >
-                <svg
-                  class="icon icon-twitter"
-                  role="img"
-                  aria-label="An icon that links to my Dribbble portfolio"
-                >
-                  <title>A link to my Twitter page</title>
-                  <desc id="twitter">
-                    A white icon in the shape of the Twitter logo which is a
-                    bird.
-                  </desc>
+              <a href="https://twitter.com/toddlibby" class="twitter">
+                <svg class="icon icon-twitter" focusable="false">
+                  <title>My Twitter profile</title>
+                  <desc id="twitter">A white bird.</desc>
                   <use href="/img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a
-                href="https://toddl.dev/feed/feed.xml"
-                class="rss"
-                aria-label="A link to my RSS page"
-              >
-                <svg
-                  class="icon icon-rss"
-                  role="img"
-                  aria-label="An icon that links to this site's RSS feed"
-                >
-                  <title>A link to the RSS feed for this site</title>
-                  <desc id="rss">
-                    A white icon in the shape of the RSS logo which is a group
-                    of lines shaped like a speaker.
-                  </desc>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
                   <use href="/img/symbol-defs.svg#icon-rss"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a
-                href="http://wave.webaim.org/report#/https://toddl.dev/"
-                class="a11y"
-                aria-label="WCAG 2.0 AA Passed a11y"
-              >
-                <svg
-                  class="icon icon-accessible-icon"
-                  role="img"
-                  aria-label="An icon that links to this pages WCAG 2.0 Accessibility test results"
-                >
-                  <title>
-                    A link to the WCAG 2.0 Accessibility test results for this
-                    site
-                  </title>
-                  <desc id="a11y">
-                    A white icon in the shape of a person in a wheelchair.
-                  </desc>
+              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
                   <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
                 </svg>
               </a>
             </li>
+            <li>
+              <a href="https://dribbble.com/colabottles/" class="dribbble">
+                <svg class="icon icon-dribbble" focusable="false">
+                  <title>My Dribbble portfolio</title>
+                  <desc id="dribbble">A white basketball.</desc>
+                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
-
-    <!-- Current page: /events/ -->
-    <script src="../svgxuse.min.js" defer></script>
   </body>
 </html>

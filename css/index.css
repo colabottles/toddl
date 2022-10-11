@@ -204,6 +204,7 @@ q:before {
 html {
   font-size: var(--font-size);
   line-height: var(--line-height);
+  font-family: var(--font-family-sans);
   background-color: var(--dark);
   color: var(--white)
 }
@@ -439,8 +440,6 @@ a.button:hover {
 
 article {
   margin: 1em 0;
-  font-size: var(--font-size-article);
-  line-height: 1.6
 }
 
 section {
@@ -503,8 +502,7 @@ h5 {
 }
 
 p {
-  font-size: var(--font-size-large);
-  font-family: var(--font-family-sans)
+  margin-block: 1em;
 }
 
 p+p {
@@ -585,13 +583,6 @@ li.article-wrapper,
 li.blogroll-list-blogroll,
 li.postitem-item {
   list-style: none
-}
-
-.about-intro p {
-  font-size: var(--font-size-large);
-  font-family: var(--font-family-sans);
-  line-height: var(--line-height-small);
-  margin-bottom: 1em
 }
 
 .about-intro p+p {
@@ -1303,15 +1294,6 @@ video {
     font-size: var(--font-size-large)
   }
 
-  p {
-    font-size: var(--font-size-article);
-    font-weight: 400
-  }
-
-  blockquote p {
-    line-height: var(--line-height-small)
-  }
-
   ul.event-list,
   ul.event-past,
   ul.podcast-list {
@@ -1360,7 +1342,6 @@ video {
 
   .article {
     grid-column: 2/10;
-    font-size: var(--font-size-article)
   }
 }
 
@@ -1428,13 +1409,8 @@ video {
     padding: 2rem 0
   }
 
-  .about-intro p {
-    font-size: var(--font-size-article)
-  }
-
   .about-intro {
     grid-column: 2/7;
-    font-size: var(--font-size-article)
   }
 
   .articles,
@@ -1477,11 +1453,6 @@ video {
     margin: 0;
     padding: 0;
     width: 90vw
-  }
-
-  .blogroll-container p,
-  section.article__body p {
-    font-size: var(--font-size-article)
   }
 
   section.article__body ol,
@@ -1560,11 +1531,6 @@ video {
     margin: 0
   }
 
-  span.article-category,
-  span.blogroll-category {
-    font-size: var(--font-size-small)
-  }
-
   footer {
     display: flex;
     flex-wrap: wrap;
@@ -1590,7 +1556,6 @@ video {
   }
 
   span.alltags {
-    font-size: var(--font-size-article);
     grid-column: 2/7;
     margin: 2rem 1rem
   }
@@ -1602,7 +1567,6 @@ video {
   .blogroll-container p,
   .home-container h3 {
     grid-column: 2/7;
-    font-size: var(--font-size-article)
   }
 
   .blogroll-container h1 {
@@ -1621,10 +1585,6 @@ video {
 
   .container ul {
     padding: 1rem 0 1rem 1rem
-  }
-
-  .container li {
-    font-size: var(--font-size-article)
   }
 }
 

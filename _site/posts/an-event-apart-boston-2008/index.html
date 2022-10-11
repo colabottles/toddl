@@ -3,35 +3,98 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The wrap-up article I authored in 2008 after An Event Apart.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>An Event Apart 2008 - Wrap-up Edition</title>
-    <meta name="Description" content="The wrap-up article I authored in 2008 after An Event Apart.">
-    <link rel="stylesheet" href="/css/index.css" media="all" />
-    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css" />
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" media="all" />
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Home of Todd Libby - Senior Front End Developer" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+    <style>
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      </style>
   </head>
   <body>
     <div class="wrapper">
-      <header role="banner">
-        <h1 class="home">
-          <a href="/">
-            Todd Libby
-          </a>
-        </h1>
-        <nav title="main-navigation" role="navigation">
-          <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation"><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/about/">About</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/blog/">Blog</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/contact/">Contact</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/resources/">Resources</a>
-              </li></ul>
-        </nav>
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
       </header>
 
-      <main class="inner">
+      <main id="main" class="inner" tabindex="-1">
         
 <div class="article-container">
   <article>
@@ -43,27 +106,27 @@
     </header>
     
     <section class="article__body">
-      <h3 id="preface">Preface</h3>
+      <h3 id="preface" tabindex="-1">Preface</h3>
 <p>This is a super fanboy-ish post, but it is (100%) in its original entirety.</p>
-<h3 id="an-event-apart-2008%2C-boston%2C-ma">An Event Apart 2008, Boston, MA</h3>
+<h3 id="an-event-apart-2008%2C-boston%2C-ma" tabindex="-1">An Event Apart 2008, Boston, MA</h3>
 <p>I’m going to take the time now to really sit down and write a comprehensive post on my experience at An Event Apart that took place this past Monday and Tuesday in Boston. I had been at the ready, saving what I could in time for the event and barely made it out of there with some pocket change. So be forewarned, don’t be frugal like me with little, and remember to bring your credit card and don’t leave home without it. (Where have I heard that before?)</p>
 <p>I started writing this yesterday and have given this more attention again today. I wanted to write a very in-depth post about my experience and maybe “twist an arm” and if someone out there, even if it is one person reads this, goes to an AEA event and then writes back and says it was worth it, then it really was worth taking the extra couple days to write this.</p>
-<h3 id="off-for-an-adventure">Off for an adventure</h3>
+<h3 id="off-for-an-adventure" tabindex="-1">Off for an adventure</h3>
 <p>I got out of my “9-5” job at 7:30 in the morning, went home, wanted to catch an hour or so of sleep. I caught 30 minutes. So I proceeded to go get ready and left for Boston. Now mind you, I don’t trek out very much with the price of gas and because a third shift job just sucks the will to live and the life force out of you. I did on this day, as I was looking forward to this event.</p>
 <p>So skipping over to when I got to the Marriott (after getting lost in Roxbury and all that good stuff that usually happens when I venture down to Boston) I forget the credit card and start to freak. Calming down the solution was found, all was good, but not after my first impression with Jeffrey Zeldman was probably one of psychotic insanity (if there is such a term.)</p>
 <p>My apologies to Jeffrey Zeldman and the folks at An Event Apart for having a complete and utter meltdown as I had the biggest anxiety attack to date.</p>
 <p>I finally (after 2-3 hours of calls and instructions to fax over information so I could use the credit card) got to relax in the room, on the 34th floor. Big huge bed. BAM! Out like a prizefighter.</p>
-<h3 id="day-one.-meeting-%26-mingling">Day One. Meeting &amp; Mingling</h3>
+<h3 id="day-one.-meeting-%26-mingling" tabindex="-1">Day One. Meeting &amp; Mingling</h3>
 <p>I meet Jeffrey again, we chat and had lunch together it was great. I got to talk to Bruce Lawson and Eric Meyer for a bit as well during breakfast, things were <strong>A LOT</strong> better. Went in and sat through the presentations, immersed in them all, mingled during breaks, took photos, had photos taken with speakers.</p>
 <p>One thing. I went up to my room to relax for a few minutes before the Opening Night party… I made the mistake of laying down on the big, huge comfy bed I had… out like a light. Damn.</p>
-<h3 id="day-two.-more-mingling-%26-me-being-me">Day Two. More Mingling &amp; Me Being Me</h3>
+<h3 id="day-two.-more-mingling-%26-me-being-me" tabindex="-1">Day Two. More Mingling &amp; Me Being Me</h3>
 <p>Mingling, eating, listening. Asked questions, got a book from Kimberly Blessing, tried to win a copy of Adobe CS3 if I got picked for a website critique from Jeffrey… unfortunately, that didn’t happen and 5 out of 6 of the people were Mac users… Scott Fegette, I will <strong>(GLADLY)</strong> take a copy of the PC version if you feel the need to get rid of some!</p>
 <p>Of who I met. Everyone was great. I probably came off as a nervous tool, with nothing better to say and with a look like a 16-year-old rock band groupie, wide-eyed and drooling.</p>
 <p>Jeffrey Zeldman, Marci Eversole… made me feel welcomed and hopefully forgot about the fact I was acting like a raving lunatic on Sunday. EDIT: He did not, haha.</p>
 <p>Jeffrey was very accommodating and I had the chance of a lifetime to sit down and have lunch with him and talk and he actually liked the site. Handed me some useful information that I will be working on shortly as well. Autographed his book that I bought for me and we chatted and I kinda stalked him… no, I did. Sorry, Jeffrey!</p>
 <p>Eric Meyer. What can I say? Awed in the presence of another guru I have followed for a long time. very friendly and witty. When I told Bruce Lawson he saved my life with conditional comments, they both joked about how it was so proprietary. After the two kicks in the gut(j/k) I laughed, it was funny and yes, it was a stupid thing to say. I should have gone with, “FIRE!” Yes, Eric, I’d rather have your name in my book rather than oh, let’s say “Julio Iglesias” as your signing.</p>
 <p>Bruce Lawson, friendly chap. Small guy. Him and Jeffrey, both small… or am I just tall (more on that later)? He and I chatted a bit, nice guy, all around. Saved my life with conditional comments, but as Eric Meyer put it, it was proprietary… so I don’t know if that was a good thing to say? Bruce is a friendly guy though, and his site states he prefers Guinness, so any guy who likes Guinness is alright in my book (as it is my preferred beverage in alcoholic nature of choice).</p>
-<h3 id="the-speakers">The speakers</h3>
+<h3 id="the-speakers" tabindex="-1">The speakers</h3>
 <p>AAll great and accessible. Although I didn’t ask a lot of questions, I did let the ones I have followed know that I have been a sort of “fan” for a long time. I figured they already had to field all the questions from 500 +/- other attendees. my favorites? All.</p>
 <p>Kimberly Blessing gave me something to shoot for. A Standards Manager job. I also won a book from her and Christopher Schmitt (among other writers)!</p>
 <p>Ethan Marcotte gave me a refreshing way to make sure to communicate between coder and designer (a chore in itself for most of us).</p>
@@ -86,83 +149,84 @@
     </section>
   </article>
 </div>
+
+        <section class="social">
+          <h2>&copy;1999 &mdash; 2022, Todd Libby.</h2>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+            </ul>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            </ul>
+          <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; <a href="/a11y">A11y Statement</a></h2>
+        </section>
       </main>
 
-      <div class="social" title="sub-navigation" role="navigation">
-        <h2>&copy;1999 &mdash; 2020, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/a11y">A11y</a></li>
-          </ul>
-        <h2>#BlackLivesMatter</h2>
-      </div>
-
-      <footer class="meta" role="contentinfo">
-        <nav class="foot" title="footer-navigtion">
+      <footer class="meta">
+        <div class="foot">
           <ul class="list-inline">
             <li>
-              <a href="https://codepen.io/colabottles/#" class="codepen" aria-label="A link to my CodePen repository">
-                <svg class="icon icon-codepen" role="img" aria-label="An icon that links to my CodePen repository">
-                  <title>A link to my CodePen repository</title>
-                  <desc id="codepen">A white icon in the shape of the CodePen logo which is a 3D cube.</desc>
-                  <use href="/img/symbol-defs.svg#icon-codepen" alt="A link to my CodePen repository"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://dribbble.com/colabottles/" class="dribbble" aria-label="A link to my Dribbble page">
-                <svg class="icon icon-dribbble" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Dribbble portfolio</title>
-                  <desc id="dribbble">A white icon in the shape of the Dribbble logo which is a basketball.</desc>
-                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/colabottles/" class="github" aria-label="A link to my GitHub page">
-                <svg class="icon icon-github" role="img" aria-label="An icon that links to my GitHub repository">
-                  <title>A link to my GitHub repository</title>
-                  <desc id="github">A white icon in the shape of the GitHub logo which is the OctoCat.</desc>
-                  <use href="/img/symbol-defs.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/toddlibby" class="twitter" aria-label="A link to my Twitter page">
-                <svg class="icon icon-twitter" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Twitter page</title>
-                  <desc id="twitter">A white icon in the shape of the Twitter logo which is a bird.</desc>
+              <a href="https://twitter.com/toddlibby" class="twitter">
+                <svg class="icon icon-twitter" focusable="false">
+                  <title>My Twitter profile</title>
+                  <desc id="twitter">A white bird.</desc>
                   <use href="/img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://toddl.dev/feed/feed.xml" class="rss" aria-label="A link to my RSS page">
-                <svg class="icon icon-rss" role="img" aria-label="An icon that links to this site's RSS feed">
-                  <title>A link to the RSS feed for this site</title>
-                  <desc id="rss">A white icon in the shape of the RSS logo which is a group of lines shaped like a speaker.</desc>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
                   <use href="/img/symbol-defs.svg#icon-rss"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y" aria-label="WCAG 2.0 AA Passed a11y">
-                <svg class="icon icon-accessible-icon" role="img" aria-label="An icon that links to this pages WCAG 2.0 Accessibility test results">
-                  <title>A link to the WCAG 2.0 Accessibility test results for this site</title>
-                  <desc id="a11y">A white icon in the shape of a person in a wheelchair.</desc>
+              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
                   <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
                 </svg>
               </a>
             </li>
+            <li>
+              <a href="https://dribbble.com/colabottles/" class="dribbble">
+                <svg class="icon icon-dribbble" focusable="false">
+                  <title>My Dribbble portfolio</title>
+                  <desc id="dribbble">A white basketball.</desc>
+                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
-
-    <!-- Current page: /posts/an-event-apart-boston-2008/ -->
-    <script src="../svgxuse.min.js" defer></script>
   </body>
 </html>

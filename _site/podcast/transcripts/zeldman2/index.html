@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Second part of my interview with Jeffrey Zeldman">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+    <title>Jeffrey Zeldman Part Two</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+    <style>
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
+      </header>
+
+      <main id="main" class="inner" tabindex="-1">
+        
+<div class="article-container">
+  <article>
+    <h2 class="article__title">Jeffrey Zeldman Part Two</h2>
+    <header class="article__header">
+      <div class="article__meta">
+        <time>29 September, 2021</time>
+      </div>
+    </header>
+    
+    <section class="article__body">
+      <h2 id="s1%3Ae1%3Ap2" tabindex="-1">S1:E1:P2</h2>
+<p>Todd Libby: [00:00:00] Welcome to the Front End Nerdery Podcast, a podcast about front end development and design. I'm your host, Todd Libby and today we're picking up where we left off with part two of this very special inaugural episode of the podcast with my special first guest Jeffrey Zeldman. Jeffrey, how are you today?<br>
+Jeffrey Zeldman: [00:00:24] Hi Todd. I'm good. Good. It's Friday. Yes.<br>
+Todd Libby: [00:00:31] Yes, it is. So we left off talking about An Event Apart and real quick I wanted to just jump back in. That conference has been one that I've been going to for the past steadily for the past five years. And it's actually made me feel more comfortable putting myself out there and connecting with other people.<br>
+So there's a spring conference coming up that I wanted to touch upon. If you would.<br>
+Jeffrey Zeldman: [00:01:11] Yes, we're having another, a three-day event spring, summit. An Event Apart on-- it has the short title, An Event Apart, Online Together, Spring Summit, 2021. But it's April, April 15th April 17th through 19th. And there'll be 15 sessions, 15 speakers plus some extra.<br>
+Like an after hours session on increasing your professional status. You know, that's not, that's not mandatory. It's not part of the program, but it's, and that will be taught by Cinderella. And it'll be you're basically getting to senior is what it's about getting to senior UX from wherever you are.<br>
+So, and it'll be a short talk followed by a long Q&amp;A. So we're looking forward to it. It's these 15 speakers, we haven't published the roster yet. We're still working on it. We're still working on the lineup. We're already selling tickets. We've already sold a ticket without announcing speakers, which is pretty remarkable.<br>
+But you know our conference, if you haven't attended, you have attended many times. So for anyone listening, it's a kind of a holistic web design conference, UX front end content just everything to do with making a great website.  we even going to have something about SEO, which is something, a topic we avoided for a long time, but it looks like I'm hopeful.<br>
+I don't actually, I don't want to name the speaker yet. I don't want to name anybody yet, cause I don't want to jinx anything, but yeah. Yeah. I mean, we're hopeful that we'll get, there will come a time where we can do in-person events again and perhaps as early as next year, we hope we sincerely hope.<br>
+So. What meantime, Spring Summit Online is going to be pretty fantastic. And the great thing about the online summits. So usually a couple of things. One, you can watch it over and over again for a year. So you know that thing where you're sitting in a conference and you're going, wow, I'm learning a lot, but I won't remember this, but the digital conference, you can just keep going back to it over and over and over again.<br>
+Yeah, so that's pretty cool. All the videos are closed captioned and the, the sessions are prerecorded so that we know that they're there as perfect as they can be. And then the Q&amp;A is live and also live the speakers, usually in the room hanging out so that they're on the there's a channel inside the platform.<br>
+A discussion channel. So folks are talking and asking questions and it's the weird experience of listening to somebody like Rachel Andrew talk, give, give a presentation. And while she's giving the presentation, people are asking, Oh, did you mean such and such? And she's answering back? No, I met so-and-so so here's the live interaction with the speaker while you're listening to their pre-recorded talk and then there's live Q&amp;A either led by Eric Meyer or me.<br>
+So it should be fun. It's three days should be fun. And actually, all right, I'll do a sales pitch. I don't know. This will come out too late. This comes out after January 1st. Right. Podcasts will come out after June. Okay. So nevermind. Yeah, there's a special sale, but it's, it'll be too late. It's before the end of the year sale.<br>
+By the time this comes out, we should have a full, fully published schedule with<br>
+Todd Libby: [00:04:52] Right.<br>
+Jeffrey Zeldman: [00:04:52] Topics and speakers.<br>
+Todd Libby: [00:04:54] Do you expect other than the spring one, another online event after that? I mean, with the w the way I, I looking at things, it's, I'm hoping to get to an in-person conference by the end of the year, and that's even looking pretty.<br>
+Pretty grim as far as I can see.<br>
+Jeffrey Zeldman: [00:05:20] Yeah. I don't want to get ahead of ourselves. I think we're, we're, you know, we're looking at putting on two digital events in 2021 and the first is spring summit. We have. Figure it out an exact time or anything for a false summit and the world could change again if 20, 20 childless anything it's that the entire world can change.<br>
+Yeah. Within the space of a day or weeks. So, yeah. I don't want to say something now that might be false in January, but yeah, we're there where we expect to put on the second event in the fall. And we'll see what else is possible.<br>
+Todd Libby: [00:06:08] I always have a great time. You know, even more in person, of course, but the digital ones are a great time, because like you said, you have that, that piece of the platform where you can interact with people it real time and you can talk and chat.<br>
+I mean, you and I were in the Fall Summit and we were talking about Last FM and Rdio, it's those kinds of conversations. I think that people can have about what the topic is. What's going on the speaker in the, in the chat as well, and ask questions of the speaker, you know, in the chat too, that make it really fun.<br>
+Considering the circumstances we're under and it's, I mean, it's as close as we're going to be to people, you know, in the same room together.  but I think that platform especially has been one that has been terrific. I've been on a few different platforms, but that. That platform that, you know, An Event Apart has stands out in my mind.<br>
+Not, not because I'm, you know, I've always been a big fan of, An Event Apart, but just for the whole, because you have that accessible piece, like you said, the, the, the videos are captioned and it's, it's just super, so I wanted to switch now to A Book Apart because that's in its 10th year. If I'm not mistaken?<br>
+Jeffrey Zeldman: [00:07:54] or 11th, we might've started in 2009.<br>
+I think we started in 2009. Okay. So by the time this hits the airwaves, it will be about eight. We'll be entering it's 11. It'll be entering it's 12th.<br>
+Todd Libby: [00:08:17] So. Oh, I have to,<br>
+Jeffrey Zeldman: [00:08:18] [unintelligble]<br>
+Todd Libby: [00:08:18] I've, I've noticed you have a tie in with authors, from A Book Apart coinciding with An Event Apart and what would you say makes A Book Apart such a success because I've known a lot of people that have asked me, do you know any books on this, that, or the other thing? And I always go right to, you know, an, A Book Apart book, if there's one pertaining to that question.<br>
+Jeffrey Zeldman: [00:08:56] Thank you. I, I think.<br>
+When we founded it, we felt like we had a handle on what topics were especially important for people like us, people who design digital experiences, who maybe are involved also in the coding of them who maybe are involved also in the writing of them or. Or people who write websites and are involved in coding a bed or people who had code websites are involved in design.<br>
+When we sort of that hybrid, that hybrid audience, that kind of holistic audience of what I used to call people who make websites. When I first started to list apart, that was our slogan for people who made websites.  it's harder now, but when we were starting, we had this, this feeling like we really knew.<br>
+From what we were interested in, what our friends were interested in, what are the speakers? And I'm had a part where people were writing about it, a list apart and in smashing magazine, we had a pretty good sense of, yeah, these topics are very important and we, I didn't really want to be a publishing company because publishing is A very difficult business with paper thin, no pun intended paper, thin margins.<br>
+You're lucky if you break even it's a tough business and you know, so much stuff is online and so much stuff is available free. That it seemed so we didn't want to replicate what's out there. That's free. We didn't want to do. What's out there. That's free like articles again, that Alyssa part's smashing magazine.<br>
+Other publications like that, we didn't want to replicate that.  we wanted to expand on the most important topics and we also didn't want to fill them out with fluff. One of the things I've experienced writing for a traditional publisher, a great publisher. If I was really fine books, but those books had a set length.<br>
+They had to be a certain length or they wouldn't get into the stores. If your book, wasn't about 400 pages in the trade press in the tech press day, didn't know people in bookstores wouldn't buy it. There's just data. They had it. Wasn't like they didn't, they weren't saying this is what it has to be for some, you know, perfect reason.<br>
+And we found that the ideal length of the book is 400 or every topic needs at least 400 pages and no more than four or five, 400. It wasn't bad. It was just Barnes and noble and borders. If you remember those names, they were very powerful at the time. And they said, no, we're not going. There's a certain length of book that we have to publish, and we didn't want to be constrained by that.<br>
+So we said, let's remove that constraint. Let's let people write the books exactly. As long as they need to be constraints are good. And if you have to fill 400 pages and you're good at what you do, you'll fill it with value. But if you know, this is a fast moving industry and someone doesn't know what designing mobile first means.<br>
+And they buy a book by Luke Wroblewski and they read it. This is, we used to say, you'd get on a plane in New York, Atlanta in Chicago. And by the time you were landed, you'd you'd understand the topic they were books designed to be read in about an hour or two something you read during a commute, maybe a work commute or, or a business trip, or, you know, instead of what Jim one TV show, not a huge time commitment and.<br>
+We thought that that would allow the author to really focus in on what happens with books. A lot of times is they get very general. So instead of writing about a particular topic about accessibility, to feel 400 pages, you have to do a book about everything, about accessibility. And then of course you fall way short because you can't do everything about it.<br>
+Cause ability and 400 pages. So the books end up inflating and then sort of being general interest. And they waste some time, you know, I used to call it, the blues came up the Mississippi it's it's like when you're a kid and your teacher says, okay, you gotta write about miles Davis. And you go, okay. Miles Davis.<br>
+Well, he was a jazz musician. Well, jazz, well, the blues. So you ended up writing, like the blues came up the Mississippi and you're like 17 paragraphs in before you mentioned. And so we come to a young man named miles, David, like that's silly. Like if you wanna. I don't want to say we're like Wikipedia because we're not, and we don't have a neutral tone, but something focused like that.<br>
+You know, when I go to Wikipedia to read about Miles Davis, they will say jazz musician, influential many periods of productivity, creativity changes the direction of music work with these other giants was a mentor to all these important jazz musicians. Like that's, that's what we wanted to do. We wanted to make something that was focused.<br>
+Laser-sharp that you can read in about an hour and get back to your very busy work life. And we, there was a belief that designers only want to picture books that they didn't like to read. We knew that wasn't true.  it was also, we didn't want to do an academic book that was full of footnotes and discouraging.<br>
+It was, it was basically. I don't know how color works on the web. And I know that, I know that what I, that my background didn't match on my client's monitor, even though my background and my image matched perfectly on my monitor. I don't know why that happened. I don't know what other users are seeing. I want to make a website where.<br>
+Backgrounds match. And what should I be doing? Should I be using these color settings in Photoshop, which I do. So Craig, Hockenberry wrote a book for us about, about that. And, and as time has gone on, we've gotten into what folks call softer topics like, like cognitive bias and content strategy. Those are not soft at all, even, even how to be, how to gain confidence as a speaker.<br>
+Right? Which. Is a book anyone can use. And also we're hoping that folks who are less represented, who are less lucky to be invited to speak will, will put themselves out there. I love that. You just recently spoke where it was at? At a Word--<br>
+Todd Libby: [00:15:52] Yeah, it was, it was BarCamp Philly.<br>
+Jeffrey Zeldman: [00:15:54] BarCamp in Philly.<br>
+Cool. Okay. It's great that you're doing it. I think everyone should do it. And you might say people. So, so I don't want to get sidetracked. That was just one bit, but we have a whole bunch of books. We've got over 20 main titles now. And then we have what we call briefs, which are even shorter books for even more laser focused topics, you know, even more, very specific considerations of specific, specific topics.<br>
+So for example the kinds of books that we publish “Responsive Web Design” was a book that we published. First. We publish Ethan Marcotte’s brilliant article on A List Apart and then there's like, there's more to say. He said, so we get, he had a book and the book was great because it covered the thing in enough depth.<br>
+Or you read it and you get it, but didn't pat it out with nonsense or talk about web design generally, or best practices in UI design or all these other things that are important, but don't belong in that book. So, so basically removing the padding. Like I have panicked like, look at me. I am addict, but I don't want the books to have batting.<br>
+I wanted the books to be very lean. So. That's what we do, we writing it.  and I think they're successful because they respect folks' time and they get right to the point.<br>
+Todd Libby: [00:17:28] Yeah. Yeah, they do. Do you have a favorite?<br>
+Jeffrey Zeldman: [00:17:35] I have many favorites and I don't want to say more than that.<br>
+Todd Libby: [00:17:40] Okay. So tying the conference and the books in regarding the conference in regarding books, what do you look for in speakers and authors for the events and for the books?<br>
+Jeffrey Zeldman: [00:18:02] That's a great question. We look for a strong point of view. And originality of thought, not warming up things.<br>
+Other people have said there's nothing wrong with being a synthesizer of things that other people have said. I have written that way. I know a lot of, there are a lot of good writings where they basically take. 20 best practices that are related and show how they relate to each other and kind of give you an intellectual framework for understanding those things, nothing wrong with that at all.<br>
+But we tend to write to publish books that are more focused and kind of unusual. We, we hope and the same with the presentations at an, a better part. We look for people with a point of view. A perfect example is Erica Hall's. “Just Enough Research” has a book, not everything you need to know about research or how to do research, or again, those are great books.<br>
+There are, there are some great books, rather. There are some great books on those topics, but just enough research is my boss. Doesn't believe in research. I don't have a budget for research. We don't have a research department. But I'd really like, you know, something about my customers before I design a product that might be wrong for them.<br>
+Todd Libby: [00:19:26] Yep.<br>
+Jeffrey Zeldman: [00:19:26] And again, our culture is we don't do research. Our culture is let's say, you know, break it and build it and break it, work fast and break things, work fast and break things is, you know, Silicon Valley it's Facebook, but maybe it's not. We'd like to at least have some idea why our customers actually use the products.<br>
+So “Just Enough Research” is permission. It's a tool set. It's a way of thinking and it allows. And so that's one of my favorite book of our books, but it's also an exemplar of, in a book of art book. It's not the whole big, broad spectrum of this giant wonderful topic. It's how can, this is not my job title.<br>
+I'm not a researcher, but I want to incorporate research in my design practice. How do I do that? And how do I get. How do I, if there's a culture that's antithetical to it, if there's a boss that's against it, how do I either persuade or do it under the radar, do it in a way that the boss goes, this is great.<br>
+I love talking to our customers, you know, and don't call it research, call it, talking to our customer, whatever it is, whatever it is. So We look for a distinctive point of view and what, what I find with conferences and articles. So there's a kind of article, you know, called the listicle, you know, we, everyone listening knows what that is, and those can be really useful, like 500 places to get free fonts.<br>
+Right. That's great. Or. Back in the old days, 17 CSS layouts, you can copy and paste because CSS layout was hard back in the day. Right.  that stuff's great, but that's not an, A Book Apart book and that's not An Event Apart presentation. And a matter of our presentation is a very particular problem.<br>
+That's universal that you recognize, Oh yeah. I come up against that all the time.  and you want help to get better at it. And the person who's talking or writing is a practitioner like yourself. Isn't an expert in quotes. Isn't someone who gets $500,000 to talk to the CEO. Yeah. But if someone who does that job at their, at an, at a company or.<br>
+Does that job as a freelancer or has had a lot of experience in that job? You're they're craftspeople like you and buy crafts? I don't mean it's always about pixels or anything like that. It's about the craft of design, the craft of development, the craft of a relationship. Excuse me, client service, relationship building.<br>
+Sorry. I was drinking seltzer. Thank you. So a little, little bubbly hiccups. Yeah.<br>
+Todd Libby: [00:22:33] Not a problem.<br>
+Jeffrey Zeldman: [00:22:34] So that's what we look for.  sometimes people will have, we also look for things that are at An Event Apart, we look for topics that would be of interest to talented senior worker bees. What I mean is we're not a. So-called leadership conference.<br>
+Those are great. I love leadership talks. I, there are some really good leadership conferences by, you know, how to trim the fat from your team or motivating your team to do faster sprints or whatever those topics are. Not for An Event Apart. Most of the people who come to event party, our our workers, our, our, our individual practitioners.<br>
+Who do at least some hands on work and they sure they probably go to meetings too. They probably, they may well manage some other people, but they also do a fair amount of hands-on work that doesn't make them better than anyone else. It just makes them our audience. Right. And so a topic, there are some amazing speakers who talk to CEOs.<br>
+Even when we've had folks early on in, and I've been apart, we would have some really challenges. People had started product companies, like little stuff, people who, who were like the person in the audience, but had started a company we thought have one or two with them speak might be inspiring. Like, Oh, I can get off the rack off the treadmill.<br>
+I can get out of the rat race folks. Didn't like it. You're like, I'm not going to make a product. I like the rat race. I like my little hamster wheel. What I'm looking for is how to be better at my job, how to be the best front end developer, my company. Have you ever hired how to be the most humane designer?<br>
+How to be the smartest, how to avoid the most traps? I want to be really good at what I do don't want to, I don't want to manage. Wait, what's that?  the John Cusack movie where he holds the boombox over his head.<br>
+Todd Libby: [00:24:37] Oh, that's that “Say Any”... “Say Anything”?<br>
+Jeffrey Zeldman: [00:24:40] “Say Anything!” and there's this whole scene where he says, I don't want to, I'm going to mangle this terribly because I don't want a job.<br>
+I don't want to sell anything. I don't want to buy anything. I don't want to buy anything for other people to sell. Like, it's something like that, but, but we're looking for people who make the stuff. Who feel very committed to get real satisfaction out of starting with, you know a blank text file and ending up with a page or starting with a blank sketch canvas and ending up with a design.<br>
+So, yeah, so we look for people who have strong points of view and something really interesting and empowering and helpful to say. That's of interest to that, those practitioners and it really limits. It's very constraining it limits who we can have speak, but it also it's also great because it enables us to curate the event so that it feels almost like when you watch a movie and many things happen in the story, but they're all connected.<br>
+Somehow we try to have a kind of narrative flow. So we look for people. Another thing is that they're good listeners.  early on in our conference, people started listening to each other's talks, which was unusual, and they started updating their own presentations to riff off things that had been said earlier, like earlier today, Jen told you how to do X, Y, and Z.<br>
+Now I'm going to tell you how you can take that and. And people started going, wow, this is, this is amazing. You guys really figure it out in advance. And we were like, yes, we do. We, we don't, we, but we try to arrange it's kind of like the way Eno (Brian Eno) would set up tape loops and then they would make the music.<br>
+You set, you set up, you set up interesting things that you believe will collide off each other to make something even bigger.  that's how we curated. When we think about who we want to have speak with, they talk about where they come during the day, what day they speak on, we try to make it so that there's a rhythm and a rhythm to the learning and music, to the learning.<br>
+Todd Libby: [00:27:02] And-- when I've gone to a conference or when I've read a book in past and present and probably future endeavors, I've always taken a piece of what I've a good example is I believe it was 20-- I want to say 2018. I talked with Derek Featherstone about an issue I was having at the job I was at with accessibility and stakeholders not buying in.<br>
+And he gave me great advice on how to handle that and it, and it worked there was a little flip flop back and forth, but there's always that, that one takeaway that I have, that's that kind of like that gold nugget. For the day, but the entire day of learning is just spectacular and being able to talk to the, talk to the speakers and, and meet a lot of people.<br>
+So I suggest highly to people, have your company send you to An Event Apart. Well worth it, in my opinion.<br>
+Jeffrey Zeldman: [00:28:17] Yeah. Thank you. I, I like that suggestion. The thing that you're talking about, it's like, like, Alfred Hitchcock's movies. They were entertaining all the way through and there was a through line to the narrative.<br>
+Most of them must have been very good, but there's always these set pieces that you remember, like Cary Grant in an expensive three-piece suit, running through a cornfield in Indiana being strafed, right by the machine gun on a, on a plane that's supposed to be a crop dusting plane. You never forget that.<br>
+And then crawling down, run Mount Rushmore with Eva Marie Saint, or I just. I just recently watched rewatch Sabbath tour, which is really great movie all the way through, but the climax takes place on the torch of the statue of Liberty and the bad guy falls off. And the good guy is trying to save the bad guy's life and he's hanging on to the torch.<br>
+And it's like, yeah, it's like, I mean, it was made during world war II. It's over the top symbolism, but it's also visually just you'll dream about it. Like you never forget that. So I think that's what you're talking about. These like takeaways. Like some major takeaway where I liked everything, but like, that's what I look for in a conference.<br>
+I liked everything, but this one thing changed my work. And this one thing that I saw, this one thing that person said changed my life in some way, I look for those things in my day-to-day life. Right. Those things that inspire and recharge. And, and so, yeah, we really want those in the conference and I'm glad they're there for you.<br>
+Yeah. Yeah, thank you.<br>
+Todd Libby: [00:29:50] Oh, Oh, you're welcome. There. They're the people that I've talked to at conferences have said the same thing, so it's a very impactful conference for sure and I've had conversations well after a conference with people that are like, Oh, I remember so-and-so is saying this. And I took this back to work with me and we implemented this.<br>
+Jeffrey Zeldman: [00:30:18] We know some examples and we keep covering new ones. We keep looking for new ones, but that's it. The great speakers that's that's yep. Yeah. In a way there's no trick to it at all. Just like higher grade speakers.<br>
+Todd Libby: [00:30:34] Yeah, exactly. So going away from all that I, and we touched upon this in the, in our first talk what cause we talked with, you know, young and old, older, I guess people in the industry all the time but more myself with the younger crowd.<br>
+Todd Libby: [00:31:02] What piece of advice would you give somebody starting out their web journey these days to help them along the way I've found? Especially lately the past year, a lot of people are changing careers and they're always, you know, they see me on Twitter somehow or, you know, in a, in a community and I get a DM saying, well, how did you do it? And I said, well, I just, I just did it.<br>
+Todd Libby: [00:31:40] What piece of advice would you give somebody starting out<br>
+Jeffrey Zeldman: [00:31:45] Well for yourself, would you say that always keep learning is something that applies?<br>
+Todd Libby: [00:31:53] Absolutely.<br>
+Jeffrey Zeldman: [00:31:55] I think. No matter what stage of your career, you're at this isn't the kind of thing you take four years of college and then you're a master of it and you go off and do it. Right. Of course every profession people keep learning, but by its nature, web and web design started, it's just digital design started. So primitive, we've advanced so much and we're advancing so quickly.<br>
+You have to be open to learning. If you're not, it's not a good field for you. If you really want to be able to, like, if you hate, I'm not saying that you have to crack books or Ken's college, quite the opposite, but you have to be willing however, to learn. And you also have to be somewhat self-motivated because If you sit and wait for someone to explain it all to you, it's not going to happen.<br>
+The people who understand the field are busy. I'm not saying people don't mentor. They do a lot of people on the web love to pass their knowledge along. But you know, if you're sort of hoping that. It's not the kind of field where someone comes in and says, here you go. Here's all this stuff. There are books you can buy.<br>
+There are conferences you can attend. There's websites. You can read for free. There's lots of stuff out there. You can experiment and make stuff. You can join a little group and work with other people.  I think in the beginning, probably having buddies. Or at least one, I don't want to say study buddy, but some just someone else.<br>
+That's also a route around the same place you are at. I think if you can get someone who's further along to talk to and you can get someone who's at the same level as you, that you can check in with those two things can help with motivation and keep it from being too lonely. It's a very lonely pursuit.<br>
+I for reasons of my personality the way I grew up my childhood, my nature, probably my ancestors, whole bunch of reasons. I'm okay. Being isolated for parts of the day and just doing stuff myself and teaching myself. Not everybody is like that. If you're not a self-learner, this may not be a great profession for you.<br>
+So that's all. That's all to say upfront, like know those things about yourself. If you're okay with, you know, some people putting on headphones, listening to their music and losing themselves in code all day is heaven and other people, that's a nightmare. If it's a nightmare, you don't want to be in this field because.<br>
+The pandemic has made a lot of people, remote workers, or didn't used to be, but web work was often remote where even if you were in an office, people would sit next to each other. They wouldn't talk to each other. They put their headphones on. They'd all listen to their own individual music. Maybe they go, you go to lunch, that'd be it.<br>
+Like you go into lunch and at lunch, look at their phones and then they'd go. But they, you know, I think. You need to be at least comfortable. Maybe isolation is the wrong word, but you need to be comfortable doing things on your own. You need to be motivated. And some folks aren't, some folks really need structure, external structure, and there are probably way better fields for them.<br>
+But if, if you can, basically, if you, if I say I'd like you to do something and you have 20 hours to do it, and I don't care when those 20 hours are. And if it takes you 25 hours, that's fine. It takes you 12 hours more power to you, right. I think it should take about 20 hours. And that sounds like a good gig to you.<br>
+That sounds like, yeah. That's then this is a good field for you that said in terms of what you should learn. I mean, when we start, when I started and when you started, it was all being discovered and. We learned HTML. There wasn't anything else to learn. JavaScript wasn't invented CSS wasn't invented.<br>
+Right. We figured out how to do table ads and use spacer GIFs and all this stuff and we taught each other these ridiculous ideas and it was fun. Yep. Now there's so much known and there are so many languages and frameworks and tools sets. It's scary to me. And I've been doing this a long time.<br>
+It's overwhelming to me. I think it's overwhelming to a lot of people. You mentioned people are leaving the field. I think some people are being driven out by being overwhelmed by all that stuff. And I think we don't have to be right. I think the basics are still, if you're the kind of developer who benefits from having this complex tool chain and that makes you more productive and you're comfortable learning those things.<br>
+Great. You can have that kind of career. If you're not, if you like starting an HTML and doing progressive enhancement and prototyping by writing HTML and CSS and JavaScript. Great. If you are the kind of person who really just wants to. Wireframe and work with images and partner with someone who's good at the code.<br>
+That's great too. There's a lot of different ways to do this. I would say, I think everyone should have a basic understanding of HTML, what it is, why it exists, why why semantics matter? What, what HTML offers that almost no other technology does, which is this, you know, it survives nuclear winter. Right.<br>
+It's just under the, it's the under the hood thing that enables a cockroach of a device to survive in the future. If there's nothing, but you know, bad phones, old phones, we can still communicate with HTML. Our websites could still work.  CSS, if you understand it as a layer design language and a design language for a medium where.<br>
+Everything's a bit borderless and fluid. If you can get comfortable with that. And it's hard because the print world is reassuring. If I know that I'm going to have half the page on the left with a photo, that's the exact height of the magazine and the other half to be a column of text. And I'm going to re edit those words.<br>
+Cause I know what size they are until they fit neatly. And there's no widows and there's no hyphenation. I can do that. I can make a masterpiece of that page and print it. I can try to do that on the web, but the next person to look at it will see something different anyway. So it's a fool's errand. You have to be comfortable knowing that.<br>
+Design is a recommendation, a suggestion, a series of, of suggestions that ultimately the user has some control and, or quite a lot of control, or they have no control. And they're going to see it completely different from differently from how you intended it to be comfortable with all that stuff. If you're not, there's all kinds of there's graphic design.<br>
+There's right. There's book design. There's real-world product design, like make chairs. That's great. If you really want to control every atom of the design, there's lots of places to apply that we need great designers there, but if you're comfortable with the idea that design can be a series of tubes now, not a series of tubes, but a series of layered suggestions.<br>
+Or if you can wrap your brain, try to wrap your brain around that. I'd say those are the main things.  so learn the basics and don't worry so much about the other stuff. You know, I know people who are brilliant and amazing front end developers who don't even use Sass, just write CSS. And that's fine.<br>
+I know other people that swear by whatever system and that's fine too.<br>
+Todd Libby: [00:40:03] Yeah.<br>
+Jeffrey Zeldman: [00:40:59] Don't let anyone make you feel bad. Don't let anyone make you feel less than we all have imposters, anxiety--  imposter, anxiety. I don't know anyone that doesn’t. Only a psychopath doesn't have imposter anxiety, right? This field is so complicated and there's so much to know as a designer, you're like a doc, a doctor who thinks that they can cure every disease is a, is a psychopath.<br>
+They know that they're just children. On the shore standing, you know, at the sea shore of knowledge, with this devotion of things they don't know yet that they're hoping that they're hoping to gain. And we're the same way. We're, you know, we don't deal with life and death stuff so much, but although we can.<br>
+Todd Libby: [00:40:44] Yep.<br>
+Jeffrey Zeldman: [00:40:44] Right.<br>
+Todd Libby: [00:40:51] So. Some, some quick questions. I don't know if you've got a hard stop. I don't. So...<br>
+Jeffrey Zeldman: [00:40:59] I have a soft stop. Okay. A little while longer.<br>
+Todd Libby: [00:41:10] Okay. So… Touching upon that, the advice that, you know, given somebody that begins the journey right. I know a lot of people have asked me this question and I'll ask the same of you is what about the web these days that it excites you and keeps you excited in what you do?<br>
+Jeffrey Zeldman: [00:41:36] I eat-- I love the freedom to publish whatever I want, and I love empowering other people to do the same.<br>
+Right now. I work in Auttomatic. We are the makers of <a href="http://Wordpress.com">Wordpress.com</a> and some other stuff and I really love the idea of empowering other people to express themselves or form a group for their own protection or form a group, just study their shared interests or to sell their stuff online. A kind of an open, you know, it's open source.<br>
+It's-- it's available to anyone. I like the, that the web is an empowering technology and I like that, that the basics of it are still very basic, still very simple. The basics of making a website are you can learn in a day, right? So that hasn't changed. I think the democracy, the democratizing capabilities of the web.<br>
+Which we've only begun to tap into.  it has a dark side because for every nice, good person who wants to share their ideas, there's a criminal or a predator, or there's somebody with, with misinformation that they believe and want to share with everyone. So there's, there's always that danger, but democracy is messy.<br>
+But I hate saying democracy's messy because that I've heard people use that as an excuse for all kinds of bad things. So I'll write, I'll put some quotes around that or some parentheses around that. But I think in general, giving the means of creative PR the web gives the means of production to anyone who wants to invest a little time to learn.<br>
+And I love that. And if you don't want to learn, there are platforms in the tools that let you go ahead and publish and sell your products anyway. And that's cool too. Right? You can if money, you know, for a little, sometimes free, there are free options. There are options that cost a little bit there's basically.<br>
+I think the web makes it possible to sell your music or share your book idea or tell your story.  and then there's publications like medium. I like medium. I think it gives people the veneer of a magazine to go ahead and self publish. You can do that on your blog too. And I really like that. I love that.<br>
+And I do that, but it's hard getting people to pay attention to your blog. So something like mag a magazine publication usually exposes you to more readers and something like medium is kind of ideally optimized for that.  my daughter wrote an essay about her Her neurological difference from other people and how other people react to it.<br>
+And I want her to publish it. I don't know if she's going to publish it on, I don't know where she's going to publish it yet, but she can go ahead and do that. And other people will read that and go, Oh, I feel that way too. Oh, I feel seen, I feel heard. Thank you. Or they'll go. I didn't know that. I've been, I, you know what I mean?<br>
+I there's so much that I was blind to years ago that I'm aware of now because people have the web to share their truth. And I think that's really important. I think you can, there's a lot of perspectives you can hear from that. You, you know, they're not your neighbor. You're not going to hear it from the person next door, because.<br>
+The person next door is, is socioeconomically a lot, like you maybe looks like you buys groceries. Like you, you know what I mean? Yep. And with the web, we can, the web, you know, you can, you can get birthday greetings from somebody in Pakistan and that's remarkable to me. Yeah. Right. That's amazing. So, yeah, that turns me on every day, the feeling of connectedness, I think.<br>
+Technology is also isolating us. It's a double-edged sword and that's something to be on guard about, but technology can United man depend DEMEC has shown us, like, imagine if we didn't have this now, imagine if we were going through what they went through in 1918, and we didn't have a way to share information instantly digitally.<br>
+And getting into just about every home, every phone. So I'm grateful for that. And that excites me.<br>
+Todd Libby: [00:46:39] Yup.<br>
+Jeffrey Zeldman: [00:46:40] Yup.<br>
+Todd Libby: [00:46:41] So on that you touch on a few things. The next question was going to be, if there were one thing you could change about the web that we know of today, what would that be and why?<br>
+Jeffrey Zeldman: [00:47:04] Okay. I mean, the original idea for the web was more, two way go to a website and modify it to way that you wrote something. And I wrote a response to it. You'd immediately know things like ping backs. There's a lot of stuff that didn't really take off or hasn't taken off yet. That kind of exists in a very rudimentary state, but hasn't widely adopted that.<br>
+I'd like to see some of that change. I think it would be amazing. I think it would be amazing if I could not only share a page I've read, but share my annotations of it, which you could optionally look at or not the way, the way Google docs works or the way medium works, where I highlight something.<br>
+Imagine if everything on the web was like that, because originally it was supposed to be. Yeah, it could be really ugly and cluttered and we'd certainly need to have tools to filter it out. I wouldn't want to go to a newspaper article and have it be, you know, scorable to over by people who disagreed with the point of view expressed or something.<br>
+But I think that would be good.  if there were, I, I wish. If I could go back with a magic wand and not make everything free, I might do that because with the content being free first, there was advertising with its tracking and its intrusiveness. And then there w there was selling of data. Once they figure it out, once people figure it out.<br>
+I can give this person this, this empowering technology for free and all they do in return is I know everything about them and I can sell it to everybody from their government to a drug manufacturer, to an underwear manufacturer. I can sell it to everybody and everybody knows everything.  I wish there were more robust privacy tools.<br>
+I feel like there are some out there, but if everybody widely it, but you have to be kind of an expert to use them. Right. And if everyone used them, the economy that powers the internet would fall apart because so much of it is based on the selling of that data. So I wish if I could change something. I would change that again.<br>
+I'm happy to work at Auttomatic because our customers aren't our products, our products are our products. We have free products that are very basic, and we have products that for a little money, we can, you know, we charge a fee and it's enough that we can support a lot of designers and developers and that we can give back to the open source community and we don't have to spy on people and we don't and weed out.<br>
+And that's why I could take a job there. I like, you know, and I don't, I don't want to be moralistic, I think there's people working great people working at all kinds of companies, and they don't have a choice. A lot of times about their customer, their company, you know, the spying and they don't know how deeply the spine goes or what kind of weird dirty deals might be going on.<br>
+But I like. For me going to Auttomatic. I liked knowing that's not going to be, there may be some other problems. Surely there are problems everywhere, but this won't be one of them like ethical quandary of Oh, where sending information about people's children to a better file network. Like, no, that's not going to be an issue for me.<br>
+Like, so...<br>
+Todd Libby: [00:50:39] Yeah.<br>
+Jeffrey Zeldman: [00:50:42] Yeah.<br>
+Todd Libby: [00:50:44] So yeah it's those, those things that you mentioned that I've been looking at closely a lot lately--<br>
+Todd Libby: [00:50:58] that with privacy and ads and, and, you know, the gathering of data that I've been discussing a lot of that myself with people. So the last question I have. Is the one that kind of ties in with the theme of the podcast for me, that I'm going to be asking everybody.<br>
+So I will ask you what your favorite part of front end development you really like the most and could be anything. And the way I put it as that you would. Goes along with the title of the podcast too. What do you would nerd out over?<br>
+Jeffrey Zeldman: [00:51:43] I mean, historically for me, it's been CSS and I go back to 1996 when I saw a demonstration of CSS in  and they had full screen poster layouts.<br>
+And when I looked under the hood, the HTML was pretty minimal. Yeah.<br>
+I love the idea that you can fill something with color by typing three or six characters. Right. I, I love the idea that you can make something plastic that rearranges itself. I think Ethan Marcotte’s a genius. Getting CSS grid is genius. I am at this point much more of a listener than a talker. So I would nerd out by listening.<br>
+That's one of the reasons I keep doing A list Apart, so I can keep up with it and learn about it and see all the wonderful, magical, new things we can do.  and I like that we can do them with standards, I think. Hmm. I mean, obviously web standards is what I nerded out about historically. So there's the pleasure part of it.<br>
+There's the responsibility part of it, which is HTML. And there's the pleasure part of it, which is CSS. It's the difference between structure and visual, right? Between structure anesthetics. And I, I love that we have both.<br>
+Todd Libby: [00:53:22] Yeah, me too. That--<br>
+Jeffrey Zeldman: [00:53:24] What's your favorite thing to nerd out about?<br>
+Todd Libby: [00:53:26] Lately?<br>
+Historically, it's also been CSS, lately I would say in the past few years, maybe 5 to 10 it has been more accessibility. Yeah.<br>
+Jeffrey Zeldman: [00:53:46] Good.<br>
+Todd Libby: [00:53:49] Just because. Seeing lived experiences with family members or friends and, and just going to conferences. Matter of fact, that just sparked a memory where I was going to Denver in 2019, and I saw the piece of assistive technology I'd never seen before used by a blind young man and I watched him work it like I would work a laptop myself.<br>
+It was, it was absolutely fascinating. So more accessibility lately, but historically CSS because historically me manipulating something and being able to put it on the web. In have some sort of, whether it was a war or whether it was a website or whether it was you know, some experiment, like a CodePen that I would do that always fascinated me from the beginning.<br>
+Jeffrey Zeldman: [00:54:53] Make sure making stuff, making stuff, and having people look at it. Yeah. And I will, it goes back to like crayon drawings and showing them to mommy and daddy.<br>
+Todd Libby: [00:55:07] Yeah. Yep. I will also add A List Apart which has been around since I can remember, has always been there as a, as a sort of. I don't want to say a pocket reference guide, but it's always, it's, it's a defin...<br>
+Todd Libby: [00:55:31] It's been a bookmark of mine since I can remember. That's always been a big source of help for me. And I've always, you know, somebody asks a question. I said, Hey, well, have you looked on A List Apart? I'm sure there's an article on about it.<br>
+Long time reader and a huge fan of that website. So<br>
+Jeffrey Zeldman: [00:55:56] Amazing editors and brilliant writers and some really nice illustrators to really find illustrators.<br>
+Todd Libby: [00:56:03] Yes. Yep. Yep. Totally agree. Absolutely agree. So-- I'd like to close out the  podcast with my guests letting people know what they have currently going on where people can find you if they have questions or anything like that. So the, the floor is yours.<br>
+Jeffrey Zeldman: [00:56:31] Thank you. So I'm @zeldman on Twitter. At Z E L D M A N. And my, my personal site is <a href="http://zeldman.com">zeldman.com</a>.<br>
+My publication is <a href="http://alistapart.com">alistapart.com</a>. The conference is an, <a href="http://aneventapart.com">aneventapart.com</a> and the books are <a href="http://abookapart.com">abookapart.com</a> and I, all those things I do with other people, they're not all me and one of my favorite things is making friends with the people I work with and making work with the people I'm friends with.<br>
+So I'm always happy to hear from people if you have a really specific, complex problem on the wrong person to write to only because I have a family and a very demanding job and I'm busy, but if you just want to say hi I welcome that. Hmm. That's the best way is again, @zeldman on Twitter. I find it hard to imagine ever leaving Twitter at this point. They would have to do much worse than they've already done. And I would probably still find some rationalization because<br>
+Todd Libby: [00:57:42] Yeah.<br>
+Jeffrey Zeldman: [00:57:43] It’s just a really perfect channel for reaching out, being, being reached out to.  so yeah, and, you know Follow me there and you'll you'll know where everything.<br>
+Todd Libby: [00:57:58] I actually... go ahead.<br>
+Jeffrey Zeldman: [00:58:02] Thank you, Todd.<br>
+Todd Libby: [00:58:06] Oh, you're welcome.<br>
+Jeffrey Zeldman: [00:58:06] Thank you.<br>
+Todd Libby: [00:58:07] I will add, I do want to add, I was looking. For a second edition, second edition “Elements of Content Strategy” book from A Book Apart because I had all the other second edition books and my semi-OCD, I would stare at that bookshelf ago that it was, you know, sticking out like a sore thumb. They went-- Katel LeDu, the CEO.<br>
+Jeffrey Zeldman: [00:58:39] CEO, right.<br>
+Todd Libby: [00:58:42] They went above and beyond and got me a second edition book that ended up in my mail with, and I have the, the letter on my, on my desk.  I thought that was above and beyond.<br>
+Jeffrey Zeldman: [00:58:57] A letter from Erin Kissane?<br>
+Todd Libby: [00:58:59] No, a letter from Katel. They searched for the book and they found the book as a second edition of Erin, Erin Kissane's book and they, they sent it to me which I thought was just phenomenal. It made my day. So you've got some great, great people,<br>
+Jeffrey Zeldman: [00:59:19] And we love our readers. So yeah.<br>
+Todd Libby: [00:59:24] So I just wanted to...<br>
+Jeffrey Zeldman: [00:59:25] Thank you for having me on the show today.<br>
+Todd Libby: [00:59:27] Yeah. Thank you and thank you listeners for tuning in to the Front End Nerdery podcast. I'll be back next month with a new guest new topics and conversation about front end design development.<br>
+And more, if you would please rate this podcast on your podcast device of choice. I'm Todd Libby, and this has been the Front End Nerdery podcast. Thanks. And I will see you next time.<br>
+END</p>
+
+    </section>
+  </article>
+</div>
+
+        <section class="social">
+          <h2>&copy;1999 &mdash; 2022, Todd Libby.</h2>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+            </ul>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            </ul>
+          <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; <a href="/a11y">A11y Statement</a></h2>
+        </section>
+      </main>
+
+      <footer class="meta">
+        <div class="foot">
+          <ul class="list-inline">
+            <li>
+              <a href="https://twitter.com/toddlibby" class="twitter">
+                <svg class="icon icon-twitter" focusable="false">
+                  <title>My Twitter profile</title>
+                  <desc id="twitter">A white bird.</desc>
+                  <use href="/img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://dribbble.com/colabottles/" class="dribbble">
+                <svg class="icon icon-dribbble" focusable="false">
+                  <title>My Dribbble portfolio</title>
+                  <desc id="dribbble">A white basketball.</desc>
+                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

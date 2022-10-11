@@ -3,35 +3,98 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The wrap-up article I authored in 2018 after An Event Apart.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>An Event Apart 2019 - Wrap-Up Edition</title>
-    <meta name="Description" content="The wrap-up article I authored in 2018 after An Event Apart.">
-    <link rel="stylesheet" href="/css/index.css" media="all" />
-    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css" />
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" media="all" />
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Home of Todd Libby - Senior Front End Developer" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+    <style>
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      </style>
   </head>
   <body>
     <div class="wrapper">
-      <header role="banner">
-        <h1 class="home">
-          <a href="/">
-            Todd Libby
-          </a>
-        </h1>
-        <nav title="main-navigation" role="navigation">
-          <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation"><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/about/">About</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/blog/">Blog</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/contact/">Contact</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/resources/">Resources</a>
-              </li></ul>
-        </nav>
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
       </header>
 
-      <main class="inner">
+      <main id="main" class="inner" tabindex="-1">
         
 <div class="article-container">
   <article>
@@ -43,8 +106,8 @@
     </header>
     
     <section class="article__body">
-      <h3 id="an-event-apart-boston-2019%2C-boston%2C-ma">An Event Apart Boston 2019, Boston, MA</h3>
-<h3 id="day-one">Day One</h3>
+      <h3 id="an-event-apart-boston-2019%2C-boston%2C-ma" tabindex="-1">An Event Apart Boston 2019, Boston, MA</h3>
+<h3 id="day-one" tabindex="-1">Day One</h3>
 <p>It was terrific. Jeffrey started it off with his talk about slow design. There is too much going on, on websites that distract and stresses users. Designers should help users by slowing down so they can make informed decisions. <span class="italic">“Readability transcends legibility”</span>, <span class="italic">“Absorption, not conversion</span>.” Where you read from, lying down? Sitting in a chair tablet on your knees? At the breakfast table with the tablet proped up a foot away from you?</p>
 <p>Minamalism and whitespace (macro and micro) for focus and being less busy, big typography for readability and hierarchy for accessibility were among the many points Jeffrey touched upon in his fantastic talk that kicked off another phenomenal conference.</p>
 <p>Mina Markham followed up with a phenomenal talk about art direction and inclusiveness. Mina also spoke about progressive enhancement and how we have to make sure users have an experience on their own terms that is the experience they want. A great one.</p>
@@ -60,7 +123,7 @@
 <p>Jen Simmons wrapped the day up with her talk on designing intrinsic layouts, solving layout designs, and even did a live coding walkthrough. Her work, along with Rachel's in regards to CSS Grid Layout, is the best. I point anyone who asks me where they can learn about Grid to those two wonderful people. Although you can do things the old fashioned way, and I still do from time-to-time, I like the direction that Grid and Flexbox are taking the web.</p>
 <p>Jen also mentioned that everything doesn't have to be done in Flexbox or Grid, that “good old fashioned stuff is still good.” I was fortunate enough to get a few minutes talking to Jen <span class="italic">(Thank you so very much!)</span> about a few questions I had and as with all the speakers I spoke to and had questions with, she was so very gracious with her time.</p>
 <p>Overall, as to how it was the last two years, Day One was stellar. I had a great time absorbing all the information, putting it into my logbook for future use and how I may do things at work going forward.</p>
-<h3 id="day-two">Day Two</h3>
+<h3 id="day-two" tabindex="-1">Day Two</h3>
 <p>Kate O'Neill kicked off Day Two with her great talk about the “Design of Meaning for the Future of Humanity”. About building our best tech, which hit home with me at my job. Our app can and needs to do a lot better. I took a lot from her talk for sure. Our app is what I call “Get in and get done”, so tedious at times so I can imagine what the customers and users think, which is a huge part of what Gerry McGovern spoke about on Day Three, but more on that later.</p>
 <p>Meaningful design experiences is something I never had cross my mind and Kate certainly opened my mind up to that by using the Amazon Go Stores as an example. While a fantastic use of technology, you can go in, do your shopping, checkout and go (no pun intended), there is something you don't see in a Go store that you see in a regualr old supermarket. Taking an item off a shelf to help another person should they need it.</p>
 <p>Due to my height (6´3˝), I have had elderly people ask me to reach something on the top shelf for them and I was able to help with no problem or issue. I guess you can't do that in an Amazon Go store as it wont be registered correctly. So is this a meaningful experience? Dare I say, nay.</p>
@@ -74,7 +137,7 @@
 <p>Dan followed with how my role with the design system can be the most efficient it could be. I talked with both of them about how to get started and how I can make a design system from nothing that will do the job it needs to do for the company I work for.</p>
 <p>Both Brad and Dan were, and are, great to talk to about this topic. They provided me with answers to my questions. They touched on how you don't have to go guns-a-blazing and try to do everything in a design syste at once. Start off small, meet the needs and boundaries of what you're doing and go from there. Run your design system and it's evolution in tandem witht he project you or you and your team are currently working on. I even won a prize during <strong>“Name That Design System!”</strong> (A small victory).</p>
 <p>That wrapped up a busy Day Two in which my head was overflowing with ideas and information. Then it was onward to…</p>
-<h3 id="day-three">Day Three</h3>
+<h3 id="day-three" tabindex="-1">Day Three</h3>
 <p>The accessibility rock block! Starting off with Michael Austin Sui discussing how (most passionately as well as eloquently) we're not designing in ways that are accessible to all. That even the smallest things are being overlooked. Something that really sticks with me and will continue to do so for as long as I am designing.</p>
 <p>Michael discussed AirBNB's approach to inclusive design. The best quote from Michael was “Design systems are your leverage to do better.” and that “Colors project differently on different devices.” couldn't have rang more true. When shown a slide of four different devices with the same hex code and four different shades of that hex color. I had a lot to take back to the office just in Michael's talk (a.k.a. Safari Dude) alone!</p>
 <p>Marcy Sutton followed with her talk about CSS techniques and what they mean for accessibility and browser support. How some techniques can impact accessibility in ways that are unexpected, such as the <code>:focus</code> pseudo class.</p>
@@ -88,90 +151,91 @@
 <p>The code example of the <code>ui-mask</code> and <code>maxlength</code> and how, for instance, a year field takes only 2 numbers, but should take 4 numbers for the whole year, was enlightening. It was a great look into something that perhaps my company needs to (this will meet with MUCH resistance, this I know) implement.</p>
 <p>Gerry McGovern closed out yet another great conference. Gerry always puts on a great and highly entertaining talk. This and last years conference were a testament to that. Gerry spoke about focusing on your users, taking your users feedback and going to task on adjusting your design to their feedback as to work with them and design with them for your product. Know your users!</p>
 <p>Google, the UK government, and AirBNB were some examples of gradual design that improved. Something yet again my company should look into but might be met with much resistance. In the three plus years at my company, I feel we do not take enough (if any) feedback from our users. Which is a huge mistake. I am pitching hard that we start to do this better. Gerry's talk just reinforced my feelings on user feedback to better the design of our system.</p>
-<h3 id="the-summary">The Summary</h3>
+<h3 id="the-summary" tabindex="-1">The Summary</h3>
 <p>Personally, this year was a year I was going to try and be a lot more social. I still have a ways to go, all-in-all I was able to shed my insecurities and I was able to mingle, ask a lot of questions, and get over my anxiety over approaching people and talking to them. I got to see a lot of folks I met in 2018 and say hello.</p>
 <p>I met some nice people, talked with a few, had breakfast and lunch with speakers and attendees alike that were and are very nice and pleasant folks who like myself, come to learn from the best and I hope to see them next year as well.</p>
 
     </section>
   </article>
 </div>
+
+        <section class="social">
+          <h2>&copy;1999 &mdash; 2022, Todd Libby.</h2>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+            </ul>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            </ul>
+          <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; <a href="/a11y">A11y Statement</a></h2>
+        </section>
       </main>
 
-      <div class="social" title="sub-navigation" role="navigation">
-        <h2>&copy;1999 &mdash; 2020, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/a11y">A11y</a></li>
-          </ul>
-        <h2>#BlackLivesMatter</h2>
-      </div>
-
-      <footer class="meta" role="contentinfo">
-        <nav class="foot" title="footer-navigtion">
+      <footer class="meta">
+        <div class="foot">
           <ul class="list-inline">
             <li>
-              <a href="https://codepen.io/colabottles/#" class="codepen" aria-label="A link to my CodePen repository">
-                <svg class="icon icon-codepen" role="img" aria-label="An icon that links to my CodePen repository">
-                  <title>A link to my CodePen repository</title>
-                  <desc id="codepen">A white icon in the shape of the CodePen logo which is a 3D cube.</desc>
-                  <use href="/img/symbol-defs.svg#icon-codepen" alt="A link to my CodePen repository"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://dribbble.com/colabottles/" class="dribbble" aria-label="A link to my Dribbble page">
-                <svg class="icon icon-dribbble" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Dribbble portfolio</title>
-                  <desc id="dribbble">A white icon in the shape of the Dribbble logo which is a basketball.</desc>
-                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/colabottles/" class="github" aria-label="A link to my GitHub page">
-                <svg class="icon icon-github" role="img" aria-label="An icon that links to my GitHub repository">
-                  <title>A link to my GitHub repository</title>
-                  <desc id="github">A white icon in the shape of the GitHub logo which is the OctoCat.</desc>
-                  <use href="/img/symbol-defs.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/toddlibby" class="twitter" aria-label="A link to my Twitter page">
-                <svg class="icon icon-twitter" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Twitter page</title>
-                  <desc id="twitter">A white icon in the shape of the Twitter logo which is a bird.</desc>
+              <a href="https://twitter.com/toddlibby" class="twitter">
+                <svg class="icon icon-twitter" focusable="false">
+                  <title>My Twitter profile</title>
+                  <desc id="twitter">A white bird.</desc>
                   <use href="/img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://toddl.dev/feed/feed.xml" class="rss" aria-label="A link to my RSS page">
-                <svg class="icon icon-rss" role="img" aria-label="An icon that links to this site's RSS feed">
-                  <title>A link to the RSS feed for this site</title>
-                  <desc id="rss">A white icon in the shape of the RSS logo which is a group of lines shaped like a speaker.</desc>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
                   <use href="/img/symbol-defs.svg#icon-rss"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y" aria-label="WCAG 2.0 AA Passed a11y">
-                <svg class="icon icon-accessible-icon" role="img" aria-label="An icon that links to this pages WCAG 2.0 Accessibility test results">
-                  <title>A link to the WCAG 2.0 Accessibility test results for this site</title>
-                  <desc id="a11y">A white icon in the shape of a person in a wheelchair.</desc>
+              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
                   <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
                 </svg>
               </a>
             </li>
+            <li>
+              <a href="https://dribbble.com/colabottles/" class="dribbble">
+                <svg class="icon icon-dribbble" focusable="false">
+                  <title>My Dribbble portfolio</title>
+                  <desc id="dribbble">A white basketball.</desc>
+                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
-
-    <!-- Current page: /posts/an-event-apart-boston-2019/ -->
-    <script src="../svgxuse.min.js" defer></script>
   </body>
 </html>

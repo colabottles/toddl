@@ -3,35 +3,98 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A recap of the conference in Burlington, Vermont. UX Burlington.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>UX Burlington 2019</title>
-    <meta name="Description" content="A recap of the conference in Burlington, Vermont. UX Burlington.">
-    <link rel="stylesheet" href="/css/index.css" media="all" />
-    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css" />
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" media="all" />
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Home of Todd Libby - Senior Front End Developer" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+    <style>
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      </style>
   </head>
   <body>
     <div class="wrapper">
-      <header role="banner">
-        <h1 class="home">
-          <a href="/">
-            Todd Libby
-          </a>
-        </h1>
-        <nav title="main-navigation" role="navigation">
-          <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation"><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/about/">About</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/blog/">Blog</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/contact/">Contact</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/resources/">Resources</a>
-              </li></ul>
-        </nav>
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
       </header>
 
-      <main class="inner">
+      <main id="main" class="inner" tabindex="-1">
         
 <div class="article-container">
   <article>
@@ -43,10 +106,10 @@
     </header>
     
     <section class="article__body">
-      <h3 id="ux-burlington-2019---burlington%2C-vt">UX Burlington 2019 - Burlington, VT</h3>
-<h4 id="my-first-ux-burlington">My First UX Burlington</h4>
+      <h3 id="ux-burlington-2019---burlington%2C-vt" tabindex="-1">UX Burlington 2019 - Burlington, VT</h3>
+<h4 id="my-first-ux-burlington" tabindex="-1">My First UX Burlington</h4>
 <p>While scanning the countryside for conferences in the New England area, I was drawn to UX Burlington. So I snagged a ticket. Best decision I made that week. More on the food that I had there on Church Street as well.</p>
-<h4 id="morning-keynote">Morning Keynote</h4>
+<h4 id="morning-keynote" tabindex="-1">Morning Keynote</h4>
 <p>Victor Yocco gave the morning keynote. “Designing For Short Attention Spans”. A great way to kick off the conference. Filled with humor, light-heartedness and information, I was glad I had attended because this keynote made me think about a lot of UX things I've been dealing with at work.</p>
 <p>Three main points of the talk were:</p>
 <ol>
@@ -75,12 +138,12 @@
 <li>Give users something to do.</li>
 </ol>
 <p>There was so much to Victor's talk, it would take me a day to just relay the vast amount of information that was crammed into a 48-minute video. I had three pages of notes myself, so I'll just suggest people watch the video of the keynote. The link to <a href="https://youtu.be/6WBS6YYMAcE">the video for Victor's keynote can be found here</a> on the UX Burlington YouTube account.</p>
-<h4 id="fr%C3%A9d%C3%A9ric-harper">Frédéric Harper</h4>
+<h4 id="fr%C3%A9d%C3%A9ric-harper" tabindex="-1">Frédéric Harper</h4>
 <p>The first speaker that I saw on the developer track was Frédéric Harper, “Building Web Apps That Don’t Suck”. Frédéric spoke about tips and tricks to help you optimize your applications. Create a great experience for your users that is fast and with quality. It was a great way to kick off the developer track for sure.</p>
 <p>Frédéric touched upon mobile first, engagement with mobile apps. Why are you using the application? Keep your users engaged with a great UI.</p>
 <p>Think about content, think about the comfort zone of the screen and what users ahve to do to navigate your app and he even broke into a little condensed version of Fitt's Law. Fitt's Law, for those who don't know, is a predictive model of human movement primarily used in human–computer interaction and ergonomics. Basically, the law predicts that the time required to rapidly move to a target area is a function of the ratio between the distance to the target and the width of the target.</p>
 <p>Minimizing large files, file requests, HTTP requests, using a CDN, running the audit on Webhint, don't make users think about the interface, insulate them from the complexities and make our goals easier and faster. There was an awful lot of information packed into the hour and I'll point you to <a href="https://youtu.be/DWd5cL3ViTY">Frédéric's video on the UX Burlington YouTube page</a>. I highly suggest watching.</p>
-<h4 id="henri-helvetica">Henri Helvetica</h4>
+<h4 id="henri-helvetica" tabindex="-1">Henri Helvetica</h4>
 <p>The next speaker was Henri Helvetica, “Planet of the APIs: A Tale of Performance and UX”. The beginning of Henri's talk was about the good old days of Mosaic, data and web origins such as in November of 2016 (not so long ago) when mobile and tablet internet usage surpassed desktop internet usage.</p>
 <p>How the US was 2nd in the world with selling the low end/low spec phones &amp; devices, performance on mobile, and how 53% of visitors will abandon a page after 3 seconds and 77% of pages load in 10 seconds or more with the average page loading in 19 seconds. Want to know exactly how long 19 seconds is? If Henri doesn't mind, I'll borrow this example that he used. Buckle up.</p>
 <iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/GWbP8eC-SIw?start=20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title=""></iframe>
@@ -99,7 +162,7 @@
 <p>I'll go back to another quote from Henri;</p>
 <blockquote cite="Henri Helvetica">You can't improve what you don't measure.</blockquote> 
 <p>I had written down a lot of notes, what mobile browsers these are all good in and not implemented in yet, but again, I'll direct and suggest that <a href="https://youtu.be/DLvSPYklE4U">folks go to the UX Burlington YouTube page and view his talk there</a>. Henri articulated everything so well, I don't want to butcher it.</p>
-<h4 id="chris-demars">Chris DeMars</h4>
+<h4 id="chris-demars" tabindex="-1">Chris DeMars</h4>
 <p>Chris DeMars was the last speaker for the day with “Focusing on Focus”. He nailed it. I had corresponded with Chris (@saltnburnem) on Twitter so it was a treat to see and hear his talk on Focusing on Focus.</p>
 <p>It started with this after Chris' introduction;</p>
 <iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/XB4cjbYywqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title=""></iframe>
@@ -112,99 +175,100 @@
 <p><a href="https://youtu.be/gUK0ieCJkRI">Go to the UX Burlington page on YouTube and see the video in its entirety.</a></p>
 <p>Chris also walked people through <span class="pre">:focus</span> <span class="pre">:focus-visible</span> &amp; <span class="pre">:focus-within</span> with some pretty cool, yet simple pens over at his CodePen account. <a href="https://codepen.io/chrisdemars/pen/OvrbLr"><span class="pre">:focus</span></a>, <a href="https://codepen.io/chrisdemars/pen/PRXbpg"><span class="pre">:focus-within</span></a>, <a href="https://codepen.io/chrisdemars/pen/ejbZYv"><span class="pre">and focus styles</span></a> so go check those out!</p>
 <p>Top notch accessibility talk from Chris, so I was extra glad I got the ticket I got.</p>
-<h4 id="dr.-robert-moore">Dr. Robert Moore</h4>
+<h4 id="dr.-robert-moore" tabindex="-1">Dr. Robert Moore</h4>
 <p>Witht the closing keynote on a great one-day conference was Dr. Robert Moore and “Conversational UX”.</p>
 <p>Without going into it, <a href="https://youtu.be/ZcKB2ns8I1g">go watch the video</a>. I couldn't even possibly begin to articulate a fraction of good as Dr. Moore does. I'll give it the Reader's Digest version as well as I can.</p>
 <p>Conversational UX. When dealing with the technologies we have out there, chatbots and voice assistants, there is a lack of conversational feel to them and Dr. Moore tells you how there is (and has been) work going on in the field of conversational science.</p>
 <p>Dr. Moore shows you a little bit about what they are doing at IBM and the interaction patterns they are working on and with to make conversational patterns and UX better.</p>
-<h3 id="but-what-about-the-food%3F">But what about the Food?</h3>
+<h3 id="but-what-about-the-food%3F" tabindex="-1">But what about the Food?</h3>
 <p>So I decided to go out for dinner after I got into Burlington the day before the conference. I decided upon the Asiana Noodle Shop and oh my, was I glad I did. Located on Chruch Street in the heart of the Church Street Marketplace, it is a well-hidden place, so you have to look hard for it or you'll miss it. At least I had to. I am oblivious some times.</p>
 <p>I enjoyed (understatement) the Korean BBQ short ribs and bibimbap. Along with a terrific wonton soup. Nice cozy little place located downstairs, busy place, but the food is out of this world. That's a must-do if you're looking for good eats in the area.</p>
 <p>That's just a little recommendation.</p>
-<h3 id="yeah%2C-but-the-conference!">Yeah, but the conference!</h3>
+<h3 id="yeah%2C-but-the-conference!" tabindex="-1">Yeah, but the conference!</h3>
 <p>The conference, for a one-day event, is terrific! Well put together, fantastic speakers (check out the past speakers and videos on YouTube), great food (poke bowls were phenomenal) and a great crowd.</p>
 <p>If you are debating on going, debate no more. Go. It's well worth it.</p>
 
     </section>
   </article>
 </div>
+
+        <section class="social">
+          <h2>&copy;1999 &mdash; 2022, Todd Libby.</h2>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+            </ul>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            </ul>
+          <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; <a href="/a11y">A11y Statement</a></h2>
+        </section>
       </main>
 
-      <div class="social" title="sub-navigation" role="navigation">
-        <h2>&copy;1999 &mdash; 2020, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/a11y">A11y</a></li>
-          </ul>
-        <h2>#BlackLivesMatter</h2>
-      </div>
-
-      <footer class="meta" role="contentinfo">
-        <nav class="foot" title="footer-navigtion">
+      <footer class="meta">
+        <div class="foot">
           <ul class="list-inline">
             <li>
-              <a href="https://codepen.io/colabottles/#" class="codepen" aria-label="A link to my CodePen repository">
-                <svg class="icon icon-codepen" role="img" aria-label="An icon that links to my CodePen repository">
-                  <title>A link to my CodePen repository</title>
-                  <desc id="codepen">A white icon in the shape of the CodePen logo which is a 3D cube.</desc>
-                  <use href="/img/symbol-defs.svg#icon-codepen" alt="A link to my CodePen repository"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://dribbble.com/colabottles/" class="dribbble" aria-label="A link to my Dribbble page">
-                <svg class="icon icon-dribbble" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Dribbble portfolio</title>
-                  <desc id="dribbble">A white icon in the shape of the Dribbble logo which is a basketball.</desc>
-                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/colabottles/" class="github" aria-label="A link to my GitHub page">
-                <svg class="icon icon-github" role="img" aria-label="An icon that links to my GitHub repository">
-                  <title>A link to my GitHub repository</title>
-                  <desc id="github">A white icon in the shape of the GitHub logo which is the OctoCat.</desc>
-                  <use href="/img/symbol-defs.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/toddlibby" class="twitter" aria-label="A link to my Twitter page">
-                <svg class="icon icon-twitter" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Twitter page</title>
-                  <desc id="twitter">A white icon in the shape of the Twitter logo which is a bird.</desc>
+              <a href="https://twitter.com/toddlibby" class="twitter">
+                <svg class="icon icon-twitter" focusable="false">
+                  <title>My Twitter profile</title>
+                  <desc id="twitter">A white bird.</desc>
                   <use href="/img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://toddl.dev/feed/feed.xml" class="rss" aria-label="A link to my RSS page">
-                <svg class="icon icon-rss" role="img" aria-label="An icon that links to this site's RSS feed">
-                  <title>A link to the RSS feed for this site</title>
-                  <desc id="rss">A white icon in the shape of the RSS logo which is a group of lines shaped like a speaker.</desc>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
                   <use href="/img/symbol-defs.svg#icon-rss"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y" aria-label="WCAG 2.0 AA Passed a11y">
-                <svg class="icon icon-accessible-icon" role="img" aria-label="An icon that links to this pages WCAG 2.0 Accessibility test results">
-                  <title>A link to the WCAG 2.0 Accessibility test results for this site</title>
-                  <desc id="a11y">A white icon in the shape of a person in a wheelchair.</desc>
+              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
                   <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
                 </svg>
               </a>
             </li>
+            <li>
+              <a href="https://dribbble.com/colabottles/" class="dribbble">
+                <svg class="icon icon-dribbble" focusable="false">
+                  <title>My Dribbble portfolio</title>
+                  <desc id="dribbble">A white basketball.</desc>
+                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
-
-    <!-- Current page: /posts/ux-burlington-2019/ -->
-    <script src="../svgxuse.min.js" defer></script>
   </body>
 </html>

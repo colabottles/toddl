@@ -3,35 +3,98 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The wrap-up article I authored in 2018 after An Event Apart.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>An Event Apart 2018 - Wrap-Up Edition</title>
-    <meta name="Description" content="The wrap-up article I authored in 2018 after An Event Apart.">
-    <link rel="stylesheet" href="/css/index.css" media="all" />
-    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css" />
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" media="all" />
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Home of Todd Libby - Senior Front End Developer" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+    <style>
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-400-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-400-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-400-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-800-normal.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-latin-ext-800-normal.woff) format('woff');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff2) format('woff2'), url(https://fonts.bunny.net/work-sans/files/work-sans-vietnamese-800-normal.woff) format('woff');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      </style>
   </head>
   <body>
     <div class="wrapper">
-      <header role="banner">
-        <h1 class="home">
-          <a href="/">
-            Todd Libby
-          </a>
-        </h1>
-        <nav title="main-navigation" role="navigation">
-          <ul class="navigation main-nav" role="listbox" tabindex="0" title="navigation"><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/about/">About</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/blog/">Blog</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/contact/">Contact</a>
-              </li><li class="nav-item" tabindex="0" role="option" aria-selected="true">
-                <a href="/resources/">Resources</a>
-              </li></ul>
-        </nav>
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
       </header>
 
-      <main class="inner">
+      <main id="main" class="inner" tabindex="-1">
         
 <div class="article-container">
   <article>
@@ -43,7 +106,7 @@
     </header>
     
     <section class="article__body">
-      <h3 id="an-event-apart-boston-2018%2C-boston%2C-ma">An Event Apart Boston 2018, Boston, MA</h3>
+      <h3 id="an-event-apart-boston-2018%2C-boston%2C-ma" tabindex="-1">An Event Apart Boston 2018, Boston, MA</h3>
 <p><strong><em>Originally posted on my old site in installments, this has been compiled into one post.</em></strong></p>
 <p>Today started off, three days of design and web at the Renaissance Boston. So running on no sleep for the past 40 hours, I toughed out a fantastic first day of speakers at An Event Apart.</p>
 <p>As with every AEA, it was kicked off by Jeffrey Zeldman, speaking first about Engagement and the Content Performance Quotient.</p>
@@ -75,8 +138,8 @@
 <blockquote cite="Rachel Andrew">Don’t be afraid of the future of CSS Grids, be excited!</blockquote>
 <p>Then Eric Meyer took the stage to discuss Feature Queries. What are the pros and cons? Where are the strengths and weaknesses?</p>
 <p>Feature Queries examples.</p>
-<pre class="language-css"><code class="language-css"><span class="highlight-line">  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">prop</span><span class="token punctuation">:</span> val<span class="token punctuation">)</span></span> <span class="token punctuation">{</span> <span class="token comment">/* CSS goes here */</span> <span class="token punctuation">}</span> </span><br><span class="highlight-line">    <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">--css</span><span class="token punctuation">:</span> variables<span class="token punctuation">)</span></span> <span class="token punctuation">{</span> </span><br><span class="highlight-line">      <span class="token selector">html</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">        <span class="token property">--color1</span><span class="token punctuation">:</span> navy<span class="token punctuation">;</span> </span><br><span class="highlight-line">        <span class="token property">--color2</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span></span><br><span class="highlight-line">      <span class="token punctuation">}</span> </span><br><span class="highlight-line">      <span class="token selector">html.help</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">        <span class="token property">--color1</span><span class="token punctuation">:</span> teal<span class="token punctuation">;</span></span><br><span class="highlight-line">        <span class="token property">--color2</span><span class="token punctuation">:</span> maroon<span class="token punctuation">;</span></span><br><span class="highlight-line">      <span class="token punctuation">}</span> <span class="token selector">body</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color1<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">      <span class="token punctuation">}</span> </span><br><span class="highlight-line">      <span class="token selector">.highlight</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color2<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">      <span class="token punctuation">}</span> </span><br><span class="highlight-line">    <span class="token punctuation">}</span></span></code></pre>
-<pre class="language-css"><code class="language-css"><span class="highlight-line">  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">prop</span><span class="token punctuation">:</span> val<span class="token punctuation">)</span></span> <span class="token punctuation">{</span></span><br><span class="highlight-line">    <span class="token comment">/* CSS goes here */</span></span><br><span class="highlight-line">  <span class="token punctuation">}</span></span><br><span class="highlight-line">  </span><br><span class="highlight-line">  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">--css</span><span class="token punctuation">:</span> variables<span class="token punctuation">)</span></span> <span class="token punctuation">{</span></span><br><span class="highlight-line">    <span class="token selector">html</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">      <span class="token property">--color1</span><span class="token punctuation">:</span> navy<span class="token punctuation">;</span></span><br><span class="highlight-line">      <span class="token property">--color2</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span></span><br><span class="highlight-line">    <span class="token punctuation">}</span></span><br><span class="highlight-line">    <span class="token selector">html.help</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">      <span class="token property">--color1</span><span class="token punctuation">:</span> teal<span class="token punctuation">;</span></span><br><span class="highlight-line">      <span class="token property">--color2</span><span class="token punctuation">:</span> maroon<span class="token punctuation">;</span></span><br><span class="highlight-line">    <span class="token punctuation">}</span></span><br><span class="highlight-line">    <span class="token selector">body</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color1<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">    <span class="token punctuation">}</span></span><br><span class="highlight-line">    <span class="token selector">.highlight</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color2<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">    <span class="token punctuation">}</span></span><br><span class="highlight-line">  <span class="token punctuation">}</span></span></code></pre>
+<pre class="language-css"><code class="language-css">  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">prop</span><span class="token punctuation">:</span> val<span class="token punctuation">)</span></span> <span class="token punctuation">{</span> <span class="token comment">/* CSS goes here */</span> <span class="token punctuation">}</span> <br>    <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">--css</span><span class="token punctuation">:</span> variables<span class="token punctuation">)</span></span> <span class="token punctuation">{</span> <br>      <span class="token selector">html</span> <span class="token punctuation">{</span><br>        <span class="token property">--color1</span><span class="token punctuation">:</span> navy<span class="token punctuation">;</span> <br>        <span class="token property">--color2</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span> <br>      <span class="token selector">html.help</span> <span class="token punctuation">{</span><br>        <span class="token property">--color1</span><span class="token punctuation">:</span> teal<span class="token punctuation">;</span><br>        <span class="token property">--color2</span><span class="token punctuation">:</span> maroon<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span> <span class="token selector">body</span> <span class="token punctuation">{</span><br>        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color1<span class="token punctuation">)</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span> <br>      <span class="token selector">.highlight</span> <span class="token punctuation">{</span><br>        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span> <br>    <span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css">  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">prop</span><span class="token punctuation">:</span> val<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>    <span class="token comment">/* CSS goes here */</span><br>  <span class="token punctuation">}</span><br>  <br>  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">--css</span><span class="token punctuation">:</span> variables<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>    <span class="token selector">html</span> <span class="token punctuation">{</span><br>      <span class="token property">--color1</span><span class="token punctuation">:</span> navy<span class="token punctuation">;</span><br>      <span class="token property">--color2</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>    <span class="token selector">html.help</span> <span class="token punctuation">{</span><br>      <span class="token property">--color1</span><span class="token punctuation">:</span> teal<span class="token punctuation">;</span><br>      <span class="token property">--color2</span><span class="token punctuation">:</span> maroon<span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>    <span class="token selector">body</span> <span class="token punctuation">{</span><br>      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color1<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>    <span class="token selector">.highlight</span> <span class="token punctuation">{</span><br>      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span></code></pre>
 <p>How to put all these new CSS features to work for you right away? I’m going to do a lot of experimentation with these features soon, I hope. Another great talk by Eric.</p>
 <p>And the day ended with Jen Simmons discussing the phases of the web that we have seen throughout the history of the web. From simple HTML to Responsive Web Design (RWD), Jen has brought forth the term Intrinsic Web Design to the forefront.</p>
 <p>The truncation joke was a good one as well.</p>
@@ -85,7 +148,7 @@
 <p>Rachel and Jen both have been the catalyst for changing the way we look at the web today, and I am very grateful and fortunate to have seen them both speak for two years running now. They have both shed light on CSS Grid and I understand a lot better now than I did when I went into AEA last year by miles.</p>
 <p>…and I cannot forget to mention that I got to see my friend Claudia Snell again!</p>
 <p>If you are a speaker and happen to see this, and if there is anything I missed upon, key points perhaps, then please reach out and I can certainly add those.</p>
-<h3 id="day-two">Day Two</h3>
+<h3 id="day-two" tabindex="-1">Day Two</h3>
 <p>Well, it is finished and as usual the second day of speakers was as good as the first!</p>
 <p>Jeremy Keith kicked the day off with his talk and what a talk it was! The way the web is changing it can be overwhelming and exhausting. What tools should you learn and use and how long will those tools be around?</p>
 <p>Jeremy brought everyone in attendance back in time, discussed the present state and walked us on a tour of the future in working on the web. From HTML/CSS/JS to frameworks and libraries and all the way to Progressive Web Apps, Jeremy taught us if we learn from the past, we can make sensible choices in the future regarding our work on the web.</p>
@@ -112,7 +175,7 @@
 <p>I learned to reduce confusion and increase speed and simplicity for our customers at the company I work for, and had a lot of hearty laughter while learning.</p>
 <p>That wrapped up Day Two. As much as I would like to add more quotes, pictures and details, I have got to get some sleep. Tomorrow will be a very long day. I’ll have a wrap-up on the entire day tomorrow late. Tomorrow consists of A Day Apart, with Eric Meyer. “Navigating the CSS Renaissance”. I look forward to it.</p>
 <p>Until next time, that is all.</p>
-<h3 id="a-day-apart-with-eric-meyer">A Day Apart with Eric Meyer</h3>
+<h3 id="a-day-apart-with-eric-meyer" tabindex="-1">A Day Apart with Eric Meyer</h3>
 <p>Today was sadly enough, the last day of the conference. A Day Apart with Eric Meyer. A full day with Eric capped it off in style… literally.</p>
 <p>We went through some examples of Grid, flexbox, production features that are ready to roll and we can use now. Writing modes, the fact that now, we actually can use the web like we did and do with print.</p>
 <p>Feature and media queries. Positioning of objects and making them fit in the viewport, shadows, borders, auto margins, shaping content and so much more! definitely worth the extra day!</p>
@@ -126,83 +189,84 @@
     </section>
   </article>
 </div>
+
+        <section class="social">
+          <h2>&copy;1999 &mdash; 2022, Todd Libby.</h2>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+            </ul>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            </ul>
+          <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; <a href="/a11y">A11y Statement</a></h2>
+        </section>
       </main>
 
-      <div class="social" title="sub-navigation" role="navigation">
-        <h2>&copy;1999 &mdash; 2020, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/a11y">A11y</a></li>
-          </ul>
-        <h2>#BlackLivesMatter</h2>
-      </div>
-
-      <footer class="meta" role="contentinfo">
-        <nav class="foot" title="footer-navigtion">
+      <footer class="meta">
+        <div class="foot">
           <ul class="list-inline">
             <li>
-              <a href="https://codepen.io/colabottles/#" class="codepen" aria-label="A link to my CodePen repository">
-                <svg class="icon icon-codepen" role="img" aria-label="An icon that links to my CodePen repository">
-                  <title>A link to my CodePen repository</title>
-                  <desc id="codepen">A white icon in the shape of the CodePen logo which is a 3D cube.</desc>
-                  <use href="/img/symbol-defs.svg#icon-codepen" alt="A link to my CodePen repository"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://dribbble.com/colabottles/" class="dribbble" aria-label="A link to my Dribbble page">
-                <svg class="icon icon-dribbble" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Dribbble portfolio</title>
-                  <desc id="dribbble">A white icon in the shape of the Dribbble logo which is a basketball.</desc>
-                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/colabottles/" class="github" aria-label="A link to my GitHub page">
-                <svg class="icon icon-github" role="img" aria-label="An icon that links to my GitHub repository">
-                  <title>A link to my GitHub repository</title>
-                  <desc id="github">A white icon in the shape of the GitHub logo which is the OctoCat.</desc>
-                  <use href="/img/symbol-defs.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/toddlibby" class="twitter" aria-label="A link to my Twitter page">
-                <svg class="icon icon-twitter" role="img" aria-label="An icon that links to my Dribbble portfolio">
-                  <title>A link to my Twitter page</title>
-                  <desc id="twitter">A white icon in the shape of the Twitter logo which is a bird.</desc>
+              <a href="https://twitter.com/toddlibby" class="twitter">
+                <svg class="icon icon-twitter" focusable="false">
+                  <title>My Twitter profile</title>
+                  <desc id="twitter">A white bird.</desc>
                   <use href="/img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://toddl.dev/feed/feed.xml" class="rss" aria-label="A link to my RSS page">
-                <svg class="icon icon-rss" role="img" aria-label="An icon that links to this site's RSS feed">
-                  <title>A link to the RSS feed for this site</title>
-                  <desc id="rss">A white icon in the shape of the RSS logo which is a group of lines shaped like a speaker.</desc>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
                   <use href="/img/symbol-defs.svg#icon-rss"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y" aria-label="WCAG 2.0 AA Passed a11y">
-                <svg class="icon icon-accessible-icon" role="img" aria-label="An icon that links to this pages WCAG 2.0 Accessibility test results">
-                  <title>A link to the WCAG 2.0 Accessibility test results for this site</title>
-                  <desc id="a11y">A white icon in the shape of a person in a wheelchair.</desc>
+              <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
                   <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
                 </svg>
               </a>
             </li>
+            <li>
+              <a href="https://dribbble.com/colabottles/" class="dribbble">
+                <svg class="icon icon-dribbble" focusable="false">
+                  <title>My Dribbble portfolio</title>
+                  <desc id="dribbble">A white basketball.</desc>
+                  <use href="/img/symbol-defs.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
-
-    <!-- Current page: /posts/an-event-apart-boston-2018/ -->
-    <script src="../svgxuse.min.js" defer></script>
   </body>
 </html>
