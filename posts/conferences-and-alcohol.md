@@ -12,7 +12,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-## Hello, I'm Todd
+### Hello, I'm Todd
 
 and I am a recovering alcoholic.
 
@@ -26,13 +26,13 @@ When I go to conferences, I see the culture of alcohol. Something I have lost th
 
 It's a lonely place when you go off to a dinner by yourself while everyone is at an after party. I don't mind, but it does affect me. I don't want to push my agenda (sobriety) on anyone. Religion does that, and I'm not a religious man. I don't ask conferences to make it a booze-free event. I don't wish to dictate that to any one or event. That's not my place. I have the choice to leave.
 
-## What is this all about
+### What is this all about
 
 I wish events would have something alcohol-free. I have spokent o a few organizers, they have been very gracious and open to discussing that. I have been to a couple conferences where they had an option for me, which I appreciate. I have been approached by a couple organizers who wanted to discuss how they could help me enjoy the event without the booze. Something I am grateful for and very thankful for.
 
 I want a bottled water, but I don't have a ticket. The bartender says I need a ticket. For a water. That's not inclusive or accessible. I'm not asking for a free water, I'll gladly pay you for it and tip you a couple bucks. But if I need a ticket for a water, that's pretty lousy in the rules department.
 
-## I really want to speak at your event
+### I really want to speak at your event
 
 I do my accessibility talks and plan to keep doing more, but I want to do events I normally wouldn't. Two in particular that I just cannot attend because of the frat party environment. Sure, I could just avoid it all like the plague, but what fun is that? I don't get to mingle and chat with my peers, I don't get to enjoy a night out and have fun with said people.
 
