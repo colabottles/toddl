@@ -22,6 +22,14 @@ templateClass: tmpl-home
     <h3>Latest Articles</h3>
       <ul class="article-sections">
         <li class="article-wrapper">
+          {%- for post in collections.boozefree | reverse -%}
+          <a href="{{ post.url }}">
+            <h4>{{ post.data.title }}</h4>
+          </a>
+          {%- endfor -%}
+        </li>
+
+        <li class="article-wrapper">
           {%- for post in collections.slacker | reverse -%}
             <a href="{{ post.url }}">
               <h4>{{ post.data.title }}</h4>
@@ -31,14 +39,6 @@ templateClass: tmpl-home
 
         <li class="article-wrapper">
           {%- for post in collections.fourthq | reverse -%}
-          <a href="{{ post.url }}">
-            <h4>{{ post.data.title }}</h4>
-          </a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.connecttech | reverse -%}
           <a href="{{ post.url }}">
             <h4>{{ post.data.title }}</h4>
           </a>

@@ -7,6 +7,8 @@ tags:
   - alcohol
   - recovery
   - culture
+  - accessibility
+  - boozefree
 layout: layouts/post.njk
 ---
 
@@ -46,4 +48,6 @@ The hardest part is though, the wanting to be heard and to fit in and feel value
 
 Conference organizers. Please… just remember not everyone drinks. Please provide an inclusive and accessible alternative at your conferences to have alcohol-free events.
 
-Thanks for reading.
+To those of you who have joined me at booze-free lunches and dinners and shown your support, thank you. I *really* am grateful for you.
+
+To you, reader. Thanks for reading.
