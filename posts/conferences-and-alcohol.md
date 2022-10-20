@@ -18,7 +18,7 @@ and I am a recovering alcoholic.
 
 I have been sober for over nine years. During that time, I have wanted to crawl out of my skin, wanted to drink, been in places I have no right to be in, tested my limits, and much, much more. So why am I telling you all this, person who is reading this?
 
-I've been putting myself out there in the public eye for over a year now. Close to two years. I needed things to do to keep me busy during the pandemic. Which is still going on, if we haven't noticed. I can tell you that it is the toughest thing I have ever had to do. Getiing sober. Staying sober. It has gotten easier over the last couple of years. I have put in a lot of work doing it, but lately, I have been slipping back into old habits.
+I've been putting myself out there in the public eye for over a year now. Close to two years. I needed things to do to keep me busy during the pandemic. Which is still going on, if we haven't noticed. I can tell you that it is the toughest thing I have ever had to do. Getting sober. Staying sober. It has gotten easier over the last couple of years. I have put in a lot of work doing it, but lately, I have been slipping back into old habits.
 
 By "lately" I mean, the past year. I was (and to some people still am) a horrible person. The worst of the worst short of doing time in a prison or jail or committing any heinous crimes or doing anything that would be dconsidered "evil" (again, some may protest that).
 
@@ -28,7 +28,7 @@ It's a lonely place when you go off to a dinner by yourself while everyone is at
 
 ### What is this all about
 
-I wish events would have something alcohol-free. I have spokent o a few organizers, they have been very gracious and open to discussing that. I have been to a couple conferences where they had an option for me, which I appreciate. I have been approached by a couple organizers who wanted to discuss how they could help me enjoy the event without the booze. Something I am grateful for and very thankful for.
+I wish events would have something alcohol-free. I have spoken to a few organizers, they have been very gracious and open to discussing that. I have been to a couple conferences where they had an option for me, which I appreciate. I have been approached by a couple organizers who wanted to discuss how they could help me enjoy the event without the booze. Something I am grateful for and very thankful for.
 
 I want a bottled water, but I don't have a ticket. The bartender says I need a ticket. For a water. That's not inclusive or accessible. I'm not asking for a free water, I'll gladly pay you for it and tip you a couple bucks. But if I need a ticket for a water, that's pretty lousy in the rules department.
 
