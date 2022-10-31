@@ -20,7 +20,7 @@ I have been sober for over nine years. During that time, I have wanted to crawl 
 
 I've been putting myself out there in the public eye for over a year now. Close to two years. I needed things to do to keep me busy during the pandemic. Which is still going on, if we haven't noticed. I can tell you that it is the toughest thing I have ever had to do. Getting sober. Staying sober. It has gotten easier over the last couple of years. I have put in a lot of work doing it, but lately, I have been slipping back into old habits.
 
-By "lately" I mean, the past year. I was (and to some people still am) a horrible person. The worst of the worst short of doing time in a prison or jail or committing any heinous crimes or doing anything that would be dconsidered "evil" (again, some may protest that).
+By "lately" I mean, the past year. I was (and to some people still am) a horrible person. The worst of the worst short of doing time in a prison or jail or committing any heinous crimes or doing anything that would be considered "evil" (again, some may protest that).
 
 When I go to conferences, I see the culture of alcohol. Something I have lost the right to partake in. I have no right being in a pub or tavern. No right being in a bar or saloon. I have no right being in a place where I have booze flowing freely around me. I cannot put myself in these places. This puts me in a group of few or even by myself sometimes.
 
@@ -40,7 +40,7 @@ I do my accessibility talks and plan to keep doing more, but I want to do events
 
 Why?
 
-I could go back to my room and be miserable or go off somewhere else. I have actually tweeted out that I am doing booze-free activities or dinners and I have gotten to meet the greatest people and been able to have a great time at the events that have a focus on alcohol after the conference day. I'm grateful to those that have gone out of their way and joined me, I am grateful for the support fo my friends that have foregone the drink to ennjoy a lunch or dinner with me. More than they know.
+I could go back to my room and be miserable or go off somewhere else. I have actually tweeted out that I am doing booze-free activities or dinners and I have gotten to meet the greatest people and been able to have a great time at the events that have a focus on alcohol after the conference day. I'm grateful to those that have gone out of their way and joined me, I am grateful for the support fo my friends that have foregone the drink to enjoy a lunch or dinner with me. More than they know.
 
 I think I met one or two folks that are in the same boat as me and are recovering alcoholics. It's time we started to ask these organizers and these events for an alcohol-free alternative. If they have one, great! If they do not, then we can make one. That's the easy part.
 

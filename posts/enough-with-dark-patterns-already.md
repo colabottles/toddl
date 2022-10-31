@@ -1,6 +1,6 @@
 ---
 title: Enough with "Dark Patterns" Already!
-description: The term "dark patterns" is archaic, has awful connotations, .
+description: The term "dark patterns" is archaic, has awful connotations, let's change the terminology.
 date: 2022-10-24 ## YYYY-MM-DD
 tags:
   - ux
