@@ -31,7 +31,7 @@ Why do I challenge you? Simple. Can you keep the event alcohol-free for people w
 
 What about people who just get tired of seeing people act like complete asses in a public venue when they are liquored up way past their point of handling booze?
 
-Do you have problems that **YOU** need alcohol becaue you are dependent on it?
+Do you have problems that **YOU** need alcohol becaue you are dependent on it? Look inward and ask yourselves are you partaking too much? Of course you'll say no, but if you're feeling like shit the day after or even days later or even a week later when you're not in the environment, you may want to talk to someone..
 
 ### Sit Down and Shut Up!
 
@@ -47,4 +47,8 @@ I can walk away. I have the tools to help me get out of a situation I feel uncom
 
 Sure it does! Do you really want to make anyone that attends your event feel excluded or unwanted or uncomfortable? I don't think any organizaer does. Or at least most organizers.
 
+The attendees make your event because without them, without ticket sales, you have nothing.
 
+Sposors drive the event. Attendees **make** the event. So why do you want to exclude a certain percentage of your attendee population? You don't.
+
+So I challenge you to keep the booze out. Save it for after. Give the attendees an option or, like I, we will do it ourselves. We shouldn't have to, but we will.
