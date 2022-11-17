@@ -55,6 +55,6 @@ Sure it does! Do you really want to make anyone that attends your event feel exc
 
 The attendees make your event because without them, without ticket sales, you have nothing.
 
-Sposors drive the event. Attendees **make** the event. So why do you want to exclude a certain percentage of your attendee population? You don't.
+Sponsors drive the event. Attendees **make** the event. So why do you want to exclude a certain percentage of your attendee population? You don't.
 
 So I challenge you to keep the booze out. Save it for after. Give the attendees an option or, like I, we will do it ourselves. We shouldn't have to, but we will.
