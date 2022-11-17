@@ -10,6 +10,7 @@ tags:
   - culture
   - accessibility
   - boozefree
+  - inclusion
 layout: layouts/post.njk
 ---
 
