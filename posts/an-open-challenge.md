@@ -31,7 +31,13 @@ Why do I challenge you? Simple. Can you keep the event alcohol-free for people w
 
 What about people who just get tired of seeing people act like complete asses in a public venue when they are liquored up way past their point of handling booze?
 
-Do you have problems that **YOU** need alcohol becaue you are dependent on it? Look inward and ask yourselves are you partaking too much? Of course you'll say no, but if you're feeling like shit the day after or even days later or even a week later when you're not in the environment, you may want to talk to someone..
+Do you have problems that **YOU** need alcohol becaue you are dependent on it? Look inward and ask yourselves are you partaking too much? Of course you'll say no, but if you're feeling like shit the day after or even days later or even a week later when you're not in the environment, you may want to talk to someone.
+
+I want organizers to read this part _very_ closely.
+
+What if someone attending your event is struggling to stay away from the alcohol? Is the after party worth it when it could jeopardize someone's mental health, sobriety, physical health, or more? Is the party crowd and the drinking culture really worth it?
+
+Will it take someone getting taken to a hospital or worse to get organizers to wake the fuck up? **THINK** about that. Has it happened? I don't know. i haven't heard of any such situation at an event, but it doesn't mean it _can't_ happen. Because it can.
 
 ### Sit Down and Shut Up!
 
