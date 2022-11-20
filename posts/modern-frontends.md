@@ -64,7 +64,7 @@ Granted, I did have some people filter in at the very last second before I was g
 
 I was not there for a week long holiday. I was there to give a talk.
 
-Five talks at the nd, no final keynote to bring the crowd back together before leaving and closing the conference. Nothing. What a fuck up of exceptional proportions.
+Five talks at the end, no final keynote to bring the crowd back together before leaving and closing the conference. Nothing. What a fuck up of exceptional proportions.
 
 ## Summary
 

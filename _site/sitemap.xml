@@ -297,6 +297,36 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/openchallenge/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/conferences/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/alcohol/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/recovery/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/culture/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/inclusion/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/bias/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -323,26 +353,6 @@
   
   <url>
     <loc>https://toddl.dev/tags/tools/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/conferences/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/alcohol/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/recovery/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/culture/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -567,6 +577,16 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/modernfrontends/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/organizers/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/knowbility/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -623,11 +643,6 @@
   
   <url>
     <loc>https://toddl.dev/tags/discussion/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/inclusion/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -874,5 +889,15 @@
   <url>
     <loc>https://toddl.dev/posts/bias-and-overlooking-people/</loc>
     <lastmod>03 November, 2022</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/an-open-challenge/</loc>
+    <lastmod>10 November, 2022</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/modern-frontends/</loc>
+    <lastmod>19 November, 2022</lastmod>
   </url>
 </urlset>

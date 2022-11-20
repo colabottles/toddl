@@ -319,6 +319,7 @@ main {
 }
 
 .about-container,
+.about-intro,
 .article-container,
 .blogroll-container,
 .page-container,
@@ -327,10 +328,6 @@ main {
 section.article__body,
 article.archive-list {
   grid-column: 2/12
-}
-
-.about-intro {
-  grid-column: 2/12;
 }
 
 .sections {
