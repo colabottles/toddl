@@ -14,7 +14,7 @@ That's gone out the window with the word that [Gen Ashley](https://twitter.com/c
 
 ## Little Things
 
-My photo of me eating a lobster roll hasn't bothered anyone from any conference. Until MFL. I was asked to provide a different one. Why? Wait, I won't "pile on".
+My photo of me eating a lobster roll hasn't bothered anyone from any conference. Until MFL. I was asked to provide a different one. Why? Wait, I won't "pile on".xx
 
 "Can you handle your own room and travel?" Sure. I'm privileged I can do that. The room and travel fiasco is just that. A fiasco and downright greasy shit that the organizer pulled.
 
@@ -77,3 +77,12 @@ It was a cavalcade of [lies and deceit as explained by Hidde](https://hidde.blog
 If you decide to try and contact my CEO, he is a bigger asshole than I am. That CEOs name is Todd Libby. Call me.
 
 Get out of the racket of conning people and sponsors, Gen. The gig is up. The speaker community is on to you.
+
+---
+
+If you have any experience you want to share, please reach out and let me know.
+
+- [Jo's Blog](https://dev.to/thisisjofrank/my-experience-of-modern-frontends-conference-1cgg)
+- [Cassie's Blog](https://www.cassie.codes/posts/modern-frontends/)
+- [Hidde's Blog](https://hidde.blog/modern-frontends-live/)
+- [Mike's Blog](https://mhartington.io/post/modern-frontends-live/)
