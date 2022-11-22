@@ -87,5 +87,8 @@ If you have any experience you want to share, please reach out and let me know.
 - [Hidde's Blog](https://hidde.blog/modern-frontends-live/)
 - [Mike's Blog](https://mhartington.io/post/modern-frontends-live/)
 - [JD's Blog](https://jdhillen.com/blog/my-experience-at-modern-frontends-live)
+- [Niamh's Blog](https://dev.to/niamhmccoo/my-experience-at-modern-frontends-live-1lcn)
+- [Kent's Blog](https://kentcdodds.com/blog/my-modern-frontends-live-experience)
+- [Dylan's Blog](https://dylanbeattie.net/2022/11/22/modern-frontends-2022.html)
 - [Chris's Blog](https://christopherallanperry.github.io/blog/2022/11/20/modern_frontends-an_attendees_perspective.html)
 - [Niels's Blog](https://nielsleenheer.com/articles/2022/red-flag-speakers-having-to-cover-their-own-travel/)
