@@ -56,6 +56,10 @@ So I may be the asshole. I may be the dickhead and not someone's cup of tea.
 
 Not everyone likes tea. Not everyone likes me. I'm okay with that now. I'm no longer a people pleaser.
 
-Just remember though, you make your bed and you lie in it. If I have an issue, I'll rip it hard and lay right into you, no minced words. Again however...
+Just remember though, you make your bed and you lie in it. If I have an issue, I'll rip it hard and lay right into you, no minced words. I don't write things to explain myself to others. I don't owe anyone an explanation unless I **really** fuck up.
+
+When I do, I'll make that apology and I won't explain. I'll own up to it. Something a conference organizer seems devoid of doing because it is the right thing to do. With me, it's too late at this point. That ship has sailed.
+
+Again however...
 
 Not everyone likes tea.
