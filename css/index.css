@@ -549,7 +549,7 @@ li.postitem-item {
 }
 
 .about-intro,
-.article__body {
+section.article__body {
   grid-column: 2 / 10;
   margin: 0;
   padding: 0;
