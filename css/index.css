@@ -326,6 +326,7 @@ main {
 .page-container,
 .uses-links,
 .articles,
+section.article__body,
 article.archive-list {
   grid-column: 2/12
 }
@@ -548,8 +549,7 @@ li.postitem-item {
   color: var(--green)
 }
 
-.about-intro,
-.article-container {
+.about-intro {
   grid-column: 2 / 10;
   margin: 0;
   padding: 0;
