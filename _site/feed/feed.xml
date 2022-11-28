@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>Home of Todd Libby - Senior Accessibility Engineer, W3C Invited Expert, and Accessibility Advocate</title>
+	<title>Home of Todd Libby - Senior Accessibility Engineer, W3C Invited Expert, International Speaker, and Accessibility Advocate</title>
 	<subtitle>A web development, design and technology blog.</subtitle>
 	<link href="https://toddl.dev/feed/feed.xml" rel="self"/>
 	<link href="https://toddl.dev/"/>
@@ -2171,10 +2171,10 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 	</entry>
 	
 	<entry>
-		<title>My Foray Into Ionic and Vue</title>
-		<link href="https://toddl.dev/posts/my-foray-into-ionic-and-vue/"/>
+		<title>Ionic and Vue, Part One</title>
+		<link href="https://toddl.dev/posts/ionic-and-vue-part-one/"/>
 		<updated>2022-12-01T00:00:00Z</updated>
-		<id>https://toddl.dev/posts/my-foray-into-ionic-and-vue/</id>
+		<id>https://toddl.dev/posts/ionic-and-vue-part-one/</id>
 		<content type="html">&lt;h2 id=&quot;well%2C-here-i-go!&quot; tabindex=&quot;-1&quot;&gt;Well, Here I Go!&lt;/h2&gt;
 &lt;p&gt;I&#39;ve been looking to start coding again after doing accessibility auditing for two solid years and also have had an idea that&#39;s been swirling around in my head for a long time now. This brought me to the idea of an app, which finds the best lobster roll shacks in your area (yes, IYKYK).&lt;/p&gt;
 &lt;p&gt;I like the &lt;a href=&quot;https://vuejs.org/&quot;&gt;Vue framework&lt;/a&gt;, I liked how it was accessible. Still do even though in &lt;a href=&quot;https://webaim.org/projects/million/#frameworks&quot;&gt;the last WebAIM Million Report&lt;/a&gt;, the average number of homepages using Vue increased from 18,358 home pages to 22,349 homepages while the number of errors has gone down from 67.3 on each homepage to 63.4 per homepage.&lt;/p&gt;
@@ -2186,10 +2186,18 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 &lt;p&gt;I don&#39;t need anything fancy or something that I am going to need a PhD to learn and understand. That may have beena little over-the-top, but I really wanted to hit the ground running. &lt;a href=&quot;https://ionicframework.com/&quot;&gt;That&#39;s when I found Ionic&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It works with Angular, React, Vue. It is cross-platform. Performant and interoperable. I also like the attention to accessibility. I don&#39;t know if anyone has touched upon the accessibility of the framework, but I like what I have read, heard, &lt;a href=&quot;https://youtu.be/p3AN3igqiRc?t=72&quot;&gt;and seen&lt;/a&gt;. Though the video does reference Web Standards, so that is a giant plus as far as I am concerned.&lt;/p&gt;
 &lt;p&gt;You can use one stylesheet and you can ship the framework using one JavaScript file. Now that everything is shipped as web components, you can use one &lt;code&gt;.html&lt;/code&gt; file with no build process. I kind of like that.&lt;/p&gt;
-&lt;p&gt;So I&#39;m going to go over my experience with the Ionic frameowrk.&lt;/p&gt;
+&lt;p&gt;So I&#39;m going to go over my experience with the Ionic framework.&lt;/p&gt;
 &lt;h2 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation&lt;/h2&gt;
 &lt;p&gt;Node.js is necessary to install, no problem, I already have it running on my machine. Next is getting Ionic CLI installed to execute the commands. So I just followed the docs and type in:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;npm install -g @ionic/cli&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;npm install &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;g @ionic&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;cli&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I made a pre-made template to start. Just to get tthe feel of doing a quickstart of sorts by running:&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;ionic start&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or I could have typed in:&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;ionic start lobstah&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;roll tabs&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I&#39;m then given the choice to pick between Angular, React, and Vue JavaScript frameworks from a list of choices. I chose Vue, of course. I am then asked if I want to integrate my new app with &lt;a href=&quot;https://capacitorjs.com/docs/v2/&quot;&gt;Capacitor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It then runs and does its thing, then I get a list of next steps to follow:&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; Go to your &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;project&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;cd ./test-ionic&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; Run &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;ionic serve&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt; within the app directory to see your app &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; the browser&lt;br /&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; Run &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;ionic capacitor add&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt; to add a native iOS or Android project using Capacitor&lt;br /&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; Generate your app icon and splash screens using &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;cordova-res --skip-config --copy&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; Explore the Ionic docs &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; components&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; tutorials&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; and more&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; br&lt;br /&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; Building an enterprise app&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; Ionic has Enterprise Support and Features&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; https&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;ion&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;link&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;enterprise&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;edition&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I followed the steps and I was good to go.&lt;/p&gt;
 </content>
 	</entry>
 </feed>

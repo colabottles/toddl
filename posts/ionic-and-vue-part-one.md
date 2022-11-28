@@ -1,5 +1,5 @@
 ---
-title: My Foray Into Ionic and Vue
+title: Ionic and Vue, Part One
 description: My deep dive into learning Ionic and Vue.
 date: 2022-12-01 ## YYYY-MM-DD
 tags:
@@ -32,10 +32,39 @@ It works with Angular, React, Vue. It is cross-platform. Performant and interope
 
 You can use one stylesheet and you can ship the framework using one JavaScript file. Now that everything is shipped as web components, you can use one `.html` file with no build process. I kind of like that.
 
-So I'm going to go over my experience with the Ionic frameowrk.
+So I'm going to go over my experience with the Ionic framework.
 
 ## Installation
 
 Node.js is necessary to install, no problem, I already have it running on my machine. Next is getting Ionic CLI installed to execute the commands. So I just followed the docs and type in:
 
-`npm install -g @ionic/cli`
+```js
+npm install -g @ionic/cli
+```
+
+I made a pre-made template to start. Just to get tthe feel of doing a quickstart of sorts by running:
+
+```js
+ionic start
+```
+
+or I could have typed in:
+
+```js
+ionic start lobstah-roll tabs
+```
+
+I'm then given the choice to pick between Angular, React, and Vue JavaScript frameworks from a list of choices. I chose Vue, of course. I am then asked if I want to integrate my new app with [Capacitor](https://capacitorjs.com/docs/v2/).
+
+It then runs and does its thing, then I get a list of next steps to follow:
+
+```js
+- Go to your new project: `cd ./test-ionic`
+- Run `ionic serve` within the app directory to see your app in the browser
+- Run `ionic capacitor add` to add a native iOS or Android project using Capacitor
+- Generate your app icon and splash screens using `cordova-res --skip-config --copy`
+- Explore the Ionic docs for components, tutorials, and more: br
+- Building an enterprise app? Ionic has Enterprise Support and Features: https://ion.link/enterprise-edition
+```
+
+I followed the steps and I was good to go.

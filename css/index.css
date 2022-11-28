@@ -184,6 +184,7 @@ q:before {
   --font-family-sans: 'Work Sans', Arial, Helvetica, sans-serif;
   --font-family-serif: Georgia, 'Times New Roman', serif;
   --font-family-heading-sm: 'Work Sans', Arial, Helvetica, sans-serif;
+  --font-family-mono: 'Cascadia Code', monospace;
   --font-size: 140%;
   --line-height: 1.5;
   --line-height-heading: 1;
@@ -629,10 +630,10 @@ pre {
   font-family: var(--font-family-mono);
   font-size: .8em;
   position: relative;
-  background-color: var(--ecto);
+  background-color: var(--black);
   display: inline;
-  padding: 1px 4px;
-  color: var(--black)
+  padding: 3px 4px;
+  color: var(--ecto)
 }
 
 pre {
@@ -1507,29 +1508,25 @@ video {
 
 code[class*=language-],
 pre[class*=language-] {
-  font-family: 'Overpass Mono', monospace;
-  font-size: 16px;
+  font-family: 'Cascadia Code', 'Overpass Mono', monospace;
+  font-size: clamp(0.5rem, 0.25rem + 1vw, 1rem);
   line-height: 1.5;
   direction: ltr;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
   tab-size: 2;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
   hyphens: none;
-  background: #272822;
+  background: #1e1e1a;
   color: #f8f8f2
 }
 
 pre[class*=language-] {
   padding: 1.5em;
   margin: .5em 0;
-  overflow: auto
+  overflow: auto;
+  border: 4px double var(--ecto);
 }
 
 :not(pre)>code[class*=language-] {

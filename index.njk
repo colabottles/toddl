@@ -4,9 +4,9 @@ date: 1999-01-23
 eleventyExcludeFromCollections: true
 ---
 
-<h2>Latest 3 Posts</h2>
+<h2>Latest 10 Posts</h2>
 
-{% set postslist = collections.posts | head(-3) %}
+{% set postslist = collections.posts | head(-10) %}
 {% include "postslist.njk" %}
 
 <p>More posts can be found in <a href="{{ '/archives/' | url }}">the archive</a>.</p>

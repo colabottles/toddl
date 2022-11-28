@@ -592,26 +592,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/ionic/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/vue/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/framework/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/learning/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/typography/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -738,6 +718,26 @@
   
   <url>
     <loc>https://toddl.dev/tags/feelings/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/ionic/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/vue/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/framework/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/learning/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -972,7 +972,12 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/posts/my-foray-into-ionic-and-vue/</loc>
+    <loc>https://toddl.dev/podcast/transcripts/laborde/</loc>
+    <lastmod>28 November, 2022</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/ionic-and-vue-part-one/</loc>
     <lastmod>01 December, 2022</lastmod>
   </url>
 </urlset>
