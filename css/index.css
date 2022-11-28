@@ -326,7 +326,6 @@ main {
 .page-container,
 .uses-links,
 .articles,
-section.article__body,
 article.archive-list {
   grid-column: 2/12
 }
@@ -430,7 +429,6 @@ a.button:hover {
 
 article {
   margin: 1em 0;
-  grid-column: 2 / 10;
 }
 
 section {
@@ -550,7 +548,8 @@ li.postitem-item {
   color: var(--green)
 }
 
-.about-intro {
+.about-intro,
+.article__body {
   grid-column: 2 / 10;
   margin: 0;
   padding: 0;
