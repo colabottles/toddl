@@ -52,7 +52,7 @@ I did not see branded clothing, badges for staff, or **any** staff. And _who_ ex
 
 ## I Have Words
 
-You want to fund your extravagnt lifestyle, work for it. Don't skim off the top of the pot and take from attendees, speakers, and sponsors. You're nothing special and you're certainly not running a great show (or shows for that matter). Get a steady paycheck then spend your money getting designer clothes and boots and purses and phones and phone cases.
+You want to fund your extravagnt lifestyle, work for it. Don't skim off the top of the pot and take from attendees, speakers, and sponsors. You're nothing special and you're certainly not running a great show (or shows for that matter). Get a steady paycheck then spend your money on the lifestyle you want to live.
 
 You cheated people out of a great experience.
 
