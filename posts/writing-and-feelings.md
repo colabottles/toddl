@@ -16,13 +16,13 @@ For those who read this and do not know, I am a recovering alcoholic. For years,
 
 Sobriety has taught me that I will feel feelings. That said, my recovery is a whole different ballgame than others. I _want_ to feel things so that I don't have those feelings surprise me all of a sudden and I _have_ to feel those feelings in order to comprehend what they are when they arise.
 
-So when I get into something, such as this fiasco called Modern Frontends, I am going to draw from what I feel and put it down digitally. So you get me in the rawest of forms. This is why many people don;t like me. Well, it doesn't matter what people think of me, it's none of my business.
+So when I get into something, such as this fiasco called Modern Frontends, I am going to draw from what I feel and put it down digitally. So you get me in the rawest of forms. This is why many people don't like me. Well, it doesn't matter what people think of me, it's none of my business.
 
 ## Why Am I Writing This?
 
 When I have something to write, I need to get it out. I need to have the people that already know me, know me a little better. Anyone that doesn't know me, they can get to know me. Anyone that doesn't care for me, I know I'm not everyone's cup of tea because I "curse".
 
-"Cursing" is just words. Words that someone (more than liely some goon from a church) was so offended by, it lit up their robes when they were walking around barefoot and clutching their pearls. It's just words, and just because you're offended doesn't mean you're right.
+"Cursing" is just words. Words that someone (more than likely some goon from a church) was so offended by, it lit up their robes when they were walking around barefoot and clutching their pearls. It's just words, and just because you're offended doesn't mean you're right.
 
 So I am writing this for me. First and foremost. For my friends, secondly. For others, should they choose to read. It's my version of therapy. The need to feel as I write and feel **everything**.
 
