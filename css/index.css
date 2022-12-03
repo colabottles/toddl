@@ -331,6 +331,10 @@ article.archive-list {
   grid-column: 2/12
 }
 
+section.article__body {
+  min-width: 100%;
+}
+
 .sections {
   display: flex;
   grid-column: 2/12;
@@ -1509,7 +1513,7 @@ video {
 code[class*=language-],
 pre[class*=language-] {
   font-family: 'Cascadia Code', 'Overpass Mono', monospace;
-  font-size: clamp(0.5rem, 0.25rem + 1vw, 1rem);
+  font-size: clamp(0.5rem, 0.25rem + 1vw, 0.75rem);
   line-height: 1.5;
   direction: ltr;
   text-align: left;
