@@ -337,6 +337,7 @@ section.article__body {
 
 section.article__body h2 {
   font-family: var(--font-family-sans);
+  color: var(--ecto)
 }
 
 .sections {
