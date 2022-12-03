@@ -335,6 +335,10 @@ section.article__body {
   min-width: 100%;
 }
 
+section.article__body h2 {
+  font-family: var(--font-family-sans);
+}
+
 .sections {
   display: flex;
   grid-column: 2/12;
