@@ -951,6 +951,17 @@ h2.project__header {
   text-decoration-color: var(--ecto)
 }
 
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-block: 3rem;
+}
+
+.footer-icons li {
+  list-style-type: none;
+}
+
 section.social {
   grid-column: 1 / 10;
   margin: 1rem 0
@@ -962,13 +973,11 @@ section.social h2 {
 
 .meta {
   grid-column: 2 / 10;
-  margin: 5px 0 1.5em;
   color: var(--white)
 }
 
 footer {
   padding: 1rem 0 1rem;
-  align-items: center;
 }
 
 footer a:hover {
@@ -1464,9 +1473,13 @@ video {
 
   .meta {
     display: grid;
-    grid-column: 2 / 7;
+    grid-column: 2 / 8;
     justify-content: center;
     margin-left: 1rem
+  }
+
+  .footer {
+    font-size: 0.8rem;
   }
 
   section.social {
