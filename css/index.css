@@ -69,9 +69,7 @@ video {
 }
 
 * {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit
+  font: inherit;
 }
 
 a,
@@ -301,6 +299,13 @@ header a:hover {
   margin-block: 0.5rem;
 }
 
+.articles {
+  margin-block-start: 3rem;
+  border-block-start: 1px solid var(--ecto);
+  padding-block-start: 1rem;
+  grid-column: 2 / 10;
+}
+
 main {
   grid-template-columns: subgrid;
   grid-column: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
@@ -325,10 +330,9 @@ main {
 .blogroll-container,
 .page-container,
 .uses-links,
-.articles,
 section.article__body,
 article.archive-list {
-  grid-column: 2/12
+  grid-column: 2 / 12
 }
 
 section.article__body {
@@ -934,8 +938,6 @@ h2.project__header {
 
 .list-inline a {
   color: var(--white);
-  font-family: var(--font-family-sans);
-  font-size: var(--font-size-small);
   padding: 0 1rem 0 0;
   text-decoration: underline;
   text-underline-offset: .12em;
@@ -950,25 +952,22 @@ h2.project__header {
 }
 
 section.social {
-  font-size: var(--font-size);
-  grid-column: 2/10;
-  margin: 4rem 0
+  grid-column: 1 / 10;
+  margin: 1rem 0
 }
 
 section.social h2 {
-  font-size: var(--font-size-small);
   font-weight: 400
 }
 
 .meta {
-  font-family: var(--font-family-sans);
-  grid-column: 5/10;
+  grid-column: 2 / 10;
   margin: 5px 0 1.5em;
   color: var(--white)
 }
 
 footer {
-  padding: 2rem 0 1rem;
+  padding: 1rem 0 1rem;
   align-items: center;
 }
 
@@ -1235,7 +1234,7 @@ video {
 
   .articles,
   article {
-    grid-column: 2/10
+    grid-column: 2 / 10
   }
 
   .page-container {
@@ -1342,7 +1341,7 @@ video {
 
   .articles,
   article {
-    grid-column: 2/7
+    grid-column: 2 / 7
   }
 
   .article-wrapper:first-child,
@@ -1461,12 +1460,11 @@ video {
   footer {
     display: flex;
     flex-wrap: wrap;
-    font-size: var(--font-size-small)
   }
 
   .meta {
     display: grid;
-    grid-column: 2/7;
+    grid-column: 2 / 7;
     justify-content: center;
     margin-left: 1rem
   }

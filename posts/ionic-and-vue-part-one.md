@@ -74,6 +74,8 @@ It then runs and does its thing, then I get a list of next steps to follow:
 
 I followed the steps and I was good to go.
 
+[Part two of the series is here if you want to read on](https://toddl.dev/posts/ionic-and-vue-part-one.md)
+
 ## Next Steps
 
 It's time to start getting things underway, which will come in part two of this series. I am doing these posts in short little chunks that I can parse easily. I have so much on my plate, this is how I'm doing it. So if you want to leave a comment, [go to the contact page](https://toddl.dev/contact/) and contact me there! And if you don't have anything nice to say, then just find somewhere else to go and complain. Like [YouTube](https://youtube.com).

@@ -507,6 +507,41 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/ionic/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/vue/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/framework/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/learning/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/javascript/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/typescript/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/ionicpartone/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/random/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -642,6 +677,26 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/writing/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/privilege/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/interviewing/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/judgment/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/speakingcircuit/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -712,32 +767,7 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/writing/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/feelings/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/ionic/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/vue/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/framework/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/learning/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -979,5 +1009,15 @@
   <url>
     <loc>https://toddl.dev/posts/ionic-and-vue-part-one/</loc>
     <lastmod>01 December, 2022</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/links/</loc>
+    <lastmod>02 December, 2022</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/the-writings-of-a-privileged-mediocre-white-man/</loc>
+    <lastmod>02 December, 2022</lastmod>
   </url>
 </urlset>
