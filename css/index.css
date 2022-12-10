@@ -245,7 +245,7 @@ ul.navigation a.active {
 }
 
 header {
-  grid-column: 2/10;
+  grid-column: 2 / 12;
   margin-top: 2rem
 }
 
