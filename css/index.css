@@ -375,6 +375,14 @@ section.article__body ul {
   padding: 0
 }
 
+.article-sections a {
+  text-decoration: underline;
+  text-underline-offset: .12em;
+  text-decoration-thickness: .07em;
+  text-decoration-style: solid;
+  text-decoration-color: var(--ecto)
+}
+
 .article-wrapper {
   max-width: 100vw
 }
@@ -726,12 +734,12 @@ a.blogroll-list-blogroll-link:hover {
 
 ul.links-list a {
   border-bottom: none;
-  color: var(--green);
+  color: var(--white);
   font-family: var(--font-family-sans);
   text-underline-position: auto;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
-  text-decoration-color: var(--green);
+  text-decoration-color: var(--ecto);
   transition: color 1s ease-in
 }
 
@@ -938,7 +946,7 @@ h2.project__header {
 
 .list-inline a {
   color: var(--white);
-  padding: 0 1rem 0 0;
+  padding: 1.5rem 0.5rem 1.5rem 0;
   text-decoration: underline;
   text-underline-offset: .12em;
   text-decoration-thickness: .07em;
@@ -977,7 +985,7 @@ section.social h2 {
 }
 
 footer {
-  padding: 1rem 0 1rem;
+  padding: 3rem 0 1rem;
 }
 
 footer a:hover {

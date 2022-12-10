@@ -21,9 +21,9 @@ I've been looking to start coding again after doing accessibility auditing for t
 
 I like the [Vue framework](https://vuejs.org), I liked how it was accessible. Still do even though in [the last WebAIM Million Report](https://webaim.org/projects/million/#frameworks), the average number of homepages using Vue increased from 18,358 home pages to 22,349 homepages while the number of errors has gone down from 67.3 on each homepage to 63.4 per homepage.
 
-That can be attributed to theknowledge and the education of accessibility, I am fairly certain. Or perhaps some organizations just do not value accessibility. Not a question, a fact. Some organizations do not value or even know about accessibility.
+That can be attributed to the knowledge and the education of accessibility, I am fairly certain. Or perhaps some organizations just do not value accessibility. Not a question, a fact. Some organizations do not value or even know about accessibility.
 
-That's not why i'm writing this though. Not the main reason, but accessibility is a big factor in what I do. How accessible is your framework? How does your team value accessibility? It will show in the product.
+That's not why I'm writing this though. Not the main reason, but accessibility is a big factor in what I do. How accessible is your framework? How does your team value accessibility? It will show in the product.
 
 So Vue it is. I also just like the feeling I get when writing it. If you're a developer, and you prefer a certain language or framework and you just feel comfortable in that language or framework, then you'll understand what I mean.
 
@@ -31,7 +31,7 @@ Sure there is Flutter or React Native, but I just had a good feeling about using
 
 ## A Mobile UI Toolkit
 
-I don't need anything fancy or something that I am going to need a PhD to learn and understand. That may have beena little over-the-top, but I really wanted to hit the ground running. [That's when I found Ionic](https://ionicframework.com).
+I don't need anything fancy or something that I am going to need a PhD to learn and understand. That may have been a little over-the-top, but I really wanted to hit the ground running. [That's when I found Ionic](https://ionicframework.com).
 
 It works with Angular, React, Vue. It is cross-platform. Performant and interoperable. I also like the attention to accessibility. I don't know if anyone has touched upon the accessibility of the framework, but I like what I have read, heard, [and seen](https://youtu.be/p3AN3igqiRc?t=72). Though the video does reference Web Standards, so that is a giant plus as far as I am concerned.
 
@@ -68,13 +68,13 @@ It then runs and does its thing, then I get a list of next steps to follow:
 - Run `ionic serve` within the app directory to see your app in the browser
 - Run `ionic capacitor add` to add a native iOS or Android project using Capacitor
 - Generate your app icon and splash screens using `cordova-res --skip-config --copy`
-- Explore the Ionic docs for components, tutorials, and more: br
+- Explore the Ionic docs for components, tutorials, and more: https://ion.link/docs
 - Building an enterprise app? Ionic has Enterprise Support and Features: https://ion.link/enterprise-edition
 ```
 
 I followed the steps and I was good to go.
 
-[Part two of the series is here if you want to read on](https://toddl.dev/posts/ionic-and-vue-part-one.md)
+<!-- [Part two of the series is here if you want to read on](https://toddl.dev/posts/ionic-and-vue-part-one.md) -->
 
 ## Next Steps
 
