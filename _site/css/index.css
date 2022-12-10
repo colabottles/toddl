@@ -209,7 +209,7 @@ html {
 
 .wrapper {
   display: grid;
-  grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(8, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end]
+  grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end]
 }
 
 ul.navigation {
@@ -314,14 +314,14 @@ main {
 
 @supports (display:grid) {
   main {
-    grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(8, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
+    grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
     grid-column: full
   }
 }
 
 .inner {
   display: grid;
-  grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(8, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end]
+  grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end]
 }
 
 .about-container,
@@ -734,12 +734,12 @@ a.blogroll-list-blogroll-link:hover {
 
 ul.links-list a {
   border-bottom: none;
-  color: var(--green);
+  color: var(--white);
   font-family: var(--font-family-sans);
   text-underline-position: auto;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
-  text-decoration-color: var(--green);
+  text-decoration-color: var(--ecto);
   transition: color 1s ease-in
 }
 
