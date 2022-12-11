@@ -1,6 +1,6 @@
 ---
 layout: layouts/links.njk
-title: Blogroll
+title: Links
 date: 2022-12-02
 permalink: /links/
 templateClass: tmpl-post

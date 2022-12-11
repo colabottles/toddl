@@ -934,14 +934,13 @@ h2.project__header {
 }
 
 .list-inline {
-  margin: 0;
-  padding: 0
+  margin: 2rem 0;
+  padding: 0;
 }
 
 .list-inline li {
   list-style: none;
-  display: inline-flex;
-  flex-direction: row;
+  display: inline;
 }
 
 .list-inline a {
@@ -951,7 +950,7 @@ h2.project__header {
   text-underline-offset: .12em;
   text-decoration-thickness: .07em;
   text-decoration-style: solid;
-  text-decoration-color: var(--white)
+  text-decoration-color: var(--white);
 }
 
 .list-inline a:hover {
