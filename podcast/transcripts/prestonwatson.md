@@ -252,7 +252,6 @@ It's like, you, you like western civilization. These people like Western civiliz
 [01:03:38] Todd: Yeah. Yeah. Yeah, it's, it's very rare that I would go on another platform and the algorithm worked for me.
 [01:03:50] Crystal: Yeah.
 [01:03:52] Todd: So, yeah.
-
 [01:03:52] Crystal: And that's why I mixed it up and I'm like, okay, well I got to now go watch some, you know, clip clips of New Jack City and some nineties black television sitcoms.
 [01:04:03] Todd: Right, yeah.
 [01:04:04] Crystal: I gotta keep the algorithm on its toes. I'm like, I need to let you know, just because I'm a nerd doesn't mean I'm not connected with my culture.
