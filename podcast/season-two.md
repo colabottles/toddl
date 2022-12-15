@@ -19,5 +19,5 @@ layout: layouts/post.njk
 [Dan Mall](https://toddl.dev/podcast/transcripts/mall)
 [Bekah Hawrot-Weigel](https://toddl.dev/podcast/transcripts/hawrotweigel)
 [Gant Laborde](https://toddl.dev/podcast/transcripts/laborde.md)
-<!-- [Crystal Preston Watson](https://toddl.dev/podcast/transcripts/watson)
-[End of Season Two Wrap-Up](https://toddl.dev/podcast/transcripts/seasontwo) -->
+[Crystal Preston Watson](https://toddl.dev/podcast/transcripts/prestonwatson)
+<!-- [End of Season Two Wrap-Up](https://toddl.dev/podcast/transcripts/seasontwo) -->

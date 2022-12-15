@@ -172,11 +172,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/podcast/</loc>
-    <lastmod>25 October, 2020</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/posts/tech-interviews-and-anxiety/</loc>
     <lastmod>29 October, 2020</lastmod>
   </url>
@@ -1024,5 +1019,15 @@
   <url>
     <loc>https://toddl.dev/speaking/</loc>
     <lastmod>11 December, 2022</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/podcast/</loc>
+    <lastmod>15 December, 2022</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/podcast/transcripts/prestonwatson/</loc>
+    <lastmod>15 December, 2022</lastmod>
   </url>
 </urlset>
