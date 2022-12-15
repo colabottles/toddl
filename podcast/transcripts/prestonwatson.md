@@ -373,8 +373,7 @@ And cuz I, I know that I'm someone that had not the most traditional way
 [01:25:07] Crystal: the lobster rolls. Like no.
 [01:25:10] Todd: Yes.
 [01:25:10] Crystal: Lobster roll for closers. Like closers of accessibility, only.
-[01:25:16] Todd: Exactly, exactly. Yes. Yes. So, Crystal, again, thank you so much. This was wonderful. I had a great time talking accessibility with you. Thank you also for coming on, spending part of your day with me and it again, it was great.
-It was great talking to you finally. And then yeah, I hope to do this again some other time.
+[01:25:16] Todd: Exactly, exactly. Yes. Yes. So, Crystal, again, thank you so much. This was wonderful. I had a great time talking accessibility with you. Thank you also for coming on, spending part of your day with me and it again, it was great. It was great talking to you finally. And then yeah, I hope to do this again some other time.
 [01:25:37] Crystal: Yeah, definitely. Yay. Thank you so much for having me on here.
 [01:25:41] Todd: You're welcome and thank you listeners for tuning into the Front End Nerdery Podcast. I'll be back next time with a new guest, new conversation about front end design development and other topics.
 And a matter of fact, this is the last interview episode for season two as I go into season three with some changes that are going on. But that'll be in the next the, the next episode. But for now, if you would please rate this podcast on your podcast device of choice, like, subscribe and watch on the Front End Nerdery YouTube channel, and go to Crystal's YouTube channel and do the same thing.
