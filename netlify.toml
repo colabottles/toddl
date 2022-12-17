@@ -2,6 +2,11 @@
   publish = "_site"
   command = "eleventy"
 
+[[redirects]]
+  from = "/.well-known/webfinger"
+  to = "https://a11y.info/.well-known/webfinger?resource=acct:todd@a11y.info"
+  status = 200
+
 [[headers]]
   for = "/*.woff"
   [headers.values]
