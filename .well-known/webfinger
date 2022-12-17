@@ -1,0 +1,25 @@
+{
+
+    "subject": "acct:todd@a11y.info",
+    "aliases": [
+        "https://a11y.info/@todd",
+        "https://a11y.info/users/todd"
+    ],
+    "links": [
+        {
+            "rel": "http://webfinger.net/rel/profile-page",
+            "type": "text/html",
+            "href": "https://a11y.info/@todd"
+        },
+        {
+            "rel": "self",
+            "type": "application/activity+json",
+            "href": "https://a11y.info/users/todd"
+        },
+        {
+            "rel": "http://ostatus.org/schema/1.0/subscribe",
+            "template": "https://a11y.info/authorize_interaction?uri={uri}"
+        }
+    ]
+
+}
