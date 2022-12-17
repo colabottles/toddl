@@ -57,9 +57,3 @@
   from = "/.well-known/webfinger"
   to = "https://a11y.info/.well-known/webfinger?resource=acct:todd@a11y.info"
   status = 200
-
-# 404s
-[[redirects]]
-  from = "*"
-  to = "/404"
-  status = 404
