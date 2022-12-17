@@ -37,20 +37,17 @@
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = "default-src 'self'; style-src 'self'; form-action 'self'; script-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'self';"
 
-[[redirects]]
-  from = "/.well-known/webfinger"
-  to = "https://a11y.info/.well-known/webfinger?resource=acct:todd@a11y.info"
-  status = 200
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
 
+  # optional, fails build when a category is below a threshold
+  [plugins.inputs.thresholds]
+    performance = 0.9
+    accessibility = 0.9
+    best-practices = 0.9
+    seo = 0.9
+    pwa = 0.9
 
-[[redirects]]
-  from = "/.well-known/webfinger"
-  to = "https://a11y.info/.well-known/webfinger?resource=acct:HANDLE@INSTANCE"
-  status = 200
-
-
-# 404s
-[[redirects]]
-  from = "*"
-  to = "/404"
-  status = 404
+  # optional, deploy the lighthouse report to a path under your site
+  [plugins.inputs]
+    output_path = "reports/lighthouse.html"
