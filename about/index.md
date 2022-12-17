@@ -53,3 +53,5 @@ Some random facts:
 - JavaScript functions function better when I write them.
 - Lobsters jump in the pot after handing me the rolls to make lobster rolls.
 - and code formats itself in my editor.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e07eb8d2-593a-4c5c-b6a4-b15312d26372/deploy-status)](https://app.netlify.com/sites/toddl/deploys)
