@@ -945,8 +945,7 @@ h2.project__header {
 
 .list-inline a {
   color: var(--white);
-  padding: 0.5em;
-  margin: 0.5em;
+  padding: 0 1em 1em 0;
   text-decoration: underline;
   text-underline-offset: .12em;
   text-decoration-thickness: .07em;
