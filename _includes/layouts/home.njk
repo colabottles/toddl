@@ -25,6 +25,9 @@ templateClass: tmpl-home
     <h3 class="list-label">Latest Articles</h3>
       <ul class="article-sections">
         <li class="article-wrapper">
+
+          <!--- FIXME: THIS IS A LIST OF TEN -->
+          <!--- TODO: Run through list with one command -->
           {%- for post in collections.overlays | reverse -%}
           <a href="{{ post.url }}">
             <h4 class="article-link">{{ post.data.title }}</h4>
