@@ -74,7 +74,7 @@ It then runs and does its thing, then I get a list of next steps to follow:
 
 I followed the steps and I was good to go.
 
-<!-- [Part two of the series is here if you want to read on](https://toddl.dev/posts/ionic-and-vue-part-one.md) -->
+<!-- [Part two of the series is here if you want to read on](https://toddl.dev/posts/ionic-and-vue-part-two.md) -->
 
 ## Next Steps
 

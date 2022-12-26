@@ -282,6 +282,16 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/aea/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/conferences/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/code/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -293,11 +303,6 @@
   
   <url>
     <loc>https://toddl.dev/tags/openchallenge/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/conferences/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -502,6 +507,21 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/review/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/twentytwentytwo/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/endofyear/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/ionic/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -638,6 +658,16 @@
   
   <url>
     <loc>https://toddl.dev/tags/anniversary/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/overlays/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/smokescreens/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -982,6 +1012,11 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/posts/snake-oil-and-smoke-screens/</loc>
+    <lastmod>04 November, 2022</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/posts/an-open-challenge/</loc>
     <lastmod>10 November, 2022</lastmod>
   </url>
@@ -1044,5 +1079,15 @@
   <url>
     <loc>https://toddl.dev/podcast/transcripts/season2finale/</loc>
     <lastmod>22 December, 2022</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/goodbye-2022/</loc>
+    <lastmod>23 December, 2022</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/an-event-apart/</loc>
+    <lastmod>30 December, 2022</lastmod>
   </url>
 </urlset>

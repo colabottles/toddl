@@ -133,12 +133,11 @@ iframe,
 img,
 video {
   height: auto;
-  width: 100%
+  max-width: 100%;
 }
 
 img {
-  border-style: none;
-  aspect-ratio: attr(width)/attr(height)
+  aspect-ratio: 4 / 3;
 }
 
 img:not([alt]) {
@@ -335,13 +334,9 @@ article.archive-list {
   grid-column: 2 / 12
 }
 
-section.article__body {
-  min-width: 100%;
-}
-
 section.article__body h2 {
   font-family: var(--font-family-sans);
-  color: var(--ecto)
+  color: var(--ecto);
 }
 
 .sections {
@@ -414,11 +409,6 @@ article ul li::marker {
   height: 100%
 }
 
-aside img {
-  border-radius: 50%;
-  margin-bottom: 2em
-}
-
 a[href] {
   color: var(--ecto)
 }
@@ -454,10 +444,7 @@ article {
 }
 
 section {
-  display: flex;
   font-family: var(--font-family-serif);
-  flex-direction: column;
-  justify-content: center;
   gap: 1ch
 }
 
@@ -474,8 +461,9 @@ p {
   margin-block: 1em;
 }
 
-p+p {
-  margin-top: 1em
+p+p,
+p~p {
+  padding: 0.25em;
 }
 
 .post-list blockquote {
@@ -631,19 +619,6 @@ li.postitem-item {
 .post-meta {
   font-family: var(--font-family-sans);
   grid-column: 2/4
-}
-
-img {
-  border-style: none;
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto
-}
-
-p~p img {
-  margin: 0 auto;
-  width: 20em
 }
 
 code,
