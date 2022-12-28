@@ -751,7 +751,7 @@ h2.blogroll-list-blogroll-title {
 }
 
 .article__header {
-  grid-column: 1
+  grid-row: 1
 }
 
 .article__meta {
@@ -763,7 +763,7 @@ h2.article__title {
   display: grid;
   letter-spacing: -.017em;
   text-transform: none;
-  grid-column: 1 / 12
+  grid-column: 1/12
 }
 
 article.article__body {
