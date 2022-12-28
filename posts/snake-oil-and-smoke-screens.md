@@ -1,7 +1,7 @@
 ---
 title: Snake Oil and Smoke Screens
 description: Marketing firms and web companies that become accessibility overlay resellers that are serving up a ton of bull.
-date: 2022-11-04 ## YYYY-MM-DD
+date: 2022-12-23 ## YYYY-MM-DD
 tags:
   - overlays
   - snakeoil

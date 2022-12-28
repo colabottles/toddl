@@ -38,3 +38,9 @@ It wasn't fun. The pandemic is still here, it is gearing up to be worse, and sti
 ## Looking Ahead
 
 I don't like to look too far ahead but the one thing I do look forward to is this:
+
+Speaking at conferences, meeting new friends and reconnecting with old friends. Moving out of accessibility by the end of the year and transitioning into a DevRel role somewhere. Traveling to more places and being sober so that I can enjoy it.
+
+I hope everyone stays safe and you have a better 2023. Hope that things keep moving forward instead of backwards, that we can progress and not regress. Hope that my friends and the people I have met over the course of the time I have been in tech can enjoy some peace and some well-being during these times. Hope that humans can wake up and realize what we're doing isn't working, that maybe we need to change drastically before there is no Earth left.
+
+See you in 2023.

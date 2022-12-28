@@ -2002,56 +2002,6 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 	</entry>
 	
 	<entry>
-		<title>Snake Oil and Smoke Screens</title>
-		<link href="https://toddl.dev/posts/snake-oil-and-smoke-screens/"/>
-		<updated>2022-11-04T00:00:00Z</updated>
-		<id>https://toddl.dev/posts/snake-oil-and-smoke-screens/</id>
-		<content type="html">&lt;h2 id=&quot;where-it-began&quot; tabindex=&quot;-1&quot;&gt;Where It Began&lt;/h2&gt;
-&lt;p&gt;It all started with a food show on the Cooking Channel and a trip to their menu. From there, it was all downhill from that point.&lt;/p&gt;
-&lt;p&gt;For me, a guy from Portland, Maine, whenever I see Portland (the original one) on a food show, I know there is going to be lobster and lobster rolls. It&#39;s a given. So when I was watching this show (which was Delicious Destinations w/Andrew Zimmern) I knew one of the places I used to frequent would be on the show. Sure enough, it was to be.&lt;/p&gt;
-&lt;p&gt;DiMillo&#39;s Restaurant has been a mainstay in Portland for 57 years, it is now a &amp;quot;floating&amp;quot; restaurant, as it sits in Casco Bay. Great food. Some of the best in Portland. The surf and turf was what I was watching on Delicious Destinations and I was asked what the price of the item was. Not sure, I went to the website to find out.&lt;/p&gt;
-&lt;h2 id=&quot;what-the-f%40%24k%3F!&quot; tabindex=&quot;-1&quot;&gt;What The F@$k?!&lt;/h2&gt;
-&lt;p&gt;On page load, on mobile, there is that icon. staring me in the face. In its usual place, indicating that the site has an overlay.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/colabottles/image/upload/v1671844426/images/a11y_logo.png&quot; alt=&quot;The universal access icon for accessibility&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Usually, default goes to accessiBe. This one, is just as nauseating to see (as they all are) from UserWay. Just as bad as any other overlay company. Just as deceptive as any other overlay company. Just as stomach-turning as any other logo like that I see plastered up on a site because the people involved in the decision-making behind it just don&#39;t know.&lt;/p&gt;
-&lt;p&gt;I hate overlays. Make no mistake about it, I hate them. They do nothing for the disabled user but make the experience worse. So I am staring this down and once again, that feeling of dread.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/colabottles/image/upload/v1671842087/images/dimillos_home.png&quot; alt=&quot;The universal access icon for accessibility&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;I check the accessibility statements of these sites and they are just the same old cookie-cutter accessibility statemtns that are copied and pasted into pages over and over and over again by companies that do not know any better, have no clue, or simply do not care about the exclusion of people with disabilities.&lt;/p&gt;
-&lt;p&gt;You can go to a number of sites like &lt;a href=&quot;https://www.myridgegateapartments.com/accessibility&quot;&gt;this one and read the accessibility statement&lt;/a&gt; and it will be the same as &lt;a href=&quot;https://www.s29apartments.com/accessibility&quot;&gt;the one that you found before that&lt;/a&gt;. Some use (or have used) an overlay. &lt;a href=&quot;https://northeastwhitewater.com/accessibility-disclaimer/&quot;&gt;Or this statement&lt;/a&gt; and then &lt;a href=&quot;https://www.downtownwestbrook.com/accessibility-disclaimer/&quot;&gt;go to this site and see this statement&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;who-is-doing-this%3F&quot; tabindex=&quot;-1&quot;&gt;Who Is Doing This?&lt;/h2&gt;
-&lt;p&gt;Well... in the case of what I stumbled upon that I am writing about, it is the &lt;a href=&quot;https://www.websiteportland.com/&quot;&gt;Portland Website Company&lt;/a&gt;. A marketing firm, naturally. What really gets under my skin about these firm that tout an accessible website are:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Their own site is not accessible.&lt;/li&gt;
-&lt;li&gt;They shy away from taking any responsibility of the accessibility of a web site they build.&lt;/li&gt;
-&lt;li&gt;They refer to the &lt;a href=&quot;http://ada.gov/&quot;&gt;ADA.gov&lt;/a&gt; accessible when the ADA does not cover websites! The ADA does not explicitly address online compliance!&lt;/li&gt;
-&lt;li&gt;They &amp;quot;strive&amp;quot; for Section 508 standards but I don&#39;t see a federal government site or entity in their portfolio that would be covered by Section 508 at all.&lt;/li&gt;
-&lt;li&gt;Nothing changes as far as accessiblity goes on their website when turning the overlay on and off.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Pure bull. That&#39;s what overlays are and that&#39;s what marketing firms are that hawk them. A straight up fallacy saying a site is made more accessible.&lt;/p&gt;
-&lt;p&gt;This leads me to a number of observations.&lt;/p&gt;
-&lt;h2 id=&quot;what-is-lacking%3F&quot; tabindex=&quot;-1&quot;&gt;What Is Lacking?&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Morals&lt;/li&gt;
-&lt;li&gt;Knowledge and Educated Information&lt;/li&gt;
-&lt;li&gt;An Accessibility Specialist and or Accessibility team.&lt;/li&gt;
-&lt;li&gt;Inclusion&lt;/li&gt;
-&lt;li&gt;Knowledge&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;There is no way, with anyone that is in tech or especially web, that you&#39;re not going to know about the current climate of the accessibility community and the battle against the overlay vendors. You lack education, you lack knowledge, but had you done your homework, you would have known. Therefore I call the lack of morals when you exclude 20-30% of the population of the world or 15-25% of the population of the United States.&lt;/p&gt;
-&lt;h2 id=&quot;summary&quot; tabindex=&quot;-1&quot;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;Like &lt;a href=&quot;https://karlgroves.com/&quot;&gt;Karl&lt;/a&gt; said:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Overlays are here to stay. So are “male enhancement pills”.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;They pop up like bad acne, cold sores, and groundhogs every February 2nd.&lt;/p&gt;
-&lt;p&gt;They are a grift, they are snake oil sold by people that have no scruples, and they are a smoke screen as to people that are too lazy to put in the work to make things accessible for everyone. There is no excuse in the world in my mind that can possibly cover the fact that these overlays are being hawked like this, with an accessibility statement such as &lt;a href=&quot;https://www.websiteportland.com/accessibility-disclaimer/&quot;&gt;the one on the Portland Website Company website&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;When your website accessibility disclaimer includes the fact &lt;strong&gt;YOU&lt;/strong&gt; are not responsible for the accessibility of a website &lt;strong&gt;YOU&lt;/strong&gt; build, &lt;strong&gt;YOU&lt;/strong&gt; obviously do not care who you are excluding. There is enough of that in web today and we do not need anymore of it. Disabled people of way past the point of being sick of it and fed up and treated like second-rate citizens, they are way past the point of sick of being excluded.&lt;/p&gt;
-&lt;p&gt;The accessibility community is sick of it. We&#39;re tired of ahving a battle every decade with something that builds barriers instead of removing them. We explain over and over and over about a multitude of things decade after decade after decade of how methoids can be used to make things more accessible and it falls on billions of closed minds and closed ears.&lt;/p&gt;
-&lt;p&gt;When you run from the responsibility, you&#39;re the problem along with the overlays you peddle that are the bigger problem.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
 		<title>An Open Challenge</title>
 		<link href="https://toddl.dev/posts/an-open-challenge/"/>
 		<updated>2022-11-10T00:00:00Z</updated>
@@ -2294,6 +2244,56 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 	</entry>
 	
 	<entry>
+		<title>Snake Oil and Smoke Screens</title>
+		<link href="https://toddl.dev/posts/snake-oil-and-smoke-screens/"/>
+		<updated>2022-12-23T00:00:00Z</updated>
+		<id>https://toddl.dev/posts/snake-oil-and-smoke-screens/</id>
+		<content type="html">&lt;h2 id=&quot;where-it-began&quot; tabindex=&quot;-1&quot;&gt;Where It Began&lt;/h2&gt;
+&lt;p&gt;It all started with a food show on the Cooking Channel and a trip to their menu. From there, it was all downhill from that point.&lt;/p&gt;
+&lt;p&gt;For me, a guy from Portland, Maine, whenever I see Portland (the original one) on a food show, I know there is going to be lobster and lobster rolls. It&#39;s a given. So when I was watching this show (which was Delicious Destinations w/Andrew Zimmern) I knew one of the places I used to frequent would be on the show. Sure enough, it was to be.&lt;/p&gt;
+&lt;p&gt;DiMillo&#39;s Restaurant has been a mainstay in Portland for 57 years, it is now a &amp;quot;floating&amp;quot; restaurant, as it sits in Casco Bay. Great food. Some of the best in Portland. The surf and turf was what I was watching on Delicious Destinations and I was asked what the price of the item was. Not sure, I went to the website to find out.&lt;/p&gt;
+&lt;h2 id=&quot;what-the-f%40%24k%3F!&quot; tabindex=&quot;-1&quot;&gt;What The F@$k?!&lt;/h2&gt;
+&lt;p&gt;On page load, on mobile, there is that icon. staring me in the face. In its usual place, indicating that the site has an overlay.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/colabottles/image/upload/v1671844426/images/a11y_logo.png&quot; alt=&quot;The universal access icon for accessibility&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Usually, default goes to accessiBe. This one, is just as nauseating to see (as they all are) from UserWay. Just as bad as any other overlay company. Just as deceptive as any other overlay company. Just as stomach-turning as any other logo like that I see plastered up on a site because the people involved in the decision-making behind it just don&#39;t know.&lt;/p&gt;
+&lt;p&gt;I hate overlays. Make no mistake about it, I hate them. They do nothing for the disabled user but make the experience worse. So I am staring this down and once again, that feeling of dread.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/colabottles/image/upload/v1671842087/images/dimillos_home.png&quot; alt=&quot;The universal access icon for accessibility&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I check the accessibility statements of these sites and they are just the same old cookie-cutter accessibility statemtns that are copied and pasted into pages over and over and over again by companies that do not know any better, have no clue, or simply do not care about the exclusion of people with disabilities.&lt;/p&gt;
+&lt;p&gt;You can go to a number of sites like &lt;a href=&quot;https://www.myridgegateapartments.com/accessibility&quot;&gt;this one and read the accessibility statement&lt;/a&gt; and it will be the same as &lt;a href=&quot;https://www.s29apartments.com/accessibility&quot;&gt;the one that you found before that&lt;/a&gt;. Some use (or have used) an overlay. &lt;a href=&quot;https://northeastwhitewater.com/accessibility-disclaimer/&quot;&gt;Or this statement&lt;/a&gt; and then &lt;a href=&quot;https://www.downtownwestbrook.com/accessibility-disclaimer/&quot;&gt;go to this site and see this statement&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;who-is-doing-this%3F&quot; tabindex=&quot;-1&quot;&gt;Who Is Doing This?&lt;/h2&gt;
+&lt;p&gt;Well... in the case of what I stumbled upon that I am writing about, it is the &lt;a href=&quot;https://www.websiteportland.com/&quot;&gt;Portland Website Company&lt;/a&gt;. A marketing firm, naturally. What really gets under my skin about these firm that tout an accessible website are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Their own site is not accessible.&lt;/li&gt;
+&lt;li&gt;They shy away from taking any responsibility of the accessibility of a web site they build.&lt;/li&gt;
+&lt;li&gt;They refer to the &lt;a href=&quot;http://ada.gov/&quot;&gt;ADA.gov&lt;/a&gt; accessible when the ADA does not cover websites! The ADA does not explicitly address online compliance!&lt;/li&gt;
+&lt;li&gt;They &amp;quot;strive&amp;quot; for Section 508 standards but I don&#39;t see a federal government site or entity in their portfolio that would be covered by Section 508 at all.&lt;/li&gt;
+&lt;li&gt;Nothing changes as far as accessiblity goes on their website when turning the overlay on and off.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Pure bull. That&#39;s what overlays are and that&#39;s what marketing firms are that hawk them. A straight up fallacy saying a site is made more accessible.&lt;/p&gt;
+&lt;p&gt;This leads me to a number of observations.&lt;/p&gt;
+&lt;h2 id=&quot;what-is-lacking%3F&quot; tabindex=&quot;-1&quot;&gt;What Is Lacking?&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Morals&lt;/li&gt;
+&lt;li&gt;Knowledge and Educated Information&lt;/li&gt;
+&lt;li&gt;An Accessibility Specialist and or Accessibility team.&lt;/li&gt;
+&lt;li&gt;Inclusion&lt;/li&gt;
+&lt;li&gt;Knowledge&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There is no way, with anyone that is in tech or especially web, that you&#39;re not going to know about the current climate of the accessibility community and the battle against the overlay vendors. You lack education, you lack knowledge, but had you done your homework, you would have known. Therefore I call the lack of morals when you exclude 20-30% of the population of the world or 15-25% of the population of the United States.&lt;/p&gt;
+&lt;h2 id=&quot;summary&quot; tabindex=&quot;-1&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Like &lt;a href=&quot;https://karlgroves.com/&quot;&gt;Karl&lt;/a&gt; said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Overlays are here to stay. So are “male enhancement pills”.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;They pop up like bad acne, cold sores, and groundhogs every February 2nd.&lt;/p&gt;
+&lt;p&gt;They are a grift, they are snake oil sold by people that have no scruples, and they are a smoke screen as to people that are too lazy to put in the work to make things accessible for everyone. There is no excuse in the world in my mind that can possibly cover the fact that these overlays are being hawked like this, with an accessibility statement such as &lt;a href=&quot;https://www.websiteportland.com/accessibility-disclaimer/&quot;&gt;the one on the Portland Website Company website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When your website accessibility disclaimer includes the fact &lt;strong&gt;YOU&lt;/strong&gt; are not responsible for the accessibility of a website &lt;strong&gt;YOU&lt;/strong&gt; build, &lt;strong&gt;YOU&lt;/strong&gt; obviously do not care who you are excluding. There is enough of that in web today and we do not need anymore of it. Disabled people of way past the point of being sick of it and fed up and treated like second-rate citizens, they are way past the point of sick of being excluded.&lt;/p&gt;
+&lt;p&gt;The accessibility community is sick of it. We&#39;re tired of ahving a battle every decade with something that builds barriers instead of removing them. We explain over and over and over about a multitude of things decade after decade after decade of how methoids can be used to make things more accessible and it falls on billions of closed minds and closed ears.&lt;/p&gt;
+&lt;p&gt;When you run from the responsibility, you&#39;re the problem along with the overlays you peddle that are the bigger problem.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>An Event Apart</title>
 		<link href="https://toddl.dev/posts/an-event-apart/"/>
 		<updated>2022-12-27T00:00:00Z</updated>
@@ -2342,6 +2342,9 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 &lt;/ul&gt;
 &lt;h2 id=&quot;looking-ahead&quot; tabindex=&quot;-1&quot;&gt;Looking Ahead&lt;/h2&gt;
 &lt;p&gt;I don&#39;t like to look too far ahead but the one thing I do look forward to is this:&lt;/p&gt;
+&lt;p&gt;Speaking at conferences, meeting new friends and reconnecting with old friends. Moving out of accessibility by the end of the year and transitioning into a DevRel role somewhere. Traveling to more places and being sober so that I can enjoy it.&lt;/p&gt;
+&lt;p&gt;I hope everyone stays safe and you have a better 2023. Hope that things keep moving forward instead of backwards, that we can progress and not regress. Hope that my friends and the people I have met over the course of the time I have been in tech can enjoy some peace and some well-being during these times. Hope that humans can wake up and realize what we&#39;re doing isn&#39;t working, that maybe we need to change drastically before there is no Earth left.&lt;/p&gt;
+&lt;p&gt;See you in 2023.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
