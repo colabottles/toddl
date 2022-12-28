@@ -517,21 +517,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/review/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/twentytwentytwo/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/endofyear/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/ionic/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -803,6 +788,21 @@
   
   <url>
     <loc>https://toddl.dev/tags/feelings/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/review/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/twentytwentytwo/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/endofyear/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -1098,6 +1098,6 @@
   
   <url>
     <loc>https://toddl.dev/posts/goodbye-2022/</loc>
-    <lastmod>31 December, 2022</lastmod>
+    <lastmod>28 December, 2022</lastmod>
   </url>
 </urlset>

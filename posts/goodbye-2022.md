@@ -1,7 +1,7 @@
 ---
 title: Goodbye 2022
 description: The year of 2022 in review.
-date: 2022-12-31 ## YYYY-MM-DD
+date: 2022-12-28 ## YYYY-MM-DD
 tags:
   - review
   - twentytwentytwo
