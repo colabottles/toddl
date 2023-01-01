@@ -14,12 +14,7 @@ layout: layouts/post.njk
 
 ## This Isn't Going To Go Over Well
 
-and I couldn't be anymore invested in a debate about it. If you disagree, you disagree. If you're hard-lining that it isn't what _you_ think it is, then either do one of two things:
-
-1. Go with your stance and move on with the day
-2. Do a lot of thinking about how it may affect some people in some marginalized communities.
-
-I engaged (albeit to my anti-debate stance) in a debate of sorts already on a social media platform. Someone disagreed, I should have left it at at that. Yet, I fell into the rabbit hole of a vacuous conversation that always ends up with two people having a back and forth and still disagreeing. So be it. I stand firmly where I stand.
+and I couldn't be anymore invested in wanting to have a contentious debate about it. If you disagree, you disagree. Think long about it before contacting me. Just because it doesn't directly affect you doesn't mean it doesn't affect someone else. That goes for anything in this world.
 
 ## Your Naming Conventions Are Suspect
 
@@ -36,7 +31,11 @@ To quote Kim Crayton, _"Tech is not neutral."_ and _"Unremarkably mediocre white
 
 ## Then Why Are YOU Writing This Article?
 
-White guys doing white guy things, since tech was built by whote guys and is white guy majority in the spots where all the decisions are made and how things are run, it's not surprising that white guys want to still carry this torch (not a tiki torch, although it might as well be) to the end.
+White guys doing white guy things, since tech was built by whote guys and is white guy majority in the spots where all the decisions are made and how things are run, it's not surprising that white guys want to still carry this torch (not a tiki torch, although it might as well be) to the end. I mean, look at the numbers from a poll in the 2020 StackOverflow Developer Survey. The numbers don't lie, friend:
+
+![A StackOverflow poll showing 68.3% of developers that responded to the survey were of white or European descent while the remaining were 10.4% South Asian, 7.6% Hispanic or Latino/a/x, 4.9% Middle Eastern, 4.6% East Asian, 4.5% Black or African descent and the same for Southeast Asian, 1.7% multiracial, 1.2% biracial, and 0.8% Indigenous such as Native American, Pacific Islander, or Indigenous Australian.](https://res.cloudinary.com/colabottles/image/upload/v1672586775/images/sounds-about-white.webp)
+
+I'm writing it to maybe, perhaps, get at least one person to change and if one changes because of this article or the work that I am doing, then I've done my job but I won't rest with that as the accepted result. "Dark pattern" is problematic.
 
 Tech is not neutral and it is political. So if you have lasted this long let's get into why this thinking is problematic and what I propose we do as a community of "professionals" on the web (I sometimes read the bird site and wonder how some people can be called "professionals").
 
@@ -129,12 +128,28 @@ Those patterns or anti-patterns that are used to trick users. Those patterns and
 
 The challenge here is filling those gaps because there could be a thousand different use cases to fill a gap. It's work, a lot of work. It's work that I am willing to do though. User needs and functional needs are being carefully looked at and thought about. The group working on this has worked hard to get to the point where we have gotten to and there is more work to be done.
 
-## Just stop it
+- blacklist/whitelist
+- master/slave
+- native feature/built-in feature
+- dummy/sample
+- man hours/engineer hours
+- Black Hat/White Hat
+- [Grandfather Clause](https://www.britannica.com/topic/grandfather-clause)
 
-Stop using "dark". It's easy to do. Maybe it is not easy for those that are still using "master" in their git repos or those that cling to the Indigenous mascots that "aren't hurting anyone" in sports/schools, or those that do the tomahawk chop in Atlanta or at Florida State, or in Kansas City.
+These terms have been looked at for needing to be changed and [there are a lot of articles that can be found here](https://www.zotero.org/groups/2554430/ach_inclusive_technology/items/K6BFUBHB/item-details) if you're not convinced like I am after doing my research.
+
+## Just Stop Already
+
+Stop using "dark". It's easy to do. Maybe it is not easy for those that are still using "master" in their git repos or those that cling to the Indigenous mascots that "aren't hurting anyone" in sports/schools, or those that do the tomahawk chop in Atlanta or at Florida State, or in Kansas City. If you're resistant to change, because "words is words" than quit reading this and go on with your day. If it's made you think a little bit, I challenge you to think more and think harder.
 
 People can do this. We are capable of adaptation and change. We're in a world that is so divided but the fact of the matter is we all have to be here until we are not. So why not make it a lot more inclsuive and a lot more accessible for everyone instead of being a remarkably mediocre white dudes game? For anyone else who isn't white, how easy is it for you just to adopt a new term that reflects a change?
 
 ## Disagree. That's Your Right
 
-You can read this article and say to yourself, _"What a load of bullshit. This guy has no idea of what he's talking about."_ That's your right and that's your opinion and you're **entitled** to that opinion. Notice I bolded the word "entitled". I did that for a reason. What may not affect you, may affect others. So before you go sounding off on your soapbox on a tangent about how it is not racist (nor do I ever menti)
+You can read this article and say to yourself, _"What a load of bullshit. This guy has no idea of what he's talking about."_ That's your right and that's your opinion and you're **entitled** to that opinion. Notice I bolded the word "entitled". I did that for a reason. What may not affect you, may affect others. So before you go sounding off on your soapbox on a tangent about how it is not racist (nor do I ever mention it **is** racist, I mention the connotation of racism).
+
+[A great article here by Shaun Morris mentions at the end](https://medium.com/@shaundmorris/to-change-scrum-master-or-not-to-change-scrum-master-that-is-the-question-8b503cd43e89):
+
+> Ironically many opposing changing the terms have the same mindset as those who oppose Agile: resistance to change. “This is how it has always been”. In fact the Agile Manifesto asks us to be “Responsive to Change over following the Plan.” Isn’t systemic racism after 400 years a plan worth changing? In the National Football League, many people did not understand why Colin Kaepernick took a knee during the National Anthem. Today, many are beginning to understand him. Many technologists are looking at changing the terminology and subsequently the culture. Similar to Kaepernick’s situation, many people do not understand why they would want to change technical terminology. Instead there will be outrage at the suggestion. “Imagine the amount of work will take”. “We are going way too far with this”. “People are too sensitive”. Before you rush into judgment I ask you to consider why people are asking for changes. Some will affectively end the conversation and dismiss the core issue outright. Remember underrepresented people do not get the choice to dismiss the core issue of bigotry and systemic racism. It comes when we are out on a casual walk (Elijah McClain) or on a jog (Ahmaud Arbery). It comes when we are sitting in a car (George Floyd). It comes in the dead of night while we are a sleep (Breonna Taylor). It is no respecter of our location. It does not discriminate in favor of our time or convenience. Underrepresented people do not have the choice to dismiss this core issue and go back to work or coding. This type of change gives framework leaders the opportunity to clearly articulate that they support zero tolerance for racism and bigotry.
+
+So you can still disagree, or you can do your research. I did. Inclusivity and accessibility means everyone can be welcome and feel like they belong, not just a select few.
