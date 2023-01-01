@@ -40,7 +40,7 @@ I'm writing it to maybe, perhaps, get at least one person to change and if one c
 
 Tech is not neutral and it is political. So if you have lasted this long let's get into why this thinking is problematic and what I propose we do as a community of "professionals" on the web (I sometimes read the bird site and wonder how some people can be called "professionals").
 
-It is 2022 and we are still, in most places with most people, using the word "dark" when it comes to anti-patterns on the Web. Why? Is it because some white dudes just do not want to embrace change, as they always carry themselves to do?
+It is 2023 and we are still, in most places with most people, using the word "dark" when it comes to anti-patterns on the Web. Why? Is it because some white dudes just do not want to embrace change, as they always carry themselves to do?
 
 Is it because we, as a white society, or a society as a whole, we do not wish to embrace the change of a language that has the worst of meaning, origin, and racism?
 
