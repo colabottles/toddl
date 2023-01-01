@@ -462,31 +462,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/darkpatterns/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/antipatterns/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/deceptivepatterns/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/tech/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/namingconventions/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/opinion/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -697,6 +672,11 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/tech/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/interviews/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -803,6 +783,26 @@
   
   <url>
     <loc>https://toddl.dev/tags/feelings/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/darkpatterns/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/antipatterns/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/deceptivepatterns/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/namingconventions/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   

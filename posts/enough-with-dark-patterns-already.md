@@ -90,7 +90,7 @@ Media outlets online pick up on articles and the terminology fast and they write
 
 I can see many articles that specifically use "dark" in its headline. ["FTC Report Shows Rise In Sophisticated Dark Patterns Designed to Trick and Trap Consumers"](https://www.ftc.gov/news-events/news/press-releases/2022/09/ftc-report-shows-rise-sophisticated-dark-patterns-designed-trick-trap-consumers) for one. Even [Wikipedia has an entry for this](https://en.wikipedia.org/wiki/Dark_pattern).
 
-It's time to get rid of the language. Whether it is _"deceptive design patterns"_, _"deceptive patterns"_, _"Anti-patterns"_ or something else. We need to remove "dark" from the terminology. It doesn't makes sense to begin with. "Dark" may be because of "perception" to some people, but perception is only a small fraction of what a UX pattern that either harms with intent or without intent really is.
+It's time to get rid of the language. Whether it is _"deceptive design patterns"_, _"deceptive patterns"_, _"Anti-patterns"_ or something else. We need to remove "dark" from the terminology. It doesn't make sense to begin with. "Dark" may be because of "perception" to some people, but perception is only a small fraction of what a UX pattern that either harms with intent or without intent really is.
 
 Patterns that harm people, whether it is neurodivergent folks, people with cognitive issues, people with lack of quality education or who have a learning disability are anti-patterns with those patterns that are without intent, deceptive patterns with intent behind them.
 
@@ -123,7 +123,7 @@ Not "dark" like Halloween spooky or scary, not without light, not due to color o
 
 ## My Current Work Behind Deceptive Patterns
 
-Leaving the social and political debates aside, I have brought the term to the W3C in out quest to recognize spots in WCAG that need to be filled. Enter [the Framework for Accessibile Specification of Technologies (FAST)](https://raw.githack.com/w3c/fast/restructure-functional-and-user-needs/index.html).
+Leaving the social and political debates aside, I have brought the term to the W3C in our quest to recognize spots in WCAG that need to be filled. Enter [the Framework for Accessibile Specification of Technologies (FAST)](https://raw.githack.com/w3c/fast/restructure-functional-and-user-needs/index.html).
 
 Those patterns or anti-patterns that are used to trick users. Those patterns and anti-patterns that cause harm whether with or without intent. Because it happens in this day and age whether we want to acknowledge it or not. It is there.
 
