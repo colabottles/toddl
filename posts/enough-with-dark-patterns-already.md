@@ -98,22 +98,22 @@ Patterns that harm people, whether it is neurodivergent folks, people with cogni
 
 According to [Dictionary.com, dark is](https://www.dictionary.com/browse/dark):
 
-_adjective_, **dark·er**, **dark·est**.
+adjective, **dark·er**, **dark·est**.
 
 1. having very little or no light: _a dark room_.
 2. radiating, admitting, or reflecting little light: _a dark color_.
 3. approaching black in hue: _a dark brown_.
 
-_noun_
+noun
 
 1. the absence of light; darkness: _I can't see well in the dark_.
 2. night; nightfall: _Please come home before dark_.
 
-_verb (used with object)_
+verb (used with object)
 
 1. to make dark; darken.
 
-_verb (used without object)_
+verb (used without object)
 
 1. Obsolete. to grow dark; darken.
 
