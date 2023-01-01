@@ -24,7 +24,7 @@ and I couldn't be any more invested in wanting to have a contentious debate abou
 
 The history of the term "dark patterns" as far as I can tell goes back to 2010 when Harry Brignull, a UX designer set up darkpatterns.org, a resource to highlight patterns and anti-patterns on the web.
 
-Brignull since then has rebranded his site to deceptive.design in an attempt to use a more inclusive term for the pratice of deception and deceiving users.
+Brignull since then has rebranded his site to deceptive.design in an attempt to use a more inclusive term for the practice of deception and deceiving users.
 
 Many articles can be found if you search for the term "dark Pattern" and some even highlight Brignull and his steering away from a term that is exclusionary and harmful. These articles want to _"stick to calling them dark patterns"_ because _"the term dark pattern has more traction"_ [to quote one article](https://www.comparitech.com/blog/information-security/dark-patterns/).
 
@@ -62,7 +62,7 @@ Change came around from the usage of the word _"master"_ and GitHub made the cha
 
 Dark isn't *just a word* in the dictionary, oh no. It is also been known to have designated racial groups since the days when this country was _"founded"_. Along with black, dark and black was the norm and their connotations may well reinforce social norms pertaining to those groups(*).
 
-The reasoning behind the usage of the term can be anywhere from, _"What does it matter? I don't see anything wrong with it."_ to _"Why do people overreact to everything these days? Why can't people not look into things with a microscope?"_
+The reasoning behind the usage of the term can be anywhere from, _"What does it matter? I don't see anything wrong with it."_ to _"Why do people overreact to everything these days? Why can't people not look into everything with a microscope?"_
 
 White dudes automatically go on the defensive letting people know about the discomfort they are feeling and they look to others cut from the same cloth for comfort. For validation and for support. That's a huge part of the problem.
 
@@ -141,9 +141,9 @@ These terms have been looked at for needing to be changed and [there are a lot o
 
 ## Just Stop Already
 
-Stop using "dark". It's easy to do. Maybe it is not easy for those that are still using "master" in their git repos or those that cling to the Indigenous mascots that "aren't hurting anyone" in sports/schools, or those that do the tomahawk chop in Atlanta or at Florida State, or in Kansas City. If you're resistant to change, because "words is words" than quit reading this and go on with your day. If it's made you think a little bit, I challenge you to think more and think harder.
+Stop using "dark". It's easy to do. Maybe it is not easy for those that are still using "master" in their git repos or those that cling to the Indigenous mascots that "aren't hurting anyone" in sports/schools, or those that do the tomahawk chop in Atlanta or at Florida State University, or in Kansas City. If you're resistant to change, because "words is words" than quit reading this and go on with your day. If it's made you think a little, I challenge you to think more and think harder.
 
-People can do this. We are capable of adaptation and change. We're in a world that is so divided but the fact of the matter is we all have to be here until we are not. So why not make it a lot more inclsuive and a lot more accessible for everyone instead of being a remarkably mediocre white dudes game? For anyone else who isn't white, how easy is it for you just to adopt a new term that reflects a change?
+People can do this. We are capable of adaptating and change. We're in a world that is so divided but the fact of the matter is we all have to be here until we are not. So why not make it a lot more inclsuive and a lot more accessible for everyone instead of being a remarkably mediocre white dudes game? For anyone else who isn't white, how easy is it for you just to adopt a new term that reflects a change?
 
 ## Disagree. That's Your Right
 
