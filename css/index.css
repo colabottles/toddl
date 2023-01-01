@@ -913,7 +913,7 @@ h2.project__header {
 .footer-icons {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-self: center;
   margin-block: 3rem;
 }
 
