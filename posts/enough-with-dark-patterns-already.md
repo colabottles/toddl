@@ -15,7 +15,7 @@ layout: layouts/post.njk
 
 ## This Isn't Going To Go Over Well
 
-and I couldn't be anymore invested in wanting to have a contentious debate about it. If you disagree, you disagree. Think long about it before contacting me. Just because it doesn't directly affect you doesn't mean it doesn't affect someone else. That goes for anything in this world.
+and I couldn't be any more invested in wanting to have a contentious debate about it. If you disagree, you disagree. Think long about it before contacting me. Just because it doesn't directly affect you doesn't mean it doesn't affect someone else. That goes for anything in this world.
 
 ## Your Naming Conventions Are Suspect
 
@@ -24,7 +24,7 @@ and I couldn't be anymore invested in wanting to have a contentious debate about
 
 The history of the term "dark patterns" as far as I can tell goes back to 2010 when Harry Brignull, a UX designer set up darkpatterns.org, a resource to highlight patterns and anti-patterns on the web.
 
-Brignull since then has rebranded his site to deceptive.design in an attempt to use a more inclusive term for the pratice of deception and deceiving users.
+Brignull since then has rebranded his site to deceptive.design in an attempt to use a more inclusive term for the practice of deception and deceiving users.
 
 Many articles can be found if you search for the term "dark Pattern" and some even highlight Brignull and his steering away from a term that is exclusionary and harmful. These articles want to _"stick to calling them dark patterns"_ because _"the term dark pattern has more traction"_ [to quote one article](https://www.comparitech.com/blog/information-security/dark-patterns/).
 
@@ -32,7 +32,7 @@ To quote Kim Crayton, _"Tech is not neutral."_ and _"Unremarkably mediocre white
 
 ## Then Why Are YOU Writing This Article?
 
-White guys doing white guy things, since tech was built by whote guys and is white guy majority in the spots where all the decisions are made and how things are run, it's not surprising that white guys want to still carry this torch (not a tiki torch, although it might as well be) to the end. I mean, look at the numbers from a poll in the 2020 StackOverflow Developer Survey. The numbers don't lie, friend:
+White guys doing white guy things, since tech was built by white guys and is white guy majority in the spots where all the decisions are made and how things are run, it's not surprising that white guys want to still carry this torch (not a tiki torch, although it might as well be) to the end. I mean, look at the numbers from a poll in the 2020 StackOverflow Developer Survey. The numbers don't lie, friend:
 
 ![A StackOverflow poll showing 68.3% of developers that responded to the survey were of white or European descent while the remaining were 10.4% South Asian, 7.6% Hispanic or Latino/a/x, 4.9% Middle Eastern, 4.6% East Asian, 4.5% Black or African descent and the same for Southeast Asian, 1.7% multiracial, 1.2% biracial, and 0.8% Indigenous such as Native American, Pacific Islander, or Indigenous Australian.](https://res.cloudinary.com/colabottles/image/upload/v1672586775/images/sounds-about-white.webp)
 
@@ -40,7 +40,7 @@ I'm writing it to maybe, perhaps, get at least one person to change and if one c
 
 Tech is not neutral and it is political. So if you have lasted this long let's get into why this thinking is problematic and what I propose we do as a community of "professionals" on the web (I sometimes read the bird site and wonder how some people can be called "professionals").
 
-It is 2022 and we are still, in most places with most people, using the word "dark" when it comes to anti-patterns on the Web. Why? Is it because some white dudes just do not want to embrace change, as they always carry themselves to do?
+It is 2023 and we are still, in most places with most people, using the word "dark" when it comes to anti-patterns on the Web. Why? Is it because some white dudes just do not want to embrace change, as they always carry themselves to do?
 
 Is it because we, as a white society, or a society as a whole, we do not wish to embrace the change of a language that has the worst of meaning, origin, and racism?
 
@@ -62,7 +62,7 @@ Change came around from the usage of the word _"master"_ and GitHub made the cha
 
 Dark isn't *just a word* in the dictionary, oh no. It is also been known to have designated racial groups since the days when this country was _"founded"_. Along with black, dark and black was the norm and their connotations may well reinforce social norms pertaining to those groups(*).
 
-The reasoning behind the usage of the term can be anywhere from, _"What does it matter? I don't see anything wrong with it."_ to _"Why do people overreact to everything these days? Why can't people not look into things with a microscope?"_
+The reasoning behind the usage of the term can be anywhere from, _"What does it matter? I don't see anything wrong with it."_ to _"Why do people overreact to everything these days? Why can't people not look into everything with a microscope?"_
 
 White dudes automatically go on the defensive letting people know about the discomfort they are feeling and they look to others cut from the same cloth for comfort. For validation and for support. That's a huge part of the problem.
 
@@ -76,7 +76,7 @@ We have all heard about it. We all have our biases and opinions, and yet we stil
 
 I'm a child of the seventies. I grew up with people that would tell me to suck it up and get used to it. That's the kind of attitude I see permeate through tech to this very day. Especially with the white guys. It's the entitlement. It's the air of ego and of that they are the "alpha male".
 
-Whether they want to admit it or not, I had to. I had to look inward at myself and the way I donducted myself and the things I said and wrote. It's been a twenty year process. It has been all about change.
+Whether they want to admit it or not, I had to. I had to look inward at myself and the way I conducted myself and the things I said and wrote. It's been a twenty year process. It has been all about change.
 
 Change the words, change the attitudes, change the ego, swallow your pride or drown. It's okay to use the word _"deceptive"_, it really is.
 
@@ -141,9 +141,9 @@ These terms have been looked at for needing to be changed and [there are a lot o
 
 ## Just Stop Already
 
-Stop using "dark". It's easy to do. Maybe it is not easy for those that are still using "master" in their git repos or those that cling to the Indigenous mascots that "aren't hurting anyone" in sports/schools, or those that do the tomahawk chop in Atlanta or at Florida State, or in Kansas City. If you're resistant to change, because "words is words" than quit reading this and go on with your day. If it's made you think a little bit, I challenge you to think more and think harder.
+Stop using "dark". It's easy to do. Maybe it is not easy for those that are still using "master" in their git repos or those that cling to the Indigenous mascots that "aren't hurting anyone" in sports/schools, or those that do the tomahawk chop in Atlanta or at Florida State University, or in Kansas City. If you're resistant to change, because "words is words" than quit reading this and go on with your day. If it's made you think a little, I challenge you to think more and think harder.
 
-People can do this. We are capable of adaptation and change. We're in a world that is so divided but the fact of the matter is we all have to be here until we are not. So why not make it a lot more inclsuive and a lot more accessible for everyone instead of being a remarkably mediocre white dudes game? For anyone else who isn't white, how easy is it for you just to adopt a new term that reflects a change?
+People can do this. We are capable of adaptating and change. We're in a world that is so divided but the fact of the matter is we all have to be here until we are not. So why not make it a lot more inclsuive and a lot more accessible for everyone instead of being a remarkably mediocre white dudes game? For anyone else who isn't white, how easy is it for you just to adopt a new term that reflects a change?
 
 ## Disagree. That's Your Right
 
