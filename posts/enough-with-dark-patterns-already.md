@@ -76,7 +76,7 @@ We have all heard about it. We all have our biases and opinions, and yet we stil
 
 I'm a child of the seventies. I grew up with people that would tell me to suck it up and get used to it. That's the kind of attitude I see permeate through tech to this very day. Especially with the white guys. It's the entitlement. It's the air of ego and of that they are the "alpha male".
 
-Whether they want to admit it or not, I had to. I had to look inward at myself and the way I donducted myself and the things I said and wrote. It's been a twenty year process. It has been all about change.
+Whether they want to admit it or not, I had to. I had to look inward at myself and the way I conducted myself and the things I said and wrote. It's been a twenty year process. It has been all about change.
 
 Change the words, change the attitudes, change the ego, swallow your pride or drown. It's okay to use the word _"deceptive"_, it really is.
 
