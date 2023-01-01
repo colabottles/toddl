@@ -467,21 +467,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/darkpatterns/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/deceptivepatterns/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/naming/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/opinion/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -807,6 +792,26 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/darkpatterns/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/antipattern/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/deceptivepatterns/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/naming/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/posts/looking-at-wcag-255-for-better-target-sizes/</loc>
     <lastmod>29 July, 2021</lastmod>
   </url>
@@ -1007,11 +1012,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/posts/enough-with-dark-patterns-already/</loc>
-    <lastmod>24 October, 2022</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/podcast/transcripts/hawrotweigel/</loc>
     <lastmod>29 October, 2022</lastmod>
   </url>
@@ -1099,5 +1099,10 @@
   <url>
     <loc>https://toddl.dev/posts/goodbye-2022/</loc>
     <lastmod>28 December, 2022</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/enough-with-dark-patterns-already/</loc>
+    <lastmod>01 January, 2023</lastmod>
   </url>
 </urlset>
