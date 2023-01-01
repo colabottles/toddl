@@ -15,7 +15,7 @@ layout: layouts/post.njk
 
 ## This Isn't Going To Go Over Well
 
-and I couldn't be anymore invested in wanting to have a contentious debate about it. If you disagree, you disagree. Think long about it before contacting me. Just because it doesn't directly affect you doesn't mean it doesn't affect someone else. That goes for anything in this world.
+and I couldn't be any more invested in wanting to have a contentious debate about it. If you disagree, you disagree. Think long about it before contacting me. Just because it doesn't directly affect you doesn't mean it doesn't affect someone else. That goes for anything in this world.
 
 ## Your Naming Conventions Are Suspect
 
@@ -32,7 +32,7 @@ To quote Kim Crayton, _"Tech is not neutral."_ and _"Unremarkably mediocre white
 
 ## Then Why Are YOU Writing This Article?
 
-White guys doing white guy things, since tech was built by whote guys and is white guy majority in the spots where all the decisions are made and how things are run, it's not surprising that white guys want to still carry this torch (not a tiki torch, although it might as well be) to the end. I mean, look at the numbers from a poll in the 2020 StackOverflow Developer Survey. The numbers don't lie, friend:
+White guys doing white guy things, since tech was built by white guys and is white guy majority in the spots where all the decisions are made and how things are run, it's not surprising that white guys want to still carry this torch (not a tiki torch, although it might as well be) to the end. I mean, look at the numbers from a poll in the 2020 StackOverflow Developer Survey. The numbers don't lie, friend:
 
 ![A StackOverflow poll showing 68.3% of developers that responded to the survey were of white or European descent while the remaining were 10.4% South Asian, 7.6% Hispanic or Latino/a/x, 4.9% Middle Eastern, 4.6% East Asian, 4.5% Black or African descent and the same for Southeast Asian, 1.7% multiracial, 1.2% biracial, and 0.8% Indigenous such as Native American, Pacific Islander, or Indigenous Australian.](https://res.cloudinary.com/colabottles/image/upload/v1672586775/images/sounds-about-white.webp)
 
