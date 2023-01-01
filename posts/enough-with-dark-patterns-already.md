@@ -5,10 +5,11 @@ date: 2023-01-01 ## YYYY-MM-DD
 tags:
   - ux
   - darkpatterns
-  - antipattern
+  - antipatterns
   - deceptivepatterns
   - web
-  - naming
+  - tech
+  - namingconventions
 layout: layouts/post.njk
 ---
 

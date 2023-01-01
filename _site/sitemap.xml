@@ -42,11 +42,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/archives/</loc>
-    <lastmod>07 June, 2019</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/posts/typetura/</loc>
     <lastmod>15 June, 2019</lastmod>
   </url>
@@ -467,6 +462,31 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/darkpatterns/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/antipatterns/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/deceptivepatterns/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/tech/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/namingconventions/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/opinion/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -677,11 +697,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/tech/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/interviews/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -788,26 +803,6 @@
   
   <url>
     <loc>https://toddl.dev/tags/feelings/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/darkpatterns/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/antipattern/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/deceptivepatterns/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/naming/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -1099,6 +1094,11 @@
   <url>
     <loc>https://toddl.dev/posts/goodbye-2022/</loc>
     <lastmod>28 December, 2022</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/archives/</loc>
+    <lastmod>01 January, 2023</lastmod>
   </url>
   
   <url>

@@ -25,7 +25,15 @@ templateClass: tmpl-home
     <h3 class="list-label">Latest Articles</h3>
       <ul class="article-sections">
         <!--- FIXME: THIS IS A LIST OF TEN -->
-        <!--- TODO: Run through list with one command -->
+        <!--- TODO: Run through list with one method -->
+        <li class="article-wrapper">
+          {%- for post in collections.namingconventions | reverse -%}
+          <a href="{{ post.url }}">
+            <h4 class="article-link">{{ post.data.title }}</h4>
+          </a>
+          {%- endfor -%}
+        </li>
+
         <li class="article-wrapper">
           {%- for post in collections.review | reverse -%}
           <a href="{{ post.url }}">
@@ -92,14 +100,6 @@ templateClass: tmpl-home
 
         <li class="article-wrapper">
           {%- for post in collections.openchallenge | reverse -%}
-          <a href="{{ post.url }}">
-            <h4 class="article-link">{{ post.data.title }}</h4>
-          </a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.bias | reverse -%}
           <a href="{{ post.url }}">
             <h4 class="article-link">{{ post.data.title }}</h4>
           </a>
