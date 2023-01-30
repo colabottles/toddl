@@ -254,8 +254,9 @@ nav {
   justify-content: flex-end
 }
 
-nav.foot {
-  place-content: center
+nav.a11y-webring-club {
+  align-items: center;
+  display: flex
 }
 
 header a:hover {
