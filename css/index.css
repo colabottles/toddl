@@ -260,6 +260,11 @@ nav.a11y-webring-club {
   color: var(--ecto);
 }
 
+.a11y-webring-club {
+  display: flex;
+  list-style-type: none;
+}
+
 header a:hover {
   color: var(--ecto);
   -webkit-transition: all .2s ease-in-out;
