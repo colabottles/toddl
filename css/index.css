@@ -260,8 +260,11 @@ nav.a11y-webring-club {
   color: var(--ecto);
 }
 
-.a11y-webring-club li{
+.a11y-webring-club ul {
   display: flex;
+}
+
+.a11y-webring-club li {
   list-style-type: none;
 }
 
