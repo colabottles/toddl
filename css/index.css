@@ -257,7 +257,7 @@ nav {
 nav.a11y-webring-club {
   align-items: center;
   display: flex;
-  font-size: var(--font-size-small);
+  color: var(--ecto);
 }
 
 header a:hover {
