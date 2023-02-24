@@ -258,6 +258,7 @@ nav.a11y-webring-club {
   align-items: center;
   display: flex;
   color: var(--ecto);
+  gap: 1.5em;
 }
 
 .a11y-webring-club ul {
@@ -266,6 +267,15 @@ nav.a11y-webring-club {
 
 .a11y-webring-club li {
   list-style-type: none;
+}
+
+.a11y-webring-club a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: .12em;
+  text-decoration-thickness: .07em;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
 }
 
 header a:hover {
@@ -896,7 +906,7 @@ h2.project__header {
 }
 
 .list-inline {
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 0;
 }
 
@@ -907,7 +917,7 @@ h2.project__header {
 
 .list-inline a {
   color: var(--white);
-  padding: 0 1em 1em 0;
+  padding: 0 1em 0.25em 0;
   text-decoration: underline;
   text-underline-offset: .12em;
   text-decoration-thickness: .07em;

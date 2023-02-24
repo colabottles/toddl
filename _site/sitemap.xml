@@ -462,6 +462,31 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/darkpatterns/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/antipatterns/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/deceptivepatterns/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/tech/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/namingconventions/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/opinion/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -672,11 +697,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/tech/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/interviews/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -783,26 +803,6 @@
   
   <url>
     <loc>https://toddl.dev/tags/feelings/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/darkpatterns/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/antipatterns/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/deceptivepatterns/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/namingconventions/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -1072,11 +1072,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/podcast/season-three/</loc>
-    <lastmod>22 December, 2022</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/podcast/transcripts/season2finale/</loc>
     <lastmod>22 December, 2022</lastmod>
   </url>
@@ -1104,5 +1099,15 @@
   <url>
     <loc>https://toddl.dev/posts/enough-with-dark-patterns-already/</loc>
     <lastmod>01 January, 2023</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/podcast/season-three/</loc>
+    <lastmod>21 February, 2023</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/podcast/transcripts/goldberg/</loc>
+    <lastmod>21 February, 2023</lastmod>
   </url>
 </urlset>
