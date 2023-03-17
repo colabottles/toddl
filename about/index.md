@@ -10,7 +10,7 @@ templateClass: tmpl-post
 
 Hi, I'm Todd. I am an Senior Accessibility Engineer and [W3C Invited Expert](https://w3.org).
 
-I have over twenty-three years of professional experience with web programming and design. I have experience in a number of web technologies, including:
+I have over twenty-five years of professional experience with web programming and design. I have experience in a number of web technologies, including:
 
 - HTML5
 - CSS/Sass
@@ -38,6 +38,8 @@ I have over twenty-three years of professional experience with web programming a
 - Analytics
 - Technical Writing
 - and a lot more.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e07eb8d2-593a-4c5c-b6a4-b15312d26372/deploy-status)](https://app.netlify.com/sites/toddl/deploys)
 
 Some random facts:
 
