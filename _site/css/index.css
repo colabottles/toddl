@@ -130,9 +130,8 @@ ul {
 }
 
 img {
-  aspect-ratio: 4 / 3;
-  height: auto;
-  max-width: 100%;
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 img:not([alt]) {
