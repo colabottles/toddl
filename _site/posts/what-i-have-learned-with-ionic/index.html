@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="description" content="What I have learned with using the Ionic framework in three months.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+    <title>What I Have Learned With Ionic</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" class="page-title" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
+      </header>
+
+      <main id="main" class="inner" tabindex="-1">
+        
+<div class="article-container">
+  <article>
+
+    <h2 class="article__title">What I Have Learned With Ionic</h2>
+    <header class="article__header">
+      <div class="article__meta">
+        <time>03 April, 2024</time>
+      </div>
+    </header>
+
+    <section class="article__body">
+      <h2 id="a-little-history" tabindex="-1">A Little History</h2>
+<p>When I decided to write my own application for mobile, I looked at a few solutions that are readily available out there. React Native, Flutter, and some others but I had to take into consideration that I have to learn (and in some cases re-learn) some languages and frameworks.</p>
+<p>My development skills took a hit over the past three years of continuous accessibility work and audits and I got really rusty. My real development chops left off at such languages as PHP, MySQL, and around the time I got around to brushing up on the latest, React was in the early stages of version 16 (16.3.whatever).</p>
+<p>I had also toyed with 1.X versions of Angular but stopped after v4 and I didn't get to Vue until v2 (2.4 or 2.5-ish) and stopped before v3. So I didn't quite get familiar with any of the &quot;big 3&quot;.</p>
+<p>So I chose Ionic because I could craft PWAs, hybrid and cross-platform mobile apps and it could also (and does) create iOS and Android apps that seamlessly work together. Ionic also lets you employ various UI elements in the application framework (filtration, navigation, inputs, etc.) and I oculd use Ionic with Angular, Vue, or React which seemed like a bonus.</p>
+<h2 id="ionic-makes-me-think-back" tabindex="-1">Ionic Makes Me THink Back</h2>
+<p><a href="https://toddl.dev/posts/ionic-and-vue-part-one/">I started tinkering around with Ionic</a> and of course, I have yet to follow up with an article on my progress (coming soon!) but it reminds me a lot of <a href="https://coldfusion.adobe.com/">ColdFusion</a> and it is because of the custom tags. ColdFusion with their tags:</p>
+<pre class="language-js"><code class="language-js"><span class="token operator">&lt;</span>cfset firstName <span class="token operator">=</span> <span class="token string">"Todd"</span><span class="token operator">></span><br><span class="token operator">&lt;</span>cfif firstName eq <span class="token string">"Todd"</span><span class="token operator">></span><br>  <span class="token constant">I</span> don't care <span class="token keyword">for</span> lobster rolls at all<span class="token punctuation">.</span><br><span class="token operator">&lt;</span><span class="token operator">/</span>cfif<span class="token operator">></span></code></pre>
+<p>and Ionic with their tags:</p>
+<pre class="language-js"><code class="language-js"><span class="token operator">&lt;</span>ion<span class="token operator">-</span>header<span class="token operator">></span><br>  <span class="token operator">&lt;</span>ion<span class="token operator">-</span>toolbar<span class="token operator">></span><br>    <span class="token operator">&lt;</span>ion<span class="token operator">-</span>title<span class="token operator">></span><br>      If<span class="token operator">-</span>Else Example<br>    <span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>title<span class="token operator">></span><br>  <span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>toolbar<span class="token operator">></span><br><span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>header<span class="token operator">></span><br><br><span class="token operator">&lt;</span>ion<span class="token operator">-</span>content<span class="token operator">></span><br>  <span class="token operator">&lt;</span>ion<span class="token operator">-</span>item <span class="token operator">*</span>ngIf<span class="token operator">=</span><span class="token string">"isLoggedIn; else login"</span><span class="token operator">></span><br>    <span class="token operator">&lt;</span>ion<span class="token operator">-</span>label<span class="token operator">></span>Welcome<span class="token punctuation">,</span> <span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>label<span class="token operator">></span><br>  <span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>item<span class="token operator">></span><br>  <span class="token operator">&lt;</span>ng<span class="token operator">-</span>template #login<span class="token operator">></span><br>    <span class="token operator">&lt;</span>ion<span class="token operator">-</span>item<span class="token operator">></span><br>      <span class="token operator">&lt;</span>ion<span class="token operator">-</span>label<span class="token operator">></span>Please log <span class="token keyword">in</span> to <span class="token keyword">continue</span><span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>label<span class="token operator">></span><br>    <span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>item<span class="token operator">></span><br>  <span class="token operator">&lt;</span><span class="token operator">/</span>ng<span class="token operator">-</span>template<span class="token operator">></span><br><span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>content<span class="token operator">></span></code></pre>
+<p>A lot different that I know of so far, but the custom tags are what make me think of CFML (ColdFusion Markup Language). I stopped developing in ColdFusion at version 6 (MX 6 as it was called which was associated with the Macromedia branding). After that, CF and Windows development I felt wasn't for me and I went back to PHP.</p>
+<h2 id="ionic-makes-learning-and-mobile-development-fun" tabindex="-1">Ionic Makes Learning and Mobile Development Fun</h2>
+<p>I went with Vue and Ionic. Vue had a good reputation for accessibility and Ionic takes accessibility seriously. That's what drew me to the both of these. <a href="https://webaim.org/projects/million/#frameworks">Vue has slipped a bit in the accessibility area according to the WebAIM Million Report</a> so that's of a concern for me while React and Angular have improved and I may make the decision to move to one of those after this little experiment.</p>
+<p>But the learning has been fun. <a href="https://ionic.io/docs">Ionic's docs are great</a> there is a lot I am familiarizing myself with like Capacitor, Appflow, Portals, etc. I even contributed a little bit to the accessibility guide. Learning something I thought I'd never get into has been the best part.</p>
+<h2 id="what-is-ionic%3F" tabindex="-1">What is Ionic?</h2>
+<p>Ionic is a cross-platform mobile SDK which lets developers create mobile applications, micro applications, and even custom component libraries using open web technologies and everyday, well-known and widely used tools, languages, and frameworks (React, Angular, and Vue).</p>
+<h2 id="why-i-am-learning-and-using-ionic" tabindex="-1">Why I Am Learning And Using Ionic</h2>
+<p>Accessibility. Ionic puts their best foot forward with accessibility. I won't speculate how the other technologies go about accessibility but Ionic does it right. I mean, <a href="https://ionic.io/docs/accessibility">look at their accessibility guide</a> for great insight how they treat accessibility. This is the major reason behind my decision.</p>
+<p>Performance. The SDK is used by companies to build highly performant apps. Target, Panda Express, InstantPot to name a few (apps I use). I haven't checked metrics or seen the numbers against other mobile frameworks, I only have what I have gone off of. Usage. Those apps I named above seem to run much faster than some, if not most of my other apps I use.</p>
+<p>Other factors. I know there is a focus on app delivery (Appflow) and security which is super-important as well. I like the focus on all these as a company.</p>
+<p>Community. I have joined the Discord server and been to some of the webinars and live events. The community is welcoming and super helpful. A strong and kind community is something that was also critical in my search.</p>
+<p>Development. I can do my thing in HTML and CSS I can learn how to implement Ionic with Angular or Vue, and even React if I choose. I have choices. I like that aspect, I get to learn while doing which is how I learn best.</p>
+
+    </section>
+  </article>
+</div>
+      </main>
+
+      <footer class="meta footer">
+        <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
+          <ul class="nav list-inline">
+            <li class="nav-item"><a href="/podcast">Podcast</a></li>
+            <li class="nav-item"><a href="/support">Support</a></li>
+            <li class="nav-item"><a href="/archives">Archives</a></li>
+            <li class="nav-item"><a href="/uses">Uses</a></li>
+            <li class="nav-item"><a href="/events">Events</a></li>
+            <li class="nav-item"><a href="/resources">Resources</a></li>
+            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            <li class="nav-item"><a href="/links">Links</a></li>
+            <li class="nav-item"><a href="/speaking">Speaking</a></li>
+            <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+          </ul>
+        <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
+
+        <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
+          <h2 id="a11y-webring-club">a11y-webring.club</h2>
+          <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
+          <ul>
+            <li><a rel="previous external" href="https://a11y-webring.club/prev">Previous website</a></li>
+            <li><a rel="external" href="https://a11y-webring.club/random">Random website</a></li>
+            <li><a rel="next external" href="https://a11y-webring.club/next">Next website</a></li>
+          </ul>
+        </nav>
+
+        <ul class="footer-icons">
+          <li>
+            <a href="https://codepen.io/colabottles/#" class="codepen">
+              <svg class="icon icon-codepen" focusable="false">
+                <title>My CodePen repository</title>
+                <desc id="codepen">A white 3D cube.</desc>
+                <use href="/img/symbol-defs.svg#icon-codepen"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/colabottles/" class="github">
+              <svg class="icon icon-github" focusable="false">
+                <title>My GitHub repository</title>
+                <desc id="github">A white OctoCat.</desc>
+                <use href="/img/symbol-defs.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://toddl.dev/feed/feed.xml" class="rss">
+              <svg class="icon icon-rss" focusable="false">
+                <title>The RSS feed for this site</title>
+                <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                <use href="/img/symbol-defs.svg#icon-rss"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+              <svg class="icon icon-accessible-icon" focusable="false">
+                <title>WAVE test results for this site</title>
+                <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

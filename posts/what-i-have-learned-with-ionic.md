@@ -24,7 +24,7 @@ So I chose Ionic because I could craft PWAs, hybrid and cross-platform mobile ap
 
 [I started tinkering around with Ionic](https://toddl.dev/posts/ionic-and-vue-part-one/) and of course, I have yet to follow up with an article on my progress (coming soon!) but it reminds me a lot of [ColdFusion](https://coldfusion.adobe.com/) and it is because of the custom tags. ColdFusion with their tags:
 
-```cfm
+```js
 <cfset firstName = "Todd">
 <cfif firstName eq "Todd">
   I don't care for lobster rolls at all.
