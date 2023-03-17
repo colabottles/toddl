@@ -232,16 +232,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/conference/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/boston/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/accessibe/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -258,6 +248,16 @@
   
   <url>
     <loc>https://toddl.dev/tags/accessibility/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/conference/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/boston/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -437,21 +437,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/employed/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/web/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/perseverance/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/darkpatterns/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -467,12 +452,27 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/web/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/tech/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
   <url>
     <loc>https://toddl.dev/tags/namingconventions/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/employed/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/perseverance/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
