@@ -20,7 +20,7 @@ I had also toyed with 1.X versions of Angular but stopped after v4 and I didn't 
 
 So I chose Ionic because I could craft PWAs, hybrid and cross-platform mobile apps and it could also (and does) create iOS and Android apps that seamlessly work together. Ionic also lets you employ various UI elements in the application framework (filtration, navigation, inputs, etc.) and I could use Ionic with Angular, Vue, or React which seemed like a bonus.
 
-## Ionic Makes Me THink Back
+## Ionic Makes Me Think Back
 
 [I started tinkering around with Ionic](https://toddl.dev/posts/ionic-and-vue-part-one/) and of course, I have yet to follow up with an article on my progress (coming soon!) but it reminds me a lot of [ColdFusion](https://coldfusion.adobe.com/) and it is because of the custom tags. ColdFusion with their tags:
 
