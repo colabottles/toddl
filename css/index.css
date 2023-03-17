@@ -1460,11 +1460,9 @@ img.lazyload {
     flex-wrap: wrap;
   }
 
-  .meta {
-    display: grid;
-    grid-column: 2 / 8;
-    justify-content: center;
-    margin-left: 1rem
+  .meta,
+  nav.a11y-webring-club {
+    display: block;
   }
 
   .footer {
