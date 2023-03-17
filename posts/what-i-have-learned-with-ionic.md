@@ -10,6 +10,8 @@ tags:
 layout: layouts/post.njk
 ---
 
+![The Ionic logo in blue](https://res.cloudinary.com/colabottles/image/upload/v1679077487/ionic_logotype_blue_jde7di.png)
+
 So for the past three-plus months, I have been diving into Ionic and Vue, but namely, getting a good grasp of Ionic and what the company has to offer developers. It is amazing.
 
 ## A Little History
@@ -112,4 +114,4 @@ Well, I'd like to get into DevRel (Developer Relations) once a transition out of
 
 My main goal. Get hired by a company that will allow me to travel to and speak at conferences on the importance of accessibility or making mobile apps accessible or whatever. Just being there and educating at this point in my career. I'll even be more than happy to do booth duty and talk with people.
 
-Maybe for Ionic&quest; Maybe for another company&quest; Maybe it may be time for me to hang up the whole tech career&quest; I don't know yet. I do know that I am having fun learning and getting back to my roots of development and coding. Ionic brought out the old Todd.
+Maybe for Ionic&quest; Maybe for another company&quest; Maybe it may be time for me to hang up the whole tech career&quest; I don't know yet. I do know that I am having fun learning and getting back to my roots of development and coding. Ionic brought out the Todd from the early days that **LOVED** to code and learn.

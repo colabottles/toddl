@@ -184,6 +184,7 @@ q:before {
   --font-family-serif: Georgia, 'Times New Roman', serif;
   --font-family-heading-sm: 'Work Sans', Arial, Helvetica, sans-serif;
   --font-family-mono: 'Cascadia Code', monospace;
+  --font-weight-bolder: 900;
   --font-size: 140%;
   --line-height: 1.5;
   --line-height-heading: 1;
@@ -199,6 +200,13 @@ q:before {
   font-weight: 100 900;
   font-style: normal;
 }
+
+/* @font-face {
+  font-family: 'EBGaramond-Regular';
+  src: url("../fonts/EBGaramond-VariableFont_wght.ttf") format("ttf");
+  font-weight: 100 900;
+  font-style: normal;
+} */
 
 html {
   font-size: var(--font-size);
@@ -475,6 +483,10 @@ section {
   background: #fff;
   padding: .3em 0;
   border-bottom: 1px solid var(--grey)
+}
+
+strong {
+  font-weight: var(--font-weight-bolder);
 }
 
 p {
