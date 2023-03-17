@@ -13,7 +13,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-![The Ionic Framework logo, a blue circle enclosed in a thick blue, incomplete line with a small blue ball rotationg around the center circle, next to the Vue JS logo, a V-shaped logo with a light green V and a slate grey blue smaller V sitting inside the large V-shape.](https://res.cloudinary.com/colabottles/image/upload/v1670038063/images/vue-ionic-logos.png)
+![The Ionic Framework logo, a blue circle enclosed in a thick blue, incomplete line with a small blue ball rotating around the center circle, next to the Vue JS logo, a V-shaped logo with a light green V and a slate grey blue smaller V sitting inside the large V-shape.](https://res.cloudinary.com/colabottles/image/upload/v1670038063/images/vue-ionic-logos.png)
 
 ## Well, Here I Go!
 
@@ -47,7 +47,7 @@ Node.js is necessary to install, no problem, I already have it running on my mac
 npm install -g @ionic/cli
 ```
 
-I made a pre-made template to start. Just to get tthe feel of doing a quickstart of sorts by running:
+I made a pre-made template to start. Just to get the feel of doing a quickstart of sorts by running:
 
 ```js
 ionic start
