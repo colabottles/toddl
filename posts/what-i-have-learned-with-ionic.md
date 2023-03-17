@@ -112,7 +112,7 @@ You'll be able to find some of the best in Maine... that's all I'll say for now.
 
 ## What Else&quest;
 
-Well, I'd like to get into DevRel (Developer Relations) once a transition out of accessibility. I'll always advocate for accessibility, but as someone that has spent the past two years going to conferences and speaking to people about the importance of accessibility, I think that is something I would love to do for a company.
+Well, I'd like to get into DevRel (Developer Relations) once I transition out of accessibility. I'll always advocate for accessibility, but as someone that has spent the past two years going to conferences and speaking to people about the importance of accessibility, I think that is something I would love to do for a company.
 
 My main goal. Get hired by a company that will allow me to travel to and speak at conferences on the importance of accessibility or making mobile apps accessible or whatever. Just being there and educating at this point in my career. I'll even be more than happy to do booth duty and talk with people.
 
