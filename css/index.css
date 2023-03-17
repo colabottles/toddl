@@ -838,8 +838,8 @@ picture {
 }
 
 #headshot-todd {
-  max-width: 200px;
-  max-height: 200px;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 blockquote {
