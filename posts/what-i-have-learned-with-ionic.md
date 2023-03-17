@@ -1,7 +1,7 @@
 ---
 title: What I Have Learned With Ionic
 description: What I have learned with using the Ionic framework in three months.
-date: 2023-18-03 ## YYYY-MM-DD
+date: 2023-03-18 ## YYYY-MM-DD
 tags:
   - ionic
   - framework
