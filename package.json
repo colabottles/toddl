@@ -16,25 +16,24 @@
   "author": "Todd Libby <toddlibby@protonmail.com> (https://toddl.dev/)",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
-    "@netlify/plugin-lighthouse": "^4.0.3",
-    "luxon": "^3.1.1",
+    "luxon": "^3.3.0",
     "markdown-it": ">=13.0.1",
-    "markdown-it-anchor": "^8.6.6"
+    "markdown-it-anchor": "^8.6.7"
   },
   "dependencies": {
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
-    "axios": "^1.2.1",
+    "axios": "^1.3.4",
     "lodash": "^4.17.21",
     "markdown": "^0.5.0",
-    "netlify-cli": "^12.4.1",
+    "netlify-cli": "^13.1.6",
     "npm-upgrade": "^3.1.0",
     "save": "^2.9.0",
     "semver": "^7.3.8",
-    "speedlify-score": "^2.0.2"
+    "speedlify-score": "^3.0.0"
   },
   "main": ".eleventy.js",
   "keywords": []
