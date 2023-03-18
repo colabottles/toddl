@@ -3,16 +3,12 @@ layout: layouts/page.njk
 templateClass: tmpl-post
 ---
 
-<div class="blogroll-container">
+<div class="article-container">
   <section class="about">
-    <header class="article__header">
-      <h2 class="article__title">
-        {{title}}
-      </h2>
-    </header>
+      <h2 class="page-title">{{title}}</h2>
 
       <div class="container">
-        <h2>Hello there!</h2>
+        <h3 class="sub-heading">Hello there!</h3>
         <p>I'm Todd and I am happy and honored that you have invited me to speak at your event.</p>
         <dl>
           <dt>Name:</dt>
@@ -20,7 +16,7 @@ templateClass: tmpl-post
           <dt>Company:</dt>
           <dd>Independent Contractor</dd>
           <dt>Title:</dt>
-          <dd>Senior Accessibility Engineer</dd>
+          <dd>Senior Accessibility Engineer &amp; W3C Invited Expert</dd>
           <dt>Twitter:</dt>
           <dd><a href="https://twitter.com/toddlibby">@toddlibby</a></dd>
           <dt>Mastodon:</dt>
@@ -29,34 +25,46 @@ templateClass: tmpl-post
           <dd>Phoenix, AZ, USA</dd>
         </dl>
 
-        <h2>Bio</h2>
+        <h3 class="sub-heading">Bio</h3>
+        <p>I am a seasoned web developer and accessibility advocate who has dedicated the last 25 years of his life to advancing the field of web development. Born and raised in Portland, Maine, I developed a love for technology at a young age (9) and was captivated by the potential of the internet as a means of communication and innovation.</p>
+
+        <p>Being self-taught in all phases of web development and accessibility over the years, I gained a wealth of experience and expertise in web development, working on a diverse range of projects and platforms. I used those skills to work independently, assisting companies and small businesses in their branding and online prescence as well as consulting in the areas of making their digital assets accessible and buidling a culture of accessibility in those organizations.</p>
+
+        <p>After years of working independently, I moved on to working in the area of accessibility as an auditor and engineer for a couple of different organizations.</p>
+
+        <p>As my passion for web development grew, so did my commitment to making the internet a more inclusive and accessible space for everyone. I've become a staunch advocate for web accessibility, working tirelessly to ensure that websites and online content were accessible to people with disabilities as well as the practice of hiring people with disabilities.</p>
+
+        <p>In recent months, I have shifted my focus towards Developer Relations, a role that allows me to share my knowledge and enthusiasm for web technologies with others. I have become a speaker at conferences and events, where I educate attendees on the latest trends and best practices in web development and accessibility.</p>
+
+        <p>Throughout my career, I have remained true to my roots and values, always striving to make a positive impact in his community and beyond. My dedication and passion for web development and accessibility hopefully continues to inspire others in the field and beyond.</p>
 
         <div class="blogroll-container">
-          <h2>Videos</h2>
+          <h3 class="sub-heading">Videos</h3>
 
           <section class="videos">
-            <iframe width="460" height="215" src="https://www.youtube-nocookie.com/embed/M-5p1UCcj-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube-nocookie.com/embed/ZHIgB3AKPkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube-nocookie.com/embed/BhUtMZtv-DQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube-nocookie.com/embed/hNNl-t3Zx7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube-nocookie.com/embed/MqyEQ4BRPmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/M-5p1UCcj-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZHIgB3AKPkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BhUtMZtv-DQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hNNl-t3Zx7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MqyEQ4BRPmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7Fu3fClkR1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </section>
         </div>
 
-        {# <h2>Errata</h2>
-        <h3>Available to:</h3>
+        <h3 class="sub-heading">Errata</h3>
+        <h4 class="article-link">Available to:</h4>
+        <p>Speak at your event on the topics of accessibility, UX, Deceptive Patterns, web development, and inclusive design.</p>
+        <h4 class="article-link">Hard no's or passes:</h4>
+        <p>Events focused on alcohol or partying, events with lack of a diverse speaker roster, conferences without a Code of Conduct, Not having full access to the event, certain people that I will not present alongside of.</p>
+        {# <h4>My expectations:</h4>
 
-        <h3>Hard no's or passes:</h3>
+        <h4>What I bring to your event:</h4>
 
-        <h3>My expectations:</h3>
-
-        <h3>What I bring to your event:</h3>
-
-        <h3>Costs/expenses:</h3>
+        <h4>Costs/expenses:</h4>
 
         <h3>Miscellaneous:</h3>
 
-        <h3>Headshots:</h3> #}
+        <h4>Headshots:</h4> #}
       </div>
   </section>
 </div>
