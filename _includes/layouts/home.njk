@@ -27,6 +27,14 @@ templateClass: tmpl-home
         <!--- FIXME: THIS IS A LIST OF TEN -->
         <!--- TODO: Run through list with one method -->
         <li class="article-wrapper">
+          {%- for post in collections.schedules | reverse -%}
+          <a href="{{ post.url }}">
+            <h4 class="article-link">{{ post.data.title }}</h4>
+          </a>
+          {%- endfor -%}
+        </li>
+
+        <li class="article-wrapper">
           {%- for post in collections.ioniclearning1 | reverse -%}
           <a href="{{ post.url }}">
             <h4 class="article-link">{{ post.data.title }}</h4>
@@ -92,14 +100,6 @@ templateClass: tmpl-home
 
         <li class="article-wrapper">
           {%- for post in collections.speakerfamily | reverse -%}
-          <a href="{{ post.url }}">
-            <h4 class="article-link">{{ post.data.title }}</h4>
-          </a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.organizers | reverse -%}
           <a href="{{ post.url }}">
             <h4 class="article-link">{{ post.data.title }}</h4>
           </a>
