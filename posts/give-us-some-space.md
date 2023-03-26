@@ -27,8 +27,6 @@ Spread us out evenly throughout your event. Let us have our talks and then the r
 
 ## Stop Saying You Have A Diverse Range Of Topics
 
-Please. You might have, but when you're stacking the accessibility talks like pancakes, on top of each other, not too many people will be interested. Or perhaps, not many people will want to deal with the after lunch food coma, topic, sitting through fifty minutes of me talking about Deceptive Patterns and the FAST framework, because it will turn into an after noon snore fest!
-
 If you're going to pass up accessibility talks, and other talks that you turn down because it "might not fit in" or "it doesn't match what the conference is about". Then stop saying you have a diversified field of topics. Accessibility is one of those topics that should be discussed about every day and there should be at least two talks at your conference that deals with accessibility.
 
 ## Some Suggestions
