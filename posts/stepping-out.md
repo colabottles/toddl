@@ -1,7 +1,7 @@
 ---
 title: Stepping Out
 description: I am stepping out of the Accessibility arena and here's why.
-date: 2023-11-04 ## YYYY-MM-DD
+date: 2023-04-12 ## YYYY-MM-DD
 tags:
   - elitism
   - accessibility
