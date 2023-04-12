@@ -391,8 +391,12 @@ section.article__body h2 {
 
 section.article__body ol,
 section.article__body ul {
-  margin-left: 5rem;
+  margin-left: 5em;
   padding: 1rem 0
+}
+
+.article__body blockquote ol {
+  margin-left: 2em;
 }
 
 .article-sections {
@@ -858,14 +862,14 @@ picture {
 }
 
 blockquote {
-  background-color: transparent;
+  background-color: #9291911f;
   border-left: 5px solid var(--ecto);
   font-family: var(--font-family-serif);
   font-size: var(--font-size-article);
   font-style: oblique;
   line-height: var(--line-height);
-  margin: 2rem 0;
-  padding: .5rem 2rem;
+  margin: 1rem 0;
+  padding: 0 2rem;
   width: auto
 }
 

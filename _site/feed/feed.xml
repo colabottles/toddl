@@ -4,7 +4,7 @@
 	<subtitle>A web development, design and technology blog.</subtitle>
 	<link href="https://toddl.dev/feed/feed.xml" rel="self"/>
 	<link href="https://toddl.dev/"/>
-	<updated>2023-03-17T00:00:00Z</updated>
+	<updated>2023-11-04T00:00:00Z</updated>
 	<id>https://toddl.dev/</id>
 	<author>
 		<name>Todd Libby</name>
@@ -1740,6 +1740,33 @@ Hopefully the coming &lt;a href=&quot;https://www.w3.org/WAI/WCAG22/Understandin
 	</entry>
 	
 	<entry>
+		<title>Give Us Some Space!</title>
+		<link href="https://toddl.dev/posts/give-us-some-space/"/>
+		<updated>2022-03-25T00:00:00Z</updated>
+		<id>https://toddl.dev/posts/give-us-some-space/</id>
+		<content type="html">&lt;h2 id=&quot;there&#39;s-a-better-way&quot; tabindex=&quot;-1&quot;&gt;There&#39;s A Better Way&lt;/h2&gt;
+&lt;p&gt;There is nothing more that I like than going to ao conference and speaking. Even more so, when my speaker family is there and giving a talk, I love to attend and show my support.&lt;/p&gt;
+&lt;p&gt;To be there in the audience and hopefully be a show of strength and a cheering section. Because there is nothing I&#39;d rather do than to see them knock it out of the park and give the greatest conference talk ever recorded in the annals of human history!&lt;/p&gt;
+&lt;p&gt;But most of the time, it isn&#39;t that easy or it just does not happen. There&#39;s a better way to do this organizers!&lt;/p&gt;
+&lt;h2 id=&quot;a-better-way-to-do-what%3F!&quot; tabindex=&quot;-1&quot;&gt;A Better Way To Do What?!&lt;/h2&gt;
+&lt;p&gt;Scheduling. Most of the time, my accessibility colleagues and I are discussing why our talks are overlapping. Stop doing it! Also, stop scheduling us at the end of the conference! You know? Late in the day, second-to-last or last talk of the day when everyone is tired and wants to get the hell out of there. Stop it!&lt;/p&gt;
+&lt;p&gt;Spread us out evenly throughout your event. Let us have our talks and then the rest of the time to support our colleagues! A morning accessibility talk, one before lunch, one after lunch but when everyone isn&#39;t in a food coma. Or a very hard-hitting talk that you can schedule last. What about a keynote?!&lt;/p&gt;
+&lt;h2 id=&quot;stop-saying-you-have-a-diverse-range-of-topics&quot; tabindex=&quot;-1&quot;&gt;Stop Saying You Have A Diverse Range Of Topics&lt;/h2&gt;
+&lt;p&gt;If you&#39;re going to pass up accessibility talks, and other talks that you turn down because it &amp;quot;might not fit in&amp;quot; or &amp;quot;it doesn&#39;t match what the conference is about&amp;quot;. Then stop saying you have a diversified field of topics. Accessibility is one of those topics that should be discussed about every day and there should be at least two talks at your conference that deals with accessibility.&lt;/p&gt;
+&lt;h2 id=&quot;some-suggestions&quot; tabindex=&quot;-1&quot;&gt;Some Suggestions&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Space out the accessibility talks in your multi-track event. Please don&#39;t stack us against each other. We want to educate as much of the masses as possible.&lt;/li&gt;
+&lt;li&gt;If you tout a diverse field of topics at your event, have at least 4 accessibility talks. 2-3 if you have a smaller event.&lt;/li&gt;
+&lt;li&gt;If your events has a common theme to it (React, Vue, DataViz, etc.) then look for us. We are out there! We would love to talk at your event!&lt;/li&gt;
+&lt;li&gt;Look for the topics that may or may not be covered with your event and find a way to get those talks in your event. Widen your horizons, if you can. (please do!).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;summary&quot; tabindex=&quot;-1&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Event organizers, please give us some space with your scheduling. I know it is a difficult job, to schedule all these talks in a very limited time frame but I know you can do it. Especially the accessibility practitioners and professionals. You probably have your fifteen React talks, your DevOps talks, your multiple speakers with multiple talks on going off the grid or automating your office to make your coffee before you get to your computer in the morning.&lt;/p&gt;
+&lt;p&gt;Let us be spaced out so everyone that is interested can enjoy &lt;strong&gt;all&lt;/strong&gt; of the accessibility talks, or all the talks that you stack on each other. Also, if you could, let&#39;s get some more women speakers, more underrepresented speakers, more trans, LGBTQ+ speakers please! Even if it means I am going to be cast to the wayside. I&#39;m willing to take the hit for those groups of people.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>It Has Been A Minute</title>
 		<link href="https://toddl.dev/posts/it-has-been-a-minute/"/>
 		<updated>2022-10-07T00:00:00Z</updated>
@@ -2303,6 +2330,46 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 &lt;p&gt;Well, I&#39;d like to get into DevRel (Developer Relations) once I transition out of accessibility. I&#39;ll always advocate for accessibility, but as someone that has spent the past two years going to conferences and speaking to people about the importance of accessibility, I think that is something I would love to do for a company.&lt;/p&gt;
 &lt;p&gt;My main goal. Get hired by a company that will allow me to travel to and speak at conferences on the importance of accessibility or making mobile apps accessible or whatever. Just being there and educating at this point in my career. I&#39;ll even be more than happy to do booth duty and talk with people.&lt;/p&gt;
 &lt;p&gt;Maybe for Ionic? Maybe for another company? Maybe it may be time for me to hang up the whole tech career? I don&#39;t know yet. I do know that I am having fun learning and getting back to my roots of development and coding. Ionic brought out the Todd from the early days that &lt;strong&gt;LOVED&lt;/strong&gt; to code and learn.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Stepping Out</title>
+		<link href="https://toddl.dev/posts/stepping-out/"/>
+		<updated>2023-11-04T00:00:00Z</updated>
+		<id>https://toddl.dev/posts/stepping-out/</id>
+		<content type="html">&lt;h2 id=&quot;it&#39;s-a-great-song!&quot; tabindex=&quot;-1&quot;&gt;It&#39;s a great song!&lt;/h2&gt;
+&lt;p&gt;Joe Jackson has a timeless catchy tune with that one. That&#39;s not what this is about though. This is about me and stepping out of the accessibility space and time for a change.&lt;/p&gt;
+&lt;p&gt;It&#39;s been a bit. I&#39;ve been thinking about this and where I want to go moving forward in the next few months, that&#39;s not in the direction that I am currently in. It&#39;s a total &amp;quot;back to square one&amp;quot; type thing. Back to where I was over forty years ago when I first sat in front of a Commodore PET 2001 Series computer and wondered how this screen was taking information from a cassette tape and making a game appear on the screen.&lt;/p&gt;
+&lt;p&gt;The last couple of days has solidified that I am making the right call. Albeit, for reasons that I normally don&#39;t let get to me, but it also affects other people who are just starting their accessibility journeys, or who have began, but are not far along yet. That reason is elitism by so-called &amp;quot;professionals&amp;quot; or &amp;quot;experts&amp;quot;.&lt;/p&gt;
+&lt;h2 id=&quot;your-high-horse-doesn&#39;t-look-good-under-you&quot; tabindex=&quot;-1&quot;&gt;Your High Horse Doesn&#39;t Look Good Under You&lt;/h2&gt;
+&lt;p&gt;When asking questions or making comments, it is not often you see a snarky reply. Not in the accessibility space that isn&#39;t a literal jab at you. I can attribute that to one person who thinks he might be a Don Rickles, but comes off aas the Carlos Mencia of Carrot Tops, a.k.a. the worst of the worst hacks when it comes to grating humor. Matter of fact, you&#39;re showing your whole ass and that&#39;s something we don&#39;t need to see. People other than myself are aware of it, they message me privately about it. You&#39;re a fool, and known as an utter turd in the accessibility space.&lt;/p&gt;
+&lt;p&gt;No one speaks publicly of this, and not to break any code of conducts anywhere, I won&#39;t until pushed to that brink of where I don&#39;t care any less if I get tossed from a community. Before I do though, I&#39;ll let you know how much of a turd you really are. Maybe even in a tweet storm, who knows? I know I won&#39;t let it get that far just yet.&lt;/p&gt;
+&lt;p&gt;Do yourself a favor, funny guy. Get off your high horse. You&#39;re a smart guy, I mean you write articles galore, you do constant work in the accessibility space, you seem to have made a good living for yourself. Your social interactions though suck. I mean, they suck so bad, Dyson doesn&#39;t have a vacuum cleaner that compares to you. You&#39;re &lt;strong&gt;NOT&lt;/strong&gt; funny. Not at all.&lt;/p&gt;
+&lt;h2 id=&quot;you&#39;re-salty-dude.-chill-out!&quot; tabindex=&quot;-1&quot;&gt;You&#39;re Salty Dude. Chill Out!&lt;/h2&gt;
+&lt;p&gt;A little. Probably because I did not return serve. I decided to take the high road. I&#39;m very much better than that. If you&#39;re looking for an example, or a name, I&#39;ll be more than happy to give you the example. The name? We shall see. It is more than just about myself though, it is about the people turned off by the same stupidity and elitism in the accessibility space. People don&#39;t like it when you point that out too. They have unfollowed me, which is fine. They have ghosted me, again, fine.&lt;/p&gt;
+&lt;p&gt;The elitist attitude though, the little quips you think are okay to make like:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;did you test that?&lt;/li&gt;
+&lt;li&gt;no.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Do you even know what goes on in someone&#39;s life when they are online, in their office, and multi-tasking? You don&#39;t. Don&#39;t assume you do. You make an ass out of yourself when you do. That person may have a lot going on, they may have several things going on, they may be going back and forth like I do daily between animals, work, study, projects, finding time to get every day things done like pay bills, get taxes done. But we&#39;re supposed to remember that you are watching and all-seeing like The Eye of Sauron. You got it all figured out.&lt;/p&gt;
+&lt;p&gt;You turn people off faster than dudes at a bar looking to score with awful pick-up lines.&lt;/p&gt;
+&lt;h2 id=&quot;a-pretty-even-track-record&quot; tabindex=&quot;-1&quot;&gt;A Pretty Even Track Record&lt;/h2&gt;
+&lt;p&gt;In our interactions, half the time you&#39;ve been courteous and shown that professionalism. The other half, you&#39;re an utter toolbox. We have interacted four times total. Not a great average unless you&#39;re in sports. The positive encounters have been terrific. I&#39;ve learned. That&#39;s what we expect out of those that are the &amp;quot;experts&amp;quot;. Not the dick-ish, frat bro swipes you make. I know with the positive interactions, you&#39;re a decent person. I have seen others and yourself with positive interactions and you appear as a delightful person to hang around with. So let&#39;s go back to those comments.&lt;/p&gt;
+&lt;p&gt;Did I test it? No. I was all over the place and that&#39;s because I had chaos going on around me. It happens. Should I have? Yes. I was also engaged in a debate and that was eating up time it should have never eaten up during my day. That, in turn, drained me mentally. Therefore, you got what you finger-wagged me about. Did the test turn out like I thought? Sure did! You didn&#39;t have to be an utter prick though. Noi matter if you thought it wasn&#39;t harmless or not. Others messaged me about how dickish it really was and that behavior is commonplace with you.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;It doesn&#39;t matter what people think of me, it is none of my business.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You couldn&#39;t care less probably and that is to be expected. But when it affects people and when it affects the space you represent, you may want to dial it in Don Rickles and be a lot more humble. If you are trying to be a Jeff Ross, the &amp;quot;Roastmaster General&amp;quot; of accessibility, then you are going about it all wrong. Stick to roasting the overlay companies and their representatives.&lt;/p&gt;
+&lt;h2 id=&quot;burn-out&quot; tabindex=&quot;-1&quot;&gt;Burn Out&lt;/h2&gt;
+&lt;p&gt;This is more than a beef between me and another. It is also about burn out. I am trying to get out of that hole currently and it seems every time I make progress, something or someone comes out of the weeds and throws a wrench into the works. It&#39;s time to change. Which means it is time for me to leave accessibility. Not advocacy, but the work. I can&#39;t do it anymore. It&#39;s Sisyphean at this point for me. no matter how much time I take off.&lt;/p&gt;
+&lt;h2 id=&quot;now-what%3F&quot; tabindex=&quot;-1&quot;&gt;Now What?&lt;/h2&gt;
+&lt;p&gt;I have my mind set on a couple things in the future. We shall see where that goes. I will be giving those my utmost attention as I have been for months now.&lt;/p&gt;
+&lt;h2 id=&quot;summary&quot; tabindex=&quot;-1&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;I&#39;m going to always advocate but the elitists have soured the accessibility space for me. The negative bullshit has frayed my last nerve obviously. Or I wouldn&#39;t be writing this. This is the last I even give of this topic. I have better use of my time, this is my therapy though. Once this is done, I&#39;ll go on and this will be water under the bridge. To the elitists, those professionals that want to continue in this behavior, this is on you. As is the people that are avoiding accessibility because you are angry, you are sour, you are a curmudgeon, you are a legend in your own mind. Grow up. Smarten up.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
