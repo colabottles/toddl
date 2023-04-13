@@ -26,7 +26,9 @@ I'm no longer interested in auditing or remediation. I have done too much of it 
 
 ## Now What&quest;
 
-I have some irons in the fire. Make it known I am set on getting a job in Developer Relations or Developer Experience. I have my goal set on one company that I have been engrossed in their documentation for a few months now. I have my resume out and some interviews have been had, but my goal. That goal is where I want to be in a few months. Because I know that I can excel at it, I know I'd be good at it, and I know the 12 year old Todd who would pull all-nighters and study code and read computer books, manuals, magazines, take apart computers and put them back together again, I know that kid would be back and the curiosity will return which drove the fire under me.
+I have some irons in the fire. Make it known I am set on getting a job in Developer Relations or Developer Experience. I have my goal set on one company that I have been engrossed in their documentation for a few months now. I have my resume out and some interviews have been had, but my goal.
+
+That goal is where I want to be in a few months. Because I know that I can excel at it, I know I'd be good at it, and I know the 12 year old Todd who would pull all-nighters and study code and read computer books, manuals, magazines, take apart computers and put them back together again, I know that kid would be back and the curiosity will return which drove the fire under me.
 
 It isn't up to me to decide, that's not in my control. My control lies in how I get there and present myself.
 
