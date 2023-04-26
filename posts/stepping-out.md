@@ -20,9 +20,9 @@ The last couple of days has solidified that I am making the right call. I want t
 
 ## Burn Out
 
-This is more than a beef between me and another. It is also about burn out. I am trying to get out of that hole currently and it seems every time I make progress, something or someone comes out of the weeds and throws a wrench into the works. It's time to change. Which means it is time for me to leave accessibility. Not advocacy, but the work. I can't do it anymore. It's Sisyphean at this point for me. no matter how much time I take off.
+It is also about burn out. I am trying to get out of that hole currently and it seems every time I make progress, something or someone comes out of the weeds and throws a wrench into the works. It's time for change. Which means it is time for me to leave accessibility. Not advocacy, but the work. I can't do it anymore. It's Sisyphean at this point for me. no matter how much time I take off.
 
-I'm no longer interested in auditing or remediation. I have done too much of it the past decade, too much of it, and I am out of gas.
+I'm no longer interested in auditing or remediation. I have done too much of it the past decade, too much of it, and I am out of gas. I am beyond exhausted.
 
 ## Now What&quest;
 
