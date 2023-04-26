@@ -120,4 +120,6 @@ I won't go into the specifics here until another installment of this series, but
 
 Again, this was a very high-level overview of the file structure of the Ionic/Vue application and the major parts of the folder structure.
 
+I'll get more into the deeper parts of the template files, router, and more later in the series.
+
 <!-- [Part three of the series is here if you want to read on](https://toddl.dev/posts/ionic-and-vue-part-three.md) -->

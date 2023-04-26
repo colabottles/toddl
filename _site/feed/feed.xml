@@ -2385,6 +2385,7 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 &lt;p&gt;I won&#39;t go into the specifics here until another installment of this series, but it won&#39;t be too long before I dive into that part.&lt;/p&gt;
 &lt;h2 id=&quot;next-steps&quot; tabindex=&quot;-1&quot;&gt;Next Steps&lt;/h2&gt;
 &lt;p&gt;Again, this was a very high-level overview of the file structure of the Ionic/Vue application and the major parts of the folder structure.&lt;/p&gt;
+&lt;p&gt;I&#39;ll get more into the deeper parts of the template files, router, and more later in the series.&lt;/p&gt;
 &lt;!-- [Part three of the series is here if you want to read on](https://toddl.dev/posts/ionic-and-vue-part-three.md) --&gt;
 </content>
 	</entry>
