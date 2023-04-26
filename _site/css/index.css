@@ -266,18 +266,19 @@ nav {
 }
 
 nav.a11y-webring-club {
-  align-items: center;
-  display: flex;
+  display: block;
   color: var(--ecto);
-  gap: 1.5em;
+  margin: 2em 0;
+  line-height: 1;
 }
 
 .a11y-webring-club ul {
-  display: flex;
+  display: inline-block;
 }
 
 .a11y-webring-club li {
   list-style-type: none;
+  margin: 0.5em 0;
 }
 
 .a11y-webring-club a {
