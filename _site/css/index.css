@@ -1521,6 +1521,21 @@ img.lazyload {
   }
 }
 
+code {
+  font-family: 'Cascadia Code', 'Overpass Mono', monospace;
+  font-size: clamp(0.5rem, 0.25rem + 1vw, 0.75rem);
+  line-height: 1.5;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  tab-size: 2;
+  hyphens: none;
+  background: #1e1e1a;
+  color: var(--ecto)
+}
+
 code[class*=language-],
 pre[class*=language-] {
   font-family: 'Cascadia Code', 'Overpass Mono', monospace;
