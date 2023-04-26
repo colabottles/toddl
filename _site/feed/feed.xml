@@ -2366,9 +2366,7 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 &lt;h2 id=&quot;file-structure&quot; tabindex=&quot;-1&quot;&gt;File Structure&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;NOTE: This is an introductory overview and this section is from the generated files and folders from running the ionic start command. There are more folders and more comprehensive ways to set things up. This is my experience through the Ionic CLI.&lt;/p&gt;
-&lt;blockquote&gt;
 &lt;p&gt;This also takes into consideration you have familiarity with the node_modules folder and test folder if you&#39;re testing with Jest and/or Cypress. I will be going over the testing stuff later on in this series.&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;src&quot; tabindex=&quot;-1&quot;&gt;src&lt;/h2&gt;
 &lt;p&gt;This folder is where the bulk of the work will be done to create your application. This folder is where much of the work, and frankly nearly all of the work will be done in.&lt;/p&gt;

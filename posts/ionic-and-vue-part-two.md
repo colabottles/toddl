@@ -21,7 +21,7 @@ It has been a bit, but following up on the [first part](https://toddl.dev/posts/
 
 > NOTE: This is an introductory overview and this section is from the generated files and folders from running the ionic start command. There are more folders and more comprehensive ways to set things up. This is my experience through the Ionic CLI.
 >
-> > This also takes into consideration you have familiarity with the node_modules folder and test folder if you're testing with Jest and/or Cypress. I will be going over the testing stuff later on in this series.
+> This also takes into consideration you have familiarity with the node_modules folder and test folder if you're testing with Jest and/or Cypress. I will be going over the testing stuff later on in this series.
 
 ## src
 
