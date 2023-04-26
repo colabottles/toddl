@@ -387,21 +387,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/meetings/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/zoom/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/chats/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/development/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -413,6 +398,21 @@
   
   <url>
     <loc>https://toddl.dev/tags/fonts/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/meetings/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/zoom/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/chats/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -502,22 +502,22 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/schedules/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/talks/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/general/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
   <url>
     <loc>https://toddl.dev/tags/twentytwenty/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/schedules/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/talks/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -577,21 +577,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/random/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/miscellaneous/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/slacker/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/a11y/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -617,6 +602,11 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/adventure/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/targetsize/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -627,7 +617,17 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/adventure/</loc>
+    <loc>https://toddl.dev/tags/random/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/miscellaneous/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/slacker/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
