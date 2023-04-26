@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="description" content="My deep dive into learning Ionic and Vue.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+    <title>Ionic and Vue, Part Two</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" class="page-title" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
+      </header>
+
+      <main id="main" class="inner" tabindex="-1">
+        
+<div class="article-container">
+  <article>
+
+    <h2 class="article__title">Ionic and Vue, Part Two</h2>
+    <header class="article__header">
+      <div class="article__meta">
+        <time>25 April, 2023</time>
+      </div>
+    </header>
+
+    <section class="article__body">
+      <p><img src="https://res.cloudinary.com/colabottles/image/upload/v1670038063/images/vue-ionic-logos.png" alt="The Ionic Framework logo, a blue circle enclosed in a thick blue, incomplete line with a small blue ball rotating around the center circle, next to the Vue JS logo, a V-shaped logo with a light green V and a slate grey blue smaller V sitting inside the large V-shape."></p>
+<p>It has been a bit, but following up on the <a href="https://toddl.dev/posts/ionic-and-vue-part-one/">first part</a> of this series, I'm going to be diving into file structure, so pitter patter, let's get at 'er!</p>
+<h2 id="file-structure" tabindex="-1">File Structure</h2>
+<blockquote>
+<p>NOTE: This is an introductory overview and this section is from the generated files and folders from running the ionic start command. There are more folders and more comprehensive ways to set things up. This is my experience through the Ionic CLI.</p>
+<blockquote>
+<p>This also takes into consideration you have familiarity with the node_modules folder and test folder if you're testing with Jest and/or Cypress. I will be going over the testing stuff later on in this series.</p>
+</blockquote>
+</blockquote>
+<h2 id="src" tabindex="-1">src</h2>
+<p>This folder is where the bulk of the work will be done to create your application. This folder is where much of the work, and frankly nearly all of the work will be done in.</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1682433572/vue-example.png" alt="The file structure shown for a Vue and Ionic template showing files in the src folder."></p>
+<h2 id="router" tabindex="-1">router</h2>
+<p>The <code>router</code> folder is where all the routes are kept, added, and each route has its View component with route name. So the <code>index.ts</code> file will point to the <code>HomePage.vue</code> file. The route points to the HomePage view.</p>
+<p>The <code>Home</code> route is defined as the default path.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> HomePage <span class="token keyword">from</span> <span class="token string">'../views/HomePage.vue'</span></code></pre>
+<h2 id="theme" tabindex="-1">theme</h2>
+<p>This is the folder that holds the stylesheets for your project. You can <a href="https://ionicframework.com/docs/theming/basics">find out more about theming</a> from the Ionic docs here.</p>
+<p>Global theming for the project can be defined here, Ionic has such names as <code>success</code>, <code>danger</code>, <code>warning</code>, and more for colors for different elements in the UI.</p>
+<h2 id="views" tabindex="-1">views</h2>
+<p>The <code>views</code> folder is what is render for what page. <code>HomePage.vue</code> is rendered when the <code>Home</code> route is defined in the <code>index.ts</code> file. The same would be for <code>ContactPage.vue</code>, <code>AboutPage.vue</code>, and others.</p>
+<p>The home page code looks something like this:</p>
+<pre class="language-js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">></span><br>  <span class="token operator">&lt;</span>ion<span class="token operator">-</span>page<span class="token operator">></span><br>    <span class="token operator">&lt;</span>ion<span class="token operator">-</span>header <span class="token operator">:</span>translucent<span class="token operator">=</span><span class="token string">"true"</span><span class="token operator">></span><br>      <span class="token operator">&lt;</span>ion<span class="token operator">-</span>toolbar<span class="token operator">></span><br>        <span class="token operator">&lt;</span>ion<span class="token operator">-</span>title<span class="token operator">></span>Blank<span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>title<span class="token operator">></span><br>      <span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>toolbar<span class="token operator">></span><br>    <span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>header<span class="token operator">></span><br><br>    <span class="token operator">&lt;</span>ion<span class="token operator">-</span>content <span class="token operator">:</span>fullscreen<span class="token operator">=</span><span class="token string">"true"</span><span class="token operator">></span><br>      <span class="token operator">&lt;</span>ion<span class="token operator">-</span>header collapse<span class="token operator">=</span><span class="token string">"condense"</span><span class="token operator">></span><br>        <span class="token operator">&lt;</span>ion<span class="token operator">-</span>toolbar<span class="token operator">></span><br>          <span class="token operator">&lt;</span>ion<span class="token operator">-</span>title size<span class="token operator">=</span><span class="token string">"large"</span><span class="token operator">></span>Blank<span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>title<span class="token operator">></span><br>        <span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>toolbar<span class="token operator">></span><br>      <span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>header<span class="token operator">></span><br><br>      <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"container"</span><span class="token operator">></span><br>        <span class="token operator">&lt;</span>strong<span class="token operator">></span>Ready to create an app<span class="token operator">?</span><span class="token operator">&lt;</span><span class="token operator">/</span>strong<span class="token operator">></span><br>        <span class="token operator">&lt;</span>p<span class="token operator">></span>Start <span class="token keyword">with</span> Ionic<br>          <span class="token operator">&lt;</span>a<br>          target<span class="token operator">=</span><span class="token string">"_blank"</span><br>          rel<span class="token operator">=</span><span class="token string">"noopener noreferrer"</span><br>          href<span class="token operator">=</span><span class="token string">"https://ionicframework.com/docs/components"</span><span class="token operator">></span><br>          <span class="token constant">UI</span> Components<br>          <span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span><br>        <span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span><br>      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><br>    <span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>content<span class="token operator">></span><br>  <span class="token operator">&lt;</span><span class="token operator">/</span>ion<span class="token operator">-</span>page<span class="token operator">></span><br><span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span><br><br><span class="token operator">&lt;</span>script setup lang<span class="token operator">=</span><span class="token string">"ts"</span><span class="token operator">></span><br><span class="token keyword">import</span> <span class="token punctuation">{</span> IonContent<span class="token punctuation">,</span> IonHeader<span class="token punctuation">,</span> IonPage<span class="token punctuation">,</span> IonTitle<span class="token punctuation">,</span> IonToolbar <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ionic/vue'</span><span class="token punctuation">;</span><br><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><br><br><span class="token operator">&lt;</span>style scoped<span class="token operator">></span><br>#container <span class="token punctuation">{</span><br>  text<span class="token operator">-</span>align<span class="token operator">:</span> center<span class="token punctuation">;</span><br>  <span class="token literal-property property">position</span><span class="token operator">:</span> absolute<span class="token punctuation">;</span><br>  <span class="token literal-property property">left</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span><br>  <span class="token literal-property property">right</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span><br>  <span class="token literal-property property">top</span><span class="token operator">:</span> <span class="token number">50</span><span class="token operator">%</span><span class="token punctuation">;</span><br>  <span class="token literal-property property">transform</span><span class="token operator">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">50</span><span class="token operator">%</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br>#container strong <span class="token punctuation">{</span><br>  font<span class="token operator">-</span>size<span class="token operator">:</span> 20px<span class="token punctuation">;</span><br>  line<span class="token operator">-</span>height<span class="token operator">:</span> 26px<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br>#container p <span class="token punctuation">{</span><br>  font<span class="token operator">-</span>size<span class="token operator">:</span> 16px<span class="token punctuation">;</span><br>  line<span class="token operator">-</span>height<span class="token operator">:</span> 22px<span class="token punctuation">;</span><br>  <span class="token literal-property property">color</span><span class="token operator">:</span> #8c8c8c<span class="token punctuation">;</span><br>  <span class="token literal-property property">margin</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br>#container a <span class="token punctuation">{</span><br>  text<span class="token operator">-</span>decoration<span class="token operator">:</span> none<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">></span></code></pre>
+<p>I won't go into the specifics here until another installment of this series, but it won't be too long before I dive into that part.</p>
+<h2 id="next-steps" tabindex="-1">Next Steps</h2>
+<p>Again, this was a very high-level overview of the file structure of the Ionic/Vue application and the major parts of the folder structure.</p>
+<!-- [Part three of the series is here if you want to read on](https://toddl.dev/posts/ionic-and-vue-part-three.md) -->
+
+    </section>
+  </article>
+</div>
+      </main>
+
+      <footer class="meta footer">
+        <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
+          <ul class="nav list-inline">
+            <li class="nav-item"><a href="/podcast">Podcast</a></li>
+            <li class="nav-item"><a href="/support">Support</a></li>
+            <li class="nav-item"><a href="/archives">Archives</a></li>
+            <li class="nav-item"><a href="/uses">Uses</a></li>
+            <li class="nav-item"><a href="/events">Events</a></li>
+            <li class="nav-item"><a href="/resources">Resources</a></li>
+            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+            <li class="nav-item"><a href="/links">Links</a></li>
+            <li class="nav-item"><a href="/speaking">Speaking</a></li>
+            <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+          </ul>
+        <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
+
+        <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
+          <h2 id="a11y-webring-club">a11y-webring.club</h2>
+          <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
+          <ul>
+            <li><a rel="previous external" href="https://a11y-webring.club/prev">Previous website</a></li>
+            <li><a rel="external" href="https://a11y-webring.club/random">Random website</a></li>
+            <li><a rel="next external" href="https://a11y-webring.club/next">Next website</a></li>
+          </ul>
+        </nav>
+
+        <ul class="footer-icons">
+          <li>
+            <a href="https://codepen.io/colabottles/#" class="codepen">
+              <svg class="icon icon-codepen" focusable="false">
+                <title>My CodePen repository</title>
+                <desc id="codepen">A white 3D cube.</desc>
+                <use href="/img/symbol-defs.svg#icon-codepen"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/colabottles/" class="github">
+              <svg class="icon icon-github" focusable="false">
+                <title>My GitHub repository</title>
+                <desc id="github">A white OctoCat.</desc>
+                <use href="/img/symbol-defs.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://toddl.dev/feed/feed.xml" class="rss">
+              <svg class="icon icon-rss" focusable="false">
+                <title>The RSS feed for this site</title>
+                <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                <use href="/img/symbol-defs.svg#icon-rss"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
+              <svg class="icon icon-accessible-icon" focusable="false">
+                <title>WAVE test results for this site</title>
+                <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
