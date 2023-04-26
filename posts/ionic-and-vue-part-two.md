@@ -1,7 +1,7 @@
 ---
 title: Ionic and Vue, Part Two
 description: My deep dive into learning Ionic and Vue.
-date: 2023-04-25 ## YYYY-MM-DD
+date: 2023-04-26 ## YYYY-MM-DD
 tags:
   - ionic
   - vue
