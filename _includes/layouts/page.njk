@@ -11,6 +11,15 @@
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml">
     <link rel="icon" href="{{ '/img/favicon.png' | url }}" />
     <link rel="prefetch" as="script" href="{{ '../../svgxuse.min.js' | url }}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HR7NCWZV6Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HR7NCWZV6Q');
+    </script>
   </head>
   <body>
     <div class="wrapper">
