@@ -549,7 +549,7 @@ I was like, this is amazing, the largest crab I've ever seen that was alive. Thi
 [00:53:03] Carie: You should actually,
 [00:53:05] Homer: yeah,
 [00:53:05] Carie: because I think so one thing definitely have Shell Little on because she's got lots of really great, amazing thoughts about that topic.
-And there's other people of course, but that's one of the people that was first kind of sounding alarms. Obviously, Carl Groves made his overlay fact sheet. But I will say though, like coming from where I was, which was like at Deque and like people, everyone knew about accessibility didn't have to talk about it to where I am now, where no, like I'm one of the only ones who knows about it in the organization besides my small team.
+And there's other people of course, but that's one of the people that was first kind of sounding alarms. Obviously, Karl Groves made his overlay fact sheet. But I will say though, like coming from where I was, which was like at Deque and like people, everyone knew about accessibility didn't have to talk about it to where I am now, where no, like I'm one of the only ones who knows about it in the organization besides my small team.
 I can see how those things are confusing and the way they market it and the way they make it smooth. And of course, who wouldn't wanna be able to press a button or install this little piece of JavaScript and it fixes everything? Like that's a dream. I think the problem is, is that dream is not a reality.
 And so, but pe but the, they're being sold this dream. Right? And, and there's a lot of money behind that dream.
 [00:53:58] Homer: Yeah.
