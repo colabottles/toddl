@@ -4,7 +4,7 @@
 	<subtitle>A web development, design and technology blog.</subtitle>
 	<link href="https://toddl.dev/feed/feed.xml" rel="self"/>
 	<link href="https://toddl.dev/"/>
-	<updated>2023-04-26T00:00:00Z</updated>
+	<updated>2023-05-05T00:00:00Z</updated>
 	<id>https://toddl.dev/</id>
 	<author>
 		<name>Todd Libby</name>
@@ -2387,6 +2387,21 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 &lt;p&gt;Again, this was a very high-level overview of the file structure of the Ionic/Vue application and the major parts of the folder structure.&lt;/p&gt;
 &lt;p&gt;I&#39;ll get more into the deeper parts of the template files, router, and more later in the series.&lt;/p&gt;
 &lt;!-- [Part three of the series is here if you want to read on](https://toddl.dev/posts/ionic-and-vue-part-three.md) --&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>&lt;section&gt; is the New &lt;div&gt;</title>
+		<link href="https://toddl.dev/posts/section-is-the-new-div/"/>
+		<updated>2023-05-05T00:00:00Z</updated>
+		<id>https://toddl.dev/posts/section-is-the-new-div/</id>
+		<content type="html">&lt;h2 id=&quot;remember-when%E2%80%A6&quot; tabindex=&quot;-1&quot;&gt;Remember when…&lt;/h2&gt;
+&lt;p&gt;We used to have tables for layouts? Then we had the trusty &lt;code&gt;div&lt;/code&gt; element and it took off like a rocket! you see div soup as far as the eyes can see.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/i4JiDqwoV3A0ZO9d23/giphy.gif&quot; alt=&quot;A man with a blue shirt scanning the distance for something.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So since this craze started taking hold, many developers are grabbing the reins and sowing the seeds in the fields of web pages with divs. Planting and nurturing them until their web site blooms fully. A garden of divs for everyone to see.&lt;/p&gt;
+&lt;p&gt;Then the accessibility people said, &amp;quot;Wait a minute. Try not to use so many divs. They hold no semantic meaning and use semantic HTML elements like &lt;code&gt;section&lt;/code&gt; it is much better for accessibility.&amp;quot; Then the gardeners that are the developers started using the section element, and planting those seeds. And planting them. And planting them.&lt;/p&gt;
+&lt;p&gt;Now we have a garden, not only overflowing with &lt;code&gt;div&lt;/code&gt; elements, but that same garden we call the Web is not choking with the overplanting of &lt;code&gt;section&lt;/code&gt; elements.&lt;/p&gt;
+&lt;h2 id=&quot;know-when-to-hold-&#39;em&quot; tabindex=&quot;-1&quot;&gt;Know When To Hold &#39;Em&lt;/h2&gt;
 </content>
 	</entry>
 </feed>
