@@ -9,4 +9,4 @@ layout: layouts/post.njk
 
 [Josh Goldberg](https://toddl.dev/podcast/transcripts/goldberg)
 [Carie Fisher](https://toddl.dev/podcast/transcripts/fisher)
-<!-- [Carie Fisher](https://toddl.dev/podcast/transcripts/fisher) -->
+<!-- [Carie Fisher](https://toddl.dev/podcast/transcripts/compressedfm) -->
