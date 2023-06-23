@@ -17,7 +17,7 @@
       <header>
         <a href="#main" class="visible-hidden">Skip to content</a>
           <a href="{{ '/' | url }}" class="page-title" id="title">Todd Libby</a>
-            <nav aria-labelledby="blog">
+            <nav>
               <ul class="navigation main-nav">
                 {%- for nav in collections.nav | sort(attribute="date") -%}
                   <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
@@ -34,7 +34,7 @@
 
       <footer class="meta footer">
         <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
-          <nav class="footer-main-nav" aria-labelledby="podcast">
+          <nav class="footer-main-nav">
             <ul class="nav list-inline">
               <li class="nav-item"><a href="{{ '/podcast' | url }}">Podcast</a></li>
               <li class="nav-item"><a href="{{ '/support' | url }}">Support</a></li>
@@ -60,7 +60,7 @@
           </ul>
         </nav>
 
-        <nav class="footer-main-nav" aria-label="social icons">
+        <nav class="footer-secondary-nav" role="list">
           <ul class="footer-icons">
             <li>
               <a href="https://codepen.io/colabottles/#" class="codepen">

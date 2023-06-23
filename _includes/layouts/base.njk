@@ -17,7 +17,7 @@
       <header>
         <a href="#main" class="visible-hidden">Skip to content</a>
           <a href="{{ '/' | url }}" class="page-title" id="title">Todd Libby</a>
-            <nav aria-labelledby="blog">
+            <nav>
               <ul class="navigation main-nav">
                 {%- for nav in collections.nav | sort(attribute="date") -%}
                   <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
@@ -60,7 +60,7 @@
           </ul>
         </nav>
 
-        <nav class="footer-main-nav" aria-labelledby="social icons">
+        <nav class="footer-secondary-nav">
           <ul class="footer-icons">
             <li>
               <a href="https://codepen.io/colabottles/#" class="codepen">
