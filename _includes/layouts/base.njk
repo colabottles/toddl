@@ -37,24 +37,26 @@
             </nav>
       </header>
 
-      <main id="main" class="home" tabindex="-1">
+      <main id="main" class="home">
         {{ content | safe }}
       </main>
 
       <footer class="meta footer">
         <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="{{ '/podcast' | url }}">Podcast</a></li>
-            <li class="nav-item"><a href="{{ '/support' | url }}">Support</a></li>
-            <li class="nav-item"><a href="{{ '/archives' | url }}">Archives</a></li>
-            <li class="nav-item"><a href="{{ '/uses' | url }}">Uses</a></li>
-            <li class="nav-item"><a href="{{ '/events' | url }}">Events</a></li>
-            <li class="nav-item"><a href="{{ '/resources' | url }}">Resources</a></li>
-            <li class="nav-item"><a href="{{ '/blogroll' | url }}">Blogroll</a></li>
-            <li class="nav-item"><a href="{{ '/links' | url }}">Links</a></li>
-            <li class="nav-item"><a href="{{ '/speaking' | url }}">Speaking</a></li>
-            <li class="nav-item"><a href="{{ '/a11y' | url }}">Accessibility Statement</a></li>
-          </ul>
+          <nav class="footer-main-nav" aria-labelledby="footer-main-nav">
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="{{ '/podcast' | url }}">Podcast</a></li>
+              <li class="nav-item"><a href="{{ '/support' | url }}">Support</a></li>
+              <li class="nav-item"><a href="{{ '/archives' | url }}">Archives</a></li>
+              <li class="nav-item"><a href="{{ '/uses' | url }}">Uses</a></li>
+              <li class="nav-item"><a href="{{ '/events' | url }}">Events</a></li>
+              <li class="nav-item"><a href="{{ '/resources' | url }}">Resources</a></li>
+              <li class="nav-item"><a href="{{ '/blogroll' | url }}">Blogroll</a></li>
+              <li class="nav-item"><a href="{{ '/links' | url }}">Links</a></li>
+              <li class="nav-item"><a href="{{ '/speaking' | url }}">Speaking</a></li>
+              <li class="nav-item"><a href="{{ '/a11y' | url }}">Accessibility Statement</a></li>
+            </ul>
+          </nav>
         <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
 
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
@@ -67,7 +69,7 @@
           </ul>
         </nav>
 
-        <ul class="footer-icons">
+        <ul class="footer-icons" role="navigation">
           <li>
             <a href="https://codepen.io/colabottles/#" class="codepen">
               <svg class="icon icon-codepen" focusable="false">
