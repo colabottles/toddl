@@ -11,15 +11,6 @@
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml">
     <link rel="icon" href="{{ '/img/favicon.png' | url }}" />
     <link rel="prefetch" as="script" href="{{ '../../svgxuse.min.js' | url }}">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HR7NCWZV6Q"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-HR7NCWZV6Q');
-    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -37,24 +28,26 @@
             </nav>
       </header>
 
-      <main id="main" class="inner" tabindex="-1">
+      <main id="main" class="inner">
         {{ content | safe }}
       </main>
 
       <footer class="meta footer">
         <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="{{ '/podcast' | url }}">Podcast</a></li>
-            <li class="nav-item"><a href="{{ '/support' | url }}">Support</a></li>
-            <li class="nav-item"><a href="{{ '/archives' | url }}">Archives</a></li>
-            <li class="nav-item"><a href="{{ '/uses' | url }}">Uses</a></li>
-            <li class="nav-item"><a href="{{ '/events' | url }}">Events</a></li>
-            <li class="nav-item"><a href="{{ '/resources' | url }}">Resources</a></li>
-            <li class="nav-item"><a href="{{ '/blogroll' | url }}">Blogroll</a></li>
-            <li class="nav-item"><a href="{{ '/links' | url }}">Links</a></li>
-            <li class="nav-item"><a href="{{ '/speaking' | url }}">Speaking</a></li>
-            <li class="nav-item"><a href="{{ '/a11y' | url }}">Accessibility Statement</a></li>
-          </ul>
+          <nav class="footer-main-nav">
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="{{ '/podcast' | url }}">Podcast</a></li>
+              <li class="nav-item"><a href="{{ '/support' | url }}">Support</a></li>
+              <li class="nav-item"><a href="{{ '/archives' | url }}">Archives</a></li>
+              <li class="nav-item"><a href="{{ '/uses' | url }}">Uses</a></li>
+              <li class="nav-item"><a href="{{ '/events' | url }}">Events</a></li>
+              <li class="nav-item"><a href="{{ '/resources' | url }}">Resources</a></li>
+              <li class="nav-item"><a href="{{ '/blogroll' | url }}">Blogroll</a></li>
+              <li class="nav-item"><a href="{{ '/links' | url }}">Links</a></li>
+              <li class="nav-item"><a href="{{ '/speaking' | url }}">Speaking</a></li>
+              <li class="nav-item"><a href="{{ '/a11y' | url }}">Accessibility Statement</a></li>
+            </ul>
+          </nav>
         <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
 
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
@@ -67,44 +60,46 @@
           </ul>
         </nav>
 
-        <ul class="footer-icons">
-          <li>
-            <a href="https://codepen.io/colabottles/#" class="codepen">
-              <svg class="icon icon-codepen" focusable="false">
-                <title>My CodePen repository</title>
-                <desc id="codepen">A white 3D cube.</desc>
-                <use href="/img/symbol-defs.svg#icon-codepen"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/colabottles/" class="github">
-              <svg class="icon icon-github" focusable="false">
-                <title>My GitHub repository</title>
-                <desc id="github">A white OctoCat.</desc>
-                <use href="/img/symbol-defs.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://toddl.dev/feed/feed.xml" class="rss">
-              <svg class="icon icon-rss" focusable="false">
-                <title>The RSS feed for this site</title>
-                <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
-                <use href="/img/symbol-defs.svg#icon-rss"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
-              <svg class="icon icon-accessible-icon" focusable="false">
-                <title>WAVE test results for this site</title>
-                <desc id="a11y">A person in a wheelchair that is the color white.</desc>
-                <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <nav class="footer-main-nav">
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </footer>
     </div>
   </body>
