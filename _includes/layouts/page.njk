@@ -17,7 +17,7 @@
       <header>
         <a href="#main" class="visible-hidden">Skip to content</a>
           <a href="{{ '/' | url }}" class="page-title" id="title">Todd Libby</a>
-            <nav class="main-navigation" aria-label="main navigation">
+            <nav>
               <ul class="navigation main-nav">
                 {%- for nav in collections.nav | sort(attribute="date") -%}
                   <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
@@ -34,7 +34,7 @@
 
       <footer class="meta footer">
         <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
-          <nav class="footer-main-nav" aria-labelledby="todd">
+          <nav>
             <ul class="nav list-inline">
               <li class="nav-item"><a href="{{ '/podcast' | url }}">Podcast</a></li>
               <li class="nav-item"><a href="{{ '/support' | url }}">Support</a></li>
