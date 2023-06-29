@@ -29,10 +29,10 @@
     "axios": "^1.4.0",
     "lodash": "^4.17.21",
     "markdown": "^0.5.0",
-    "netlify-cli": "^15.6.0",
+    "netlify-cli": "^15.7.0",
     "npm-upgrade": "^3.1.0",
     "save": "^2.9.0",
-    "semver": "^7.5.2",
+    "semver": "^7.5.3",
     "speedlify-score": "^3.0.0"
   },
   "main": ".eleventy.js",
