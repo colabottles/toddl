@@ -1,0 +1,26 @@
+---
+layout: layouts/page.njk
+templateClass: tmpl-post
+---
+
+<div class="page-container">
+  <section class="about">
+    <header class="article__header">
+      <h2 class="article__title">
+        {{title}}
+      </h2>
+    </header>
+
+    <section class="article__body">
+      <div class="container">
+        <h2>Here is where you can find the recipes for all the delicious food I make on the [YouTube channel](https://youtube.com/@toddcooksstuff)!</h2>
+
+        <ul>
+          <li><a href="{{ '/food/barbecuesauce.md' | url }}">Barbecue Sauce</a></li>
+          <li><a href="{{ '/food/chicxsauce.md' | url }}">Chicken Dipping Sauce</a></li>
+          <li><a href="{{ '/food/ranchdressing.md' | url }}">Ranch Dressing</a></li>
+        </ul>
+      </div>
+    </section>
+  </section>
+</div>
