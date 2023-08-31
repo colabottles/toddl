@@ -38,19 +38,6 @@
     Content-Security-Policy = "default-src 'self'; style-src 'self'; form-action 'self'; script-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'self';"
 
 [[plugins]]
-  package = "@netlify/plugin-lighthouse"
-
-  # optional, fails build when a category is below a threshold
-  [plugins.inputs.thresholds]
-    performance = 0.1
-    accessibility = 0.1
-    best-practices = 0.1
-    seo = 0.1
-    pwa = 0.1
-
-  # optional, deploy the lighthouse report to a path under your site
-  [plugins.inputs]
-    output_path = "reports/lighthouse.html"
 
 # From https://www.hawksworx.com/blog/alias-your-mastodon-username-to-your-domain-with-one-netlify-config-setting/
 [[redirects]]
