@@ -1,7 +1,7 @@
 ---
 title: Front End Nerdery Podcast Season Three
 description: List of podcast transcripts by season.
-date: 2023-06-10
+date: 2023-08-31
 layout: layouts/post.njk
 ---
 
@@ -9,4 +9,5 @@ layout: layouts/post.njk
 
 [Josh Goldberg](https://toddl.dev/podcast/transcripts/goldberg)
 [Carie Fisher](https://toddl.dev/podcast/transcripts/fisher)
-<!-- [Carie Fisher](https://toddl.dev/podcast/transcripts/compressedfm) -->
+[Deceptive Patterns](https://toddl.dev/podcast/transcripts/deceptivepatterns)
+<!-- [Deceptive Patterns](https://toddl.dev/podcast/transcripts/deceptivepatterns) -->
