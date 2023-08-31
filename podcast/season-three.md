@@ -10,4 +10,4 @@ layout: layouts/post.njk
 [Josh Goldberg](https://toddl.dev/podcast/transcripts/goldberg)
 [Carie Fisher](https://toddl.dev/podcast/transcripts/fisher)
 [Deceptive Patterns](https://toddl.dev/podcast/transcripts/deceptivepatterns)
-<!-- [Deceptive Patterns](https://toddl.dev/podcast/transcripts/deceptivepatterns) -->
+<!-- [James Q. Quick &amp; Amy Dutton](https://toddl.dev/podcast/transcripts/compressedfm) -->
