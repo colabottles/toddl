@@ -31,3 +31,4 @@ t - teaspoon
 3. Continue to simmer for about 10-12 minutes or until thickened.
 4. Remove from heat and allow to cool. (The sauce will thicken slightly as it cools.)
 5. Use the sauce immediately, or refrigerate for later.
+6. Enjoy!

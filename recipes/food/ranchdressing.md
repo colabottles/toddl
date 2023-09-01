@@ -25,3 +25,4 @@ layout: layouts/post.njk
 2. Add the spices and whisk until combined.
 3. Add the lemon and whisk again.
 4. Pour into a jar and chill in the refrigerator until ready to serve. (Dressing stays good for around a week).
+5. Enjoy!

@@ -23,3 +23,4 @@ t - teaspoon
 
 1. Place all the ingredients in a small bowl and mix well.
 2. Refrigerate the sauce in an airtight container for a few hours before serving.
+3. Enjoy!
