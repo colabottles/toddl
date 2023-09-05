@@ -51,7 +51,14 @@ The reasons are your own, but when you snap back at me with "Why do you scream a
 is more accessible and easier to implement than:
 
 ```css
-<div role="button" aria-label="A button as a CTA" aria-labelledby="IdOfSomethingUnrelated" onClick="Do something JavaScripty()">This is a div disguised as a button</div>
+<div
+  role="button"
+  aria-label="A button as a CTA"
+  aria-labelledby="IdOfSomethingUnrelated"
+  onClick="Do something JavaScripty()"
+>
+    This is a div disguised as a button
+</div>
 ```
 
 A div has no semantic meaning. More often, you see a `<div>` as a "wrapper" in the times since HTML5. That one container to rule them all. Then you get into your HTML5 landmark elements (e.g., `<main>`, `<section>`, `<nav>`, `<footer>`, etc.). But I **have** told you.
