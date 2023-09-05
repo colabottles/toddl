@@ -49,7 +49,12 @@ The reasons are your own, but when you snap back at me with "Why do you scream a
 is more accessible and easier to implement than:
 
 ```css
-<div role="button" aria-label="A button as a CTA" onClick="Do something JavaScripty" aria-labelledby="IdOfSomethingUnrelated">
+<div
+  role="button"
+  aria-label="A button as a CTA"
+  aria-labelledby="IdOfSomethingUnrelated"
+  onClick="Do something JavaScripty()"
+>
     This is a div disguised as a button
 </div>
 ```
