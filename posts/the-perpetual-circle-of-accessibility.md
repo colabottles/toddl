@@ -1,7 +1,7 @@
 ---
 title: The Perpetual Circle of Accessibility
 description: Twenty-five years and we can't get off the ever-merry-go-round
-date: 2022-12-02 ## YYYY-MM-DD
+date: 2023-09-05 ## YYYY-MM-DD
 tags:
   - accessibility
   - development
