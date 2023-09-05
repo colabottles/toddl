@@ -40,21 +40,21 @@ Maybe, you care enough to actually see it, but you do not retain the information
 
 I have told you. I have seen the suggestions, the tutorials, the guides on how to make something accessible without mucking it up and yet, 95-99% of the internet is _still_ inaccessible (I lean towards 99%).
 
-The reasons are your own, but when you snap back at me with "Why do you scream at us, tell us what we're doing wrong!" I have. I mean, ***I have**.
+The reasons are your own, but when you snap back at me with "Why do you scream at us, tell us what we're doing wrong!" I have. I mean, **I have**.
 
-```
+```css
 <button>This is a cool button</button>
 ```
 
 is more accessible and easier to implement than:
 
-```
+```css
 <div role="button" aria-label="A button as a CTA" onClick="Do something JavaScripty" aria-labelledby="IdOfSomethingUnrelated">
     This is a div disguised as a button
 </div>
 ```
 
-A div has no semantic meaning. More often, you see a `<div?>` as a "wrapper" in the times since HTML5. That one container to rule them all. Then you get into your HTML5 landmark elements (e.g., `<main>`, `<section>`, `<nav>`, `<footer>`, etc.). But we **have** told you.
+A div has no semantic meaning. More often, you see a `<div?>` as a "wrapper" in the times since HTML5. That one container to rule them all. Then you get into your HTML5 landmark elements (e.g., `<main>`, `<section>`, `<nav>`, `<footer>`, etc.). But I **have** told you.
 
 ## The Examples
 
