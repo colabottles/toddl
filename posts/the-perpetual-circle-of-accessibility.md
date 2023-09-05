@@ -12,6 +12,8 @@ tags:
 layout: layouts/post.njk
 ---
 
+![A man holding his glasses in his hands while rubbing the bridge of his nose in frustration.](https://res.cloudinary.com/colabottles/image/upload/v1693938299/frustration.jpg)
+
 ## The History
 
 In the time I have been practicing accessibility, whether it was behind-the-scenes in a not-so-public way of putting myself out there like I did for most of my career or whether it is like it is now with me. Writing articles, giving conference talks, appearances on podcasts and streams.
@@ -59,7 +61,7 @@ is more accessible and easier to implement than:
 </div>
 ```
 
-A div has no semantic meaning. More often, you see a `<div?>` as a "wrapper" in the times since HTML5. That one container to rule them all. Then you get into your HTML5 landmark elements (e.g., `<main>`, `<section>`, `<nav>`, `<footer>`, etc.). But I **have** told you.
+A div has no semantic meaning. More often, you see a `<div>` as a "wrapper" in the times since HTML5. That one container to rule them all. Then you get into your HTML5 landmark elements (e.g., `<main>`, `<section>`, `<nav>`, `<footer>`, etc.). But I **have** told you.
 
 ## The Examples
 
