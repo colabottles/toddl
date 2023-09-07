@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="generator" content="Eleventy v2.0.1">
     <meta name="description" content="What is new in WCAG 2.1 Label in Name.">
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>Label in Name in WCAG 2.1</title>
@@ -28,7 +28,7 @@
             </nav>
       </header>
 
-      <main id="main" class="inner" tabindex="-1">
+      <main id="main" class="inner">
         
 <div class="article-container">
   <article>
@@ -56,10 +56,24 @@
 <h2 id="assistive-technology-in-action" tabindex="-1">Assistive technology in action</h2>
 <p>Let’s use the example of an HTML contact form. A user may use voice recognition software to fill out a form and come to the end where the form is submitted and the form is sent.</p>
 <p>Say the label of the button and the visual text in the button are inconsistent:</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">></span></span><br>    Message:<br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>message<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Send<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">></span></span>
+    Message:
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>message<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Send<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span></code></pre>
 <p>In the above example, <strong>the button doesn’t function properly for assistive technology</strong>. The button contains the text “Send” but its <code>aria-label</code> is “Submit.” This is where the failure lies. The visual label (“Send”) is inconsistent with the programmatic name (“Submit”), providing no association between the two.</p>
 <p>When these match or have a common term, users of speech recognition software can navigate by speaking the visible text labels of components such as links, buttons, and menus. In this case, we could fix it by matching the label and the text. But since the <code>aria-label</code> adds no value, removing it altogether is a better fix:</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">></span></span><br>    Message:<br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>message<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span>Send<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">></span></span>
+    Message:
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>message<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span>Send<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span></code></pre>
 <p>Sighted users that use screen readers will also have a better experience if the text they hear is the text that’s similar to the text they see on the screen.</p>
 <p>When the label and visual text don’t match, speech-input users attempting to use the visible text label as a means of navigation (e.g. “move to First Name”) or selection will get stuck because the visible label spoken by the user does not match or is not part of the accessible name that is enabled as part of the speech-input command.</p>
 <p>Also, when the accessible name is different from the visible label, it may function as a hidden command that can be activated <em>accidentally</em> by speech-input users. SC does not apply where a visible text label does not exist for a component.</p>
@@ -116,18 +130,20 @@
 
       <footer class="meta footer">
         <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/podcast">Podcast</a></li>
-            <li class="nav-item"><a href="/support">Support</a></li>
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/resources">Resources</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/links">Links</a></li>
-            <li class="nav-item"><a href="/speaking">Speaking</a></li>
-            <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
-          </ul>
+          <nav>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+              <li class="nav-item"><a href="/links">Links</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
         <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
 
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
@@ -140,44 +156,46 @@
           </ul>
         </nav>
 
-        <ul class="footer-icons">
-          <li>
-            <a href="https://codepen.io/colabottles/#" class="codepen">
-              <svg class="icon icon-codepen" focusable="false">
-                <title>My CodePen repository</title>
-                <desc id="codepen">A white 3D cube.</desc>
-                <use href="/img/symbol-defs.svg#icon-codepen"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/colabottles/" class="github">
-              <svg class="icon icon-github" focusable="false">
-                <title>My GitHub repository</title>
-                <desc id="github">A white OctoCat.</desc>
-                <use href="/img/symbol-defs.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://toddl.dev/feed/feed.xml" class="rss">
-              <svg class="icon icon-rss" focusable="false">
-                <title>The RSS feed for this site</title>
-                <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
-                <use href="/img/symbol-defs.svg#icon-rss"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
-              <svg class="icon icon-accessible-icon" focusable="false">
-                <title>WAVE test results for this site</title>
-                <desc id="a11y">A person in a wheelchair that is the color white.</desc>
-                <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </footer>
     </div>
   </body>

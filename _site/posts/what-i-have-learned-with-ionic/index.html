@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="generator" content="Eleventy v2.0.1">
     <meta name="description" content="What I have learned with using the Ionic framework in three months.">
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>What I Have Learned With Ionic</title>
@@ -28,7 +28,7 @@
             </nav>
       </header>
 
-      <main id="main" class="inner" tabindex="-1">
+      <main id="main" class="inner">
         
 <div class="article-container">
   <article>
@@ -50,9 +50,29 @@
 <p>So I chose Ionic because I could craft PWAs, hybrid and cross-platform mobile apps and it could also (and does) create iOS and Android apps that seamlessly work together. Ionic also lets you employ various UI elements in the application framework (filtration, navigation, inputs, etc.) and I could use Ionic with Angular, Vue, or React which seemed like a bonus.</p>
 <h2 id="ionic-makes-me-think-back" tabindex="-1">Ionic Makes Me Think Back</h2>
 <p><a href="https://toddl.dev/posts/ionic-and-vue-part-one/">I started tinkering around with Ionic</a> and of course, I have yet to follow up with an article on my progress (coming soon!) but it reminds me a lot of <a href="https://coldfusion.adobe.com/">ColdFusion</a> and it is because of the custom tags. ColdFusion with their tags:</p>
-<pre class="language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cfset</span> <span class="token attr-name">firstName</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>Todd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cfif</span> <span class="token attr-name">firstName</span> <span class="token attr-name">eq</span> <span class="token attr-name">"Todd"</span><span class="token punctuation">></span></span><br>    I don't care for lobster rolls at all.<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cfif</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cfset</span> <span class="token attr-name">firstName</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>Todd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cfif</span> <span class="token attr-name">firstName</span> <span class="token attr-name">eq</span> <span class="token attr-name">"Todd"</span><span class="token punctuation">></span></span>
+    I don't care for lobster rolls at all.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cfif</span><span class="token punctuation">></span></span></code></pre>
 <p>and Ionic with their tags:</p>
-<pre class="language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-header</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-toolbar</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-title</span><span class="token punctuation">></span></span><br>        Contact Form<br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-title</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-toolbar</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-header</span><span class="token punctuation">></span></span><br><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-content</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-item</span> <span class="token attr-name">*ngIf</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>isLoggedIn; else login<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-label</span><span class="token punctuation">></span></span>Welcome, !<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-label</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-item</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ng-template</span> <span class="token attr-name">#login</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-item</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-label</span><span class="token punctuation">></span></span>Please log in to continue.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-label</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-item</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ng-template</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-content</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-header</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-toolbar</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-title</span><span class="token punctuation">></span></span>
+        Contact Form
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-title</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-toolbar</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-header</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-content</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-item</span> <span class="token attr-name">*ngIf</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>isLoggedIn; else login<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-label</span><span class="token punctuation">></span></span>Welcome, !<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-label</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-item</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ng-template</span> <span class="token attr-name">#login</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-item</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ion-label</span><span class="token punctuation">></span></span>Please log in to continue.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-label</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-item</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ng-template</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ion-content</span><span class="token punctuation">></span></span></code></pre>
 <p>A lot different that I know of so far, but the custom tags are what make me think of CFML (ColdFusion Markup Language). I stopped developing in ColdFusion at version 6 (MX 6 as it was called which was associated with the Macromedia branding). After that, CF and Windows development I felt wasn't for me and I went back to PHP.</p>
 <h2 id="ionic-makes-learning-and-mobile-development-fun" tabindex="-1">Ionic Makes Learning and Mobile Development Fun</h2>
 <p>I went with Vue and Ionic. Vue had a good reputation for accessibility and Ionic takes accessibility seriously. That's what drew me to the both of these. <a href="https://webaim.org/projects/million/#frameworks">Vue has slipped a bit in the accessibility area according to the WebAIM Million Report</a> so that's of a concern for me while React and Angular have improved and I may make the decision to move to one of those after this little experiment.</p>
@@ -90,18 +110,20 @@
 
       <footer class="meta footer">
         <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/podcast">Podcast</a></li>
-            <li class="nav-item"><a href="/support">Support</a></li>
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/resources">Resources</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/links">Links</a></li>
-            <li class="nav-item"><a href="/speaking">Speaking</a></li>
-            <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
-          </ul>
+          <nav>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+              <li class="nav-item"><a href="/links">Links</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
         <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
 
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
@@ -114,44 +136,46 @@
           </ul>
         </nav>
 
-        <ul class="footer-icons">
-          <li>
-            <a href="https://codepen.io/colabottles/#" class="codepen">
-              <svg class="icon icon-codepen" focusable="false">
-                <title>My CodePen repository</title>
-                <desc id="codepen">A white 3D cube.</desc>
-                <use href="/img/symbol-defs.svg#icon-codepen"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/colabottles/" class="github">
-              <svg class="icon icon-github" focusable="false">
-                <title>My GitHub repository</title>
-                <desc id="github">A white OctoCat.</desc>
-                <use href="/img/symbol-defs.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://toddl.dev/feed/feed.xml" class="rss">
-              <svg class="icon icon-rss" focusable="false">
-                <title>The RSS feed for this site</title>
-                <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
-                <use href="/img/symbol-defs.svg#icon-rss"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
-              <svg class="icon icon-accessible-icon" focusable="false">
-                <title>WAVE test results for this site</title>
-                <desc id="a11y">A person in a wheelchair that is the color white.</desc>
-                <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </footer>
     </div>
   </body>

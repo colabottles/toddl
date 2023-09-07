@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="generator" content="Eleventy v2.0.1">
     <meta name="description" content="A brief introduction to the casecade in CSS.">
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>An Introduction to the Cascade</title>
@@ -28,7 +28,7 @@
             </nav>
       </header>
 
-      <main id="main" class="inner" tabindex="-1">
+      <main id="main" class="inner">
         
 <div class="article-container">
   <article>
@@ -47,7 +47,15 @@
 <p>There is an order in which selectors are prioritized. Importance, scope, specificity, and order. Let's go over each priority starting with importance. You don't have to take it all in at once. Break down each part until you understand it and then move on to the next section. I have provided code examples along the way.</p>
 <h3 id="importance" tabindex="-1">Importance</h3>
 <p>An <code>!important</code> declaration takes precedence over a normal declaration. Such as when the star selector is used for site-wide styling, take for instance <code>box-sizing: border-box;</code> and then the same property (in this case below, <code>background-color</code>) is using it in the case of the <code>body</code> selector. So <code>background-color: red !important;</code> will overrule the <code>background-color: white;</code>.</p>
-<pre class="language-css"><code class="language-css"><br><span class="token selector">*</span> <span class="token punctuation">{</span><br>  <span class="token property">background-color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">body</span> <span class="token punctuation">{</span><br>  <span class="token property">background-color</span><span class="token punctuation">:</span> red <span class="token important">!important</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br></code></pre>
+<pre class="language-css"><code class="language-css">
+<span class="token selector">*</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> red <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
 <ul>
 <li>
 <p>Transition declarations <code>transition-timing-function: steps(6, end);</code> or <code>transition: all .25s ease-in-out;</code></p>
@@ -56,7 +64,11 @@
 <p>Important user agent declarations</p>
 </li>
 </ul>
-<pre class="language-css"><code class="language-css"><br><span class="token selector">input, textarea, keygen, select, button, meter, progress</span> <span class="token punctuation">{</span><br>  <span class="token property">-webkit-writing-mode</span><span class="token punctuation">:</span> horizontal-tb <span class="token important">!important</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br></code></pre>
+<pre class="language-css"><code class="language-css">
+<span class="token selector">input, textarea, keygen, select, button, meter, progress</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-writing-mode</span><span class="token punctuation">:</span> horizontal-tb <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
 <ul>
 <li>
 <p>Important user declarations <code>p { text-indent: 1em !important; }</code></p>
@@ -68,7 +80,16 @@
 <p>Animation declarations</p>
 </li>
 </ul>
-<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@keyframes</span> slide-right</span> <span class="token punctuation">{</span><br>  <span class="token selector">50%</span> <span class="token punctuation">{</span><br>    <span class="token property">margin-left</span><span class="token punctuation">:</span> 110px<span class="token punctuation">;</span><br>    <span class="token property">opacity</span><span class="token punctuation">:</span> 0.9<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><br>  <span class="token selector">to</span> <span class="token punctuation">{</span><br>    <span class="token property">margin-left</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@keyframes</span> slide-right</span> <span class="token punctuation">{</span>
+  <span class="token selector">50%</span> <span class="token punctuation">{</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 110px<span class="token punctuation">;</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0.9<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">to</span> <span class="token punctuation">{</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
 <ul>
 <li>
 <p>Normal author declarations <code>p { text-indent: 1.5em; }</code></p>
@@ -86,8 +107,26 @@ Read more about <a href="https://www.w3.org/TR/css-cascade-4/#biblio-css-animati
 <p>A declaration can be scoped to a subtree so that it only affects its scoping element and that element’s descendants. An example is <code>html</code> to <code>body</code>.</p>
 <blockquote cite="CSS Cascading and Inheritance Level 4">If the scoping elements of two declarations have an ancestor/descendant relationship, then for normal rules the declaration whose scoping element is the descendant wins, and for important rules the declaration whose scoping element is the ancestor wins.</blockquote>
 <p>So in other words, for normal declarations the inner scope's declarations override but for the <code>!important</code> rule the outer scope's declarations override. Later wins over earlier.</p>
-<pre class="language-css"><code class="language-css"><br><span class="token selector">h1</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token comment">/* This one wins */</span><br><span class="token selector">h1</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br></code></pre>
-<pre class="language-css"><code class="language-css"><br><span class="token comment">/* This one wins due to specificity */</span><br><span class="token selector">.title__heading</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">h1</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2.8em<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br></code></pre>
+<pre class="language-css"><code class="language-css">
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* This one wins */</span>
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class="language-css"><code class="language-css">
+<span class="token comment">/* This one wins due to specificity */</span>
+<span class="token selector">.title__heading</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 2.8em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
 <blockquote cite="MDN Web Docs">One thing you should bear in mind when considering all this cascade theory, and what styles get applied over other styles, is that all this happens at the property level — properties override other properties, but you don't get entire rules overriding other rules. When several CSS rules match the same element, they are all applied to that element. Only after that are any conflicting properties evaluated to see which individual styles will win over others.</blockquote>
 <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#A_note_on_rule_mixing">A not on rule mixing</a></p>
 <h3 id="specificty" tabindex="-1">Specificty</h3>
@@ -112,18 +151,20 @@ Read more about <a href="https://www.w3.org/TR/css-cascade-4/#biblio-css-animati
 
       <footer class="meta footer">
         <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/podcast">Podcast</a></li>
-            <li class="nav-item"><a href="/support">Support</a></li>
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/resources">Resources</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/links">Links</a></li>
-            <li class="nav-item"><a href="/speaking">Speaking</a></li>
-            <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
-          </ul>
+          <nav>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+              <li class="nav-item"><a href="/links">Links</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
         <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
 
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
@@ -136,44 +177,46 @@ Read more about <a href="https://www.w3.org/TR/css-cascade-4/#biblio-css-animati
           </ul>
         </nav>
 
-        <ul class="footer-icons">
-          <li>
-            <a href="https://codepen.io/colabottles/#" class="codepen">
-              <svg class="icon icon-codepen" focusable="false">
-                <title>My CodePen repository</title>
-                <desc id="codepen">A white 3D cube.</desc>
-                <use href="/img/symbol-defs.svg#icon-codepen"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/colabottles/" class="github">
-              <svg class="icon icon-github" focusable="false">
-                <title>My GitHub repository</title>
-                <desc id="github">A white OctoCat.</desc>
-                <use href="/img/symbol-defs.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://toddl.dev/feed/feed.xml" class="rss">
-              <svg class="icon icon-rss" focusable="false">
-                <title>The RSS feed for this site</title>
-                <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
-                <use href="/img/symbol-defs.svg#icon-rss"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
-              <svg class="icon icon-accessible-icon" focusable="false">
-                <title>WAVE test results for this site</title>
-                <desc id="a11y">A person in a wheelchair that is the color white.</desc>
-                <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </footer>
     </div>
   </body>

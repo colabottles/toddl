@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v2.0.1">
+    <meta name="description" content="Twenty-five years and we can&#39;t get off the ever-merry-go-round">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+    <title>The Perpetual Circle of Accessibility</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" class="page-title" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
+      </header>
+
+      <main id="main" class="inner">
+        
+<div class="article-container">
+  <article>
+
+    <h2 class="article__title">The Perpetual Circle of Accessibility</h2>
+    <header class="article__header">
+      <div class="article__meta">
+        <time>05 September, 2023</time>
+      </div>
+    </header>
+
+    <section class="article__body">
+      <p><img src="https://res.cloudinary.com/colabottles/image/upload/v1693938299/frustration.jpg" alt="A man holding his glasses in his hands while rubbing the bridge of his nose in frustration."></p>
+<h2 id="the-history" tabindex="-1">The History</h2>
+<p>In the time I have been practicing accessibility, whether it was behind-the-scenes in a not-so-public way of putting myself out there like I did for most of my career or whether it is like it is now with me. Writing articles, giving conference talks, appearances on podcasts and streams.</p>
+<p>The fact of the matter is this. I have had to repeat myself it seems a million times over. And over. And over it seems year after year after year since 1999. That's 24 years if you're keeping score.</p>
+<p>It is the same items of order. Low contrast of text, alternative text of images, empty buttons or input labels. Empty links and missing document language attributes.</p>
+<p>Sound familiar? Well if it does, then you know. If it does not, then <a href="https://webaim.org/projects/million/">I shall point you to the WebAIM Million Report</a> which only goes back the past five years. I can tell you with conviction that I have been harping these things over and over for longer than that. Ten-plus years at least.</p>
+<h2 id="the-question" tabindex="-1">The Question</h2>
+<blockquote>
+<p>Why do accessibility professionals scream at us when we…</p>
+</blockquote>
+<p>I am not going to speak for the accessibility community as a whole, but if my colleagues and accessibility professionals agree, then you can bank on it.</p>
+<p><strong>We have told you over and over again. Time after time, year after year. Most of you do not listen or care enough to listen.</strong></p>
+<p>Or when you see something we post, like <em>&quot;Hey, if you're doing this, please don't. Please do that.&quot;</em> and then you post:</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1693929327/a11y.jpg" alt="A post about accessibility professionals not telling developers what to do when something is not done to their understanding"></p>
+<p>As you see in my reply, I have told you. I have posted on my blogs, on other sites, on message boards and in social media circles about what to do but you do not listen or you do not care enough to listen. Maybe you do?!</p>
+<p>Maybe, you care enough to actually see it, but you do not retain the information, and then when you see another post, you ask me again (yes, this happens!).</p>
+<p>I have told you. I have seen the suggestions, the tutorials, the guides on how to make something accessible without mucking it up and yet, 95-99% of the internet is <em>still</em> inaccessible (I lean towards 99%).</p>
+<p>The reasons are your own, but when you snap back at me with &quot;Why do you scream at us, tell us what we're doing wrong!&quot; I have. I mean, <strong>I have</strong>.</p>
+<pre class="language-css"><code class="language-css">&lt;button>This is a cool button&lt;/button></code></pre>
+<p>is more accessible and easier to implement than:</p>
+<pre class="language-css"><code class="language-css">&lt;div
+  role=<span class="token string">"button"</span>
+  aria-label=<span class="token string">"A button as a CTA"</span>
+  aria-labelledby=<span class="token string">"IdOfSomethingUnrelated"</span>
+  onClick=<span class="token string">"Do something JavaScripty()"</span>
+>
+    This is a div disguised as a button
+&lt;/div></code></pre>
+<p>A div has no semantic meaning. More often, you see a <code>&lt;div&gt;</code> as a &quot;wrapper&quot; in the times since HTML5. That one container to rule them all. Then you get into your HTML5 landmark elements (e.g., <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>, etc.). But I <strong>have</strong> told you.</p>
+<h2 id="the-examples" tabindex="-1">The Examples</h2>
+<blockquote>
+<p>Please put alternative text on the image you posted on Twitter.</p>
+<p>Please use better contrast for the text on this because I cannot read it.</p>
+<p>Screen reader technology will not read a label because you have forgotten it.</p>
+<p>You are not shipping your machine. A screen reader will skip over all this.</p>
+<p>Who do you want to exclude when you make this inaccessible?</p>
+<p>Please use the button element. It is more accessible than a div.</p>
+</blockquote>
+<p>One example: Flashing video content on the former Twitter. I asked the original poster (OP), <em>&quot;Please add a content warning for people that are prone to epileptic seizures and other vestibular issues, thank you.&quot;</em> Just to have some clown reply with <em>&quot;Well then don't watch the video.&quot;</em></p>
+<p>Well, it is easy for someone that is abled to say that and dismiss the disabled community with their ableism and ignorance. They do it every day online. Developers and designers included. More in the developer space than the designer space. Because <em>&quot;move fast and break things&quot;</em> or <em>&quot;coding is my life, here are ten reasons why you should do what I list here on Twitter.&quot;</em></p>
+<p>If you're going to blatantly dismiss the disabled community and exclude them, then prepare for that backlash. Because it is deserve and justified. Since the internet became public and more and more disabled people try to gain access, <strong>you</strong> are the barrier.</p>
+<p>and there are many more examples. You don't have to look too far to find them on Twitter.</p>
+<h2 id="the-burnout" tabindex="-1">The Burnout</h2>
+<p>Developers will experience burnout if they are not cognizant of the amount of work they are doing. It is inevitable. Well, accessibility professionals do too. Tenfold.</p>
+<p>I'm tired. I'm burnt out. I'm sad, depressed, struggling, tired, tired, tired. I am the parent, developers and designers, and everyone at the organization(s) that I have to tell over and over again, are the child.</p>
+<p>I have scolded you, I've finger-wagged, I've publicly shamed, I have educated, I have suggested, I have done everything in my power until I am blue in the face and angry,  exhausted, and exasperated to try and get it through to you that accessibility for disabled people matters. You, most of you. The majority of you, have not listened. You don't care.</p>
+<p>I am burnt out. I'm the beyond tired parent with all the children running around wreaking havoc. I need a vacation from you but I cannot because I have got to look over you and make sure you're not burning the house down. Yet, I don't know about the small fires that have already been set around the house. Only the small fires I can see in the room I'm in.</p>
+<h2 id="the-education" tabindex="-1">The Education</h2>
+<p>There are those that are happy to help and answer questions because they are passionate about accessibility and want a more accessible Web and a level playing field for people with disabilities. I'm always happy to say, &quot;Here is why this isn't an accessible solution…&quot;</p>
+<p>There are those that will virtually spat at you and block you or admonish you, or scold you, or tell you to <em>&quot;fuck off&quot;</em> (Yes, this has happened to me). Whatever their personal issues, leaving those aside, they are fed up way beyond what anyone can comprehend. Because they have been repeating themselves over and over and over again.</p>
+<p>The one's that help, the helpers? Just send me a DM, or a post and ask. Or do an internet search (search engines still exist. Fewer now than when I went online, but they are there!) for the solution! If you question that, please ask!</p>
+<h2 id="the-solution" tabindex="-1">The Solution</h2>
+<p>Ask. Simply stated. Ask.</p>
+<h2 id="the-takeaway" tabindex="-1">The Takeaway</h2>
+<p>There is a group of people that need a fair and equal Web, the disabled community. For decades, they have been fighting on and off the Web for equal access. Hardly anyone listens. If anyone does listen, how many of them act on that? A few.</p>
+<p>You see a post, it suggests something but doesn't explain why, but you don't use the back channels to ask. That is on <strong>you</strong> that is not on the person that posted the suggestion without a solution. Just because you cannot see it does not mean that it is not there. It is.</p>
+<p>It is a never-ending perpetual circle of grief and pain for me that I have to look at something online and pass it by because I have said it a billion times, <em>&quot;Use alternative text for your images for people who use screen reader technologies or assistive tech, please&quot;</em></p>
+<p>It's the constant merry-go-round that you get spinning so fast, you jump on and spin for an hour and you feel ill and like you are going to throw up.</p>
+<p>That is the current state of accessibility. Every time someone ignores a suggestion, I get ill. Because that person doesn't care. Accessibility is a right, <strong>NOT</strong> a privilege.</p>
+<p>That said, you wonder why we shout it out on socials? Read this article again.</p>
+
+    </section>
+  </article>
+</div>
+      </main>
+
+      <footer class="meta footer">
+        <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
+          <nav>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+              <li class="nav-item"><a href="/links">Links</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
+        <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
+
+        <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
+          <h2 id="a11y-webring-club">a11y-webring.club</h2>
+          <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
+          <ul>
+            <li><a rel="previous external" href="https://a11y-webring.club/prev">Previous website</a></li>
+            <li><a rel="external" href="https://a11y-webring.club/random">Random website</a></li>
+            <li><a rel="next external" href="https://a11y-webring.club/next">Next website</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

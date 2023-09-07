@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="generator" content="Eleventy v2.0.1">
     <meta name="description" content="My adventures solving the CORS issue.">
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>CORS, CodePen &amp; Me</title>
@@ -28,7 +28,7 @@
             </nav>
       </header>
 
-      <main id="main" class="inner" tabindex="-1">
+      <main id="main" class="inner">
         
 <div class="article-container">
   <article>
@@ -53,9 +53,21 @@
 <h3 id="how-did-i-solve-it%3F" tabindex="-1">How did I solve it?</h3>
 <p>The best (and easiest) solution I found came from here <a href="http://bit.ly/2U2DV5s">http://bit.ly/2U2DV5s</a></p>
 <p>So, in the netlify.toml file, I just implemented these headers;</p>
-<pre class="language-markdown"><code class="language-markdown">[[headers]]<br>for = "/<span class="token italic"><span class="token punctuation">*</span><span class="token content">.woff"<br>[headers.values]<br>Access-Control-Allow-Origin = "</span><span class="token punctuation">*</span></span>"<br>Content-Type = "application/font-woff"</code></pre>
-<pre class="language-markdown"><code class="language-markdown">[[headers]]<br>for = "/<span class="token italic"><span class="token punctuation">*</span><span class="token content">.woff2"<br>[headers.values]<br>Access-Control-Allow-Origin = "</span><span class="token punctuation">*</span></span>"<br>Content-Type = "application/font-woff2"</code></pre>
-<pre class="language-markdown"><code class="language-markdown">[[headers]]<br>for = "/<span class="token italic"><span class="token punctuation">*</span><span class="token content">.ttf"<br>[headers.values]<br>Access-Control-Allow-Origin = "</span><span class="token punctuation">*</span></span>"<br>Content-Type = "application/font-ttf"</code></pre>
+<pre class="language-markdown"><code class="language-markdown">[[headers]]
+for = "/<span class="token italic"><span class="token punctuation">*</span><span class="token content">.woff"
+[headers.values]
+Access-Control-Allow-Origin = "</span><span class="token punctuation">*</span></span>"
+Content-Type = "application/font-woff"</code></pre>
+<pre class="language-markdown"><code class="language-markdown">[[headers]]
+for = "/<span class="token italic"><span class="token punctuation">*</span><span class="token content">.woff2"
+[headers.values]
+Access-Control-Allow-Origin = "</span><span class="token punctuation">*</span></span>"
+Content-Type = "application/font-woff2"</code></pre>
+<pre class="language-markdown"><code class="language-markdown">[[headers]]
+for = "/<span class="token italic"><span class="token punctuation">*</span><span class="token content">.ttf"
+[headers.values]
+Access-Control-Allow-Origin = "</span><span class="token punctuation">*</span></span>"
+Content-Type = "application/font-ttf"</code></pre>
 <p>And went to test and they worked! It took about 15 minutes of searching and reading and only less than 5 minutes of placing the appropriate code in and pushing it live!</p>
 <p>If there is a better, or easier way to implement this, I would be very interested in knowing and learning. The other ways involved a little bit of in-depth command line work and I’m not knocking those methods (nor would I be scared to do them) but this one just seemed a lot easier for what I was trying to accomplish was for me to be able to see the variable font I was calling off my site in CodePen.</p>
 <h3 id="special-thanks" tabindex="-1">Special Thanks</h3>
@@ -68,18 +80,20 @@
 
       <footer class="meta footer">
         <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/podcast">Podcast</a></li>
-            <li class="nav-item"><a href="/support">Support</a></li>
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/resources">Resources</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/links">Links</a></li>
-            <li class="nav-item"><a href="/speaking">Speaking</a></li>
-            <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
-          </ul>
+          <nav>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+              <li class="nav-item"><a href="/links">Links</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
         <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
 
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
@@ -92,44 +106,46 @@
           </ul>
         </nav>
 
-        <ul class="footer-icons">
-          <li>
-            <a href="https://codepen.io/colabottles/#" class="codepen">
-              <svg class="icon icon-codepen" focusable="false">
-                <title>My CodePen repository</title>
-                <desc id="codepen">A white 3D cube.</desc>
-                <use href="/img/symbol-defs.svg#icon-codepen"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/colabottles/" class="github">
-              <svg class="icon icon-github" focusable="false">
-                <title>My GitHub repository</title>
-                <desc id="github">A white OctoCat.</desc>
-                <use href="/img/symbol-defs.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://toddl.dev/feed/feed.xml" class="rss">
-              <svg class="icon icon-rss" focusable="false">
-                <title>The RSS feed for this site</title>
-                <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
-                <use href="/img/symbol-defs.svg#icon-rss"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
-              <svg class="icon icon-accessible-icon" focusable="false">
-                <title>WAVE test results for this site</title>
-                <desc id="a11y">A person in a wheelchair that is the color white.</desc>
-                <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </footer>
     </div>
   </body>

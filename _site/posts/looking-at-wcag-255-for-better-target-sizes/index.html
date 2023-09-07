@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="generator" content="Eleventy v2.0.1">
     <meta name="description" content="Looking at better target sizes for mobile devices to improve the user experience.">
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>Looking at WCAG 2.5.5 for Better Target Sizes</title>
@@ -28,7 +28,7 @@
             </nav>
       </header>
 
-      <main id="main" class="inner" tabindex="-1">
+      <main id="main" class="inner">
         
 <div class="article-container">
   <article>
@@ -77,7 +77,14 @@
 <p>This issue is exacerbated in responsive design, which needs to accommodate for numerous types of fine and coarse inputs. Both input types must be supported for a site that can be accessed by a desktop or laptop with a mouse, as well as a mobile device or tablet with a touch screen.</p>
 <p>That makes the actual size we use for a target a pretty important detail. Depending on who is using a control, what that control does, how often it’s used, and where it’s located, we ought to consider using larger, clearer targets to prevent things like unintended actions.</p>
 <p>But with all this said, <a href="https://www.w3.org/TR/mediaqueries-4/#pointer">we do actually have a CSS media query</a> that can detect a pointer device so we can target certain styles to either fine or coarse input interactions, <a href="https://caniuse.com/css-media-interaction">and it’s well-supported</a>. Here’s an example pulled right out of the spec:</p>
-<pre class="language-css"><code class="language-css">  <span class="token comment">/* Make radio buttons and check boxes larger if we have an inaccurate primary pointing device */</span><br>    <span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">pointer</span><span class="token punctuation">:</span> coarse<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>      <span class="token selector">input[type="checkbox"], input[type="radio"]</span> <span class="token punctuation">{</span><br>        <span class="token property">min-width</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span><br>        <span class="token property">min-height</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span><br>        <span class="token property">background</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css">  <span class="token comment">/* Make radio buttons and check boxes larger if we have an inaccurate primary pointing device */</span>
+    <span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">pointer</span><span class="token punctuation">:</span> coarse<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+      <span class="token selector">input[type="checkbox"], input[type="radio"]</span> <span class="token punctuation">{</span>
+        <span class="token property">min-width</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+        <span class="token property">min-height</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+        <span class="token property">background</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span></code></pre>
 <p>But wait. While this is great and all, Patrick H. Lauke offers a word of caution about this interaction media query and <a href="https://css-tricks.com/interaction-media-features-and-their-potential-for-incorrect-assumptions/">it’s potential for making incorrect assumptions</a>.</p>
 <h4 id="consider-that-different-platforms-have-different-requirements" tabindex="-1">Consider that different platforms have different requirements</h4>
 <p>When WCAG specifies exact values, it’s worth paying attention. Notice that we’re advised to make target sizes at least 44×44 pixels, which is mentioned no fewer than 18 times in the <a href="https://www.w3.org/WAI/WCAG21/Understanding/target-size.html">WCAG 2.5.5 explainer</a>.</p>
@@ -164,18 +171,20 @@ Hopefully the coming <a href="https://www.w3.org/WAI/WCAG22/Understanding/target
 
       <footer class="meta footer">
         <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/podcast">Podcast</a></li>
-            <li class="nav-item"><a href="/support">Support</a></li>
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/resources">Resources</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/links">Links</a></li>
-            <li class="nav-item"><a href="/speaking">Speaking</a></li>
-            <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
-          </ul>
+          <nav>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+              <li class="nav-item"><a href="/links">Links</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
         <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
 
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
@@ -188,44 +197,46 @@ Hopefully the coming <a href="https://www.w3.org/WAI/WCAG22/Understanding/target
           </ul>
         </nav>
 
-        <ul class="footer-icons">
-          <li>
-            <a href="https://codepen.io/colabottles/#" class="codepen">
-              <svg class="icon icon-codepen" focusable="false">
-                <title>My CodePen repository</title>
-                <desc id="codepen">A white 3D cube.</desc>
-                <use href="/img/symbol-defs.svg#icon-codepen"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/colabottles/" class="github">
-              <svg class="icon icon-github" focusable="false">
-                <title>My GitHub repository</title>
-                <desc id="github">A white OctoCat.</desc>
-                <use href="/img/symbol-defs.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://toddl.dev/feed/feed.xml" class="rss">
-              <svg class="icon icon-rss" focusable="false">
-                <title>The RSS feed for this site</title>
-                <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
-                <use href="/img/symbol-defs.svg#icon-rss"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
-              <svg class="icon icon-accessible-icon" focusable="false">
-                <title>WAVE test results for this site</title>
-                <desc id="a11y">A person in a wheelchair that is the color white.</desc>
-                <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </footer>
     </div>
   </body>

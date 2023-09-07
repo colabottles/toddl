@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="generator" content="Eleventy v2.0.1">
     <meta name="description" content="My deep dive into learning Ionic and Vue.">
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>Ionic and Vue, Part One</title>
@@ -28,7 +28,7 @@
             </nav>
       </header>
 
-      <main id="main" class="inner" tabindex="-1">
+      <main id="main" class="inner">
         
 <div class="article-container">
   <article>
@@ -63,7 +63,12 @@
 <pre class="language-js"><code class="language-js">ionic start lobstah<span class="token operator">-</span>roll tabs</code></pre>
 <p>I'm then given the choice to pick between Angular, React, and Vue JavaScript frameworks from a list of choices. I chose Vue, of course. I am then asked if I want to integrate my new app with <a href="https://capacitorjs.com/docs/v2/">Capacitor</a>.</p>
 <p>It then runs and does its thing, then I get a list of next steps to follow:</p>
-<pre class="language-js"><code class="language-js"><span class="token operator">-</span> Go to your <span class="token keyword">new</span> <span class="token class-name">project</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">cd ./test-ionic</span><span class="token template-punctuation string">`</span></span><br><span class="token operator">-</span> Run <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">ionic serve</span><span class="token template-punctuation string">`</span></span> within the app directory to see your app <span class="token keyword">in</span> the browser<br><span class="token operator">-</span> Run <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">ionic capacitor add</span><span class="token template-punctuation string">`</span></span> to add a native iOS or Android project using Capacitor<br><span class="token operator">-</span> Generate your app icon and splash screens using <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">cordova-res --skip-config --copy</span><span class="token template-punctuation string">`</span></span><br><span class="token operator">-</span> Explore the Ionic docs <span class="token keyword">for</span> components<span class="token punctuation">,</span> tutorials<span class="token punctuation">,</span> and more<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>ion<span class="token punctuation">.</span>link<span class="token operator">/</span>docs<br><span class="token operator">-</span> Building an enterprise app<span class="token operator">?</span> Ionic has Enterprise Support and Features<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>ion<span class="token punctuation">.</span>link<span class="token operator">/</span>enterprise<span class="token operator">-</span>edition</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token operator">-</span> Go to your <span class="token keyword">new</span> <span class="token class-name">project</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">cd ./test-ionic</span><span class="token template-punctuation string">`</span></span>
+<span class="token operator">-</span> Run <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">ionic serve</span><span class="token template-punctuation string">`</span></span> within the app directory to see your app <span class="token keyword">in</span> the browser
+<span class="token operator">-</span> Run <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">ionic capacitor add</span><span class="token template-punctuation string">`</span></span> to add a native iOS or Android project using Capacitor
+<span class="token operator">-</span> Generate your app icon and splash screens using <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">cordova-res --skip-config --copy</span><span class="token template-punctuation string">`</span></span>
+<span class="token operator">-</span> Explore the Ionic docs <span class="token keyword">for</span> components<span class="token punctuation">,</span> tutorials<span class="token punctuation">,</span> and more<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>ion<span class="token punctuation">.</span>link<span class="token operator">/</span>docs
+<span class="token operator">-</span> Building an enterprise app<span class="token operator">?</span> Ionic has Enterprise Support and Features<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>ion<span class="token punctuation">.</span>link<span class="token operator">/</span>enterprise<span class="token operator">-</span>edition</code></pre>
 <p>I followed the steps and I was good to go.</p>
 <p><a href="https://toddl.dev/posts/ionic-and-vue-part-two.md">Part two of the series is here if you want to read on</a></p>
 <h2 id="next-steps" tabindex="-1">Next Steps</h2>
@@ -76,18 +81,20 @@
 
       <footer class="meta footer">
         <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/podcast">Podcast</a></li>
-            <li class="nav-item"><a href="/support">Support</a></li>
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/resources">Resources</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/links">Links</a></li>
-            <li class="nav-item"><a href="/speaking">Speaking</a></li>
-            <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
-          </ul>
+          <nav>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+              <li class="nav-item"><a href="/links">Links</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
         <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
 
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
@@ -100,44 +107,46 @@
           </ul>
         </nav>
 
-        <ul class="footer-icons">
-          <li>
-            <a href="https://codepen.io/colabottles/#" class="codepen">
-              <svg class="icon icon-codepen" focusable="false">
-                <title>My CodePen repository</title>
-                <desc id="codepen">A white 3D cube.</desc>
-                <use href="/img/symbol-defs.svg#icon-codepen"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/colabottles/" class="github">
-              <svg class="icon icon-github" focusable="false">
-                <title>My GitHub repository</title>
-                <desc id="github">A white OctoCat.</desc>
-                <use href="/img/symbol-defs.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://toddl.dev/feed/feed.xml" class="rss">
-              <svg class="icon icon-rss" focusable="false">
-                <title>The RSS feed for this site</title>
-                <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
-                <use href="/img/symbol-defs.svg#icon-rss"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
-              <svg class="icon icon-accessible-icon" focusable="false">
-                <title>WAVE test results for this site</title>
-                <desc id="a11y">A person in a wheelchair that is the color white.</desc>
-                <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </footer>
     </div>
   </body>

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v2.0.1">
+    <meta name="description" content="Our Interview with Carie Fisher">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+    <title>Carie Fisher</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" class="page-title" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
+      </header>
+
+      <main id="main" class="inner">
+        
+<div class="article-container">
+  <article>
+
+    <h2 class="article__title">Carie Fisher</h2>
+    <header class="article__header">
+      <div class="article__meta">
+        <time>10 June, 2023</time>
+      </div>
+    </header>
+
+    <section class="article__body">
+      <h2 id="s3%3Ae2" tabindex="-1">S3:E2</h2>
+<p>[00:00:00] Todd Libby: Welcome to the Front End Nerdery podcast, a podcast about front end design, development and other things that we decide we want to talk about. Right, Homer? Yeah.<br>
+[00:00:14] Homer Gaines: Anything that comes out of our faces.<br>
+[00:00:15] Todd: Yeah.<br>
+[00:00:17] Homer: Within reason.<br>
+[00:00:17] Todd: Today’s guest is a wonderful person who I think is, you know, she's, you have been a source of learning for me, Carie for the,<br>
+[00:00:38] Carie Fisher: Sorry.<br>
+[00:00:39] Todd: It’s alright.<br>
+[00:00:39] Homer: That explains a lot. No.<br>
+[00:00:43] Todd: Director of Digital Accessibility and what else? Geez, where'd my list go? Well, good job, Todd. You wrote the learn accessibility course on web.dev that we'll get to. Plenty of articles.<br>
+[00:00:58] Homer: Which I actually shared today. I shared that with some folks today.<br>
+[00:01:04] Todd: One of my favorites.<br>
+[00:01:07] Carie: Sorry. This the whole, the, the title of this podcast.<br>
+[00:01:10] Todd: This episode will be titled, sorry. And,<br>
+[00:01:14] Carie: And a shrug Emoji.<br>
+[00:01:15] Todd: Yes.<br>
+[00:01:16] Homer: Right. Carie Fisher is, sorry.<br>
+[00:01:19] Todd: And it'll be apologetic through and through. One of my favorite articles, the SVG accessible SVGs,<br>
+[00:01:26] Homer: Facts<br>
+[00:01:26] Todd: and much, much more. Carie Fisher. Carie, how are you today?<br>
+[00:01:31] Carie: Good. How are you two?<br>
+[00:01:34] Homer: It's Friday.<br>
+[00:01:34] Todd: It's Friday.<br>
+[00:01:36] Carie: Yeah, it's Friday.<br>
+[00:01:37] Homer: It's Friday.<br>
+[00:01:39] Todd: Let's jump into first the Learn Accessibility course. I have not had a chance to go through it yet. Shame on me.<br>
+[00:01:48] Homer: What?<br>
+[00:01:49] Todd: But I will at some point. I have actually though, we wrote up a list that we use internally at my work to tell people who go here, if you please learn about accessibility, this is one of those resources.<br>
+Tell us about that. How'd that come to fruition? And how was the, how was there, how, how did it go and how was it going?<br>
+[00:02:21] Carie: I feel like another shrug emoji is appropriate. I, you know, it, it was something that took a while to get off the ground and just kind of, serendipitously just fell in my lap. I think somebody else was maybe tagged to do it originally and had to bow out. And so, I jumped in, which was great. So, I was like, if anyone's gonna do it, like I know, you know, maybe I won't get everything right cuz I'm human, but I know that I have some thoughts and I, there's certain topics that I wanted to make sure that we covered.<br>
+And it, it's kind of, it's one of those things that when you think about it, like when you write a, a very detailed article or you do a talk about something specific, you can get into the nuances, you can get onto the caveats and in this context and this con. But when you talk about something general for the general public, for people who are beginners, who may be overwhelmed by things like acronyms and other terminology and just like the overwhelming.<br>
+Presence of the accessibility community to get it right. Right? I think it can get a little, I think, I guess what I'm trying to say is when you're writing something, In a deep dive. It's almost easier than writing something for a general audience when you have to encompass as much as you can within like, the parameters of a 1500-word type essay.<br>
+[00:03:42] Todd: Yeah.<br>
+[00:03:42] Carie: So, to me it was a challenge. Like, what, what do you include? What do you not include? What do you reference? Which types of references is it, you know, organizations or individuals or obviously W3C and Y group for sure. And other, other, you know, reputable sources like that. But Mozilla, lots of Mozilla there.<br>
+But the, the real question becomes is how do you still the, all these years of information and all the people that we know and the community and all the things, the perspectives also of people with disabilities and different individual and community perspectives in that as well. Because I think that's the piece that always seems to be taken out of courses about accessibility.<br>
+We really focus on the code only. And like the human aspect always seems to be like, Where's that? You know? So, I think it, it felt I hadn't really thought about the, how to respond to this kind of question, but it's like, it, it felt overwhelming, and I hope that I did it justice. And I know you haven't looked at it, Todd, but when you do look at it, you know, it is an open-source project.<br>
+So, you know, if we do if there are things that need to be modified, we always had the opportunity to put in a PR or open up a question as well. So good and bad to that as well. So, as you know, as you know.<br>
+[00:04:58] Homer: I noticed that you know, it's an ongoing, it's an ongoing project, you know, it's living the documents are changing and every now and then, you know, that that new, you know, badge will pop up over a new section.<br>
+And, you know, I remember some tweets a while back where you were like, I got some new stuff coming. I was just like, oh, okay, cool. Bet. She's, she's updating. How does that go? Because it's not just like you, you are just maintaining a blog where you can just casually write your thoughts out. As you said, you have to carefully curate the knowledge that is going into each of these lessons so that people can understand at any level what's going on. How do you keep that momentum? How do you fight through that, that writer's block, so to speak. When you get there and it's just like task paralysis. I got so many ideas. How do I even put this, these things together when they don't want to fit seamlessly like I want them to. How do you work through that? Asking for a friend.<br>
+[00:06:01] Carie: Yeah. Asking for a friend. Well, I don't know if my experiences as the way that you wanna go about it either, but dead, I'm deadline driven as an individual, so even if it's arbitrary, even if it's something I put in my head like it has to be done by this certain date.<br>
+For some reason, I can like trick myself into saying, okay, I'm gonna get it done. So, but,<br>
+[00:06:22] Homer: OK<br>
+[00:06:23] Carie: In, in this case, I also had editors, so I got to work with Rachel Andrew and Alexandra White from Google on the web dev team. And there were a couple other editors that we had copywriters. And so, there was kind of a team effort to keep engaged and, and to also, you know, we had check-ins every other week.<br>
+So that kept me motivated. Most of my check-ins were, I don't have this module done, but I have a demo for it. So usually I, it kind of worked backwards, right? I, cause I love the code. And then a front-end developer by trade and I was one for over 15 years. And so, for me, the inspiration is kind of the fun part is the code.<br>
+So, I do the, the demo essentially, and CodePen, and then I'd show it to them, and I'd say, what do you think about this so far, this premise?<br>
+[00:07:09] Homer: And write around it.<br>
+[00:07:09] Carie: Yeah. And then I'd write around it.<br>
+[00:07:11] Homer: Yeah.<br>
+[00:07:11] Carie: And then it became easy so to speak, because then it's just a task of like, how did I get to that point? Like, I can just create it, but if I take a step back and I walk through, and obviously that was the hardest modules of all were the ones that didn't have demos.<br>
+So, the first two modules are about, you know, representation disability types and WCAG and like how do you do, you know, conformance testing, that sort of thing, like general information. Those, to me, were the hardest ones to write because they were too, they were dense. Right. There's so much to take from and there are no demos to, to build around. So,<br>
+[00:07:45] Homer: Yeah. It's hard, so hard to, it's hard to visualize a lot of those as well.<br>
+[00:07:53] Carie: Yeah.<br>
+[00:07:54] Homer: You, you just can't have some cool graphics that are there to support those particular topics. So, no, I definitely get it. Like I said, I was asking for a friend, and that friend is me because I'm, I'm trying to get, I'm trying to be more active with my blog and I'm running into the same issues and yeah. The ones where I have demos easy, easy.<br>
+[00:08:17] Carie: Easy. Yeah.<br>
+[00:08:17] Homer: The ones without the demos, it's like they're sitting over there just chilling.<br>
+[00:08:23] Carie: Yeah.<br>
+[00:08:23] Homer: Waiting for me to write on 'em still, so. Ok. Cool. Good deal. Good deal.<br>
+[00:08:27] Carie: Yeah.<br>
+[00:08:27] Homer: How many how many modules are you planning out?<br>
+[00:08:30] Carie: Well, I mean, technically we ended the modules, so I think we were, we ended up with 20. Maybe it's 20 or 19, something around that. But with the idea of, again, this is Evergreen and with WCAG 2.2 coming around the corner, we have some, some spaces in there to say, hey, once this is finalized, this is something that you may be aware of. But we don't have anything written around it. Because when we were doing the modules, it was in draft form still,<br>
+[00:08:56] Homer: Right<br>
+[00:08:56] Carie: and it still is technically in draft form, you know, that it's hopeful. In April, I think is, is the new release date. But they did say<br>
+[00:09:03] Homer: Yeah tentatively<br>
+[00:09:03] Carie: that last year. I know. I was gonna say, they said last year was gonna be earlier and then yeah, it happens. So, we have some kind of things penciled in and there's certain things that, when we wrote the outline back in, so I wrote an outline of things I would want to include way back in April, so almost a year ago.<br>
+And then from there we kind of pick, picked and chose, like the ones that we thought were most important to, to tackle first. But there's a whole list of things that are kind of sitting there that may be potentially written about in the future.<br>
+[00:09:37] Homer: Okay.<br>
+[00:09:37] Carie: Maybe it'll be me, maybe it'll be another developer or somebody that comes in to write those. I'm not quite sure what that feature is, but technically my, I'm done. I'm outta there.<br>
+[00:09:46] Homer: Ok, gotcha, gotcha.<br>
+[00:09:48] Carie: So, it is what it is right now.<br>
+[00:09:49] Homer: So, you said you had a lot of these ideas almost a year ago. How does that feel to even just think, it's like, wow, we started this and, yeah. This stuff is becoming a reality from last year. How you're putting this together and how it's being received. How, how does that make you feel?<br>
+[00:10:07] Carie: Yeah, well, it, it feels weird in a sense that, I don't like when you write a blog post or you do a presentation, you might have set dates of like, when it's gonna be released, but typically it's not months, you know, ahead of time.<br>
+So, but I am in academia now. I am out working on my, my PhD and, and human computer interaction. Yeah.<br>
+[00:10:29] Homer: Nice<br>
+[00:10:29] Carie: Done the courses and just doing research, but even, right. I did a, a survey last fall and I've already, I've done the, the writing around it, but by the time you apply to get that put into an aca academic journal or academic conference, like literally year and a half can go by. And so,<br>
+[00:10:50] Homer: And stuff's out of date things change.<br>
+[00:10:52] Carie: It does, but I guess what I was trying to say is that in the dev world, in the, you know, corporate world, it's like fast, fast, fast. The sooner you put it out the better. And then in the academic world, it's almost the opposite. So that, that web dev project was somewhere in between. So, I guess I'm comfortable with<br>
+[00:11:10] Homer: Okay.<br>
+[00:11:10] Carie: All kinds of different timelines these days, but yeah,<br>
+[00:11:13] Homer: That's good, be flexible. Good deal. All right. I was just curious about that. Thanks.<br>
+[00:11:19] Carie: No, yeah.<br>
+[00:11:20] Todd: So, I was<br>
+[00:11:21] Carie: Don't do, but don't do as I do. Right. Do your own thing for sure. Like try to publish it. Don't sit on it.<br>
+[00:11:27] Homer: I'm trying, you know, like Todd knows my whole journey through music. It's like I used to sit on my music and sit on it and sit on it until all of it was stolen one, you know, that night.<br>
+[00:11:37] Carie: Oh, I'm sorry.<br>
+[00:11:38] Homer: And so now it's just like all, whenever I write something I want put it out. So, I record music and I just go ahead and release it. I don't sit on it anymore. And the same thing with the blog.<br>
+It's like I have all these ideas. People have been telling me, you need to go write. You need to go write. You need to go. And I'm like, yeah, whatever. Now I'm there. But if, just to get started, it feels like I'm doing a tough mud, mud mile through, you know, molasses.<br>
+[00:12:06] Carie: Yeah.<br>
+[00:12:07] Homer: Yeah.<br>
+[00:12:08] Carie: I guess I, I, I'm, I do the things that scare me the most and WebDev definitely scared me.<br>
+Some things I've done in like smashing or going back to school or even taking the job I have now. I don't know how to necessarily do any of these things really, let's be honest. But I'm trying, and I think that's part of it, right? Just kind of doing the things that scare you because<br>
+[00:12:29] Homer: Yeah.<br>
+[00:12:29] Carie: I mean, what's gonna happen? What's the worst that could happen? Really? I mean, really you fall flat on your face,<br>
+[00:12:34] Homer: You learn.<br>
+[00:12:34] Carie: I guess, but yeah, those is, when you learn the most.<br>
+[00:12:37] Homer: That’s a learning opportunity.<br>
+[00:12:37] Carie: Yeah. Yeah. So go for it, Homer. I say publish that.<br>
+[00:12:43] Homer: All right, cool. I’m doing it.<br>
+[00:12:43] Todd: Yes. Yes, I<br>
+[00:12:47] Carie: Do it.<br>
+[00:12:48] Todd: I, I, I have been a part of those W3C meetings and.<br>
+[00:12:53] Homer: How's it going?<br>
+[00:12:54] Todd: I'm glad I didn't have to pay for the ticket. They actually, the last meeting we had went very, very well. So, I, I think we're on target, but yeah, it's, they're the big, the big hangup was focus appearance.<br>
+[00:13:13] Homer: Yeah, I was gonna ask you about that.<br>
+[00:13:14] Todd: And the wordsmithing behind it.<br>
+[00:13:17] Homer: Yeah.<br>
+[00:13:17] Todd: There's, there was many a meeting where there's word the, you know, the words, what do we use here, what do we use there? And the, the usual W3C shenanigans. So,<br>
+[00:13:31] Homer: Plain English people, just<br>
+[00:13:33] Carie: Plain English, yeah.<br>
+[00:13:34] Homer: Yeah.<br>
+[00:13:35] Todd: Yes.<br>
+[00:13:35] Homer: Or more plain language, just<br>
+[00:13:39] Todd: Yeah. Yeah. And, and so mind you, that's still 2.2. Three, I hope will drastically change so that it's not so much a technical manual anymore. I'm really hoping that's the case, but back to,<br>
+[00:13:59] Carie: Can I be honest though, Todd? Like,<br>
+[00:14:01] Todd: Sure.<br>
+[00:14:02] Carie: 2.2, like I was gonna, I thought about tweeting this and then I didn't. Speaking of things that scare you, right?<br>
+[00:14:08] Homer: Wait, you thought about tweeting it, you didn't, so you're going to say it?<br>
+[00:14:13] Carie: I am.<br>
+[00:14:13] Homer: Okay.<br>
+[00:14:14] Carie: Which is gonna get me in worse trouble probably because I can't get excited about 2.2. I can get excited about three, but like<br>
+[00:14:22] Homer: Yeah<br>
+[00:14:22] Carie: I have people that I know and clients and individuals that I work with, and other people work with, you know, they can barely do 2.1. What's and 2 and 2.0,<br>
+[00:14:33] Homer: Facts<br>
+[00:14:33] Carie: I had to look it up. It was like, I think it was 2008 or something that it came out. I was like, wow. So, yeah.<br>
+[00:14:42] Homer: Yeah<br>
+[00:14:42] Carie: So, I'm, I am excited. Maybe 3.0 will, will spin it all in its head because there is a lot of interpretation that seems to have to happen. Or maybe doesn't have to, but it does because of the way things are worded that leaves it op more open to interpretation.<br>
+[00:14:57] Todd: Yeah. And the good thing I see coming down the line with 3.0 is, or 3, whatever we want to call it, it's got a new thing every week it seems. Is that I think it's not as so much a radical change as a necessary change for the better.<br>
+[00:15:23] Carie: Yeah<br>
+[00:15:23] Todd: And that once we, once we get 2.2 done and we're all able to focus on three and what's coming ahead. I think, I think it's going to be a lot better in the long run. Mind you, I still have some reservations about certain things, of course, but I do like the fact that we have the APCA scoring for color contrast, which is a lot better than what we currently have now. Now mind you, I've seen some of the math behind the APCA scoring and I had to leave the room. I wasn't smart enough to be in that room. Cause they<br>
+[00:16:10] Homer: Those formulas are, those formulas are wicked.<br>
+[00:16:13] Todd: It is incredible.<br>
+[00:16:14] Carie: They are.<br>
+[00:16:15] Todd: It's incredible work. It is, it is. A lot of, and you know, we all know this, a lot of really, really smart people doing some really, really good work and, and you know, hopefully in the long run that we'll, we'll have something that the public can say, this is absolutely wonderful to have.<br>
+So, and we, and, and my big thing is I want people that are starting out in accessibility and starting to learn accessibility to be able to understand the documents. That's the biggest thing.<br>
+[00:16:52] Homer: Indeed. Correct me if I'm wrong, we're gonna have more of a cognitive presence than three, version three. Right? Because right now it's, it's, it's dealing more with just, you know, our tacticals, our tactile senses and so forth. We're not really digging into the cognitive side of accessibility.<br>
+[00:17:19] Todd: I, I don't want to give a definitive answer, but I think so.<br>
+[00:17:25] Homer: Well, well then yeah, because it's, it's still, everything is still up in the air with.<br>
+[00:17:28] Todd: Yeah.<br>
+[00:17:28] Homer: But I know that they were leaning more towards that.<br>
+[00:17:30] Todd: Yes, they were. The, the stuff that I'm doing,<br>
+[00:17:37] Homer: What are you doing, Todd?<br>
+[00:17:39] Todd: The work on deceptive patterns.<br>
+[00:17:41] Homer: Oh, that? Racist.<br>
+[00:17:47] Todd: A little bit behind that. Carie. I had some white men walk out on my talk because I brought up the racial connotation behind the term dark patterns.<br>
+[00:17:58] Carie: They were offended and left?<br>
+[00:18:02] Homer: He's giving this shrug emoji and came off like Paul Mooney.<br>
+[00:18:05] Carie: Shrug emoji.<br>
+[00:18:05] Todd: Shrug emoji<br>
+[00:18:05] Homer: Shrug emoji. Yeah.<br>
+[00:18:09] Carie: I'm sorry.<br>
+[00:18:10] Homer: He came off like Paul Moony and they got up and, and they left, and we kind of just chuckled about it. It was just like.<br>
+[00:18:16] Carie: Oh, you don't wanna offend the white, you know, JavaScript bros out there, you know, they're very delicate.<br>
+[00:18:22] Todd: I think I did enough of that with my Tailwind post Mastodon.<br>
+[00:18:28] Homer: No, we're not gonna<br>
+[00:18:29] Carie: Drama.<br>
+[00:18:29] Homer: We're not going into a Tailwind talk again.<br>
+[00:18:32] Todd: No, we, we have a guest. We could do that in a separate episode, Homer.<br>
+[00:18:39] Carie: Oh, man.<br>
+[00:18:40] Todd: So, you know, I, looking at this, and when I first originally looked at Learn accessibility, I was like, oh, okay, Rachel's on this. And I don't know Alexandra, but Mark Steadman, you, there's a,<br>
+[00:18:55] Carie: I tagged him.<br>
+[00:18:57] Todd: Yep. Mark is great and I don't know Aaron, but it looks, from what I've been able to just skim through briefly here. It looks great.<br>
+I, I like the setup and I liked the, you know, kind of reminds me of the MDN docs a little bit, but then you have certain parts where, like on forms you have that little interactive part at the end. I like that, I, I, I just like that.<br>
+[00:19:23] Homer: Yeah. Go through, take your quiz.<br>
+[00:19:25] Todd: I'm not gonna tell you how I did on this, that one.<br>
+[00:19:31] Homer: Dude<br>
+[00:19:31] Carie: Some of those are tricky, that's for sure. You know, I, like a few years back I was on that W3C had their own kind of intro to accessibility and everyone kind of had their own module that they taught. I was part of, or that group as well.<br>
+[00:19:46] Todd: Okay.<br>
+[00:19:46] Carie: And honestly, the hardest part was writing the questions. In this case, Alexandra got to write all the questions, so I gotta,<br>
+[00:19:53] Homer: Nice, there you go.<br>
+[00:19:53] Carie: I got to avoid that, which is great cause she was newer. And so, for her to have that, that new perspective to like read through and say, you know, does this question make sense? And what is the answer? You know, it, it was kind of it was, she was essentially our target audience. So, we, we worked around her to like write these questions. But before, yeah, writing questions is a lot harder than it looks.<br>
+So don't, don't feel bad if you get tripped up by em, they're just there to, you know, maybe you need to read it again. I don't know. Maybe.<br>
+[00:20:25] Homer: Read it again, Todd.<br>
+[00:20:26] Carie: I don't, or twice or three times.<br>
+[00:20:27] Todd: Let, lemme tell you, I, when doing anything like that or something that I really need to have the knowledge, I'll read three or four times.<br>
+[00:20:37] Carie: Yeah.<br>
+[00:20:37] Todd: So, and even, and even take notes. So<br>
+[00:20:42] Homer: Yeah, some things read it once and it's there. Some other things. Takes practice, you know, you just gotta go through it cuz it's, it's, it's hitting the wall and it's sliding right off.<br>
+[00:20:55] Todd: Yep. Like my.<br>
+[00:20:57] Homer: That’s about it. I do have a confession. So, around the time that you started this project. I was starting to work on modules for basically teaching accessibility as well. You guys launched before I did.<br>
+[00:21:14] Carie: Oh.<br>
+[00:21:16] Homer: So, I failed on it.<br>
+[00:21:17] Carie: No, don't base on it.<br>
+[00:21:19] Homer: No, the thing is, the thing is<br>
+[00:21:20] Carie: It’s good, it’s good to have like multiple resources and perspectives and yeah.<br>
+[00:21:25] Homer: We got those multiple resources, but at the same time it's like the, the time and energy that you all put in, I'm just like, that imposter syndrome started hitting.<br>
+[00:21:36] Carie: Yeah.<br>
+[00:21:36] Homer: I was like, okay. Maybe because yeah, you had, you had way more courses than I had because I was still noodling through how I wanted to get everything set up. Because when I first started giving talks about accessibility, I realized that we are starting at the beginning, even though it's been out there forever.<br>
+We are at the beginning cause like what? Like you said, 2.1's been out since 2008 and you still have people who are like, I'm gonna use a div for a button. No, let's not do this. You know? So, we still have a lot of work to do to bring people up to speed, you know, even in this day and age, which is why I wanted to, to introduce it.<br>
+But when I saw your product coming out, I was like, okay, way better.<br>
+[00:22:25] Carie: No<br>
+[00:25:25] Homer: And maybe I should be able to focus on something else. So, then I, I took what I was doing and actually threw 'em more into talks than actual content. So now that's, that's how my talks have evolved. But yeah, it was definitely an eye open. I was like, oh man, we don't need all these things out here doing this, do we?<br>
+We can just funnel everybody over to here. The information is great. It's eventually going to evolve, so cool. It's a number now. I, I celebrated it with, with you all, cuz you did some amazing work with, with that project. So, and like I said, I shared today the resources that you had on testing came in super handy today with me and some of my teammates.<br>
+[00:23:09] Carie: I mean, I feel, I feel a lot of ways about those comments cuz I think first of all, you know, your, your perspective is valid and what you bring to the conversation. I think having not even read what you wrote, I think is still valid in the sense of, you know, it, it could be a different take or a different demo or a different way that you phrase something that might touch somebody in a different way or make them understand that they didn't get from us, right?<br>
+Because I don't think we all, it's not like we read the encyclopedia and we back in the day or whatever, we're like one topic and you read Wiki about it and then like, you know everything about it, right?<br>
+[00:23:45] Homer: That's fair. Fair<br>
+[00:23:46] Carie: Just gets you interested, and then you go down to the rabbit holes.<br>
+[00:23:50] Homer:  The other thing I was concerned about with developing<br>
+[00:23:51] Carie: development<br>
+[00:23:51] Homer: was being considered or being viewed as copycat.<br>
+[00:23:56] Carie: Yeah, no.<br>
+[00:23:57] Homer: you know, cause you could read somebody's work and then hope that that doesn't necessarily influence how your work comes out.<br>
+[00:24:04] Carie: I don't, I don't think that, I mean, I understand your perspective and I, I get that timing sometimes is just off.<br>
+But, you know, there are courses that came before me. I worked at Deque for several years and they have their own courses<br>
+[00:24:18] Homer: Yeah<br>
+[00:24:18] Carie: and trainings. But, but I'm just saying though, like, just because I did training at Deque and I understand their materials at the time, I'm sure they've evolved even. Doesn't mean that I can't give a training of my own and get my own perspective or highlight the things I think are most important to touch on based on the experiences that I've had with other individuals and companies.<br>
+And so, I think that's the same with you. Like in the case of, you know, the resources will always be there, they'll always be more, will always standing on the shoulders of giants, I don't think. I'm in, I've made anything up that was innovative to the point where no one else could replicate that or do the same thing.<br>
+I think you know what I'm saying? I'm saying that.<br>
+[00:24:57] Homer: No, I'm with you. I, I understand.<br>
+[00:24:58] Carie: I'm not. even the people who,<br>
+[00:25:01] Homer: And it’s<br>
+[00:25:01] Carie: who invest something, yeah.<br>
+[00:25:03] Homer: interesting that I'm hearing this. And it's interesting that you have that perspective because other professionals that are in our space, when I've spoken to them about it, I get the exact opposite.<br>
+I get the exact opposite. Like for instance was Stencil was working to build out a design system using Hugo and Stencil and got berated because it was like, why do you want to come up with another accessibility or accessible design system and yada, yada, yada. Cause well, for one, the one you made was trash and that started a whole other conversation.<br>
+[00:25:39] Carie: I’m sure they loved that.<br>
+[00:25:40] Homer: But then it's like, well, why don't you just join in with one of the other ones that are already out there and, and help make those better. I'm like, yeah, I would. But a lot of people are tone deaf when it comes to this, you, you start to talk about, or add these suggestions in there.<br>
+We, we all know how the tech industry is, or I shouldn't say the industry, the tech bros. The people who feel like, you know, this is their end all to be all, and even the slightest suggestion, that doesn't sound like praise, bruises their ego. I mean, like we started talking about before, you know, we actually started recording the fragility of it all.<br>
+So, you know, I try to avoid that because one, I don't have time for that, you know.<br>
+[00:26:24] Carie: I know<br>
+[00:26:25] Homer: Yeah, yeah.<br>
+[00:26:25] Carie: Yeah, yeah.<br>
+[00:26:27] Homer: That's a whole other conversation.<br>
+[00:26:27] Carie: I hear that. I hear that. I guess, you know, I started my development career, you know as my backgrounds in genetics. Like I started out not actually doing it, right? I was the person in the labs that, that actually built the websites and like made all the all multimedia.<br>
+Because I was the only one who knew how to do it or wanted to learn how to do it. And so that's how I started my career and, and<br>
+[00:26:52] Homer: Nice<br>
+[00:26:52] Carie: open source essentially,<br>
+[00:26:54] Homer: Yeah<br>
+[00:26:54] Carie: and academia. So like, I think it's a little bit more collaborative in that sense, not that there's not egos and not that there's not, you know, competing priorities, but I think for the most part we understand that it's an ecosystem and that I'm stronger by building off of something you built and your perspective and your code and something that you can contribute that I can't contribute, but I can also contribute this.<br>
+Right? And so together we're gonna build, build a better organism than we would had we done our own, in our own silo. So, I<br>
+[00:27:25] Homer: gotcha.<br>
+[00:27:26] Carie: That's just kind of my, my way of things, doing things. Unfortunately, that doesn't always work in tech and business.<br>
+[00:27:31] Homer: I completely, my background is in psychology and neurology.<br>
+[00:27:35] Carie: Yeah, well, there you go.<br>
+[00:27:37] Homer: I get it.<br>
+[00:27:37] Carie: Yeah<br>
+[00:27:38] Homer: Definitely get it.<br>
+[00:27:39] Todd: My background is<br>
+[00:27:40] Carie: that's probably why we, what were you gonna say, Todd?<br>
+[00:27:42] Todd: I was gonna say my background is in food and eating. So<br>
+[00:27:46] Carie: all, all equal endeavors here.<br>
+[00:27:51] Homer: Yes. Monsieur your lobster.<br>
+[00:27:54] Carie: That's so funny. Now, every time I see anything related to lobster, I automatically think associate with you.<br>
+There's probably a psychology behind that, that that Homer can unlock, but, yeah.<br>
+[00:28:05] Homer: Yep. That word association, that is definitely his brand and<br>
+[00:28:10] Carie: Yes<br>
+[00:28:10] Homer: whenever he shows up, it's all, that’s always a question. Somebody always asks him; do you have anything to wear that has lobsters on it. Be it socks, underwear.<br>
+[00:28:21] Carie: Yeah.<br>
+[00:28:21] Homer: That was a weird time that<br>
+[00:28:21] Carie: That was<br>
+[00:28:22] Homer: was<br>
+[00:28:23] Carie: I don't wanna know that.<br>
+[00:28:25] Homer: Right? You're like,<br>
+[00:28:28] Carie: no, no offense.<br>
+[00:28:28] Todd: Yeah. You got a little personal there.<br>
+[00:28:29] Carie: I didn't say it. Homer did.<br>
+[00:28:34] Homer: I, I was the one that asked the question, but I was, I was present when the question was asked, and it caught everybody off guard. Like, why are you, why do you wanna know about my man's boxers? But anyway.<br>
+[00:28:43] Todd: Yeah. No, I'm, I, I, I remember, I remember. Oh, do I remember that. And yeah. Oh, you getting a little personal there, but you know, well<br>
+[00:28:53] Carie: but Sure. Yes.<br>
+[00:28:56] Todd: Sure enough.<br>
+[00:28:56] Carie: Yeah.<br>
+[00:28:57] Homer: Talk to the talk. You'll see the socks.<br>
+[00:29:00] Todd: Yes. There's, there's socks, there's hats. There's even going to be,<br>
+[00:29:06] Homer: Did you get the Kilt made?<br>
+[00:29:07] Todd: No. I want to get the Kilt made. I gotta get the Kilt made. There's gonna be a co lobster costume. And I thought about this at Code Mash when everybody was like, oh, we were hanging out in the hot tub. I said, darn, I should have brought my lobster costume and jumped in the hot tub with you, but, but.<br>
+[00:29:31] Homer: I wish they do it in Orlando, but it may be too hot. You might pass out.<br>
+[00:29:36] Todd: Yeah, no, I was thinking Magnolia if I get accepted to Magnolia again, so we'll see. But<br>
+[00:29:43] Homer: aren't you, aren't you rocking Magnolia right now?<br>
+[00:29:45] Todd: I am rocking the Magnolia JS 2022. It was such a wonderful conference. Kayla and Richard put a great conference together. They had a, a lot of accessibility persons, I guess you could say there.<br>
+I gave my talk, and I had a lot of people ask me about accessibility, which was great because that's why I do it.<br>
+[00:30:09] Carie: It was great.<br>
+[00:30:09] Todd: So, I was gonna talk about, real quick for a second, this actually the learn accessibility course. Okay. I was wondering you, what you both were talking about. I have to do a workshop at DevNexus in April and I'm gonna get a lot of, I mean, I'm gonna put my, how I do things.<br>
+It's, it's doing an accessibility audit, learning how to do it, but I'm also gonna take a lot of different things from a lot of different people such as yourself in this course and, and other places too that I've kind of shaped the way I test. So, like you said, standing on the shoulders of giants. I mean, I, up until what, 2020 didn't really put myself out there. And I've put myself out there since then. And every, everybody's like, oh, you're an accessibility expert. And I went, experts going maybe a little too much, but thank you.<br>
+So yeah, the, I think this compiled with a lot of other different things hopefully will bring a, a good workshop. I found out that somebody's gonna maybe be in attendance to heckle me, so I gotta be ready.<br>
+[00:31:43] Homer: I wonder who that is.<br>
+[00:31:45] Todd: Thank you, that guy, wherever you are.<br>
+[00:31:50] Carie: Yeah. No, it's, it's good to do workshops and I, I definitely learn something every time I do one.<br>
+Even as the, the teacher, I, I don't like the word expert. Like that's just my own thing. I know I got kind of in trouble by somebody in our community who really loves that term and loves to call themselves that.<br>
+[00:32:08] Homer: I love this term, and you should too<br>
+[00:32:09] Carie: But to me it like, it's, there's like a inherent connotation that you've learn as an expert.<br>
+You have nothing else to learn and so you, you're, you're insular and you are the all-knowing being and, and I think in our field that's impossible. Like not only technology and, and the speed in which it changes, but with that human factor, again, the people with their own unique perspectives of their own disability, but also the community like, you know, the deaf community or the blind community?<br>
+Deaf, blind, other communities, cognitive issues. . . And it's like both as a community and as an individual that it's like you're always wanting to learn from those different perspectives. So, I honestly don't think we, any of us, are experts. So, I don't know. No offense to Todd. No offense to me.<br>
+No offense to Homer. Anyone else like, wants to call himself to that? Go for it. I'm not against that, but personally I have a hard time accepting that as a title. Yeah. No,<br>
+[00:33:08] Homer: Yeah, I'm just an accessibility professional.<br>
+[00:33:11] Carie: Yeah. That's always learning. That's, yeah. Oh<br>
+[00:33:13] Homer: yeah. Oh my gosh.<br>
+[00:33:15] Todd: Oh, I agree I, I definitely agree. I don't even like, okay. The W3C invited expert. I kind of kind, ooh, you know what.<br>
+[00:33:26] Carie: That’s pretty cool though. I'm glad.<br>
+[00:33:28] Todd: It is.<br>
+[00:33:28] Carie: I've never, the W3C has never invited me to anything, so I'm probably banned for some reason from that. But that's something to unlock at a different time. Probably.<br>
+[00:33:39] Todd: I had to fill out a form. You have to fill out a form and then submit the form.<br>
+[00:33:41] Carie: That's too much work. No, I can't, sorry.<br>
+[00:33:47] Todd: It, it wasn't that bad, but in case anybody's listening from the W3C, like, great, it was a great process that,<br>
+[00:33:55] Homer: that lift. So, so speaking of too much work.<br>
+[00:34:00] Carie: Nice segue.<br>
+[00:34:01] Homer: How, how, right. How's the PhD program going man?<br>
+[00:34:04] Carie: It's going well. I, I love it. I probably just oversold that. All right, so let me rephrase that. I'm done with classes. I took all the really cool things.<br>
+[00:34:16] Homer: Yes.<br>
+[00:34:16] Carie: And I think one of the ones that was most interesting to me was XR technology. So, VR, AR mixed reality as well, MR. And so, I've been toying with some research ideas around accessibility education within that realm, and so I've come up with some interesting ideas.<br>
+B, but A, I can't really talk more about that because<br>
+[00:34:37] Homer: Fair<br>
+[00:34:37] Carie: I gotta academia<br>
+[00:34:39] Homer: Fair<br>
+[00:34:39] Carie: But B, I haven't quite figured it out either because there's this really interesting line between. Again, concepts of emulation, simulation in those kind of fields. So, think about VR, AR, MR. And do you, can you realistically simulate like somebody having a particular disability and should you, even if you could?<br>
+And so, there's some really interesting ethical questions that kind of come along with that. So, I've had some interesting conversations as part of my qualitative research and getting a lot of people's perspectives. I did a lot of research between November and, like the beginning of the year. I was really sick and so you can hear my voice and all these qualitative like audio recordings and it's like I'm scratching my voice the whole time, but I've got it.<br>
+And so, I'm going through all that information now and kind of looking for trends and it's kind of interesting to hear what people are saying and I think they're aligned with what I'm feeling about it, which, you know, spoiler alert emulations and simulations are always problematic. But I still think it's a technology that's worth exploring maybe in a different way. So, I'm kind of excited about that part of it. But again, like I said, it's, I can’t,<br>
+[00:35:54] Homer: Yeah, yeah, yeah, you can’t<br>
+[00:35:54] Carie: this is a different kinda shrug emoji. It's like a, I wish I could tell you more, but I can't.<br>
+[00:35:59] Homer: Wait<br>
+[00:35:59] Carie: In 10 more years you'll get to get to hear about it when it's published, cuz that's about how long it takes.<br>
+[00:36:04] Homer: Oh yeah, and by that time, 2.2 will be out.<br>
+[00:36:] Carie: Maybe.<br>
+[00:36:10] Todd: Maybe, shrug emoji.<br>
+[00:36:14] Carie: Oh, this is, this isn't gonna be live or anything. Right. Nobody's gonna hear that.<br>
+[00:36:20] Todd: No, no.<br>
+[00:36:20] Carie: It's a process. I know that if anything, when you have multiple perspectives, it takes a while and it's good that they<br>
+[00:36:26] Homer: Yeah<br>
+[00:36:26] Carie: take their time and they do all this. It really is like, I'm, I'm kind of being tongue in cheek in some of this, but you know, I think the problem with accessibility in general, it's like it's always reactive, right?<br>
+The technology first has to exist, and it's gotta be a certain age, that technology, and then we have to have integration with assistive tech and other devices and then we get some, maybe some rules about it, right? And I know there's working groups with, even within the XR space where there have suggestions and have like draft forms of things, but nothing set in stone.<br>
+So, it's like the wild west, there are no regulations and as we know in the United States, even if there are quote unquote rules, there's no repercussions for not following those rules in certain, unless you're in certain industries or certain countries or certain, you know what I mean? So, it's like<br>
+[00:37:13] Homer: States.<br>
+[00:37:14] Todd: Yep.<br>
+[00:37:15] Carie: Yeah. It's true though.<br>
+[00:37:17] Homer: States.<br>
+[00:37:17] Carie: It's true. And it depends on your industry and, yeah.<br>
+[00:37:21] Todd: Yeah.<br>
+[00:37:21] Homer: That's<br>
+[00:37:21] Carie: It's complicated.<br>
+[00:37:22] Homer: That just, that just brought, that just made me think about something. What's your talk that you're giving down in Orlando, Todd?<br>
+[00:37:30] Todd: My talk is on deceptive patterns and the fast framework, which is the framework for accessible specifications of technologies, which does mention ethics in the web. So,<br>
+[00:37:46] Homer: So, I'm wondering how this is gonna go over because, you know Florida has all those lovely rules about things you can and cannot say or teach. Granted they apply to schools and so forth, but I wonder how someone in the audience might take that, might have another Paul Mooney moment.<br>
+[00:38:06] Todd: I'm getting me Governor Ron<br>
+[00:38:13] Carie: Oh my God. Hey, I'm going to Florida soon, so don't get me in trouble either. I don't<br>
+[inaudible]<br>
+[00:38:19] Homer: cross state lines.<br>
+[00:38:21] Todd: If you see me on news, if you see me on the news, I'm gonna, I'm just gonna have my lawyer's number flash on screen.<br>
+[00:38:28] Homer: Fair.<br>
+[00:38:28] Todd: So,<br>
+[00:38:29] Carie: Nice.<br>
+[00:38:29] Todd: I wanna ask real quick, which one of these three countries, or which of the, what, what three countries will you be visiting this year?<br>
+[00:38:37] Carie: Oh yeah<br>
+[00:38:38] Todd: Because<br>
+[00:38:38] Homer: Oh yeah.<br>
+[00:38:40] Carie: So, I love to travel.<br>
+[00:38:41] Homer: Where you going?<br>
+[00:38:41] Carie: I love to travel. And so obviously with Covid that kind of put a damper on travel and technically we still have it floating around, which I know that I was probably had it even though I was negative. I was sick for so long, still kind of sick. So anyway, long story short is back to travel.<br>
+So, we're going to Costa Rica. My husband has a work trip that they sponsor and this one. I know, but so he gets to work, and I'll be on the beach and hanging out with sloths. So, I'm very excited about that in a couple weeks. So, if I disappear, that's and never come back to tech. That's where I am. And the Netherlands and Norway as part of my so I work for a company that's headquartered out of Estonia, and so last year was the first time I got to visit that country.<br>
+[00:39:28] Homer: Nice<br>
+[00:39:28] Carie: It's right next to Russia,<br>
+[00:39:29] Homer: Yeah<br>
+[00:39:29] Carie: which is interesting, during the invasion of Ukraine and all of that, that goes with it. But we were safe in Estonia, of course, so I didn't take the time to hang out very long in Europe.<br>
+[00:39:42] Homer: Fair<br>
+[00:39:42] Carie: But this year I thought maybe it would be better. So, I had gone ahead and planned the Norway slash Netherlands trip. So, we'll see. And maybe postpone we’ll see, but it's pretty safe. Yeah.<br>
+[00:39:54] Homer: Yeah.<br>
+[00:39:54] Carie: It's just, it's, it's, yeah, it's a scary time over there, so.<br>
+[00:39:59] Todd: Well, Homer and I were in London in November, and that's,<br>
+[00:40:02] Carie: I saw that.<br>
+[00:40:02] Todd: Was interesting.<br>
+[00:40:04] Carie: Was it, was it fun though?<br>
+[00:40:04] Todd: It was fun.<br>
+[00:40:07] Homer: London is always fun.<br>
+[00:40:07] Todd: I mean, Homer, I don't know about you, but I mean<br>
+[00:40:10] Homer: you know, I got family there, so.<br>
+[00:40:12] Todd: Yeah<br>
+[00:40:12] Homer: Good.<br>
+[00:40:13] Carie: Even better.<br>
+[00:40:14] Todd: Yeah. We, the speakers, made the best of it and<br>
+[00:40:19] Carie: oh, yeah.<br>
+[00:40:19] Todd: You know, Remember I wasn’t gonna let, what happened at the conference itself, with the conference deter, that had been the first time I'd been to London in over 30 years. So,<br>
+[00:40:32] Carie: Yeah, I remember that it worked out. Shenanigans. Yeah. I'm sorry that you all had to go through that.<br>
+[00:40:36] Homer: Oh, that, well, you know what? It, it really had a negative impact on those who, like some people that were there, this was their first tech conference period.<br>
+[00:40:45] Carie: Yeah. It’s heartbreaking.<br>
+[00:40:45] Homer: You know, so it, we took the time to explain to them, this is not how things usually go. This is not what you expect, there's this, this, that, and the other that comes with a tech conference that you are not seeing here. So do not feel like this is the best representation at all. Same thing for some of the first-time speakers.<br>
+[00:41:10] Carie: Can you imagine?<br>
+[00:41:12] Homer: Oh gosh, yeah. There were, there were a few, there were like, what if no one shows up? What if no one is, we were supposed to have this, this venue, and I, I don't know what to do now.<br>
+[00:41:25] Carie: It's like your worst fear as a speaker. You either, like, no one shows up or like everyone shows up. Like, you don't want either one of those things just enough where you feel like you're supported.<br>
+[00:41:34] Homer: Just a happy medium.<br>
+[00:41:35] Carie: Yeah. A little happy medium.<br>
+[00:41:37] Homer: Yeah.<br>
+[00:41:37] Todd: Well, my, my talk was at 5:30 PM on a Friday night.<br>
+[00:41:43] Carie: I remember you said, that's a bad spot. I'm sorry. That's,<br>
+[00:41:46] Todd: and<br>
+[00:41:47] Homer: You know what? On the real, I swear she did that, that on purpose.<br>
+[00:41:50] Todd: Yeah. I<br>
+[00:41:50] Carie: I've, I've been part of being buried as an accessibility speaker at a tech conference. Yes. I know, I know the games.<br>
+[00:41:57] Todd: Yeah.<br>
+[00:41:57] Homer: Yep.<br>
+[00:41:58] Todd: So, at 5:34, I started unplugging things because I was in an empty room and I said, nah, this isn't just,<br>
+[00:42:07] Carie: yeah.<br>
+[00:42:07] Todd: yeah. Then a bunch of people came in and I actually had about, I think it was 10 people that I actually gave, got to give the talk, but I was so just like thrown off by everything.<br>
+[00:42:20] Carie: Yeah.<br>
+[00:42:20] Todd: That it was just like, you know what? I'll just do this, get it over with and we'll, we'll,<br>
+[00:42:27] Carie: good practice.<br>
+[00:42:28] Todd: Move on.<br>
+[00:42:28] Carie: I just laughed. I wasn't laughing at you. I was thinking about the very first talk I ever gave. There were more, it was a, like a panel, kind of like we all had contributed. It was this organization called Gray Muzzle and we did the Alley Air through nobility.<br>
+They have an air challenge where you work as a team to build a website or to update a website to make it more accessible. . . And it was like one of the very first times I got to work with accessibility and present. We show up and we have more presenters than we do audience members, and we knew all the audience members, so they only came to support us.<br>
+And I was like, but we still did it. We got up there, we presented like it was a giant auditorium and we talked all about accessibility and the cool things we did. It, I think it was a really great group project and experience, but it was one of those Todd, like, just like you're explaining like. No, maybe no one's here, but you know, hey, the few people that are, you know, we had a good time. So<br>
+[00:43:23] Todd: Yeah<br>
+[00:43:24] Carie: It was a good experience.<br>
+[00:43:26] Todd: And I, and I gave sewer tours.<br>
+[00:43:29] Carie: I did not do that; I feel like there's a lot to unpack for that.<br>
+[00:43:35] Todd: It was so, it was, it was a joke going. That was, it was a running joke. But I have a picture here. I, I'm gonna show this picture. It's a,<br>
+[00:43:43] Homer: do you have the picture? Yes.<br>
+[00:43:45] Todd: I didn't know it was so creepy until I looked, until<br>
+[00:43:48] Homer: Ok. Wait before you, before you show it. So, this is us, we're coming back from dinner, and we just happened to pass this stairwell that disappears into the blackest abyss I've ever seen.<br>
+[00:44:02] Carie: So, you thought I should go down there?<br>
+[00:44:04] Homer: Yeah. For some reason this dude is just like,<br>
+[00:44:07] Todd: I did<br>
+[00:44:07] Homer: what’s the worst that can happen?<br>
+[00:44:09] Carie: Isn't this how like, isn’t this how like horror movies like start?<br>
+[00:44:12] Homer: This is exactly how horror movies start and this is exactly how they end.<br>
+[00:44:19] Todd: Yeah.<br>
+[00:44:19] Homer: So as, so as we are walking by, this yahoo just decides to just duck off into. Carie, it was so dark we couldn't see him until the flash went off.<br>
+[00:44:31] Carie: That’s so creepy.<br>
+[00:44:31] Todd: I’m pretty fair skinned.<br>
+[00:44:32] Homer: And I was expecting to see somebody behind him, like<br>
+[00:44:39] Carie: I know they<br>
+[Todd shows picture of ‘creepy’ self in a London alleyway.]<br>
+[00:44:39] Homer: Damn shame what happened to Todd.<br>
+[00:44:41] Carie: I don't think they, yeah, they never caught Jack the Ripper. I don't think so. He might be down there still. That's a good one. That's a great picture.<br>
+[00:44:47] Homer: Or a copycat.<br>
+[00:44:48] Todd: I didn't know the look on my face was so creepy though. But yeah.<br>
+[00:44:54] Homer: And so, you, you really can't really can't tell in that photo.<br>
+[00:45:01] Todd: How dark it was. Yeah.<br>
+[00:45:02] Homer: But that door. Well one, yeah. How dark it was. But that door is way back. So that whole corridor was just<br>
+[00:45:10] Carie: No<br>
+[00:45:11] Homer: pitch black.<br>
+[00:45:12] Carie: No.<br>
+[00:45:12] Homer: The light from the streetlight did not even sink all the way into it.<br>
+[00:45:16] Carie: Are we sure he has both his kidneys still?<br>
+[00:45:19] Homer: Hey<br>
+[00:45:19] Todd: There are no scars.<br>
+[00:45:22] Carie: They did it laparoscopically. Wow. That was nice of the<br>
+[00:45:26] Homer: You know what I questioned if this is even him that actually came back.<br>
+[00:45:29] Todd: Doppelganger<br>
+[00:45:31] Carie: Could be.<br>
+[00:45:32] Homer: You got snatched up.<br>
+[00:45:33] Todd: It's a doppelganger, definitely. It’s why my cat hates me.<br>
+[00:45:36] Homer: London is, London is fun. Yeah. Like I said, I got family there. Extended family. One of my best friends, he's lived, he lives right outside in Milton Kings.<br>
+And so, me and wifey, we would travel over there and before the pandemic, he would come see us, and then the next year we would go see him. And pandemic obviously squashed that. So, we're gonna try to kick things off this year. Hopefully everything works. If not, maybe we'll be in Australia visiting our friends over there.<br>
+We'll see. But Norway is definitely on my list as well as the Netherlands. So, I got close friends that live in Den Haag, so I wanna get out, see them.<br>
+[00:46:15] Carie: Yeah, I, I've traveled around there, but not there specifically. So, yeah. I'm excited to get back into the swing of things again, knowing that it's not a hundred percent safe out there, but<br>
+[00:46:24] Homer: Yeah<br>
+[00:46:24] Carie: We all mask up and do what I need to do, but it's,<br>
+[00:46:27] Todd: Yep.<br>
+[00:46:27] Carie: Yeah, I, I can't help but wanna travel though. I get that itchy feeling, you know, like I just wanna have new experiences and, you know, visit people as you were just explaining. Yeah. It's nice too, yeah. Catch up.<br>
+[00:46:39] Homer: Yeah. Yeah. I wanna get back over to Japan.<br>
+[00:46:42] Carie: So that's my dream. That's my dream. Never been. So, hey, anyone listening?<br>
+The one person that's listening that lives in Japan, lemme know cause I'll come and visit you.<br>
+[00:46:53] Homer: Yep.<br>
+[00:46:54] Carie: Need an invite. Excuse. I need an excuse.<br>
+[00:46:57] Homer: Indeed. Yeah, we<br>
+[00:46:58] Carie: That's amazing. We’ll have to talk more.<br>
+[00:46:59] Homer: We were supposed to be there.<br>
+[00:47:00] Carie: Were you?<br>
+[00:47:01] Homer: Yeah. We, we were planning to move there in right before we got pregnant.<br>
+[00:47:05] Carie: Wow.<br>
+[00:47:06] Homer: And we even decided we were going back and forth. Do we have little one over there or do we have em here?<br>
+[00:47:11] Carie: Yeah<br>
+[00:47:11] Homer: And since this was my wife's first, we were like, you know what? Just in case there's any complications.<br>
+[00:47:17] Carie: Makes sense.<br>
+[00:47:17] Homer: Yeah, let's go ahead and, and stay stateside. Well, he was born then lockdown happened.<br>
+[00:47:25] Carie: Yeah. Oh.<br>
+[00:47:26] Homer: And, and Japan locked everything down.<br>
+[00:47:28] Carie: They locked hard. Yeah.<br>
+[00:47:30] Homer: Yeah.<br>
+[00:47:30] Carie: For sure.<br>
+[00:47:31] Homer: So, you know, we we're still like, all right, when do we get to go back and we gotta start the whole process over again, which is kind of difficult now. So, we'll see.<br>
+[00:47:43] Carie: I've heard that I, I know some people, like, again, people that I work with in Estonia but also there were people that worked for them in Ukraine, and they left, a lot of them left and some went to the United States.<br>
+And so I was talking to them and like, I, when you live in and are born in a certain country and you're not trying to live in a different country, you don't realize all the hoops that people have to jump through and especially, you know, refugees in your case, you know, and even just moving countries without being a refugee, but it's like there's a lot you have to go through.<br>
+[00:48:14] Homer: There's a lot.<br>
+[00:48:14] Carie: And it's like, wow. And, and, and like for instance, he can't leave the United States until like three years or something, because. I don't know why, because, because I don't know they're not gonna come back. But<br>
+[00:48:26] Homer: Yeah<br>
+[00:48:26] Carie: I'm not really sure all those, those different rules, but they're very specific.<br>
+[00:48:30] Homer: I, I knew someone that was in that position and yeah, he, he had a family emergency, but he could not leave.<br>
+[00:48:35] Carie: Yes.<br>
+[00:48:35] Homer: Because if he'd left, he would not be allowed to come back in.<br>
+[00:48:38] Carie: That's what they said to him too. Yeah.<br>
+[00:48:41] Homer: Yeah.<br>
+[00:48:42] Carie: It's interesting. I'm<br>
+[00:48:43] Homer: I was just like, that's jacked up.<br>
+[00:48:45] Todd: So, you are in luck. We have two people in J in Japan,<br>
+[00:48:48] Carie: Awesome. They're my new best friends.<br>
+[00:48:51] Todd: I'm just checking out.<br>
+[00:48:52] Homer: [speaking Japanese]<br>
+[00:48:55] Carie: Exactly.<br>
+[00:48:57] Todd: One in Tokyo and one in Kanagawa. So.<br>
+[00:49:01] Homer: Kanagawa<br>
+[00:49:02] Carie: Yeah, that is, that is a dream for sure. It was on my list. We were actually thinking about going to the Olympics<br>
+[00:49:09] Homer: Yep.<br>
+[00:49:09] Carie: In Japan when they were hosting a couple years back. And then obviously that, I'm thankful we didn't book all those flights and trip plans, but yeah, it'll, it'll happen eventually.<br>
+[00:49:21] Todd: So.<br>
+[00:49:23] Carie: Yeah. Or I'll just like tag another suitcase with Homer. I'll just, you'll be surprised when you open it up and you're like, oh, there,<br>
+[00:49:30] Homer: Just pop it opens and like oh. Carie,<br>
+[00:49:32] Carie: I'm here.<br>
+[00:49:32] Homer: Tami. Tami, this is Carie.<br>
+[00:49:34] Todd: No, don't forget the extra-large one with me in it. Come on.<br>
+[00:49:39] Homer: Oh my gosh. What? They, they won't allow us to bring lobsters in.<br>
+[00:49:41] Todd: Oh, you don't have to. I can. I know where to get em.<br>
+[00:49:46] Carie: He needs a special permit for that,<br>
+[00:49:49] Todd: Yes, I do actually.<br>
+[00:49:51] Homer: Speaking of seafood in Japan. So, when you do get a chance to go over there, when you get to Tokyo. Down at the docks where the fish market is. Amazing. The best sushi you will ever eat in your entire life.<br>
+[00:50:09] Carie: Do you just eat it like on the dock and it's just like, it just jumps in your mouth.<br>
+[00:50:14] Homer: What was really, what was really cool about that? This just took a completely different turn. We're no longer talking about tech or anything.<br>
+[00:50:20] Carie: That's all right.<br>
+[00:50:21] Homer: Talking about traveling cuisine.<br>
+[00:50:24] Carie: You can cut, you can cut this part out.<br>
+[00:50:27] Homer: We, when we got there, you know, you would think with all the fish and seafood around.<br>
+[00:50:32] Carie: Yeah.<br>
+[00:50:33] Homer: That it would smell like that.<br>
+[00:50:35] Carie: Hmm. It's not cuz it's fresh. Yeah.<br>
+[00:50:38] Homer: It did not, it did not smell like that. We were going around, like, there's literally squid hanging in front of me. Drying out like squid jerky, can't even smell it.<br>
+I was like, this is amazing, the largest crab I've ever seen that was alive. This thing was in a tank by itself, as it should have been.<br>
+[00:51:01] Carie: No, it wasn't. It was in a tank with a bunch of other crabs.<br>
+[00:51:05] Homer: And now it's alone.<br>
+[00:51:06] Carie: And now it's alone.<br>
+[00:51:07] Homer: They had a kaiju in that tank. This thing was huge. I was, I have pictures of, I have to send 'em to you, but I'm like,<br>
+[00:51:13] Carie: Please do.<br>
+[00:51:14] Homer: Where did you find this crab from? So, but yes, when you get over there, definitely make sure you go down to the, the seafood market that's down there. It is. It's an amazing experience. People are cool too. They'll try to get you to buy all the stuff though.<br>
+[00:51:30] Carie: I'm excited. Now you got me excited about Japan. I'm, I'm not going there yet, but yeah.<br>
+[00:51:36] Homer: No, we gotta, we gotta get,<br>
+[00:51:37] Carie: we gotta put that in universe,<br>
+[00:51:38] Homer: the way<br>
+[00:51:39] Todd: and the Netherlands.<br>
+[00:51:40] Carie: Exactly.<br>
+[00:51:41] Todd: So, as we come up on time, is, is there anything that you would like to talk about that we haven't talked about.<br>
+[00:51:49] Carie: Well, that's very dangerous to ask an accessibility professional about if they wanna talk about anything.<br>
+[00:51:56] Homer: Okay.<br>
+[00:51:56] Carie: Cause we're, he's laughing. You'll see Todd's laughing cuz he knows and Homer's like what? It's because<br>
+[00:52:01] Homer: I have a feeling.<br>
+[00:52:03] Carie: we have a lot of thoughts about a lot of things. No, I mean I'm just excited that we got to do this, and you know, big fans of both of yours for years and so it's just kind of good to,<br>
+[00:52:13] Homer: Did you really go the safe route?<br>
+[00:52:16] Carie: I mean, I can talk about what,<br>
+[00:52:18] Todd: yes, she did.<br>
+[00:52:20] Carie: Aw, it's Friday man.<br>
+[00:52:23] Homer: All the more reason<br>
+[00:52:27] Carie: I don't have any deep dark secrets. I'm, I'm an open book for the most part. So, I don't know if you wanna hear me say something more than just<br>
+[00:52:35] Homer: No, I'm just messing with you.<br>
+[00:00:00] Todd: I could just, I, I could softball it and say, what do you think of accessibility overlays? But<br>
+[00:52:44] Carie: How many more hours do you have?<br>
+[00:52:48] Homer: That's just,<br>
+[00:52:49] Todd: Yeah, that's,<br>
+[00:52:50] Homer: We, you know what? Honestly, we need to do a podcast about overlays, we definitely do need to do a talk on overlays and explain. Just the dangers of using them and why we shouldn't be using them.<br>
+[00:53:03] Carie: You should actually,<br>
+[00:53:05] Homer: yeah,<br>
+[00:53:05] Carie: because I think so one thing definitely have Shell Little on because she's got lots of really great, amazing thoughts about that topic.<br>
+And there's other people of course, but that's one of the people that was first kind of sounding alarms. Obviously, Karl Groves made his overlay fact sheet. But I will say though, like coming from where I was, which was like at Deque and like people, everyone knew about accessibility didn't have to talk about it to where I am now, where no, like I'm one of the only ones who knows about it in the organization besides my small team.<br>
+I can see how those things are confusing and the way they market it and the way they make it smooth. And of course, who wouldn't wanna be able to press a button or install this little piece of JavaScript and it fixes everything? Like that's a dream. I think the problem is, is that dream is not a reality.<br>
+And so, but pe but the, they're being sold this dream. Right? And, and there's a lot of money behind that dream.<br>
+[00:53:58] Homer: Yeah.<br>
+[00:53:59] Carie: And so, a lot of people get tricked into thinking like they're lit, literal clients that think I did the right thing by installing this. And for you to tell them, actually, you made it worse. You know?<br>
+[00:54:11] Homer: Yeah.<br>
+[00:54:11] Carie: And that's a really hard thing to tell people.<br>
+[00:54:14] Todd: Yeah.<br>
+[00:54:14] Homer: Maybe double down on it.<br>
+[00:54:17] Carie: Well, no one likes to admit they made a mistake. And<br>
+[00:54:19] Homer: Facts. Facts,<br>
+[00:54:20] Carie: yeah.<br>
+[00:54:21] Homer: I was reading an article today where the guy was talking about the cost of making your project accessible. And he was talking about how the cost can be expensive because you're doing things after the fact. So, it takes more time, more resources to do that. And he was saying that, yeah, accessibility is expensive because everybody wants to go the cheap route and make things inaccessible.<br>
+I was like, yikes. And it made me think about overlays because folks go, oh yeah, what's good, like you said, what's the easiest route to get there? What's the cheapest route to get there? Oh, we'll just add this one line of JavaScript, and it solves all of our problems.<br>
+[00:55:08] Carie: Magic<br>
+[00:55:08] Homer: Yes, magic.<br>
+[00:55:09] Carie: No,<br>
+[00:55:10] Homer: absolutely not.<br>
+[00:55:11] Todd: Well, I had said in my talk last year when I mentioned overlays in my, you know, bringing accessibility to your organization. I would mention that, you know, one line of JavaScript on your site does not make it accessible. Like putting on a pair of Nikes does not make me Michael Jordan. So,<br>
+[00:55:35] Carie: So, speaking of that, this is my, here I've got one plug for you then. I am gonna be talking at AxeCon<br>
+[00:55:41] Homer: be civil.<br>
+[00:55:41] Carie: in March, and it's related, I mean, it's sort of related to that. It's that concept of shifting left. And so, I'm in the design track and I'm like, I'm not a designer. What can I do in the design track? Okay, well, you know, what I can talk about is the handoff. So, a lot of times as a front-end developer, I'd get a, a design comp, and then I had to make the choices, like what am I, how am I gonna code this, right?<br>
+And sometimes certain things are outlined and other things I get to choose, like, you know, stack overflow, what is the, you know, how do I make a radio button or something, right? And so, you're like looking things up, copy, paste, you know, we've all done that. We've all been there. And. The real challenge is taking that pause and thinking, okay, am I making the most inclusive choice?<br>
+Right? And that's how I kind of even got started and everything. So, this talk is gonna be about that handoff, the annotations that they can provide, that designers can provide their front-end developers. So, you're not telling developers, hey, this is the way you do it. It's more of a, hey, be aware that, you know, this is a heading level one, or this is, you know, needs to have an accessible label, but you can code it however you want.<br>
+You can use whatever, you know, foundational pieces that you want. But it's just kind of giving parameters around those, those choices. So, I think about accessibility all the time when the sense of people think of it as a constraint and I think of it more you know, we're, we're, we're kind of, instead of we're eliminating some choices, so we have millions of choices.<br>
+Okay, let's refine that and give you like five choices because these we've found are the most accessible. But you still have flexibility. And then again, depending on your environment and your options that you, what you can modify, you have certain choices taken away from you, right? So, you might end up with like one or two choices, but you still have those options, right?<br>
+So, it's like this. I, what is it? Like an access, like a design challenge or a coding challenge. Right? It's not supposed to be restrictive. It's supposed to be a place where you can use your imagination and think creatively. You know, not just being constrained for constrained sake, but there's reason behind, you know, the inclusion piece of it. So,<br>
+[00:57:46] Todd: Yeah.<br>
+[00:57:46] Homer: Yeah.<br>
+[00:57:47] Carie: So, I'm excited about that talk that I haven't written yet. Should be good. It's gonna be great. I'm sure,<br>
+[00:57:54] Todd: I'm looking at the lineup now, and you got our friend Anna Cook is also speaking. This, this is a big list of a lot of great people in accessibility.<br>
+[00:58:06] Carie: Free conference too.<br>
+[00:58:08] Todd:  Yeah. Totally free. Boudreau. I see Rachele DiTullio. Our friend Ben Myers. I mean, we've had most of them on this. Shell is on here as well, so definitely worth<br>
+[00:58:22] Homer: Ben, Ben, Ben’s a trip.<br>
+[00:58:24] Todd: checking out. Ben is a trip. Yes. But there's a lot of you know, a lot of knowledge here that is gonna be shared if people can get to it, you know? Definitely. It's, you know, free.<br>
+[00:58:39] Carie: Yeah.<br>
+[00:58:39] Todd: You can't pass that up.<br>
+[00:58:40] Carie: Well, and yeah, I think it's one of those ones too that you sign up for it, you can't attend it, but you can watch the recordings later. Cause they send you all the links, so.<br>
+[00:58:47] Homer: Yeah.<br>
+[00:58:47] Carie: And they're I think they add the captions and all the good things that you would expect from a conference like that, so. Yeah.<br>
+[00:58:53] Todd: Yep<br>
+[00:58:54] Carie: Exciting.<br>
+[00:58:55] Homer: If not, Merrill's gonna come for him.<br>
+[00:58:57] Carie: I know. As she should.<br>
+[00:58:59] Homer: Yes. She,<br>
+[00:58:59] Carie: I love Merrill. She's a amazing.<br>
+[00:59:01] Homer: Her and Sam.<br>
+[00:59:02] Carie: Yes.<br>
+[00:59:03] Todd: Yep, yep. So, you're on Twitter @CarieFisher with one R.<br>
+[00:59:12] Carie: You're on GitHub?<br>
+[00:59:13] Carie: I am still there. Sort of, yeah,<br>
+[00:59:14] Todd: Sort of. Yeah. Yeah. That's<br>
+[00:59:17] Homer: You’re on Mastodon as well too?<br>
+[00:59:18] Todd: Mastodon<br>
+[00:59:18] Carie: I am.<br>
+[00:59:19] Todd: Yep. Mastodon, LinkedIn. LinkedIn, I had like 10 messages in my inbox the other day. Would you like to be a data analyst? That's not what I do. So,<br>
+[00:59:36] Carie: But you might wanna be it. I don't know. They're just asking.<br>
+[00:59:40] Todd: Always work with computers. Yeah.<br>
+[00:59:41] Homer: You work with computers, it's all the same thing.<br>
+[00:59:44] Carie: It's true.<br>
+[00:59:46] Todd: And you have, you have slides on Notice. I see. Which I use, Notice I love Notice, it's a great platform for slide decks.<br>
+[00:59:56] Carie: Yeah, I'm, I'm random places, but not super active. Like<br>
+[01:00:00] Todd: Yeah.<br>
+[01:00:00] Carie: I kinda, I'm sad about the whole Twitter thing being taken over by the new CEO because I think, you know, a lot of great voices have left and even if they're on Mastodon, they're hard to find. Sometimes it's, and LinkedIn, you know, has a crapshoot some days. But,<br>
+[01:00:17] Homer: Indeed.<br>
+[01:00:18] Carie: I don't know. I, I'm looking forward to maybe a new platform that can bring us all back together, but I'm not super hopeful for that yet.<br>
+[01:00:26] Todd: So, I have a very accessible app on my iPhone, and it's called Toot. You can't send a tweet with an image until you fill out the alt text.<br>
+[01:00:40] Carie: Oh, that's cool.<br>
+[01:00:42] Todd: I love that app and I've tested all these new ones that are coming out. Nobody else does it, that I know of anyways. There might be an app out there or two that I've missed. But<br>
+[01:00:53] Carie: Is, is that for Mastodon or is that,<br>
+[01:00:55] Todd: Yes<br>
+[01:00:55] Carie: because I've seen some people have like toot.cafe or something?<br>
+[01:00:58] Todd: Yeah, that's,<br>
+[01:00:59] Carie: Is that the same one?<br>
+[01:00:59] Todd: that's for Mastodon. Yeah, it's, it's an app. It's in the app store for, for iOS. Love it.<br>
+[01:01:07] Carie: I'll check it out.<br>
+[01:01:09] Todd: And so, we have all those in, everything we'll put into the show notes. Carie, I wanna thank you very much for spending time with us today.<br>
+[01:01:17] Homer: Yes<br>
+[01:01:17] Todd: It's been a pleasure, a great time talking, chatting with you as always. It's been a while. We were on<br>
+[01:01:27] Carie: Oh, yeah Stephanie Eckles yeah.<br>
+[01:01:29] Todd: Stephanie Eckles show.<br>
+[01:01:29] Carie: Yeah.<br>
+[01:01:30] Todd: It's been a while. That's been a while. So, it was great to catch up with you. And Homer, anything else?<br>
+[01:01:39] Homer: No<br>
+[01:01:39] Todd: Silence<br>
+[01:01:40] Homer: I mean, again, congrats on all the success with learning accessibility and I wish you continued success, especially with the, the PhD program. I know how,<br>
+[01:01:51] Todd: Yes.<br>
+[01:01:52] Homer: how grueling that can be.<br>
+[01:01:55] Carie: 10 years later, maybe I'll graduate.<br>
+[01:01:58] Homer: You know, I, I, I've been talking with my dad cuz I've been weighing that option as well. It's just like, do I wanna go back to school to do the same thing? HCI.<br>
+[01:02:05] Carie: Yeah.<br>
+[01:02:06] Homer: But obviously my, my approach is from the lens of a neurologist versus a, a neurologist that's an engineer, you know? So, I've been thinking about that, and he was like, why do you want to do that? I said, so that people take me more serious when I go to write these books.<br>
+He was just like, makes sense, did you need a PhD to do that? And I was like, no, I don't. But I also got a three-year-old running around the house too. So,<br>
+[01:02:38] Carie: Not enough time, that's for sure. But don't do it because you're scared or, or worried about it.<br>
+[01:02:42] Homer: Oh, no, no, no. That that one.<br>
+[01:02:44] Carie: Go for it.<br>
+[01:02:45] Homer: Nah, it's<br>
+[01:02:46] Carie: that's just money<br>
+[01:02:46] Homer: Yeah<br>
+[01:02:47] Carie: That's just your life.<br>
+[01:02:48] Homer: Yeah, no, I swim with sharks literally, I literally<br>
+[01:02:53] Carie: I believe you.<br>
+[01:02:53] Homer: [inaudible] sharks, so it's like,<br>
+[01:02:55] Carie: That's nothing then.<br>
+[01:02:57] Homer: stuff like that. I don't, I don't shy away from challenges. Just like you. It's just like,<br>
+[01:03:02] Carie: Yeah<br>
+[01:03:02] Homer: okay, cool. Let's, let's get through it. It's more along the lines of do I have the time to do it?<br>
+[01:03:09] Carie: Yeah. You wanna do a quality job. I understand that completely.<br>
+[01:03:13] Homer: Yeah.<br>
+[01:03:13] Carie: Yeah. Well, good luck in whatever you guys do. I'm sure I'll find you online and maybe our paths will cross soon enough in real life. I mean,<br>
+[01:03:20] Homer: We’ll be around.<br>
+[01:03:21] Carie: besides Todd and I being in your suitcase when you go to Japan next time.<br>
+[01:03:27] Todd: Yeah.<br>
+[01:03:27] Homer: Why is this one so freaking heavy? It's got Todd in it. Sir, you need to check this.<br>
+[01:03:31] Todd: Hey, I'm trying. I, I, I know I gotta get to the gym, but come on now. I'm working, listen<br>
+[01:03:39] Homer: I'm, I’m going lobster noodling. Don't worry about it. It's just seafood.<br>
+[01:03:42] Carie: Just a lobster. It's fine.<br>
+[01:03:43] Homer: Yeah,<br>
+[01:03:44] Todd: Exactly. You know. Well, this has been a another<br>
+[01:03:47] Carie: That’s awesome<br>
+[01:03:47] Todd: episode of Front End Nerdery Podcast and we will catch you next time when Homer and I decide to put something together with,<br>
+[01:03:56] Homer: Yeah.<br>
+[01:03:57] Todd: band-Aids and scotch tape. So,<br>
+[01:04:00] Homer: And bubble gum.<br>
+[01:04:01] Todd: And bubble gum. Yes. So, thank you everybody, and thank you again, Carie, and hope to see everybody next time. Thank you.<br>
+[01:04:09] Homer: Bye.<br>
+[01:04:11] Carie: Bye.</p>
+
+    </section>
+  </article>
+</div>
+      </main>
+
+      <footer class="meta footer">
+        <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
+          <nav>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+              <li class="nav-item"><a href="/links">Links</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
+        <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
+
+        <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
+          <h2 id="a11y-webring-club">a11y-webring.club</h2>
+          <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
+          <ul>
+            <li><a rel="previous external" href="https://a11y-webring.club/prev">Previous website</a></li>
+            <li><a rel="external" href="https://a11y-webring.club/random">Random website</a></li>
+            <li><a rel="next external" href="https://a11y-webring.club/next">Next website</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

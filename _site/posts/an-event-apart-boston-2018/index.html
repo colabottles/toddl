@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="generator" content="Eleventy v2.0.1">
     <meta name="description" content="The wrap-up article I authored in 2018 after An Event Apart.">
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <title>An Event Apart 2018 - Wrap-Up Edition</title>
@@ -28,7 +28,7 @@
             </nav>
       </header>
 
-      <main id="main" class="inner" tabindex="-1">
+      <main id="main" class="inner">
         
 <div class="article-container">
   <article>
@@ -73,8 +73,42 @@
 <blockquote cite="Rachel Andrew">Don’t be afraid of the future of CSS Grids, be excited!</blockquote>
 <p>Then Eric Meyer took the stage to discuss Feature Queries. What are the pros and cons? Where are the strengths and weaknesses?</p>
 <p>Feature Queries examples.</p>
-<pre class="language-css"><code class="language-css">  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">prop</span><span class="token punctuation">:</span> val<span class="token punctuation">)</span></span> <span class="token punctuation">{</span> <span class="token comment">/* CSS goes here */</span> <span class="token punctuation">}</span> <br>    <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">--css</span><span class="token punctuation">:</span> variables<span class="token punctuation">)</span></span> <span class="token punctuation">{</span> <br>      <span class="token selector">html</span> <span class="token punctuation">{</span><br>        <span class="token property">--color1</span><span class="token punctuation">:</span> navy<span class="token punctuation">;</span> <br>        <span class="token property">--color2</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span> <br>      <span class="token selector">html.help</span> <span class="token punctuation">{</span><br>        <span class="token property">--color1</span><span class="token punctuation">:</span> teal<span class="token punctuation">;</span><br>        <span class="token property">--color2</span><span class="token punctuation">:</span> maroon<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span> <span class="token selector">body</span> <span class="token punctuation">{</span><br>        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color1<span class="token punctuation">)</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span> <br>      <span class="token selector">.highlight</span> <span class="token punctuation">{</span><br>        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span> <br>    <span class="token punctuation">}</span></code></pre>
-<pre class="language-css"><code class="language-css">  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">prop</span><span class="token punctuation">:</span> val<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>    <span class="token comment">/* CSS goes here */</span><br>  <span class="token punctuation">}</span><br>  <br>  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">--css</span><span class="token punctuation">:</span> variables<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>    <span class="token selector">html</span> <span class="token punctuation">{</span><br>      <span class="token property">--color1</span><span class="token punctuation">:</span> navy<span class="token punctuation">;</span><br>      <span class="token property">--color2</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>    <span class="token selector">html.help</span> <span class="token punctuation">{</span><br>      <span class="token property">--color1</span><span class="token punctuation">:</span> teal<span class="token punctuation">;</span><br>      <span class="token property">--color2</span><span class="token punctuation">:</span> maroon<span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>    <span class="token selector">body</span> <span class="token punctuation">{</span><br>      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color1<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>    <span class="token selector">.highlight</span> <span class="token punctuation">{</span><br>      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color2<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css">  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">prop</span><span class="token punctuation">:</span> val<span class="token punctuation">)</span></span> <span class="token punctuation">{</span> <span class="token comment">/* CSS goes here */</span> <span class="token punctuation">}</span> 
+    <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">--css</span><span class="token punctuation">:</span> variables<span class="token punctuation">)</span></span> <span class="token punctuation">{</span> 
+      <span class="token selector">html</span> <span class="token punctuation">{</span>
+        <span class="token property">--color1</span><span class="token punctuation">:</span> navy<span class="token punctuation">;</span> 
+        <span class="token property">--color2</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> 
+      <span class="token selector">html.help</span> <span class="token punctuation">{</span>
+        <span class="token property">--color1</span><span class="token punctuation">:</span> teal<span class="token punctuation">;</span>
+        <span class="token property">--color2</span><span class="token punctuation">:</span> maroon<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token selector">body</span> <span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> 
+      <span class="token selector">.highlight</span> <span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> 
+    <span class="token punctuation">}</span></code></pre>
+<pre class="language-css"><code class="language-css">  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">prop</span><span class="token punctuation">:</span> val<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token comment">/* CSS goes here */</span>
+  <span class="token punctuation">}</span>
+  
+  <span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">--css</span><span class="token punctuation">:</span> variables<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">html</span> <span class="token punctuation">{</span>
+      <span class="token property">--color1</span><span class="token punctuation">:</span> navy<span class="token punctuation">;</span>
+      <span class="token property">--color2</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">html.help</span> <span class="token punctuation">{</span>
+      <span class="token property">--color1</span><span class="token punctuation">:</span> teal<span class="token punctuation">;</span>
+      <span class="token property">--color2</span><span class="token punctuation">:</span> maroon<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">body</span> <span class="token punctuation">{</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.highlight</span> <span class="token punctuation">{</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span></code></pre>
 <p>How to put all these new CSS features to work for you right away? I’m going to do a lot of experimentation with these features soon, I hope. Another great talk by Eric.</p>
 <p>And the day ended with Jen Simmons discussing the phases of the web that we have seen throughout the history of the web. From simple HTML to Responsive Web Design (RWD), Jen has brought forth the term Intrinsic Web Design to the forefront.</p>
 <p>The truncation joke was a good one as well.</p>
@@ -128,18 +162,20 @@
 
       <footer class="meta footer">
         <h2>&copy;1999 &mdash; 2023, Todd Libby.</h2>
-          <ul class="nav list-inline">
-            <li class="nav-item"><a href="/podcast">Podcast</a></li>
-            <li class="nav-item"><a href="/support">Support</a></li>
-            <li class="nav-item"><a href="/archives">Archives</a></li>
-            <li class="nav-item"><a href="/uses">Uses</a></li>
-            <li class="nav-item"><a href="/events">Events</a></li>
-            <li class="nav-item"><a href="/resources">Resources</a></li>
-            <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
-            <li class="nav-item"><a href="/links">Links</a></li>
-            <li class="nav-item"><a href="/speaking">Speaking</a></li>
-            <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
-          </ul>
+          <nav>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/support">Support</a></li>
+              <li class="nav-item"><a href="/archives">Archives</a></li>
+              <li class="nav-item"><a href="/uses">Uses</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/resources">Resources</a></li>
+              <li class="nav-item"><a href="/blogroll">Blogroll</a></li>
+              <li class="nav-item"><a href="/links">Links</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
         <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #FreePalestine &middot; #FreeUkraine &middot; #ProtectTransKids</h2>
 
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
@@ -152,44 +188,46 @@
           </ul>
         </nav>
 
-        <ul class="footer-icons">
-          <li>
-            <a href="https://codepen.io/colabottles/#" class="codepen">
-              <svg class="icon icon-codepen" focusable="false">
-                <title>My CodePen repository</title>
-                <desc id="codepen">A white 3D cube.</desc>
-                <use href="/img/symbol-defs.svg#icon-codepen"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/colabottles/" class="github">
-              <svg class="icon icon-github" focusable="false">
-                <title>My GitHub repository</title>
-                <desc id="github">A white OctoCat.</desc>
-                <use href="/img/symbol-defs.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://toddl.dev/feed/feed.xml" class="rss">
-              <svg class="icon icon-rss" focusable="false">
-                <title>The RSS feed for this site</title>
-                <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
-                <use href="/img/symbol-defs.svg#icon-rss"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="http://wave.webaim.org/report#/https://toddl.dev/" class="a11y">
-              <svg class="icon icon-accessible-icon" focusable="false">
-                <title>WAVE test results for this site</title>
-                <desc id="a11y">A person in a wheelchair that is the color white.</desc>
-                <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </footer>
     </div>
   </body>
