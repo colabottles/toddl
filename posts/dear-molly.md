@@ -27,7 +27,7 @@ When we did exchange telephone numbers and speak on the phone, I could hear the 
 
 When we had our chat for the podcast, before and after we talked about the people that she blazed the trail with. Dave Shea, Eric Meyer, Jeffrey Zeldman, and the list goes on and on. [The face-to-face showdowns with Bill Gates numerous times about Internet Explorer](https://twitter.com/mholzschlag/status/1528580765675450374?s=20), calling her "the annoying web standards girl", the conferences and speaking, and owning the stage.
 
-We discussed behind the scenes with Aaron Gustafson about reviving the Web Standards Project and wanted to do something(time permitting) starting near the end of the year or next year. She was so ecstatic that someone wanted to take the charge and initiative to revive WaSP. I don't know if I could do that now without Molly's invaluable input.
+We discussed behind the scenes with Aaron Gustafson about reviving the Web Standards Project and wanted to do something(time permitting) starting near the end of the year or next year.
 
 Molly has been described as _"a force of nature"_ and I have to say, nature doesn't have anything on what and who Molly was and forever will be. She leaves an indelible mark on the Web.
 
