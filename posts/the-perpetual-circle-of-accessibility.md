@@ -12,7 +12,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-![A man holding his glasses in his hands while rubbing the bridge of his nose in frustration.](https://res.cloudinary.com/colabottles/image/fetch/f_auto,q_auto/https://res.cloudinary.com/colabottles/image/upload/v1693938299/frustration.jpg)
+![A man holding his glasses in his hands while rubbing the bridge of his nose in frustration.](https://res.cloudinary.com/colabottles/image/upload/v1693938299/frustration.jpg)
 
 ## The History
 
