@@ -29,6 +29,8 @@ When we had our chat for the podcast, before and after we talked about the peopl
 
 We discussed behind the scenes with Aaron Gustafson about reviving the Web Standards Project and wanted to do something(time permitting) starting near the end of the year or next year.
 
+If you knew Molly and knew her well, I envy you. She was a bright light and a magnum opus all her own. If you did not know Molly, or are new to the game of the Web, familiarize yourself with what Molly was able to accomplish in her lifetime that would take others countless lifetimes. We would not be here if it was not for the tour de force Molly was.
+
 Molly has been described as _"a force of nature"_ and I have to say, nature doesn't have anything on what and who Molly was and forever will be. She leaves an indelible mark on the Web.
 
 Molly was one of the first few I got the courage to converse with via comments on her site and although I never got to attend a conference she spoke at, I followed her with the fervor she had when she advocated for web standards. She taught me from far away as much as she taught me the last two years in the same state mere hours away.
