@@ -53,3 +53,4 @@
 
   [plugins.inputs]
   cloudName = "colabottles"
+  deliveryType = "upload"
