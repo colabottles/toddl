@@ -35,4 +35,4 @@ Molly was one of the first few I got the courage to converse with via comments o
 
 The world is a little less brighter, the world has lost a force never seen before and maybe never will. Molly is looking from beyond and still telling us to get our shit together. She looked death in the face and laughed. She is finally with her Ray now.
 
-Rest easy, Molly. Rest peacefully. &hearts;
+Rest easy, dear Molly. Rest peacefully. &hearts;
