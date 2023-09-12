@@ -889,8 +889,6 @@ blockquote cite:before {
 figcaption {
   font-family: var(--font-family-sans);
   font-style: oblique;
-  font-size: var(--font-size-small);
-  padding: 0 0 3rem
 }
 
 span.italic {
@@ -1171,12 +1169,14 @@ twitter-widget.twitter-tweet {
   padding: 3rem 0
 }
 
-div.content__placeholder,
-img.content__image {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  min-width: 100%;
+figure {
+  display: inline-grid;
+  justify-items: center
+}
+
+iframe {
+  display: grid;
+  justify-self: center
 }
 
 img.lazyload {

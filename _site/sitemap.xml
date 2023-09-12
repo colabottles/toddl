@@ -227,21 +227,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/knowbilityorg/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/conference/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/boston/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/accessibe/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -262,57 +247,27 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/conference/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/boston/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/denver/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/aea/</loc>
+    <loc>https://toddl.dev/tags/code/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/conferences/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/aneventapart/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/goodbye/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/openchallenge/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/alcohol/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/recovery/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/culture/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/inclusion/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/boozefree/</loc>
+    <loc>https://toddl.dev/tags/design/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -337,12 +292,37 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/code/</loc>
+    <loc>https://toddl.dev/tags/discoveries/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/design/</loc>
+    <loc>https://toddl.dev/tags/tools/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/conferences/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/alcohol/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/recovery/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/culture/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/boozefree/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -367,21 +347,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/tools/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/color/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/colorcontrast/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/meetings/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -393,11 +358,6 @@
   
   <url>
     <loc>https://toddl.dev/tags/chats/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/discoveries/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -582,11 +542,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/ionicpartone/</loc>
-    <lastmod>28 July, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/ionicparttwo/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -647,6 +602,11 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/knowbilityorg/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/buyin/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
@@ -697,12 +657,27 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/overlays/</loc>
+    <loc>https://toddl.dev/tags/openchallenge/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/smokescreens/</loc>
+    <loc>https://toddl.dev/tags/inclusion/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/aea/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/aneventapart/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/goodbye/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -728,6 +703,16 @@
   
   <url>
     <loc>https://toddl.dev/tags/semantichtml/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/overlays/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/smokescreens/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
@@ -868,6 +853,21 @@
   
   <url>
     <loc>https://toddl.dev/tags/feelings/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/ionicpartone/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/color/</loc>
+    <lastmod>28 July, 2021</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/colorcontrast/</loc>
     <lastmod>28 July, 2021</lastmod>
   </url>
   
