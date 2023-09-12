@@ -770,6 +770,7 @@ h2.blogroll-list-blogroll-title {
 .article__title {
   display: grid;
   font-size: clamp(1.2rem, 1rem + 3vw, 3rem);
+  font-weight: 700;
   letter-spacing: -.017em;
   text-transform: none;
   grid-column: 1/12
