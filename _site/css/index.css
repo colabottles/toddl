@@ -200,7 +200,7 @@ q:before {
 @font-face {
   src: url("../fonts/WorkSans.woff2") format("woff2");
   font-display: swap;
-  font-family:'Work Sans';
+  font-family: 'Work Sans';
   font-style: normal;
   font-weight: 100 900;
 }
@@ -362,7 +362,7 @@ article.archive-list {
 
 section.article__body h2 {
   font-family: var(--font-family-sans);
-  color: var(--ecto)
+  color: var(--white)
 }
 
 .sections {
@@ -729,7 +729,6 @@ ul.links-list a {
   transition: color 1s ease-in
 }
 
-.article-container h1,
 .blogroll-container h1,
 .uses-links h1 {
   font-size: var(--font-size-xxlarge);
@@ -764,12 +763,13 @@ h2.blogroll-list-blogroll-title {
 }
 
 .article__meta {
-  margin: 1rem 0;
-  width: 100%
+  font-size: clamp(0.75rem, 0.25rem + 0.25vw, 0.25rem);
+  margin: 1rem 0
 }
 
-h2.article__title {
+.article__title {
   display: grid;
+  font-size: clamp(1.2rem, 1rem + 3vw, 3rem);
   letter-spacing: -.017em;
   text-transform: none;
   grid-column: 1/12
@@ -889,8 +889,7 @@ figcaption {
   font-family: var(--font-family-sans);
   font-style: oblique;
   font-size: var(--font-size-small);
-  padding: 0 0 3rem;
-  text-align: center
+  padding: 0 0 3rem
 }
 
 span.italic {
@@ -1171,21 +1170,12 @@ twitter-widget.twitter-tweet {
   padding: 3rem 0
 }
 
-figure {
-  display: inline-grid
-}
-
-div.content__placeholder {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  margin-bottom: 2rem
-}
-
+div.content__placeholder,
 img.content__image {
-  justify-self: center;
-  padding: 3rem 0;
-  width: auto
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  min-width: 100%;
 }
 
 img.lazyload {
@@ -1357,7 +1347,7 @@ img.lazyload {
     width: 90vw
   }
 
-  h2.article__title {
+  .article__title {
     grid-column: 2/7;
     padding: 0;
     width: 90vw

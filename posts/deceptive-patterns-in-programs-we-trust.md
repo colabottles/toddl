@@ -33,7 +33,7 @@ I have an 80-year-old man that keeps up with family on Facebook and checks e-mai
 
 ## Applications
 
-Take for instance Piriform, the makers of CCleaner. An app that cleans out extraneous crap out of your hard drive and does a number of other things to help the performance fo your computer. 
+Take for instance Piriform, the makers of CCleaner. An app that cleans out extraneous crap out of your hard drive and does a number of other things to help the performance fo your computer.
 
 Mac and Windows have versions and both have their little differences (Windows versions cleans your registry for instance). When installing the program, you reach a screen that looks something similar to this;
 
@@ -57,11 +57,11 @@ The worst part about this is, that it is probably one of the worst pieces of sur
     <img class="content__image" src="/img/avgfree.jpg" alt="AVG Anti-Virus program installation screen." />
     <figcaption>As you can see, the checkbox is checked. They are 100% of the time when I deal with software that uses this deceptive pattern through deception.</figcaption>
   </figure>
-</div> 
+</div>
 
 Is Chrome going to give you faster access to your favorite sites? Will your searches be easier with Google built into the address bar? Is the browser really stable and secure? Do my customers really care about ANY of that? I’ve asked many of my customers, and they have all said the same thing. No.
 
-100% of my customers, that’s 27 customers whom I do computer work for and teach them how to use things all have said the same thing. _&ldquo;I don’t care what I use for a browser I just want to check Facebook, look at my grandkids photos and check my e-mail.&rdquo;_. 
+100% of my customers, that’s 27 customers whom I do computer work for and teach them how to use things all have said the same thing. _&ldquo;I don’t care what I use for a browser I just want to check Facebook, look at my grandkids photos and check my e-mail.&rdquo;_.
 
 That is all my customers who are older want to do. Nothing else. They’re not doing development, graphic design or anything other than playing games, Facebook, e-mail, and _maybe_video chat.
 
@@ -84,9 +84,9 @@ Even then, it was going to take 24-48 hours for that to happen! Some I have even
 
 ## Deceptive Patterns
 
-Doug Collins, in one of his great videos on UX deceptive patterns below, talks about some of the ways deceptive patterns work. The examples I used use reading patterns.
+In this video, The User Story gives you information on UX deceptive patterns below, talks about some of the ways deceptive patterns work.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wo3OPM6jmOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title=""></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lri1pn2_mnY?si=TCiojvo0c4Nh61vW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The &ldquo;Google Chrome Download&rdquo; uses trust and perceived value. Trust that you need to download Chrome. The perceived value that Chrome is the right browser for you to use. It’s almost as if Piriform is saying, &ldquo;Piriform uses Google Chrome and since you use our software, you should use what we use!&rdquo;
 
