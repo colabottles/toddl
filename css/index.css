@@ -729,7 +729,6 @@ ul.links-list a {
   transition: color 1s ease-in
 }
 
-.article-container h1,
 .blogroll-container h1,
 .uses-links h1 {
   font-size: var(--font-size-xxlarge);
