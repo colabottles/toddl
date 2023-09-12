@@ -38,11 +38,11 @@ Color contrast is defined as;
 
 There are at least 2.2 billion people who suffer from a vision impairment or some form of color blindness and I'll share with you some of those types of color blindness and vision impairments below.
 
-#### TYPES OF COLOR BLINDNESS
+### TYPES OF COLOR BLINDNESS
 
 There are seven total types of color blindness including monochromacy (the absence of color perception).
 
-##### Red-green color blindness
+#### Red-green color blindness
 
 The most common type of color blindness makes it difficult to tell the difference between red and green. There are four types of red-green color blindness;
 
@@ -52,7 +52,7 @@ _Protoanomaly:_ This makes red look more green and less bright. This is also mil
 
 _Protonopia_ and _deutueranopia:_ Both of these make it so that you cannot tell the difference between red and green at all.
 
-##### Blue-yellow color blindness
+#### Blue-yellow color blindness
 
 This less-common type of color blindness makes it difficult for people to tell the difference between blue and green, and red and yellow. There are two types of blue-yellow color blindness;
 
@@ -60,7 +60,7 @@ _Tritananomaly:_ Which makes it hard to tell the difference between blue and gre
 
 _Tritanopia:_ Is when you are unable to tell the difference between blue and green, purple and red, and pink and yellow. Colors also look a lot less bright.
 
-##### Complete Color Blindness
+#### Complete Color Blindness
 
 _Monochromacy_: Is also known as Complete Color Blindness. Where you cannot see colors at all. This does not mean a person is entirely blind, it means they cannot see colors.
 
@@ -72,13 +72,13 @@ Men have a much higher risk than women for color blindness. You’re also more l
 * Take certain medicines.
 * Are white.
 
-##### Stargardt's
+#### Stargardt's
 
 Stargardt's, a type of macular degeneration that means people who have it, lose vision in the center of the retina. It is an inherited disorder of the retina. A disease which causes vision loss during childhood or adolescence, although it may not be noticed until adulthood. [Here is an example of a site](https://twoblindbrothers.com/pages/reveal) that allows visitors to see through the eyes of the founders, and what they see when they navigate the internet.
 
 > Accessibility should be a top priority for all users. Designers and developers can use color contrast checkers.
 
-#### THE TOOLS
+### THE TOOLS
 
 Color contrast checkers. There are many. I mean *a lot*. There is one I use to make sure what I am doing uses the correct level of color contrasting, it is [Lea Verou’s Color Contrast Checker](https://contrast-ratio.com/).
 
@@ -108,7 +108,7 @@ Relaying information to the user is crucial. If you are not effectively relaying
 
 Some colors look good to some people (designers, I'm looking at you) but will they look good to people that have deuteranomaly? What about people with tritanopia? How is that information getting to them with your color scheme?
 
-#### WCAG AA &amp; AAA DEFINITIONS
+### WCAG AA &amp; AAA DEFINITIONS
 
 > "So what is an acceptable level of color contrast?"
 
@@ -118,7 +118,7 @@ A minimum color contrast ratio recommended by ISO-9241-3 and ANSI-HFES-100-1988 
 
 The minimum level for WCAG AAA is 7:1 and the reason for that is;
 
-> “because it compensated for the loss in contrast sensitivity usually experienced by users with vision loss equivalent to approximately 20/80 vision. People with more than this degree of vision loss usually use assistive technologies to access their content (and the assistive technologies usually have contrast enhancing, as well as magnification capability built into them).” [5]
+> “because it compensated for the loss in contrast sensitivity usually experienced by users with vision loss equivalent to approximately 20/80 vision. People with more than this degree of vision loss usually use assistive technologies to access their content (and the assistive technologies usually have contrast enhancing, as well as magnification capability built into them).” [4]
 
 These calculations are made for the size of body text and a relaxed contrast ratio is provided for larger text, such as headings or any other text which is larger than the body copy. Remember to make link text stand out and underlined as well!
 
@@ -126,7 +126,7 @@ While these are the minimum and suggested ratios for each level (AA & AAA), inte
 
 Text requires a higher contrast because people need to read it. Interface components do not and therefore have a lower standard.
 
-#### FORMS
+### FORMS
 
 Confirmation messages are important. They confirm that the information requested was submitted; and provide other pertinent information or other instructions. Contrast in forms is crucial to relay that information to users. For example;
 
@@ -142,7 +142,7 @@ or&hellip;
 
 ![A form submission message in white font on a neon yellow background](https://res.cloudinary.com/colabottles/image/upload/v1585002437/images/ewww_xczuk2.png)
 
-#### WHAT WE CAN DO
+### WHAT WE CAN DO
 
 We as designers and developers need to do better, to have a system of checks to make sure that color contrast is an integral part of the design process. We have learned through many mistakes we have seen over the last few years that accessibility reaches a far scope that sometimes is ignored by the masses, myself included.
 
@@ -156,7 +156,7 @@ How can we make sure we’re paying attention to color contrast when we design a
 
 **Use the tools!** Color contrast checkers and accessibility tools. Use them, that's why they are there! They will inform you of any issues before you push to production or go live, saving you (or your company) time and money.
 
-#### SUMMARY
+### SUMMARY
 
 There is a lot of talk about accessibility and we have taken tremendous strides to making the web more accessible but we’re a long way from it being all-inclusive. So let's make the web more inclusive, but also remember how and why.
 
@@ -166,7 +166,7 @@ Let’s remind ourselves of the fact everyone doesn’t have ‘perfect’ or go
 
 [Jeffrey Zeldman summarized it](https://www.zeldman.com/2019/12/01/bluebeanieday2019/) in his post on Blue Beanie Day (November 30th) when he wrote;
 
-> “...our industry as a whole thinks less and less about accessibility (not that we ever had an A game on the subject), and talks less and less about progressive enhancement, preferring to chase the ephemeral goal posts of over-engineered solutions to non-problems.”[6]
+> “...our industry as a whole thinks less and less about accessibility (not that we ever had an A game on the subject), and talks less and less about progressive enhancement, preferring to chase the ephemeral goal posts of over-engineered solutions to non-problems.”[5]
 
 We as architects and craftspersons of the web community must keep everyone in mind when it comes to color contrast with websites, apps, fonts, and colors.
 
@@ -176,5 +176,4 @@ Clear color contrast is just the beginning, but it’s one of the ways to start 
 2. Vasquez, Rachel R., Lane, Emily, [What is Color Contrast?](a11yproject.com/posts/what-is-color-contrast/)
 3. [National Eye Institute, Types of Color Blindness](www.nei.nih.go/learn-about-eye-health/eye-conditions-and-diseases/color-blindness/types-color-blindness)
 4. W3C, Contrast (Minimum): [Understanding SC 1.4.3](www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
-5. W3C, Contrast (Minimum): [Understanding SC 1.4.3](www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
-6. Zeldman, Jeffrey, [Another Blue Beanie Day](www.zeldman.com/2019/12/01/bluebeanieday2019/), 1 December, 2019,
+5. Zeldman, Jeffrey, [Another Blue Beanie Day](www.zeldman.com/2019/12/01/bluebeanieday2019/), 1 December, 2019,
