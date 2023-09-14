@@ -430,6 +430,17 @@ article ul li::marker {
   content: none
 }
 
+.content__placeholder {
+  display: grid;
+}
+
+.content__image {
+  display: block;
+  justify-self: center;
+  max-height: 50dvh;
+  aspect-ratio: 4/3;
+}
+
 .google-map {
   grid-column: 4/7
 }
@@ -1170,8 +1181,8 @@ twitter-widget.twitter-tweet {
 }
 
 figure {
-  display: inline-grid;
-  justify-items: center
+  display: grid;
+  place-self: center
 }
 
 iframe {
