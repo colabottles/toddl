@@ -1664,7 +1664,7 @@ pre>code.highlight {
   height: 1px;
   margin: -1.5em 0 0 0;
   overflow: hidden;
-  place-items: center;
+  justify-self: center;
   position: absolute;
   white-space: nowrap;
   width: 1px
