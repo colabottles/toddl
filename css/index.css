@@ -249,6 +249,7 @@ ul.navigation a.active {
 }
 
 header {
+  display: grid;
   grid-column: 2/12;
   margin-top: 2rem
 }
@@ -1661,11 +1662,12 @@ pre>code.highlight {
 .visible-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
+  margin: -1.5em 0 0 0;
   overflow: hidden;
+  place-items: center;
   position: absolute;
   white-space: nowrap;
-  width: 1px;
-  margin: -1.5em 0 0 0
+  width: 1px
 }
 
 .visible-hidden:focus {
