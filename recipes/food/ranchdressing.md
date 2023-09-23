@@ -1,7 +1,7 @@
 ---
 title: Plate to Palate Ranch Dressing
 description: The recipe for the Ranch dressing made during the Three Sauces video.
-date: 2023-09-31
+date: 2023-08-31
 layout: layouts/post.njk
 ---
 
@@ -24,5 +24,5 @@ layout: layouts/post.njk
 1. Whisk together the mayo, sour cream and milk until smooth.
 2. Add the spices and whisk until combined.
 3. Add the lemon and whisk again.
-4. Pour into a jar and chill in the refrigerator until ready to serve. (Dressing stays good for around a week).
+4. Pour into a jar and chill in the refrigerator until ready to serve. (Dressing keeps for a week).
 5. Enjoy!

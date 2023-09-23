@@ -1,7 +1,7 @@
 ---
 title: Plate to Palate Barbecue Sauce
 description: The recipe for the barbecue sauce made during the Three Sauces video.
-date: 2023-09-31
+date: 2023-08-31
 layout: layouts/post.njk
 ---
 
