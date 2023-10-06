@@ -1,7 +1,7 @@
 ---
 title: Mike Hartington
 description: Our Interview with Mike Hartington
-date: 2023-10-4 #YYYY-MM-DD
+date: 2023-10-04 #YYYY-MM-DD
 layout: layouts/post.njk
 ---
 
