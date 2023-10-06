@@ -1,7 +1,7 @@
 ---
 title: James Q. Quick and Amy Dutton
 description: Our Interview with James Q. Quick and Amy Dutton from Compressed FM
-date: 2023-10-4 #YYYY-MM-DD
+date: 2023-10-04 #YYYY-MM-DD
 layout: layouts/post.njk
 ---
 
