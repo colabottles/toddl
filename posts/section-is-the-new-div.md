@@ -4,15 +4,12 @@ description: The use of the div element in code is still over-abundant, but the 
 date: 2023-10-12
 tags:
   - html
-  - div
-  - section
-  - semantics
   - semantichtml
   - accessibility
 layout: layouts/post.njk
 ---
 
-Note that there are times and places to use the `div` and `section` elements when dealing with native, hybrid, and web apps.
+Note that there are times and places to use the `div` and `section` elements. This article addresses the need for more accessible solutions and fixes as well as the need to stop over-engineering things.
 
 There will be cases when repetition is necessary. But with the over-engineering I see when I do accessibility audits, and the rendered HTML I see that is choked with unnecessary containers and wrappers and elements that take up space and bytes, this is what this article addresses.
 
