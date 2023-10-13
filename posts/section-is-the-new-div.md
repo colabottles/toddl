@@ -109,6 +109,10 @@ Now this being a very rough example, you may need to go back and change some stu
 
 No need to set five hours to pay a dev to backtrack and refactor yet again when they can be getting paid for a project that is moving forward and not spinning its wheels. You got that time to put them on a project that is gaining steam.
 
+If you do use the `section` element when grouping things genrically, please take a read through Scott O'Hara's article on his blog about [the accessibility of the section element](https://www.scottohara.me/blog/2021/07/16/section.html).
+
+> Use the `<section>` element as semantically appropriate. Semantic markup, regardless of whether it is always exposed to assistive technologies is meaningful. At the very least the element can be used for other programmatic purposes. And its use can help other developers more quickly understand the structure of a web page, rather than having to rely on a bunch of `<div>`s and classes to hopefully understand the intended structure.
+
 ## Know when to fold &apos;Em
 
 So why do I see a lot of empty `div` elements? Over-engineering. Whether it is with or without intent. Whether it is in a framework or the result of a dev who hand codes something but doesn't know about the accessibility implications.
