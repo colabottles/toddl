@@ -12,5 +12,5 @@ layout: layouts/post.njk
 [Deceptive Patterns](https://toddl.dev/podcast/transcripts/deceptivepatterns)
 [James Q. Quick &amp; Amy Dutton](https://toddl.dev/podcast/transcripts/compressedfm)
 [Jason Lengstorf](https://toddl.dev/podcast/transcripts/lengstorf)
-<!-- [Alvin Bryan](https://toddl.dev/podcast/transcripts/bryan)
-[Mike Hartington](https://toddl.dev/podcast/transcripts/hartington) -->
+[Alvin Bryan](https://toddl.dev/podcast/transcripts/bryan)
+<!-- [Mike Hartington](https://toddl.dev/podcast/transcripts/hartington) -->
