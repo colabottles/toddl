@@ -5,43 +5,20 @@ templateClass: tmpl-home
 
   <article class="about-intro">
     <div class="home-container">
-      <h1 class="primary-heading">Hello there!</h1>
+      <h1 class="primary-heading">So...</h1>
 
-      <blockquote>
-        <h2>This is a work in Progress</h2>
-        <p>The styling for the site is in progress so this is going to look messy for awhile. Please bear with me, thanks.</p>
-      </blockquote>
-
-      <p>I'm Todd. I am an Independent Accessibility Consultant and an Invited Expert at the <a href="https://w3.org">W3C</a>. This is my personal site where I write and document what I am doing, where I am speaking, or what conferences I'll be attending.</p>
+      <p>I'm Todd. This is my site.</p>
 
       <h2 class="sub-heading">Other things I do.</h2>
-      <p>I <a href="https://twitch.tv/toddlibby">stream over on Twitch</a>, I host a podcast, the <a href="https://youtube.com/FrontEndNerdery">Front End Nerdery Podcast</a> with <a href="https://www.homergaines.com/">Homer Gaines</a>.</p>
+      <p>I <a href="https://twitch.tv/toddlibby">stream over on Twitch</a></p>
     </div>
   </article>
 
   <div class="articles">
-    <h3 class="list-label">Latest Articles</h3>
+    <h3 class="list-label">Last Article</h3>
       <ul class="article-sections">
-        <!--- FIXME: THIS IS A LIST OF TEN -->
-        <!--- TODO: Run through list with one method -->
         <li class="article-wrapper">
-          {%- for post in collections.fin | reverse -%}
-          <a href="{{ post.url }}">
-            <h4 class="article-link">{{ post.data.title }}</h4>
-          </a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.semantichtml | reverse -%}
-          <a href="{{ post.url }}">
-            <h4 class="article-link">{{ post.data.title }}</h4>
-          </a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.ableism | reverse -%}
+          {%- for post in collections.cya | reverse -%}
           <a href="{{ post.url }}">
             <h4 class="article-link">{{ post.data.title }}</h4>
           </a>
