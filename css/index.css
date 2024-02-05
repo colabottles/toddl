@@ -256,8 +256,7 @@ header {
 
 nav {
   align-items: center;
-  display: flex;
-  justify-content: center
+  display: flex
 }
 
 nav.a11y-webring-club {
