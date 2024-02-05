@@ -39,13 +39,25 @@ Hope kills me daily with each site I see with an overlay. It is just a sign to m
 
 [When respected accessibility people become overlay salesmen](https://www.forbes.com/sites/stevenaquino/2024/01/31/new-audioeye-chief-accessibility-officer-mike-paciello-talks-his-career-new-role-more-in-interview/?sh=74db7f741996), it sticks a dagger in your back and you feel like you just got slapped in the face. Especially since an accessibility professional was sued and faced a SLAPP lawsuit from the very same company. You can congratulate the man, but can you congratulate and respect the decision? Or [when accessibility companies buy overlay companies](https://www.businesswire.com/news/home/20231230727471/en/Level-Access-Agrees-to-Acquire-UserWay/) in the continual monetization of accessibility.
 
-The accessibility space is toxic, it is a toxic cesspit. The toxicity against the disabled community. The toxicity of the people that talk down to people and act holier than thou. The conferences that do not protect the very people they are having a conference around. The perpetually bitter and angry crowd that tells you that "you are not wanted, nor are you needed and you can fuck off" (true story, DM on the former bird site). The people that rail for equality becoming a lesson in irony with their anger, spite, rage, and bitterness.
+The accessibility space is toxic. Not all of the accessibility is toxic, there are highly intelligent and wonderful people in the space I have worked with and learned from over the years. There is a segment of good in a sea of bad.
 
-I spoke for the voices that could not speak for themselves. Family, friends. I did not speak for all. Especially the aforementioned people above. It has made me indifferent to the advocacy of accessibility.
+The overlay companies. Those who pander to the overlay companies. Those who bend knee to the overlay companies. Those who sell out the disabled community all in the name of change (which will never happen when you are rolling a boulder up a mountain).
+
+The toxicity against the disabled community. The toxicity of the people that talk down to people and act holier than thou. The conferences that do not protect the very people they are having a conference around.
+
+The perpetually bitter and angry crowd that tells you that "you are not wanted, nor are you needed and you can fuck off" (true story, DM on the former bird site). The people that rail for equality becoming a lesson in irony with their anger, spite, rage, and bitterness.
+
+I spoke for the voices that could not speak for themselves. Family, friends. I did not speak for all. Especially the aforementioned people above. It has made me indifferent to the advocacy of accessibility. I'm finished rolling that boulder up that mountain.
 
 ## I Tried
 
-I have tried over the years to become gainfully employed in the accessibility space with the "big three". I have to say that apparently, my experience, although extensive, definitely not all-knowing, was not good enough. At any level. Almost as if the jobs were inaccessible to me. SO I stayed on course and consulted. It gave me the chance to do the work and not have to answer to anyone but myself and my clients. Those are the people I am grateful for putting their trust in me to do the job they hired me to do.
+I have tried over the years to become gainfully employed in the accessibility space with the "big three". I have to say that apparently, my experience, although extensive, definitely not all-knowing, was not good enough. At any level.
+
+Almost as if the jobs were inaccessible to me. SO I stayed on course and consulted. It gave me the chance to do the work and not have to answer to anyone but myself and my clients. Those are the people I am grateful for putting their trust in me to do the job they hired me to do.
+
+So it hasn't been a complete loss, but it is a shame that I see companies and the abysmal hiring that they do pass on a lot of people I know that are brilliant people all over tech.
+
+I tried though. I'm tired boss.
 
 ## Burnout
 
@@ -55,12 +67,12 @@ I can feel the burnout just writing this. It even seriously makes me think twice
 
 No. I don't.
 
-My coding suffered, my ability to do development with fire, passion, love, and pleasure. Wiped out. Gone. I am indifferent to that now.
+My coding suffered, my ability to do development with fire, passion, love, and pleasure. Wiped out. Gone. I am indifferent to that now. I'm still tired, boss. Even more, just plain tired.
 
 ## 2024
 
 I am going to fulfill all events and appearances this year. Anything I may have submitted to as well. 2024 is the last year of conferences and travel. Podcasts and other streams as well.
 
-## Good Bye
+## Farewell
 
-It is time for me to go. I have no regrets. It has been fun, but not for the last five years. if the last five years have taught me anything, it is that a job is a job. Your job does not love you. Your co-workers are not family. Your mental health and overall health are paramount to anything and everything else.
+It is time for me to go. It isn't see you later or good bye for now. It is farewell.
