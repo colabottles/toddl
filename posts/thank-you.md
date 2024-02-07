@@ -18,3 +18,5 @@ The positive messages and the kind words, a lot of you have had have moved me. I
 Keeping this as short as possible, I have seen the messages and I just want to say to those of you who have reached out, thank you. It means the world to me as well as each and every one of you.
 
 &hearts;
+
+For context you can [interact with this link to read up](https://toddl.dev/posts/the-decision-to-leave-tech/) on what this means.
