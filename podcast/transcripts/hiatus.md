@@ -1,0 +1,88 @@
+---
+title: Hiatus
+description: Todd discusses what is going on, what the status is on the podcast, and the future of the podcast.
+date: 2024-02-09
+layout: layouts/post.njk
+---
+
+## S3:E9
+
+[00:00:00] Todd Libby: Welcome to the front end nerdery podcast. I am your co host, one of your hosts, Todd Libby.
+[00:00:20]Some house cleaning to do for this, uh, micro episode. Um, If you hadn't heard the news already was that I am taking a step back from tech. Um, it's something I feel that I need to do at this time. And basically if you haven't seen the social media posts, um, I have effectively retired as of, I think a couple of days ago, February 7th, right now, February 9th.
+[00:01:08]Um, what does this mean for the podcast? Well, I don't know. This podcast, uh, arose from the, uh, pandemic of 2020. That is still going on today, but we won't get into that.
+[00:01:39]Um, basically
+[00:01:49]I was burnt out far more than I thought, far worse, worse than I thought it was incredibly. And it still is incredibly bad. Um, when you wake up in the morning and you don't feel that spark anymore, you don't feel that fire anymore. You don't feel that desire, that love, that anticipation to get on with your day and do what you do and do your best at it, eventually led me to this decision.
+[00:02:37]I just, you know, Horrible hiring horrible, um, tech landscape, as we know it right now, a thousand people vying for one job, one position with a company. Um, I wasn't going to put myself through that again.
+[00:03:01]And to be honest, that took its toll as well. Um,
+[00:03:15]and I just had had enough. I've had enough of tech laying off people, those I know and who, those who I don't know, just so that a company can better their bottom line, so that their C suites can make their money, get their stock options, and pad their bank accounts. Um, basically,
+[00:03:47]I'm tired. Through and through, and I know that I said never again, and I've said never again, and I've probably quit like a thousand times. Um, but
+[00:04:15]when you don't feel anything, when you sit in front of the monitor for 20 minutes, looking at your code editor, and you can not even write the first line to an HTML document, you can't bring, you can't muster up that reflex action.
+[00:04:45]It's time. And for me, it's time
+[00:04:55]now. Am I in a position to retire? No. Am I ready to retire? No. Was I ready to retire? Not at all.
+[00:05:15]53. I had another dozen years left in me. I still do, but
+[00:05:24]it's not conducive to my mental health, mental health to keep going through the ringer to keep putting myself through that constant stream of rejection after rejection, especially when you're applying to the position.
+[00:05:43]Or for a position
+[00:05:48]to do what you've been doing the past 25 years.
+[00:05:58]Oh, let me move my camera over here.
+[00:06:05]So
+[00:06:10]I made the decision
+[00:06:17]and I'm incredibly satisfied with that decision. Does that mean if for instance, I had some sort of, I don't know, if I had a resume out there and a con and a company con. Attacked me, uh, wouldn't would I take it? Of course I would if it was the right fit. Um,
+[00:06:49]because cabin fever is a real thing and I, I'm not ready to, I'm not ready to kick back quite yet. I have to stay busy.
+[00:07:04]So.
+[00:07:10]On to about the podcast and the podcast
+[00:07:16]has been not taken care of like I wanted it to be and the podcast while behind the scenes, um, it's been discussed, uh, a little bit here and there. It's just,
+[00:07:42]I've got other things to focus on, uh, Homer. I don't want to speak for him. He's got other things. He's focused on and I mean, three seasons and I think 40 episodes. That's not bad. I've interviewed some fantastic people that I know, fantastic people that I've met and
+[00:08:23]had some. Wonderful conversations with people and the one thing I'm grateful about for the podcast is the time I, um, spent in interviewing Molly Holschlag
+[00:08:44]and I'm glad I have that. I will always cherish that. I will always cherish every conversation I have on the podcast. Um, but I think we're at the point. Where it's time to say it was good run three seasons was a really good run But I can't do it alone anymore I can't do it without pouring a ton of money into it and I can't do it without sponsorship I haven't been on
+[00:09:31]My game as far as doing due diligence and going out and finding sponsors. I mean if it was sponsored They were definitely it would it would be a lot different It would really be a lot different. I've paid people, wonderful, uh, people to do transcribing and captioning in, in the sound editing. And it was just too expensive for me.
+[00:10:05]It's just a guy that's just doing something that he wanted to do to pass the time in 2020. Um, does it mean, does this all mean that the, the podcast is, is. For lack of a better term, dead? I don't know.
+[00:10:30]I want to say yes, just to clear another, another, uh, plate off my table, but I don't know. I don't even know if
+[00:10:50]I don't even know if I'll get dragged back into tech.
+[00:10:58]A little piece of me wants to, but for the most part, I, I'm fine with my decision. I'm good about my decision. Um, the rest of the year I have commitments that I will be fulfilling. Um, my W3C work will still go on
+[00:11:28]and
+[00:11:34]I will see to the end things that I have started. So, I have an appearance in uh, about a week.
+[00:11:49]Actually, it is a week from today,
+[00:11:56]um,
+[00:12:01]on another show,
+[00:12:05]um, but seeing everybody's messages and support touched me, moved me. I thank you all again, um, but right now this is the thing I need to do. Will I find that spark again? Let's hope 53 year old me can maybe find nine year old Todd
+[00:12:40]who really loved the program. Um, so that's where I am at, and that's where the podcast is at. The podcast is not going to be shut down entirely. I think what we're going to do,
+[00:13:07]and I'm going to make the decision now is just to say, you know what, let's take 2024 and just relax and. Decompress and see what happens next year. Um, appearances at conferences will be less, um,
+[00:13:37]because we're all in this jam and without going into the horribleness of tech and hiring and layoffs and all of that stuff, I hope everybody who is looking finds. A new home. You deserve it. A lot of talented people out there. Um, and I know this will go on, this will fall on deaf ears, but, um, companies and organizations.
+[00:14:19]Do better. Do better than somebody who, and I'll use me as an example, has 25 years in accessibility and web development, and I get a robo reject less than an hour after I sent you my resume. Just cut that shit off. Cut that shit out. And, and stop trying to AI everything and stop trying to dehumanize people
+[00:14:58]and don't even stop trying to stop it
+[00:15:05]because people are seeing you and hopefully people don't want to deal with you. I won't deal with companies that robo reject me for a position because there might be a word in my resume that triggers the system and shoots up a flag. I've done it for 25 years. I've held leadership roles. I've held leadership roles outside of tech.
+[00:15:40]So Hilton, if you're watching, I'm talking about you.
+[00:15:51]And I'm talking about every other company that's been laying people off. And then hiring again. Oh, but we need to be more, um, selective. We're hiring only for certain positions. That's bullshit. And you know it. No, we let too many people go. We got to hire some people back
+[00:16:18]and CEOs, if you can't take a pay cut, get out. We don't want you.
+[00:16:28]You're half the reason why inflation is where it's at and where the economy is at. Um, and this is me, not sour grapes, not bitter, not angry.
+[00:16:49]And to the accessibility community, for the most part, who is welcoming and very kind, very helpful.
+[00:17:06]But for the few of you who want to talk down to people, for the few of you that want to be angry all the time at people, Because of whatever circumstance
+[00:17:23]cut that shit out to, you know, better than anybody else.
+[00:17:32]And if one thing is certain, what I thought was a very, um, I guess for the lack of a better term, um,
+[00:17:55]space, the, being the accessibility space, I thought that the accessibility people had their shit together. No, they don't. It's just as toxic as any other space. There isn't tech.
+[00:18:09]And we've seen that with overlays, we've seen that with overlay companies, we've seen that with accessibility companies, buying overlay companies, we've seen that with, um, people, um, teaming up with overlay companies.
+[00:18:35]I want to be the, I want to bring the change. I want to bridge the gap. It's not going to happen. It'll never happen. Not in my lifetime.
+[00:18:48]And frankly, auditing. Endlessly audit after audit, after audit, after audit killed me, wore me down. So
+[00:19:10]take it for what it's worth,
+[00:19:14]but I hope people out there who see this, who, who are listening to this, if you're looking for a job, just keep going. Don't look to your left. Don't look to your right. Just focus on what's in front of you. Don't look behind you. If these companies are going to yank your chain, and they're going to, we need you four, five, six, seven interviews.
+[00:19:41]That is a huge red flag that there's something wrong internally at that organization that they need to work on. Because at most, three interviews is all you need for a job. Not four, not five, not six. At that time, you've become their They're whipping, you know, they're whipping boy or whipping girl at that point.
+[00:20:11]You do not deserve to be put through the ringer like that, especially in times like these.
+[00:20:21]Find that job that fits you, find that job that suits you, and ask every single question.
+[00:20:31]And in a previous episode, Taylor Destin and I talked about this. Taylor, um, Was the last interview episode and we talked about hiring and we talked about tech don't give that a watch so front end nerdy nerdery podcast is going to Take a break for the rest of this year. I didn't do a wrap up of last year, but I had some Fantastic guests go check them out seasons one and two.
+[00:21:10]Also, please go check them out If you want to show support
+[00:21:19]Cause I've had people asking me, how do we support Utah? Um, go give the channel a follow, go give, you know, watch the videos, watch the videos from the first, second to the last, um, rate us, review us.
+[00:21:48]I know I don't put a lot. Into this, or I haven't put a lot into this and especially lately, but it's just, that's the way my mind works. And
+[00:22:03]that may be ADHD, ADD, whatever, but the fact remains, it happens. I'm easily distracted at some points and then hyper focused at others. So, ways you can support me, go to my Twitch account. My Twitch channel, that's twitch. tv backslash Todd Libby, all one word subscribe, you know, follow me, subscribe, like whatever, um, pop in and say, hi, you know, don't be a stranger.
+[00:22:50]Take five minutes out of your day for a break and just pop right in. Even if you're working.
+[00:23:00]I know we're all wrapped up in our, you know, we have our blinders on, but I mean, I, I try to, to get into people's, whatever they're doing to support them and show support. And sometimes to be honest, I feel like, you know what? It's just some one way street.
+[00:23:28]I see a lot of people on their channels. I see a lot of people doing their podcasts, but, and I don't know, I could be missing something, you know, the communication might not be there. People may be visiting and just not communicating and that's fine, but please say hi, show me you're out there. And if you really want to support me, that's how you do it.
+[00:23:57]So, um, with that, again, I'm going to summarize this as best I can and wrap this up real quickly. The podcast is on hiatus until next year and we'll see what's going on then. I am currently streaming on Twitch as far as I play games and I'm working on stuff that I've been working, wanted to work on since I was a kid.
+[00:24:28]So, and that's game design and it's not video game design is tabletop role playing game design. So, um, that's how you can support me. Go subscribe, tell your friends, pop in, say hi. Have a chat, five minutes, an hour, doesn't matter. Uh, I would appreciate hearing from all of you. And I would love to hear from you.
+[00:25:03]Um, other things,
+[00:25:09]I've
+[00:25:13]got other things going on that is going to take me away from W3C stuff for a little bit. I've got things going on that, um,
+[00:25:31]it's not tech. It's not accessibility. And I need that break, so. Uh, with that, I want to thank everybody who's listened, who's subscribed, who has, um, said wonderful things, sent wonderful messages the last couple days. I really appreciate you. I truly do. Um, the lobster's still here and, uh, we shall see you around.
+[00:26:10]Definitely. Who knows? I gotta be, I gotta be real here. If I'm presented with something that leads me back into tech, I'm going to take it.
+[00:26:29]You know, I'm not,
+[00:26:34]I'm not, uh, sitting here in my mansion and in Arizona. Let's put it that way. So until then, this has been the front end nerdery podcast, the micro blog edition, I guess the micro podcast edition, uh, I've been your host, co host, uh, Todd Libby. And we shall see you hopefully soon. If not, we'll see you around.
+[00:27:09]Goodbye.
