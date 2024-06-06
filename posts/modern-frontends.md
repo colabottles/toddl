@@ -10,23 +10,25 @@ layout: layouts/post.njk
 
 ## No Filter
 
-That's gone out the window with the word that [Gen Ashley](https://twitter.com/coderinheels) contacted a CEO to try and have someone in trouble for posting a blog post about their experience. The gloves are off.
+That's gone out the window with the word that the organizer contacted a CEO to try and have someone in trouble for posting a blog post about their experience.
 
 ## Little Things
 
-My photo of me eating a lobster roll hasn't bothered anyone from any conference. Until MFL. I was asked to provide a different one. Why? Wait, I won't "pile on".xx
+My photo of me eating a lobster roll hasn't bothered anyone from any conference. Until MFL. I was asked to provide a different one. Why? Wait, I won't "pile on".
 
-"Can you handle your own room and travel?" Sure. I'm privileged I can do that. The room and travel fiasco is just that. A fiasco and downright greasy shit that the organizer pulled.
+"Can you handle your own room and travel?" Sure. I'm privileged I can do that. The room and travel fiasco is just that.
 
-I too was DM'ed. Now in my haste to get off the bird app because the ne owner decided to let an old account back on, I did not get the screen shots of the DMs, [but they are similar to Cassie Evans' DMs](https://www.cassie.codes/posts/modern-frontends/).
+I too was DM'ed. Now in my haste to get off the bird app because the new owner decided to let an old account back on, I did not get the screen shots of the DMs, [but they are similar to Cassie Evans' DMs](https://www.cassie.codes/posts/modern-frontends/).
 
-"Don't pile on", "You're adding pressure", something something team member blah blah death in the family. Were there _any_ team members?
+"Don't pile on", "You're adding pressure", something something team member blah blah excuses, excuses. Were there _any_ team members?
 
 ## What I Saw
 
 A speaker dinner on a huge yacht? Talk about allocating money into the wrong thing and for the food we ate, as a former executive head chef, it was shit. This was a buttering up of speakers I've not seen before. Epic overkill.
 
-Hype all the "big names" on social media. The new speakers, the people having not spoken long got shafted. We all know Kent C. Dodds was going to be there. We didn't need to see it a week straight (embellishment there but not far from the truth) on LinkedIn, Twitter, and elsewhere.
+After getting into the **elevator** and going up to the third level, you entered a scene reminiscent of the movie, "Titanic" when you saw the staircase. This staircase was gold, not wood.
+
+Hype all the "big names" on social media. The new speakers, the people having not spoken long got shafted. We all know the marquee names were going to be there. We didn't need to see it a week straight (embellishment there but not far from the truth) on LinkedIn, Twitter, and elsewhere.
 
 I see a woman politicking and schmoozing in the speaker lounge and not caring to her speakers needs, her attendees, or having **ANY** video equipment available for livestream or for recording like they promised. Lies on top of more lies.
 
@@ -48,11 +50,11 @@ I sat in the speaker lounge and watched a speaker ask some pretty valid question
 
 ![If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they'll be wearing branded clothing or badges.](https://res.cloudinary.com/colabottles/image/upload/v1668913351/images/code_conduct.png)
 
-I did not see branded clothing, badges for staff, or **any** staff. And _who_ exaclty was I supposed to report anything to?!
+I did not see branded clothing, badges for staff, or **any** staff. And _who_ exactly was I supposed to report anything to?!
 
 ## I Have Words
 
-You want to fund your extravagnt lifestyle, work for it. Don't skim off the top of the pot and take from attendees, speakers, and sponsors. You're nothing special and you're certainly not running a great show (or shows for that matter). Get a steady paycheck then spend your money on the lifestyle you want to live.
+You want to fund your extravagant lifestyle, work for it. Don't skim off the top of the pot and take from attendees, speakers, and sponsors. You're nothing special and you're certainly not running a great show (or shows for that matter). Get a steady paycheck then spend your money on the lifestyle you want to live.
 
 You cheated people out of a great experience.
 
@@ -60,23 +62,24 @@ You cheated people out of a great experience.
 
 I had **ZERO** people at my talk at 17:30pm (5:30pm) **ON A FRIDAY NIGHT!** What kind of a screw-up do you have to be to schedule a talk on the last night of a conference and at _five thirty_?! A colossal one, that's what.
 
+Barely anyone there, folks had gone home or back to the hotel or out to dinner. Thanks to Mike Hartington for getting some people in the room. I would have been crushed, and even though I was thrown off, I did the talk and got good feedback.
+
 Granted, I did have some people filter in at the very last second before I was going to shut it down. Whether they came because they wanted to or because they were ushered to, I don't know. I am grateful to those who did attend.
 
 I was not there for a week long holiday. I was there to give a talk.
 
-Five talks at the end, no final keynote to bring the crowd back together before leaving and closing the conference. Nothing. What a fuck up of exceptional proportions.
+Five talks at the end, no final keynote to bring the crowd back together before leaving and closing the conference. Nothing. What a cluster of exceptional proportions.
 
 ## Summary
 
-I feel bad for those who attended and did not get the best experience. I feel bad for those that had video issues and couldn't catch a promised livestream. I feel bad for sponsors that shelled out major dollars or pounds just to pay for Gen's next pair of designer boots and jacket. Maybe even a leopard print scarf.
+I feel bad for those who attended and did not get the best experience. I feel bad for those that had video issues and couldn't catch a promised livestream. I feel bad for sponsors that shelled out major dollars or pounds just to pay for whatever the money went to.
 
 I feel bad for speakers that didn't have the audiences they should have and were promised.
 
 It was a cavalcade of [lies and deceit as explained by Hidde](https://hidde.blog/modern-frontends-live/), and just plain bitchy behavior. Bitchy that was [documented in Jo Franchetti's blog post](https://dev.to/thisisjofrank/my-experience-of-modern-frontends-conference-1cgg).
 
-If you decide to try and contact my CEO, he is a bigger asshole than I am. That CEOs name is Todd Libby. Call me.
 
-Get out of the racket of conning people and sponsors, Gen. The gig is up. The speaker community is on to you.
+Get out of the racket of conning people and sponsors. The gig is up. The speaker community is on to you.
 
 ---
 
