@@ -1,9 +1,9 @@
 {
-  "title": "Home of Todd Libby - Senior Accessibility Engineer, W3C Invited Expert, International Speaker, and Accessibility Advocate",
+  "title": "Home of Todd Libby",
   "url": "https://toddl.dev/",
-  "description": "A web development, design and technology blog.",
+  "description": "A blog.",
   "feed": {
-    "subtitle": "A web development, design and technology blog.",
+    "subtitle": "A blog.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "url": "https://toddl.dev/feed/feed.xml",
