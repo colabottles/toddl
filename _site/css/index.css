@@ -249,14 +249,14 @@ ul.navigation a.active {
 }
 
 header {
+  display: grid;
   grid-column: 2/12;
   margin-top: 2rem
 }
 
 nav {
   align-items: center;
-  display: flex;
-  justify-content: center
+  display: flex
 }
 
 nav.a11y-webring-club {
@@ -1661,11 +1661,12 @@ pre>code.highlight {
 .visible-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
+  margin: -1.5em 0 0 0;
   overflow: hidden;
+  justify-self: center;
   position: absolute;
   white-space: nowrap;
-  width: 1px;
-  margin: -1em 0 0 -9em
+  width: 1px
 }
 
 .visible-hidden:focus {

@@ -16,7 +16,7 @@
   "author": "Todd Libby <toddlibby@protonmail.com> (https://toddl.dev/)",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0-beta.1",
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
+    "@11ty/eleventy-upgrade-help": "^3.0.1",
     "axios": "^1.7.3",
     "got": "^14.4.2",
     "lodash": "^4.17.21",

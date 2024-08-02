@@ -67,6 +67,13 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
+module.exports = function(eleventyConfig) {
+  // If you have other `addPlugin` calls, UpgradeHelper should be listed last.
+  eleventyConfig.addPlugin(UpgradeHelper);
+};
+
   return {
     templateFormats: ["md", "njk", "html", "liquid", "js"],
 
