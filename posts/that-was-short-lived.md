@@ -51,4 +51,10 @@ Java was something I had a love/hate relationship with in the past but now, it i
 
 > I’m having fun again. I look forward to opening an editor again and following courses. I enjoy sitting down and doing this again. There’s always the light at the end of the tunnel, sometimes it takes a long time to see it. ![A shot of Todd's computer while he codes and learns Java at the desk in his home office](https://t.co/bHKBg5n6me) &mdash; ![🦞 Todd (@toddlibby)](https://twitter.com/toddlibby/status/1819417252783182036?ref_src=twsrc%5Etfw)
 
+Now I'm just glad I am doing it and seeing the light at the end of the tunnel. It is a long tunnel and the road to getting out of burnout is almost at the intersection of burnt out and back to feeling good. Regardless though, it has been a lot of work I had to do and even spawned a conference talk that went great at KCDC.
 
+## Now what
+
+That's up to the people that hire. I am looking for engineering/programming/lead role work. I hope to find something fast.
+
+For now, I am just going to keep on writing.
