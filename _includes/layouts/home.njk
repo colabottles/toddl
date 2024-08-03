@@ -5,23 +5,23 @@ templateClass: tmpl-home
 
   <article class="about-intro">
     <div class="home-container">
-      <h1 class="primary-heading">Hi! I'm Todd. This is my site.</h1>
+      <h1 class="primary-heading">Hi, I'm Todd.</h1>
         <p>I'm not real busy these days, I'm just relaxing until I find employment again.</p>
       <h2 class="sub-heading">Other things I do.</h2>
-      <p>I <a href="https://twitch.tv/toddlibby">stream over on Twitch</a></p>
+      <p>I cook, I read, and I <a href="https://twitch.tv/toddlibby">stream over on Twitch</a></p>
     </div>
   </article>
 
   <div class="articles">
     <h3 class="list-label">Last Article</h3>
       <ul class="article-sections">
-        <li class="article-wrapper">
+        <!-- <li class="article-wrapper">
           {%- for post in collections.comparison | reverse -%}
           <a href="{{ post.url }}">
             <h4 class="article-link">{{ post.data.title }}</h4>
           </a>
           {%- endfor -%}
-        </li>
+        </li> -->
 
         <li class="article-wrapper">
           {%- for post in collections.return | reverse -%}
