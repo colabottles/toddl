@@ -35,7 +35,7 @@ My time. While it has opened up a lot from me clearing my plate off and only tak
 
 I'm a little shunned in the accessibility community because of my vocal opposition to people being bullies that are supposed to be experts and whom should guide people and not emasculate or eviscerate others for the things they say, write, or do when it comes to accessibility. That part is fine, it just reinforces my stance that the accessibility community, while for the most part, being inclusive and welcoming and helpful, has a subset of a few people that just want to be standoffish pricks.
 
-That got unfollows and gasps from the crowd but I got into accessibility to be the voice of epople in my family and close knit circle of friends that did not have a voice. Those people were and are the reasons I have for doing what I did. Whether or not people like me is none of my business and I prefer it that way. I don't think about it, them, or how to win friends and influence people.
+That got unfollows and gasps from the crowd but I got into accessibility to be the voice of people in my family and close knit circle of friends that did not have a voice. Those people were and are the reasons I have for doing what I did. Whether or not people like me is none of my business and I prefer it that way. I don't think about it, them, or how to win friends and influence people.
 
 So accessibility for me is just advocacy. No more auditing. I deserve better and after 25 years and learning from the best people, I deserve more. I doubt I'll ever be presented with anything at this point in life. 53 years old and searching for a lead role or higher is not in my sights.
 
