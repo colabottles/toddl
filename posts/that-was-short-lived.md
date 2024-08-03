@@ -57,4 +57,4 @@ Now I'm just glad I am doing it and seeing the light at the end of the tunnel. I
 
 That's up to the people that hire. I am looking for engineering/programming/lead role work. I hope to find something fast.
 
-For now, I am just going to keep on writingh.
+For now, I am just going to keep on writing.

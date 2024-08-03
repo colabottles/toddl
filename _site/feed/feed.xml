@@ -4,7 +4,7 @@
 	<subtitle>I am trying to do my best, that is all I can do.</subtitle>
 	<link href="https://toddl.dev/feed/feed.xml" rel="self"/>
 	<link href="https://toddl.dev/"/>
-	<updated>Thu Aug 01 2024 17:00:00 GMT-0700 (Mountain Standard Time)</updated>
+	<updated>Fri Aug 02 2024 17:00:00 GMT-0700 (Mountain Standard Time)</updated>
 	<id>https://toddl.dev/</id>
 	<author>
 		<name>Todd Libby</name>
@@ -2938,15 +2938,6 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 	</entry>
 	
 	<entry>
-		<title>Tech and Restaurants</title>
-		<link href="https://toddl.dev/posts/tech-and-restaurants/"/>
-		<updated>Thu, 01 Aug 2024 17:00:00 MST</updated>
-		<id>https://toddl.dev/posts/tech-and-restaurants/</id>
-		<content type="html">&lt;h2 id=&quot;mirror-images-of-themselves&quot; tabindex=&quot;-1&quot;&gt;Mirror images of themselves&lt;/h2&gt;
-</content>
-	</entry>
-	
-	<entry>
 		<title>That Was Short-Lived</title>
 		<link href="https://toddl.dev/posts/that-was-short-lived/"/>
 		<updated>Thu, 01 Aug 2024 17:00:00 MST</updated>
@@ -2977,7 +2968,17 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 &lt;p&gt;Now I&#39;m just glad I am doing it and seeing the light at the end of the tunnel. It is a long tunnel and the road to getting out of burnout is almost at the intersection of burnt out and back to feeling good. Regardless though, it has been a lot of work I had to do and even spawned &lt;a href=&quot;https://noti.st/colabottles/DsfnOY/from-code-to-calm-combating-burnout-in-tech&quot;&gt;a conference talk that went great at KCDC&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;now-what&quot; tabindex=&quot;-1&quot;&gt;Now what&lt;/h2&gt;
 &lt;p&gt;That&#39;s up to the people that hire. I am looking for engineering/programming/lead role work. I hope to find something fast.&lt;/p&gt;
-&lt;p&gt;For now, I am just going to keep on writingh.&lt;/p&gt;
+&lt;p&gt;For now, I am just going to keep on writing.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Tech and Restaurants</title>
+		<link href="https://toddl.dev/posts/tech-and-restaurants/"/>
+		<updated>Fri, 02 Aug 2024 17:00:00 MST</updated>
+		<id>https://toddl.dev/posts/tech-and-restaurants/</id>
+		<content type="html">&lt;h2 id=&quot;mirror-images&quot; tabindex=&quot;-1&quot;&gt;Mirror images&lt;/h2&gt;
+&lt;p&gt;There are a ton of similarities between the tech industry and working as an engineer or manager/lead and working in a professional kitchen as an executive head chef/head chef, sous chef, or even a chef de partie. I have been wanting to write this article for a while as it has been swimming around in my head for quite some time now.&lt;/p&gt;
 </content>
 	</entry>
 </feed>

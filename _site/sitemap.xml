@@ -392,11 +392,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/about/</loc>
-    <lastmod>23 September, 2022</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/posts/it-has-been-a-minute/</loc>
     <lastmod>07 October, 2022</lastmod>
   </url>
@@ -604,11 +599,6 @@
   <url>
     <loc>https://toddl.dev/posts/devnexus-2024/</loc>
     <lastmod>12 April, 2024</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/posts/tech-and-restaurants/</loc>
-    <lastmod>02 August, 2024</lastmod>
   </url>
   
   <url>
@@ -1319,5 +1309,15 @@
   <url>
     <loc>https://toddl.dev/tags/feelings/</loc>
     <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/about/</loc>
+    <lastmod>03 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/tech-and-restaurants/</loc>
+    <lastmod>03 August, 2024</lastmod>
   </url>
 </urlset>
