@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
-    "@11ty/eleventy-upgrade-help": "^3.0.1",
     "axios": "^1.7.3",
     "got": "^14.4.2",
     "lodash": "^4.17.21",

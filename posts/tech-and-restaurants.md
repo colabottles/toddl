@@ -6,7 +6,7 @@ tags:
   - tech
   - restaurants
   - comparison
-  - similarities
+  - common-ground
 layout: layouts/post.njk
 ---
 
