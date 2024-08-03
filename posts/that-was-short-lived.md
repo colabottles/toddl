@@ -43,15 +43,15 @@ So I made a move.
 
 ## Java you say
 
-Yes. Java.
+Yes, Java.
 
 I am re-learning Java and having fun doing it. I am having a great time reading and coding. Actually going back to my roots in programming and getting it done. I am rusty. Very rusty, but the fact that I have learned multiple programming languages in the past only makes me realize I can still do it and still learn on the fly. That is someething I will talk about in another post later.
 
 Java was something I had a love/hate relationship with in the past but now, it is just fun. I look forward to learning now. I look forward to doing it all again.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m having fun again. I look forward to opening an editor again and following courses. I enjoy sitting down and doing this again. There’s always the light at the end of the tunnel, sometimes it takes a long time to see it. <a href="https://t.co/bHKBg5n6me">pic.twitter.com/bHKBg5n6me</a></p>&mdash; 🦞 Todd (@toddlibby) <a href="https://twitter.com/toddlibby/status/1819417252783182036?ref_src=twsrc%5Etfw">August 2, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+> I’m having fun again. I look forward to opening an editor again and following courses. I enjoy sitting down and doing this again. There’s always the light at the end of the tunnel, sometimes it takes a long time to see it. 🦞 Todd (@toddlibby) &mdash; [August 2, 2024](https://twitter.com/toddlibby/status/1819417252783182036)
 
-Now I'm just glad I am doing it and seeing the light at the end of the tunnel. It is a long tunnel and the road to getting out of burnout is almost at the intersection of burnt out and back to feeling good. Regardless though, it has been a lot of work I had to do and even spawned a conference talk that went great at KCDC.
+Now I'm just glad I am doing it and seeing the light at the end of the tunnel. It is a long tunnel and the road to getting out of burnout is almost at the intersection of burnt out and back to feeling good. Regardless though, it has been a lot of work I had to do and even spawned [a conference talk that went great at KCDC](https://noti.st/colabottles/DsfnOY/from-code-to-calm-combating-burnout-in-tech).
 
 ## Now what
 

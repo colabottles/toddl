@@ -1,5 +1,5 @@
 ---
-title: Tech and Restaurants, the Similarities
+title: Tech and Restaurants
 description: A bunch of thoughts on the similarities between tech and the restaurant industry.
 date: 2024-08-02 ## YYYY-MM-DD
 tags:
