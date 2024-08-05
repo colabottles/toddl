@@ -889,7 +889,7 @@ blockquote a:hover {
   color: var(--ecto)
 }
 
-blockquote em {
+em, blockquote em {
   font-style: italic
 }
 
