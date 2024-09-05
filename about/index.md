@@ -11,7 +11,7 @@ Web developer and developer advocate from Portland, Maine now living in Phoenix,
 
 You can find more about my work on <a href="https://github.com/colabottles">my Github page</a>.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e07eb8d2-593a-4c5c-b6a4-b15312d26372/deploy-status)](https://app.netlify.com/sites/toddl/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e07eb8d2-593a-4c5c-b6a4-b15312d26372/deploy-status?branch=dev)](https://app.netlify.com/sites/toddl/deploys)
 
 ![HTML5](https://img.shields.io/badge/html5-%23F22601?style=flat&logo=html5&logoColor=%23ffffff&logoSize=auto&labelColor=%23EE6628&color=%23E34E24)
 ![CSS](https://img.shields.io/badge/css3-%231572B6?style=flat&logo=css3&logoColor=%23ffffff&logoSize=auto&labelColor=%2333A9DB&color=%231572B6)
