@@ -9,6 +9,12 @@ tags:
 layout: layouts/post.njk
 ---
 
+I know I have written a lot about quitting, retiring, stepping back, etc. and all I can say is that is from a place where desperation and exasperation reigned supreme. This time however, it is different. My gut is not screaming at me to "stay in the game".
+
+You can only fill a glass up to the rim before you start spilling liquid all over the place. I am all over the place.
+
+I have been afforded a few minutes to post today. No pain, no extra-curricular messes, no interruptions.
+
 ## The Now
 
 My soul is tired. My mind is tired. My body aches. My medical situation is at a critical point, but not at a catastrophic fail point. My ambition erodes after each rejection. My confidnce wanes after each "You're not qualified."
