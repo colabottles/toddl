@@ -1,1 +1,2 @@
-did:plc:uaaimrenqrqn7bl6reoleqc2
+did=did:plc:uaaimrenqrqn7bl6reoleqc2
+did=did:plc:hmbmlzbqezcsktlb3gv3esrb
