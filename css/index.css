@@ -1006,16 +1006,12 @@ a.codepen:hover svg {
   color: #666
 }
 
-a.dribbble:hover svg {
-  color: #ea4c89
-}
-
 a.github:hover svg {
   color: #666
 }
 
-a.twitter:hover svg {
-  color: #1da1f2
+a.mastodon:hover svg {
+  color: #2F0C7A
 }
 
 a.rss:hover svg {
