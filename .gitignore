@@ -129,3 +129,5 @@ dist
 # 11ty ignore file
 .eleventyignore
 
+# IntelliJ Settings
+.idea/*
