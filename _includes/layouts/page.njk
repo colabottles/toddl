@@ -8,9 +8,9 @@
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
     <!-- For OpenGraph -->
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://toddl.dev/posts/" />
-    <meta property="og:title" content="Todd Libby" />
-    <meta property="og:description" content="An article from my website" />
+    <meta property="og:url" content={{ metadata.feed.path | url }}" />
+    <meta property="og:title" content="{{ metadata.title }}" />
+    <meta property="og:description" content="{{ metadata.description }}" />
     <meta property="og:image" content="https://res.cloudinary.com/colabottles/image/upload/v1641401477/images/backdrop_lobster.jpg" />
     <title>{{ renderData.title or title or metadata.title }}</title>
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}" />
