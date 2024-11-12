@@ -7,7 +7,7 @@ tags:
 - social
 - community
 layout: layouts/post.njk
-image: https://res.cloudinary.com/colabottles/image/upload/v1731369966/todd-social-card.png
+image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png
 ---
 
 ## Regrets, I Have A Few
