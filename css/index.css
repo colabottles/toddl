@@ -1022,6 +1022,10 @@ a.a11y:hover svg {
   color: #1259a7
 }
 
+a.bluesky-flutter:hover svg {
+  color: #0085FF
+}
+
 .icon {
   width: 1.5em;
   height: 1.5em;
