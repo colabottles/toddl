@@ -58,17 +58,21 @@ curl: (3) URL rejected: Bad hostname
 
 So I did my due diligence (and being as stubborn as I can be, not giving up tonight) and looked up ways to remedy that situation, which is why I ran the `ipconfig` commands. Then I went off in another direction when I [found this page](http://pxtl.ca/2023/12/13/bluesky-api/). I figured if the extension in Netlify wasn't working and the settings through Bluesky weren't working, give this a try.
 
-Again, I tried it once and failed due to some bad typing on my part. So I repeated the steps, triple-checked my work, and ran the commands again:
+Again, I tried it once and failed due to some bad typing on my part. So I repeated the steps, triple-checked my work, and ran the commands again (all one line and spaces between the hyphens at the beginning e.g., Invoke-RestMethod -Method POST):
 
 ```js
-$sessionResponse = Invoke-RestMethod -Method POST -Uri https://bsky.social/xrpc/com.atproto.server.createSession ` -body (@{identifier = 'email@example.com'; password ='PASSWORDGOESHERE'} | ConvertTo-Json) ` -ContentType 'application/json'
+$sessionResponse = Invoke-RestMethod 
+-Method POST 
+-Uri https://bsky.social/xrpc/com.atproto.server.createSession ` 
+-body (@{identifier = 'email@example.com'; password ='PASSWORDGOESHERE'} | ConvertTo-Json) ` 
+-ContentType 'application/json'
 ```
 
 Replace your email in the `identifier` part of the above code and use your password in the `password` part naturally.
 
 As soon as that ran with no issues, I ran a `$sessionResponse` command, had no issues there, then proceeded to doing a `$sessionresponse.did`. This turned out to reveal no errors. So whatever I did with the DNS, whether it was the flush and all that or if it was something else I did, it worked. I can press on.
 
-I made sure to run the `Resolve-DnsName _atproto.toddl.dev` command and that came back clean. 
+I made sure to run the `Resolve-DnsName _atproto.toddl.dev` command and that came back clean.
 
 ```php
 Name                        Type TTL   Section    PrimaryServer               NameAdministrator
@@ -76,9 +80,16 @@ Name                        Type TTL   Section    PrimaryServer               Na
 toddl.dev                   SOA  3600  Authority  dns1.wha.tevr.itis          hostmaster.your.com
 ```
 
-Awesome&excl; Let's move on. I then ran:
+Awesome&excl; Let's move on. I then ran (again, all one line and spaces between the hyphens at the beginning e.g., Invoke-RestMethod ` -Method POST ...):
 
-`Invoke-RestMethod ` -Method POST ` -Uri https://bsky.social/xrpc/com.atproto.identity.updateeHandle ` -Headers @{Authorization = "Bearer $($sessionResponse.accessJwt)"} ` -Body (@{ = 'toddl.dev'} | ConvertTo-Json) ` -ContentType 'application/json'`
+```php
+Invoke-RestMethod ` 
+-Method POST ` 
+-Uri https://bsky.social/xrpc/com.atproto.identity.updateHandle ` 
+-Headers @{Authorization = "Bearer $($sessionResponse.accessJwt)"} ` 
+-Body (@{ = 'toddl.dev'} | ConvertTo-Json) ` 
+-ContentType 'application/json'
+```
 
 Nothing happened, no errors. let's go back to the Settings panel in Bluesky and let's try this again. Looks like resetting the bearer worked&excl;
 
