@@ -3,7 +3,7 @@ title: You Down With DID?
 description: The pain of having a DID issue on Bluesky and the hours it took to research and fix.
 date: 2024-11-14 ## YYYY-MM-DD
 tags:
-  - didfix
+  - didfixit
   - bluesky
   - did
 layout: layouts/post.njk

@@ -187,18 +187,8 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/posts/my-first-week-at-knowbility/</loc>
-    <lastmod>05 April, 2021</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/podcast/transcripts/ferdinandi/</loc>
     <lastmod>19 April, 2021</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/posts/a-month-at-knowbility/</loc>
-    <lastmod>05 May, 2021</lastmod>
   </url>
   
   <url>
@@ -622,11 +612,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/knowbilityorg/</loc>
-    <lastmod>02 August, 2024</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/accessibe/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
@@ -643,6 +628,16 @@
   
   <url>
     <loc>https://toddl.dev/tags/accessibility/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/misinfo/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/misinformation/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
   
@@ -737,6 +732,21 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/bluesky/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/social/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/community/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/discoveries/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
@@ -758,11 +768,6 @@
   
   <url>
     <loc>https://toddl.dev/tags/speaking/</loc>
-    <lastmod>02 August, 2024</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/tags/community/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
   
@@ -1077,11 +1082,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/tags/knowbility/</loc>
-    <lastmod>02 August, 2024</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/tags/typography/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
@@ -1257,6 +1257,21 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/updated/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/thoughts/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/update/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/discussion/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
@@ -1312,6 +1327,16 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/didfixit/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/did/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/about/</loc>
     <lastmod>03 August, 2024</lastmod>
   </url>
@@ -1319,5 +1344,35 @@
   <url>
     <loc>https://toddl.dev/posts/tech-and-restaurants/</loc>
     <lastmod>05 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/update/</loc>
+    <lastmod>07 October, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/update-again/</loc>
+    <lastmod>17 October, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/bluesky/</loc>
+    <lastmod>11 November, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/accessibility-misinformation/</loc>
+    <lastmod>13 November, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/you-down-with-did/</loc>
+    <lastmod>14 November, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/emails/subscribed/</loc>
+    <lastmod>16 November, 2024</lastmod>
   </url>
 </urlset>

@@ -6,6 +6,14 @@
     <meta name="generator" content="Eleventy v3.0.0">
     <meta name="description" content="A barely functioning blog.">
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+    <!-- For OpenGraph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content=/feed/feed.xml" />
+    <meta property="og:title" content="Podcast"/>
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
     <title>Podcast</title>
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
@@ -109,6 +117,26 @@
                   <title>My GitHub repository</title>
                   <desc id="github">A white OctoCat.</desc>
                   <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a rel="me" href="https://notacult.social/@colabottles" class="mastodon">
+                <svg class="icon icon-mastodon" focusable="false">
+                  <title>My Mastodon profile</title>
+                  <desc id="mastodon">A white Mastodon.</desc>
+                  <use href="/img/symbol-defs.svg#icon-mastodon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://bsky.app/profile/@toddl.dev" class="bluesky-flutter">
+                <svg id="flutterby" class="bluesky-flutter" viewBox="0 0 566 500" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <path id="wing" fill="currentColor" d="M 123.244 35.008 C 188.248 83.809 283.836 176.879 283.836 235.857 C 283.836 316.899 283.879 235.845 283.836 376.038 C 283.889 375.995 282.67 376.544 280.212 383.758 C 266.806 423.111 214.487 576.685 94.841 453.913 C 31.843 389.269 61.013 324.625 175.682 305.108 C 110.08 316.274 36.332 297.827 16.093 225.504 C 10.271 204.699 0.343 76.56 0.343 59.246 C 0.343 -27.451 76.342 -0.206 123.244 35.008 Z" />
+                  </defs>
+                <use xlink:href="#wing" class="left" />
+                <use xlink:href="#wing" class="right" />
                 </svg>
               </a>
             </li>

@@ -1006,16 +1006,12 @@ a.codepen:hover svg {
   color: #666
 }
 
-a.dribbble:hover svg {
-  color: #ea4c89
-}
-
 a.github:hover svg {
   color: #666
 }
 
-a.twitter:hover svg {
-  color: #1da1f2
+a.mastodon:hover svg {
+  color: #858AFA
 }
 
 a.rss:hover svg {
@@ -1026,12 +1022,82 @@ a.a11y:hover svg {
   color: #1259a7
 }
 
+a.bluesky-flutter:hover svg {
+  color: #0085FF
+}
+
 .icon {
   width: 1.5em;
   height: 1.5em;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor
+}
+
+/* via Phil Hawksworth */
+.bluesky-flutter {
+  display: inline-flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.bluesky-flutter svg {
+  width: 2em;
+  height:2em;
+  transition: 200ms;
+}
+
+.bluesky-flutter .left {
+  transform-origin: center;
+}
+.bluesky-flutter .right {
+  transform-origin: center;
+  transform: scale(-1, 1);
+}
+.bluesky-flutter:hover .left,
+.bluesky-flutter:focus .left {
+   animation: flutter 430ms ease-in-out;
+   --flip: 1;
+}
+.bluesky-flutter:hover .right, 
+.bluesky-flutter:focus .right {
+   animation: flutter 500ms ease-in-out;
+  --flip: -1;
+}
+.bluesky-flutter:hover svg,
+.bluesky-flutter:focus svg{
+  transform: rotate(-5deg);
+  transition: 500ms;
+}
+
+@media (prefers-reduced-motion) {
+  .bluesky-flutter:hover .left,
+  .bluesky-flutter:focus .left, 
+  .bluesky-flutter:hover .right, 
+  .bluesky-flutter:focus .right {
+    animation: none;
+  }
+}
+
+@keyframes flutter {
+  10% {
+    transform: scale(calc(var(--flip)*1), 0.9);
+  }
+  20% {
+    transform: scale(calc(var(--flip)*0.5), 1) 
+  }
+  40% {
+    transform: scale(calc(var(--flip)*0.9), 0.95);
+  }
+  60% {
+    transform: scale(calc(var(--flip)*0.3), 1);
+  }
+  80% {
+    transform: scale(calc(var(--flip)*0.9), 0.95);
+  }
+  100% {
+    transform: scale(calc(var(--flip)*1), 1);
+  }
 }
 
 .contact {

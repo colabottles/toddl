@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v3.0.0">
+    <meta name="description" content="The pain of having a DID issue on Bluesky and the hours it took to research and fix.">
+    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+    <!-- For OpenGraph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content=/feed/feed.xml" />
+    <meta property="og:title" content="You Down With DID?"/>
+    <meta property="og:description" content="The pain of having a DID issue on Bluesky and the hours it took to research and fix." />
+    <meta property="og:image" content="https://res.cloudinary.com/colabottles/image/upload/v1731376889/did-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <title>You Down With DID?</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" class="page-title" id="title">Todd Libby</a>
+            <nav>
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
+      </header>
+
+      <main id="main" class="inner">
+        
+<div class="article-container">
+  <article>
+
+    <header class="article__header">
+      <h1 class="page-title">You Down With DID?</h1>
+        <div class="article__meta">
+          <time>14 November, 2024</time>
+        </div>
+    </header>
+
+    <section class="article__body">
+      <h2 id="yeah-you-know-me!" tabindex="-1">Yeah You Know Me!</h2>
+<p>I had been having a hell of a time getting my domain name to be my handle for quite a while on Bluesky. When I tried to change my handle to my domain name, all I got was this:</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1731640373/settings.png" alt="Settings in Bluesky to change your handle to a custom domain."></p>
+<p>and to no avail for weeks I had not been able to get the new DID to work. It appeared to be that Bluesky, somewhere along the line was holding the old DID and nothing was changing. So I <em>did</em> (pun intended) to some research. A lot of research and here is what I know and the steps I took to fix it.</p>
+<h2 id="spill-the-beans-man!" tabindex="-1">Spill The Beans Man!</h2>
+<p>I started with a lot of misses as far as what steps to take at the beginning of my search. A few questions on Stack Overflow, some articles written and general chatter that led to a dead end each time. Then I found the <img src="https://bsky-debug.app/" alt="Bluesky Debug Page"> on one of my rounds of searching for clues and answers.</p>
+<p>From there I clicked the &quot;Handles&quot; tab and searched for <code>toddl.dev</code> and it brought up this information:</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1731640855/debug.jpg" alt="The Bluesky Debug page showing the information for DNS and HTTP authorization for the domain."></p>
+<p>Then I went to my host and domain provider (Netlify, in my case) and I went into the Domain Management section. I had removed the old DID a while back and put the new one in during my all over the place debugging, so I added the old back in and got the image above. Then I deleted the old record, then I got the DNS error but the HTTP authorization  went all green. Great!</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1731640855/dnspoo.jpg" alt="The Bluesky Debug page showing everything passing for DNS and HTTP verification."></p>
+<h2 id="the-part-that-gets-tricky" tabindex="-1">The Part That Gets Tricky</h2>
+<p>Now I have a feeling this had absolutely nothing to do with anything, but I did a DNS flush from my Windows machine, just in case.</p>
+<p><code>ipconfig /flushdns</code><br>
+<code>ipconfig /renew</code></p>
+<p>Then I could not get the next command to work even running Powershell as an admin (go figure). Went on the Mac and ran:</p>
+<p><code>ipconfig /registerdns</code></p>
+<p>Meanwhile, I popped open another terminal tab and <code>dig toddl.dev</code> got that info, checked everything out. Things on the HTTP side were still good. Perfect. Things on the DNS side were not still.</p>
+<p>I added the Bluesky Custom Domain extension in Netlify in the Extensions part of the admin for the domain, followed those steps not using the DNS option but the .well-known option. I still have the <code>atproto-did</code> file as well. I will be leaving it and sitting on my hands.</p>
+<h2 id="that-sounds-like-a-ton-of-work" tabindex="-1">That Sounds Like A Ton of Work</h2>
+<p>Well it was, and I figure, it couldn't hurt. Then I found this gem, which I believe is the bread and butter of the whole thing. I went through prior to this final fix and ran into some issues. Namely:</p>
+<pre class="language-java"><code class="language-java">curl<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span> <span class="token class-name">Could</span> not resolve host<span class="token operator">:</span> xrpc
+curl<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token constant">URL</span> rejected<span class="token operator">:</span> <span class="token class-name">Bad</span> hostname
+curl<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token constant">URL</span> rejected<span class="token operator">:</span> <span class="token class-name">Bad</span> hostname
+curl<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token constant">URL</span> rejected<span class="token operator">:</span> <span class="token class-name">Bad</span> hostname</code></pre>
+<p>So I did my due diligence (and being as stubborn as I can be, not giving up tonight) and looked up ways to remedy that situation, which is why I ran the <code>ipconfig</code> commands. Then I went off in another direction when I <a href="http://pxtl.ca/2023/12/13/bluesky-api/">found this page</a>. I figured if the extension in Netlify wasn't working and the settings through Bluesky weren't working, give this a try.</p>
+<p>Again, I tried it once and failed due to some bad typing on my part. So I repeated the steps, triple-checked my work, and ran the commands again (all one line and spaces between the hyphens at the beginning e.g., Invoke-RestMethod -Method POST):</p>
+<pre class="language-js"><code class="language-js">$sessionResponse <span class="token operator">=</span> Invoke<span class="token operator">-</span>RestMethod 
+<span class="token operator">-</span>Method <span class="token constant">POST</span> 
+<span class="token operator">-</span>Uri https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>bsky<span class="token punctuation">.</span>social<span class="token operator">/</span>xrpc<span class="token operator">/</span>com<span class="token punctuation">.</span>atproto<span class="token punctuation">.</span>server<span class="token punctuation">.</span>createSession <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string"> 
+-body (@{identifier = 'email@example.com'; password ='PASSWORDGOESHERE'} | ConvertTo-Json) </span><span class="token template-punctuation string">`</span></span> 
+<span class="token operator">-</span>ContentType <span class="token string">'application/json'</span></code></pre>
+<p>Replace your email in the <code>identifier</code> part of the above code and use your password in the <code>password</code> part naturally.</p>
+<p>As soon as that ran with no issues, I ran a <code>$sessionResponse</code> command, had no issues there, then proceeded to doing a <code>$sessionresponse.did</code>. This turned out to reveal no errors. So whatever I did with the DNS, whether it was the flush and all that or if it was something else I did, it worked. I can press on.</p>
+<p>I made sure to run the <code>Resolve-DnsName _atproto.toddl.dev</code> command and that came back clean.</p>
+<pre class="language-php"><code class="language-php">Name                        Type <span class="token constant">TTL</span>   Section    PrimaryServer               NameAdministrator
+<span class="token operator">--</span><span class="token operator">--</span>                        <span class="token operator">--</span><span class="token operator">--</span> <span class="token operator">--</span><span class="token operator">-</span>   <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>    <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>               <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+toddl<span class="token operator">.</span>dev                   <span class="token constant">SOA</span>  <span class="token number">3600</span>  Authority  dns1<span class="token operator">.</span>wha<span class="token operator">.</span>tevr<span class="token operator">.</span>itis          hostmaster<span class="token operator">.</span>your<span class="token operator">.</span>com</code></pre>
+<p>Awesome! Let's move on. I then ran (again, all one line and spaces between the hyphens at the beginning e.g., Invoke-RestMethod ` -Method POST ...):</p>
+<pre class="language-php"><code class="language-php">Invoke<span class="token operator">-</span>RestMethod <span class="token string backtick-quoted-string">` 
+-Method POST `</span> 
+<span class="token operator">-</span>Uri https<span class="token punctuation">:</span><span class="token comment">//bsky.social/xrpc/com.atproto.identity.updateHandle ` </span>
+<span class="token operator">-</span>Headers @<span class="token punctuation">{</span>Authorization <span class="token operator">=</span> <span class="token string double-quoted-string">"Bearer $(<span class="token interpolation"><span class="token variable">$sessionResponse</span></span>.accessJwt)"</span><span class="token punctuation">}</span> <span class="token string backtick-quoted-string">` 
+-Body (@{ = 'toddl.dev'} | ConvertTo-Json) `</span> 
+<span class="token operator">-</span>ContentType <span class="token string single-quoted-string">'application/json'</span></code></pre>
+<p>Nothing happened, no errors. let's go back to the Settings panel in Bluesky and let's try this again. Looks like resetting the bearer worked!</p>
+<p>Clicked the &quot;Verify DNS&quot; in the &quot;Change handle&quot; settings and yes! It works!</p>
+<p>Now I have my domain as my handle and I can stop obsessing about a fix. I will say, as of this article, that I don't know if this has anything to do with the current &quot;Invalid Handle&quot; bug, but, I would suggest giving the API method of changing your handle a try and see if that works. Your mileage may vary.</p>
+<p>Now I can rest easily, cross one more thing off my list of to-do's and move on to obsessing about something else like I normally do. Maybe sleep would be a good thing to focus on next?</p>
+
+    </section>
+  </article>
+</div>
+
+      </main>
+
+      <footer class="meta footer">
+        <h2>&copy;1999 &mdash; 2024, Todd Libby.</h2>
+          <nav>
+            <ul class="nav list-inline">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
+        <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #ProtectTransKids</h2>
+
+        <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
+          <h2 id="a11y-webring-club">a11y-webring.club</h2>
+          <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
+          <ul>
+            <li><a rel="previous external" href="https://a11y-webring.club/prev">Previous website</a></li>
+            <li><a rel="external" href="https://a11y-webring.club/random">Random website</a></li>
+            <li><a rel="next external" href="https://a11y-webring.club/next">Next website</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a rel="me" href="https://notacult.social/@colabottles" class="mastodon">
+                <svg class="icon icon-mastodon" focusable="false">
+                  <title>My Mastodon profile</title>
+                  <desc id="mastodon">A white Mastodon.</desc>
+                  <use href="/img/symbol-defs.svg#icon-mastodon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://bsky.app/profile/@toddl.dev" class="bluesky-flutter">
+                <svg id="flutterby" class="bluesky-flutter" viewBox="0 0 566 500" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <path id="wing" fill="currentColor" d="M 123.244 35.008 C 188.248 83.809 283.836 176.879 283.836 235.857 C 283.836 316.899 283.879 235.845 283.836 376.038 C 283.889 375.995 282.67 376.544 280.212 383.758 C 266.806 423.111 214.487 576.685 94.841 453.913 C 31.843 389.269 61.013 324.625 175.682 305.108 C 110.08 316.274 36.332 297.827 16.093 225.504 C 10.271 204.699 0.343 76.56 0.343 59.246 C 0.343 -27.451 76.342 -0.206 123.244 35.008 Z" />
+                  </defs>
+                <use xlink:href="#wing" class="left" />
+                <use xlink:href="#wing" class="right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

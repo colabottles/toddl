@@ -6,6 +6,14 @@
     <meta name="generator" content="Eleventy v3.0.0">
     <meta name="description" content="A barely functioning blog.">
     <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+    <!-- For OpenGraph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content=/feed/feed.xml" />
+    <meta property="og:title" content="Blog"/>
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
     <title>Blog</title>
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
@@ -33,6 +41,61 @@
   <div class="page-container">
     <ul class="article-list">
       <li class="article-list-article newest">
+        <a class="article-list-article-link" href="/posts/you-down-with-did/">
+          <span class="article-category">
+            DID, Bluesky, Fixes
+          </span>
+          <h2 class="article-list-article-title">
+            You Down With DID&quest;
+          </h2>
+         </a>
+       </li>
+
+      <li class="article-list-article">
+        <a class="article-list-article-link" href="/posts/accessibility-misinformation/">
+          <span class="article-category">
+            Misinformation, Accessibility
+          </span>
+          <h2 class="article-list-article-title">
+            Accessibility Misinformation
+          </h2>
+         </a>
+       </li>
+
+      <li class="article-list-article">
+        <a class="article-list-article-link" href="/posts/bluesky/">
+          <span class="article-category">
+            Bluesky, Social, Community
+          </span>
+          <h2 class="article-list-article-title">
+            Bluesky
+          </h2>
+         </a>
+       </li>
+
+      <li class="article-list-article">
+        <a class="article-list-article-link" href="/posts/update-again/">
+          <span class="article-category">
+            Updated, Life, Thoughts
+          </span>
+          <h2 class="article-list-article-title">
+            Update Again
+          </h2>
+        </a>
+      </li>
+
+      <li class="article-list-article">
+        <a class="article-list-article-link" href="/posts/update/">
+          <span class="article-category">
+            Update, Life, Thoughts
+          </span>
+          <h2 class="article-list-article-title">
+            Update
+          </h2>
+        </a>
+      </li>
+
+      <li class="article-list-article">
         <a class="article-list-article-link" href="/posts/tech-and-restaurants/">
           <span class="article-category">
             Tech, Restaurants, Comparison, Common Ground
@@ -43,7 +106,7 @@
         </a>
       </li>
 
-      <li class="article-list-article newest">
+      <li class="article-list-article">
         <a class="article-list-article-link" href="/posts/that-was-short-lived/">
           <span class="article-category">
             Life, Web, Tech, Return
@@ -54,7 +117,7 @@
         </a>
       </li>
 
-      <li class="article-list-article newest">
+      <li class="article-list-article">
         <a class="article-list-article-link" href="/posts/devnexus-2024/">
           <span class="article-category">
            Conference, Devnexus, Web
@@ -119,6 +182,26 @@
                   <title>My GitHub repository</title>
                   <desc id="github">A white OctoCat.</desc>
                   <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a rel="me" href="https://notacult.social/@colabottles" class="mastodon">
+                <svg class="icon icon-mastodon" focusable="false">
+                  <title>My Mastodon profile</title>
+                  <desc id="mastodon">A white Mastodon.</desc>
+                  <use href="/img/symbol-defs.svg#icon-mastodon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://bsky.app/profile/@toddl.dev" class="bluesky-flutter">
+                <svg id="flutterby" class="bluesky-flutter" viewBox="0 0 566 500" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <path id="wing" fill="currentColor" d="M 123.244 35.008 C 188.248 83.809 283.836 176.879 283.836 235.857 C 283.836 316.899 283.879 235.845 283.836 376.038 C 283.889 375.995 282.67 376.544 280.212 383.758 C 266.806 423.111 214.487 576.685 94.841 453.913 C 31.843 389.269 61.013 324.625 175.682 305.108 C 110.08 316.274 36.332 297.827 16.093 225.504 C 10.271 204.699 0.343 76.56 0.343 59.246 C 0.343 -27.451 76.342 -0.206 123.244 35.008 Z" />
+                  </defs>
+                <use xlink:href="#wing" class="left" />
+                <use xlink:href="#wing" class="right" />
                 </svg>
               </a>
             </li>
