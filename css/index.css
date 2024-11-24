@@ -1103,16 +1103,17 @@ a.bluesky-flutter:hover svg {
 /* via Salma @ whitep4nth3r.com */
 .post__likes {
   min-height: 400px; /* to avoid CLS as much as possible! */
+  grid-column: 2 / 12;
 }
 
 .post__likesTitle {
-  font-size: 2rem;
-  color: #000;
+  font-size: 1.4rem;
+  color: #fff;
 }
 
 .post__likesCta {
   color:  #000;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: italic;
   display: block;
 }
