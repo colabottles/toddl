@@ -2,7 +2,7 @@
 title: Please Clap
 description: This is a work in progress to get Bluesky likes showing on my blog posts.
 date: 2024-11-23 ## YYYY-MM-DD
-postId: {post.url}
+postId: post.url
 tags:
   - experimenting
   - programming
