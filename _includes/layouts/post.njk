@@ -34,16 +34,15 @@ templateClass: tmpl-page
     attributionsrc="https://whitep4nth3r.com/blog/show-bluesky-likes-on-blog-posts/">
   </script>
   <script>
-    document.write("<script src='function drawLikes(likesActors, postLikesCount) {
-  for (const like of likesActors) {
-    const likeEl = document.createElement("li");
-    likeEl.classList.add("post__like");
-    likeEl.innerHTML = `
-      <img class="post__like__avatar" src="${like.actor.avatar.replace("avatar", "avatar_thumbnail")}" alt="${
-      like.actor.displayName
-    }" />`;
-    likesContainer.appendChild(likeEl);
-  }'><\/script>");
- </script>
-
+    function drawLikes(likesActors, postLikesCount) {
+      for (const like of likesActors) {
+        const likeEl = document.createElement("li");
+        likeEl.classList.add("post__like");
+        likeEl.innerHTML = `
+          <img class="post__like__avatar" src="${like.actor.avatar.replace("avatar", "avatar_thumbnail")}" alt="${
+          like.actor.displayName
+        }" />`;
+        likesContainer.appendChild(likeEl);
+    }
+  </script>
 </div>
