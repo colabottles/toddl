@@ -29,10 +29,12 @@ templateClass: tmpl-page
   </article>
 
   <meta data-bsky-post-id="{post.bskyPostId}" />
+
   <script
-    src="bluesky_likes.js"
+    src="{{ '../../bluesky_likes.js' | url }}"
     attributionsrc="https://whitep4nth3r.com/blog/show-bluesky-likes-on-blog-posts/">
   </script>
+
   <script>
     function drawLikes(likesActors, postLikesCount) {
       for (const like of likesActors) {
@@ -46,4 +48,5 @@ templateClass: tmpl-page
       }
     }
   </script>
+  
 </div>
