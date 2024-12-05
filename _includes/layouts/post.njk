@@ -21,7 +21,7 @@ templateClass: tmpl-page
       <h3 class="post__likesTitle">
         🦋 <span data-bsky-likes-count></span> likes on Bluesky
       </h3>
-      <a class="post__likesCta" href="https://bsky.app/profile/toddl.dev/post/postId" target="_blank">
+      <a class="post__likesCta" href="https://bsky.app/profile/toddl.dev/post/$postId" target="_blank">
         Like this post on Bluesky to see your face on this page
       </a>
       <ul data-bsky-likes class="post__likesList"></ul>
@@ -29,5 +29,21 @@ templateClass: tmpl-page
   </article>
 
   <meta data-bsky-post-id="{post.bskyPostId}" />
-  <link href="{{ '../../bluesky_likes.js' | url }}" type="module">
+  <script
+    src="bluesky_likes.js"
+    attributionsrc="https://whitep4nth3r.com/blog/show-bluesky-likes-on-blog-posts/">
+  </script>
+  <script>
+    document.write("<script src='function drawLikes(likesActors, postLikesCount) {
+  for (const like of likesActors) {
+    const likeEl = document.createElement("li");
+    likeEl.classList.add("post__like");
+    likeEl.innerHTML = `
+      <img class="post__like__avatar" src="${like.actor.avatar.replace("avatar", "avatar_thumbnail")}" alt="${
+      like.actor.displayName
+    }" />`;
+    likesContainer.appendChild(likeEl);
+  }'><\/script>");
+ </script>
+
 </div>
