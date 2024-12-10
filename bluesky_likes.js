@@ -7,7 +7,6 @@ const myDid = "did:plc:gevyqibw5p2xsonkbsbjm5vy";
 const bskyAPI = "https://public.api.bsky.app/xrpc/";
 const getLikesURL = `${bskyAPI}app.bsky.feed.getLikes?limit=${LIMIT}&uri=`;
 const getPostURL = `${bskyAPI}app.bsky.feed.getPosts?uris=`;
-const postId = bskyPostId;
 
 function drawHowManyMore(postLikesCount, likesActorLength) {
   if (postLikesCount > LIMIT) {
@@ -33,7 +32,7 @@ function drawLikes(likesActors, postLikesCount) {
   drawHowManyMore(postLikesCount, likesActors.length);
 }
 
-async function bskyName() {
+async function postId() {
   if (bskyPostId !== "null") {
     const postUri = `at://${myDid}/app.bsky.feed.post/${postId}`;
     try {
@@ -53,4 +52,4 @@ async function bskyName() {
     }
   }
 }
-bskyName();
+postId();
