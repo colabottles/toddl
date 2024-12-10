@@ -4,7 +4,7 @@ const container = document.querySelector("[data-bsky-container]");
 const likesContainer = document.querySelector("[data-bsky-likes]");
 const likesCount = document.querySelector("[data-bsky-likes-count]");
 const myDid = "did:plc:gevyqibw5p2xsonkbsbjm5vy";
-const bskyAPI = "https://public.api.bsky.app/";
+const bskyAPI = "https://public.api.bsky.app/xrpc/";
 const getLikesURL = `${bskyAPI}app.bsky.feed.getLikes?limit=${LIMIT}&uri=`;
 const getPostURL = `${bskyAPI}app.bsky.feed.getPosts?uris=`;
 
@@ -34,7 +34,7 @@ function drawLikes(likesActors, postLikesCount) {
 
 async function bskyName() {
   if (bskyPostId !== "null") {
-    const postUri = `at://${myDid}/app.bsky.feed.post/${bskyPostId}`;
+    const postUri = `at://${myDid}/app.bsky.feed.post/${postId}`;
     try {
       const bskyPost = await fetch(getPostURL + postUri);
       const bskyPostLikes = await fetch(getLikesURL + postUri);
