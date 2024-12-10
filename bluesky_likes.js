@@ -33,11 +33,19 @@ function drawLikes(likesActors, postLikesCount) {
 }
 
 async function bskyName() {
-  if (bskyPostId !== "null") {
-    const postUri = 'at://${myDid}/app.bsky.feed.post/${bskyPostId}';
+  if (bskyPostId !== null) {
+    const postUri = `at://${myDid}/app.bsky.feed.post/${bskyPostId}`;
     try {
       const bskyPost = await fetch(getPostURL + postUri);
+      if (!bskyPost.ok) {
+        throw new Error('Failed to fetch post data');
+      }
+      
       const bskyPostLikes = await fetch(getLikesURL + postUri);
+      if (!bskyPostLikes.ok) {
+        throw new Error('Failed to fetch likes data');
+      }
+
       const postData = await bskyPost.json();
       const likesData = await bskyPostLikes.json();
 
@@ -48,8 +56,10 @@ async function bskyName() {
         drawLikes(likesData.likes, totalLikesCount);
       }
     } catch (error) {
+      console.error(error);
       container.remove();
     }
   }
 }
+
 bskyName();
