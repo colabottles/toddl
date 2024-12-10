@@ -32,9 +32,9 @@ function drawLikes(likesActors, postLikesCount) {
   drawHowManyMore(postLikesCount, likesActors.length);
 }
 
-async function bskyName() {
+async function bskyShowLikes() {
   if (bskyPostId !== "null") {
-    const postUri = `at://${myDid}/app.bsky.feed.post/${postId}`;
+    const postUri = `at://${myDid}/app.bsky.feed.post/postId`;
     try {
       const bskyPost = await fetch(getPostURL + postUri);
       const bskyPostLikes = await fetch(getLikesURL + postUri);
@@ -52,4 +52,4 @@ async function bskyName() {
     }
   }
 }
-bskyName();
+bskyShowLikes();
