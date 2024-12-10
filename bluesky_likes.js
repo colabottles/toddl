@@ -7,6 +7,7 @@ const myDid = "did:plc:gevyqibw5p2xsonkbsbjm5vy";
 const bskyAPI = "https://public.api.bsky.app/xrpc/";
 const getLikesURL = `${bskyAPI}app.bsky.feed.getLikes?limit=${LIMIT}&uri=`;
 const getPostURL = `${bskyAPI}app.bsky.feed.getPosts?uris=`;
+const postId = bskyPostId;
 
 function drawHowManyMore(postLikesCount, likesActorLength) {
   if (postLikesCount > LIMIT) {
