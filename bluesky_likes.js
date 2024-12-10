@@ -4,9 +4,9 @@ const container = document.querySelector("[data-bsky-container]");
 const likesContainer = document.querySelector("[data-bsky-likes]");
 const likesCount = document.querySelector("[data-bsky-likes-count]");
 const myDid = "did:plc:gevyqibw5p2xsonkbsbjm5vy";
-const bskyAPI = "https://public.api.bsky.app/xrpc/";
-const getLikesURL = `${bskyAPI}app.bsky.feed.getLikes?limit=${LIMIT}`;
-const getPostURL = `${bskyAPI}app.bsky.feed.getPosts?`;
+const bskyAPI = "https://public.api.bsky.app/";
+const getLikesURL = `${bskyAPI}app.bsky.feed.getLikes?limit=${LIMIT}&uri=`;
+const getPostURL = `${bskyAPI}app.bsky.feed.getPosts?uris=`;
 
 function drawHowManyMore(postLikesCount, likesActorLength) {
   if (postLikesCount > LIMIT) {
