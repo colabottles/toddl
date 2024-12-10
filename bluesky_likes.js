@@ -32,21 +32,24 @@ function drawLikes(likesActors, postLikesCount) {
   drawHowManyMore(postLikesCount, likesActors.length);
 }
 
-if (bskyPostId !== "null") {
-  const postUri = `at://${myDid}/app.bsky.feed.post/{postId}`;
-  try {
-    const bskyPost = await fetch(getPostURL + postUri);
-    const bskyPostLikes = await fetch(getLikesURL + postUri);
-    const postData = await bskyPost.json();
-    const likesData = await bskyPostLikes.json();
+async function bskyName() {
+    if (bskyPostId !== "null") {
+    const postUri = `at://${myDid}/app.bsky.feed.post/{postId}`;
+    try {
+      const bskyPost = await fetch(getPostURL + postUri);
+      const bskyPostLikes = await fetch(getLikesURL + postUri);
+      const postData = await bskyPost.json();
+      const likesData = await bskyPostLikes.json();
 
-    const totalLikesCount = postData.posts[0].likeCount;
+      const totalLikesCount = postData.posts[0].likeCount;
 
-    if (likesData.likes.length > 0) {
-      likesCount.textContent = totalLikesCount;
-      drawLikes(likesData.likes, totalLikesCount);
+      if (likesData.likes.length > 0) {
+        likesCount.textContent = totalLikesCount;
+        drawLikes(likesData.likes, totalLikesCount);
+      }
+    } catch (error) {
+      container.remove();
     }
-  } catch (error) {
-    container.remove();
   }
 }
+bskyName();
