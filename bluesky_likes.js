@@ -52,4 +52,4 @@ async function bskyShowLikes() {
     }
   }
 }
-bskyShowLikes(postId);
+postId.bskyShowLikes();
