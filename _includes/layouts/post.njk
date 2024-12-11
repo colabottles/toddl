@@ -17,8 +17,6 @@ templateClass: tmpl-page
       {{ content | safe }}
     </section>
 
-    <meta data-bsky-post-id="${post.bskyPostId}" />
-
     <section class="post__likes" data-bsky-container>
       <h3 class="post__likesTitle">
         🦞 <span data-bsky-likes-count></span> likes on Bluesky
@@ -30,6 +28,7 @@ templateClass: tmpl-page
     </section>
   </article>
 
+  <meta data-bsky-post-id="${post.bskyPostId}" />
   <script src="../../bluesky_likes.js"></script>
 
 </div>
