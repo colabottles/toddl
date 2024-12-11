@@ -51,5 +51,5 @@ async function bskyShowLikes() {
       container.remove();
     }
   }
-  bskyShowLikes();
+  
 }
