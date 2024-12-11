@@ -36,7 +36,7 @@ async function bskyShowLikes() {
   if (bskyPostId !== "null") {
     const postUri = `at://${myDid}/app.bsky.feed.post/${bskyPostId}`;
     try {
-      const bskyPostId = await fetch(getPostURL + postUri);
+      const bskyPost = await fetch(getPostURL + postUri);
       const bskyPostLikes = await fetch(getLikesURL + postUri);
       const postData = await bskyPost.json();
       const likesData = await bskyPostLikes.json();
@@ -54,5 +54,4 @@ async function bskyShowLikes() {
     }
   }
 }
-
 bskyShowLikes();
