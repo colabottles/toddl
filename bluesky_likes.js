@@ -45,11 +45,11 @@ async function bskyShowLikes() {
 
       if (likesData.likes.length > 0) {
         likesCount.textContent = totalLikesCount;
-        drawLikes(likesData.likes, totalLikesCount).then((response) => response.json());
+        drawLikes(likesData.likes, totalLikesCount);
       }
     } catch (error) {
       container.remove();
     }
   }
 }
-bskyShowLikes();
+bskyShowLikes(postId);
