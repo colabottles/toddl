@@ -8,6 +8,7 @@ tags:
   - here
 layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png
+bskyPostId: 3lauorp3v4k2g
 ---
 
 ## Heading Goes here
