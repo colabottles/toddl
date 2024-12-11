@@ -1059,7 +1059,7 @@ a.bluesky-flutter:hover svg {
    animation: flutter 430ms ease-in-out;
    --flip: 1;
 }
-.bluesky-flutter:hover .right, 
+.bluesky-flutter:hover .right,
 .bluesky-flutter:focus .right {
    animation: flutter 500ms ease-in-out;
   --flip: -1;
@@ -1072,8 +1072,8 @@ a.bluesky-flutter:hover svg {
 
 @media (prefers-reduced-motion) {
   .bluesky-flutter:hover .left,
-  .bluesky-flutter:focus .left, 
-  .bluesky-flutter:hover .right, 
+  .bluesky-flutter:focus .left,
+  .bluesky-flutter:hover .right,
   .bluesky-flutter:focus .right {
     animation: none;
   }
@@ -1084,7 +1084,7 @@ a.bluesky-flutter:hover svg {
     transform: scale(calc(var(--flip)*1), 0.9);
   }
   20% {
-    transform: scale(calc(var(--flip)*0.5), 1) 
+    transform: scale(calc(var(--flip)*0.5), 1)
   }
   40% {
     transform: scale(calc(var(--flip)*0.9), 0.95);
@@ -1103,7 +1103,7 @@ a.bluesky-flutter:hover svg {
 /* via Salma @ whitep4nth3r.com */
 .post__likes {
   grid-column: 1/12;
-  min-height: 400px; /* to avoid CLS as much as possible! */
+  min-height: 30lvh; /* to avoid CLS as much as possible! */
 }
 
 .post__likesTitle {
@@ -1127,7 +1127,7 @@ a.bluesky-flutter:hover svg {
 }
 
 .post__like {
-  width: 4rem;
+  width: 2.5rem;
   aspect-ratio: 1/1;
   margin-right: -1rem;
   border-radius: 100%;
