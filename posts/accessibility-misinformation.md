@@ -8,6 +8,7 @@ tags:
   - accessibility
 layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1731541393/scard-a11y-misinfo.png
+bskyPostId: 3lauorp3v4k2g
 ---
 
 ## Don't Believe Everything You Read
