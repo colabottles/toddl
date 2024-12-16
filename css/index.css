@@ -1103,9 +1103,10 @@ a.bluesky-flutter:hover svg {
 /* via Salma @ whitep4nth3r.com */
 .post__likes {
   /* to avoid CLS as much as possible! */
-  min-height: 400px;
+  min-height: 200px;
   /* to prevent negative margin from allowing avatars to spill out of container */
   padding-right: 1rem;
+  grid-column: 2/12;
 }
 
 .post__likesTitle {
@@ -1138,6 +1139,7 @@ a.bluesky-flutter:hover svg {
 
 .post__like__avatar {
   border-radius: 100%;
+  border: 3px solid white;
 }
 
 .post__like--howManyMore {
