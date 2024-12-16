@@ -1130,7 +1130,7 @@ a.bluesky-flutter:hover svg {
 }
 
 .post__like {
-  width: 4rem;
+  width: 3rem;
   aspect-ratio: 1/1;
   margin-right: -1rem;
   border-radius: 100%;
