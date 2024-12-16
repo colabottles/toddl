@@ -134,7 +134,7 @@ video,
 iframe {
   max-inline-size: 100%;
   block-size: auto;
-  aspect-ratio: 2/1;
+  /* aspect-ratio: 2/1;  Conflict with Chromium */
   object-fit: contain
 }
 
