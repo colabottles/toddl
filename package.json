@@ -39,7 +39,6 @@
     "npm-upgrade": "^3.1.0",
     "nvm": "^0.0.4",
     "request": "^2.88.2",
-    "sanity": "^3.67.1",
     "save": "^2.9.0",
     "semver": "^7.6.3",
     "speedlify-score": "^4.0.4",
