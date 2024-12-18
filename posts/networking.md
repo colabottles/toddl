@@ -10,7 +10,7 @@ tags:
   - community
 layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/social-card-networking.png
-bskyPostId: 3lauorp3v4k2g
+bskyPostId: 3ldimufx5f22w
 ---
 
 ## I had the time of my life and more so I decided to write about it
