@@ -1,6 +1,6 @@
 ---
 title: Networking
-description: I had the time of my life and more so I decided to write about it.
+description: When I set out to give accessibility talks, I never thought I'd meet some of the best people ever
 date: 2024-12-17 ## YYYY-MM-DD
 tags:
   - networking
@@ -13,7 +13,7 @@ image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/social-ca
 bskyPostId: 3lauorp3v4k2g
 ---
 
-## When I set out to give accessibility talks, I never thought I'd meet some of the best people ever
+## I had the time of my life and more so I decided to write about it
 
 It was 2019, I was bored. The pandemic had hit and things were in unchartered territory. So I decided to throw myself out there in a way I had never done before. The world of public speaking.
 
