@@ -1045,6 +1045,7 @@ a.bluesky-flutter:hover svg {
   width: 2em;
   height: 2em;
   transition: 200ms;
+  margin-top: -0.25rem;
 }
 
 .bluesky-flutter .left {
