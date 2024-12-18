@@ -22,29 +22,5 @@ templateClass: tmpl-home
           </a>
           {%- endfor -%}
         </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.didfix | reverse -%}
-          <a href="{{ post.url }}">
-            <h4 class="article-link">{{ post.data.title }}</h4>
-          </a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.misinfo | reverse -%}
-          <a href="{{ post.url }}">
-            <h4 class="article-link">{{ post.data.title }}</h4>
-          </a>
-          {%- endfor -%}
-        </li>
-
-        <li class="article-wrapper">
-          {%- for post in collections.bluesky | reverse -%}
-          <a href="{{ post.url }}">
-            <h4 class="article-link">{{ post.data.title }}</h4>
-          </a>
-          {%- endfor -%}
-        </li>
       </ul>
     </div>
