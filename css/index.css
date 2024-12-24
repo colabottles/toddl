@@ -503,7 +503,7 @@ strong {
 }
 
 p {
-  margin-block: 1em
+  margin-block: 1lh;
 }
 
 p+p,
