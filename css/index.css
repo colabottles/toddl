@@ -181,7 +181,8 @@ q:before {
   --grey: gray;
   --green: #4a7a00;
   --ecto: #a3af7c;
-  --dark: #232323;
+  /* --dark: #232323; */
+  --dark: #333;
   --night: #555;
   --font-family-sans: 'Work Sans', Arial, Helvetica, sans-serif;
   --font-family-serif: Georgia, 'Times New Roman', serif;
