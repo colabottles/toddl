@@ -7,7 +7,7 @@ tags:
 navtitle: About Todd
 templateClass: tmpl-post
 ---
-Web developer and developer advocate from Portland, Maine now living in Phoenix, Arizona. I had been a developer for most  of my 25 years professionally in techj before moving to accessibility. Now, moving away from accessbiility and focusing back on development.
+Web developer and developer advocate from Portland, Maine now living in Phoenix, Arizona. I had been a developer for most  of my 25 years professionally in tech before moving to accessibility. Now, moving away from accessbiility and focusing back on development.
 
 I could tell you that I have a passion for this and a drive for that, but what I really want you to know is how much I love what I do and I have loved it since the beginning when I learned Commodore BASIC and Scheme.
 
