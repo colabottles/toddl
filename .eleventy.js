@@ -19,17 +19,17 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('dd LLLL, yyyy');
   });
 
-  // Get the first `n` elements of a collection.
-  // eleventyConfig.addFilter("head", (array, n) => {
-  //   if( n < 0 ) {
-  //     return array.slice(n);
-  //   }
-
-  //   return array.slice(0, n);
-  // });
-
   eleventyConfig.addFilter("limit", function (arr, limit) {
     return arr.slice(0, limit);
+  });
+
+  // Get the first `n` elements of a collection.
+  eleventyConfig.addFilter("head", (array, n) => {
+    if( n < 0 ) {
+      return array.slice(n);
+    }
+
+    return array.slice(0, n);
   });
 
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
