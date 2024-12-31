@@ -3,6 +3,7 @@ title: Networking
 description: When I set out to give accessibility talks, I never thought I'd meet some of the best people ever
 date: 2024-12-17 ## YYYY-MM-DD
 tags:
+  - post
   - networking
   - conferences
   - traveling

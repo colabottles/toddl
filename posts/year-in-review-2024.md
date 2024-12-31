@@ -3,6 +3,7 @@ title: Year in Review 2024
 description: 2024 had been a year of ups and downs and looking forward, I'm hopeful for change for the good.
 date: 2024-12-30 ## YYYY-MM-DD
 tags:
+  - post
   - 2024review
   - yearinreview
   - lookingback

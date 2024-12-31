@@ -3,6 +3,7 @@ title: Making A Strong Case For Accessibility
 description: Accessibility is often overlooked or bolted on to the end of a project from the experiences in Todd’s career in web development and design.
 date: 2021-07-30
 tags:
+  - post
   - accessibility
   - a11y
   - buyin

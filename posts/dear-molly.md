@@ -3,6 +3,7 @@ title: Dear Molly
 description: A letter to Molly Holzschlag.
 date: 2023-09-06 ## YYYY-MM-DD
 tags:
+  - post
   - molly
   - godmother
   - web
