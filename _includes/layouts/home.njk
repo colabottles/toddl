@@ -16,7 +16,7 @@ templateClass: tmpl-home
     <h3 class="list-label">Last Article</h3>
       <ul class="article-sections">
         <li class="article-wrapper">
-          {%- for post in collections.2024review | reverse -%}
+          {%- for post in collections.all | limit(5) -%}
           <a href="{{ post.url }}">
             <h4 class="article-link">{{ post.data.title }}</h4>
           </a>
