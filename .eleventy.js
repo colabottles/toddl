@@ -19,9 +19,9 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('dd LLLL, yyyy');
   });
 
-  // eleventyConfig.addFilter("limit", function (arr, limit) {
-  //   return arr.slice(0, limit);
-  // });
+  eleventyConfig.addFilter("limit", function (arr, limit) {
+    return arr.slice(0, limit);
+  });
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
