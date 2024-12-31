@@ -17,9 +17,11 @@ templateClass: tmpl-home
       <ul class="article-sections">
         <li class="article-wrapper">
           {%- for post in collections.all | reverse limit(3) -%}
+            {% if loop.index0 < 5 %}
               <a href="{{ post.url }}">
                 <h4 class="article-link">{{ post.data.title }}</h4>
               </a>
+            {% endif %}
           {%- endfor -%}
         </li>
       </ul>
