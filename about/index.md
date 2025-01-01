@@ -13,7 +13,6 @@ I could tell you that I have a passion for this and a drive for that, but what I
 
 You can find more about my work on <a href="https://github.com/colabottles">my Github page</a>.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e07eb8d2-593a-4c5c-b6a4-b15312d26372/deploy-status?branch=main)](https://app.netlify.com/sites/toddl/deploys)
 ![HTML5](https://img.shields.io/badge/html5-%23F22601?style=for-the-badge&logo=html5&logoColor=%23ffffff&logoSize=auto&label=powered%20by&labelColor=%23EE6628&color=%23ffffff)
 ![CSS](https://img.shields.io/badge/css-%23663399?style=for-the-badge&logo=css&logoColor=%23663399&logoSize=auto&label=powered%20by&labelColor=%23ffffff&color=%23633699)
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E?style=for-the-badge&logo=javascript&logoColor=%23111111&logoSize=auto&label=JS&labelColor=%23F7DF1E&color=%23F7DF1E)
