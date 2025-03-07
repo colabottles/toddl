@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Home of Todd Libby</title>
-	<subtitle>I am trying to do my best, that is all I can do.</subtitle>
+	<subtitle>Occasional writings with a splash of tech.</subtitle>
 	<link href="https://toddl.dev/feed/feed.xml" rel="self"/>
 	<link href="https://toddl.dev/"/>
 	<updated>Thu Mar 06 2025 17:00:00 GMT-0700 (Mountain Standard Time)</updated>

@@ -1,9 +1,9 @@
 {
   "title": "Home of Todd Libby",
   "url": "https://toddl.dev/",
-  "description": "A barely functioning blog.",
+  "description": "Desert nomad",
   "feed": {
-    "subtitle": "I am trying to do my best, that is all I can do.",
+    "subtitle": "Occasional writings with a splash of tech.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "url": "https://toddl.dev/feed/feed.xml",
