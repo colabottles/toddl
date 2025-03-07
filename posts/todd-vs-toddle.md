@@ -3,13 +3,14 @@ title: Todd Vs Toddle
 description: The relationship of the toddl's begins. Thoughts about a new development tool and accessibility.
 date: 2025-03-07 ## YYYY-MM-DD
 tags:
-  - toddle ## LEAVE THIS TAG HERE
+  - post
+  - toddle
   - toddl
   - web
   - tools
   - accessibility
 layout: layouts/post.njk
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png
+image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-toddle.png
 bskyPostId: 3lauorp3v4k2g
 ---
 
