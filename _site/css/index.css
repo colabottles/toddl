@@ -134,7 +134,7 @@ video,
 iframe {
   max-inline-size: 100%;
   block-size: auto;
-  aspect-ratio: 2/1;
+  /* aspect-ratio: 2/1;  Conflict with Chromium */
   object-fit: contain
 }
 
@@ -181,7 +181,8 @@ q:before {
   --grey: gray;
   --green: #4a7a00;
   --ecto: #a3af7c;
-  --dark: #232323;
+  /* --dark: #232323; */
+  --dark: #333;
   --night: #555;
   --font-family-sans: 'Work Sans', Arial, Helvetica, sans-serif;
   --font-family-serif: Georgia, 'Times New Roman', serif;
@@ -503,7 +504,7 @@ strong {
 }
 
 p {
-  margin-block: 1em
+  margin-block: 1lh;
 }
 
 p+p,
@@ -1043,8 +1044,9 @@ a.bluesky-flutter:hover svg {
 
 .bluesky-flutter svg {
   width: 2em;
-  height:2em;
+  height: 2em;
   transition: 200ms;
+  margin-top: -0.25rem;
 }
 
 .bluesky-flutter .left {
@@ -1059,7 +1061,7 @@ a.bluesky-flutter:hover svg {
    animation: flutter 430ms ease-in-out;
    --flip: 1;
 }
-.bluesky-flutter:hover .right, 
+.bluesky-flutter:hover .right,
 .bluesky-flutter:focus .right {
    animation: flutter 500ms ease-in-out;
   --flip: -1;
@@ -1072,8 +1074,8 @@ a.bluesky-flutter:hover svg {
 
 @media (prefers-reduced-motion) {
   .bluesky-flutter:hover .left,
-  .bluesky-flutter:focus .left, 
-  .bluesky-flutter:hover .right, 
+  .bluesky-flutter:focus .left,
+  .bluesky-flutter:hover .right,
   .bluesky-flutter:focus .right {
     animation: none;
   }
@@ -1084,7 +1086,7 @@ a.bluesky-flutter:hover svg {
     transform: scale(calc(var(--flip)*1), 0.9);
   }
   20% {
-    transform: scale(calc(var(--flip)*0.5), 1) 
+    transform: scale(calc(var(--flip)*0.5), 1)
   }
   40% {
     transform: scale(calc(var(--flip)*0.9), 0.95);
@@ -1099,6 +1101,62 @@ a.bluesky-flutter:hover svg {
     transform: scale(calc(var(--flip)*1), 1);
   }
 }
+
+/* via Salma @ whitep4nth3r.com */
+.post__likes {
+  /* to avoid CLS as much as possible! */
+  min-height: 200px;
+  /* to prevent negative margin from allowing avatars to spill out of container */
+  padding-right: 1rem;
+  grid-column: 2/12;
+}
+
+.post__likesTitle {
+  font-size: var(--font-size-large);
+  color: #fff;
+}
+
+.post__likesCta {
+  color:  #fff;
+  font-size: calc(16px + .3vw);
+  font-style: italic;
+  display: block;
+}
+
+.post__likesList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.post__like {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  margin-right: -1rem;
+  border-radius: 100%;
+  filter: drop-shadow(0px 0.125rem 0.125rem rgba(0, 0, 0, 0.25));
+}
+
+.post__like__avatar {
+  border-radius: 100%;
+  border: 3px solid white;
+}
+
+.post__like--howManyMore {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #208bfe; /* Bluesky blue */
+  color: #fff;
+}
+/* end */
 
 .contact {
   display: grid;
