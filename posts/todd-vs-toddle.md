@@ -18,9 +18,9 @@ bskyPostId: 3lauorp3v4k2g
 
 Yes.
 
-So I was up early today and planning on doing nothing when I was watching the stream of one of my favorite people, Salma Alam-Naylor, ![a.k.a. whitep4nth3r](https://twitch.tv/whitep4nth3r) and Salma was rebuilding her website with Toddle.
+So I was up early today and planning on doing nothing when I was watching the stream of one of my favorite people, Salma Alam-Naylor, [a.k.a. whitep4nth3r](https://twitch.tv/whitep4nth3r) and Salma was rebuilding her website with Toddle.
 
-![Toddle](https://toddle.dev) is a "visual web framework" so as a fellow Todd, I had to check this out. I said I would not pass judgment, but I will describe what I see that could be improved upon from an accessibility standpoint.
+[Toddle](https://toddle.dev) is a "visual web framework" so as a fellow Todd, I had to check this out. I said I would not pass judgment, but I will describe what I see that could be improved upon from an accessibility standpoint.
 
 ## Caveat
 
@@ -38,9 +38,9 @@ I already have an issue with things being obscured and not being able to manipul
 
 ![A view of the Toddle.dev interface showing how to create a Weather App](https://res.cloudinary.com/colabottles/image/upload/v1741357094/toddle1.png)
 
-I'd love to be able to resize the area that has the formulas in it to "un"-hide the menu it is obscuring and I also wish that formula area was not a ![keyboard trap](https://www.w3.org/TR/WCAG22/#no-keyboard-trap). So those are the first two things I noticed right away.
+I'd love to be able to resize the area that has the formulas in it to "un"-hide the menu it is obscuring and I also wish that formula area was not a [keyboard trap](https://www.w3.org/TR/WCAG22/#no-keyboard-trap). So those are the first two things I noticed right away.
 
-The second is the way everyone can re-style a heading element (as you will see if you do the Weather App challenge) which you should never do as far as font sizing goes. Styling an `h1` to look like an `h3` or `h4` ![is not](https://www.w3.org/TR/WCAG22/#info-and-relationships) ![suggested](https://www.w3.org/TR/WCAG22/#section-headings).
+The second is the way everyone can re-style a heading element (as you will see if you do the Weather App challenge) which you should never do as far as font sizing goes. Styling an `h1` to look like an `h3` or `h4` [is not](https://www.w3.org/TR/WCAG22/#info-and-relationships) ![suggested](https://www.w3.org/TR/WCAG22/#section-headings).
 
 Also not a fan of the ability to place placeholders in an input field, but, that is on people to know that placeholders are not labels and placeholders are helper text. Those placeholders that are helper text shouldn't be read by a screen reader and hidden from assistive technologies. Visual labels are the way, my friends.
 
