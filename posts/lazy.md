@@ -3,6 +3,7 @@ title: Lazy
 description: Boy, have I been lazy.
 date: 2025-09-29 ## YYYY-MM-DD
 tags:
+  - post
   - lazy ## LEAVE THIS TAG HERE
 layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1759196045/todd-social-card-lazy.jpg
