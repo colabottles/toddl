@@ -46,7 +46,7 @@ Also not a fan of the ability to place placeholders in an input field, but, that
 
 Speaking of visual labels...
 
-![A screen capture of a triangle icon and when hovered over with the curson, it says, No issues! Good Job!](https://res.cloudinary.com/colabottles/image/upload/v1741360583/huh.png)
+![A screen capture of a triangle icon and when hovered over with the cursor, it says, No issues! Good Job!](https://res.cloudinary.com/colabottles/image/upload/v1741360583/huh.png)
 
 More visual guidance and helper labels/text would be beneficial for anyone with cognitive issues or memory loss. Even for busy people doing ten things at once to where these improvements benefit everyone.
 
