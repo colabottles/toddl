@@ -12,4 +12,4 @@ I am on Bluesky at [@toddl.dev](https://bsky.app/profile/toddl.dev) and I live s
 
 ## Speaking
 
-- No speaking engagments upcoming
+- No speaking engagements upcoming
