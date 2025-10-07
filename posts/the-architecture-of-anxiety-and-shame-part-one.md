@@ -27,15 +27,15 @@ Lost is the humanity I can see clearly. How that kid that just wanted to code, g
 
 I wanted to go over four patterns, four of many patterns, that are used to play with people psychologically, that draw out the anxiety and fear, the guilt and shame, and how these patterns are used and what we can do to combat them. 
 
-### The Three Amigos
+## The Three Amigos
 
-#### Timed-based urgency/Fake urgency/Confirmshaming
+### Timed-based urgency/Fake urgency/Confirmshaming
 
 The exploitation of FOMO (Fear of Missing Out) and social comparison is used a lot. Literally everywhere in a digital space where there is some kind of revenue involved. Social anxiety is something that is used to pressure people into action. Many deceptive patterns come in pairs. Some, come in groups, like The Outsiders (a great movie and book by the way). 
 
 Fake scarcity (FOMO), time pressure (anxiety), and confirmshaming (guilt/social inadequacy) are used to target the social fears that are very real that affect 1 in 10 Americans. The economic and emotional/psychological cost is massive and any design that amplifies that anxiety for-profit isn't bad business. It is an ethical attack on the public's well-being. Businesses that use these patterns should never have business and people should never deal with companies that use these patterns for-profit against them. 
 
-#### The Data and Key Points
+### The Data and Key Points
 
 The condition of social anxiety isn't just a rare shyness, it is actually [the third largest mental health care problem globally according to the Social Anxiety Association](https://socialphobia.org/social-anxiety-disorder-definition-symptoms-treatment-therapy-medications-insight-prognosis).
 
@@ -49,9 +49,9 @@ The presence of SAD makes people vulnerable to other issues which is exactly the
 
 Passive social media usage has been directly linked to an increase in social anxiety symptoms in some people.
 
-#### The Examples
+## The Examples
 
-##### Fake Scarcity
+### Fake Scarcity
 
 **The Pattern:** Creating a false sense of limited availability of a product to pressure a user into an immediate purchase.
 
@@ -61,7 +61,7 @@ Passive social media usage has been directly linked to an increase in social anx
 
 **The Deception:** Often, the price is not the only price or the scarcity is only for a specific, non-essential room type, for instance. The key manipulation is the weaponization of FOMO to get the user to skip comparison shopping, to get them to make a rash decision, or even review the cancellation policy. The war cry here is &ldquo;Get the sale by any means necessary&excl;&rdquo;
 
-##### Time Pressure
+### Time Pressure
 
 **The Pattern:** Usage of countdown timer or short windows of expiration that are often meaningless or reset easily, preventing rational-based decision-making.
 
@@ -71,7 +71,7 @@ Passive social media usage has been directly linked to an increase in social anx
 
 **The Deception:** The deal usually reappears the next day or the timer magically resets if the user refreshes the page or the user returns later. The pattern is aimed at inducing anxiety and panic, thus making the cognitive load so high, that the user clicks that buy button before they have time to consider anything about what impact buying the product will have on them financially, the necessity of having that product, or even the actual value of owning that product.  
 
-##### Confirmshaming
+### Confirmshaming
 
 **The Pattern:** Insulting the target user or guilt-tripping them into opting into a service or remaining in a subscription they don't want or a mailing list they didn't sign up for.
 
