@@ -11,8 +11,8 @@ tags:
   - timepressure
   - confirmshaming
 layout: layouts/post.njk
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png
-bskyPostId: 3lauorp3v4k2g
+image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-deceptivepatterns.png
+bskyPostId: 3m2lsrtqxhs2s
 ---
 
 ## Part One, The Scarcity and Pressure to Make Decisions and Placing Guilt in the Users Lap
