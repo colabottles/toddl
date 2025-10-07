@@ -17,6 +17,7 @@
     <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="675" />
+    <meta property="twitter:image" content="{{ site.url }}{{ page.url }}{{ image }}" />
     <title>{{ renderData.title or title or metadata.title }}</title>
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}" />
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml">
