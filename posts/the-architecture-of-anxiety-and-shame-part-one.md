@@ -12,7 +12,7 @@ tags:
   - confirmshaming
 layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-deceptivepatterns.png
-bskyPostId: 3m2lsrtqxhs2s
+bskyPostId: 3m2lu52omns2j
 ---
 
 ## Part One, The Scarcity and Pressure to Make Decisions and Placing Guilt in the Users Lap
