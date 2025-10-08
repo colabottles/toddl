@@ -1463,13 +1463,10 @@ img.lazyload {
     padding: 2rem 0
   }
 
-  .about-intro {
-    grid-column: 2/7
-  }
-
+  .about-intro,
   .articles,
   article {
-    grid-column: 2/7
+    display: grid;
   }
 
   .article-wrapper:first-child,
@@ -1800,10 +1797,4 @@ pre>code.highlight {
   overflow: auto;
   position: absolute;
   width: auto
-}
-
-@media only screen and (max-width:400px) {
-  section {
-    display: block;
-  }
 }
