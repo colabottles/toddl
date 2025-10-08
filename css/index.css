@@ -1802,8 +1802,8 @@ pre>code.highlight {
   width: auto
 }
 
-@media only screen and (max-width:375px) {
-  section p {
+@media only screen and (max-width:400px) {
+  section {
     display: block;
   }
 }
