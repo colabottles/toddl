@@ -1305,12 +1305,6 @@ label.field {
   font-family: var(--font-family-sans)
 }
 
-twitter-widget.twitter-tweet {
-  justify-self: center;
-  margin: 0 auto;
-  padding: 3rem 0
-}
-
 figure {
   display: grid;
   place-self: center
@@ -1806,4 +1800,10 @@ pre>code.highlight {
   overflow: auto;
   position: absolute;
   width: auto
+}
+
+@media only screen and (max-width:375px) {
+  section {
+    display: inherit;
+  }
 }
