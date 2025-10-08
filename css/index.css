@@ -1467,6 +1467,7 @@ img.lazyload {
   .articles,
   article {
     display: grid;
+    grid-column: 2/7
   }
 
   .article-wrapper:first-child,
