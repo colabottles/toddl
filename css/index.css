@@ -1466,7 +1466,6 @@ img.lazyload {
   .about-intro,
   .articles,
   article {
-    display: grid;
     grid-column: 2/7;
     width: 90vw
   }
