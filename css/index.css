@@ -96,7 +96,7 @@ section {
 }
 
 * {
-  box-sizing: border-box
+  box-sizing: content-box
 }
 
 :after,
@@ -489,6 +489,7 @@ a.button:hover {
 }
 
 article {
+  display: grid;
   margin: 1em 0
 }
 
@@ -1478,6 +1479,7 @@ img.lazyload {
 
   .article-container,
   .article__header {
+    display: grid;
     grid-column: 2/7;
     width: 90vw
   }
