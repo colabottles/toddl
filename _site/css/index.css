@@ -1117,9 +1117,9 @@ h2.project__header {
 
 .footer-icons {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   justify-self: center;
-  margin-block: 3rem
+  margin-block: 1rem
 }
 
 .footer-icons li {
@@ -1127,7 +1127,7 @@ h2.project__header {
 }
 
 section.social {
-  grid-column: 1/10;
+  grid-column: 1/2;
   margin: 1rem 0
 }
 
@@ -1583,12 +1583,12 @@ img.lazyload {
   }
 
   nav {
-    grid-column: 1/7;
+    grid-column: 1/2;
   }
 
   header {
     margin: 1vh 0 2vh;
-    grid-column: 1/7
+    grid-column: 1/2
   }
 
   p+p {
@@ -1613,14 +1613,26 @@ img.lazyload {
   main h2 {
     font-size: var(--font-size-xlarge);
     line-height: var(--line-height-small);
-    padding: 2rem 0
+    padding: 2rem 0;
+    max-width: 90vw;
   }
 
   .about-intro,
-  .articles,
-  article {
-    grid-column: 2/7;
+  .articles {
+    grid-column: 1/2;
     width: 90vw
+  }
+
+  article,
+  section.post__likes,
+  section.article__body {
+    grid-column: 1/2;
+    width: 90vw
+  }
+
+  .article-list {
+    grid-column: 1/2;
+    width: 50vw;
   }
 
   .article-wrapper:first-child,
@@ -1632,12 +1644,12 @@ img.lazyload {
   .article-container,
   .article__header {
     display: grid;
-    grid-column: 2/7;
+    grid-column: 1/2;
     width: 90vw
   }
 
   .article__title {
-    grid-column: 2/7;
+    grid-column: 1/2;
     padding: 0;
     width: 90vw
   }
@@ -1654,7 +1666,7 @@ img.lazyload {
   .article__header,
   .blogroll-container {
     display: inline-block;
-    grid-column: 2/12;
+    grid-column: 1/2;
     margin: 0;
     padding: 0;
     width: 90vw
@@ -1681,7 +1693,8 @@ img.lazyload {
   ul.article-list,
   ul.blogroll-list,
   ul.links-list {
-    padding: 0
+    padding: 0;
+    max-width: 90vw;
   }
 
   ul.event-list,
@@ -1704,7 +1717,7 @@ img.lazyload {
   }
 
   article.archive-list {
-    grid-column: 2/7
+    grid-column: 1/2
   }
 
   ul.event-list,
@@ -1755,17 +1768,17 @@ img.lazyload {
   }
 
   section.article__body p {
-    grid-column: 1/12;
+    grid-column: 1/2;
     width: 90vw;
     margin-left: -.25rem;
     padding: 0 0.25rem
   }
 
   section.article__body h3 {
-    grid-column: 1/7;
-    width: 100vw;
-    margin-left: -.25rem;
-    padding: 0 1rem
+    grid-column: 1;
+    width: 90vw;
+    margin-right: 1.25rem;
+    padding: 0 1rem 0 0;
   }
 
   span.alltags {
@@ -1773,8 +1786,8 @@ img.lazyload {
     margin: 2rem 1rem
   }
 
-  li.article-list-article {
-    padding: 0
+  section {
+    width: 90vw;
   }
 
   .blogroll-container p,
@@ -1798,6 +1811,17 @@ img.lazyload {
 
   .container ul {
     padding: 1rem 0 1rem 1rem
+  }
+}
+
+@media only screen and (max-width:420px) {
+  li.article-list-article,
+  li.article-list-article.newest,
+  .article-category {
+    list-style-type: none;
+    max-width: 80vw;
+    margin: 0;
+    padding: 0;
   }
 }
 
