@@ -56,15 +56,14 @@ q:after, q:before {
   --black: #000;
   --white: #fff;
   --grey: gray;
-  --green: #4a7a00;
-  --ecto: #a3af7c;
-  /* --dark: #232323; */
-  --dark: #333;
+  --green: #38562C;
+  --ecto: #D3E154;
+  --dark: #122220;
   --night: #555;
-  --font-family-sans: 'Work Sans', Arial, Helvetica, sans-serif;
-  --font-family-serif: Georgia, 'Times New Roman', serif;
-  --font-family-heading-sm: 'Work Sans', Arial, Helvetica, sans-serif;
-  --font-family-mono: 'Cascadia Code', monospace;
+  --font-family-sans: "Inter Tight", sans-serif;
+  --font-family-serif: "Inter Tight", sans-serif;
+  --font-family-heading-sm: "League Gothic", sans-serif;
+  --font-family-mono: "Cascadia Code", monospace;
   --font-weight-bolder: 900;
   --font-size: 140%;
   --line-height: 1.5;
@@ -83,19 +82,31 @@ q:after, q:before {
 }
 
 /* 3. FIXED: Uncommented and defined all heading sizes */
-h1 {font-size: 2rem;}
+/* h1 {font-size: 2rem;}
 h2 {font-size: 1.5rem;}
 h3 {font-size: 1.17rem;}
 h4 {font-size: 1rem;}
 h5 {font-size: .83rem;}
-h6 {font-size: .67rem;}
+h6 {font-size: .67rem;} */
 
-@font-face {
-  src: url("../fonts/WorkSans.woff2") format("woff2");
-  font-display: swap;
-  font-family: 'Work Sans';
+h1,h2,h3,h4,h5 {
+  text-transform: uppercase;
+}
+
+.inter-tight-content {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
-  font-weight: 100 900;
+}
+
+.league-gothic-heading {
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 /* Image and Media Styles */
@@ -497,8 +508,17 @@ article.archive-list {
 }
 
 section.article__body h2 {
+  font-size: var(--font-size-xlarge);
   font-family: var(--font-family-sans);
+  font-weight: 800;
   color: var(--white)
+}
+
+section.article__body h3 {
+  font-size: var(--font-size-large);
+  font-family: var(--font-family-sans);
+  font-weight: 500;
+  color: var(--ecto);
 }
 
 .sections {
@@ -517,7 +537,7 @@ section.article__body h2 {
 
 .article h3 {
   font-size: var(--font-size-large);
-  padding: 1rem 0
+  padding: 1rem 0;
 }
 
 section.article__body ol,
@@ -1562,6 +1582,10 @@ img.lazyload {
     grid-column: full
   }
 
+  nav {
+    grid-column: 1/7;
+  }
+
   header {
     margin: 1vh 0 2vh;
     grid-column: 1/7
@@ -1574,11 +1598,11 @@ img.lazyload {
   ul.navigation {
     display: flex;
     padding: 0;
-    min-width: 100vw
+    min-width: 90vw
   }
 
   ul.navigation a {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     text-decoration: underline
   }
 
@@ -1728,6 +1752,13 @@ img.lazyload {
 
   section.social {
     grid-column: 2/7
+  }
+
+  section.article__body p {
+    grid-column: 1/12;
+    width: 90vw;
+    margin-left: -.25rem;
+    padding: 0 0.25rem
   }
 
   section.article__body h3 {

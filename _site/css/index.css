@@ -1,79 +1,148 @@
-a,
-abbr,
-address,
-article,
-aside,
-audio,
-blockquote,
-body,
-canvas,
-caption,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-iframe,
-img,
-ins,
-label,
-legend,
-li,
-main,
-mark,
-nav,
-ol,
-p,
-pre,
-q,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-ul,
-video {
+/* ====================================
+   FIXES AND MODERN RESETS
+   ==================================== */
+
+/* 1. FIXED: Adopt the modern border-box model for intuitive sizing */
+html {
+  /* Set box-sizing on HTML so all descendants inherit it */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  font-family: var(--font-family-sans);
+  background-color: var(--dark);
+  color: var(--white)
+}
+
+/* Inherit box-sizing globally, including for ::before and ::after pseudo-elements */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font: inherit; /* Keep font inheritance here */
+}
+
+/* 2. Standard Reset (Consolidated) */
+a, abbr, address, article, aside, audio, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, iframe, img, ins, label, legend, li, main, mark, nav, ol, p, pre, q, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, video {
   margin: 0;
   padding: 0;
   border: 0
 }
 
-* {
-  font: inherit
+li, ol, ul {
+  margin: 0;
+  padding: 0
 }
 
-a,
-a:visited {
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+q {
+  quotes: none
+}
+
+q:after, q:before {
+  content: "";
+  content: none
+}
+
+/* ====================================
+   GLOBAL STYLES AND VARIABLES
+   ==================================== */
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --grey: gray;
+  --green: #38562C;
+  --ecto: #D3E154;
+  --dark: #122220;
+  --night: #555;
+  --font-family-sans: "Inter Tight", sans-serif;
+  --font-family-serif: "Inter Tight", sans-serif;
+  --font-family-heading-sm: "League Gothic", sans-serif;
+  --font-family-mono: "Cascadia Code", monospace;
+  --font-weight-bolder: 900;
+  --font-size: 140%;
+  --line-height: 1.5;
+  --line-height-heading: 1;
+  --inset: .5rem;
+  --large: 1100px;
+  --medium: 960px;
+  --small: 515px;
+  /* Add missing font-size variables for consistency if needed, e.g. */
+  --font-size-xsmall: 0.75rem; 
+  --font-size-small: 0.83rem; 
+  --font-size-article: 1rem; 
+  --font-size-large: 1.17rem; 
+  --font-size-xlarge: 1.5rem; 
+  --font-size-xxlarge: 2rem; 
+}
+
+/* 3. FIXED: Uncommented and defined all heading sizes */
+/* h1 {font-size: 2rem;}
+h2 {font-size: 1.5rem;}
+h3 {font-size: 1.17rem;}
+h4 {font-size: 1rem;}
+h5 {font-size: .83rem;}
+h6 {font-size: .67rem;} */
+
+h1,h2,h3,h4,h5 {
+  text-transform: uppercase;
+}
+
+.inter-tight-content {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.league-gothic-heading {
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Image and Media Styles */
+img, video, iframe {
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: contain
+}
+
+img:not([alt]) {
+  filter: blur(5px);
+  border: 5px solid red
+}
+
+iframe, video {
+  aspect-ratio: 16/9;
+  height: auto;
+  max-width: 100vmin
+}
+
+figure {
+  display: grid;
+  place-self: center
+}
+
+iframe {
+  display: grid;
+  justify-self: center
+}
+
+img.lazyload {
+  object-fit: cover
+}
+
+/* Link Styles */
+a, a:visited {
   color: inherit
 }
 
@@ -85,81 +154,19 @@ a {
   text-decoration: none
 }
 
-article,
-aside,
-footer,
-header,
-main,
-nav,
-section {
-  display: grid
+a[href] {
+  color: var(--ecto)
 }
 
-* {
-  box-sizing: border-box
+a[href]:hover {
+  color: var(--white);
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  text-decoration: underline
 }
 
-:after,
-:before {
-  box-sizing: inherit
-}
-
-html {
-  scroll-behavior: smooth
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font: inherit
-}
-
-li,
-ol,
-ul {
-  margin: 0;
-  padding: 0
-}
-
-img,
-video,
-iframe {
-  max-inline-size: 100%;
-  block-size: auto;
-  /* aspect-ratio: 2/1;  Conflict with Chromium */
-  object-fit: contain
-}
-
-img:not([alt]) {
-  filter: blur(5px);
-  border: 5px solid red
-}
-
-iframe,
-video {
-  aspect-ratio: 16/9;
-  height: auto;
-  max-width: 100vmin
-}
-
-q {
-  quotes: none
-}
-
-q:after,
-q:before {
-  content: "";
-  content: none
-}
-
+/* Utility Classes */
 [hidden] {
   display: none !important
 }
@@ -175,48 +182,187 @@ q:before {
   top: -9999px
 }
 
-:root {
-  --black: #000;
-  --white: #fff;
-  --grey: gray;
-  --green: #4a7a00;
-  --ecto: #a3af7c;
-  /* --dark: #232323; */
-  --dark: #333;
-  --night: #555;
-  --font-family-sans: 'Work Sans', Arial, Helvetica, sans-serif;
-  --font-family-serif: Georgia, 'Times New Roman', serif;
-  --font-family-heading-sm: 'Work Sans', Arial, Helvetica, sans-serif;
-  --font-family-mono: 'Cascadia Code', monospace;
-  --font-weight-bolder: 900;
-  --font-size: 140%;
-  --line-height: 1.5;
-  --line-height-heading: 1;
-  --inset: .5rem;
-  --large: 1100px;
-  --medium: 960px;
-  --small: 515px
+.visible-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1.5em 0 0 0;
+  overflow: hidden;
+  justify-self: center;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px
 }
 
-@font-face {
-  src: url("../fonts/WorkSans.woff2") format("woff2");
-  font-display: swap;
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 100 900;
+.visible-hidden:focus {
+  clip: auto;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  width: auto
 }
 
-html {
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-  font-family: var(--font-family-sans);
-  background-color: var(--dark);
-  color: var(--white)
+strong {
+  font-weight: var(--font-weight-bolder)
 }
 
+p {
+  margin-block: 1lh;
+}
+
+p+p, p~p {
+  padding: .25em
+}
+
+/* Base Grid/Flex Display for Semantic Elements */
+article, aside, footer, header, main, nav, section {
+  display: grid
+}
+
+/* ====================================
+   LAYOUT: WRAPPER AND GRID
+   ==================================== */
+
+/* Full grid with minmax for fluid/centered large content */
 .wrapper {
   display: grid;
   grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end]
+}
+
+/* Main and Inner should use subgrid or inherit the wrapper's structure */
+main {
+  grid-template-columns: subgrid;
+  grid-column: full
+}
+
+@supports (display:grid) {
+  main {
+    grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
+    grid-column: full
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end]
+}
+
+/* Standard content column span */
+.about-container, .about-intro, .article-container, .blogroll-container, .page-container, .uses-links, section.article__body, article.archive-list {
+  grid-column: 2/12
+}
+
+/* ====================================
+   RESPONSIVE LAYOUTS (Media Queries)
+   ==================================== */
+
+@media only screen and (max-width: 960px) {
+  /* Reduce fixed max width for better centering on medium screens */
+  .wrapper, main {
+    grid-template-columns: [full-start] minmax(calc(calc(100% - 960px)/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 960px)/2), 1fr) [full-end];
+  }
+
+  main {
+    grid-column: full;
+    padding-top: 5em
+  }
+
+  header {
+    margin: 3vh 0 6vh;
+    grid-column: 1/10;
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap
+  }
+
+  .copyright, footer, .sections, .article {
+    grid-column: 2/10
+  }
+}
+
+/* 4. FIXED: Mobile Layout (max-width: 540px)
+   Simplified to a single column grid with fluid width (1fr)
+   The invalid 'calc(calc(100% - 540px)/2)' calculation is removed.
+*/
+@media only screen and (max-width: 540px) {
+  .wrapper, main, .inner {
+    display: grid;
+    /* Sets up a single, full-width column */
+    grid-template-columns: 1fr;
+    /* Optional: Adds uniform side padding/gutters to the container itself */
+    padding-inline: var(--inset, 0.5rem); 
+    grid-column: auto; /* Ensure this is not overriding the new 1fr grid */
+  }
+
+  /* Force all main content elements to span the single column */
+  header,
+  .articles,
+  article,
+  .page-container,
+  .about-container,
+  .about-intro,
+  .article-container,
+  .blogroll-container,
+  .uses-links,
+  section.article__body,
+  article.archive-list,
+  .sections,
+  .copyright,
+  footer,
+  .contact,
+  .post__likes {
+    grid-column: 1 / -1; /* Span from the first line to the last line */
+    width: auto; /* Remove explicit width constraints */
+    margin-right: 0;
+  }
+
+  /* Adjustments for nested elements */
+  ul.navigation {
+    display: flex;
+    padding: 0;
+    min-width: 100%; /* Use 100% instead of 100vw to stay within wrapper's bounds */
+    justify-content: space-around;
+  }
+
+  .article-container,
+  .article__header,
+  .article__title {
+    width: auto; /* Reset explicit widths */
+    grid-column: 1 / -1; /* Ensure they span the single column */
+  }
+  
+  section.article__body ol,
+  section.article__body ul {
+    margin-left: 1rem; /* Reduce margin on small screen */
+    padding: 1rem 0
+  }
+  
+  ul.event-list, ul.event-past, ul.podcast-list {
+    margin-left: 0.5em
+  }
+
+  /* Other mobile-specific overrides (Kept from original code) */
+  header {
+    margin: 1vh 0 2vh;
+  }
+
+  p+p {
+    margin-top: 1em
+  }
+  
+  ul.navigation a {
+    padding: 0 1rem;
+    text-decoration: underline
+  }
+
+  .main-nav li {
+    padding: 0
+  }
+
+  main h2 {
+    font-size: var(--font-size-xlarge);
+    line-height: var(--line-height-small);
+    padding: 2rem 0
+  }
 }
 
 ul.navigation {
@@ -362,8 +508,17 @@ article.archive-list {
 }
 
 section.article__body h2 {
+  font-size: var(--font-size-xlarge);
   font-family: var(--font-family-sans);
+  font-weight: 800;
   color: var(--white)
+}
+
+section.article__body h3 {
+  font-size: var(--font-size-large);
+  font-family: var(--font-family-sans);
+  font-weight: 500;
+  color: var(--ecto);
 }
 
 .sections {
@@ -382,7 +537,7 @@ section.article__body h2 {
 
 .article h3 {
   font-size: var(--font-size-large);
-  padding: 1rem 0
+  padding: 1rem 0;
 }
 
 section.article__body ol,
@@ -482,6 +637,7 @@ a.button:hover {
 }
 
 article {
+  display: grid;
   margin: 1em 0
 }
 
@@ -1298,12 +1454,6 @@ label.field {
   font-family: var(--font-family-sans)
 }
 
-twitter-widget.twitter-tweet {
-  justify-self: center;
-  margin: 0 auto;
-  padding: 3rem 0
-}
-
 figure {
   display: grid;
   place-self: center
@@ -1432,6 +1582,10 @@ img.lazyload {
     grid-column: full
   }
 
+  nav {
+    grid-column: 1/7;
+  }
+
   header {
     margin: 1vh 0 2vh;
     grid-column: 1/7
@@ -1444,11 +1598,11 @@ img.lazyload {
   ul.navigation {
     display: flex;
     padding: 0;
-    min-width: 100vw
+    min-width: 90vw
   }
 
   ul.navigation a {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     text-decoration: underline
   }
 
@@ -1462,13 +1616,11 @@ img.lazyload {
     padding: 2rem 0
   }
 
-  .about-intro {
-    grid-column: 2/7
-  }
-
+  .about-intro,
   .articles,
   article {
-    grid-column: 2/7
+    grid-column: 2/7;
+    width: 90vw
   }
 
   .article-wrapper:first-child,
@@ -1479,6 +1631,7 @@ img.lazyload {
 
   .article-container,
   .article__header {
+    display: grid;
     grid-column: 2/7;
     width: 90vw
   }
@@ -1599,6 +1752,13 @@ img.lazyload {
 
   section.social {
     grid-column: 2/7
+  }
+
+  section.article__body p {
+    grid-column: 1/12;
+    width: 90vw;
+    margin-left: -.25rem;
+    padding: 0 0.25rem
   }
 
   section.article__body h3 {

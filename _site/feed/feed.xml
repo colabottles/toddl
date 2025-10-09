@@ -4,7 +4,7 @@
 	<subtitle>Occasional writings with a splash of tech.</subtitle>
 	<link href="https://toddl.dev/feed/feed.xml" rel="self"/>
 	<link href="https://toddl.dev/"/>
-	<updated>Thu Mar 06 2025 17:00:00 GMT-0700 (Mountain Standard Time)</updated>
+	<updated>Mon Oct 06 2025 17:00:00 GMT-0700 (Mountain Standard Time)</updated>
 	<id>https://toddl.dev/</id>
 	<author>
 		<name>Todd Libby</name>
@@ -3187,7 +3187,7 @@ toddl&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;dev             
 &lt;p&gt;The second is the way everyone can re-style a heading element (as you will see if you do the Weather App challenge) which you should never do as far as font sizing goes. Styling an &lt;code&gt;h1&lt;/code&gt; to look like an &lt;code&gt;h3&lt;/code&gt; or &lt;code&gt;h4&lt;/code&gt; &lt;a href=&quot;https://www.w3.org/TR/WCAG22/#info-and-relationships&quot;&gt;is not&lt;/a&gt; &lt;img src=&quot;https://www.w3.org/TR/WCAG22/#section-headings&quot; alt=&quot;suggested&quot; /&gt;.&lt;/p&gt;
 &lt;p&gt;Also not a fan of the ability to place placeholders in an input field, but, that is on people to know that placeholders are not labels and placeholders are helper text. Those placeholders that are helper text shouldn&#39;t be read by a screen reader and hidden from assistive technologies. Visual labels are the way, my friends.&lt;/p&gt;
 &lt;p&gt;Speaking of visual labels...&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/colabottles/image/upload/v1741360583/huh.png&quot; alt=&quot;A screen capture of a triangle icon and when hovered over with the curson, it says, No issues! Good Job!&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/colabottles/image/upload/v1741360583/huh.png&quot; alt=&quot;A screen capture of a triangle icon and when hovered over with the cursor, it says, No issues! Good Job!&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;More visual guidance and helper labels/text would be beneficial for anyone with cognitive issues or memory loss. Even for busy people doing ten things at once to where these improvements benefit everyone.&lt;/p&gt;
 &lt;h2 id=&quot;early-final-thoughts&quot; tabindex=&quot;-1&quot;&gt;Early Final Thoughts&lt;/h2&gt;
 &lt;p&gt;Great tool, needs some work, needs an accessibility audit and some retooling in the name of accessibility but overall I like what I am looking at and will continue to tinker around in Toddle. I just hope it is not another tool that gets misused in the name of rapid development forsaking accessibility.&lt;/p&gt;
@@ -3202,6 +3202,75 @@ toddl&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;dev             
 &lt;h2 id=&quot;summary&quot; tabindex=&quot;-1&quot;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Todd L. likes Toddle. Again, I know it is a work in progress, so I am interested to see what happens in the future. I really do like this tool and I really did enjoy taking it for a spin. I hope great things come out of this tool for developers.&lt;/p&gt;
 &lt;p&gt;They can always hire me to come on as Head of Accessibility too and we can make this tool even better!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Lazy</title>
+		<link href="https://toddl.dev/posts/lazy/"/>
+		<updated>Sun, 28 Sep 2025 17:00:00 MST</updated>
+		<id>https://toddl.dev/posts/lazy/</id>
+		<content type="html">&lt;h2 id=&quot;hello-again&quot; tabindex=&quot;-1&quot;&gt;Hello again&lt;/h2&gt;
+&lt;p&gt;Well, it certainly has been forever and a day, hasn&#39;t it?&lt;/p&gt;
+&lt;p&gt;I am still around and up to some new shenanigans. Here&#39;s a rundown.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Founded a startup&lt;/li&gt;
+&lt;li&gt;Founded another startup (non-tech)&lt;/li&gt;
+&lt;li&gt;W3C Safety &amp;amp; Deception work for WCAG 3&lt;/li&gt;
+&lt;li&gt;Weekly &amp;amp; Bi-weekly calls with folks&lt;/li&gt;
+&lt;li&gt;Decided to do one more talk at MagnoliaConf in October&lt;/li&gt;
+&lt;li&gt;Recorded a podcast on Boagworld with Paul Boag and Marcus Lillington&lt;/li&gt;
+&lt;li&gt;Health &amp;amp; personal issues because that&#39;s life&lt;/li&gt;
+&lt;li&gt;and trying to land one more role in tech to pay the bills.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Personal little side projects aside, I try to keep busy so I don&#39;t get cabin fever and so far, so good but I am tired, boss. Real tired.&lt;/p&gt;
+&lt;p&gt;Hoping to get to this site soon and clean it up, change the design, and much more.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>The Architecture of Anxiety and Shame, Part One</title>
+		<link href="https://toddl.dev/posts/the-architecture-of-anxiety-and-shame-part-one/"/>
+		<updated>Mon, 06 Oct 2025 17:00:00 MST</updated>
+		<id>https://toddl.dev/posts/the-architecture-of-anxiety-and-shame-part-one/</id>
+		<content type="html">&lt;h2 id=&quot;part-one%2C-the-scarcity-and-pressure-to-make-decisions-and-placing-guilt-in-the-users-lap&quot; tabindex=&quot;-1&quot;&gt;Part One, The Scarcity and Pressure to Make Decisions and Placing Guilt in the Users Lap&lt;/h2&gt;
+&lt;h3 id=&quot;humanity-and-the-choices-people-make&quot; tabindex=&quot;-1&quot;&gt;Humanity and the Choices People Make&lt;/h3&gt;
+&lt;p&gt;In the work and research I have done for a number of years now, I have found that the choices we make as developers, technologists, organizations and companies, founders and CEOs has come down to compromising humanity. There are very few instances I have found where the lines are drawn in the sand and never crossed by anyone I just mentioned, which is why the work I have done to bring perhaps a little bit of change to the WCAG (Web Content Accessibility Guidelines) 3 document (which is still in development and not a standard, please refer to &lt;a href=&quot;https://www.w3.org/TR/WCAG22/&quot;&gt;WCAG 2.2&lt;/a&gt; &lt;a href=&quot;https://www.w3.org/TR/WCAG21/&quot;&gt;or 2.1&lt;/a&gt;) that we can mitigate some of the damage that has been done in the decades of grift and deceit that have been laid over the foundation of the Web as we know it.&lt;/p&gt;
+&lt;p&gt;“In the name of growth and profit!” is the steady battle cry that is silently shouted as the battle horns are sounded from the tops of the towers that CEOs and companies use as a bastion of corporate greed and capitalism and whatever methods they need to employ and deploy, they will certainly get all their workers that fall into line, they will do that for their fearless leaders who strut their stuff once, maybe twice a year on a stage with a big theatrical show for all to see.&lt;/p&gt;
+&lt;p&gt;Lost is the humanity I can see clearly. How that kid that just wanted to code, grew up to want to take over the world and throw away any kind of humanity though, that is the part that baffles me. Where does that get lost and at what point does something inside a person&#39;s head just snap and say, &#39;Let&#39;s do evil things today!&#39;? As I try to answer those questions I have, I also look to help others that are the targets of these deceptive practices now so that they do not fall prey to the silent hunter that is literally stalking them.&lt;/p&gt;
+&lt;p&gt;I wanted to go over four patterns, four of many patterns, that are used to play with people psychologically, that draw out the anxiety and fear, the guilt and shame, and how these patterns are used and what we can do to combat them.&lt;/p&gt;
+&lt;h2 id=&quot;the-three-amigos&quot; tabindex=&quot;-1&quot;&gt;The Three Amigos&lt;/h2&gt;
+&lt;h3 id=&quot;timed-based-urgency%2Ffake-urgency%2Fconfirmshaming&quot; tabindex=&quot;-1&quot;&gt;Timed-based urgency/Fake urgency/Confirmshaming&lt;/h3&gt;
+&lt;p&gt;The exploitation of FOMO (Fear of Missing Out) and social comparison is used a lot. Literally everywhere in a digital space where there is some kind of revenue involved. Social anxiety is something that is used to pressure people into action. Many deceptive patterns come in pairs. Some, come in groups, like The Outsiders (a great movie and book by the way).&lt;/p&gt;
+&lt;p&gt;Fake scarcity (FOMO), time pressure (anxiety), and confirmshaming (guilt/social inadequacy) are used to target the social fears that are very real that affect 1 in 10 Americans. The economic and emotional/psychological cost is massive and any design that amplifies that anxiety for-profit isn&#39;t bad business. It is an ethical attack on the public&#39;s well-being. Businesses that use these patterns should never have business and people should never deal with companies that use these patterns for-profit against them.&lt;/p&gt;
+&lt;h3 id=&quot;the-data-and-key-points&quot; tabindex=&quot;-1&quot;&gt;The Data and Key Points&lt;/h3&gt;
+&lt;p&gt;The condition of social anxiety isn&#39;t just a rare shyness, it is actually &lt;a href=&quot;https://socialphobia.org/social-anxiety-disorder-definition-symptoms-treatment-therapy-medications-insight-prognosis&quot;&gt;the third largest mental health care problem globally according to the Social Anxiety Association&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;According to sources from the National Institute of Mental Health, Yale Medicine, Mental Health America, and the American Psychological Association, 12.1% of adults experience &lt;a href=&quot;https://www.mayoclinic.org/diseases-conditions/social-anxiety-disorder/symptoms-causes/syc-20353561&quot;&gt;Social Anxiety Disorder (SAD)&lt;/a&gt; at some point in their lives. An estimated 7.1% of adults in the U.S. had SAD in the past year, which is approximately 15 million people. Of those adults with SAD in the past year, 29.9% of those people had serious impairment, and 38.8% had moderate impairment in their lives. The onset of SAD typically begins during childhood or teenage years with the median age being 13 years old.&lt;/p&gt;
+&lt;p&gt;The impact on function, work, and education can limit a person&#39;s participation in society, which is exactly where deceptive patterns in consumer tech can inflict the most damage. For instance individuals with SAD are over two times more likely to be unemployed than those without the disorder. Approximately 20% os people with SAD reported declining a job offer or promotion due to social fears.&lt;/p&gt;
+&lt;p&gt;Patients with SAD report greater absenteeism and reduced productivity due to social fears compared to control groups. Individuals with SAD are significantly less likely to aspire to social jobs suggesting they pre-emptively narrow their careers paths to avoid social scrutiny. SAD is consistently linked to lowered educational attainment, reduced income, and financial dependence.&lt;/p&gt;
+&lt;p&gt;The presence of SAD makes people vulnerable to other issues which is exactly the vulnerability that deceptive patterns seek to exploit in people. 66% of people with SAD have one or more additional mental health disorders, most common is clinical depression. An estimated one-fifth of people with SAD also struggle with alcohol use disorder. Women are more likely to have SAD than men, 8% to 6.1% past-year prevalence in U.S. adults.&lt;/p&gt;
+&lt;p&gt;Passive social media usage has been directly linked to an increase in social anxiety symptoms in some people.&lt;/p&gt;
+&lt;h2 id=&quot;the-examples&quot; tabindex=&quot;-1&quot;&gt;The Examples&lt;/h2&gt;
+&lt;h3 id=&quot;fake-scarcity&quot; tabindex=&quot;-1&quot;&gt;Fake Scarcity&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;The Pattern:&lt;/strong&gt; Creating a false sense of limited availability of a product to pressure a user into an immediate purchase.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Sources:&lt;/strong&gt; Booking and travel websites.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Case:&lt;/strong&gt; You have seen them in your digital travels. Many major flight and hotel booking platforms that display messages like “Only 4 rooms left!” or “Only 2 seats remaining!” Even, “6 people are booking this flight right now!”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Deception:&lt;/strong&gt; Often, the price is not the only price or the scarcity is only for a specific, non-essential room type, for instance. The key manipulation is the weaponization of FOMO to get the user to skip comparison shopping, to get them to make a rash decision, or even review the cancellation policy. The war cry here is “Get the sale by any means necessary!”&lt;/p&gt;
+&lt;h3 id=&quot;time-pressure&quot; tabindex=&quot;-1&quot;&gt;Time Pressure&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;The Pattern:&lt;/strong&gt; Usage of countdown timer or short windows of expiration that are often meaningless or reset easily, preventing rational-based decision-making.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Sources:&lt;/strong&gt; Flash sales and countdown clocks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Case:&lt;/strong&gt; A popular e-commerce site uses a platform that is the widely used platform for e-com websites. That popular e-com platform has a plugin store, and that plugin store has a plugin for flash sales. “Sale ends in 11:34:21!” that is thrown in your face, you cannot miss the component this thing has been designed by. In fact, this is a plugin that got banned from this very widely-used e-com platform&#39;s plugin store, yet they still exist as a standalone product! You can go into the (plugin, at the time) administration panel and choose to restart the timer and just restart it whenever you feel the desire to. A 24 hour flash sale could, in reality, last as long as the company wants.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Deception:&lt;/strong&gt; The deal usually reappears the next day or the timer magically resets if the user refreshes the page or the user returns later. The pattern is aimed at inducing anxiety and panic, thus making the cognitive load so high, that the user clicks that buy button before they have time to consider anything about what impact buying the product will have on them financially, the necessity of having that product, or even the actual value of owning that product.&lt;/p&gt;
+&lt;h3 id=&quot;confirmshaming&quot; tabindex=&quot;-1&quot;&gt;Confirmshaming&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;The Pattern:&lt;/strong&gt; Insulting the target user or guilt-tripping them into opting into a service or remaining in a subscription they don&#39;t want or a mailing list they didn&#39;t sign up for.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Sources:&lt;/strong&gt; E-mail opt-outs and newsletter subscriptions and pop-ups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Case:&lt;/strong&gt; When presented with an offer (usually a pop-up) to join a newsletter, the user clicks the “No” or “Decline” option, but the next pop-up or message shown is of text that is written to make the user seem foolish, selfish, morally inferior, or even less-than. A horrible individual even.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Deception:&lt;/strong&gt; Instead of a very simple, “No thanks”, the button or message reads, “No thanks, I don&#39;t want to save money today.” or “No, I don&#39;t care about that and prefer to stay in the dark.” Some even use cartoon or animated mascots or animals shedding a tear (looking at a very prolific language-learning platform who did this in the past and your green mascot).&lt;/p&gt;
+&lt;h2 id=&quot;summary&quot; tabindex=&quot;-1&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;To wrap this part one of a multi-part series on deceptive patterns and the weaponization behind them, I urge people to take their time and slow down. I know in the fast-paced world our lives are a mile-a-minute kind of speed where we have things to do and get things done. There is only twenty-four hours in a day and there isn&#39;t time to stray from the course. But you &lt;strong&gt;can&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Take time out and just do your due diligence. I know it is easy for me to say. Me, the author of this article, but I have experienced this very thing myself. SAD, FOMO, being manipulated by capitalism and corporate greed, deceptive patterns. I have lived this! Take your time, put an extra 15 minutes or more aside when you need to do a task online that involved &lt;strong&gt;your money&lt;/strong&gt;. I don&#39;t let these companies take my money freely anymore. Neither should you.&lt;/p&gt;
+&lt;p&gt;Noticing the signs can be the first step to minimizing the impact these deceptive patterns have on us. Educating yourselves to make the right choice and steer clear of any company using these tactics, not doing business with the companies, can have a profound effect on a person. I can attest to this. The freedom I have now to spot the pattern and stay away from that temptation is great. It does not mean I don&#39;t occasionally fall prey to it, because I still do. This is why I wrote this article and I am writing more parts to this, and why I chose to deep dive into this to educate people.&lt;/p&gt;
+&lt;p&gt;Hopefully, this helps someone and we can fight these practices and learn, grow, and become aware that fighting deceptive patterns and practices can lead to better mental health, better choices, retaining our finances, and a little bit less stress, anxiety, shame, guilt, and fear in our lives. It can also show companies and corporations that the long-standing practice of eroding the general public&#39;s mental health is over and that we will not be subjected to these practices for the betterment of our lives.&lt;/p&gt;
 </content>
 	</entry>
 </feed>

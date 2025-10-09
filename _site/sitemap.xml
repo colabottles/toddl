@@ -1042,6 +1042,11 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/lazy/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/targetsize/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
@@ -1203,6 +1208,21 @@
   
   <url>
     <loc>https://toddl.dev/tags/return/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/fakescarcity/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/timepressure/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/confirmshaming/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
   
@@ -1437,16 +1457,6 @@
   </url>
   
   <url>
-    <loc>https://toddl.dev/studio-ama/README/</loc>
-    <lastmod>18 December, 2024</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://toddl.dev/studio-ama/.sanity/runtime/</loc>
-    <lastmod>18 December, 2024</lastmod>
-  </url>
-  
-  <url>
     <loc>https://toddl.dev/posts/year-in-review-2024/</loc>
     <lastmod>30 December, 2024</lastmod>
   </url>
@@ -1454,5 +1464,15 @@
   <url>
     <loc>https://toddl.dev/posts/todd-vs-toddle/</loc>
     <lastmod>07 March, 2025</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/lazy/</loc>
+    <lastmod>29 September, 2025</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/the-architecture-of-anxiety-and-shame-part-one/</loc>
+    <lastmod>07 October, 2025</lastmod>
   </url>
 </urlset>
