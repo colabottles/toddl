@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
 			fonts: [
 			{
 				name: 'Cal Sans',
-			  data: fs.readFileSync('./fonts/CalSans-Regular.ttf'),
+			  data: fs.readFileSync('./fonts/CalSans-Regular.woff2'),
 			  weight: 400,
 			  style: 'normal',
 			},
