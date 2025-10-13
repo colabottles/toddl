@@ -8,34 +8,18 @@
       <meta name="description" content="{{ renderData.description or description or metadata.description }}">
       <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
       
-      <!-- Facebook Meta Tags -->
-      <meta property="og:url" content="https://toddl.dev">
-      <meta property="og:type" content="website">
-      <meta property="og:title" content="unfiltered: Home of Todd Libby">
-      <meta property="og:description" content="Desert nomad and lobster fanatic">
-      <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/1d0fd9ea-bf19-4d78-9132-06d493fa1709.png?token=AmoaQEAPG09zBRVcLT16WORXPEPRlcLA050_4qYteTs&height=675&width=1200&expires=33296379533">
-
-      <!-- Twitter Meta Tags -->
-      <meta name="twitter:card" content="summary_large_image">
-      <meta property="twitter:domain" content="toddl.dev">
-      <meta property="twitter:url" content="https://toddl.dev">
-      <meta name="twitter:title" content="unfiltered: Home of Todd Libby">
-      <meta name="twitter:description" content="Desert nomad and lobster fanatic">
-      <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/1d0fd9ea-bf19-4d78-9132-06d493fa1709.png?token=AmoaQEAPG09zBRVcLT16WORXPEPRlcLA050_4qYteTs&height=675&width=1200&expires=33296379533">
-
-      <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-
-      <!-- For OpenGraph  
+      <!-- For OpenGraph -->
       <meta property="og:title" content="{{ title or site.title }}" />
       <meta property="og:description" content="{{ description or site.description }}" />
+      <meta property="og:image" content="{{ metadata.url }}{{ page.url }}">
       <meta property="og:image:alt" content="Todd Libby, {{ title }}" />
       <meta property="og:image:type" content="image/png" />
-      <meta property="og:image" content="{{ site.url }}{{ page.url }}" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+      <meta property="og:title" content="{{ description or site.description }}">
       <meta property="og:type" content="article" />
-      <title>{{ renderData.title or title or metadata.title }}</title> -->
+      <meta property="og:url" content="https://toddl.dev">
+      <title>{{ renderData.title or title or metadata.title }}</title> 
 
       <link rel="stylesheet" href="{{ '/css/index.css' | url }}" />
       <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml">
@@ -45,7 +29,7 @@
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
       </style>
-    </head> 
+    </head>   
   <body>
     <div class="wrapper">
       <header>
