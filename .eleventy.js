@@ -24,11 +24,8 @@ async function shareImageShortcode(src) {
   return data.url;
 }
 
-export default function (eleventyConfig) {
-	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
-};
-
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
