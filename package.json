@@ -49,9 +49,5 @@
   "main": ".eleventy.js",
   "keywords": [],
   "type": 
-    "module",
-  "commonjs": {
-    "require": true,
-    "import": false
-  }
+    "module"
 }

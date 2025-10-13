@@ -1,4 +1,4 @@
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+const { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 const { DateTime } = require("luxon");
 const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
