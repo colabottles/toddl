@@ -1,4 +1,4 @@
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 const { DateTime } = require("luxon");
 const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -24,8 +24,11 @@ async function shareImageShortcode(src) {
   return data.url;
 }
 
+export default function (eleventyConfig) {
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+};
+
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
@@ -101,7 +104,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(UpgradeHelper);
 
   return {
-    markdownTemplateEngine: "njk",
     templateFormats: ["md", "njk", "html", "liquid", "js"],
 
     // If your site lives in a different subdirectory, change this.
