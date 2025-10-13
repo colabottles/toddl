@@ -13,26 +13,19 @@
       <meta property="og:description" content="{{ description or site.description }}" />
       <meta property="og:image:alt" content="Todd Libby, {{ title }}" />
       <meta property="og:image:type" content="image/png" />
-      <!-- <meta property="og:image" content="https://res.cloudinary.com/colabottles/image/upload/v1734481843/todd-social-card-template.jpg" /> -->
+      {% if shareimage %}
+        <meta property="og:image" content="{% shareImageUri shareimage %}" />
+      {% endif %}
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
       <meta property="og:type" content="article" />
-
-      {% set ogImage = ogImage or site.defaultOgImage %}
-      {% if ogImage %}
-          <meta property="og:image" content="{{ site.url }}{{ ogImage }}" />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
-      {% endif %}
-      <!-- End OpenGraph -->
 
       <title>{{ renderData.title or title or metadata.title }}</title>
       <link rel="stylesheet" href="{{ '/css/index.css' | url }}" />
       <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml">
       <link rel="icon" href="{{ '/img/favicon.png' | url }}" />
       <link rel="prefetch" as="script" href="{{ '../../svgxuse.min.js' | url }}">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
