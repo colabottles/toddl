@@ -79,6 +79,7 @@ module.exports = function(eleventyConfig) {
 };
 
   return {
+    markdownTemplateEngine: "njk",
     templateFormats: ["md", "njk", "html", "liquid", "js"],
 
     // If your site lives in a different subdirectory, change this.
@@ -87,7 +88,6 @@ module.exports = function(eleventyConfig) {
     // This is only used for URLs (it does not affect your file structure)
     pathPrefix: "/",
 
-    markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     passthroughFileCopy: true,
