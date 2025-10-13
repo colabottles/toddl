@@ -23,7 +23,8 @@
     "cypress": "^15.3.0",
     "luxon": "^3.7.2",
     "markdown-it": ">=14.1.0",
-    "markdown-it-anchor": "^9.2.0"
+    "markdown-it-anchor": "^9.2.0",
+    "sharp": "^0.34.4"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^6.0.4",
@@ -42,7 +43,6 @@
     "request": "^2.88.2",
     "save": "^2.9.0",
     "semver": "^7.7.2",
-    "sharp": "^0.34.4",
     "speedlify-score": "^4.0.4",
     "word-wrap": "^1.2.5"
   },
