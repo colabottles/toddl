@@ -6,8 +6,8 @@ tags:
   - post ## LEAVE THIS TAG HERE
   - test
 layout: layouts/post.njk
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png
-bskyPostId: 3m33rllt5w22b
+image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-test.png
+bskyPostId: 3m33srveiyk2y
 ---
 
 ## This is a test post
