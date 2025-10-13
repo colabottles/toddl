@@ -79,7 +79,7 @@ module.exports = function(eleventyConfig) {
 };
 
   return {
-    markdownTemplateEngine: ["njk", "liquid"],
+    markdownTemplateEngine: "njk",
     templateFormats: ["md", "njk", "html", "liquid", "js"],
 
     // If your site lives in a different subdirectory, change this.
