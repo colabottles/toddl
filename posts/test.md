@@ -7,7 +7,7 @@ tags:
   - test
 layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png
-bskyPostId: 3m33dztlyck2g
+bskyPostId: 3m33rllt5w22b
 ---
 
 ## This is a test post
