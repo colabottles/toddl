@@ -46,5 +46,5 @@
     "word-wrap": "^1.2.5"
   },
   "main": ".eleventy.js",
-  "keywords": [],
+  "keywords": []
 }
