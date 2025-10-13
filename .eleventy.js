@@ -2,7 +2,6 @@ const { DateTime } = require("luxon");
 const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const Image = require("@11ty/eleventy-img");
 const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 async function shareImageShortcode(src) {
@@ -92,10 +91,6 @@ module.exports = function(eleventyConfig) {
   });
 
   // If you have other `addPlugin` calls, UpgradeHelper should be listed last.
-  eleventyConfig.addNunjucksAsyncShortcode(
-    "shareImageUri",
-    shareImageShortcode
-  );
   eleventyConfig.addPlugin(UpgradeHelper);
 
   return {
@@ -118,24 +113,4 @@ module.exports = function(eleventyConfig) {
       output: "_site"
     }
   };
-
-  // const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-
-  // export default function (eleventyConfig) {
-  //   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-	// 	// output image formats
-	// 	formats: ["avif", "webp", "jpeg", "png"],
-
-	// 	// output image widths
-	// 	widths: ["auto"],
-
-	// 	// optional, attributes assigned on <img> nodes override these values
-	// 	htmlOptions: {
-	// 		imgAttributes: {
-	// 			loading: "lazy",
-	// 			decoding: "async",
-	// 		},
-	// 		pictureAttributes: {}
-	// 	},
-	// });
 };
