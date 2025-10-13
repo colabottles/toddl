@@ -2,8 +2,21 @@ const { DateTime } = require("luxon");
 const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const EleventyPluginOgImage = require('eleventy-plugin-og-image');
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(EleventyPluginOgImage, {
+		satoriOptions: {
+			fonts: [
+			{
+				name: 'Pixeboy',
+				data: fs.readFileSync('./fonts/Pixeboy.ttf'),
+				weight: 700,
+				style: 'normal',
+			},
+			],
+		},
+	});
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
