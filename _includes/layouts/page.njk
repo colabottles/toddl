@@ -8,8 +8,19 @@
       <meta name="description" content="{{ renderData.description or description or metadata.description }}">
       <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
 
+      <meta property="og:description" content="{{ description or site.description }}" />
+      <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+      <meta property="og:type" content="article" />
+
+      {% set ogImage = ogImage or site.defaultOgImage %}
+      {% if ogImage %}
+          <meta property="og:image" content="{{ site.url }}{{ ogImage }}" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+      {% endif %}
+
       <!-- For OpenGraph  -->
-      <meta property="og:title" content="The Website of Todd L" />
+      <meta property="og:title" content="{{ title or site.title }}" />
       <meta property="og:description" content="Desert nomad and lobster fanatic" />
       <meta property="og:image:alt" content="Todd Libby, {{ title }}" />
       <meta property="og:image:type" content="image/png" />
