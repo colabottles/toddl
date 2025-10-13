@@ -48,5 +48,10 @@
   },
   "main": ".eleventy.js",
   "keywords": [],
-  "type": "module"
+  "type": 
+    "module",
+  "commonjs": {
+    "require": true,
+    "import": false
+  }
 }
