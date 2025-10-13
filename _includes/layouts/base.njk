@@ -7,19 +7,27 @@
       <meta name="generator" content="{{ eleventy.generator }}">
       <meta name="description" content="{{ renderData.description or description or metadata.description }}">
       <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
-      <!-- For OpenGraph -->
-      <meta property="og:image" content="{{ site.url }}{{ page.url }}{{ image }}" />
-      <meta property="og:image:alt" content="Todd Libby, {{ title }}" />
-      <!-- Twitter -->
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:title" content="{% if title %}{{ title | e }} - {%endif%}{{ title }}">
-      <meta name="twitter:description" content="{{ description or site_description }}">
-      <meta property="og:title" content="{% if title %}{{ title | e }} - {%endif%}{{ title }}">
-      <meta property="og:description" content="{{ description or site_description }}">
-      <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
-      <meta property="og:site_name" content="{% if title %}{{ title | e }} - {%endif%}{{ site.name }}">
-      <meta property="og:locale" content="en_US">
-      <meta property="og:type" content="website">
+      
+      <!-- For OpenGraph 
+        <meta property="og:image" content="{{ site.url }}{{ page.url }}{{ image }}" />
+        <meta property="og:image:alt" content="Todd Libby, {{ title }}" />
+        <meta property="og:title" content="{% if title %}{{ title | e }} - {%endif%}{{ title }}">
+        <meta property="og:description" content="{{ description or site_description }}">
+        <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+        <meta property="og:site_name" content="{% if title %}{{ title | e }} - {%endif%}{{ site.name }}">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+      -->
+
+      <!-- New OpenGraph attempt -->
+      <meta property="og:title" content="The Website of Todd L" />
+      <meta property="og:description" content="Desert nomad and lobster fanatic" />
+      <meta property="og:image:alt" content="ToddL.dev" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image" content="https://res.cloudinary.com/colabottles/image/upload/v1734481843/todd-social-card-template.jpg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <!-- End New OpenGraph -->
 
       <title>{{ renderData.title or title or metadata.title }}</title>
       <link rel="stylesheet" href="{{ '/css/index.css' | url }}" />
@@ -28,7 +36,7 @@
       <link rel="prefetch" as="script" href="{{ '../../svgxuse.min.js' | url }}">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=League+Gothic&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
       </style>
     </head>
   <body>

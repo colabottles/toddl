@@ -62,7 +62,7 @@ q:after, q:before {
   --night: #555;
   --font-family-sans: "Inter Tight", sans-serif;
   --font-family-serif: "Inter Tight", sans-serif;
-  --font-family-heading-sm: "League Gothic", sans-serif;
+  --font-family-heading-sm: "Cal Sans", sans-serif;
   --font-family-mono: "Cascadia Code", monospace;
   --font-weight-bolder: 900;
   --font-size: 140%;
@@ -100,14 +100,13 @@ h1,h2,h3,h4,h5 {
   font-style: normal;
 }
 
-.league-gothic-heading {
-  font-family: "League Gothic", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
+.cal-sans-regular {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
+
+
 
 /* Image and Media Styles */
 img, video, iframe {
@@ -440,7 +439,7 @@ header a:hover {
 
 .page-title {
   font-weight: 800;
-  font-size: 1.4rem
+  font-size: 2.2rem
 }
 
 .primary-heading {
@@ -509,7 +508,7 @@ article.archive-list {
 
 section.article__body h2 {
   font-size: var(--font-size-xlarge);
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-heading-sm);
   font-weight: 800;
   color: var(--white)
 }
@@ -519,6 +518,8 @@ section.article__body h3 {
   font-family: var(--font-family-sans);
   font-weight: 500;
   color: var(--ecto);
+  margin-top: 2em;
+  margin-bottom: -1em;
 }
 
 .sections {
@@ -1763,10 +1764,6 @@ img.lazyload {
     font-size: .8rem
   }
 
-  .page-title {
-    font-size: 2.4rem;
-  }
-
   section.social {
     grid-column: 2/7
   }
@@ -1826,6 +1823,10 @@ img.lazyload {
     max-width: 80vw;
     margin: 0;
     padding: 0;
+  }
+
+  .page-title {
+    font-size: 3rem;
   }
 }
 

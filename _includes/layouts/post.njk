@@ -6,19 +6,19 @@ templateClass: tmpl-page
 <div class="article-container">
   <article>
 
-    <header class="article__header">
-      <h1 class="page-title league-gothic-heading">{{ title }}</h1>
+    <header class="article__header cal-sans-regular">
+      <h1 class="page-title">{{ title }}</h1>
         <div class="article__meta">
           <time>{{ page.date | htmlDateString }}</time>
         </div>
     </header>
 
-    <section class="article__body">
+    <section class="article__body inter-tight-content">
       {{ content | safe }}
     </section>
 
     <section class="post__likes" data-bsky-container>
-      <h3 class="post__likesTitle league-gothic-heading">
+      <h3 class="post__likesTitle">
         🦞 <span data-bsky-likes-count></span> likes on Bluesky
       </h3>
       <a class="post__likesCta" href="https://bsky.app/profile/toddl.dev/post/{{bskyPostId}}" target="_blank">
