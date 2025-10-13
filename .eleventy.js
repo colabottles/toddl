@@ -2,7 +2,6 @@ const { DateTime } = require("luxon");
 const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -72,10 +71,15 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
+module.exports = function(eleventyConfig) {
   // If you have other `addPlugin` calls, UpgradeHelper should be listed last.
   eleventyConfig.addPlugin(UpgradeHelper);
+};
 
   return {
+    markdownTemplateEngine: ["njk", "liquid"],
     templateFormats: ["md", "njk", "html", "liquid", "js"],
 
     // If your site lives in a different subdirectory, change this.
@@ -84,7 +88,6 @@ module.exports = function(eleventyConfig) {
     // This is only used for URLs (it does not affect your file structure)
     pathPrefix: "/",
 
-    markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     passthroughFileCopy: true,
