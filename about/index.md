@@ -17,7 +17,7 @@ As my passion for web development grew, so did my commitment to making the inter
 
 In recent years, I shifted my focus towards Developer Relations, a role that allows me to share my knowledge and enthusiasm for web technologies with others. I became a speaker at conferences and events, where I educate attendees on the latest trends and best practices in web development and accessibility.
 
-Throughout my career, I have remained true to my roots and values, always striving to make a positive impact in his community and beyond. My dedication and passion for web development and accessibility hopefully continues to inspire others in the field and beyond.
+Throughout my career, I have remained true to my roots and values, always striving to make a positive impact in the communities I belong to and beyond. My dedication and passion for web development and accessibility hopefully continues to inspire others in the field and beyond.
 
 I have also founded a company that is working to build an application in the Logistics space to help companies with route maintenance systems.
 
