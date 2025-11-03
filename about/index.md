@@ -21,4 +21,4 @@ Throughout my career, I have remained true to my roots and values, always strivi
 
 I have also founded a company that is working to build an application in the Logistics space to help companies with route maintenance systems.
 
-You can find more about my work on [my Github page](https://github.com/colabottles) or[my CodePen page](https://codepen.io/colabottles).
+You can find more about my work on [my Github page](https://github.com/colabottles) or [my CodePen page](https://codepen.io/colabottles).
