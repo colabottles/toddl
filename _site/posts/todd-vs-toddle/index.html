@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="view-transition" content="same-origin">
+      <meta name="generator" content="Eleventy v3.1.2">
+      <meta name="description" content="The relationship of the toddl&#39;s begins. Thoughts about a new development tool and accessibility.">
+      <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+      
+      <!-- For OpenGraph -->
+      <meta property="og:title" content="Todd Vs Toddle" />
+      <meta property="og:description" content="The relationship of the toddl&#39;s begins. Thoughts about a new development tool and accessibility." />
+      <meta property="og:image" content="https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-toddle.png">
+      <meta property="og:image:alt" content="Todd Libby has written a post called, Todd Vs Toddle" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:title" content="The relationship of the toddl&#39;s begins. Thoughts about a new development tool and accessibility.">
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://toddl.dev">
+      <title>Todd Vs Toddle</title> 
+
+      <link rel="stylesheet" href="/css/index.css" />
+      <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+      <link rel="icon" href="/img/favicon.png" />
+      <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
+    </head>   
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" class="page-title" id="title">
+            <img src="https://res.cloudinary.com/colabottles/image/upload/v1735093366/lobstah_logo.png" alt="A Lobster logo." />
+          </a>
+            <nav aria-label="main-navigation">
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
+      </header>
+
+      <main id="main" class="inner ">
+        
+<div class="article-container">
+  <article>
+
+    <header class="article__header cal-sans-regular">
+      <h1 class="page-title">Todd Vs Toddle</h1>
+        <div class="article__meta">
+          <time>07 March, 2025</time>
+        </div>
+    </header>
+
+    <section class="article__body inter-tight-content">
+      <h2 id="wait%E2%80%A6-toddl-or-toddle-or-toddl%3F" tabindex="-1">Wait… ToddL or Toddle or Toddl?</h2>
+<p>Yes.</p>
+<p>So I was up early today and planning on doing nothing when I was watching the stream of one of my favorite people, Salma Alam-Naylor, <a href="https://twitch.tv/whitep4nth3r">a.k.a. whitep4nth3r</a> and Salma was rebuilding her website with Toddle.</p>
+<p><a href="https://toddle.dev">Toddle</a> is a &quot;visual web framework&quot; so as a fellow Todd, I had to check this out. I said I would not pass judgment, but I will describe what I see that could be improved upon from an accessibility standpoint.</p>
+<h2 id="caveat" tabindex="-1">Caveat</h2>
+<p>Yes, it is a work in progress I understand that but accessibility needs to be considered (and I believe it has been here) from before the concept phase. Things get lost in the shuffle or developers don't understand the guidelines and accessibility so this is why I felt compelled to write this. WHat I see so far is great, but loads of room for improvement.</p>
+<h2 id="first-impression" tabindex="-1">First Impression</h2>
+<p>First impression is it is Figma meets front-end development. Which is great. I think tools that make the job less stressful and alleviates the daily grind of the developer is great. To an extent. Yes, I am going to talk about accessibility.</p>
+<p>It is a good looking tool that cannot be denied and the docs do need some work (and I have been told they are going to be reworked), and I love the idea of &quot;Challenges&quot; as a way to onboard someone to the product.</p>
+<h2 id="accessibility" tabindex="-1">Accessibility</h2>
+<p>I already have an issue with things being obscured and not being able to manipulate the layout so I can read what I need as I work in three different spots in the UI at once. I like to use the keyboard occasionally to navigate a page.</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1741357094/toddle1.png" alt="A view of the Toddle.dev interface showing how to create a Weather App"></p>
+<p>I'd love to be able to resize the area that has the formulas in it to &quot;un&quot;-hide the menu it is obscuring and I also wish that formula area was not a <a href="https://www.w3.org/TR/WCAG22/#no-keyboard-trap">keyboard trap</a>. So those are the first two things I noticed right away.</p>
+<p>The second is the way everyone can re-style a heading element (as you will see if you do the Weather App challenge) which you should never do as far as font sizing goes. Styling an <code>h1</code> to look like an <code>h3</code> or <code>h4</code> <a href="https://www.w3.org/TR/WCAG22/#info-and-relationships">is not</a> <img src="https://www.w3.org/TR/WCAG22/#section-headings" alt="suggested">.</p>
+<p>Also not a fan of the ability to place placeholders in an input field, but, that is on people to know that placeholders are not labels and placeholders are helper text. Those placeholders that are helper text shouldn't be read by a screen reader and hidden from assistive technologies. Visual labels are the way, my friends.</p>
+<p>Speaking of visual labels...</p>
+<p><img src="https://res.cloudinary.com/colabottles/image/upload/v1741360583/huh.png" alt="A screen capture of a triangle icon and when hovered over with the cursor, it says, No issues! Good Job!"></p>
+<p>More visual guidance and helper labels/text would be beneficial for anyone with cognitive issues or memory loss. Even for busy people doing ten things at once to where these improvements benefit everyone.</p>
+<h2 id="early-final-thoughts" tabindex="-1">Early Final Thoughts</h2>
+<p>Great tool, needs some work, needs an accessibility audit and some retooling in the name of accessibility but overall I like what I am looking at and will continue to tinker around in Toddle. I just hope it is not another tool that gets misused in the name of rapid development forsaking accessibility.</p>
+<h2 id="wish-list" tabindex="-1">Wish List</h2>
+<ul>
+<li>The ability to resize the formula area</li>
+<li>the ability to not have main parts of onboarding obscured</li>
+<li>documentation about accessibility (how-to use semantic HTML, examples of an accessible component, guiding the developer through education, good examples vs bad examples, etc.)</li>
+<li>A good, thorough, accessibility audit and usability audit</li>
+<li>Better visual guidance (accessibility) and better labelling of interactive components.</li>
+</ul>
+<h2 id="summary" tabindex="-1">Summary</h2>
+<p>Todd L. likes Toddle. Again, I know it is a work in progress, so I am interested to see what happens in the future. I really do like this tool and I really did enjoy taking it for a spin. I hope great things come out of this tool for developers.</p>
+<p>They can always hire me to come on as Head of Accessibility too and we can make this tool even better!</p>
+
+    </section>
+
+    <section class="post__likes" data-bsky-container>
+      <h3 class="post__likesTitle">
+        🦞 <span data-bsky-likes-count></span> likes on Bluesky
+      </h3>
+      <a class="post__likesCta" href="https://bsky.app/profile/toddl.dev/post/3ljsfz2e4m22z" target="_blank">
+        Like this post on 🦋Bluesky to see your face on this page
+      </a>
+      <ul data-bsky-likes class="post__likesList"></ul>
+    </section>
+  </article>
+
+  <meta data-bsky-post-id="3ljsfz2e4m22z" />
+  <script src="../../bluesky_likes.js"></script>
+
+</div>
+
+      </main>
+
+      <footer class="meta footer">
+        <h2 class="league-gothic-heading">&copy;1999 &mdash; <script>document.write(new Date().getFullYear());</script>, Todd Libby.</h2>
+          <nav aria-labelledby="majorlinks">
+            <ul class="nav list-inline" id="majorlinks">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
+        <h2 class="league-gothic-heading">#BlackLivesMatter &middot; #StopAsianHate &middot; #ProtectTransKids</h2>
+        <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
+          <h2 id="a11y-webring-club">a11y-webring.club</h2>
+          <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
+          <ul>
+            <li><a rel="previous external" href="https://a11y-webring.club/prev">Previous website</a></li>
+            <li><a rel="external" href="https://a11y-webring.club/random">Random website</a></li>
+            <li><a rel="next external" href="https://a11y-webring.club/next">Next website</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="social-nav">
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a rel="me" href="https://notacult.social/@colabottles" class="mastodon">
+                <svg class="icon icon-mastodon" focusable="false">
+                  <title>My Mastodon profile</title>
+                  <desc id="mastodon">A white Mastodon.</desc>
+                  <use href="/img/symbol-defs.svg#icon-mastodon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://bsky.app/profile/toddl.dev" class="bluesky-flutter">
+                <svg id="flutterby" class="bluesky-flutter" viewBox="0 0 566 650" xmlns="http://www.w3.org/2000/svg">
+                <title>Todd's Bluesky account</title>
+                  <defs>
+                    <path id="wing" fill="currentColor" d="M 123.244 35.008 C 188.248 83.809 283.836 176.879 283.836 235.857 C 283.836 316.899 283.879 235.845 283.836 376.038 C 283.889 375.995 282.67 376.544 280.212 383.758 C 266.806 423.111 214.487 576.685 94.841 453.913 C 31.843 389.269 61.013 324.625 175.682 305.108 C 110.08 316.274 36.332 297.827 16.093 225.504 C 10.271 204.699 0.343 76.56 0.343 59.246 C 0.343 -27.451 76.342 -0.206 123.244 35.008 Z" />
+                  </defs>
+                <use xlink:href="#wing" class="left" />
+                <use xlink:href="#wing" class="right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        🇺🇦
+      </footer>
+    </div>
+  </body>
+</html>

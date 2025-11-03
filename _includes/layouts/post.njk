@@ -6,14 +6,14 @@ templateClass: tmpl-page
 <div class="article-container">
   <article>
 
-    <header class="article__header">
+    <header class="article__header cal-sans-regular">
       <h1 class="page-title">{{ title }}</h1>
         <div class="article__meta">
           <time>{{ page.date | htmlDateString }}</time>
         </div>
     </header>
 
-    <section class="article__body">
+    <section class="article__body inter-tight-content">
       {{ content | safe }}
     </section>
 

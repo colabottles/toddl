@@ -1042,6 +1042,11 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/lazy/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/targetsize/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
@@ -1082,7 +1087,32 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/networking/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/traveling/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/typography/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/experimenting/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/programming/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/integration/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
   
@@ -1172,12 +1202,32 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/test/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/thanks/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
   
   <url>
     <loc>https://toddl.dev/tags/return/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/fakescarcity/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/timepressure/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/confirmshaming/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
   
@@ -1213,6 +1263,16 @@
   
   <url>
     <loc>https://toddl.dev/tags/judgment/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/toddle/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/toddl/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
   
@@ -1327,6 +1387,21 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/tags/2024review/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/yearinreview/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/tags/lookingback/</loc>
+    <lastmod>02 August, 2024</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/tags/didfixit/</loc>
     <lastmod>02 August, 2024</lastmod>
   </url>
@@ -1362,6 +1437,11 @@
   </url>
   
   <url>
+    <loc>https://toddl.dev/posts/test/</loc>
+    <lastmod>12 November, 2024</lastmod>
+  </url>
+  
+  <url>
     <loc>https://toddl.dev/posts/accessibility-misinformation/</loc>
     <lastmod>13 November, 2024</lastmod>
   </url>
@@ -1374,5 +1454,35 @@
   <url>
     <loc>https://toddl.dev/emails/subscribed/</loc>
     <lastmod>16 November, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/please-clap/</loc>
+    <lastmod>23 November, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/networking/</loc>
+    <lastmod>17 December, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/year-in-review-2024/</loc>
+    <lastmod>30 December, 2024</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/todd-vs-toddle/</loc>
+    <lastmod>07 March, 2025</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/lazy/</loc>
+    <lastmod>29 September, 2025</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toddl.dev/posts/the-architecture-of-anxiety-and-shame-part-one/</loc>
+    <lastmod>07 October, 2025</lastmod>
   </url>
 </urlset>

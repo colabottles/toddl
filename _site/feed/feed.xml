@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Home of Todd Libby</title>
-	<subtitle>I am trying to do my best, that is all I can do.</subtitle>
+	<subtitle>Occasional writings with a splash of tech.</subtitle>
 	<link href="https://toddl.dev/feed/feed.xml" rel="self"/>
 	<link href="https://toddl.dev/"/>
-	<updated>Wed Nov 13 2024 17:00:00 GMT-0700 (Mountain Standard Time)</updated>
+	<updated>Mon Oct 06 2025 17:00:00 GMT-0700 (Mountain Standard Time)</updated>
 	<id>https://toddl.dev/</id>
 	<author>
 		<name>Todd Libby</name>
@@ -3023,6 +3023,17 @@ Longshore, D. (1979). Color Connotations and Racial Attitudes. Journal of Black 
 	</entry>
 	
 	<entry>
+		<title>Test</title>
+		<link href="https://toddl.dev/posts/test/"/>
+		<updated>Mon, 11 Nov 2024 17:00:00 MST</updated>
+		<id>https://toddl.dev/posts/test/</id>
+		<content type="html">&lt;h2 id=&quot;this-is-a-test-post&quot; tabindex=&quot;-1&quot;&gt;This is a test post&lt;/h2&gt;
+&lt;p&gt;This is a test post with some lorem ipsum.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Accessibility Misinformation</title>
 		<link href="https://toddl.dev/posts/accessibility-misinformation/"/>
 		<updated>Tue, 12 Nov 2024 17:00:00 MST</updated>
@@ -3100,6 +3111,177 @@ toddl&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;dev             
 &lt;p&gt;Clicked the &amp;quot;Verify DNS&amp;quot; in the &amp;quot;Change handle&amp;quot; settings and yes! It works!&lt;/p&gt;
 &lt;p&gt;Now I have my domain as my handle and I can stop obsessing about a fix. I will say, as of this article, that I don&#39;t know if this has anything to do with the current &amp;quot;Invalid Handle&amp;quot; bug, but, I would suggest giving the API method of changing your handle a try and see if that works. Your mileage may vary.&lt;/p&gt;
 &lt;p&gt;Now I can rest easily, cross one more thing off my list of to-do&#39;s and move on to obsessing about something else like I normally do. Maybe sleep would be a good thing to focus on next?&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Please Clap</title>
+		<link href="https://toddl.dev/posts/please-clap/"/>
+		<updated>Fri, 22 Nov 2024 17:00:00 MST</updated>
+		<id>https://toddl.dev/posts/please-clap/</id>
+		<content type="html">&lt;h2 id=&quot;this-is-just-a-test&quot; tabindex=&quot;-1&quot;&gt;This Is Just A Test&lt;/h2&gt;
+&lt;p&gt;Trying out something here, so please excuse the clutter. Thank you.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Networking</title>
+		<link href="https://toddl.dev/posts/networking/"/>
+		<updated>Mon, 16 Dec 2024 17:00:00 MST</updated>
+		<id>https://toddl.dev/posts/networking/</id>
+		<content type="html">&lt;h2 id=&quot;i-had-the-time-of-my-life-and-more-so-i-decided-to-write-about-it&quot; tabindex=&quot;-1&quot;&gt;I had the time of my life and more so I decided to write about it&lt;/h2&gt;
+&lt;p&gt;It was 2019, I was bored. The pandemic had hit and things were in unchartered territory. So I decided to throw myself out there in a way I had never done before. The world of public speaking.&lt;/p&gt;
+&lt;p&gt;I never really wanted to, nor did I ever think about putting myself out there until it was around 2018 that I wanted to speak at An Event Apart (RIP) and I thought that I could write up some accessibility articles to start off with and go from there. Little did I know.&lt;/p&gt;
+&lt;h2 id=&quot;little-did-i-know&quot; tabindex=&quot;-1&quot;&gt;Little Did I Know&lt;/h2&gt;
+&lt;p&gt;I never thought I would spend four years speaking to people about accessibility and three of those years traveling to conferences speaking about accessibility (as well as other topics as well towards the end). It was a wild ride and sometimes a tiring ride at that with it&#39;s moments (Grand Rapids, Michigan to Kansas City, MO).&lt;/p&gt;
+&lt;p&gt;Little did I know I would end up meeting a ton of people and all of them are brilliant people in their respective areas and some of the nicest, most welcoming people I ever met. I never met anyone that I really did not like.&lt;/p&gt;
+&lt;p&gt;Whether it was &lt;a href=&quot;https://magnoliajs.com/&quot;&gt;MagnoliaJS&lt;/a&gt; or &lt;a href=&quot;https://devnexus.org/&quot;&gt;Devnexus&lt;/a&gt; to &lt;a href=&quot;https://www.beercitycode.com/&quot;&gt;Beer City Code&lt;/a&gt; to &lt;a href=&quot;https://kcdc.info/&quot;&gt;KCDC&lt;/a&gt; I met a great group of speakers and a terrific bunch of attendees. Hallway tracks were always the best, post-conference days were always filled with adventure (especially the &amp;quot;Conference That Shall Not Be Named&amp;quot;) and shenanigans.&lt;/p&gt;
+&lt;h2 id=&quot;speaker-fam&quot; tabindex=&quot;-1&quot;&gt;Speaker Fam&lt;/h2&gt;
+&lt;p&gt;My friends, the speakers I got to meet and mingle with, discuss many things, joke around with, enjoy a meal with, you are a phenomenal group of people that I will always be grateful and thankful for getting to know you and even after the events were over, following you and your work. I can&#39;t express how much fun it was.&lt;/p&gt;
+&lt;p&gt;My close &#39;support network&#39;, you know who you are. Whether it was a bad day and I was in my head, whether it was making sure I stayed on my path of sobriety, I love you all. sincerely, you were my lifeline and I am damn grateful for those moments you all got me out of my head just by being yourselves and taking the time out of your week to be there for me. I hope I reciprocated enough as a small return of payment.&lt;/p&gt;
+&lt;h2 id=&quot;the-hallway-tracks&quot; tabindex=&quot;-1&quot;&gt;The Hallway Tracks&lt;/h2&gt;
+&lt;p&gt;If you were an attendee that came to ask questions, to thank me for my talk or workshop, to just chit-chat, thank you. You are the reason I was there, to educate you all on accessibility. If only one of you thanked me, per conference, or even as a whole, I did my job. I can&#39;t stress enough that these events would be there if it was not for the attendees (as well as sponsors and organizers, of course).&lt;/p&gt;
+&lt;h2 id=&quot;what-is-this-all-about%3F&quot; tabindex=&quot;-1&quot;&gt;What Is This All About?&lt;/h2&gt;
+&lt;p&gt;It looks like 2025 may be a wash and moving forward, I may be relegated. I may become a retiree and as much as I don&#39;t want to just yet, it has been a path of exhaustion for me. This time around has taken all the wind out of my sails. So many times, so many resumes, not one job. That may change, I am giving it the first 2-3 months of 2025, but if it doesn&#39;t pan out, it was a blast and something I will remember for the rest of my days.&lt;/p&gt;
+&lt;p&gt;✌🏻&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Year in Review 2024</title>
+		<link href="https://toddl.dev/posts/year-in-review-2024/"/>
+		<updated>Sun, 29 Dec 2024 17:00:00 MST</updated>
+		<id>https://toddl.dev/posts/year-in-review-2024/</id>
+		<content type="html">&lt;h2 id=&quot;it&#39;s-been-a-roller-coaster&quot; tabindex=&quot;-1&quot;&gt;It&#39;s Been A Roller Coaster&lt;/h2&gt;
+&lt;p&gt;Well, here it is, my year in review after skipping a few. I&#39;ll spare you dear reader of the ugliest details.&lt;/p&gt;
+&lt;p&gt;The health front has been a gigantic roller coaster. Myself, my partner and her issues, my family members. There has been a lot in that aspect that was concerning for the most part. A little less now, as of this writing.&lt;/p&gt;
+&lt;p&gt;My issues I haven&#39;t divulged to anyone, and while they have not been grave issues, they have kept me from doing some of the things I enjoy doing. Meetings, W3C work, projects I have wanted to start and stuff I have wanted to complete.&lt;/p&gt;
+&lt;p&gt;One death in the family, three instances of cancer diagnoses that have fortunately two have come out free of that awful stuff, one we  are waiting to hear about (that one has to deal with United HealthCare, so we&#39;re bracing for the appeals process already. IFKYK). My mind has been all over the place more than when I was traveling the past three years.&lt;/p&gt;
+&lt;h2 id=&quot;employment&quot; tabindex=&quot;-1&quot;&gt;Employment&lt;/h2&gt;
+&lt;p&gt;I ended 2023 with a bang and had an auditing job that I completed and I was fortunate to work for a company that already had a culture of accessibility. That kept me afloat for half the year.&lt;/p&gt;
+&lt;p&gt;The job interview process has been as tiring as all the hunting and applying can be these days. I was fortunate enough to speak with someone at Apple about a role, but sadly, I did not get that role. It gave me the confidence to know I still have value at 53 years old.&lt;/p&gt;
+&lt;p&gt;I am trying hard to maintain that air of positivity going into 2025.&lt;/p&gt;
+&lt;h2 id=&quot;the-good-stuff&quot; tabindex=&quot;-1&quot;&gt;The Good Stuff&lt;/h2&gt;
+&lt;p&gt;I was not going to end this all negative. The TL;DR of it is this, and it is really all I need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I stayed sober.&lt;/li&gt;
+&lt;li&gt;I reconnected with my children.&lt;/li&gt;
+&lt;li&gt;I&#39;ve managed to deal with the negative a lot better than I have ever.&lt;/li&gt;
+&lt;li&gt;I can walk away from things or people that are toxic without hesitation and with indifference.&lt;/li&gt;
+&lt;li&gt;My coding skills may be rusty, but I still got it.&lt;/li&gt;
+&lt;li&gt;I stopped selling myself short and would be open to a manager role in accessibility, but no more auditing.&lt;/li&gt;
+&lt;li&gt;I know my value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you to those who stuck by me during my times of flakiness, thank you dear reader, thank you to my higher power for keeping me sober, and hopefully, with what we have looming for the next few years, we can all come out of this alive and with those whom we love and those whom we call friends.&lt;/p&gt;
+&lt;p&gt;✌🏻&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Todd Vs Toddle</title>
+		<link href="https://toddl.dev/posts/todd-vs-toddle/"/>
+		<updated>Thu, 06 Mar 2025 17:00:00 MST</updated>
+		<id>https://toddl.dev/posts/todd-vs-toddle/</id>
+		<content type="html">&lt;h2 id=&quot;wait%E2%80%A6-toddl-or-toddle-or-toddl%3F&quot; tabindex=&quot;-1&quot;&gt;Wait… ToddL or Toddle or Toddl?&lt;/h2&gt;
+&lt;p&gt;Yes.&lt;/p&gt;
+&lt;p&gt;So I was up early today and planning on doing nothing when I was watching the stream of one of my favorite people, Salma Alam-Naylor, &lt;a href=&quot;https://twitch.tv/whitep4nth3r&quot;&gt;a.k.a. whitep4nth3r&lt;/a&gt; and Salma was rebuilding her website with Toddle.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://toddle.dev/&quot;&gt;Toddle&lt;/a&gt; is a &amp;quot;visual web framework&amp;quot; so as a fellow Todd, I had to check this out. I said I would not pass judgment, but I will describe what I see that could be improved upon from an accessibility standpoint.&lt;/p&gt;
+&lt;h2 id=&quot;caveat&quot; tabindex=&quot;-1&quot;&gt;Caveat&lt;/h2&gt;
+&lt;p&gt;Yes, it is a work in progress I understand that but accessibility needs to be considered (and I believe it has been here) from before the concept phase. Things get lost in the shuffle or developers don&#39;t understand the guidelines and accessibility so this is why I felt compelled to write this. WHat I see so far is great, but loads of room for improvement.&lt;/p&gt;
+&lt;h2 id=&quot;first-impression&quot; tabindex=&quot;-1&quot;&gt;First Impression&lt;/h2&gt;
+&lt;p&gt;First impression is it is Figma meets front-end development. Which is great. I think tools that make the job less stressful and alleviates the daily grind of the developer is great. To an extent. Yes, I am going to talk about accessibility.&lt;/p&gt;
+&lt;p&gt;It is a good looking tool that cannot be denied and the docs do need some work (and I have been told they are going to be reworked), and I love the idea of &amp;quot;Challenges&amp;quot; as a way to onboard someone to the product.&lt;/p&gt;
+&lt;h2 id=&quot;accessibility&quot; tabindex=&quot;-1&quot;&gt;Accessibility&lt;/h2&gt;
+&lt;p&gt;I already have an issue with things being obscured and not being able to manipulate the layout so I can read what I need as I work in three different spots in the UI at once. I like to use the keyboard occasionally to navigate a page.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/colabottles/image/upload/v1741357094/toddle1.png&quot; alt=&quot;A view of the Toddle.dev interface showing how to create a Weather App&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I&#39;d love to be able to resize the area that has the formulas in it to &amp;quot;un&amp;quot;-hide the menu it is obscuring and I also wish that formula area was not a &lt;a href=&quot;https://www.w3.org/TR/WCAG22/#no-keyboard-trap&quot;&gt;keyboard trap&lt;/a&gt;. So those are the first two things I noticed right away.&lt;/p&gt;
+&lt;p&gt;The second is the way everyone can re-style a heading element (as you will see if you do the Weather App challenge) which you should never do as far as font sizing goes. Styling an &lt;code&gt;h1&lt;/code&gt; to look like an &lt;code&gt;h3&lt;/code&gt; or &lt;code&gt;h4&lt;/code&gt; &lt;a href=&quot;https://www.w3.org/TR/WCAG22/#info-and-relationships&quot;&gt;is not&lt;/a&gt; &lt;img src=&quot;https://www.w3.org/TR/WCAG22/#section-headings&quot; alt=&quot;suggested&quot; /&gt;.&lt;/p&gt;
+&lt;p&gt;Also not a fan of the ability to place placeholders in an input field, but, that is on people to know that placeholders are not labels and placeholders are helper text. Those placeholders that are helper text shouldn&#39;t be read by a screen reader and hidden from assistive technologies. Visual labels are the way, my friends.&lt;/p&gt;
+&lt;p&gt;Speaking of visual labels...&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/colabottles/image/upload/v1741360583/huh.png&quot; alt=&quot;A screen capture of a triangle icon and when hovered over with the cursor, it says, No issues! Good Job!&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;More visual guidance and helper labels/text would be beneficial for anyone with cognitive issues or memory loss. Even for busy people doing ten things at once to where these improvements benefit everyone.&lt;/p&gt;
+&lt;h2 id=&quot;early-final-thoughts&quot; tabindex=&quot;-1&quot;&gt;Early Final Thoughts&lt;/h2&gt;
+&lt;p&gt;Great tool, needs some work, needs an accessibility audit and some retooling in the name of accessibility but overall I like what I am looking at and will continue to tinker around in Toddle. I just hope it is not another tool that gets misused in the name of rapid development forsaking accessibility.&lt;/p&gt;
+&lt;h2 id=&quot;wish-list&quot; tabindex=&quot;-1&quot;&gt;Wish List&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The ability to resize the formula area&lt;/li&gt;
+&lt;li&gt;the ability to not have main parts of onboarding obscured&lt;/li&gt;
+&lt;li&gt;documentation about accessibility (how-to use semantic HTML, examples of an accessible component, guiding the developer through education, good examples vs bad examples, etc.)&lt;/li&gt;
+&lt;li&gt;A good, thorough, accessibility audit and usability audit&lt;/li&gt;
+&lt;li&gt;Better visual guidance (accessibility) and better labelling of interactive components.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;summary&quot; tabindex=&quot;-1&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Todd L. likes Toddle. Again, I know it is a work in progress, so I am interested to see what happens in the future. I really do like this tool and I really did enjoy taking it for a spin. I hope great things come out of this tool for developers.&lt;/p&gt;
+&lt;p&gt;They can always hire me to come on as Head of Accessibility too and we can make this tool even better!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Lazy</title>
+		<link href="https://toddl.dev/posts/lazy/"/>
+		<updated>Sun, 28 Sep 2025 17:00:00 MST</updated>
+		<id>https://toddl.dev/posts/lazy/</id>
+		<content type="html">&lt;h2 id=&quot;hello-again&quot; tabindex=&quot;-1&quot;&gt;Hello again&lt;/h2&gt;
+&lt;p&gt;Well, it certainly has been forever and a day, hasn&#39;t it?&lt;/p&gt;
+&lt;p&gt;I am still around and up to some new shenanigans. Here&#39;s a rundown.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Founded a startup&lt;/li&gt;
+&lt;li&gt;Founded another startup (non-tech)&lt;/li&gt;
+&lt;li&gt;W3C Safety &amp;amp; Deception work for WCAG 3&lt;/li&gt;
+&lt;li&gt;Weekly &amp;amp; Bi-weekly calls with folks&lt;/li&gt;
+&lt;li&gt;Decided to do one more talk at MagnoliaConf in October&lt;/li&gt;
+&lt;li&gt;Recorded a podcast on Boagworld with Paul Boag and Marcus Lillington&lt;/li&gt;
+&lt;li&gt;Health &amp;amp; personal issues because that&#39;s life&lt;/li&gt;
+&lt;li&gt;and trying to land one more role in tech to pay the bills.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Personal little side projects aside, I try to keep busy so I don&#39;t get cabin fever and so far, so good but I am tired, boss. Real tired.&lt;/p&gt;
+&lt;p&gt;Hoping to get to this site soon and clean it up, change the design, and much more.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>The Architecture of Anxiety and Shame, Part One</title>
+		<link href="https://toddl.dev/posts/the-architecture-of-anxiety-and-shame-part-one/"/>
+		<updated>Mon, 06 Oct 2025 17:00:00 MST</updated>
+		<id>https://toddl.dev/posts/the-architecture-of-anxiety-and-shame-part-one/</id>
+		<content type="html">&lt;h2 id=&quot;part-one%2C-the-scarcity-and-pressure-to-make-decisions-and-placing-guilt-in-the-users-lap&quot; tabindex=&quot;-1&quot;&gt;Part One, The Scarcity and Pressure to Make Decisions and Placing Guilt in the Users Lap&lt;/h2&gt;
+&lt;h3 id=&quot;humanity-and-the-choices-people-make&quot; tabindex=&quot;-1&quot;&gt;Humanity and the Choices People Make&lt;/h3&gt;
+&lt;p&gt;In the work and research I have done for a number of years now, I have found that the choices we make as developers, technologists, organizations and companies, founders and CEOs has come down to compromising humanity. There are very few instances I have found where the lines are drawn in the sand and never crossed by anyone I just mentioned, which is why the work I have done to bring perhaps a little bit of change to the WCAG (Web Content Accessibility Guidelines) 3 document (which is still in development and not a standard, please refer to &lt;a href=&quot;https://www.w3.org/TR/WCAG22/&quot;&gt;WCAG 2.2&lt;/a&gt; &lt;a href=&quot;https://www.w3.org/TR/WCAG21/&quot;&gt;or 2.1&lt;/a&gt;) that we can mitigate some of the damage that has been done in the decades of grift and deceit that have been laid over the foundation of the Web as we know it.&lt;/p&gt;
+&lt;p&gt;“In the name of growth and profit!” is the steady battle cry that is silently shouted as the battle horns are sounded from the tops of the towers that CEOs and companies use as a bastion of corporate greed and capitalism and whatever methods they need to employ and deploy, they will certainly get all their workers that fall into line, they will do that for their fearless leaders who strut their stuff once, maybe twice a year on a stage with a big theatrical show for all to see.&lt;/p&gt;
+&lt;p&gt;Lost is the humanity I can see clearly. How that kid that just wanted to code, grew up to want to take over the world and throw away any kind of humanity though, that is the part that baffles me. Where does that get lost and at what point does something inside a person&#39;s head just snap and say, &#39;Let&#39;s do evil things today!&#39;? As I try to answer those questions I have, I also look to help others that are the targets of these deceptive practices now so that they do not fall prey to the silent hunter that is literally stalking them.&lt;/p&gt;
+&lt;p&gt;I wanted to go over four patterns, four of many patterns, that are used to play with people psychologically, that draw out the anxiety and fear, the guilt and shame, and how these patterns are used and what we can do to combat them.&lt;/p&gt;
+&lt;h2 id=&quot;the-three-amigos&quot; tabindex=&quot;-1&quot;&gt;The Three Amigos&lt;/h2&gt;
+&lt;h3 id=&quot;timed-based-urgency%2Ffake-urgency%2Fconfirmshaming&quot; tabindex=&quot;-1&quot;&gt;Timed-based urgency/Fake urgency/Confirmshaming&lt;/h3&gt;
+&lt;p&gt;The exploitation of FOMO (Fear of Missing Out) and social comparison is used a lot. Literally everywhere in a digital space where there is some kind of revenue involved. Social anxiety is something that is used to pressure people into action. Many deceptive patterns come in pairs. Some, come in groups, like The Outsiders (a great movie and book by the way).&lt;/p&gt;
+&lt;p&gt;Fake scarcity (FOMO), time pressure (anxiety), and confirmshaming (guilt/social inadequacy) are used to target the social fears that are very real that affect 1 in 10 Americans. The economic and emotional/psychological cost is massive and any design that amplifies that anxiety for-profit isn&#39;t bad business. It is an ethical attack on the public&#39;s well-being. Businesses that use these patterns should never have business and people should never deal with companies that use these patterns for-profit against them.&lt;/p&gt;
+&lt;h3 id=&quot;the-data-and-key-points&quot; tabindex=&quot;-1&quot;&gt;The Data and Key Points&lt;/h3&gt;
+&lt;p&gt;The condition of social anxiety isn&#39;t just a rare shyness, it is actually &lt;a href=&quot;https://socialphobia.org/social-anxiety-disorder-definition-symptoms-treatment-therapy-medications-insight-prognosis&quot;&gt;the third largest mental health care problem globally according to the Social Anxiety Association&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;According to sources from the National Institute of Mental Health, Yale Medicine, Mental Health America, and the American Psychological Association, 12.1% of adults experience &lt;a href=&quot;https://www.mayoclinic.org/diseases-conditions/social-anxiety-disorder/symptoms-causes/syc-20353561&quot;&gt;Social Anxiety Disorder (SAD)&lt;/a&gt; at some point in their lives. An estimated 7.1% of adults in the U.S. had SAD in the past year, which is approximately 15 million people. Of those adults with SAD in the past year, 29.9% of those people had serious impairment, and 38.8% had moderate impairment in their lives. The onset of SAD typically begins during childhood or teenage years with the median age being 13 years old.&lt;/p&gt;
+&lt;p&gt;The impact on function, work, and education can limit a person&#39;s participation in society, which is exactly where deceptive patterns in consumer tech can inflict the most damage. For instance individuals with SAD are over two times more likely to be unemployed than those without the disorder. Approximately 20% os people with SAD reported declining a job offer or promotion due to social fears.&lt;/p&gt;
+&lt;p&gt;Patients with SAD report greater absenteeism and reduced productivity due to social fears compared to control groups. Individuals with SAD are significantly less likely to aspire to social jobs suggesting they pre-emptively narrow their careers paths to avoid social scrutiny. SAD is consistently linked to lowered educational attainment, reduced income, and financial dependence.&lt;/p&gt;
+&lt;p&gt;The presence of SAD makes people vulnerable to other issues which is exactly the vulnerability that deceptive patterns seek to exploit in people. 66% of people with SAD have one or more additional mental health disorders, most common is clinical depression. An estimated one-fifth of people with SAD also struggle with alcohol use disorder. Women are more likely to have SAD than men, 8% to 6.1% past-year prevalence in U.S. adults.&lt;/p&gt;
+&lt;p&gt;Passive social media usage has been directly linked to an increase in social anxiety symptoms in some people.&lt;/p&gt;
+&lt;h2 id=&quot;the-examples&quot; tabindex=&quot;-1&quot;&gt;The Examples&lt;/h2&gt;
+&lt;h3 id=&quot;fake-scarcity&quot; tabindex=&quot;-1&quot;&gt;Fake Scarcity&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;The Pattern:&lt;/strong&gt; Creating a false sense of limited availability of a product to pressure a user into an immediate purchase.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Sources:&lt;/strong&gt; Booking and travel websites.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Case:&lt;/strong&gt; You have seen them in your digital travels. Many major flight and hotel booking platforms that display messages like “Only 4 rooms left!” or “Only 2 seats remaining!” Even, “6 people are booking this flight right now!”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Deception:&lt;/strong&gt; Often, the price is not the only price or the scarcity is only for a specific, non-essential room type, for instance. The key manipulation is the weaponization of FOMO to get the user to skip comparison shopping, to get them to make a rash decision, or even review the cancellation policy. The war cry here is “Get the sale by any means necessary!”&lt;/p&gt;
+&lt;h3 id=&quot;time-pressure&quot; tabindex=&quot;-1&quot;&gt;Time Pressure&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;The Pattern:&lt;/strong&gt; Usage of countdown timer or short windows of expiration that are often meaningless or reset easily, preventing rational-based decision-making.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Sources:&lt;/strong&gt; Flash sales and countdown clocks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Case:&lt;/strong&gt; A popular e-commerce site uses a platform that is the widely used platform for e-com websites. That popular e-com platform has a plugin store, and that plugin store has a plugin for flash sales. “Sale ends in 11:34:21!” that is thrown in your face, you cannot miss the component this thing has been designed by. In fact, this is a plugin that got banned from this very widely-used e-com platform&#39;s plugin store, yet they still exist as a standalone product! You can go into the (plugin, at the time) administration panel and choose to restart the timer and just restart it whenever you feel the desire to. A 24 hour flash sale could, in reality, last as long as the company wants.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Deception:&lt;/strong&gt; The deal usually reappears the next day or the timer magically resets if the user refreshes the page or the user returns later. The pattern is aimed at inducing anxiety and panic, thus making the cognitive load so high, that the user clicks that buy button before they have time to consider anything about what impact buying the product will have on them financially, the necessity of having that product, or even the actual value of owning that product.&lt;/p&gt;
+&lt;h3 id=&quot;confirmshaming&quot; tabindex=&quot;-1&quot;&gt;Confirmshaming&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;The Pattern:&lt;/strong&gt; Insulting the target user or guilt-tripping them into opting into a service or remaining in a subscription they don&#39;t want or a mailing list they didn&#39;t sign up for.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Sources:&lt;/strong&gt; E-mail opt-outs and newsletter subscriptions and pop-ups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Case:&lt;/strong&gt; When presented with an offer (usually a pop-up) to join a newsletter, the user clicks the “No” or “Decline” option, but the next pop-up or message shown is of text that is written to make the user seem foolish, selfish, morally inferior, or even less-than. A horrible individual even.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Deception:&lt;/strong&gt; Instead of a very simple, “No thanks”, the button or message reads, “No thanks, I don&#39;t want to save money today.” or “No, I don&#39;t care about that and prefer to stay in the dark.” Some even use cartoon or animated mascots or animals shedding a tear (looking at a very prolific language-learning platform who did this in the past and your green mascot).&lt;/p&gt;
+&lt;h2 id=&quot;summary&quot; tabindex=&quot;-1&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;To wrap this part one of a multi-part series on deceptive patterns and the weaponization behind them, I urge people to take their time and slow down. I know in the fast-paced world our lives are a mile-a-minute kind of speed where we have things to do and get things done. There is only twenty-four hours in a day and there isn&#39;t time to stray from the course. But you &lt;strong&gt;can&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Take time out and just do your due diligence. I know it is easy for me to say. Me, the author of this article, but I have experienced this very thing myself. SAD, FOMO, being manipulated by capitalism and corporate greed, deceptive patterns. I have lived this! Take your time, put an extra 15 minutes or more aside when you need to do a task online that involved &lt;strong&gt;your money&lt;/strong&gt;. I don&#39;t let these companies take my money freely anymore. Neither should you.&lt;/p&gt;
+&lt;p&gt;Noticing the signs can be the first step to minimizing the impact these deceptive patterns have on us. Educating yourselves to make the right choice and steer clear of any company using these tactics, not doing business with the companies, can have a profound effect on a person. I can attest to this. The freedom I have now to spot the pattern and stay away from that temptation is great. It does not mean I don&#39;t occasionally fall prey to it, because I still do. This is why I wrote this article and I am writing more parts to this, and why I chose to deep dive into this to educate people.&lt;/p&gt;
+&lt;p&gt;Hopefully, this helps someone and we can fight these practices and learn, grow, and become aware that fighting deceptive patterns and practices can lead to better mental health, better choices, retaining our finances, and a little bit less stress, anxiety, shame, guilt, and fear in our lives. It can also show companies and corporations that the long-standing practice of eroding the general public&#39;s mental health is over and that we will not be subjected to these practices for the betterment of our lives.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
