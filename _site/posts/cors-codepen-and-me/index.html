@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Eleventy v3.0.0">
-    <meta name="description" content="My adventures solving the CORS issue.">
-    <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
-    <!-- For OpenGraph -->
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content=/feed/feed.xml" />
-    <meta property="og:title" content="CORS, CodePen &amp; Me"/>
-    <meta property="og:description" content="My adventures solving the CORS issue." />
-    <meta property="og:image" content="" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="675" />
-    <title>CORS, CodePen &amp; Me</title>
-    <link rel="stylesheet" href="/css/index.css" />
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
-    <link rel="icon" href="/img/favicon.png" />
-    <link rel="prefetch" as="script" href="../../svgxuse.min.js">
-  </head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="view-transition" content="same-origin">
+      <meta name="generator" content="Eleventy v3.1.2">
+      <meta name="description" content="My adventures solving the CORS issue.">
+      <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+      
+      <!-- For OpenGraph -->
+      <meta property="og:title" content="CORS, CodePen &amp; Me" />
+      <meta property="og:description" content="My adventures solving the CORS issue." />
+      <meta property="og:image" content="">
+      <meta property="og:image:alt" content="Todd Libby has written a post called, CORS, CodePen &amp; Me" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:title" content="My adventures solving the CORS issue.">
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://toddl.dev">
+      <title>CORS, CodePen &amp; Me</title> 
+
+      <link rel="stylesheet" href="/css/index.css" />
+      <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+      <link rel="icon" href="/img/favicon.png" />
+      <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
+    </head>   
   <body>
     <div class="wrapper">
       <header>
         <a href="#main" class="visible-hidden">Skip to content</a>
-          <a href="/" class="page-title" id="title">Todd Libby</a>
-            <nav>
+          <a href="/" class="page-title" id="title">
+            <img src="https://res.cloudinary.com/colabottles/image/upload/v1735093366/lobstah_logo.png" alt="A Lobster logo." />
+          </a>
+            <nav aria-label="main-navigation">
               <ul class="navigation main-nav"><li class="nav-item">
                     <a href="/blog/">Blog</a>
                   </li><li class="nav-item">
@@ -36,19 +48,19 @@
             </nav>
       </header>
 
-      <main id="main" class="inner">
+      <main id="main" class="inner ">
         
 <div class="article-container">
   <article>
 
-    <header class="article__header">
+    <header class="article__header cal-sans-regular">
       <h1 class="page-title">CORS, CodePen &amp; Me</h1>
         <div class="article__meta">
           <time>06 September, 2019</time>
         </div>
     </header>
 
-    <section class="article__body">
+    <section class="article__body inter-tight-content">
       <h3 id="cors%2C-codepen-and-me" tabindex="-1">CORS, CodePen and Me</h3>
 <p>I have been experimenting and leaning about Variable Fonts ever since <a href="https://rwt.io">Jason Pamental</a> spoke at An Event Apart this past May in Boston. I had been following Jason as well as Mandy Michael and Scott Kellum’s works/tweets/articles/talks as well. All great stuff.</p>
 <p>I was (and still am very much so) intrigued, as I am with most everything spoken about at conferences, in using variable fonts for not only my site but for work projects as well. When <a href="https://ethanmarcotte.com">Ethan Marcotte</a> coined “responsive web design” I wondered shortly afterwards, “I wonder if fonts and typography will be soon to follow?” Well, much to my delight it did!</p>
@@ -82,23 +94,36 @@ Content-Type = "application/font-ttf"</code></pre>
 <p>Thanks to <a href="https://twitter.com/@jpamental">Jason Pamental - @jpamental</a>, <a href="https://twitter.com/@ScottKellum">Scott Kellum - @ScottKellum</a> and <a href="https://twitter.com/@sarah_edo">Sarah Drasner - @sarah_edo</a> for their guidance and assistance!</p>
 
     </section>
+
+    <section class="post__likes" data-bsky-container>
+      <h3 class="post__likesTitle">
+        🦞 <span data-bsky-likes-count></span> likes on Bluesky
+      </h3>
+      <a class="post__likesCta" href="https://bsky.app/profile/toddl.dev/post/" target="_blank">
+        Like this post on 🦋Bluesky to see your face on this page
+      </a>
+      <ul data-bsky-likes class="post__likesList"></ul>
+    </section>
   </article>
+
+  <meta data-bsky-post-id="" />
+  <script src="../../bluesky_likes.js"></script>
+
 </div>
 
       </main>
 
       <footer class="meta footer">
-        <h2>&copy;1999 &mdash; 2024, Todd Libby.</h2>
-          <nav>
-            <ul class="nav list-inline">
+        <h2 class="league-gothic-heading">&copy;1999 &mdash; <script>document.write(new Date().getFullYear());</script>, Todd Libby.</h2>
+          <nav aria-labelledby="majorlinks">
+            <ul class="nav list-inline" id="majorlinks">
               <li class="nav-item"><a href="/podcast">Podcast</a></li>
               <li class="nav-item"><a href="/events">Events</a></li>
               <li class="nav-item"><a href="/speaking">Speaking</a></li>
               <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
             </ul>
           </nav>
-        <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #ProtectTransKids</h2>
-
+        <h2 class="league-gothic-heading">#BlackLivesMatter &middot; #StopAsianHate &middot; #ProtectTransKids</h2>
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
           <h2 id="a11y-webring-club">a11y-webring.club</h2>
           <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
@@ -109,7 +134,7 @@ Content-Type = "application/font-ttf"</code></pre>
           </ul>
         </nav>
 
-        <nav>
+        <nav aria-label="social-nav">
           <ul class="footer-icons">
             <li>
               <a href="https://codepen.io/colabottles/#" class="codepen">
@@ -139,8 +164,9 @@ Content-Type = "application/font-ttf"</code></pre>
               </a>
             </li>
             <li>
-              <a href="https://bsky.app/profile/@toddl.dev" class="bluesky-flutter">
-                <svg id="flutterby" class="bluesky-flutter" viewBox="0 0 566 500" xmlns="http://www.w3.org/2000/svg">
+              <a href="https://bsky.app/profile/toddl.dev" class="bluesky-flutter">
+                <svg id="flutterby" class="bluesky-flutter" viewBox="0 0 566 650" xmlns="http://www.w3.org/2000/svg">
+                <title>Todd's Bluesky account</title>
                   <defs>
                     <path id="wing" fill="currentColor" d="M 123.244 35.008 C 188.248 83.809 283.836 176.879 283.836 235.857 C 283.836 316.899 283.879 235.845 283.836 376.038 C 283.889 375.995 282.67 376.544 280.212 383.758 C 266.806 423.111 214.487 576.685 94.841 453.913 C 31.843 389.269 61.013 324.625 175.682 305.108 C 110.08 316.274 36.332 297.827 16.093 225.504 C 10.271 204.699 0.343 76.56 0.343 59.246 C 0.343 -27.451 76.342 -0.206 123.244 35.008 Z" />
                   </defs>
@@ -169,6 +195,7 @@ Content-Type = "application/font-ttf"</code></pre>
             </li>
           </ul>
         </nav>
+        🇺🇦
       </footer>
     </div>
   </body>

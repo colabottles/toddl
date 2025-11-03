@@ -7,26 +7,36 @@
       <meta name="generator" content="{{ eleventy.generator }}">
       <meta name="description" content="{{ renderData.description or description or metadata.description }}">
       <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+
       <!-- For OpenGraph -->
-      <meta property="og:type" content="article" />
-      <meta property="og:url" content=https://toddl.dev/" />
-      <meta property="og:title" content="{{ title }}"/>
-      <meta property="og:description" content="{{ description }}" />
-      <meta property="og:image:alt" content="Todd Libby, {{ title }}" />
-      <meta property="og:image" content="https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png" />
+      <meta property="og:title" content="{{ title or site.title }}" />
+      <meta property="og:description" content="{{ description or site.description }}" />
+      <meta property="og:image" content="{{ image }}">
+      <meta property="og:image:alt" content="Todd Libby has written a post called, {{ title }}" />
+      <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="675" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:title" content="{{ description or site.description }}">
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://toddl.dev">
       <title>{{ renderData.title or title or metadata.title }}</title>
+
       <link rel="stylesheet" href="{{ '/css/index.css' | url }}" />
       <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml">
       <link rel="icon" href="{{ '/img/favicon.png' | url }}" />
       <link rel="prefetch" as="script" href="{{ '../../svgxuse.min.js' | url }}">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
     </head>
   <body>
     <div class="wrapper">
       <header>
         <a href="#main" class="visible-hidden">Skip to content</a>
-          <a href="{{ '/' | url }}" class="page-title" id="title">Todd Libby</a>
+          <a href="{{ '/' | url }}" class="page-title" id="title">
+            <img src="https://res.cloudinary.com/colabottles/image/upload/v1761592721/lobster.png" alt="A Lobster logo." />
+          </a>
             <nav aria-label="main-navigation">
               <ul class="navigation main-nav">
                 {%- for nav in collections.nav | sort(attribute="date") -%}
@@ -43,17 +53,16 @@
       </main>
 
       <footer class="meta footer">
-        <h2>&copy;1999 &mdash; <script>document.write(new Date().getFullYear());</script>, Todd Libby.</h2>
-          <nav>
-            <ul class="nav list-inline">
+        <h2 class="league-gothic-heading">&copy;1999 &mdash; <script>document.write(new Date().getFullYear());</script>, Todd Libby.</h2>
+          <nav aria-labelledby="majorlinks">
+            <ul class="nav list-inline" id="majorlinks">
               <li class="nav-item"><a href="{{ '/podcast' | url }}">Podcast</a></li>
               <li class="nav-item"><a href="{{ '/events' | url }}">Events</a></li>
               <li class="nav-item"><a href="{{ '/speaking' | url }}">Speaking</a></li>
               <li class="nav-item"><a href="{{ '/a11y' | url }}">Accessibility Statement</a></li>
             </ul>
           </nav>
-        <h2>#BlackLivesMatter &middot; #StopAsianHate &middot; #ProtectTransKids</h2>
-
+        <h2 class="league-gothic-heading">#BlackLivesMatter &middot; #StopAsianHate &middot; #ProtectTransKids</h2>
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
           <h2 id="a11y-webring-club">a11y-webring.club</h2>
           <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
@@ -64,7 +73,7 @@
           </ul>
         </nav>
 
-        <nav>
+        <nav aria-label="social-nav">
           <ul class="footer-icons">
             <li>
               <a href="https://codepen.io/colabottles/#" class="codepen">
@@ -125,6 +134,7 @@
             </li>
           </ul>
         </nav>
+        🇺🇦
       </footer>
     </div>
   </body>

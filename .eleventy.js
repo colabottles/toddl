@@ -19,6 +19,10 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('dd LLLL, yyyy');
   });
 
+  eleventyConfig.addFilter("limit", function (arr, limit) {
+    return arr.slice(0, limit);
+  });
+
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {
@@ -75,6 +79,7 @@ module.exports = function(eleventyConfig) {
 };
 
   return {
+    markdownTemplateEngine: "njk",
     templateFormats: ["md", "njk", "html", "liquid", "js"],
 
     // If your site lives in a different subdirectory, change this.
@@ -83,7 +88,6 @@ module.exports = function(eleventyConfig) {
     // This is only used for URLs (it does not affect your file structure)
     pathPrefix: "/",
 
-    markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     passthroughFileCopy: true,
