@@ -23,7 +23,7 @@ I am still around and up to some new shenanigans. Here's a rundown.
 - Decided to do one more talk at MagnoliaConf in October
 - Recorded a podcast on Boagworld with Paul Boag and Marcus Lillington
 - Health & personal issues because that's life
-- and trying to land one more role in tech to pay the bills.
+- and trying to land one more role in tech.
 
 Personal little side projects aside, I try to keep busy so I don't get cabin fever and so far, so good but I am tired, boss. Real tired.
 
