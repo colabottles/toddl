@@ -8,8 +8,6 @@ tags:
   - accessibility
   - disabledcommunity
 layout: layouts/post.njk
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png
-bskyPostId: 3lauorp3v4k2g
 ---
 
 ## The Promise of AI-Powered Accessibility
@@ -34,13 +32,13 @@ Overreliance on AI can also lead to the neglect of fundamental accessibility pri
 
 ## Long-Standing AI Accessibility Tools
 
-Several AI-powered accessibility tools have maintained presence for years now, demonstrating both longevity and continued evolution. Google's Live Transcribe, launched in 2019, uses speech recognition to provide real-time captioning on Android devices. Microsoft's Seeing AI, also released in 2017, narrates the visual world for blind and low-vision users through their smartphone cameras, identifying objects, reading text, and describing scenes.
+Several AI-powered accessibility tools have maintained presence for years now, demonstrating both longevity and continued evolution. [Google's Live Transcribe](https://www.android.com/accessibility/live-transcribe/), launched in 2019, uses speech recognition to provide real-time captioning on Android devices. [Microsoft's Seeing AI](https://www.microsoft.com/en-us/garage/wall-of-fame/seeing-ai/), also released in 2017, narrates the visual world for blind and low-vision users through their smartphone cameras, identifying objects, reading text, and describing scenes.
 
-Apple's VoiceOver screen reader has incorporated machine learning elements since at least 2019, using AI to improve image recognition and provide better descriptions of on-screen content. Dragon NaturallySpeaking, now Dragon Professional, has used various forms of AI and machine learning for speech recognition since well before 2020, continuously improving its accuracy and adaptability.
+[Apple's VoiceOver](https://developer.apple.com/documentation/accessibility/voiceover/) screen reader has incorporated machine learning elements since at least 2019, using AI to improve image recognition and provide better descriptions of on-screen content. [Dragon NaturallySpeaking](https://www.nuance.com/dragon.html), now _Dragon Professional_, has used various forms of AI and machine learning for speech recognition since well before 2020, continuously improving its accuracy and adaptability.
 
-Otter.ai, launched in 2016, provides AI-powered transcription services used by deaf and hard-of-hearing students and professionals. While primarily a transcription tool, its accessibility applications have made it valuable in educational and workplace settings. Windows' built-in voice typing and dictation features have incorporated increasingly sophisticated AI since their introduction in Windows 10.
+[Otter.ai](https://otter.ai/), launched in 2016, provides AI-powered transcription services used by deaf and hard-of-hearing students and professionals. While primarily a transcription tool, its accessibility applications have made it valuable in educational and workplace settings. Windows' built-in voice typing and dictation features have incorporated increasingly sophisticated AI since their introduction in Windows 10.
 
-Be My Eyes represents a particularly innovative approach to AI accessibility. Originally launched in 2015 as a platform connecting blind and low-vision users with sighted volunteers through video calls, the service evolved significantly with the introduction of its Virtual Volunteer feature in 2023. This AI-powered assistant uses advanced vision models to analyze images captured by users and answer questions about their surroundings, read labels, provide navigation guidance, and assist with countless daily tasks.
+[Be My Eyes](https://www.bemyeyes.com/) represents a particularly innovative approach to AI accessibility. Originally launched in 2015 as a platform connecting blind and low-vision users with sighted volunteers through video calls, the service evolved significantly with the introduction of its Virtual Volunteer feature in 2023. This AI-powered assistant uses advanced vision models to analyze images captured by users and answer questions about their surroundings, read labels, provide navigation guidance, and assist with countless daily tasks.
 
 The integration of AI hasn't replaced the human volunteer network but rather complements it, offering immediate assistance when volunteers aren't available or for quick queries that don't require human judgment. This hybrid model demonstrates how AI can enhance rather than eliminate human connection in accessibility services, providing both technological efficiency and the warmth of community support.
 
