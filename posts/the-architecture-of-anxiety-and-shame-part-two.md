@@ -71,61 +71,61 @@ Stopping cues are the natural pauses in an experience — the end of a page, the
 
 ### Examples of Stopping Cues
 
-- Pagination
+#### Pagination
 
 Example: A &ldquo;Next page&rdquo; button at the end of search results.
 What it does: Forces a conscious choice: &ldquo;Do I want to keep going?&rdquo;
 Removed version: Infinite scroll keeps feeding content endlessly, removing the reflection point.
 
-- End of an Article or Section
+#### End of an Article or Section
 
 Example: Reaching the end of a blog post.
 Stopping cue: A natural break — the reading task is complete.
 Removed version: Auto-loading the next article, keeping users from feeling &ldquo;finished.&rdquo;
 
-- A Confirm or Complete Button
+#### A Confirm or Complete Button
 
 Example: &ldquo;Submit,&rdquo; &ldquo;Finish,&rdquo; &ldquo;Place order,&rdquo; &ldquo;Cancel subscription.&rdquo;
 Stopping cue: Allows users to finalize a mental task and move on.
 Removed version: Breaking the action into multiple hidden steps without confirming completion.
 
-- Load More Button
+#### Load More Button
 
 Example: Social media pages showing a limited number of posts with a &ldquo;Load more&rdquo; option.
 Stopping cue: Users take stock before loading more content.
 Removed version: Infinite scroll (removes the deliberate choice to continue).
 
-- Checkout Review Screen
+#### Checkout Review Screen
 
 Example: A summary of your cart before payment.
 Stopping cue: Encourages review, consideration, and intention.
 Removed version: One-click purchasing that bypasses reflection and increases impulse behavior.
 
-- End-of-Video Playback
+#### End-of-Video Playback
 
 Example: A video ends and pauses.
 Stopping cue: The user chooses whether to watch more.
 Removed version: Auto-play automatically begins the next video, bypassing the decision point.
 
-- Session Timeout Prompts
+#### Session Timeout Prompts
 
 Example: &ldquo;Are you still watching?&rdquo; / &ldquo;Still browsing?&rdquo;
 Stopping cue: Signals a check-in moment and chance to disengage.
 Removed version: Sites that never pause playback or activity, encouraging passive overuse.
 
-- Natural End of a Workflow
+#### Natural End of a Workflow
 
 Example: Completing a form returns the user to a dashboard.
 Stopping cue: Signals the task is complete.
 Removed version: Forms that loop users into upsells, surveys, or optional extras that look mandatory.
 
-- Breaks Between Notifications
+#### Breaks Between Notifications
 
 Example: A notification digest that comes once a day.
 Stopping cue: Encourages controlled re-engagement.
 Removed version: Real-time, continuous notifications that keep pulling users back.
 
-- Physical World Stopping Cues
+#### Physical World Stopping Cues
 
 These can help illustrate your point with a relatable analogy:
 The last page of a book
