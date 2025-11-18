@@ -1,7 +1,7 @@
 ---
 title: The Architecture of Anxiety and Shame, Part Two
 description: How they trap you and pressure you into staying in a toxic relationship.
-date: 2024-11-12 ## YYYY-MM-DD
+date: 2025-11-17 ## YYYY-MM-DD
 tags:
   - post ## LEAVE THIS TAG HERE
   - roachmotel
