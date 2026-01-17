@@ -20,14 +20,14 @@ My background allows me to pick up on programming pretty good these days, that s
 
 ### The Post I Saw
 
-I was on my usual jaunt through Bluesky seeing if there was anything positive or interesting to read and laid eyes [https://bsky.app/profile/stephfh.dev/post/3mbmrbat4os2u](on this comment) and the reply to it by [Daniel Roe](https://roe.dev), lead maintainer with the Nuxt core team. I thought to myself, _"This looks like a funny thing I can do, here is something I can challenge myself with."_ and thus I started doing the research.
+I was on my usual jaunt through Bluesky seeing if there was anything positive or interesting to read and laid eyes [on this comment](https://bsky.app/profile/stephfh.dev/post/3mbmrbat4os2u) and the reply to it by [Daniel Roe](https://roe.dev), lead maintainer with the Nuxt core team. I thought to myself, _"This looks like a funny thing I can do, here is something I can challenge myself with."_ and thus I started doing the research.
 
 ### The ~~Problem~~ Issue That Started It All
 
-If you've built anything with Nuxt (or anything with anything really), you've probably written this code dozens of times:
+If you've built anything with Nuxt (or anything with anything really), you've probably written this code (or something similar) dozens of times:
 
-```vue
-<div style="display: grid; place-items: center; min-height: 100vh">
+```html
+<div style="display: grid; place-items: center; min-height: 25vh">
   <button>Perfectly Centered</button>
 </div>
 ```
