@@ -543,8 +543,8 @@ section.article__body h3 {
 
 section.article__body ol,
 section.article__body ul {
-  margin-left: 5em;
-  padding: 1rem 0
+  margin-left: 2em;
+  padding: 0
 }
 
 .article__body blockquote ol {
