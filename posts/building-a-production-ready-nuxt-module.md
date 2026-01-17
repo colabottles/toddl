@@ -46,7 +46,7 @@ I decided to try and solve this once and for all by building `@colabottles/cente
 
 My first attempt was straightforward—create a Vue component that applies centering styles:
 
-```vue
+```html
 <script setup>
 const props = defineProps({
   minHeight: String
@@ -80,7 +80,7 @@ After researching (and a lot of trial and error), I discovered the issue was abo
 
 **1. Use `computed` styles instead of reactive object spreads:**
 
-```vue
+```typescript
 <script setup lang="ts">
 import { computed } from 'vue'
 
@@ -153,8 +153,8 @@ Many centering techniques use absolute positioning or flexbox in ways that chang
 
 Instead of `min-height`, I used `min-block-size` to respect writing modes and text direction:
 
-```vue
-<CenterDiv min-block-size="100vh">
+```html
+<CenterDiv min-block-size="25vh">
   Content
 </CenterDiv>
 ```
@@ -169,7 +169,7 @@ The component doesn't add any ARIA  attributes, change roles, or trap focus. It'
 
 The `as` prop lets users choose the correct semantic element:
 
-```vue
+```html
 <!-- Default: <section> -->
 <CenterDiv>Content</CenterDiv>
 
@@ -517,7 +517,7 @@ export default defineNuxtConfig({
 
 ### Component Usage
 
-```vue
+```html
 <template>
   <!-- Full viewport centering -->
   <CenterDiv min-block-size="100vh">
@@ -538,7 +538,7 @@ export default defineNuxtConfig({
 
 ### Directive Usage
 
-```vue
+```html
 <template>
   <div v-center>
     Quick full-viewport centering
@@ -597,7 +597,7 @@ Ideas for future versions:
 
 1. **Gap prop** for spacing between centered items:
 
-   ```vue
+   ```html
    <CenterDiv gap="2rem">
      <button>One</button>
      <button>Two</button>
@@ -608,7 +608,7 @@ Ideas for future versions:
 
 3. **Max inline size** for constraining width:
 
-   ```vue
+   ```html
    <CenterDiv max-inline-size="60ch">
      <article>Readable text width</article>
    </CenterDiv>
@@ -630,7 +630,7 @@ npm install @colabottles/center-div
 
 - [npm:](https://www.npmjs.com/package/@colabottles/center-div)
 - [GitHub:](https://github.com/colabottles/center-div-module)
-- Documentation:See README on GitHub
+- Documentation: _See README on GitHub_
 
 ---
 
