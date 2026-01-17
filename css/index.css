@@ -1393,7 +1393,7 @@ a.bluesky-flutter:hover svg {
 .post__likesTitle {
   font-size: var(--font-size-large);
   color: #fff;
-  margin-top: 1.5rem
+  margin-top: 3em
 }
 
 .post__likesCta {
