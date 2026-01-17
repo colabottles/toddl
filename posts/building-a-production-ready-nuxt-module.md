@@ -563,7 +563,7 @@ Small details make a huge difference:
 
 Every test I wrote caught a real bug. The time invested in testing paid off immediately.
 
-### 3. Accessibility Isn't Optional
+### 3. Accessibility Isn't Optional (Which I Already Knew)
 
 Building accessible components from the start is easier than retrofitting them later. Using semantic HTML and CSS Grid made accessibility almost automatic.
 
