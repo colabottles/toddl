@@ -584,7 +584,7 @@ li {
 
 article ul li::marker {
   counter-increment: none;
-  content: '🦞'
+  content: '🦞 '
 }
 
 .content__placeholder {
