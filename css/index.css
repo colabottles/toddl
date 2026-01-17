@@ -73,12 +73,12 @@ q:after, q:before {
   --medium: 960px;
   --small: 515px;
   /* Add missing font-size variables for consistency if needed, e.g. */
-  --font-size-xsmall: 0.75rem; 
-  --font-size-small: 0.83rem; 
-  --font-size-article: 1rem; 
-  --font-size-large: 1.17rem; 
-  --font-size-xlarge: 1.5rem; 
-  --font-size-xxlarge: 2rem; 
+  --font-size-xsmall: 0.75rem;
+  --font-size-small: 0.83rem;
+  --font-size-article: 1rem;
+  --font-size-large: 1.17rem;
+  --font-size-xlarge: 1.5rem;
+  --font-size-xxlarge: 2rem;
 }
 
 /* 3. FIXED: Uncommented and defined all heading sizes */
@@ -288,7 +288,7 @@ main {
     /* Sets up a single, full-width column */
     grid-template-columns: 1fr;
     /* Optional: Adds uniform side padding/gutters to the container itself */
-    padding-inline: var(--inset, 0.5rem); 
+    padding-inline: var(--inset, 0.5rem);
     grid-column: auto; /* Ensure this is not overriding the new 1fr grid */
   }
 
@@ -328,13 +328,13 @@ main {
     width: auto; /* Reset explicit widths */
     grid-column: 1 / -1; /* Ensure they span the single column */
   }
-  
+
   section.article__body ol,
   section.article__body ul {
     margin-left: 1rem; /* Reduce margin on small screen */
     padding: 1rem 0
   }
-  
+
   ul.event-list, ul.event-past, ul.podcast-list {
     margin-left: 0.5em
   }
@@ -347,7 +347,7 @@ main {
   p+p {
     margin-top: 1em
   }
-  
+
   ul.navigation a {
     padding: 0 1rem;
     text-decoration: underline
@@ -584,7 +584,7 @@ li {
 
 article ul li::marker {
   counter-increment: none;
-  content: none
+  content: '🦞'
 }
 
 .content__placeholder {
