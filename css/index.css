@@ -19,17 +19,83 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  font: inherit; /* Keep font inheritance here */
+  font: inherit;
+  /* Keep font inheritance here */
 }
 
 /* 2. Standard Reset (Consolidated) */
-a, abbr, address, article, aside, audio, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, iframe, img, ins, label, legend, li, main, mark, nav, ol, p, pre, q, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, video {
+a,
+abbr,
+address,
+article,
+aside,
+audio,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+main,
+mark,
+nav,
+ol,
+p,
+pre,
+q,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+video {
   margin: 0;
   padding: 0;
   border: 0
 }
 
-li, ol, ul {
+li,
+ol,
+ul {
   margin: 0;
   padding: 0
 }
@@ -43,7 +109,8 @@ q {
   quotes: none
 }
 
-q:after, q:before {
+q:after,
+q:before {
   content: "";
   content: none
 }
@@ -89,7 +156,11 @@ h4 {font-size: 1rem;}
 h5 {font-size: .83rem;}
 h6 {font-size: .67rem;} */
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   text-transform: uppercase;
 }
 
@@ -109,7 +180,9 @@ h1,h2,h3,h4,h5 {
 
 
 /* Image and Media Styles */
-img, video, iframe {
+img,
+video,
+iframe {
   max-inline-size: 100%;
   block-size: auto;
   object-fit: contain
@@ -120,7 +193,8 @@ img:not([alt]) {
   border: 5px solid red
 }
 
-iframe, video {
+iframe,
+video {
   aspect-ratio: 16/9;
   height: auto;
   max-width: 100vmin
@@ -141,7 +215,8 @@ img.lazyload {
 }
 
 /* Link Styles */
-a, a:visited {
+a,
+a:visited {
   color: inherit
 }
 
@@ -208,12 +283,19 @@ p {
   margin-block: 1lh;
 }
 
-p+p, p~p {
+p+p,
+p~p {
   padding: .25em
 }
 
 /* Base Grid/Flex Display for Semantic Elements */
-article, aside, footer, header, main, nav, section {
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
   display: grid
 }
 
@@ -246,7 +328,14 @@ main {
 }
 
 /* Standard content column span */
-.about-container, .about-intro, .article-container, .blogroll-container, .page-container, .uses-links, section.article__body, article.archive-list {
+.about-container,
+.about-intro,
+.article-container,
+.blogroll-container,
+.page-container,
+.uses-links,
+section.article__body,
+article.archive-list {
   grid-column: 2/12
 }
 
@@ -255,8 +344,10 @@ main {
    ==================================== */
 
 @media only screen and (max-width: 960px) {
+
   /* Reduce fixed max width for better centering on medium screens */
-  .wrapper, main {
+  .wrapper,
+  main {
     grid-template-columns: [full-start] minmax(calc(calc(100% - 960px)/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 960px)/2), 1fr) [full-end];
   }
 
@@ -273,7 +364,10 @@ main {
     flex-wrap: wrap
   }
 
-  .copyright, footer, .sections, .article {
+  .copyright,
+  footer,
+  .sections,
+  .article {
     grid-column: 2/10
   }
 }
@@ -283,13 +377,17 @@ main {
    The invalid 'calc(calc(100% - 540px)/2)' calculation is removed.
 */
 @media only screen and (max-width: 540px) {
-  .wrapper, main, .inner {
+
+  .wrapper,
+  main,
+  .inner {
     display: grid;
     /* Sets up a single, full-width column */
     grid-template-columns: 1fr;
     /* Optional: Adds uniform side padding/gutters to the container itself */
     padding-inline: var(--inset, 0.5rem);
-    grid-column: auto; /* Ensure this is not overriding the new 1fr grid */
+    grid-column: auto;
+    /* Ensure this is not overriding the new 1fr grid */
   }
 
   /* Force all main content elements to span the single column */
@@ -309,8 +407,10 @@ main {
   footer,
   .contact,
   .post__likes {
-    grid-column: 1 / -1; /* Span from the first line to the last line */
-    width: auto; /* Remove explicit width constraints */
+    grid-column: 1 / -1;
+    /* Span from the first line to the last line */
+    width: auto;
+    /* Remove explicit width constraints */
     margin-right: 0;
   }
 
@@ -318,24 +418,30 @@ main {
   ul.navigation {
     display: flex;
     padding: 0;
-    min-width: 100%; /* Use 100% instead of 100vw to stay within wrapper's bounds */
+    min-width: 100%;
+    /* Use 100% instead of 100vw to stay within wrapper's bounds */
     justify-content: space-around;
   }
 
   .article-container,
   .article__header,
   .article__title {
-    width: auto; /* Reset explicit widths */
-    grid-column: 1 / -1; /* Ensure they span the single column */
+    width: auto;
+    /* Reset explicit widths */
+    grid-column: 1 / -1;
+    /* Ensure they span the single column */
   }
 
   section.article__body ol,
   section.article__body ul {
-    margin-left: 1rem; /* Reduce margin on small screen */
+    margin-left: 1rem;
+    /* Reduce margin on small screen */
     padding: 1rem 0
   }
 
-  ul.event-list, ul.event-past, ul.podcast-list {
+  ul.event-list,
+  ul.event-past,
+  ul.podcast-list {
     margin-left: 0.5em
   }
 
@@ -583,6 +689,11 @@ li {
 }
 
 article ul li::marker {
+  counter-increment: none;
+  content: none
+}
+
+article section.article__body ul li::marker {
   counter-increment: none;
   content: '🦞 '
 }
@@ -1047,7 +1158,8 @@ blockquote a:hover {
   color: var(--ecto)
 }
 
-em, blockquote em {
+em,
+blockquote em {
   font-style: italic
 }
 
@@ -1209,27 +1321,32 @@ a.bluesky-flutter:hover svg {
 .bluesky-flutter .left {
   transform-origin: center;
 }
+
 .bluesky-flutter .right {
   transform-origin: center;
   transform: scale(-1, 1);
 }
+
 .bluesky-flutter:hover .left,
 .bluesky-flutter:focus .left {
-   animation: flutter 430ms ease-in-out;
-   --flip: 1;
+  animation: flutter 430ms ease-in-out;
+  --flip: 1;
 }
+
 .bluesky-flutter:hover .right,
 .bluesky-flutter:focus .right {
-   animation: flutter 500ms ease-in-out;
+  animation: flutter 500ms ease-in-out;
   --flip: -1;
 }
+
 .bluesky-flutter:hover svg,
-.bluesky-flutter:focus svg{
+.bluesky-flutter:focus svg {
   transform: rotate(-5deg);
   transition: 500ms;
 }
 
 @media (prefers-reduced-motion) {
+
   .bluesky-flutter:hover .left,
   .bluesky-flutter:focus .left,
   .bluesky-flutter:hover .right,
@@ -1242,18 +1359,23 @@ a.bluesky-flutter:hover svg {
   10% {
     transform: scale(calc(var(--flip)*1), 0.9);
   }
+
   20% {
     transform: scale(calc(var(--flip)*0.5), 1)
   }
+
   40% {
     transform: scale(calc(var(--flip)*0.9), 0.95);
   }
+
   60% {
     transform: scale(calc(var(--flip)*0.3), 1);
   }
+
   80% {
     transform: scale(calc(var(--flip)*0.9), 0.95);
   }
+
   100% {
     transform: scale(calc(var(--flip)*1), 1);
   }
@@ -1274,7 +1396,7 @@ a.bluesky-flutter:hover svg {
 }
 
 .post__likesCta {
-  color:  #fff;
+  color: #fff;
   font-size: calc(16px + .3vw);
   font-style: italic;
   display: block;
@@ -1310,9 +1432,11 @@ a.bluesky-flutter:hover svg {
   font-size: 1rem;
   font-weight: bold;
   font-style: italic;
-  background-color: #208bfe; /* Bluesky blue */
+  background-color: #208bfe;
+  /* Bluesky blue */
   color: #fff;
 }
+
 /* end */
 
 .contact {
@@ -1816,6 +1940,7 @@ img.lazyload {
 }
 
 @media only screen and (max-width:420px) {
+
   li.article-list-article,
   li.article-list-article.newest,
   .article-category {
