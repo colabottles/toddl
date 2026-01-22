@@ -1969,7 +1969,7 @@ img.lazyload {
   section.article__body ul {
     margin-left: 2em;
     padding: 0;
-    max-width: fit-content;
+    max-width: 280px;
   }
 }
 
