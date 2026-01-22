@@ -650,7 +650,8 @@ section.article__body h3 {
 section.article__body ol,
 section.article__body ul {
   margin-left: 2em;
-  padding: 0
+  padding: 0;
+  width: fit-content;
 }
 
 .article__body blockquote ol {
