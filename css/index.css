@@ -625,7 +625,7 @@ section.article__body h3 {
   font-weight: 500;
   color: var(--ecto);
   margin-top: 2em;
-  margin-bottom: -1em;
+  margin-bottom: 0;
 }
 
 .sections {
