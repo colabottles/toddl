@@ -651,7 +651,6 @@ section.article__body ol,
 section.article__body ul {
   margin-left: 2em;
   padding: 0;
-  width: fit-content;
 }
 
 .article__body blockquote ol {
@@ -1802,7 +1801,8 @@ img.lazyload {
   section.article__body ol,
   section.article__body ul {
     margin-left: 2rem;
-    padding: 1rem 0
+    padding: 1rem 0;
+    max-width: fit-content;
   }
 
   .about-container,
@@ -1955,164 +1955,180 @@ img.lazyload {
   .page-title {
     font-size: 3rem;
   }
+
+  section.article__body ol,
+  section.article__body ul {
+    margin-left: 2em;
+    padding: 0;
+    max-width: fit-content;
+  }
 }
 
-code {
-  font-family: 'Cascadia Code', 'Overpass Mono', monospace;
-  font-size: clamp(.5rem, .25rem + 1vw, .75rem);
-  line-height: 1.5;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  tab-size: 2;
-  hyphens: none;
-  background: #1e1e1a;
-  color: var(--ecto)
+@media only screen and (max-width:320px) {
+  section.article__body ol,
+  section.article__body ul {
+    margin-left: 2em;
+    padding: 0;
+    max-width: fit-content;
+  }
 }
 
-code[class*=language-],
-pre[class*=language-] {
-  font-family: 'Cascadia Code', 'Overpass Mono', monospace;
-  font-size: clamp(.5rem, .25rem + 1vw, .75rem);
-  line-height: 1.5;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  tab-size: 2;
-  hyphens: none;
-  background: #1e1e1a;
-  color: #f8f8f2
-}
+  code {
+    font-family: 'Cascadia Code', 'Overpass Mono', monospace;
+    font-size: clamp(.5rem, .25rem + 1vw, .75rem);
+    line-height: 1.5;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    tab-size: 2;
+    hyphens: none;
+    background: #1e1e1a;
+    color: var(--ecto)
+  }
 
-pre[class*=language-] {
-  padding: 1.5em;
-  margin: .5em 0;
-  overflow: auto;
-  border: 4px double var(--ecto)
-}
+  code[class*=language-],
+  pre[class*=language-] {
+    font-family: 'Cascadia Code', 'Overpass Mono', monospace;
+    font-size: clamp(.5rem, .25rem + 1vw, .75rem);
+    line-height: 1.5;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    tab-size: 2;
+    hyphens: none;
+    background: #1e1e1a;
+    color: #f8f8f2
+  }
 
-:not(pre)>code[class*=language-] {
-  padding: .1em;
-  border-radius: .3em
-}
+  pre[class*=language-] {
+    padding: 1.5em;
+    margin: .5em 0;
+    overflow: auto;
+    border: 4px double var(--ecto)
+  }
 
-.token.cdata,
-.token.comment,
-.token.doctype,
-.token.prolog {
-  color: #aaa500
-}
+  :not(pre)>code[class*=language-] {
+    padding: .1em;
+    border-radius: .3em
+  }
 
-.token.punctuation {
-  color: #f8f8f2
-}
+  .token.cdata,
+  .token.comment,
+  .token.doctype,
+  .token.prolog {
+    color: #aaa500
+  }
 
-.token.namespace {
-  opacity: .7
-}
+  .token.punctuation {
+    color: #f8f8f2
+  }
 
-.token.boolean,
-.token.number,
-.token.operator {
-  color: #fd971f
-}
+  .token.namespace {
+    opacity: .7
+  }
 
-.token.property {
-  color: #f4bf75
-}
+  .token.boolean,
+  .token.number,
+  .token.operator {
+    color: #fd971f
+  }
 
-.token.tag {
-  color: #66d9ef
-}
+  .token.property {
+    color: #f4bf75
+  }
 
-.token.string {
-  color: #a1efe4
-}
+  .token.tag {
+    color: #66d9ef
+  }
 
-.token.selector {
-  color: #ae81ff
-}
+  .token.string {
+    color: #a1efe4
+  }
 
-.token.attr-name {
-  color: #fd971f
-}
+  .token.selector {
+    color: #ae81ff
+  }
 
-.language-css .token.string,
-.style .token.string,
-.token.entity,
-.token.url {
-  color: #a1efe4
-}
+  .token.attr-name {
+    color: #fd971f
+  }
 
-.token.attr-value,
-.token.control,
-.token.directive,
-.token.keyword,
-.token.unit {
-  color: #a6e22e
-}
+  .language-css .token.string,
+  .style .token.string,
+  .token.entity,
+  .token.url {
+    color: #a1efe4
+  }
 
-.token.atrule,
-.token.regex,
-.token.statement {
-  color: #a1efe4
-}
+  .token.attr-value,
+  .token.control,
+  .token.directive,
+  .token.keyword,
+  .token.unit {
+    color: #a6e22e
+  }
 
-.token.placeholder,
-.token.variable {
-  color: #66d9ef
-}
+  .token.atrule,
+  .token.regex,
+  .token.statement {
+    color: #a1efe4
+  }
 
-.token.deleted {
-  text-decoration: line-through
-}
+  .token.placeholder,
+  .token.variable {
+    color: #66d9ef
+  }
 
-.token.inserted {
-  border-bottom: 1px dotted #f9f8f5;
-  text-decoration: none
-}
+  .token.deleted {
+    text-decoration: line-through
+  }
 
-.token.italic {
-  font-style: italic
-}
+  .token.inserted {
+    border-bottom: 1px dotted #f9f8f5;
+    text-decoration: none
+  }
 
-.token.bold,
-.token.important {
-  font-weight: 700
-}
+  .token.italic {
+    font-style: italic
+  }
 
-.token.important {
-  color: #f92672
-}
+  .token.bold,
+  .token.important {
+    font-weight: 700
+  }
 
-.token.entity {
-  cursor: help
-}
+  .token.important {
+    color: #f92672
+  }
 
-pre>code.highlight {
-  outline: .4em solid #f92672;
-  outline-offset: .4em
-}
+  .token.entity {
+    cursor: help
+  }
 
-.visible-hidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1.5em 0 0 0;
-  overflow: hidden;
-  justify-self: center;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px
-}
+  pre>code.highlight {
+    outline: .4em solid #f92672;
+    outline-offset: .4em
+  }
 
-.visible-hidden:focus {
-  clip: auto;
-  height: auto;
-  overflow: auto;
-  position: absolute;
-  width: auto
-}
+  .visible-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1.5em 0 0 0;
+    overflow: hidden;
+    justify-self: center;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px
+  }
+
+  .visible-hidden:focus {
+    clip: auto;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    width: auto
+  }
