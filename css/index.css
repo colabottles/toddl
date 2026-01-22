@@ -1967,7 +1967,7 @@ img.lazyload {
 @media only screen and (max-width:320px) {
   section.article__body ol,
   section.article__body ul {
-    margin-left: 2em;
+    margin-left: 1em;
     padding: 0;
     max-width: 280px;
   }
