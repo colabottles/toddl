@@ -688,28 +688,14 @@ ALTER TABLE users
 
 ### Essential Reading
 
-**Falsehoods Programmers Believe About Names** by Patrick McKenzie
-<https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/>
+- Falsehoods Programmers Believe About Names by Patrick McKenzie: <https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/> -  A must-read list of 40+ incorrect assumptions about names.
+- Personal Names Around the World - W3C: <https://www.w3.org/International/questions/qa-personal-names> - A comprehensive guide to cultural naming conventions.
+- Unicode Character Database - Unicode.org: <https://unicode.org> - The definitive source for Unicode character properties.
 
-A must-read list of 40+ incorrect assumptions about names.
+### Tools, Libraries, Resources
 
-**Personal Names Around the World** - W3C
-<https://www.w3.org/International/questions/qa-personal-names>
-
-Comprehensive guide to cultural naming conventions.
-
-**Unicode Character Database**
-<https://unicode.org>
-
-The definitive source for Unicode character properties.
-
-### Tools and Libraries
-
-**Unicode Regular Expressions**
-Most modern languages support `\p{}` patterns for Unicode-aware regex.
-
-**ICU (International Components for Unicode)**
-Libraries for proper Unicode handling in various languages.
+- Unicode Regular Expressions (PDF) <https://icu-project.org/docs/papers/iuc26_regexp.pdf>: Most modern languages support `\p{}` patterns for Unicode-aware regex.
+- ICU (International Components for Unicode) <https://icu.unicode.org/> - Libraries for proper Unicode handling in various languages.
 
 ### Database Documentation
 
