@@ -628,8 +628,8 @@ npm install @colabottles/center-div
 
 **Links:**
 
-- [npm:](https://www.npmjs.com/package/@colabottles/center-div)
-- [GitHub:](https://github.com/colabottles/center-div-module)
+- [npm: Click this link to go to the npm listing](https://www.npmjs.com/package/@colabottles/center-div)
+- [GitHub: Click this link to go to the GitHub repository](https://github.com/colabottles/center-div-module)
 - Documentation: _See README on GitHub_
 
 ---
