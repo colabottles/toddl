@@ -27,8 +27,6 @@ Take for instance [this article](https://www.fodors.com/news/hotels/how-to-deal-
 
 So I'm going to show you how to build forms that respect the diversity of human names while maintaining security and data integrity. Because names&mdash;something we think is simple&mdash;are actually one of the hardest problems in software development. Even harder, is the fact that most devs cannot be bothered to learn and implement these inclusive patterns.
 
----
-
 ## Why This Matters
 
 Before we dive into the technical details, let's establish why getting names right is so critical:
@@ -46,8 +44,6 @@ Before we dive into the technical details, let's establish why getting names rig
 - Inaccessible services for entire populations
 
 **It's Solvable:** The good news is that handling names correctly isn't actually that hard once you understand the requirements. The bad news is that most developers have absorbed incorrect assumptions about how names work and don't want to put the work into it whether it be learning regex patterns or just plain laziness.
-
----
 
 ## Real Examples
 
@@ -82,9 +78,7 @@ These aren't edge cases. Combined, these examples affect **billions of people**.
 
 "Well! People always have two names, right?" No Kevin, no they do not. Head in the sand syndrome is a horrible affliction.
 
-So yes, I am being critical. **Very critical** because this _still_ goes on to this day. Just this morning I read a post on Bluesky about this very topic, so I had to write this. Because as long as the Web has (questionably) existed, this has been going on because devs are lazy (especially with the advent of AI, LLM's and 'vibe coding'). Do better. Here's how!
-
----
+So yes, I am being critical. **Very critical** because this _still_ goes on to this day. Just this morning I read a post on Bluesky about this very topic, so I had to write this. Because as long as the Web has (questionably) existed, this has been prevalent (especially with the advent of AI, LLM's and 'vibe coding'). Do better. Here's how!
 
 ## Understanding Names Globally
 
@@ -92,7 +86,7 @@ To build better forms, we first need to understand how names actually work aroun
 
 ### Myth 1: Everyone Has a First Name and Last Name
 
-**Reality:** Naming conventions vary wildly across cultures.
+**Reality:** Naming conventions vary wildly across cultures. This is about respect to why this matter which we covered at the start of this post.
 
 **Indonesian Names:** [Many Indonesians have a single name with no family name](https://www.ibtimes.com/sukarno-suharto-megawati-why-do-some-indonesians-have-only-one-name-1408204). Famous examples include Sukarno and Suharto, former presidents of Indonesia. When forced to fill out forms with separate first/last name fields, they often have to make something up or repeat their name in both fields.
 
@@ -103,6 +97,10 @@ To build better forms, we first need to understand how names actually work aroun
 **Spanish Naming:** In Spanish-speaking cultures, [people typically have two surnames](https://www.icls.edu/blog/why-do-people-in-spanish-speaking-countries-have-so-many-last-names)—one from each parent. María García López has García from her father and López from her mother. When she marries, she might add her husband's surname, becoming María García López de Martínez.
 
 **Burmese Names:** People from Myanmar typically have [no family name at all](https://culturalatlas.sbs.com.au/myanmar-burmese-culture/burmese-myanmar-culture-naming) and use a system where names indicate generation and personal identity.
+
+**Greek Names:** It is traditional for Greeks to name their children after the grandparents, resulting in a continuation of names in the family line. [Greek surnames are usually patronymics](https://www.greece.com/info/names/greek_names/), meaning that they were originally formed by a male name. However, other sources may also exist, like regarding occupation, characteristics and are also dependent on the location where the surname was formed. This includes names such as Μαρία (Maria) and Γιάννης (Yiannis), alongside names such as, Βύρων (Byron).
+
+**Gaelic Names:** Written Irish is first attested in [Ogham inscriptions](https://www.worldhistory.org/Ogham/) from the 4th century AD.  Irish Gaelic (or Scottish Gaelic) names [can be traced back to the earliest Celtic traditions](https://www.libraryireland.com/Names.php/). Many names come from ancient Irish mythology or folklore, others are based on musicality, folk heroes, or have spiritual roots. Examples are Áine (awn-ye) - "radiance, splendor, brilliance", Siobhán (shiv-on), Róisín – “little rose”, or Ó Conchobhair (O’Connor) – “descendant of Conchobhar”.
 
 ### Myth 2: Names Fit in ASCII
 
@@ -120,6 +118,8 @@ Here are names that don't fit in ASCII:
 - **Polish:** Łukasz (l with stroke)
 - **Turkish:** Çağlar (c with cedilla)
 - **Czech:** Dvořák (r with caron)
+- **Greek:** Matthew, Ματθαῖος (Polytonic (multi-accented) script)
+- **Gaelic:** Pádraig (acute accent)
 
 These aren't exotic edge cases—they're normal names used by hundreds of millions of people every single day. **ADD THEM!**
 
@@ -152,8 +152,6 @@ This assumption causes immense problems because:
 The Icelandic phone book, for example, is sorted by first name because that's the most meaningful ordering in their culture.
 
 So why are we still sticking with the same old song and dance pattern of firstname/lastname fields (especially in the US) when some people in the world may not have a qualifier as we talked about earlier? Especially if your company deals with international businesses and people (internationalization-i18n anyone?)
-
----
 
 ## The Technical Solution
 
@@ -463,8 +461,6 @@ SELECT * FROM users
 WHERE unaccent(name) ILIKE unaccent('%' || $1 || '%');
 ```
 
----
-
 ## Testing Strategy
 
 Testing names properly requires a comprehensive test suite with real-world examples.
@@ -547,8 +543,6 @@ The best way to catch issues is to test with people who have diverse names:
 - Run a bug bounty specifically for name handling issues
 - Monitor support tickets for name-related problems
 
----
-
 ## Common Questions and Edge Cases
 
 ### "What about legal requirements?"
@@ -590,8 +584,6 @@ Email addresses have stricter rules defined by RFC 5321. The local part (before 
 ### "Should I allow emoji in names?"
 
 Some jurisdictions now allow emoji in legal names. Unless you have a specific reason to block them, accept emoji. They're valid Unicode characters.
-
----
 
 ## Accessibility Considerations
 
@@ -640,8 +632,6 @@ Provide clear, visible help text for complex fields:
   Enter your name exactly as it appears on your passport or ID
 </span>
 ```
-
----
 
 ## Implementation Roadmap
 
@@ -694,8 +684,6 @@ ALTER TABLE users
 3. Monitor user feedback
 4. Keep test suite updated with new cases
 
----
-
 ## Resources and Further Reading
 
 ### Essential Reading
@@ -747,21 +735,17 @@ export const realWorldNames = [
 ];
 ```
 
----
-
 ## Responsibility And Where It Lies
 
 So where does the responsibility lie when we come across all these examples of laziness, overlooking, and plain irresponsibility? Look no further than:
 
-1. The Developer: Whether it is laziness, lack of knowledge or education, or the "Well, I am not allowed to make changes like that because..." take the Nike approach and **Just Do It**! The Sisyphus Effect, or the eternal struggle to make change and there is resistance above you is real, I get it. Make your case! If that doesn't work, throw it in there! I bet BRad has so many meetings and so much paperwork that he really won't ever notice. If so, then we cross that bridge when we get there. Trust me, you'll get the avalanche of crap raining down on you in the end.
+1. The Developer: Whether it is laziness, lack of knowledge or education, or the "Well, I am not allowed to make changes like that because..." take the Nike approach and **Just Do It**! The Sisyphus Effect, or the eternal struggle to make change and there is resistance above you is real, I get it. Make your case! If that doesn't work, throw it in there! I bet Brad has so many meetings and so much paperwork that he really won't ever notice. If so, then we cross that bridge when we get there. Trust me, you'll get the avalanche of crap raining down on you in the end.
 
 2. The Manager: Oh yes. My favorite part. Managerial decision-making. Whether you have the best manager since sliced bread or you have the worst manager that can stumble backwards into horse shit and come out smelling like roses, this is on them! They oversee a group of devs, they _should_ know what they are doing, but should and do are two entirely different things. The onus lies with the manager though.
 
 3. The Designer: A small part in this play, but a part nonetheless. If they don't design for this pattern then they aren't practicing accessible design and are shutting out billions potentially. Everything starts from a design doesn't it? Then the designer is the root of the problem somewhat. The root of the problem lies next.
 
 4. The Conception of the Project: You know that meeting you all have (I hope) where you all get together and plan out what you will do and draw out the roadmap with all the cool tools you use? **THAT** is where this all starts. Conception of project. It's not going to be accessible if you don't start practicing accessibility from **the very start**! "We can go back and..." Great, now you have wasted resources, time, money, and more. Just because you didn't take that first step. The most important one. Accessibility and inclusivity.
-
----
 
 ## Summary
 
@@ -787,8 +771,6 @@ Start today. Pick one form in your application. Test it with the names in this a
 
 Your users will notice. They'll appreciate being treated as the whole, complete people they are—with names that belong to them, not to your validation rules.
 
----
-
 ## Take Action
 
 1. **Audit your forms today** using the test names provided in this article
@@ -800,7 +782,5 @@ Your users will notice. They'll appreciate being treated as the whole, complete 
 Every person deserves to have their name accepted, stored correctly, and displayed with respect. It's not an edge case. It's not a nice-to-have. It's a fundamental requirement for building inclusive software.
 
 Get names right, and you're telling your users: **you belong here**.
-
----
 
 ### Have you encountered name validation issues? Found a name that breaks systems? [Share your stories with me on Bluesky.](https://bsky.app/profile/toddl.dev)

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="view-transition" content="same-origin">
+      <meta name="generator" content="Eleventy v3.1.2">
+      <meta name="description" content="A comprehensive guide to handling names in web applications with respect to people.">
+      <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+
+      <!-- For OpenGraph -->
+      <meta property="og:title" content="Names Are Hard But They Don&#39;t Have To Be" />
+      <meta property="og:description" content="A comprehensive guide to handling names in web applications with respect to people." />
+      <meta property="og:image" content="https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png">
+      <meta property="og:image:alt" content="Todd Libby has written a post called, Names Are Hard But They Don&#39;t Have To Be" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:title" content="A comprehensive guide to handling names in web applications with respect to people.">
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://toddl.dev">
+      <title>Names Are Hard But They Don&#39;t Have To Be</title>
+
+      <link rel="stylesheet" href="/css/index.css" />
+      <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+      <link rel="icon" href="/img/favicon.png" />
+      <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
+    </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" class="page-title" id="title">
+            <img src="https://res.cloudinary.com/colabottles/image/upload/v1761592721/lobster.png" alt="A Lobster logo." />
+          </a>
+            <nav aria-label="main-navigation">
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
+      </header>
+
+      <main id="main" class="inner ">
+        
+<div class="article-container">
+  <article>
+
+    <header class="article__header cal-sans-regular">
+      <h1 class="page-title">Names Are Hard But They Don&#39;t Have To Be</h1>
+        <div class="article__meta">
+          <time>22 January, 2026</time>
+        </div>
+    </header>
+
+    <section class="article__body inter-tight-content">
+      <h2 id="the-%2410%2C000-bug" tabindex="-1">The $10,000 Bug</h2>
+<p>In 2015, a major airline's booking system rejected a passenger's name because it contained an apostrophe. The passenger—who had flown with them dozens of times before—missed their flight. The airline had to refund the ticket and compensate for the inconvenience. Total cost: over $10,000.</p>
+<p>The name? <strong>O'Brien</strong>.</p>
+<p>One of the most common Irish surnames in the world, rejected by a validation rule that probably took someone five seconds to write.</p>
+<p>This isn't an isolated incident. Every day, millions of people around the world encounter forms that reject their names, corrupt their characters, or force them into boxes that don't fit their cultural identity. It's frustrating for users, expensive for companies, and completely avoidable.</p>
+<p>Take for instance <a href="https://www.fodors.com/news/hotels/how-to-deal-with-booking-problems-because-of-special-characters-in-your-name">this article</a><br>
+where a woman was denied a hotel room for having an apostrophe in her name! This is the kind of laziness that I find more than off-putting.</p>
+<p>So I'm going to show you how to build forms that respect the diversity of human names while maintaining security and data integrity. Because names—something we think is simple—are actually one of the hardest problems in software development. Even harder, is the fact that most devs cannot be bothered to learn and implement these inclusive patterns.</p>
+<h2 id="why-this-matters" tabindex="-1">Why This Matters</h2>
+<p>Before we dive into the technical details, let's establish why getting names right is so critical:</p>
+<p><strong>The Scale:</strong> There are over 7 billion people on Earth, speaking thousands of languages, writing in hundreds of scripts, and following countless cultural naming conventions. Your form isn't just for people like you—it's potentially for <strong>everyone</strong>.</p>
+<p><strong>First Impressions:</strong> Your form is often the first real interaction someone has with your product. When that form rejects their name, you're not just creating a technical error—you're telling them &quot;this product wasn't built for people like you.&quot;</p>
+<p><strong>Business Impact:</strong> Failed form submissions mean:</p>
+<ul>
+<li>Lost customers and revenue</li>
+<li>Increased support tickets and costs</li>
+<li>Damaged brand reputation</li>
+<li>Potential legal issues (discrimination claims)</li>
+<li>Inaccessible services for entire populations</li>
+</ul>
+<p><strong>It's Solvable:</strong> The good news is that handling names correctly isn't actually that hard once you understand the requirements. The bad news is that most developers have absorbed incorrect assumptions about how names work and don't want to put the work into it whether it be learning regex patterns or just plain laziness.</p>
+<h2 id="real-examples" tabindex="-1">Real Examples</h2>
+<p>Let me show you some real examples I've seen and talked to people about (company names redacted to protect the guilty):</p>
+<h3 id="example-1%3A-the-length-validator" tabindex="-1">Example 1: The Length Validator</h3>
+<p>A major social media platform rejected the name &quot;José&quot; because it required a minimum of 4 characters. José is one of the most common Spanish names in the world, used by over 6 million people in the United States alone. It is a 4-letter word. So what the hell is going on? A dev couldn't be bothered to get out of their own little bubble to make this work and a manager was too busy with paperwork and meetings to actually check and see what was going on. Peer reviews didn't happen because everyone had their heads down and faces in a keyboard. No accountability.</p>
+<h3 id="example-2%3A-the-diacritic-stripper" tabindex="-1">Example 2: The Diacritic Stripper</h3>
+<p>An online retailer automatically stripped accent marks from names, turning &quot;Müller&quot; into &quot;Muller&quot; and &quot;François&quot; into &quot;Francois.&quot; When customers received packages addressed to &quot;Muller&quot; instead of their actual name, delivery drivers couldn't find them in apartment directories. Again, a fundamental breakdown in systems, checks and balances, and accountability for devs who could not be bothered to take into consideration names and their origins.</p>
+<h3 id="example-3%3A-the-character-set-disaster" tabindex="-1">Example 3: The Character Set Disaster</h3>
+<p>A banking application using an outdated database encoding turned Chinese names into question marks. Users named 张伟 (Zhang Wei, one of the most common Chinese names) saw their bank statements addressed to &quot;???.&quot; So why the absolute failure by financial institutions? Because someone couldn't be bothered to fix it or even find out if it needed fixing. (It needed to be fixed).</p>
+<h3 id="example-4%3A-the-punctuation-police" tabindex="-1">Example 4: The Punctuation Police</h3>
+<p>A government service portal rejected names containing apostrophes or hyphens, making it impossible for people named D'Angelo, Mary-Kate, or Jean-Luc to use the service. The error message? &quot;Special characters are not allowed.&quot; Because a dev just did not know how to do something. Plain and simple. Instead of making it work and educating themselves, they took the easy way out and closed the door on <em>many</em> people. Great attitude to have in a government job, and par for the course apparently.</p>
+<h3 id="example-5%3A-the-western-format-enforcer" tabindex="-1">Example 5: The Western Format Enforcer</h3>
+<p>An HR system required separate &quot;first name&quot; and &quot;last name&quot; fields with no way to leave either blank. This made the system completely unusable for:</p>
+<ul>
+<li>Indonesian users (many have single names like Sukarno)</li>
+<li>Icelandic users (who use patronymics, not surnames)</li>
+<li>Chinese users (whose family name comes first)</li>
+<li>Anyone else who doesn't follow Western naming conventions</li>
+</ul>
+<p>These aren't edge cases. Combined, these examples affect <strong>billions of people</strong>.</p>
+<p>&quot;Well! People always have two names, right?&quot; No Kevin, no they do not. Head in the sand syndrome is a horrible affliction.</p>
+<p>So yes, I am being critical. <strong>Very critical</strong> because this <em>still</em> goes on to this day. Just this morning I read a post on Bluesky about this very topic, so I had to write this. Because as long as the Web has (questionably) existed, this has been prevalent (especially with the advent of AI, LLM's and 'vibe coding'). Do better. Here's how!</p>
+<h2 id="understanding-names-globally" tabindex="-1">Understanding Names Globally</h2>
+<p>To build better forms, we first need to understand how names actually work around the world. Let's bust some myths. (Puts his Mythbusters shirt on).</p>
+<h3 id="myth-1%3A-everyone-has-a-first-name-and-last-name" tabindex="-1">Myth 1: Everyone Has a First Name and Last Name</h3>
+<p><strong>Reality:</strong> Naming conventions vary wildly across cultures. This is about respect to why this matter which we covered at the start of this post.</p>
+<p><strong>Indonesian Names:</strong> <a href="https://www.ibtimes.com/sukarno-suharto-megawati-why-do-some-indonesians-have-only-one-name-1408204">Many Indonesians have a single name with no family name</a>. Famous examples include Sukarno and Suharto, former presidents of Indonesia. When forced to fill out forms with separate first/last name fields, they often have to make something up or repeat their name in both fields.</p>
+<p><strong>Icelandic Patronymics:</strong> Icelanders don't use family names. Instead, <a href="https://www.icls.edu/blog/icelandic-naming-system">they use patronymics</a>—a given name plus their father's (or sometimes mother's) name with &quot;son&quot; or &quot;dóttir&quot; added. The singer Björk's full name is Björk Guðmundsdóttir, meaning &quot;Björk, daughter of Guðmundur.&quot; If she had a son, he might be named &quot;Jón Björksson&quot;—note that the family doesn't share a surname.</p>
+<p><strong>Chinese Naming Convention:</strong> In Chinese culture, <a href="https://culturalatlas.sbs.com.au/chinese-culture/chinese-culture-naming">the family name comes first</a>, followed by the given name. Zhang Wei means Family Name: Zhang, Given Name: Wei. Many Chinese people adopt a Western order when dealing with international contexts, but this can create confusion and inconsistency.</p>
+<p><strong>Spanish Naming:</strong> In Spanish-speaking cultures, <a href="https://www.icls.edu/blog/why-do-people-in-spanish-speaking-countries-have-so-many-last-names">people typically have two surnames</a>—one from each parent. María García López has García from her father and López from her mother. When she marries, she might add her husband's surname, becoming María García López de Martínez.</p>
+<p><strong>Burmese Names:</strong> People from Myanmar typically have <a href="https://culturalatlas.sbs.com.au/myanmar-burmese-culture/burmese-myanmar-culture-naming">no family name at all</a> and use a system where names indicate generation and personal identity.</p>
+<p><strong>Greek Names:</strong> It is traditional for Greeks to name their children after the grandparents, resulting in a continuation of names in the family line. <a href="https://www.greece.com/info/names/greek_names/">Greek surnames are usually patronymics</a>, meaning that they were originally formed by a male name. However, other sources may also exist, like regarding occupation, characteristics and are also dependent on the location where the surname was formed. This includes names such as Μαρία (Maria) and Γιάννης (Yiannis), alongside names such as, Βύρων (Byron).</p>
+<p><strong>Gaelic Names:</strong> Written Irish is first attested in <a href="https://www.worldhistory.org/Ogham/">Ogham inscriptions</a> from the 4th century AD.  Irish Gaelic (or Scottish Gaelic) names <a href="https://www.libraryireland.com/Names.php/">can be traced back to the earliest Celtic traditions</a>. Many names come from ancient Irish mythology or folklore, others are based on musicality, folk heroes, or have spiritual roots. Examples are Áine (awn-ye) - &quot;radiance, splendor, brilliance&quot;, Siobhán (shiv-on), Róisín – “little rose”, or Ó Conchobhair (O’Connor) – “descendant of Conchobhar”.</p>
+<h3 id="myth-2%3A-names-fit-in-ascii" tabindex="-1">Myth 2: Names Fit in ASCII</h3>
+<p>ASCII contains 128 characters, including uppercase and lowercase English letters. That's it. No accents, no umlauts, no characters from non-Latin scripts.</p>
+<p>Here are names that don't fit in ASCII:</p>
+<ul>
+<li><strong>Vietnamese:</strong> Nguyễn (with tone marks)</li>
+<li><strong>Arabic:</strong> محمد (right-to-left script)</li>
+<li><strong>Chinese:</strong> 王 (logographic characters)</li>
+<li><strong>German:</strong> Müller (umlaut)</li>
+<li><strong>Hawaiian:</strong> Kealiʻi (ʻokina - the glottal stop)</li>
+<li><strong>French:</strong> François (cedilla)</li>
+<li><strong>Spanish:</strong> José (acute accent)</li>
+<li><strong>Polish:</strong> Łukasz (l with stroke)</li>
+<li><strong>Turkish:</strong> Çağlar (c with cedilla)</li>
+<li><strong>Czech:</strong> Dvořák (r with caron)</li>
+<li><strong>Greek:</strong> Matthew, Ματθαῖος (Polytonic (multi-accented) script)</li>
+<li><strong>Gaelic:</strong> Pádraig (acute accent)</li>
+</ul>
+<p>These aren't exotic edge cases—they're normal names used by hundreds of millions of people every single day. <strong>ADD THEM!</strong></p>
+<h3 id="myth-3%3A-you-can-validate-names-with-simple-rules" tabindex="-1">Myth 3: You Can Validate Names with Simple Rules</h3>
+<p>Names can be:</p>
+<p><strong>Very Short:</strong> <a href="https://forebears.io/surnames/o">The surname &quot;O&quot; is common in China and Korea</a>. Single-letter names exist in many cultures.</p>
+<p><strong>Very Long:</strong> <a href="https://surnames.behindthename.com/name/wolfeschlegelsteinhausenbergerdorff/submitted">Wolfeschlegelsteinhausenbergerdorff is a real German surname</a>. Thai names can easily exceed 20 characters. The longest personal name on record is 747 characters.</p>
+<p><strong>All Consonants:</strong> <a href="https://www.igenea.com/en/surnames/n/ng">Ng is a Chinese surname</a>. Try pronouncing that according to English rules.</p>
+<p><strong>Numbers:</strong> In some jurisdictions, people can legally change their name to <a href="https://lawexpression.com/can-you-have-a-number-in-your-legal-name/">include numbers</a>. For example, <a href="https://www.jennifer8lee.com/">Jennifer 8. Lee</a> is a legally registered name.</p>
+<p><strong>Special Characters:</strong> Apostrophes (O'Brien), hyphens (Jean-Luc), spaces (von Braun), and periods (St. John) all appear in legitimate names.</p>
+<p><strong>Capitalization Rules:</strong> Names like &quot;McDonald,&quot; &quot;MacLeod,&quot; &quot;von Neumann,&quot; and &quot;de la Cruz&quot; have internal capitalization that you can't predict with simple rules.</p>
+<h3 id="myth-4%3A-you-need-to-split-names-into-fields" tabindex="-1">Myth 4: You Need to Split Names into Fields</h3>
+<p>This assumption causes immense problems because:</p>
+<ol>
+<li>Many cultures don't have a clear first name/last name distinction</li>
+<li>The meaning of &quot;first&quot; and &quot;last&quot; varies by culture</li>
+<li>Some people have multiple middle names or no middle name</li>
+<li>Asking people to incorrectly split their name is disrespectful</li>
+<li>Even &quot;how should we address you?&quot; requires cultural context</li>
+</ol>
+<p>The Icelandic phone book, for example, is sorted by first name because that's the most meaningful ordering in their culture.</p>
+<p>So why are we still sticking with the same old song and dance pattern of firstname/lastname fields (especially in the US) when some people in the world may not have a qualifier as we talked about earlier? Especially if your company deals with international businesses and people (internationalization-i18n anyone?)</p>
+<h2 id="the-technical-solution" tabindex="-1">The Technical Solution</h2>
+<p>Now that we understand the problem (hopefully), let's look at how to solve it properly.</p>
+<h3 id="1.-input-validation%3A-be-permissive" tabindex="-1">1. Input Validation: Be Permissive</h3>
+<p>The golden rule: <strong>If you're not sure whether to accept something, accept it. Your users know their own names better than your regex does.</strong> I cannot stress that enough. This isn't <strong>your</strong> form! Stop treating it as such! This brings me to my saying, &quot;It works on my machine so it must be correct!&quot; Nope. No it is not.</p>
+<p>Here's what not to do:</p>
+<pre class="language-html"><code class="language-html"><span class="token comment">&lt;!-- Bad: ASCII only --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+  <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>
+  <span class="token attr-name">pattern</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>[A-Za-z]+<span class="token punctuation">"</span></span>
+  <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Letters only<span class="token punctuation">"</span></span>
+<span class="token punctuation">></span></span></code></pre>
+<p>This rejects <strong>billions</strong> of legitimate names.</p>
+<p>Here's a much better inclusive and accessible pattern:</p>
+<pre class="language-html"><code class="language-html"><span class="token comment">&lt;!-- Good: Unicode-aware --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+  <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>
+  <span class="token attr-name">pattern</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>[\p{L}\p{M}\s'-.]+$<span class="token punctuation">"</span></span>
+  <span class="token attr-name">maxlength</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span>
+  <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Please enter your name<span class="token punctuation">"</span></span>
+<span class="token punctuation">></span></span></code></pre>
+<p>Let's break down that regex pattern:</p>
+<ul>
+<li><code>\p{L}</code> - Matches any Unicode letter from any language</li>
+<li><code>\p{M}</code> - Matches any Unicode mark (diacritics, accents, tone marks)</li>
+<li><code>\s</code> - Matches whitespace (spaces, which can appear in names)</li>
+<li><code>'-.</code> - Matches apostrophes, hyphens, and periods (common in names)</li>
+<li><code>+</code> - One or more of the above</li>
+<li><code>$</code> - End of string</li>
+</ul>
+<p>Note: The <code>\p{}</code> syntax works in modern JavaScript regex with the <code>u</code> flag. For older browsers, you may need to be even more permissive or use a library.</p>
+<p>Even this pattern might be too restrictive. A truly inclusive approach would be:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">isValidName</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> trimmed <span class="token operator">=</span> name<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Check for reasonable length</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>trimmed<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">||</span> trimmed<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">255</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Block only dangerous characters:</span>
+  <span class="token comment">// - Control characters (0x00-0x1F, 0x7F)</span>
+  <span class="token comment">// - HTML/XML special chars that could enable injection</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[\x00-\x1F\x7F&lt;>]</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>trimmed<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Everything else is allowed</span>
+  <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>This approach blocks only characters that pose actual security risks while accepting virtually all legitimate names.</p>
+<h3 id="2.-database-design" tabindex="-1">2. Database Design</h3>
+<p>Your database needs to support the full range of Unicode characters. (If it doesn't then maybe it is time it does.)</p>
+<p><strong>Bad:</strong></p>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> users <span class="token punctuation">(</span>
+  name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token keyword">CHARACTER</span> <span class="token keyword">SET</span> latin1
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>This limits you to Western European characters and will corrupt or reject everything else. We are trying to get people to <strong>not</strong> do this.</p>
+<p><strong>Good:</strong></p>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> users <span class="token punctuation">(</span>
+  name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token keyword">CHARACTER</span> <span class="token keyword">SET</span> utf8mb4 <span class="token keyword">COLLATE</span> utf8mb4_unicode_ci
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Important Notes:</p>
+<ul>
+<li><strong>utf8mb4</strong> is the correct encoding for MySQL/MariaDB (the plain &quot;utf8&quot; in MySQL is actually a limited subset)</li>
+<li><strong>utf8mb4_unicode_ci</strong> provides case-insensitive collation for sorting</li>
+<li><strong>VARCHAR(255)</strong> gives generous space for names (adjust as needed for your use case)</li>
+</ul>
+<p>For PostgreSQL:</p>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> users <span class="token punctuation">(</span>
+  name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>PostgreSQL uses UTF-8 by default, which is correct.</p>
+<p>For MongoDB, JavaScript, and most modern systems, UTF-8 support is built-in, but always verify your configuration.</p>
+<h3 id="3.-form-field-design" tabindex="-1">3. Form Field Design</h3>
+<p>The best approach is to use a single name field when possible:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>full-name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Full name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>full-name<span class="token punctuation">"</span></span>
+  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+  <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>full_name<span class="token punctuation">"</span></span>
+  <span class="token attr-name">maxlength</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span>
+  <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>
+  <span class="token attr-name">required</span>
+<span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>help-text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Your name as it appears on official documents<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span></code></pre>
+<p>Benefits:</p>
+<ul>
+<li>Works for all naming conventions</li>
+<li>Doesn't force incorrect splitting</li>
+<li>Respects how people identify themselves</li>
+<li>Simpler for users</li>
+<li>Easier to maintain</li>
+</ul>
+<p><strong>When you must split names</strong> (for example, government forms with legal requirements):</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fieldset</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>legend</span><span class="token punctuation">></span></span>Your name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>legend</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>given-name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Given name(s)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+    <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>given-name<span class="token punctuation">"</span></span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+    <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>given_name<span class="token punctuation">"</span></span>
+    <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>given-name<span class="token punctuation">"</span></span>
+  <span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>family-name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Family name(s)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+    <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>family-name<span class="token punctuation">"</span></span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+    <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>family_name<span class="token punctuation">"</span></span>
+    <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>family-name<span class="token punctuation">"</span></span>
+  <span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>help-text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    If your name doesn't fit this format, enter your full name
+    in the first field and leave the second field blank.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fieldset</span><span class="token punctuation">></span></span></code></pre>
+<p>Notice:</p>
+<ul>
+<li>Using &quot;given name&quot; and &quot;family name&quot; instead of &quot;first&quot; and &quot;last&quot;</li>
+<li>Neither field is required</li>
+<li>Clear help text explaining what to do if the format doesn't fit</li>
+<li>Proper autocomplete attributes for browser assistance</li>
+</ul>
+<h3 id="4.-the-preferred-name-pattern" tabindex="-1">4. The Preferred Name Pattern</h3>
+<p>For many applications, you can solve multiple problems at once by asking for both legal name and preferred name:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fieldset</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>legend</span><span class="token punctuation">></span></span>Your name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>legend</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>legal-name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Legal name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+    <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>legal-name<span class="token punctuation">"</span></span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+    <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>legal_name<span class="token punctuation">"</span></span>
+    <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>
+    <span class="token attr-name">required</span>
+  <span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>help-text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>As it appears on official documents<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>preferred-name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Preferred name (optional)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+    <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>preferred-name<span class="token punctuation">"</span></span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+    <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>preferred_name<span class="token punctuation">"</span></span>
+  <span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>help-text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>What you'd like us to call you<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fieldset</span><span class="token punctuation">></span></span></code></pre>
+<p>This approach:</p>
+<ul>
+<li>Accommodates legal requirements</li>
+<li>Respects personal identity</li>
+<li>Handles nicknames and chosen names</li>
+<li>Works across cultures</li>
+<li>Supports transgender users who may use a different name than their legal name</li>
+<li>Allows for informal names or anglicized versions</li>
+</ul>
+<h3 id="5.-backend-validation" tabindex="-1">5. Backend Validation</h3>
+<p>Your server-side validation should match your client-side approach:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">validateName</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Don't do this!!!</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^[A-Za-z\s]+$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">valid</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token literal-property property">error</span><span class="token operator">:</span> <span class="token string">"Name can only contain letters"</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Do this instead!</span>
+  <span class="token keyword">const</span> trimmed <span class="token operator">=</span> name<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>trimmed<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">valid</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token literal-property property">error</span><span class="token operator">:</span> <span class="token string">"Please enter your name"</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>trimmed<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">255</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">valid</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token literal-property property">error</span><span class="token operator">:</span> <span class="token string">"Name is too long"</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Block control characters and HTML/XML special chars</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[\x00-\x1F\x7F&lt;>]</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>trimmed<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">valid</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">error</span><span class="token operator">:</span> <span class="token string">"Name contains invalid characters"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">valid</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>Additional security considerations:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Sanitize for display (prevent XSS)</span>
+<span class="token keyword">function</span> <span class="token function">sanitizeForDisplay</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> name
+    <span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">&amp;</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">'&amp;amp;'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">&lt;</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">'&amp;lt;'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">></span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">'&amp;gt;'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">"</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">'&amp;quot;'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">'</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">'&amp;#x27;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// For SQL queries, use parameterized queries</span>
+<span class="token comment">// Never concatenate user input directly</span>
+<span class="token keyword">const</span> query <span class="token operator">=</span> <span class="token string">'SELECT * FROM users WHERE name = ?'</span><span class="token punctuation">;</span>
+db<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>query<span class="token punctuation">,</span> <span class="token punctuation">[</span>userName<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3 id="6.-display-and-formatting" tabindex="-1">6. Display and Formatting</h3>
+<p><strong>Never automatically transform names:</strong></p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Bad: This breaks names like McDonald, von Neumann, de la Cruz</span>
+<span class="token keyword">function</span> <span class="token function">formatName</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> name<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">word</span> <span class="token operator">=></span> word<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> word<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Good: Display exactly as entered</span>
+<span class="token keyword">function</span> <span class="token function">displayName</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> name<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>The only acceptable transformation is trimming leading/trailing whitespace.</p>
+<h3 id="7.-sorting-and-searching" tabindex="-1">7. Sorting and Searching</h3>
+<p>Sorting names across languages requires locale-aware collation:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Müller'</span><span class="token punctuation">,</span> <span class="token string">'Möller'</span><span class="token punctuation">,</span> <span class="token string">'Mueller'</span><span class="token punctuation">,</span> <span class="token string">'Moeller'</span><span class="token punctuation">,</span> <span class="token string">'Zhao'</span><span class="token punctuation">,</span> <span class="token string">'Zhang'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Bad: ASCII sort gives unpredictable results for non-ASCII</span>
+names<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Good: Locale-aware sort</span>
+names<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=></span> a<span class="token punctuation">.</span><span class="token function">localeCompare</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> <span class="token string">'de-DE'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>For search, consider using full-text search with proper language analyzers:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Use a library like ElasticSearch or PostgreSQL full-text search</span>
+<span class="token comment">// that understands Unicode and language-specific rules</span>
+
+<span class="token comment">// Example: PostgreSQL with unaccent extension</span>
+<span class="token constant">SELECT</span> <span class="token operator">*</span> <span class="token constant">FROM</span> users
+<span class="token constant">WHERE</span> <span class="token function">unaccent</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token constant">ILIKE</span> <span class="token function">unaccent</span><span class="token punctuation">(</span><span class="token string">'%'</span> <span class="token operator">||</span> $1 <span class="token operator">||</span> <span class="token string">'%'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="testing-strategy" tabindex="-1">Testing Strategy</h2>
+<p>Testing names properly requires a comprehensive test suite with real-world examples.</p>
+<h3 id="essential-test-cases" tabindex="-1">Essential Test Cases</h3>
+<p>Your test suite should include:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> testNames <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token comment">// Basic Latin with punctuation</span>
+  <span class="token string">"O'Brien"</span><span class="token punctuation">,</span>
+  <span class="token string">"Mary-Kate"</span><span class="token punctuation">,</span>
+  <span class="token string">"St. John"</span><span class="token punctuation">,</span>
+  <span class="token string">"von Neumann"</span><span class="token punctuation">,</span>
+  <span class="token string">"de la Cruz"</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Accented Latin characters</span>
+  <span class="token string">"José García"</span><span class="token punctuation">,</span>
+  <span class="token string">"François"</span><span class="token punctuation">,</span>
+  <span class="token string">"Müller"</span><span class="token punctuation">,</span>
+  <span class="token string">"Dvořák"</span><span class="token punctuation">,</span>
+  <span class="token string">"Łukasz"</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Non-Latin scripts</span>
+  <span class="token string">"张伟"</span><span class="token punctuation">,</span>           <span class="token comment">// Chinese</span>
+  <span class="token string">"محمد"</span><span class="token punctuation">,</span>          <span class="token comment">// Arabic</span>
+  <span class="token string">"Nguyễn"</span><span class="token punctuation">,</span>        <span class="token comment">// Vietnamese</span>
+  <span class="token string">"Παύλος"</span><span class="token punctuation">,</span>        <span class="token comment">// Greek</span>
+  <span class="token string">"Владимир"</span><span class="token punctuation">,</span>      <span class="token comment">// Cyrillic</span>
+  <span class="token string">"ธนา"</span><span class="token punctuation">,</span>           <span class="token comment">// Thai</span>
+
+  <span class="token comment">// Special cases</span>
+  <span class="token string">"Kealiʻi"</span><span class="token punctuation">,</span>       <span class="token comment">// Hawaiian (ʻokina)</span>
+  <span class="token string">"Sukarno"</span><span class="token punctuation">,</span>       <span class="token comment">// Mononym</span>
+  <span class="token string">"X Æ A-XII"</span><span class="token punctuation">,</span>     <span class="token comment">// Unusual characters</span>
+  <span class="token string">"O"</span><span class="token punctuation">,</span>             <span class="token comment">// Single character</span>
+
+  <span class="token comment">// Edge cases</span>
+  <span class="token string">"Jean-François D'Aubigny de La Tour"</span><span class="token punctuation">,</span>  <span class="token comment">// Long with multiple hyphens</span>
+  <span class="token string">"Maria García López de Martínez"</span><span class="token punctuation">,</span>      <span class="token comment">// Spanish double surname</span>
+  <span class="token string">"Nguyễn Tấn Dũng"</span><span class="token punctuation">,</span>                     <span class="token comment">// Vietnamese with tone marks</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'Name validation'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  testNames<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">name</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">should accept </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">validateName</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">.</span>valid<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should reject empty names'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">validateName</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">.</span>valid<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should reject names with HTML'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">validateName</span><span class="token punctuation">(</span><span class="token string">'&lt;script>alert("xss")&lt;/script>'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>valid<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3 id="manual-testing-checklist" tabindex="-1">Manual Testing Checklist</h3>
+<p>Beyond automated tests, manually test your forms:</p>
+<ul>
+<li>✓ Copy-paste names from different scripts</li>
+<li>✓ Test with a screen reader</li>
+<li>✓ Try names with various combinations of special characters</li>
+<li>✓ Verify database storage and retrieval</li>
+<li>✓ Check email generation and display</li>
+<li>✓ Test PDF generation if applicable</li>
+<li>✓ Verify sorting and searching work correctly</li>
+</ul>
+<h3 id="real-user-testing" tabindex="-1">Real User Testing</h3>
+<p>The best way to catch issues is to test with people who have diverse names:</p>
+<ul>
+<li>Recruit testers from different cultural backgrounds</li>
+<li>Ask employees with non-ASCII names to test</li>
+<li>Run a bug bounty specifically for name handling issues</li>
+<li>Monitor support tickets for name-related problems</li>
+</ul>
+<h2 id="common-questions-and-edge-cases" tabindex="-1">Common Questions and Edge Cases</h2>
+<h3 id="%22what-about-legal-requirements%3F%22" tabindex="-1">&quot;What about legal requirements?&quot;</h3>
+<p>Some forms genuinely need to match government formats. In these cases:</p>
+<ol>
+<li>Explain why you need the specific format</li>
+<li>Provide clear instructions</li>
+<li>Offer a way to contact support if their name doesn't fit</li>
+<li>Consider storing both a legal name (in required format) and actual name (as they write it)</li>
+</ol>
+<h3 id="%22how-do-i-handle-sorting%3F%22" tabindex="-1">&quot;How do I handle sorting?&quot;</h3>
+<p>Use locale-aware collation in your database and <code>localeCompare()</code> in JavaScript. For international applications, let users choose their preferred locale for sorting.</p>
+<h3 id="%22what-about-performance%3F%22" tabindex="-1">&quot;What about performance?&quot;</h3>
+<p>Unicode-aware regex and collation are slightly slower than ASCII operations, but the difference is negligible in modern applications. Don't optimize prematurely—correctness matters more than nanoseconds.</p>
+<h3 id="%22should-i-use-a-name-validation-library%3F%22" tabindex="-1">&quot;Should I use a name validation library?&quot;</h3>
+<p>Most name validation libraries are too restrictive. If you use one, verify it:</p>
+<ul>
+<li>Accepts all Unicode letters</li>
+<li>Doesn't enforce Western name formats</li>
+<li>Has been tested with diverse real names</li>
+<li>Is actively maintained</li>
+</ul>
+<p>Libraries like <code>validator.js</code> can help with basic sanitization, but their name validation often falls short.</p>
+<h3 id="%22how-do-i-handle-display-names-vs.-legal-names%3F%22" tabindex="-1">&quot;How do I handle display names vs. legal names?&quot;</h3>
+<p>Use the preferred name pattern shown earlier. Store both and use the preferred name for all user-facing interactions, falling back to legal name only when legally required.</p>
+<h3 id="%22what-about-email-addresses%3F%22" tabindex="-1">&quot;What about email addresses?&quot;</h3>
+<p>Email addresses have stricter rules defined by RFC 5321. The local part (before @) can contain letters, numbers, and certain special characters. Handle email validation separately from name validation.</p>
+<h3 id="%22should-i-allow-emoji-in-names%3F%22" tabindex="-1">&quot;Should I allow emoji in names?&quot;</h3>
+<p>Some jurisdictions now allow emoji in legal names. Unless you have a specific reason to block them, accept emoji. They're valid Unicode characters.</p>
+<h2 id="accessibility-considerations" tabindex="-1">Accessibility Considerations</h2>
+<p>Handling names correctly intersects with web accessibility:</p>
+<h3 id="proper-labels" tabindex="-1">Proper Labels</h3>
+<pre class="language-html"><code class="language-html"><span class="token comment">&lt;!-- Good: Explicit label association --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name-input<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Full name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name-input<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Bad: No label or implicit association --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Enter name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<h3 id="error-messages" tabindex="-1">Error Messages</h3>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Full name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>
+  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+  <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>
+  <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name-error<span class="token punctuation">"</span></span>
+  <span class="token attr-name">aria-invalid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span>
+<span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name-error<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  Please enter your name
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="help-text" tabindex="-1">Help Text</h3>
+<p>Provide clear, visible help text for complex fields:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Legal name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>
+  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+  <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>
+  <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name-help<span class="token punctuation">"</span></span>
+<span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name-help<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>help-text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  Enter your name exactly as it appears on your passport or ID
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="implementation-roadmap" tabindex="-1">Implementation Roadmap</h2>
+<p>Ready to fix your forms? Here's a practical implementation plan:</p>
+<h3 id="phase-1%3A-audit-(1-2-days)" tabindex="-1">Phase 1: Audit (1-2 days)</h3>
+<ol>
+<li>Find all name input fields in your application</li>
+<li>Check database character set and collation</li>
+<li>Review validation rules</li>
+<li>Test with non-ASCII names</li>
+<li>Document problems found</li>
+</ol>
+<h3 id="phase-2%3A-database-migration-(1-3-days)" tabindex="-1">Phase 2: Database Migration (1-3 days)</h3>
+<pre class="language-sql"><code class="language-sql"><span class="token comment">-- Check current encoding</span>
+<span class="token keyword">SHOW</span> <span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> users<span class="token punctuation">;</span>
+
+<span class="token comment">-- Backup first!</span>
+mysqldump <span class="token operator">-</span>u <span class="token keyword">user</span> <span class="token operator">-</span>p <span class="token keyword">database</span> <span class="token operator">></span> <span class="token keyword">backup</span><span class="token punctuation">.</span><span class="token keyword">sql</span>
+
+<span class="token comment">-- Migrate to UTF-8</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> users
+  <span class="token keyword">MODIFY</span> <span class="token keyword">COLUMN</span> name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span>
+  <span class="token keyword">CHARACTER</span> <span class="token keyword">SET</span> utf8mb4
+  <span class="token keyword">COLLATE</span> utf8mb4_unicode_ci<span class="token punctuation">;</span></code></pre>
+<h3 id="phase-3%3A-validation-updates-(2-5-days)" tabindex="-1">Phase 3: Validation Updates (2-5 days)</h3>
+<ol>
+<li>Update backend validation to accept Unicode</li>
+<li>Update frontend validation patterns</li>
+<li>Remove overly restrictive rules</li>
+<li>Add comprehensive test cases</li>
+<li>Update error messages</li>
+</ol>
+<h3 id="phase-4%3A-ui-improvements-(2-3-days)" tabindex="-1">Phase 4: UI Improvements (2-3 days)</h3>
+<ol>
+<li>Consider consolidating split name fields</li>
+<li>Add preferred name fields where appropriate</li>
+<li>Update help text</li>
+<li>Improve error messages</li>
+<li>Test with screen readers</li>
+</ol>
+<h3 id="phase-5%3A-monitoring-(ongoing)" tabindex="-1">Phase 5: Monitoring (Ongoing)</h3>
+<ol>
+<li>Track validation failures</li>
+<li>Review support tickets</li>
+<li>Monitor user feedback</li>
+<li>Keep test suite updated with new cases</li>
+</ol>
+<h2 id="resources-and-further-reading" tabindex="-1">Resources and Further Reading</h2>
+<h3 id="essential-reading" tabindex="-1">Essential Reading</h3>
+<p><strong>Falsehoods Programmers Believe About Names</strong> by Patrick McKenzie<br>
+<a href="https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/">https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/</a></p>
+<p>A must-read list of 40+ incorrect assumptions about names.</p>
+<p><strong>Personal Names Around the World</strong> - W3C<br>
+<a href="https://www.w3.org/International/questions/qa-personal-names">https://www.w3.org/International/questions/qa-personal-names</a></p>
+<p>Comprehensive guide to cultural naming conventions.</p>
+<p><strong>Unicode Character Database</strong><br>
+<a href="https://unicode.org">https://unicode.org</a></p>
+<p>The definitive source for Unicode character properties.</p>
+<h3 id="tools-and-libraries" tabindex="-1">Tools and Libraries</h3>
+<p><strong>Unicode Regular Expressions</strong><br>
+Most modern languages support <code>\p{}</code> patterns for Unicode-aware regex.</p>
+<p><strong>ICU (International Components for Unicode)</strong><br>
+Libraries for proper Unicode handling in various languages.</p>
+<h3 id="database-documentation" tabindex="-1">Database Documentation</h3>
+<ul>
+<li>MySQL UTF-8 Guide: <a href="https://dev.mysql.com/doc/refman/8.0/en/charset-unicode.html">https://dev.mysql.com/doc/refman/8.0/en/charset-unicode.html</a></li>
+<li>PostgreSQL Character Sets: <a href="https://www.postgresql.org/docs/current/multibyte.html">https://www.postgresql.org/docs/current/multibyte.html</a></li>
+</ul>
+<h3 id="testing-resources" tabindex="-1">Testing Resources</h3>
+<p>Create a test file with diverse names:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// names-test-data.js</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> realWorldNames <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"O'Brien"</span><span class="token punctuation">,</span> <span class="token literal-property property">culture</span><span class="token operator">:</span> <span class="token string">"Irish"</span><span class="token punctuation">,</span> <span class="token literal-property property">notes</span><span class="token operator">:</span> <span class="token string">"Apostrophe"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"José García"</span><span class="token punctuation">,</span> <span class="token literal-property property">culture</span><span class="token operator">:</span> <span class="token string">"Spanish"</span><span class="token punctuation">,</span> <span class="token literal-property property">notes</span><span class="token operator">:</span> <span class="token string">"Accent marks"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"张伟"</span><span class="token punctuation">,</span> <span class="token literal-property property">culture</span><span class="token operator">:</span> <span class="token string">"Chinese"</span><span class="token punctuation">,</span> <span class="token literal-property property">notes</span><span class="token operator">:</span> <span class="token string">"Chinese characters"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Nguyễn"</span><span class="token punctuation">,</span> <span class="token literal-property property">culture</span><span class="token operator">:</span> <span class="token string">"Vietnamese"</span><span class="token punctuation">,</span> <span class="token literal-property property">notes</span><span class="token operator">:</span> <span class="token string">"Tone marks"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Müller"</span><span class="token punctuation">,</span> <span class="token literal-property property">culture</span><span class="token operator">:</span> <span class="token string">"German"</span><span class="token punctuation">,</span> <span class="token literal-property property">notes</span><span class="token operator">:</span> <span class="token string">"Umlaut"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"محمد"</span><span class="token punctuation">,</span> <span class="token literal-property property">culture</span><span class="token operator">:</span> <span class="token string">"Arabic"</span><span class="token punctuation">,</span> <span class="token literal-property property">notes</span><span class="token operator">:</span> <span class="token string">"Right-to-left script"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Kealiʻi"</span><span class="token punctuation">,</span> <span class="token literal-property property">culture</span><span class="token operator">:</span> <span class="token string">"Hawaiian"</span><span class="token punctuation">,</span> <span class="token literal-property property">notes</span><span class="token operator">:</span> <span class="token string">"ʻOkina"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Sukarno"</span><span class="token punctuation">,</span> <span class="token literal-property property">culture</span><span class="token operator">:</span> <span class="token string">"Indonesian"</span><span class="token punctuation">,</span> <span class="token literal-property property">notes</span><span class="token operator">:</span> <span class="token string">"Mononym"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// Add more as you encounter them</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+<h2 id="responsibility-and-where-it-lies" tabindex="-1">Responsibility And Where It Lies</h2>
+<p>So where does the responsibility lie when we come across all these examples of laziness, overlooking, and plain irresponsibility? Look no further than:</p>
+<ol>
+<li>
+<p>The Developer: Whether it is laziness, lack of knowledge or education, or the &quot;Well, I am not allowed to make changes like that because...&quot; take the Nike approach and <strong>Just Do It</strong>! The Sisyphus Effect, or the eternal struggle to make change and there is resistance above you is real, I get it. Make your case! If that doesn't work, throw it in there! I bet Brad has so many meetings and so much paperwork that he really won't ever notice. If so, then we cross that bridge when we get there. Trust me, you'll get the avalanche of crap raining down on you in the end.</p>
+</li>
+<li>
+<p>The Manager: Oh yes. My favorite part. Managerial decision-making. Whether you have the best manager since sliced bread or you have the worst manager that can stumble backwards into horse shit and come out smelling like roses, this is on them! They oversee a group of devs, they <em>should</em> know what they are doing, but should and do are two entirely different things. The onus lies with the manager though.</p>
+</li>
+<li>
+<p>The Designer: A small part in this play, but a part nonetheless. If they don't design for this pattern then they aren't practicing accessible design and are shutting out billions potentially. Everything starts from a design doesn't it? Then the designer is the root of the problem somewhat. The root of the problem lies next.</p>
+</li>
+<li>
+<p>The Conception of the Project: You know that meeting you all have (I hope) where you all get together and plan out what you will do and draw out the roadmap with all the cool tools you use? <strong>THAT</strong> is where this all starts. Conception of project. It's not going to be accessible if you don't start practicing accessibility from <strong>the very start</strong>! &quot;We can go back and...&quot; Great, now you have wasted resources, time, money, and more. Just because you didn't take that first step. The most important one. Accessibility and inclusivity.</p>
+</li>
+</ol>
+<h2 id="summary" tabindex="-1">Summary</h2>
+<p>Handling names correctly is fundamentally about <strong>respect</strong>. Every time someone encounters a form that rejects their name, they're not thinking <em>&quot;this is a technical limitation.&quot;</em> They're thinking <em>&quot;this company doesn't care about people like me.&quot;</em> They feel left out. Not included. A sense of <em>&quot;this company doesn't want me.&quot;</em> and they aren't wrong. You don't if you keep shutting people out for whatever reasons.</p>
+<p>The technical solution <strong>isn't</strong> complicated:</p>
+<ul>
+<li>Use UTF-8 everywhere</li>
+<li>Accept Unicode letters and common punctuation</li>
+<li>Store exactly what users enter</li>
+<li>Don't enforce Western name formats</li>
+<li>Test with diverse real names</li>
+</ul>
+<p>But the impact is profound. Good name handling:</p>
+<ul>
+<li>Makes your product accessible to billions more people</li>
+<li>Reduces support costs and user frustration</li>
+<li>Demonstrates respect for cultural diversity</li>
+<li>Improves your brand reputation</li>
+<li>Can be legally required in many jurisdictions</li>
+</ul>
+<p>Start today. Pick one form in your application. Test it with the names in this article. Fix what's broken. Then move to the next form.</p>
+<p>Your users will notice. They'll appreciate being treated as the whole, complete people they are—with names that belong to them, not to your validation rules.</p>
+<h2 id="take-action" tabindex="-1">Take Action</h2>
+<ol>
+<li><strong>Audit your forms today</strong> using the test names provided in this article</li>
+<li><strong>Share this guide</strong> with your team</li>
+<li><strong>Update your validation</strong> to be more inclusive</li>
+<li><strong>Add diverse names to your test suite</strong></li>
+<li><strong>Monitor and improve</strong> based on real user feedback</li>
+</ol>
+<p>Every person deserves to have their name accepted, stored correctly, and displayed with respect. It's not an edge case. It's not a nice-to-have. It's a fundamental requirement for building inclusive software.</p>
+<p>Get names right, and you're telling your users: <strong>you belong here</strong>.</p>
+<h3 id="have-you-encountered-name-validation-issues%3F-found-a-name-that-breaks-systems%3F-share-your-stories-with-me-on-bluesky." tabindex="-1">Have you encountered name validation issues? Found a name that breaks systems? <a href="https://bsky.app/profile/toddl.dev">Share your stories with me on Bluesky.</a></h3>
+
+    </section>
+
+    <section class="post__likes" data-bsky-container>
+      <h3 class="post__likesTitle">
+        🦞 <span data-bsky-likes-count></span> likes on Bluesky
+      </h3>
+      <a class="post__likesCta" href="https://bsky.app/profile/toddl.dev/post/3lauorp3v4k2g" target="_blank">
+        Like this post on 🦋Bluesky to see your face on this page
+      </a>
+      <ul data-bsky-likes class="post__likesList"></ul>
+    </section>
+  </article>
+
+  <meta data-bsky-post-id="3lauorp3v4k2g" />
+  <script src="../../bluesky_likes.js"></script>
+
+</div>
+
+      </main>
+
+      <footer class="meta footer">
+        <h2 class="league-gothic-heading">&copy;1999 &mdash; <script>document.write(new Date().getFullYear());</script>, Todd Libby.</h2>
+          <nav aria-labelledby="majorlinks">
+            <ul class="nav list-inline" id="majorlinks">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
+        <h2 class="league-gothic-heading">#BlackLivesMatter &middot; #StopAsianHate &middot; #ProtectTransKids</h2>
+        <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
+          <h2 id="a11y-webring-club">a11y-webring.club</h2>
+          <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
+          <ul>
+            <li><a rel="previous external" href="https://a11y-webring.club/prev">Previous website</a></li>
+            <li><a rel="external" href="https://a11y-webring.club/random">Random website</a></li>
+            <li><a rel="next external" href="https://a11y-webring.club/next">Next website</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="social-nav">
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a rel="me" href="https://notacult.social/@colabottles" class="mastodon">
+                <svg class="icon icon-mastodon" focusable="false">
+                  <title>My Mastodon profile</title>
+                  <desc id="mastodon">A white Mastodon.</desc>
+                  <use href="/img/symbol-defs.svg#icon-mastodon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://bsky.app/profile/toddl.dev" class="bluesky-flutter">
+                <svg id="flutterby" class="bluesky-flutter" viewBox="0 0 566 650" xmlns="http://www.w3.org/2000/svg">
+                <title>Todd's Bluesky account</title>
+                  <defs>
+                    <path id="wing" fill="currentColor" d="M 123.244 35.008 C 188.248 83.809 283.836 176.879 283.836 235.857 C 283.836 316.899 283.879 235.845 283.836 376.038 C 283.889 375.995 282.67 376.544 280.212 383.758 C 266.806 423.111 214.487 576.685 94.841 453.913 C 31.843 389.269 61.013 324.625 175.682 305.108 C 110.08 316.274 36.332 297.827 16.093 225.504 C 10.271 204.699 0.343 76.56 0.343 59.246 C 0.343 -27.451 76.342 -0.206 123.244 35.008 Z" />
+                  </defs>
+                <use xlink:href="#wing" class="left" />
+                <use xlink:href="#wing" class="right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        🇺🇦
+      </footer>
+    </div>
+  </body>
+</html>

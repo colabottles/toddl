@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="view-transition" content="same-origin">
+      <meta name="generator" content="Eleventy v3.1.2">
+      <meta name="description" content="How I built @colabottles/center-div - a complete journey from problem to published package.">
+      <meta name="p:domain_verify" content="cb09c2fcfbe261d7926ac5162b998917"/>
+
+      <!-- For OpenGraph -->
+      <meta property="og:title" content="Building a Production-Ready Nuxt Module From Idea to Published" />
+      <meta property="og:description" content="How I built @colabottles/center-div - a complete journey from problem to published package." />
+      <meta property="og:image" content="https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-nuxtmod.png">
+      <meta property="og:image:alt" content="Todd Libby has written a post called, Building a Production-Ready Nuxt Module From Idea to Published" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:title" content="How I built @colabottles/center-div - a complete journey from problem to published package.">
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://toddl.dev">
+      <title>Building a Production-Ready Nuxt Module From Idea to Published</title>
+
+      <link rel="stylesheet" href="/css/index.css" />
+      <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml">
+      <link rel="icon" href="/img/favicon.png" />
+      <link rel="prefetch" as="script" href="../../svgxuse.min.js">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
+    </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="#main" class="visible-hidden">Skip to content</a>
+          <a href="/" class="page-title" id="title">
+            <img src="https://res.cloudinary.com/colabottles/image/upload/v1761592721/lobster.png" alt="A Lobster logo." />
+          </a>
+            <nav aria-label="main-navigation">
+              <ul class="navigation main-nav"><li class="nav-item">
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item">
+                    <a href="/contact/">Contact</a>
+                  </li><li class="nav-item">
+                    <a href="/about/">About Todd</a>
+                  </li></ul>
+            </nav>
+      </header>
+
+      <main id="main" class="inner ">
+        
+<div class="article-container">
+  <article>
+
+    <header class="article__header cal-sans-regular">
+      <h1 class="page-title">Building a Production-Ready Nuxt Module From Idea to Published</h1>
+        <div class="article__meta">
+          <time>17 January, 2026</time>
+        </div>
+    </header>
+
+    <section class="article__body inter-tight-content">
+      <h2 id="how-i-built-%40colabottles%2Fcenter-div---a-complete-journey-from-problem-to-published-package" tabindex="-1">How I built @colabottles/center-div - a complete journey from problem to published package</h2>
+<h3 id="the-impetus" tabindex="-1">The Impetus</h3>
+<p>My background allows me to pick up on programming pretty good these days, that said, I don't have an eidetic memory, I have a 40-plus year trove of what I call &quot;space junk&quot; floating around in my head, real life things to think about, but I understand the fundamentals and can understand and process by doing and reading. I figured this project is a great little thing to do. So I did it.</p>
+<h3 id="the-post-i-saw" tabindex="-1">The Post I Saw</h3>
+<p>I was on my usual jaunt through Bluesky seeing if there was anything positive or interesting to read and laid eyes <a href="https://bsky.app/profile/stephfh.dev/post/3mbmrbat4os2u">on this comment</a> and the reply to it by <a href="https://roe.dev">Daniel Roe</a>, lead maintainer with the Nuxt core team. I thought to myself, <em>&quot;This looks like a funny thing I can do, here is something I can challenge myself with.&quot;</em> and thus I started doing the research.</p>
+<h3 id="the-problem-issue-that-started-it-all" tabindex="-1">The <s>Problem</s> Issue That Started It All</h3>
+<p>If you've built anything with Nuxt (or anything with anything really), you've probably written this code (or something similar) dozens of times:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span> <span class="token property">place-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span> <span class="token property">min-height</span><span class="token punctuation">:</span> 25vh</span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span>Perfectly Centered<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<p>or a version of this in your preferred programming language.</p>
+<p>It's such a common pattern—centering content on a page—yet we repeat the same CSS (Cascading Style Sheets) Grid boilerplate over and over. Worse, when you try to abstract it into a component, you often run into <strong>hydration mismatches</strong> that make your console light up with warnings.</p>
+<p>I decided to try and solve this once and for all by building <code>@colabottles/center-div</code>, a simple Nuxt module for accessible, hydration-safe centering. Here's what I learned building and publishing a production-ready Nuxt module.</p>
+<hr>
+<h2 id="the-journey%3A-from-idea-to-npm" tabindex="-1">The Journey: From Idea to npm</h2>
+<h3 id="day-1%3A-the-hydration-nightmare" tabindex="-1">Day 1: The Hydration Nightmare</h3>
+<p>My first attempt was straightforward—create a Vue component that applies centering styles:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">setup</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">const</span> props <span class="token operator">=</span> <span class="token function">defineProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">minHeight</span><span class="token operator">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+    <span class="token attr-name">:style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{
+      display: 'grid',
+      placeItems: 'center',
+      minHeight: minHeight
+    }<span class="token punctuation">"</span></span>
+  <span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span></code></pre>
+<p>Simple, right? <strong>Wrong. Hydration errors everywhere.</strong></p>
+<p>The problem: Vue was applying styles differently on the server versus the client, causing the dreaded:</p>
+<pre class="language-bash"><code class="language-bash">Hydration completed but contains mismatches.</code></pre>
+<h3 id="the-solution%3A-timing-is-everything" tabindex="-1">The Solution: Timing is Everything</h3>
+<p>After researching (and a lot of trial and error), I discovered the issue was about <strong>when</strong> styles get applied. The fix involved two key changes:</p>
+<p><strong>1. Use <code>computed</code> styles instead of reactive object spreads:</strong></p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token operator">&lt;</span>script setup lang<span class="token operator">=</span><span class="token string">"ts"</span><span class="token operator">></span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> computed <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token keyword">const</span> computedStyle <span class="token operator">=</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> baseStyle<span class="token operator">:</span> Record<span class="token operator">&lt;</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token builtin">string</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">{</span> display<span class="token operator">:</span> <span class="token string">'grid'</span> <span class="token punctuation">}</span>
+
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span>props<span class="token punctuation">.</span>axis<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token string">'horizontal'</span><span class="token operator">:</span>
+      baseStyle<span class="token punctuation">.</span>justifyItems <span class="token operator">=</span> <span class="token string">'center'</span>
+      <span class="token keyword">break</span>
+    <span class="token keyword">case</span> <span class="token string">'vertical'</span><span class="token operator">:</span>
+      baseStyle<span class="token punctuation">.</span>alignItems <span class="token operator">=</span> <span class="token string">'center'</span>
+      <span class="token keyword">break</span>
+    <span class="token keyword">default</span><span class="token operator">:</span>
+      baseStyle<span class="token punctuation">.</span>placeItems <span class="token operator">=</span> <span class="token string">'center'</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>props<span class="token punctuation">.</span>minBlockSize<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    baseStyle<span class="token punctuation">.</span>minBlockSize <span class="token operator">=</span> props<span class="token punctuation">.</span>minBlockSize
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> baseStyle
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+
+<span class="token operator">&lt;</span>template<span class="token operator">></span>
+  <span class="token operator">&lt;</span>component <span class="token operator">:</span><span class="token keyword">is</span><span class="token operator">=</span><span class="token string">"as"</span> <span class="token operator">:</span>style<span class="token operator">=</span><span class="token string">"computedStyle"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>slot <span class="token operator">/</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>component<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span></code></pre>
+<p><strong>2. For the directive, use <code>beforeMount</code> instead of <code>mounted</code>:</strong></p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineNuxtPlugin</span><span class="token punctuation">(</span><span class="token punctuation">(</span>nuxtApp<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  nuxtApp<span class="token punctuation">.</span>vueApp<span class="token punctuation">.</span><span class="token function">directive</span><span class="token punctuation">(</span><span class="token string">'center'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token function">beforeMount</span><span class="token punctuation">(</span>el<span class="token operator">:</span> HTMLElement<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      el<span class="token punctuation">.</span>style<span class="token punctuation">.</span>display <span class="token operator">=</span> <span class="token string">'grid'</span>
+      el<span class="token punctuation">.</span>style<span class="token punctuation">.</span>placeItems <span class="token operator">=</span> <span class="token string">'center'</span>
+      el<span class="token punctuation">.</span>style<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token string">'100dvh'</span>
+      el<span class="token punctuation">.</span>style<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token string">'100%'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p><strong>Result:</strong> Zero hydration warnings. The component rendered identically on server and client.</p>
+<hr>
+<h2 id="making-it-accessible%3A-wcag-(web-content-accessibility-guidelines)-2.2-compliance" tabindex="-1">Making It Accessible: WCAG (Web Content Accessibility Guidelines) 2.2 Compliance</h2>
+<p>Centering seems simple, but accessibility matters. I wanted this module to be usable by everyone, including users with disabilities. Here's what I focused on:</p>
+<h3 id="1.-preserving-dom-(document-object-model)-order" tabindex="-1">1. Preserving DOM (Document Object Model) Order</h3>
+<p>Many centering techniques use absolute positioning or flexbox in ways that change visual order without changing DOM order. This breaks screen readers.</p>
+<p><strong>My approach:</strong> Pure CSS Grid with <code>place-items: center</code>. No position manipulation, no reordering.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.nuxt-center-div</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
+  <span class="token property">place-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="2.-usage-of-logical-properties" tabindex="-1">2. Usage of Logical Properties</h3>
+<p>Instead of <code>min-height</code>, I used <code>min-block-size</code> to respect writing modes and text direction:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CenterDiv</span> <span class="token attr-name">min-block-size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>25vh<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  Content
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CenterDiv</span><span class="token punctuation">></span></span></code></pre>
+<p>This works correctly for RTL (Right-to-Left) languages and vertical writing modes.</p>
+<h3 id="3.-never-manipulate-aria-(accessible-rich-internet-applications)" tabindex="-1">3. Never Manipulate ARIA (Accessible Rich Internet Applications)</h3>
+<p>The component doesn't add any ARIA  attributes, change roles, or trap focus. It's purely presentational—exactly what a layout utility should be. The less the ARIA, the better I say.</p>
+<h3 id="4.-support-semantic-html-(hypertext-markup-language)" tabindex="-1">4. Support Semantic HTML (HyperText Markup Language)</h3>
+<p>The <code>as</code> prop lets users choose the correct semantic element:</p>
+<pre class="language-html"><code class="language-html"><span class="token comment">&lt;!-- Default: &lt;section> --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CenterDiv</span><span class="token punctuation">></span></span>Content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CenterDiv</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Use &lt;main> for main content --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CenterDiv</span> <span class="token attr-name">as</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>main<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CenterDiv</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Use &lt;article> for articles --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CenterDiv</span> <span class="token attr-name">as</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>article<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CenterDiv</span><span class="token punctuation">></span></span></code></pre>
+<p>Let's face it, semantic HTML is an art form and one we don't see too often these days that are all about &quot;build fast and break things&quot;. That is complete malarkey by the way. I'll explain more in a future blog post.</p>
+<p><strong>Standards met:</strong></p>
+<ul>
+<li>✅ WCAG 1.3.2 - Meaningful Sequence</li>
+<li>✅ WCAG 1.4.10 - Reflow (supports 400% zoom)</li>
+<li>✅ WCAG 2.4.3 - Focus Order</li>
+</ul>
+<hr>
+<h2 id="testing%3A-the-foundation-of-confidence" tabindex="-1">Testing: The Foundation of Confidence</h2>
+<p>I learned that <strong>tests aren't optional</strong> for published packages. Users depend on your code working correctly. Here's the testing stack I built:</p>
+<h3 id="unit-tests-(vitest-%2B-vue-test-utils)" tabindex="-1">Unit Tests (Vitest + Vue Test Utils)</h3>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> describe<span class="token punctuation">,</span> it<span class="token punctuation">,</span> expect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vitest'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> mount <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@vue/test-utils'</span>
+<span class="token keyword">import</span> CenterDiv <span class="token keyword">from</span> <span class="token string">'../../src/runtime/components/CenterDiv.vue'</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'CenterDiv'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'renders with default props'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">mount</span><span class="token punctuation">(</span>CenterDiv<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      slots<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'&lt;button>Test&lt;/button>'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">expect</span><span class="token punctuation">(</span>wrapper<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'section'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">exists</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>wrapper<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'Test'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'applies minBlockSize prop'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">mount</span><span class="token punctuation">(</span>CenterDiv<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      props<span class="token operator">:</span> <span class="token punctuation">{</span> minBlockSize<span class="token operator">:</span> <span class="token string">'100vh'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> el <span class="token operator">=</span> wrapper<span class="token punctuation">.</span>element <span class="token keyword">as</span> HTMLElement
+    <span class="token function">expect</span><span class="token punctuation">(</span>el<span class="token punctuation">.</span>style<span class="token punctuation">.</span>minBlockSize<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'100vh'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p><strong>Coverage:</strong></p>
+<ul>
+<li>Component rendering</li>
+<li>Props (axis, as, minBlockSize)</li>
+<li>Style application</li>
+<li>7 tests total</li>
+</ul>
+<h3 id="e2e-tests-(playwright)" tabindex="-1">E2E Tests (Playwright)</h3>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> test<span class="token punctuation">,</span> expect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@playwright/test'</span>
+
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'component renders and centers content'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> page <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">await</span> page<span class="token punctuation">.</span><span class="token function">goto</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+  <span class="token keyword">await</span> page<span class="token punctuation">.</span><span class="token function">waitForLoadState</span><span class="token punctuation">(</span><span class="token string">'networkidle'</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">const</span> centerDiv <span class="token operator">=</span> page<span class="token punctuation">.</span><span class="token function">locator</span><span class="token punctuation">(</span><span class="token string">'.nuxt-center-div'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">first</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">await</span> <span class="token function">expect</span><span class="token punctuation">(</span>centerDiv<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeVisible</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">const</span> styles <span class="token operator">=</span> <span class="token keyword">await</span> centerDiv<span class="token punctuation">.</span><span class="token function">evaluate</span><span class="token punctuation">(</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> computed <span class="token operator">=</span> window<span class="token punctuation">.</span><span class="token function">getComputedStyle</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      display<span class="token operator">:</span> computed<span class="token punctuation">.</span>display<span class="token punctuation">,</span>
+      placeItems<span class="token operator">:</span> computed<span class="token punctuation">.</span>placeItems<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token function">expect</span><span class="token punctuation">(</span>styles<span class="token punctuation">.</span>display<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'grid'</span><span class="token punctuation">)</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span>styles<span class="token punctuation">.</span>placeItems<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'center'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>These tests verify the component works in <strong>actual browsers</strong>, not just in Node.</p>
+<h3 id="accessibility-tests-(vitest-axe)" tabindex="-1">Accessibility Tests (vitest-axe)</h3>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> axe <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vitest-axe'</span>
+
+<span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'has no accessibility violations'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">mount</span><span class="token punctuation">(</span>CenterDiv<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    slots<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'&lt;button>Accessible Button&lt;/button>'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">const</span> results <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">axe</span><span class="token punctuation">(</span>wrapper<span class="token punctuation">.</span>element<span class="token punctuation">)</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span>results<span class="token punctuation">.</span>violations<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toHaveLength</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>This caught issues I might have missed, like missing ARIA labels or incorrect heading hierarchy.</p>
+<p><strong>Final count:</strong> 11 tests, 100% passing.</p>
+<hr>
+<h2 id="the-module-structure%3A-following-best-practices" tabindex="-1">The Module Structure: Following Best Practices</h2>
+<p>The official Nuxt module template provides excellent scaffolding. Here's the structure I ended up with:</p>
+<pre class="language-md"><code class="language-md">center-div-module/
+├── src/
+│   ├── module.ts                    # Module registration
+│   └── runtime/
+│       ├── components/
+│       │   └── CenterDiv.vue       # Component
+│       ├── plugin.ts               # Directive
+│       └── types.ts                # TypeScript definitions
+├── playground/                     # Local development
+│   ├── app.vue
+│   └── nuxt.config.ts
+├── test/
+│   ├── unit/
+│   │   └── CenterDiv.test.ts
+│   └── e2e/
+│       └── CenterDiv.spec.ts
+├── package.json
+├── tsconfig.json
+└── vitest.config.ts</code></pre>
+<h3 id="key-files-explained" tabindex="-1">Key Files Explained</h3>
+<p><strong><code>src/module.ts</code></strong> - Registers the component and plugin:</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> defineNuxtModule<span class="token punctuation">,</span> addComponent<span class="token punctuation">,</span> addPlugin<span class="token punctuation">,</span> createResolver <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@nuxt/kit'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineNuxtModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'center-div'</span><span class="token punctuation">,</span>
+    configKey<span class="token operator">:</span> <span class="token string">'centerDiv'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span>_options<span class="token punctuation">,</span> _nuxt<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> resolver <span class="token operator">=</span> <span class="token function">createResolver</span><span class="token punctuation">(</span><span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>url<span class="token punctuation">)</span>
+
+    <span class="token function">addComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      name<span class="token operator">:</span> <span class="token string">'CenterDiv'</span><span class="token punctuation">,</span>
+      filePath<span class="token operator">:</span> resolver<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'./runtime/components/CenterDiv.vue'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">addPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      src<span class="token operator">:</span> resolver<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'./runtime/plugin'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      mode<span class="token operator">:</span> <span class="token string">'client'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p><strong><code>playground/</code></strong> - Critical for development. Run <code>pnpm dev</code> and you get a live Nuxt app with your module loaded. Instant feedback loop.</p>
+<hr>
+<h2 id="the-build-process%3A-getting-ready-for-npm-(node-package-manager)" tabindex="-1">The Build Process: Getting Ready for npm (Node PAckage Manager)</h2>
+<p>Building the module involves several steps:</p>
+<h3 id="1.-module-builder" tabindex="-1">1. Module Builder</h3>
+<p>Nuxt provides <code>nuxt-module-build</code> which handles:</p>
+<ul>
+<li>Bundling (ESM (ECMAScript Modules) + CommonJS)</li>
+<li>TypeScript compilation</li>
+<li>Type definitions generation</li>
+</ul>
+<pre class="language-bash"><code class="language-bash"><span class="token function">pnpm</span> run prepack</code></pre>
+<p>This creates the <code>dist/</code> folder:</p>
+<pre class="language-md"><code class="language-md">dist/
+├── module.mjs              # ESM entry
+├── module.cjs              # CommonJS entry
+├── module.d.ts             # TypeScript definitions
+└── runtime/
+    ├── components/
+    │   └── CenterDiv.vue
+    └── plugin.js</code></pre>
+<h3 id="2.-package-configuration" tabindex="-1">2. Package Configuration</h3>
+<p>The <code>package.json</code> tells npm what to publish:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"@colabottles/center-div"</span><span class="token punctuation">,</span>
+  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"0.1.2"</span><span class="token punctuation">,</span>
+  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"module"</span><span class="token punctuation">,</span>
+  <span class="token property">"exports"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"."</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"types"</span><span class="token operator">:</span> <span class="token string">"./dist/types.d.ts"</span><span class="token punctuation">,</span>
+      <span class="token property">"import"</span><span class="token operator">:</span> <span class="token string">"./dist/module.mjs"</span><span class="token punctuation">,</span>
+      <span class="token property">"require"</span><span class="token operator">:</span> <span class="token string">"./dist/module.cjs"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"files"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"dist"</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre>
+<p><strong>Only the <code>dist/</code> folder gets published.</strong> This keeps the package size tiny (4.4 kB).</p>
+<h3 id="3.-publishing" tabindex="-1">3. Publishing</h3>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> publish <span class="token parameter variable">--access</span> public</code></pre>
+<p>The <code>--access public</code> flag is required for scoped packages (@username/package-name).</p>
+<hr>
+<h2 id="ci%2Fcd%3A-automating-quality" tabindex="-1">CI/CD: Automating Quality</h2>
+<p>GitHub Actions runs tests on every push:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> ci
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> main
+  <span class="token key atrule">pull_request</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> main
+
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">test</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v6
+      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v6
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token number">20</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> corepack enable
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> pnpm install
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Prepare playground
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> pnpm run dev<span class="token punctuation">:</span>prepare
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Test
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> pnpm run test</code></pre>
+<p>This catches issues <strong>before</strong> they reach users.</p>
+<hr>
+<h2 id="challenges-i-faced-(and-how-i-solved-them)" tabindex="-1">Challenges I Faced (And How I Solved Them)</h2>
+<h3 id="challenge-1%3A-typescript-configuration" tabindex="-1">Challenge 1: TypeScript Configuration</h3>
+<p><strong>Problem:</strong> Tests failed in CI because <code>tsconfig.json</code> extended <code>.nuxt/tsconfig.json</code> which doesn't exist until you run the dev server.</p>
+<p><strong>Solution:</strong> Create a standalone <code>tsconfig.json</code> that doesn't depend on generated files:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"compilerOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"target"</span><span class="token operator">:</span> <span class="token string">"ESNext"</span><span class="token punctuation">,</span>
+    <span class="token property">"module"</span><span class="token operator">:</span> <span class="token string">"ESNext"</span><span class="token punctuation">,</span>
+    <span class="token property">"moduleResolution"</span><span class="token operator">:</span> <span class="token string">"Bundler"</span><span class="token punctuation">,</span>
+    <span class="token property">"strict"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"types"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"node"</span><span class="token punctuation">,</span> <span class="token string">"vitest"</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"include"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"src/**/*"</span><span class="token punctuation">,</span> <span class="token string">"test/**/*"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="challenge-2%3A-vite-version-conflicts" tabindex="-1">Challenge 2: Vite Version Conflicts</h3>
+<p><strong>Problem:</strong> Vitest and @vitejs/plugin-vue used different Vite versions, causing type errors.</p>
+<p><strong>Solution:</strong> Add a type assertion to ignore the incompatibility:</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// @ts-expect-error - Vite version conflict</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">vue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  test<span class="token operator">:</span> <span class="token punctuation">{</span>
+    environment<span class="token operator">:</span> <span class="token string">'happy-dom'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<h3 id="challenge-3%3A-eslint-checking-generated-files" tabindex="-1">Challenge 3: ESLint Checking Generated Files</h3>
+<p><strong>Problem:</strong> ESLint was throwing 2,825 errors from generated files in <code>playwright-report/</code>.</p>
+<p><strong>Solution:</strong> Add ignore patterns to <code>eslint.config.mjs</code>:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">createConfigForNuxt</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">ignores</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'**/dist/**'</span><span class="token punctuation">,</span>
+    <span class="token string">'**/node_modules/**'</span><span class="token punctuation">,</span>
+    <span class="token string">'**/.nuxt/**'</span><span class="token punctuation">,</span>
+    <span class="token string">'**/playwright-report/**'</span><span class="token punctuation">,</span>
+    <span class="token string">'**/test-results/**'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<hr>
+<h2 id="real-world-usage" tabindex="-1">Real-World Usage</h2>
+<p>Once published, using the module is straightforward:</p>
+<h3 id="installation" tabindex="-1">Installation</h3>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> @colabottles/center-div</code></pre>
+<h3 id="configuration" tabindex="-1">Configuration</h3>
+<pre class="language-typescript"><code class="language-typescript"><span class="token comment">// nuxt.config.ts</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineNuxtConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@colabottles/center-div'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<h3 id="component-usage" tabindex="-1">Component Usage</h3>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
+  <span class="token comment">&lt;!-- Full viewport centering --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CenterDiv</span> <span class="token attr-name">min-block-size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>100vh<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span>Click Me<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CenterDiv</span><span class="token punctuation">></span></span>
+
+  <span class="token comment">&lt;!-- Horizontal only --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CenterDiv</span> <span class="token attr-name">axis</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>horizontal<span class="token punctuation">"</span></span> <span class="token attr-name">min-block-size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>50vh<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span>Navigation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CenterDiv</span><span class="token punctuation">></span></span>
+
+  <span class="token comment">&lt;!-- Custom semantic element --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CenterDiv</span> <span class="token attr-name">as</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>main<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Main Content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CenterDiv</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="directive-usage" tabindex="-1">Directive Usage</h3>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-center</span><span class="token punctuation">></span></span>
+    Quick full-viewport centering
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span></code></pre>
+<hr>
+<h2 id="what-i-learned" tabindex="-1">What I Learned</h2>
+<h3 id="1.-developer-experience-matters" tabindex="-1">1. Developer Experience Matters</h3>
+<p>Small details make a huge difference:</p>
+<ul>
+<li>Clear prop names (<code>minBlockSize</code> vs <code>minHeight</code>)</li>
+<li>TypeScript autocomplete</li>
+<li>Helpful README with examples</li>
+<li>Fast development server</li>
+</ul>
+<h3 id="2.-tests-give-confidence" tabindex="-1">2. Tests Give Confidence</h3>
+<p>Every test I wrote caught a real bug. The time invested in testing paid off immediately.</p>
+<h3 id="3.-accessibility-isn't-optional-(which-i-already-knew)" tabindex="-1">3. Accessibility Isn't Optional (Which I Already Knew)</h3>
+<p>Building accessible components from the start is easier than retrofitting them later. Using semantic HTML and CSS Grid made accessibility almost automatic.</p>
+<h3 id="4.-the-nuxt-ecosystem-is-excellent" tabindex="-1">4. The Nuxt Ecosystem is Excellent</h3>
+<p>The module template, build tools, and documentation made this process smooth. The Nuxt team has done incredible work.</p>
+<h3 id="5.-community-feedback-is-essential" tabindex="-1">5. Community Feedback is Essential</h3>
+<p>Reaching out to experienced developers provides invaluable perspective before launching.</p>
+<hr>
+<h2 id="performance-metrics" tabindex="-1">Performance Metrics</h2>
+<p>The final package is <strong>tiny</strong>:</p>
+<pre class="language-md"><code class="language-md">Package size: 4.4 kB (compressed)
+Unpacked size: 10.3 kB
+Files: 15</code></pre>
+<p>For comparison, that's smaller than a single medium-resolution image. Zero dependencies beyond Nuxt itself.</p>
+<hr>
+<h2 id="future-improvements" tabindex="-1">Future Improvements</h2>
+<p>Ideas for future versions:</p>
+<ol>
+<li>
+<p><strong>Gap prop</strong> for spacing between centered items:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CenterDiv</span> <span class="token attr-name">gap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2rem<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span>One<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span>Two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CenterDiv</span><span class="token punctuation">></span></span></code></pre>
+</li>
+<li>
+<p><strong>Animation support</strong> for smooth centering transitions</p>
+</li>
+<li>
+<p><strong>Max inline size</strong> for constraining width:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CenterDiv</span> <span class="token attr-name">max-inline-size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>60ch<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">></span></span>Readable text width<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CenterDiv</span><span class="token punctuation">></span></span></code></pre>
+</li>
+<li>
+<p><strong>Nuxt DevTools integration</strong> to visualize all CenterDiv instances on a page</p>
+</li>
+</ol>
+<hr>
+<h2 id="try-it-yourself" tabindex="-1">Try It Yourself</h2>
+<p>The module is live on npm:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> @colabottles/center-div</code></pre>
+<p><strong>Links:</strong></p>
+<ul>
+<li><a href="https://www.npmjs.com/package/@colabottles/center-div">npm:</a></li>
+<li><a href="https://github.com/colabottles/center-div-module">GitHub:</a></li>
+<li>Documentation: <em>See README on GitHub</em></li>
+</ul>
+<hr>
+<h2 id="key-takeaways-for-building-your-own-module" tabindex="-1">Key Takeaways for Building Your Own Module</h2>
+<ol>
+<li>
+<p><strong>Start with the official template:</strong> <code>npx nuxi init my-module -t module</code></p>
+</li>
+<li>
+<p><strong>Test from day one:</strong> Unit, E2E, and accessibility tests</p>
+</li>
+<li>
+<p><strong>Use the playground:</strong> Instant feedback beats blind development</p>
+</li>
+<li>
+<p><strong>Focus on DX:</strong> Clear APIs, good docs, TypeScript support</p>
+</li>
+<li>
+<p><strong>Make it accessible:</strong> Follow WCAG guidelines from the start</p>
+</li>
+<li>
+<p><strong>Keep it small:</strong> Every kilobyte matters</p>
+</li>
+<li>
+<p><strong>Automate everything:</strong> CI/CD catches issues early</p>
+</li>
+<li>
+<p><strong>Get feedback:</strong> Community review prevents bad patterns</p>
+</li>
+</ol>
+<hr>
+<h2 id="conclusion" tabindex="-1">Conclusion</h2>
+<p>Building a Nuxt module taught me more about Vue, TypeScript, testing, and accessibility than any tutorial could. The process of taking an idea from concept to published package—with real users able to <code>npm install</code> it—is incredibly rewarding.</p>
+<p>If you have a common pattern in your Nuxt projects, consider extracting it into a module. The ecosystem benefits, and you'll learn a ton in the process.</p>
+<p><strong>What patterns do you find yourself repeating in Nuxt?</strong> Maybe your next module idea is already in your codebase.</p>
+<hr>
+<h2 id="resources" tabindex="-1">Resources</h2>
+<ul>
+<li><a href="https://github.com/nuxt/starter/tree/module"><strong>Nuxt Module Template:</strong></a></li>
+<li><a href="https://nuxt.com/docs/guide/going-further/modules"><strong>Nuxt Module Author Guide:</strong></a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/quickref/"><strong>WCAG Guidelines:</strong></a></li>
+<li><a href="https://vitest.dev/"><strong>Vitest Documentation:</strong></a></li>
+<li><a href="https://playwright.dev/"><strong>Playwright Testing:</strong></a></li>
+</ul>
+
+    </section>
+
+    <section class="post__likes" data-bsky-container>
+      <h3 class="post__likesTitle">
+        🦞 <span data-bsky-likes-count></span> likes on Bluesky
+      </h3>
+      <a class="post__likesCta" href="https://bsky.app/profile/toddl.dev/post/3mcn4sxc6bk27" target="_blank">
+        Like this post on 🦋Bluesky to see your face on this page
+      </a>
+      <ul data-bsky-likes class="post__likesList"></ul>
+    </section>
+  </article>
+
+  <meta data-bsky-post-id="3mcn4sxc6bk27" />
+  <script src="../../bluesky_likes.js"></script>
+
+</div>
+
+      </main>
+
+      <footer class="meta footer">
+        <h2 class="league-gothic-heading">&copy;1999 &mdash; <script>document.write(new Date().getFullYear());</script>, Todd Libby.</h2>
+          <nav aria-labelledby="majorlinks">
+            <ul class="nav list-inline" id="majorlinks">
+              <li class="nav-item"><a href="/podcast">Podcast</a></li>
+              <li class="nav-item"><a href="/events">Events</a></li>
+              <li class="nav-item"><a href="/speaking">Speaking</a></li>
+              <li class="nav-item"><a href="/a11y">Accessibility Statement</a></li>
+            </ul>
+          </nav>
+        <h2 class="league-gothic-heading">#BlackLivesMatter &middot; #StopAsianHate &middot; #ProtectTransKids</h2>
+        <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
+          <h2 id="a11y-webring-club">a11y-webring.club</h2>
+          <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
+          <ul>
+            <li><a rel="previous external" href="https://a11y-webring.club/prev">Previous website</a></li>
+            <li><a rel="external" href="https://a11y-webring.club/random">Random website</a></li>
+            <li><a rel="next external" href="https://a11y-webring.club/next">Next website</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="social-nav">
+          <ul class="footer-icons">
+            <li>
+              <a href="https://codepen.io/colabottles/#" class="codepen">
+                <svg class="icon icon-codepen" focusable="false">
+                  <title>My CodePen repository</title>
+                  <desc id="codepen">A white 3D cube.</desc>
+                  <use href="/img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/colabottles/" class="github">
+                <svg class="icon icon-github" focusable="false">
+                  <title>My GitHub repository</title>
+                  <desc id="github">A white OctoCat.</desc>
+                  <use href="/img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a rel="me" href="https://notacult.social/@colabottles" class="mastodon">
+                <svg class="icon icon-mastodon" focusable="false">
+                  <title>My Mastodon profile</title>
+                  <desc id="mastodon">A white Mastodon.</desc>
+                  <use href="/img/symbol-defs.svg#icon-mastodon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://bsky.app/profile/toddl.dev" class="bluesky-flutter">
+                <svg id="flutterby" class="bluesky-flutter" viewBox="0 0 566 650" xmlns="http://www.w3.org/2000/svg">
+                <title>Todd's Bluesky account</title>
+                  <defs>
+                    <path id="wing" fill="currentColor" d="M 123.244 35.008 C 188.248 83.809 283.836 176.879 283.836 235.857 C 283.836 316.899 283.879 235.845 283.836 376.038 C 283.889 375.995 282.67 376.544 280.212 383.758 C 266.806 423.111 214.487 576.685 94.841 453.913 C 31.843 389.269 61.013 324.625 175.682 305.108 C 110.08 316.274 36.332 297.827 16.093 225.504 C 10.271 204.699 0.343 76.56 0.343 59.246 C 0.343 -27.451 76.342 -0.206 123.244 35.008 Z" />
+                  </defs>
+                <use xlink:href="#wing" class="left" />
+                <use xlink:href="#wing" class="right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/feed/feed.xml" class="rss">
+                <svg class="icon icon-rss" focusable="false">
+                  <title>The RSS feed for this site</title>
+                  <desc id="rss">A white RSS logo, a group of lines shaped like a speaker.</desc>
+                  <use href="/img/symbol-defs.svg#icon-rss"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://toddl.dev/a11y/" class="a11y">
+                <svg class="icon icon-accessible-icon" focusable="false">
+                  <title>WAVE test results for this site</title>
+                  <desc id="a11y">A person in a wheelchair that is the color white.</desc>
+                  <use href="/img/symbol-defs.svg#icon-accessible-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        🇺🇦
+      </footer>
+    </div>
+  </body>
+</html>
