@@ -193,6 +193,10 @@ img:not([alt]) {
   border: 5px solid red
 }
 
+img.logo {
+  max-inline-size: fit-content;
+}
+
 iframe,
 video {
   aspect-ratio: 16/9;
