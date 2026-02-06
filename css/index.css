@@ -776,7 +776,6 @@ label.field {
 
 /* Small devices (landscape phones, 481px to 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-
   .wrapper,
   main,
   .inner {
@@ -832,7 +831,6 @@ label.field {
 
 /* Medium devices (tablets, 768px to 1023px) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
   .wrapper,
   main {
     grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(1rem, 1fr) [full-end];
@@ -868,7 +866,6 @@ label.field {
 
 /* Large devices (desktops, 1024px to 1279px) */
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-
   .wrapper,
   main {
     grid-template-columns: [full-start] minmax(calc(calc(100% - 960px)/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 960px)/2), 1fr) [full-end];
@@ -894,7 +891,6 @@ label.field {
 
 /* Extra large devices (large desktops, 1280px and up) */
 @media only screen and (min-width: 1280px) {
-
   .wrapper,
   main {
     grid-template-columns: [full-start] minmax(calc(calc(100% - var(--large))/2), 1fr) [main-start] repeat(10, [col-start] 1fr) [main-end] minmax(calc(calc(100% - var(--large))/2), 1fr) [full-end];
@@ -919,7 +915,7 @@ label.field {
   }
 
   a[href]:after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
   }
 
   img {
@@ -927,9 +923,7 @@ label.field {
     page-break-inside: avoid;
   }
 
-  h1,
-  h2,
-  h3 {
+  h1, h2, h3 {
     page-break-after: avoid;
   }
 }
