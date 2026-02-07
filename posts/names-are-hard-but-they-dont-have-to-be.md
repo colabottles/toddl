@@ -1,6 +1,6 @@
 ---
 title: Names Are Hard But They Don't Have To Be
-description: A comprehensive guide to handling names in web applications with respect to people.
+description: A guide to handling names in web applications with respect to people.
 date: 2026-01-22 ## YYYY-MM-DD
 tags:
   - post  ## LEAVE THIS TAG HERE
