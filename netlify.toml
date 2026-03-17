@@ -62,7 +62,7 @@
 [[plugins]]
   package = "netlify-plugin-cloudinary"
 
-  [plugins.inputs]
+[plugins.inputs]
   cloudName = "colabottles"
   deliveryType = "upload"
 
