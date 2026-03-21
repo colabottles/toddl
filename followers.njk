@@ -1,0 +1,620 @@
+---
+layout: base.njk
+title: Twitch Followers
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Twitch Followers — Todd Libby</title>
+  <style>
+    /* ── base ── */
+    :root {
+      --purple: #6626af;
+      --purple-dark: #52208a;
+      --purple-light: #ede5f8;
+      --green: #1a7a3c;
+      --green-light: #e6f4ec;
+      --red: #c0392b;
+      --red-light: #fdecea;
+      --gray: #5f5e5a;
+      --gray-light: #f4f3f0;
+      --border: rgba(0,0,0,0.1);
+      --radius: 10px;
+      --font: 'Segoe UI', system-ui, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --purple: #b07ee0;
+        --purple-dark: #c9a2f0;
+        --purple-light: #2a1840;
+        --green: #5ac87a;
+        --green-light: #0e2e1a;
+        --red: #e57373;
+        --red-light: #2e1010;
+        --gray: #b0aea6;
+        --gray-light: #1e1d1a;
+        --border: rgba(255,255,255,0.1);
+      }
+      body { background: #141312; color: #e2e0d8; }
+      .card { background: #1e1d1a; }
+      .avatar { background: #2a2926; }
+      input[type="search"] { background: #2a2926; color: #e2e0d8; border-color: #3a3835; }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font);
+      background: #f8f7f4;
+      color: #1e1d1a;
+      min-height: 100vh;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .page-header {
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .page-header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--purple);
+      flex: 1;
+    }
+
+    .page-header h1 span {
+      color: var(--gray);
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    /* ── stat chips ── */
+    .stats {
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+
+    .stat-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .stat-card { background: #1e1d1a; }
+    }
+
+    .stat-card .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gray);
+      margin-bottom: 0.35rem;
+    }
+
+    .stat-card .value {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .stat-card.total .value { color: var(--purple); }
+    .stat-card.new .value   { color: var(--green); }
+    .stat-card.lost .value  { color: var(--red); }
+
+    /* ── chart ── */
+    .chart-wrap {
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.25rem 0.75rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .chart-wrap { background: #1e1d1a; }
+    }
+
+    .chart-wrap h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.75rem;
+    }
+
+    canvas#chart { width: 100% !important; height: 160px !important; }
+
+    /* ── tabs ── */
+    .tabs {
+      max-width: 900px;
+      margin: 0 auto 1rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .tab {
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: white;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      color: var(--gray);
+      transition: all 0.15s;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .tab { background: #1e1d1a; }
+    }
+
+    .tab:hover { border-color: var(--purple); color: var(--purple); }
+
+    .tab.active {
+      background: var(--purple);
+      border-color: var(--purple);
+      color: white;
+    }
+
+    .search-wrap {
+      margin-left: auto;
+    }
+
+    input[type="search"] {
+      padding: 0.4rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      font-size: 0.875rem;
+      outline: none;
+      width: 200px;
+    }
+
+    input[type="search"]:focus { border-color: var(--purple); }
+
+    /* ── follower grid ── */
+    .grid {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .card.new-follower { border-left: 3px solid var(--green); }
+    .card.unfollower   { border-left: 3px solid var(--red); }
+
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--gray-light);
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .card-info { min-width: 0; }
+
+    .display-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .login {
+      font-size: 0.75rem;
+      color: var(--gray);
+    }
+
+    .followed-at {
+      font-size: 0.7rem;
+      color: var(--gray);
+      margin-top: 0.15rem;
+    }
+
+    .badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      margin-top: 0.25rem;
+      display: inline-block;
+    }
+
+    .badge-new  { background: var(--green-light); color: var(--green); }
+    .badge-lost { background: var(--red-light);   color: var(--red);   }
+
+    /* ── status messages ── */
+    .status {
+      max-width: 900px;
+      margin: 2rem auto;
+      text-align: center;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    .error-msg {
+      background: var(--red-light);
+      color: var(--red);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      max-width: 900px;
+      margin: 1rem auto;
+      font-size: 0.9rem;
+    }
+
+    .refresh-btn {
+      padding: 0.45rem 1.25rem;
+      border-radius: 999px;
+      border: 1px solid var(--purple);
+      background: transparent;
+      color: var(--purple);
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .refresh-btn:hover { background: var(--purple); color: white; }
+    .refresh-btn:disabled { opacity: 0.5; cursor: default; }
+
+    .snapshot-note {
+      font-size: 0.75rem;
+      color: var(--gray);
+      margin-left: auto;
+    }
+
+    /* ── loading skeleton ── */
+    @keyframes shimmer {
+      0%   { background-position: -600px 0; }
+      100% { background-position: 600px 0; }
+    }
+
+    .skeleton {
+      background: linear-gradient(90deg, var(--gray-light) 25%, #e8e6e0 50%, var(--gray-light) 75%);
+      background-size: 600px 100%;
+      animation: shimmer 1.4s infinite linear;
+      border-radius: 6px;
+    }
+
+    .skel-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .skel-card { background: #1e1d1a; }
+    }
+
+    .skel-avatar { width: 44px; height: 44px; border-radius: 50%; }
+    .skel-lines  { flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
+    .skel-line   { height: 10px; }
+    .skel-line.short { width: 55%; }
+
+    /* ── responsive ── */
+    @media (max-width: 480px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+      .page-header h1 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="page-header">
+  <h1>Twitch Followers <span id="updated-note"></span></h1>
+  <button class="refresh-btn" id="refresh-btn" onclick="load()">Refresh</button>
+</header>
+
+<div class="stats">
+  <div class="stat-card total">
+    <div class="label">Total followers</div>
+    <div class="value" id="stat-total">—</div>
+  </div>
+  <div class="stat-card new">
+    <div class="label">New since last check</div>
+    <div class="value" id="stat-new">—</div>
+  </div>
+  <div class="stat-card lost">
+    <div class="label">Unfollowed since last check</div>
+    <div class="value" id="stat-lost">—</div>
+  </div>
+</div>
+
+<div class="chart-wrap" id="chart-wrap" style="display:none">
+  <h2>Follower count — last 90 days</h2>
+  <canvas id="chart"></canvas>
+</div>
+
+<div class="tabs">
+  <button class="tab active" data-tab="all"    onclick="switchTab('all')">All followers</button>
+  <button class="tab"        data-tab="new"    onclick="switchTab('new')">New</button>
+  <button class="tab"        data-tab="lost"   onclick="switchTab('lost')">Unfollowers</button>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Search…" oninput="render()">
+  </div>
+  <span class="snapshot-note" id="snapshot-note"></span>
+</div>
+
+<div id="error-box"></div>
+<div id="grid" class="grid"></div>
+<div class="status" id="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script>
+  // ── config ──
+  // Point this at your Netlify function URL.
+  // In production this is relative; in local dev replace with your full Netlify CLI URL.
+  const FUNCTION_URL = "/.netlify/functions/twitch";
+
+  // ── state ──
+  let allFollowers  = [];
+  let newFollowers  = [];
+  let unfollowers   = [];
+  let activeTab     = "all";
+  let chartInstance = null;
+
+  // ── init ──
+  load();
+
+  async function load() {
+    const btn = document.getElementById("refresh-btn");
+    btn.disabled = true;
+    btn.textContent = "Loading…";
+    setError("");
+    showSkeletons();
+
+    try {
+      const res  = await fetch(FUNCTION_URL);
+      const data = await res.json();
+
+      if (!res.ok) throw new Error(data.error || "Unknown error");
+
+      allFollowers = data.followers  || [];
+      newFollowers = data.newFollowers || [];
+      unfollowers  = data.unfollowers  || [];
+
+      // Stats
+      document.getElementById("stat-total").textContent =
+        (data.totalCount ?? allFollowers.length).toLocaleString();
+      document.getElementById("stat-new").textContent =
+        newFollowers.length;
+      document.getElementById("stat-lost").textContent =
+        unfollowers.length;
+
+      // Snapshot age note
+      if (data.snapshotAge !== null && data.snapshotAge !== undefined) {
+        document.getElementById("snapshot-note").textContent =
+          `Last snapshot ${data.snapshotAge}m ago`;
+      }
+
+      // Chart
+      if (data.history && data.history.length > 1) {
+        drawChart(data.history);
+        document.getElementById("chart-wrap").style.display = "";
+      }
+
+      // Updated note
+      document.getElementById("updated-note").textContent =
+        `— updated ${new Date().toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"})}`;
+
+      render();
+    } catch (err) {
+      setError("Could not load follower data: " + err.message);
+      document.getElementById("grid").innerHTML = "";
+      document.getElementById("status").textContent = "";
+    } finally {
+      btn.disabled = false;
+      btn.textContent = "Refresh";
+    }
+  }
+
+  function switchTab(tab) {
+    activeTab = tab;
+    document.querySelectorAll(".tab").forEach(t => {
+      t.classList.toggle("active", t.dataset.tab === tab);
+    });
+    render();
+  }
+
+  function render() {
+    const q = (document.getElementById("search").value || "").toLowerCase();
+
+    let list;
+    if      (activeTab === "new")  list = newFollowers;
+    else if (activeTab === "lost") list = unfollowers;
+    else                           list = allFollowers;
+
+    if (q) {
+      list = list.filter(f =>
+        (f.user_name || "").toLowerCase().includes(q) ||
+        (f.user_login || "").toLowerCase().includes(q)
+      );
+    }
+
+    const grid   = document.getElementById("grid");
+    const status = document.getElementById("status");
+
+    if (list.length === 0) {
+      grid.innerHTML = "";
+      status.textContent = q
+        ? "No results match your search."
+        : activeTab === "new"  ? "No new followers since last check."
+        : activeTab === "lost" ? "No unfollowers detected since last check."
+        : "No followers yet.";
+      return;
+    }
+
+    status.textContent = "";
+    grid.innerHTML = list.map(f => cardHTML(f, activeTab)).join("");
+  }
+
+  function cardHTML(f, tab) {
+    const isNew  = tab === "new"  || newFollowers.some(n => n.user_id === f.user_id);
+    const isLost = tab === "lost";
+    const cls    = isLost ? "card unfollower" : isNew ? "card new-follower" : "card";
+
+    const avatar = f.profile_image_url
+      ? `<img class="avatar" src="${esc(f.profile_image_url)}" alt="" loading="lazy">`
+      : `<div class="avatar"></div>`;
+
+    const when = isLost
+      ? (f.unfollowed_detected_at
+          ? `<div class="followed-at">Detected ${relTime(f.unfollowed_detected_at)}</div>`
+          : "")
+      : (f.followed_at
+          ? `<div class="followed-at">Since ${relTime(f.followed_at)}</div>`
+          : "");
+
+    const badge = isLost
+      ? `<span class="badge badge-lost">Unfollowed</span>`
+      : isNew
+        ? `<span class="badge badge-new">New</span>`
+        : "";
+
+    return `<div class="${cls}">
+      ${avatar}
+      <div class="card-info">
+        <div class="display-name">${esc(f.user_name || f.display_name || f.user_login)}</div>
+        <div class="login">@${esc(f.user_login)}</div>
+        ${when}
+        ${badge}
+      </div>
+    </div>`;
+  }
+
+  function drawChart(history) {
+    const ctx = document.getElementById("chart").getContext("2d");
+    if (chartInstance) chartInstance.destroy();
+
+    const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const labels = history.map(h =>
+      new Date(h.created_at).toLocaleDateString([], {month:"short", day:"numeric"})
+    );
+    const values = history.map(h => h.count);
+
+    chartInstance = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels,
+        datasets: [{
+          data: values,
+          borderColor: "#6626af",
+          backgroundColor: "rgba(102,38,175,0.08)",
+          borderWidth: 2,
+          pointRadius: values.length > 30 ? 0 : 3,
+          pointHoverRadius: 5,
+          fill: true,
+          tension: 0.35,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: ctx => ` ${ctx.parsed.y.toLocaleString()} followers`
+            }
+          }
+        },
+        scales: {
+          x: {
+            ticks: {
+              color: dark ? "#9c9a92" : "#5f5e5a",
+              font: { size: 11 },
+              maxTicksLimit: 10,
+            },
+            grid: { display: false },
+          },
+          y: {
+            ticks: {
+              color: dark ? "#9c9a92" : "#5f5e5a",
+              font: { size: 11 },
+              callback: v => v.toLocaleString(),
+            },
+            grid: { color: dark ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.06)" },
+          }
+        }
+      }
+    });
+  }
+
+  function showSkeletons() {
+    document.getElementById("grid").innerHTML = Array.from({length: 12}, () => `
+      <div class="skel-card">
+        <div class="skeleton skel-avatar"></div>
+        <div class="skel-lines">
+          <div class="skeleton skel-line"></div>
+          <div class="skeleton skel-line short"></div>
+        </div>
+      </div>
+    `).join("");
+  }
+
+  function setError(msg) {
+    const box = document.getElementById("error-box");
+    box.innerHTML = msg ? `<div class="error-msg">${esc(msg)}</div>` : "";
+  }
+
+  function esc(str) {
+    return String(str ?? "")
+      .replace(/&/g,"&amp;").replace(/</g,"&lt;")
+      .replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+  }
+
+  function relTime(iso) {
+    const diff  = Date.now() - new Date(iso).getTime();
+    const mins  = Math.floor(diff / 60000);
+    const hours = Math.floor(mins / 60);
+    const days  = Math.floor(hours / 24);
+    if (days  > 1)  return `${days}d ago`;
+    if (hours > 0)  return `${hours}h ago`;
+    if (mins  > 0)  return `${mins}m ago`;
+    return "just now";
+  }
+</script>
+
+</body>
+</html>
