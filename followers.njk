@@ -6,518 +6,553 @@ permalink: /followers/
 ---
 
 <style>
-  /* ── scoped tokens for this page ── */
-  /* All ratios checked against the site's background color */
   .followers-page {
-    /* Purple: #52208A on white = 7.2:1 ✓ AA */
-    --f-purple:       #52208A;
-    --f-purple-hover: #3d1868;
-    --f-purple-light: #f0e8f8;
-    /* Green: #155c2e on white = 7.4:1 ✓ AA */
-    --f-green:        #155c2e;
-    --f-green-light:  #e4f3eb;
-    /* Red: #9b2318 on white = 7.1:1 ✓ AA */
-    --f-red:          #9b2318;
-    --f-red-light:    #fdecea;
-    /* Text: all checked on --f-surface ✓ AA */
-    --f-text:         #1a1917;
-    --f-text-muted:   #3d3c38;
-    --f-text-subtle:  #595651;
-    --f-surface:      #ffffff;
-    --f-bg:           #f4f3f0;
-    --f-border:       #cbc9c2;
-    --f-radius:       10px;
+    --f-purple:       #b07ee0;
+    --f-purple-hover: #c9a2f0;
+    --f-green:        #5fd97a;
+    --f-green-bg:     #0a2414;
+    --f-green-border: #2a6640;
+    --f-red:          #f4918a;
+    --f-red-bg:       #2e1010;
+    --f-red-border:   #7a2020;
+    --f-text:         #f0ede6;
+    --f-text-muted:   #ccc9c0;
+    --f-text-subtle:  #a8a59e;
+    --f-surface:      #1a2e2a;
+    --f-surface-2:    #1e3530;
+    --f-border:       #2e4a44;
+    --f-radius:       8px;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .followers-page {
-      /* Purple: #c9a2f0 on #1e1d1a = 8.6:1 ✓ AA */
-      --f-purple:       #c9a2f0;
-      --f-purple-hover: #dbbff8;
-      --f-purple-light: #2a1840;
-      /* Green: #6ddb8e on #1e1d1a = 8.1:1 ✓ AA */
-      --f-green:        #6ddb8e;
-      --f-green-light:  #0b2418;
-      /* Red: #f4918a on #1e1d1a = 7.2:1 ✓ AA */
-      --f-red:          #f4918a;
-      --f-red-light:    #2e1010;
-      --f-text:         #f0ede6;
-      --f-text-muted:   #ccc9c0;
-      --f-text-subtle:  #a8a59e;
-      --f-surface:      #1e1d1a;
-      --f-bg:           #141312;
-      --f-border:       #3a3835;
-    }
+  .followers-page,
+  .followers-page * {
+    text-transform: none;
+    display: revert;
   }
 
-  /* ── layout wrapper ── */
+  .followers-page,
+  .followers-page *,
+  .followers-page *::before,
+  .followers-page *::after {
+    box-sizing: border-box;
+  }
+
   .followers-page {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 0 4rem;
+    display: block !important;
+    grid-column: 2 / 12;
     color: var(--f-text);
+    padding-block: 1rem 4rem;
+    font-family: "Inter Tight", sans-serif;
   }
 
-  /* ── page header ── */
-  .followers-page .page-header {
-    display: flex;
+  .followers-page .fp-header {
+    display: flex !important;
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
     margin-bottom: 2rem;
   }
 
-  .followers-page .page-header h1 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--f-purple);
+  .followers-page .fp-title {
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    color: var(--f-purple) !important;
+    text-transform: none !important;
     flex: 1;
-    margin: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.2 !important;
   }
 
-  .followers-page .page-header h1 span {
-    color: var(--f-text-subtle);
-    font-weight: 400;
-    font-size: 1rem;
-  }
-
-  /* ── refresh button ── */
-  .followers-page .refresh-btn {
-    padding: 0.45rem 1.25rem;
-    border-radius: 999px;
-    border: 2px solid var(--f-purple);
-    background: transparent;
-    color: var(--f-purple);
-    font-size: 0.875rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.15s, color 0.15s;
-    font-family: inherit;
-  }
-
-  .followers-page .refresh-btn:hover  { background: var(--f-purple); color: #ffffff; }
-  .followers-page .refresh-btn:focus-visible { outline: 3px solid var(--f-purple); outline-offset: 2px; }
-  .followers-page .refresh-btn:disabled { opacity: 0.5; cursor: default; }
-
-  /* ── stat cards ── */
-  .followers-page .stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .followers-page .stat-card {
-    background: var(--f-surface);
-    border: 1px solid var(--f-border);
-    border-radius: var(--f-radius);
-    padding: 1rem 1.25rem;
-  }
-
-  .followers-page .stat-card .label {
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--f-text-muted);
-    margin-bottom: 0.35rem;
-  }
-
-  .followers-page .stat-card .value {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1;
-  }
-
-  .followers-page .stat-card.total .value { color: var(--f-purple); }
-  .followers-page .stat-card.new   .value { color: var(--f-green); }
-  .followers-page .stat-card.lost  .value { color: var(--f-red); }
-
-  /* ── chart ── */
-  .followers-page .chart-wrap {
-    background: var(--f-surface);
-    border: 1px solid var(--f-border);
-    border-radius: var(--f-radius);
-    padding: 1.25rem 1.25rem 0.75rem;
-    margin-bottom: 2rem;
-  }
-
-  .followers-page .chart-wrap h2 {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--f-text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin: 0 0 0.75rem;
-    border: none;
-    padding: 0;
-  }
-
-  .followers-page canvas#chart { width: 100% !important; height: 160px !important; }
-
-  /* ── tabs ── */
-  .followers-page .tabs {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-
-  .followers-page .tab {
-    padding: 0.45rem 1rem;
-    border-radius: 999px;
-    border: 2px solid var(--f-border);
-    background: var(--f-surface);
-    font-size: 0.875rem;
-    font-weight: 600;
-    cursor: pointer;
-    color: var(--f-text-muted);
-    transition: border-color 0.15s, color 0.15s, background 0.15s;
-    font-family: inherit;
-  }
-
-  .followers-page .tab:hover { border-color: var(--f-purple); color: var(--f-purple); }
-  .followers-page .tab:focus-visible { outline: 3px solid var(--f-purple); outline-offset: 2px; }
-
-  .followers-page .tab.active {
-    background: var(--f-purple);
-    border-color: var(--f-purple);
-    color: #ffffff;
-  }
-
-  .followers-page .search-wrap { margin-left: auto; }
-
-  .followers-page input[type="search"] {
-    padding: 0.4rem 0.85rem;
-    border-radius: 999px;
-    border: 2px solid var(--f-border);
-    background: var(--f-surface);
-    color: var(--f-text);
-    font-size: 0.875rem;
-    font-family: inherit;
-    outline: none;
-    width: 200px;
-  }
-
-  .followers-page input[type="search"]:focus {
-    border-color: var(--f-purple);
-    outline: 3px solid var(--f-purple);
-    outline-offset: 1px;
-  }
-
-  .followers-page .snapshot-note {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--f-text-subtle);
-  }
-
-  /* ── follower grid ── */
-  .followers-page .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-  }
-
-  .followers-page .card {
-    background: var(--f-surface);
-    border: 1px solid var(--f-border);
-    border-radius: var(--f-radius);
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    transition: transform 0.15s;
-  }
-
-  .followers-page .card:hover { transform: translateY(-2px); }
-  .followers-page .card.new-follower { border-left: 4px solid var(--f-green); }
-  .followers-page .card.unfollower   { border-left: 4px solid var(--f-red); }
-
-  .followers-page .avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--f-border);
-    object-fit: cover;
-    flex-shrink: 0;
-  }
-
-  .followers-page .card-info { min-width: 0; }
-
-  .followers-page .display-name {
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: var(--f-text);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .followers-page .login {
-    font-size: 0.75rem;
-    color: var(--f-text-muted);
-  }
-
-  .followers-page .followed-at {
-    font-size: 0.7rem;
-    color: var(--f-text-subtle);
-    margin-top: 0.15rem;
-  }
-
-  .followers-page .badge {
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
+  .followers-page .fp-title span {
+    color: var(--f-text-subtle) !important;
+    font-weight: 400 !important;
+    font-size: 0.9rem !important;
+    display: block;
     margin-top: 0.25rem;
-    display: inline-block;
-    border: 1px solid transparent;
   }
 
-  .followers-page .badge-new  { background: var(--f-green-light); color: var(--f-green); border-color: var(--f-green); }
-  .followers-page .badge-lost { background: var(--f-red-light);   color: var(--f-red);   border-color: var(--f-red); }
-
-  /* ── status / error ── */
-  .followers-page .status {
-    margin: 2rem auto;
-    text-align: center;
-    color: var(--f-text-muted);
-    font-size: 0.9rem;
-    font-weight: 500;
+  .followers-page .fp-btn {
+    display: inline-block !important;
+    padding: 0.45rem 1.25rem !important;
+    border-radius: 999px !important;
+    border: 2px solid var(--f-purple) !important;
+    background: transparent !important;
+    color: var(--f-purple) !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    font-family: "Inter Tight", sans-serif !important;
+    cursor: pointer !important;
+    transition: background 0.15s, color 0.15s !important;
+    text-decoration: none !important;
+    float: none !important;
+    width: auto !important;
+    margin: 0 !important;
   }
 
-  .followers-page .error-msg {
-    background: var(--f-red-light);
-    color: var(--f-red);
-    border: 1px solid var(--f-red);
-    border-radius: var(--f-radius);
-    padding: 1rem 1.25rem;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    font-weight: 600;
+  .followers-page .fp-btn:hover {
+    background: var(--f-purple) !important;
+    color: #ffffff !important;
   }
 
-  /* ── skeletons ── */
-  @keyframes f-shimmer {
+  .followers-page .fp-btn:focus-visible {
+    outline: 3px solid var(--f-purple) !important;
+    outline-offset: 2px !important;
+  }
+
+  .followers-page .fp-btn:disabled {
+    opacity: 0.5 !important;
+    cursor: default !important;
+  }
+
+  .followers-page .fp-stats {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+    gap: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .followers-page .fp-stat {
+    display: block !important;
+    background: var(--f-surface) !important;
+    border: 1px solid var(--f-border) !important;
+    border-radius: var(--f-radius) !important;
+    padding: 1rem 1.25rem !important;
+  }
+
+  .followers-page .fp-stat-label {
+    display: block !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+    color: var(--f-text-muted) !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  .followers-page .fp-stat-value {
+    display: block !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    color: var(--f-text) !important;
+  }
+
+  .followers-page .fp-stat.total .fp-stat-value { color: var(--f-purple) !important; }
+  .followers-page .fp-stat.new   .fp-stat-value { color: var(--f-green)  !important; }
+  .followers-page .fp-stat.lost  .fp-stat-value { color: var(--f-red)    !important; }
+
+  .followers-page .fp-chart-wrap {
+    display: block !important;
+    background: var(--f-surface) !important;
+    border: 1px solid var(--f-border) !important;
+    border-radius: var(--f-radius) !important;
+    padding: 1.25rem 1.25rem 0.75rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .followers-page .fp-chart-title {
+    display: block !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+    color: var(--f-text-muted) !important;
+    margin: 0 0 0.75rem !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .followers-page canvas {
+    display: block !important;
+    width: 100% !important;
+    height: 160px !important;
+  }
+
+  .followers-page .fp-tabs {
+    display: flex !important;
+    gap: 0.5rem !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .followers-page .fp-tab {
+    display: inline-block !important;
+    padding: 0.45rem 1rem !important;
+    border-radius: 999px !important;
+    border: 2px solid var(--f-border) !important;
+    background: var(--f-surface) !important;
+    color: var(--f-text-muted) !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    font-family: "Inter Tight", sans-serif !important;
+    cursor: pointer !important;
+    transition: border-color 0.15s, color 0.15s, background 0.15s !important;
+    text-decoration: none !important;
+    float: none !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  .followers-page .fp-tab:hover {
+    border-color: var(--f-purple) !important;
+    color: var(--f-purple) !important;
+    background: var(--f-surface) !important;
+    text-decoration: none !important;
+  }
+
+  .followers-page .fp-tab:focus-visible {
+    outline: 3px solid var(--f-purple) !important;
+    outline-offset: 2px !important;
+  }
+
+  .followers-page .fp-tab.active {
+    background: var(--f-purple) !important;
+    border-color: var(--f-purple) !important;
+    color: #ffffff !important;
+  }
+
+  .followers-page .fp-search-wrap { margin-left: auto !important; }
+
+  .followers-page .fp-search {
+    display: block !important;
+    padding: 0.4rem 0.85rem !important;
+    border-radius: 999px !important;
+    border-top: 1px solid var(--f-border) !important;
+    border-right: 1px solid var(--f-border) !important;
+    border-bottom: 2px solid var(--f-purple) !important;
+    border-left: 1px solid var(--f-border) !important;
+    background: var(--f-surface-2) !important;
+    color: var(--f-text) !important;
+    font-size: 0.875rem !important;
+    font-family: "Inter Tight", sans-serif !important;
+    outline: none !important;
+    width: 200px !important;
+    margin: 0 !important;
+  }
+
+  .followers-page .fp-search:focus {
+    border-color: var(--f-purple) !important;
+    outline: 3px solid var(--f-purple) !important;
+    outline-offset: 1px !important;
+  }
+
+  .followers-page .fp-snapshot {
+    display: block !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    color: var(--f-text-subtle) !important;
+  }
+
+  .followers-page .fp-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+    gap: 1rem !important;
+  }
+
+  .followers-page .fp-card {
+    display: flex !important;
+    background: var(--f-surface) !important;
+    border: 1px solid var(--f-border) !important;
+    border-radius: var(--f-radius) !important;
+    padding: 1rem !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    transition: transform 0.15s !important;
+    margin: 0 !important;
+  }
+
+  .followers-page .fp-card:hover { transform: translateY(-2px) !important; }
+  .followers-page .fp-card.new-follower { border-left: 4px solid var(--f-green) !important; }
+  .followers-page .fp-card.unfollower   { border-left: 4px solid var(--f-red)   !important; }
+
+  .followers-page .fp-avatar {
+    display: block !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    border-radius: 50% !important;
+    background: var(--f-border) !important;
+    object-fit: cover !important;
+    filter: none !important;
+    border: none !important;
+  }
+
+  .followers-page .fp-info { min-width: 0 !important; }
+
+  .followers-page .fp-name {
+    display: block !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    color: var(--f-text) !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .followers-page .fp-login {
+    display: block !important;
+    font-size: 0.75rem !important;
+    color: var(--f-text-muted) !important;
+    text-decoration: none !important;
+  }
+
+  .followers-page .fp-when {
+    display: block !important;
+    font-size: 0.7rem !important;
+    color: var(--f-text-subtle) !important;
+    margin-top: 0.15rem !important;
+  }
+
+  .followers-page .fp-badge {
+    display: inline-block !important;
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.04em !important;
+    padding: 0.2rem 0.5rem !important;
+    border-radius: 4px !important;
+    margin-top: 0.25rem !important;
+    border: 1px solid transparent !important;
+  }
+
+  .followers-page .fp-badge-new  {
+    background: var(--f-green-bg) !important;
+    color: var(--f-green) !important;
+    border-color: var(--f-green-border) !important;
+  }
+
+  .followers-page .fp-badge-lost {
+    background: var(--f-red-bg) !important;
+    color: var(--f-red) !important;
+    border-color: var(--f-red-border) !important;
+  }
+
+  .followers-page .fp-status {
+    display: block !important;
+    margin: 2rem auto !important;
+    text-align: center !important;
+    color: var(--f-text-muted) !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+  }
+
+  .followers-page .fp-error-msg {
+    display: block !important;
+    background: var(--f-red-bg) !important;
+    color: var(--f-red) !important;
+    border: 1px solid var(--f-red-border) !important;
+    border-radius: var(--f-radius) !important;
+    padding: 1rem 1.25rem !important;
+    margin-bottom: 1rem !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+  }
+
+  @keyframes fp-shimmer {
     0%   { background-position: -600px 0; }
     100% { background-position:  600px 0; }
   }
 
-  .followers-page .skeleton {
-    background: linear-gradient(90deg, var(--f-border) 25%, var(--f-bg) 50%, var(--f-border) 75%);
-    background-size: 600px 100%;
-    animation: f-shimmer 1.4s infinite linear;
-    border-radius: 6px;
+  .followers-page .fp-skeleton {
+    background: linear-gradient(90deg, var(--f-border) 25%, var(--f-surface-2) 50%, var(--f-border) 75%) !important;
+    background-size: 600px 100% !important;
+    animation: fp-shimmer 1.4s infinite linear !important;
+    border-radius: 6px !important;
   }
 
-  .followers-page .skel-card {
-    background: var(--f-surface);
-    border: 1px solid var(--f-border);
-    border-radius: var(--f-radius);
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+  .followers-page .fp-skel-card {
+    display: flex !important;
+    background: var(--f-surface) !important;
+    border: 1px solid var(--f-border) !important;
+    border-radius: var(--f-radius) !important;
+    padding: 1rem !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
   }
 
-  .followers-page .skel-avatar { width: 44px; height: 44px; border-radius: 50%; }
-  .followers-page .skel-lines  { flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
-  .followers-page .skel-line   { height: 10px; }
-  .followers-page .skel-line.short { width: 55%; }
+  .followers-page .fp-skel-avatar {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    flex-shrink: 0 !important;
+  }
 
-  @media (max-width: 480px) {
-    .followers-page .grid { grid-template-columns: 1fr 1fr; }
-    .followers-page .page-header h1 { font-size: 1.3rem; }
+  .followers-page .fp-skel-lines {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.4rem !important;
+  }
+
+  .followers-page .fp-skel-line   { height: 10px !important; }
+  .followers-page .fp-skel-line.short { width: 55% !important; }
+
+  @media (max-width: 540px) {
+    .followers-page .fp-grid { grid-template-columns: 1fr !important; }
+    .followers-page .fp-title { font-size: 1.3rem !important; }
   }
 </style>
 
 <div class="followers-page">
 
-  <header class="page-header">
-    <h1>Twitch Followers <span id="updated-note"></span></h1>
-    <button class="refresh-btn" id="refresh-btn" onclick="load()" aria-label="Refresh follower data">Refresh</button>
+  <header class="fp-header">
+    <h1 class="fp-title">
+      Twitch Followers
+      <span id="fp-updated"></span>
+    </h1>
+    <button class="fp-btn" id="fp-refresh" onclick="fpLoad()" aria-label="Refresh follower data">Refresh</button>
   </header>
 
-  <div class="stats" role="region" aria-label="Follower statistics">
-    <div class="stat-card total">
-      <div class="label" id="lbl-total">Total followers</div>
-      <div class="value" id="stat-total" aria-labelledby="lbl-total">—</div>
+  <div class="fp-stats" role="region" aria-label="Follower statistics">
+    <div class="fp-stat total">
+      <span class="fp-stat-label" id="fp-lbl-total">Total followers</span>
+      <span class="fp-stat-value" id="fp-total" aria-labelledby="fp-lbl-total">—</span>
     </div>
-    <div class="stat-card new">
-      <div class="label" id="lbl-new">New since last check</div>
-      <div class="value" id="stat-new" aria-labelledby="lbl-new">—</div>
+    <div class="fp-stat new">
+      <span class="fp-stat-label" id="fp-lbl-new">New since last check</span>
+      <span class="fp-stat-value" id="fp-new" aria-labelledby="fp-lbl-new">—</span>
     </div>
-    <div class="stat-card lost">
-      <div class="label" id="lbl-lost">Unfollowed since last check</div>
-      <div class="value" id="stat-lost" aria-labelledby="lbl-lost">—</div>
+    <div class="fp-stat lost">
+      <span class="fp-stat-label" id="fp-lbl-lost">Unfollowed since last check</span>
+      <span class="fp-stat-value" id="fp-lost" aria-labelledby="fp-lbl-lost">—</span>
     </div>
   </div>
 
-  <div class="chart-wrap" id="chart-wrap" style="display:none" role="region" aria-label="Follower count chart">
-    <h2>Follower count — last 90 days</h2>
-    <canvas id="chart" role="img" aria-label="Line chart of follower count over the past 90 days"></canvas>
+  <div class="fp-chart-wrap" id="fp-chart-wrap" style="display:none" role="region" aria-label="Follower count chart">
+    <span class="fp-chart-title">Follower count — last 90 days</span>
+    <canvas id="fp-chart" role="img" aria-label="Line chart of follower count over the past 90 days"></canvas>
   </div>
 
-  <div class="tabs" role="tablist" aria-label="Follower views">
-    <button class="tab active" role="tab" aria-selected="true"  data-tab="all"  onclick="switchTab('all')">All followers</button>
-    <button class="tab"        role="tab" aria-selected="false" data-tab="new"  onclick="switchTab('new')">New</button>
-    <button class="tab"        role="tab" aria-selected="false" data-tab="lost" onclick="switchTab('lost')">Unfollowers</button>
-    <div class="search-wrap">
-      <label for="search" class="visually-hidden">Search followers</label>
-      <input type="search" id="search" placeholder="Search…" oninput="render()">
+  <div class="fp-tabs" role="tablist" aria-label="Follower views">
+    <button class="fp-tab active" role="tab" aria-selected="true"  data-tab="all"  onclick="fpTab('all')">All followers</button>
+    <button class="fp-tab"        role="tab" aria-selected="false" data-tab="new"  onclick="fpTab('new')">New</button>
+    <button class="fp-tab"        role="tab" aria-selected="false" data-tab="lost" onclick="fpTab('lost')">Unfollowers</button>
+    <div class="fp-search-wrap">
+      <label for="fp-search" class="sr-only">Search followers</label>
+      <input class="fp-search" type="search" id="fp-search" placeholder="Search…" oninput="fpRender()">
     </div>
-    <span class="snapshot-note" id="snapshot-note" aria-live="polite"></span>
+    <span class="fp-snapshot" id="fp-snapshot" aria-live="polite"></span>
   </div>
 
-  <div id="error-box" role="alert"></div>
-  <div id="grid" class="grid" aria-live="polite" aria-label="Follower list"></div>
-  <div class="status" id="status" aria-live="polite"></div>
+  <div id="fp-error" role="alert"></div>
+  <div id="fp-grid" class="fp-grid" aria-live="polite" aria-label="Follower list"></div>
+  <div class="fp-status" id="fp-status" aria-live="polite"></div>
 
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <script>
-  const FUNCTION_URL = "/.netlify/functions/twitch";
+  const FP_URL = "/.netlify/functions/twitch";
+  let fpAll = [], fpNew = [], fpLost = [], fpTab_ = "all", fpChart = null;
 
-  let allFollowers = [];
-  let newFollowers = [];
-  let unfollowers  = [];
-  let activeTab    = "all";
-  let chartInstance = null;
+  fpLoad();
 
-  load();
-
-  async function load() {
-    const btn = document.getElementById("refresh-btn");
+  async function fpLoad() {
+    const btn = document.getElementById("fp-refresh");
     btn.disabled = true;
     btn.textContent = "Loading…";
-    setError("");
-    showSkeletons();
-
+    fpSetError("");
+    fpSkeletons();
     try {
-      const res  = await fetch(FUNCTION_URL);
+      const res  = await fetch(FP_URL);
       const data = await res.json();
-
       if (!res.ok) throw new Error(data.error || "Unknown error");
 
-      allFollowers = data.followers ?? data.data ?? [];
-      newFollowers = data.newFollowers ?? [];
-      unfollowers  = data.unfollowers  ?? [];
+      fpAll  = data.followers  ?? data.data ?? [];
+      fpNew  = data.newFollowers ?? [];
+      fpLost = data.unfollowers  ?? [];
 
-      document.getElementById("stat-total").textContent =
-        (data.totalCount ?? allFollowers.length).toLocaleString();
-      document.getElementById("stat-new").textContent  = newFollowers.length;
-      document.getElementById("stat-lost").textContent = unfollowers.length;
+      document.getElementById("fp-total").textContent =
+        (data.totalCount ?? fpAll.length).toLocaleString();
+      document.getElementById("fp-new").textContent  = fpNew.length;
+      document.getElementById("fp-lost").textContent = fpLost.length;
 
-      if (data.snapshotAge != null) {
-        document.getElementById("snapshot-note").textContent =
+      if (data.snapshotAge != null)
+        document.getElementById("fp-snapshot").textContent =
           `Last snapshot ${data.snapshotAge}m ago`;
-      }
 
       if (data.history && data.history.length > 1) {
-        drawChart(data.history);
-        document.getElementById("chart-wrap").style.display = "";
+        fpDrawChart(data.history);
+        document.getElementById("fp-chart-wrap").style.display = "";
       }
 
-      document.getElementById("updated-note").textContent =
-        `— updated ${new Date().toLocaleTimeString([], {hour:"2-digit", minute:"2-digit"})}`;
+      document.getElementById("fp-updated").textContent =
+        `Updated ${new Date().toLocaleTimeString([], {hour:"2-digit", minute:"2-digit"})}`;
 
-      render();
+      fpRender();
     } catch (err) {
-      setError("Could not load follower data: " + err.message);
-      document.getElementById("grid").innerHTML = "";
-      document.getElementById("status").textContent = "";
+      fpSetError("Could not load follower data: " + err.message);
+      document.getElementById("fp-grid").innerHTML = "";
+      document.getElementById("fp-status").textContent = "";
     } finally {
       btn.disabled = false;
       btn.textContent = "Refresh";
     }
   }
 
-  function switchTab(tab) {
-    activeTab = tab;
-    document.querySelectorAll(".tab").forEach(t => {
-      const active = t.dataset.tab === tab;
-      t.classList.toggle("active", active);
-      t.setAttribute("aria-selected", String(active));
+  function fpTab(tab) {
+    fpTab_ = tab;
+    document.querySelectorAll(".fp-tab").forEach(t => {
+      const a = t.dataset.tab === tab;
+      t.classList.toggle("active", a);
+      t.setAttribute("aria-selected", String(a));
     });
-    render();
+    fpRender();
   }
 
-  function render() {
-    const q = (document.getElementById("search").value || "").toLowerCase();
-
-    let list =
-      activeTab === "new"  ? newFollowers :
-      activeTab === "lost" ? unfollowers  :
-      allFollowers;
-
-    if (q) {
-      list = list.filter(f =>
-        (f.user_name  || "").toLowerCase().includes(q) ||
-        (f.user_login || "").toLowerCase().includes(q)
-      );
-    }
-
-    const grid   = document.getElementById("grid");
-    const status = document.getElementById("status");
-
+  function fpRender() {
+    const q = (document.getElementById("fp-search").value || "").toLowerCase();
+    let list = fpTab_ === "new" ? fpNew : fpTab_ === "lost" ? fpLost : fpAll;
+    if (q) list = list.filter(f =>
+      (f.user_name || "").toLowerCase().includes(q) ||
+      (f.user_login || "").toLowerCase().includes(q)
+    );
+    const grid = document.getElementById("fp-grid");
+    const status = document.getElementById("fp-status");
     if (list.length === 0) {
       grid.innerHTML = "";
       status.textContent =
-        q                    ? "No results match your search."             :
-        activeTab === "new"  ? "No new followers since last check."        :
-        activeTab === "lost" ? "No unfollowers detected since last check." :
-                               "No followers yet.";
+        q               ? "No results match your search."             :
+        fpTab_ === "new"  ? "No new followers since last check."        :
+        fpTab_ === "lost" ? "No unfollowers detected since last check." :
+                            "No followers yet.";
       return;
     }
-
     status.textContent = "";
-    grid.innerHTML = list.map(cardHTML).join("");
+    grid.innerHTML = list.map(fpCard).join("");
   }
 
-  function cardHTML(f) {
-    const isLost = activeTab === "lost";
-    const isNew  = activeTab === "new" || newFollowers.some(n => n.user_id === f.user_id);
-    const cls    = isLost ? "card unfollower" : isNew ? "card new-follower" : "card";
+  function fpCard(f) {
+    const isLost = fpTab_ === "lost";
+    const isNew  = fpTab_ === "new" || fpNew.some(n => n.user_id === f.user_id);
+    const cls    = "fp-card" + (isLost ? " unfollower" : isNew ? " new-follower" : "");
     const name   = f.user_name || f.display_name || f.user_login || "Unknown";
     const login  = f.user_login || "";
-
     const avatar = f.profile_image_url
-      ? `<img class="avatar" src="${esc(f.profile_image_url)}" alt="${esc(name)} profile photo" loading="lazy">`
-      : `<div class="avatar" role="img" aria-label="${esc(name)} profile photo"></div>`;
-
+      ? `<img class="fp-avatar" src="${esc(f.profile_image_url)}" alt="${esc(name)}" loading="lazy">`
+      : `<div class="fp-avatar" role="img" aria-label="${esc(name)}"></div>`;
     const when = isLost
-      ? (f.unfollowed_detected_at ? `<div class="followed-at">Detected ${relTime(f.unfollowed_detected_at)}</div>` : "")
-      : (f.followed_at            ? `<div class="followed-at">Following since ${relTime(f.followed_at)}</div>`     : "");
-
-    const badge = isLost ? `<span class="badge badge-lost">Unfollowed</span>`
-                : isNew  ? `<span class="badge badge-new">New</span>`
+      ? (f.unfollowed_detected_at ? `<span class="fp-when">Detected ${fpRelTime(f.unfollowed_detected_at)}</span>` : "")
+      : (f.followed_at ? `<span class="fp-when">Since ${fpRelTime(f.followed_at)}</span>` : "");
+    const badge = isLost ? `<span class="fp-badge fp-badge-lost">Unfollowed</span>`
+                : isNew  ? `<span class="fp-badge fp-badge-new">New</span>`
                 :          "";
-
     return `<article class="${cls}" aria-label="${esc(name)}">
       ${avatar}
-      <div class="card-info">
-        <div class="display-name">${esc(name)}</div>
-        <div class="login">@${esc(login)}</div>
-        ${when}
-        ${badge}
+      <div class="fp-info">
+        <span class="fp-name">${esc(name)}</span>
+        <span class="fp-login">@${esc(login)}</span>
+        ${when}${badge}
       </div>
     </article>`;
   }
 
-  function drawChart(history) {
-    const ctx = document.getElementById("chart").getContext("2d");
-    if (chartInstance) chartInstance.destroy();
-
-    const dark    = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const purple  = dark ? "#c9a2f0" : "#52208A";
-    const muted   = dark ? "#ccc9c0" : "#3d3c38";
-    const gridCol = dark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)";
-
-    chartInstance = new Chart(ctx, {
+  function fpDrawChart(history) {
+    const ctx = document.getElementById("fp-chart").getContext("2d");
+    if (fpChart) fpChart.destroy();
+    fpChart = new Chart(ctx, {
       type: "line",
       data: {
         labels: history.map(h =>
@@ -525,8 +560,8 @@ permalink: /followers/
         ),
         datasets: [{
           data: history.map(h => h.count),
-          borderColor: purple,
-          backgroundColor: dark ? "rgba(201,162,240,0.1)" : "rgba(82,32,138,0.08)",
+          borderColor: "#b07ee0",
+          backgroundColor: "rgba(176,126,224,0.1)",
           borderWidth: 2,
           pointRadius: history.length > 30 ? 0 : 3,
           pointHoverRadius: 5,
@@ -542,49 +577,41 @@ permalink: /followers/
           tooltip: { callbacks: { label: c => ` ${c.parsed.y.toLocaleString()} followers` } }
         },
         scales: {
-          x: {
-            ticks: { color: muted, font: { size: 11 }, maxTicksLimit: 10 },
-            grid:  { display: false },
-          },
-          y: {
-            ticks: { color: muted, font: { size: 11 }, callback: v => v.toLocaleString() },
-            grid:  { color: gridCol },
-          }
+          x: { ticks: { color: "#a8a59e", font: { size: 11 }, maxTicksLimit: 10 }, grid: { display: false } },
+          y: { ticks: { color: "#a8a59e", font: { size: 11 }, callback: v => v.toLocaleString() }, grid: { color: "rgba(255,255,255,0.06)" } }
         }
       }
     });
   }
 
-  function showSkeletons() {
-    document.getElementById("grid").innerHTML = Array.from({length: 12}, () => `
-      <div class="skel-card" aria-hidden="true">
-        <div class="skeleton skel-avatar"></div>
-        <div class="skel-lines">
-          <div class="skeleton skel-line"></div>
-          <div class="skeleton skel-line short"></div>
+  function fpSkeletons() {
+    document.getElementById("fp-grid").innerHTML = Array.from({length: 12}, () => `
+      <div class="fp-skel-card" aria-hidden="true">
+        <div class="fp-skeleton fp-skel-avatar"></div>
+        <div class="fp-skel-lines">
+          <div class="fp-skeleton fp-skel-line"></div>
+          <div class="fp-skeleton fp-skel-line short"></div>
         </div>
       </div>`).join("");
   }
 
-  function setError(msg) {
-    document.getElementById("error-box").innerHTML =
-      msg ? `<div class="error-msg">${esc(msg)}</div>` : "";
+  function fpSetError(msg) {
+    document.getElementById("fp-error").innerHTML =
+      msg ? `<div class="fp-error-msg">${esc(msg)}</div>` : "";
   }
 
-  function esc(str) {
-    return String(str ?? "")
+  function esc(s) {
+    return String(s ?? "")
       .replace(/&/g,"&amp;").replace(/</g,"&lt;")
       .replace(/>/g,"&gt;").replace(/"/g,"&quot;");
   }
 
-  function relTime(iso) {
-    const diff  = Date.now() - new Date(iso).getTime();
-    const mins  = Math.floor(diff / 60000);
-    const hours = Math.floor(mins / 60);
-    const days  = Math.floor(hours / 24);
-    if (days  > 1) return `${days}d ago`;
-    if (hours > 0) return `${hours}h ago`;
-    if (mins  > 0) return `${mins}m ago`;
+  function fpRelTime(iso) {
+    const d = Date.now() - new Date(iso).getTime();
+    const m = Math.floor(d/60000), h = Math.floor(m/60), dy = Math.floor(h/24);
+    if (dy > 1) return `${dy}d ago`;
+    if (h  > 0) return `${h}h ago`;
+    if (m  > 0) return `${m}m ago`;
     return "just now";
   }
 </script>
