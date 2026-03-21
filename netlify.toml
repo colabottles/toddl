@@ -23,7 +23,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    cache-control = '''
+    Cache-Control = '''
     max-age=31536000,
     no-cache,
     no-store,
@@ -76,3 +76,6 @@
   for = "/followers"
   [headers.values]
     X-Robots-Tag = "noindex"
+
+[functions."twitch"]
+  timeout = 30

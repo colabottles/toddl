@@ -142,6 +142,26 @@ export const handler = async (event) => {
     "Access-Control-Allow-Headers": "Content-Type",
     "Content-Type": "application/json",
   };
+  // Temporary debug — remove after confirming vars are present
+  if (event.queryStringParameters?.debug === "1") {
+    return {
+      statusCode: 200,
+      headers: corsHeaders,
+      body: JSON.stringify({
+        SUPABASE_URL: process.env.SUPABASE_URL ? "set" : "MISSING",
+        SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY
+          ? "set"
+          : "MISSING",
+        TWITCH_CLIENT_ID: process.env.TWITCH_CLIENT_ID ? "set" : "MISSING",
+        TWITCH_CLIENT_SECRET: process.env.TWITCH_CLIENT_SECRET
+          ? "set"
+          : "MISSING",
+        TWITCH_BROADCASTER_ID: process.env.TWITCH_BROADCASTER_ID
+          ? "set"
+          : "MISSING",
+      }),
+    };
+  }
 
   if (event.httpMethod === "OPTIONS") {
     return { statusCode: 204, headers: corsHeaders, body: "" };
@@ -240,4 +260,4 @@ export const handler = async (event) => {
       body: JSON.stringify({ error: err.message }),
     };
   }
-};
+};;
