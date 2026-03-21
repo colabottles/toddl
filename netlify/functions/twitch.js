@@ -144,23 +144,25 @@ exports.handler = async (event) => {
   };
   // Temporary debug — remove after confirming vars are present
   if (event.queryStringParameters?.debug === "1") {
-    return {
-      statusCode: 200,
-      headers: corsHeaders,
-      body: JSON.stringify({
-        SUPABASE_URL: process.env.SUPABASE_URL ? "set" : "MISSING",
-        SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY
-          ? "set"
-          : "MISSING",
-        TWITCH_CLIENT_ID: process.env.TWITCH_CLIENT_ID ? "set" : "MISSING",
-        TWITCH_CLIENT_SECRET: process.env.TWITCH_CLIENT_SECRET
-          ? "set"
-          : "MISSING",
-        TWITCH_BROADCASTER_ID: process.env.TWITCH_BROADCASTER_ID
-          ? "set"
-          : "MISSING",
-      }),
-    };
+    try {
+      const supaBase = new URL(
+        `${process.env.SUPABASE_URL}/rest/v1/twitch_follower_snapshots`,
+      );
+      return {
+        statusCode: 200,
+        headers: corsHeaders,
+        body: JSON.stringify({ supabaseUrl: supaBase.toString() }),
+      };
+    } catch (err) {
+      return {
+        statusCode: 200,
+        headers: corsHeaders,
+        body: JSON.stringify({
+          error: err.message,
+          rawSupabaseUrl: process.env.SUPABASE_URL,
+        }),
+      };
+    }
   }
 
   if (event.httpMethod === "OPTIONS") {
