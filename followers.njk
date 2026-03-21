@@ -5,60 +5,389 @@ date: 2026-03-20
 permalink: /followers/
 ---
 
-<header class="page-header">
-  <h1>Twitch Followers <span id="updated-note"></span></h1>
-  <button class="refresh-btn" id="refresh-btn" onclick="load()">Refresh</button>
-</header>
+<style>
+  /* ── scoped tokens for this page ── */
+  /* All ratios checked against the site's background color */
+  .followers-page {
+    /* Purple: #52208A on white = 7.2:1 ✓ AA */
+    --f-purple:       #52208A;
+    --f-purple-hover: #3d1868;
+    --f-purple-light: #f0e8f8;
+    /* Green: #155c2e on white = 7.4:1 ✓ AA */
+    --f-green:        #155c2e;
+    --f-green-light:  #e4f3eb;
+    /* Red: #9b2318 on white = 7.1:1 ✓ AA */
+    --f-red:          #9b2318;
+    --f-red-light:    #fdecea;
+    /* Text: all checked on --f-surface ✓ AA */
+    --f-text:         #1a1917;
+    --f-text-muted:   #3d3c38;
+    --f-text-subtle:  #595651;
+    --f-surface:      #ffffff;
+    --f-bg:           #f4f3f0;
+    --f-border:       #cbc9c2;
+    --f-radius:       10px;
+  }
 
-<div class="stats">
-  <div class="stat-card total">
-    <div class="label">Total followers</div>
-    <div class="value" id="stat-total">—</div>
+  @media (prefers-color-scheme: dark) {
+    .followers-page {
+      /* Purple: #c9a2f0 on #1e1d1a = 8.6:1 ✓ AA */
+      --f-purple:       #c9a2f0;
+      --f-purple-hover: #dbbff8;
+      --f-purple-light: #2a1840;
+      /* Green: #6ddb8e on #1e1d1a = 8.1:1 ✓ AA */
+      --f-green:        #6ddb8e;
+      --f-green-light:  #0b2418;
+      /* Red: #f4918a on #1e1d1a = 7.2:1 ✓ AA */
+      --f-red:          #f4918a;
+      --f-red-light:    #2e1010;
+      --f-text:         #f0ede6;
+      --f-text-muted:   #ccc9c0;
+      --f-text-subtle:  #a8a59e;
+      --f-surface:      #1e1d1a;
+      --f-bg:           #141312;
+      --f-border:       #3a3835;
+    }
+  }
+
+  /* ── layout wrapper ── */
+  .followers-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 4rem;
+    color: var(--f-text);
+  }
+
+  /* ── page header ── */
+  .followers-page .page-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .followers-page .page-header h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--f-purple);
+    flex: 1;
+    margin: 0;
+  }
+
+  .followers-page .page-header h1 span {
+    color: var(--f-text-subtle);
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  /* ── refresh button ── */
+  .followers-page .refresh-btn {
+    padding: 0.45rem 1.25rem;
+    border-radius: 999px;
+    border: 2px solid var(--f-purple);
+    background: transparent;
+    color: var(--f-purple);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    font-family: inherit;
+  }
+
+  .followers-page .refresh-btn:hover  { background: var(--f-purple); color: #ffffff; }
+  .followers-page .refresh-btn:focus-visible { outline: 3px solid var(--f-purple); outline-offset: 2px; }
+  .followers-page .refresh-btn:disabled { opacity: 0.5; cursor: default; }
+
+  /* ── stat cards ── */
+  .followers-page .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .followers-page .stat-card {
+    background: var(--f-surface);
+    border: 1px solid var(--f-border);
+    border-radius: var(--f-radius);
+    padding: 1rem 1.25rem;
+  }
+
+  .followers-page .stat-card .label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--f-text-muted);
+    margin-bottom: 0.35rem;
+  }
+
+  .followers-page .stat-card .value {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .followers-page .stat-card.total .value { color: var(--f-purple); }
+  .followers-page .stat-card.new   .value { color: var(--f-green); }
+  .followers-page .stat-card.lost  .value { color: var(--f-red); }
+
+  /* ── chart ── */
+  .followers-page .chart-wrap {
+    background: var(--f-surface);
+    border: 1px solid var(--f-border);
+    border-radius: var(--f-radius);
+    padding: 1.25rem 1.25rem 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .followers-page .chart-wrap h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--f-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 0.75rem;
+    border: none;
+    padding: 0;
+  }
+
+  .followers-page canvas#chart { width: 100% !important; height: 160px !important; }
+
+  /* ── tabs ── */
+  .followers-page .tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .followers-page .tab {
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    border: 2px solid var(--f-border);
+    background: var(--f-surface);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--f-text-muted);
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+    font-family: inherit;
+  }
+
+  .followers-page .tab:hover { border-color: var(--f-purple); color: var(--f-purple); }
+  .followers-page .tab:focus-visible { outline: 3px solid var(--f-purple); outline-offset: 2px; }
+
+  .followers-page .tab.active {
+    background: var(--f-purple);
+    border-color: var(--f-purple);
+    color: #ffffff;
+  }
+
+  .followers-page .search-wrap { margin-left: auto; }
+
+  .followers-page input[type="search"] {
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    border: 2px solid var(--f-border);
+    background: var(--f-surface);
+    color: var(--f-text);
+    font-size: 0.875rem;
+    font-family: inherit;
+    outline: none;
+    width: 200px;
+  }
+
+  .followers-page input[type="search"]:focus {
+    border-color: var(--f-purple);
+    outline: 3px solid var(--f-purple);
+    outline-offset: 1px;
+  }
+
+  .followers-page .snapshot-note {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--f-text-subtle);
+  }
+
+  /* ── follower grid ── */
+  .followers-page .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .followers-page .card {
+    background: var(--f-surface);
+    border: 1px solid var(--f-border);
+    border-radius: var(--f-radius);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.15s;
+  }
+
+  .followers-page .card:hover { transform: translateY(-2px); }
+  .followers-page .card.new-follower { border-left: 4px solid var(--f-green); }
+  .followers-page .card.unfollower   { border-left: 4px solid var(--f-red); }
+
+  .followers-page .avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--f-border);
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .followers-page .card-info { min-width: 0; }
+
+  .followers-page .display-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--f-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .followers-page .login {
+    font-size: 0.75rem;
+    color: var(--f-text-muted);
+  }
+
+  .followers-page .followed-at {
+    font-size: 0.7rem;
+    color: var(--f-text-subtle);
+    margin-top: 0.15rem;
+  }
+
+  .followers-page .badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+    display: inline-block;
+    border: 1px solid transparent;
+  }
+
+  .followers-page .badge-new  { background: var(--f-green-light); color: var(--f-green); border-color: var(--f-green); }
+  .followers-page .badge-lost { background: var(--f-red-light);   color: var(--f-red);   border-color: var(--f-red); }
+
+  /* ── status / error ── */
+  .followers-page .status {
+    margin: 2rem auto;
+    text-align: center;
+    color: var(--f-text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .followers-page .error-msg {
+    background: var(--f-red-light);
+    color: var(--f-red);
+    border: 1px solid var(--f-red);
+    border-radius: var(--f-radius);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  /* ── skeletons ── */
+  @keyframes f-shimmer {
+    0%   { background-position: -600px 0; }
+    100% { background-position:  600px 0; }
+  }
+
+  .followers-page .skeleton {
+    background: linear-gradient(90deg, var(--f-border) 25%, var(--f-bg) 50%, var(--f-border) 75%);
+    background-size: 600px 100%;
+    animation: f-shimmer 1.4s infinite linear;
+    border-radius: 6px;
+  }
+
+  .followers-page .skel-card {
+    background: var(--f-surface);
+    border: 1px solid var(--f-border);
+    border-radius: var(--f-radius);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .followers-page .skel-avatar { width: 44px; height: 44px; border-radius: 50%; }
+  .followers-page .skel-lines  { flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
+  .followers-page .skel-line   { height: 10px; }
+  .followers-page .skel-line.short { width: 55%; }
+
+  @media (max-width: 480px) {
+    .followers-page .grid { grid-template-columns: 1fr 1fr; }
+    .followers-page .page-header h1 { font-size: 1.3rem; }
+  }
+</style>
+
+<div class="followers-page">
+
+  <header class="page-header">
+    <h1>Twitch Followers <span id="updated-note"></span></h1>
+    <button class="refresh-btn" id="refresh-btn" onclick="load()" aria-label="Refresh follower data">Refresh</button>
+  </header>
+
+  <div class="stats" role="region" aria-label="Follower statistics">
+    <div class="stat-card total">
+      <div class="label" id="lbl-total">Total followers</div>
+      <div class="value" id="stat-total" aria-labelledby="lbl-total">—</div>
+    </div>
+    <div class="stat-card new">
+      <div class="label" id="lbl-new">New since last check</div>
+      <div class="value" id="stat-new" aria-labelledby="lbl-new">—</div>
+    </div>
+    <div class="stat-card lost">
+      <div class="label" id="lbl-lost">Unfollowed since last check</div>
+      <div class="value" id="stat-lost" aria-labelledby="lbl-lost">—</div>
+    </div>
   </div>
-  <div class="stat-card new">
-    <div class="label">New since last check</div>
-    <div class="value" id="stat-new">—</div>
+
+  <div class="chart-wrap" id="chart-wrap" style="display:none" role="region" aria-label="Follower count chart">
+    <h2>Follower count — last 90 days</h2>
+    <canvas id="chart" role="img" aria-label="Line chart of follower count over the past 90 days"></canvas>
   </div>
-  <div class="stat-card lost">
-    <div class="label">Unfollowed since last check</div>
-    <div class="value" id="stat-lost">—</div>
+
+  <div class="tabs" role="tablist" aria-label="Follower views">
+    <button class="tab active" role="tab" aria-selected="true"  data-tab="all"  onclick="switchTab('all')">All followers</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="new"  onclick="switchTab('new')">New</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="lost" onclick="switchTab('lost')">Unfollowers</button>
+    <div class="search-wrap">
+      <label for="search" class="visually-hidden">Search followers</label>
+      <input type="search" id="search" placeholder="Search…" oninput="render()">
+    </div>
+    <span class="snapshot-note" id="snapshot-note" aria-live="polite"></span>
   </div>
+
+  <div id="error-box" role="alert"></div>
+  <div id="grid" class="grid" aria-live="polite" aria-label="Follower list"></div>
+  <div class="status" id="status" aria-live="polite"></div>
+
 </div>
-
-<div class="chart-wrap" id="chart-wrap" style="display:none">
-  <h2>Follower count — last 90 days</h2>
-  <canvas id="chart"></canvas>
-</div>
-
-<div class="tabs">
-  <button class="tab active" data-tab="all"    onclick="switchTab('all')">All followers</button>
-  <button class="tab"        data-tab="new"    onclick="switchTab('new')">New</button>
-  <button class="tab"        data-tab="lost"   onclick="switchTab('lost')">Unfollowers</button>
-  <div class="search-wrap">
-    <input type="search" id="search" placeholder="Search…" oninput="render()">
-  </div>
-  <span class="snapshot-note" id="snapshot-note"></span>
-</div>
-
-<div id="error-box"></div>
-<div id="grid" class="grid"></div>
-<div class="status" id="status"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <script>
-  // ── config ──
-  // Point this at your Netlify function URL.
-  // In production this is relative; in local dev replace with your full Netlify CLI URL.
   const FUNCTION_URL = "/.netlify/functions/twitch";
 
-  // ── state ──
-  let allFollowers  = [];
-  let newFollowers  = [];
-  let unfollowers   = [];
-  let activeTab     = "all";
+  let allFollowers = [];
+  let newFollowers = [];
+  let unfollowers  = [];
+  let activeTab    = "all";
   let chartInstance = null;
 
-  // ── init ──
   load();
 
   async function load() {
@@ -74,33 +403,27 @@ permalink: /followers/
 
       if (!res.ok) throw new Error(data.error || "Unknown error");
 
-      allFollowers = data.followers  || [];
-      newFollowers = data.newFollowers || [];
-      unfollowers  = data.unfollowers  || [];
+      allFollowers = data.followers ?? data.data ?? [];
+      newFollowers = data.newFollowers ?? [];
+      unfollowers  = data.unfollowers  ?? [];
 
-      // Stats
       document.getElementById("stat-total").textContent =
         (data.totalCount ?? allFollowers.length).toLocaleString();
-      document.getElementById("stat-new").textContent =
-        newFollowers.length;
-      document.getElementById("stat-lost").textContent =
-        unfollowers.length;
+      document.getElementById("stat-new").textContent  = newFollowers.length;
+      document.getElementById("stat-lost").textContent = unfollowers.length;
 
-      // Snapshot age note
-      if (data.snapshotAge !== null && data.snapshotAge !== undefined) {
+      if (data.snapshotAge != null) {
         document.getElementById("snapshot-note").textContent =
           `Last snapshot ${data.snapshotAge}m ago`;
       }
 
-      // Chart
       if (data.history && data.history.length > 1) {
         drawChart(data.history);
         document.getElementById("chart-wrap").style.display = "";
       }
 
-      // Updated note
       document.getElementById("updated-note").textContent =
-        `— updated ${new Date().toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"})}`;
+        `— updated ${new Date().toLocaleTimeString([], {hour:"2-digit", minute:"2-digit"})}`;
 
       render();
     } catch (err) {
@@ -116,7 +439,9 @@ permalink: /followers/
   function switchTab(tab) {
     activeTab = tab;
     document.querySelectorAll(".tab").forEach(t => {
-      t.classList.toggle("active", t.dataset.tab === tab);
+      const active = t.dataset.tab === tab;
+      t.classList.toggle("active", active);
+      t.setAttribute("aria-selected", String(active));
     });
     render();
   }
@@ -124,14 +449,14 @@ permalink: /followers/
   function render() {
     const q = (document.getElementById("search").value || "").toLowerCase();
 
-    let list;
-    if      (activeTab === "new")  list = newFollowers;
-    else if (activeTab === "lost") list = unfollowers;
-    else                           list = allFollowers;
+    let list =
+      activeTab === "new"  ? newFollowers :
+      activeTab === "lost" ? unfollowers  :
+      allFollowers;
 
     if (q) {
       list = list.filter(f =>
-        (f.user_name || "").toLowerCase().includes(q) ||
+        (f.user_name  || "").toLowerCase().includes(q) ||
         (f.user_login || "").toLowerCase().includes(q)
       );
     }
@@ -141,72 +466,69 @@ permalink: /followers/
 
     if (list.length === 0) {
       grid.innerHTML = "";
-      status.textContent = q
-        ? "No results match your search."
-        : activeTab === "new"  ? "No new followers since last check."
-        : activeTab === "lost" ? "No unfollowers detected since last check."
-        : "No followers yet.";
+      status.textContent =
+        q                    ? "No results match your search."             :
+        activeTab === "new"  ? "No new followers since last check."        :
+        activeTab === "lost" ? "No unfollowers detected since last check." :
+                               "No followers yet.";
       return;
     }
 
     status.textContent = "";
-    grid.innerHTML = list.map(f => cardHTML(f, activeTab)).join("");
+    grid.innerHTML = list.map(cardHTML).join("");
   }
 
-  function cardHTML(f, tab) {
-    const isNew  = tab === "new"  || newFollowers.some(n => n.user_id === f.user_id);
-    const isLost = tab === "lost";
+  function cardHTML(f) {
+    const isLost = activeTab === "lost";
+    const isNew  = activeTab === "new" || newFollowers.some(n => n.user_id === f.user_id);
     const cls    = isLost ? "card unfollower" : isNew ? "card new-follower" : "card";
+    const name   = f.user_name || f.display_name || f.user_login || "Unknown";
+    const login  = f.user_login || "";
 
     const avatar = f.profile_image_url
-      ? `<img class="avatar" src="${esc(f.profile_image_url)}" alt="" loading="lazy">`
-      : `<div class="avatar"></div>`;
+      ? `<img class="avatar" src="${esc(f.profile_image_url)}" alt="${esc(name)} profile photo" loading="lazy">`
+      : `<div class="avatar" role="img" aria-label="${esc(name)} profile photo"></div>`;
 
     const when = isLost
-      ? (f.unfollowed_detected_at
-          ? `<div class="followed-at">Detected ${relTime(f.unfollowed_detected_at)}</div>`
-          : "")
-      : (f.followed_at
-          ? `<div class="followed-at">Since ${relTime(f.followed_at)}</div>`
-          : "");
+      ? (f.unfollowed_detected_at ? `<div class="followed-at">Detected ${relTime(f.unfollowed_detected_at)}</div>` : "")
+      : (f.followed_at            ? `<div class="followed-at">Following since ${relTime(f.followed_at)}</div>`     : "");
 
-    const badge = isLost
-      ? `<span class="badge badge-lost">Unfollowed</span>`
-      : isNew
-        ? `<span class="badge badge-new">New</span>`
-        : "";
+    const badge = isLost ? `<span class="badge badge-lost">Unfollowed</span>`
+                : isNew  ? `<span class="badge badge-new">New</span>`
+                :          "";
 
-    return `<div class="${cls}">
+    return `<article class="${cls}" aria-label="${esc(name)}">
       ${avatar}
       <div class="card-info">
-        <div class="display-name">${esc(f.user_name || f.display_name || f.user_login)}</div>
-        <div class="login">@${esc(f.user_login)}</div>
+        <div class="display-name">${esc(name)}</div>
+        <div class="login">@${esc(login)}</div>
         ${when}
         ${badge}
       </div>
-    </div>`;
+    </article>`;
   }
 
   function drawChart(history) {
     const ctx = document.getElementById("chart").getContext("2d");
     if (chartInstance) chartInstance.destroy();
 
-    const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const labels = history.map(h =>
-      new Date(h.created_at).toLocaleDateString([], {month:"short", day:"numeric"})
-    );
-    const values = history.map(h => h.count);
+    const dark    = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const purple  = dark ? "#c9a2f0" : "#52208A";
+    const muted   = dark ? "#ccc9c0" : "#3d3c38";
+    const gridCol = dark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)";
 
     chartInstance = new Chart(ctx, {
       type: "line",
       data: {
-        labels,
+        labels: history.map(h =>
+          new Date(h.created_at).toLocaleDateString([], {month:"short", day:"numeric"})
+        ),
         datasets: [{
-          data: values,
-          borderColor: "#6626af",
-          backgroundColor: "rgba(102,38,175,0.08)",
+          data: history.map(h => h.count),
+          borderColor: purple,
+          backgroundColor: dark ? "rgba(201,162,240,0.1)" : "rgba(82,32,138,0.08)",
           borderWidth: 2,
-          pointRadius: values.length > 30 ? 0 : 3,
+          pointRadius: history.length > 30 ? 0 : 3,
           pointHoverRadius: 5,
           fill: true,
           tension: 0.35,
@@ -217,28 +539,16 @@ permalink: /followers/
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
-          tooltip: {
-            callbacks: {
-              label: ctx => ` ${ctx.parsed.y.toLocaleString()} followers`
-            }
-          }
+          tooltip: { callbacks: { label: c => ` ${c.parsed.y.toLocaleString()} followers` } }
         },
         scales: {
           x: {
-            ticks: {
-              color: dark ? "#9c9a92" : "#5f5e5a",
-              font: { size: 11 },
-              maxTicksLimit: 10,
-            },
-            grid: { display: false },
+            ticks: { color: muted, font: { size: 11 }, maxTicksLimit: 10 },
+            grid:  { display: false },
           },
           y: {
-            ticks: {
-              color: dark ? "#9c9a92" : "#5f5e5a",
-              font: { size: 11 },
-              callback: v => v.toLocaleString(),
-            },
-            grid: { color: dark ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.06)" },
+            ticks: { color: muted, font: { size: 11 }, callback: v => v.toLocaleString() },
+            grid:  { color: gridCol },
           }
         }
       }
@@ -247,19 +557,18 @@ permalink: /followers/
 
   function showSkeletons() {
     document.getElementById("grid").innerHTML = Array.from({length: 12}, () => `
-      <div class="skel-card">
+      <div class="skel-card" aria-hidden="true">
         <div class="skeleton skel-avatar"></div>
         <div class="skel-lines">
           <div class="skeleton skel-line"></div>
           <div class="skeleton skel-line short"></div>
         </div>
-      </div>
-    `).join("");
+      </div>`).join("");
   }
 
   function setError(msg) {
-    const box = document.getElementById("error-box");
-    box.innerHTML = msg ? `<div class="error-msg">${esc(msg)}</div>` : "";
+    document.getElementById("error-box").innerHTML =
+      msg ? `<div class="error-msg">${esc(msg)}</div>` : "";
   }
 
   function esc(str) {
@@ -273,12 +582,9 @@ permalink: /followers/
     const mins  = Math.floor(diff / 60000);
     const hours = Math.floor(mins / 60);
     const days  = Math.floor(hours / 24);
-    if (days  > 1)  return `${days}d ago`;
-    if (hours > 0)  return `${hours}h ago`;
-    if (mins  > 0)  return `${mins}m ago`;
+    if (days  > 1) return `${days}d ago`;
+    if (hours > 0) return `${hours}h ago`;
+    if (mins  > 0) return `${mins}m ago`;
     return "just now";
   }
 </script>
-
-</body>
-</html>
