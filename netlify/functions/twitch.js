@@ -142,28 +142,6 @@ exports.handler = async (event) => {
     "Access-Control-Allow-Headers": "Content-Type",
     "Content-Type": "application/json",
   };
-  // Temporary debug — remove after confirming vars are present
-  if (event.queryStringParameters?.debug === "1") {
-    try {
-      const supaBase = new URL(
-        `${process.env.SUPABASE_URL}/rest/v1/twitch_follower_snapshots`,
-      );
-      return {
-        statusCode: 200,
-        headers: corsHeaders,
-        body: JSON.stringify({ supabaseUrl: supaBase.toString() }),
-      };
-    } catch (err) {
-      return {
-        statusCode: 200,
-        headers: corsHeaders,
-        body: JSON.stringify({
-          error: err.message,
-          rawSupabaseUrl: process.env.SUPABASE_URL,
-        }),
-      };
-    }
-  }
 
   if (event.httpMethod === "OPTIONS") {
     return { statusCode: 204, headers: corsHeaders, body: "" };
