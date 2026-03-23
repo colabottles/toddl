@@ -76,12 +76,11 @@ async function getLastSnapshot() {
   );
   url.searchParams.set("select", "*");
   url.searchParams.set("order", "created_at.desc");
-  url.searchParams.set("limit", "2"); // fetch 2
-
+  url.searchParams.set("limit", "1");
   const res = await fetch(url.toString(), { headers: supabaseHeaders() });
   if (!res.ok) return null;
   const rows = await res.json();
-  return rows[1] ?? rows[0] ?? null; // use the OLDER one, fall back to newest if only 1 exists
+  return rows[0] ?? null;
 }
 
 // Save snapshot storing full follower objects (id + login + name + avatar)
@@ -145,6 +144,65 @@ export const handler = async (event) => {
     return { statusCode: 204, headers: corsHeaders, body: "" };
   }
 
+  // Temporary debug endpoint — remove after diagnosing
+  // Visit: /.netlify/functions/twitch?debug=1
+  if (event.queryStringParameters?.debug === "1") {
+    try {
+      const snapshot = await getLastSnapshot();
+      const allSnapshots = await (async () => {
+        const url = new URL(
+          `${process.env.SUPABASE_URL}/rest/v1/twitch_follower_snapshots`,
+        );
+        url.searchParams.set(
+          "select",
+          "id,total_count,created_at,follower_ids",
+        );
+        url.searchParams.set("order", "created_at.desc");
+        url.searchParams.set("limit", "5");
+        const res = await fetch(url.toString(), { headers: supabaseHeaders() });
+        if (!res.ok) return [];
+        const rows = await res.json();
+        // Don't return full follower_ids arrays — just counts
+        return rows.map((r) => ({
+          id: r.id,
+          total_count: r.total_count,
+          stored_ids_count: (r.follower_ids ?? []).length,
+          has_follower_data: !!r.follower_data,
+          created_at: r.created_at,
+        }));
+      })();
+      return {
+        statusCode: 200,
+        headers: corsHeaders,
+        body: JSON.stringify(
+          {
+            snapshot_used: snapshot
+              ? {
+                  id: snapshot.id,
+                  total_count: snapshot.total_count,
+                  stored_ids_count: (snapshot.follower_ids ?? []).length,
+                  has_follower_data: !!snapshot.follower_data,
+                  follower_data_sample: Object.entries(
+                    snapshot.follower_data ?? {},
+                  ).slice(0, 3),
+                  created_at: snapshot.created_at,
+                }
+              : null,
+            all_recent_snapshots: allSnapshots,
+          },
+          null,
+          2,
+        ),
+      };
+    } catch (err) {
+      return {
+        statusCode: 500,
+        headers: corsHeaders,
+        body: JSON.stringify({ error: err.message }),
+      };
+    }
+  }
+
   try {
     const broadcasterId = process.env.TWITCH_BROADCASTER_ID;
     if (!broadcasterId) throw new Error("TWITCH_BROADCASTER_ID not set");
@@ -170,41 +228,7 @@ export const handler = async (event) => {
     let newFollowers = [];
     let unfollowers = [];
 
-    if (lastSnapshot) {
-      const prevIds = new Set(lastSnapshot.follower_ids ?? []);
-
-      // New followers = in current but not in previous snapshot
-      newFollowers = currentFollowers.filter((f) => !prevIds.has(f.user_id));
-
-      // Unfollowers = in previous snapshot but not in current
-      // Use stored follower_data to get their names without an API call
-      const prevData = lastSnapshot.follower_data ?? {};
-      const unfollowerIds = [...prevIds].filter((id) => !currentIds.has(id));
-
-      unfollowers = unfollowerIds.map((id) => ({
-        user_id: id,
-        user_login: prevData[id]?.user_login ?? id,
-        user_name: prevData[id]?.user_name ?? id,
-        profile_image_url: prevData[id]?.profile_image_url ?? null,
-        unfollowed_detected_at: new Date().toISOString(),
-      }));
-    }
-
-    // Only save a new snapshot when the follower list actually changed.
-    // This is the key fix: if we saved on every load, the "previous" snapshot
-    // would always match the current list, making diffs permanently empty.
     const prevIds = new Set(lastSnapshot?.follower_ids ?? []);
-    const listChanged =
-      currentIds.size !== prevIds.size ||
-      [...currentIds].some((id) => !prevIds.has(id)) ||
-      [...prevIds].some((id) => !currentIds.has(id));
-
-    if (listChanged) {
-      await Promise.all([
-        saveSnapshot(currentFollowers, totalCount),
-        appendCountHistory(totalCount),
-      ]);
-    }
 
     const history = await getCountHistory();
     const snapshotAge = lastSnapshot
