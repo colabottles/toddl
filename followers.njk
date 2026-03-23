@@ -298,6 +298,9 @@ permalink: /followers/
     font-size: 0.75rem;
     color: var(--f-text-muted);
     text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .followers-page .fp-when {
@@ -573,7 +576,7 @@ permalink: /followers/
           pointRadius: history.length > 30 ? 0 : 3,
           pointHoverRadius: 5,
           fill: true,
-          tension: 0.35,
+          tension: 0,
         }]
       },
       options: {
@@ -584,16 +587,18 @@ permalink: /followers/
           tooltip: { callbacks: { label: c => ` ${c.parsed.y.toLocaleString()} followers` } }
         },
         scales: {
-          x: { ticks: { color: "#a8a59e", font: { size: 11 }, maxTicksLimit: 10 }, grid: { display: false } },
+          x: {
+            ticks: { color: "#a8a59e", font: { size: 11 }, maxTicksLimit: 10 },
+            grid:  { display: false },
+          },
           y: {
             ticks: {
               color: "#a8a59e",
               font: { size: 11 },
-              stepSize: 1,
+              precision: 0,
               callback: v => Number.isInteger(v) ? v.toLocaleString() : null,
             },
             grid: { color: "rgba(255,255,255,0.06)" },
-            min: undefined,
           }
         }
       }
