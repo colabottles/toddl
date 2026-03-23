@@ -1,11 +1,5 @@
 // netlify/functions/twitch.js
 // Securely proxies Twitch Helix API requests.
-// Set these env vars in Netlify dashboard → Site config → Environment variables:
-//   TWITCH_CLIENT_ID
-//   TWITCH_CLIENT_SECRET
-//   TWITCH_BROADCASTER_ID   (your numeric Twitch user ID)
-//   SUPABASE_URL
-//   SUPABASE_SERVICE_ROLE_KEY
 
 const TWITCH_TOKEN_URL = "https://id.twitch.tv/oauth2/token";
 const TWITCH_API_BASE = "https://api.twitch.tv/helix";
@@ -91,12 +85,12 @@ async function getLastSnapshot() {
   );
   url.searchParams.set("select", "*");
   url.searchParams.set("order", "created_at.desc");
-  url.searchParams.set("limit", "1");
+  url.searchParams.set("limit", "2"); // fetch 2
 
   const res = await fetch(url.toString(), { headers: supabaseHeaders() });
   if (!res.ok) return null;
   const rows = await res.json();
-  return rows[0] ?? null;
+  return rows[1] ?? rows[0] ?? null; // use the OLDER one, fall back to newest if only 1 exists
 }
 
 async function saveSnapshot(followerIds, totalCount) {
