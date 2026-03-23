@@ -1,10 +1,9 @@
 // netlify/functions/twitch.js
-// Securely proxies Twitch Helix API requests.
 
 const TWITCH_TOKEN_URL = "https://id.twitch.tv/oauth2/token";
 const TWITCH_API_BASE = "https://api.twitch.tv/helix";
 
-// ---------- helpers ----------
+// ---------- Twitch helpers ----------
 
 async function getAppToken() {
   const res = await fetch(TWITCH_TOKEN_URL, {
@@ -17,14 +16,12 @@ async function getAppToken() {
     }),
   });
   if (!res.ok) throw new Error("Failed to get Twitch token");
-  const data = await res.json();
-  return data.access_token;
+  return (await res.json()).access_token;
 }
 
 async function fetchAllFollowers(token, broadcasterId) {
   const followers = [];
   let cursor = null;
-
   do {
     const url = new URL(`${TWITCH_API_BASE}/channels/followers`);
     url.searchParams.set("broadcaster_id", broadcasterId);
@@ -37,17 +34,14 @@ async function fetchAllFollowers(token, broadcasterId) {
         Authorization: `Bearer ${token}`,
       },
     });
-
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
       throw new Error(err.message || "Twitch API error");
     }
-
     const data = await res.json();
     followers.push(...data.data);
     cursor = data.pagination?.cursor ?? null;
   } while (cursor);
-
   return followers;
 }
 
@@ -55,20 +49,17 @@ async function fetchFollowerCount(token, broadcasterId) {
   const url = new URL(`${TWITCH_API_BASE}/channels/followers`);
   url.searchParams.set("broadcaster_id", broadcasterId);
   url.searchParams.set("first", "1");
-
   const res = await fetch(url.toString(), {
     headers: {
       "Client-ID": process.env.TWITCH_CLIENT_ID,
       Authorization: `Bearer ${token}`,
     },
   });
-
   if (!res.ok) throw new Error("Failed to fetch follower count");
-  const data = await res.json();
-  return data.total ?? 0;
+  return (await res.json()).total ?? 0;
 }
 
-// ---------- Supabase helpers (REST API, no SDK needed) ----------
+// ---------- Supabase helpers ----------
 
 function supabaseHeaders() {
   return {
@@ -93,13 +84,27 @@ async function getLastSnapshot() {
   return rows[1] ?? rows[0] ?? null; // use the OLDER one, fall back to newest if only 1 exists
 }
 
-async function saveSnapshot(followerIds, totalCount) {
+// Save snapshot storing full follower objects (id + login + name + avatar)
+// so unfollowers can be identified later without a Twitch API lookup.
+async function saveSnapshot(followers, totalCount) {
   const url = `${process.env.SUPABASE_URL}/rest/v1/twitch_follower_snapshots`;
+  // Store minimal follower data keyed by user_id
+  const followerMap = {};
+  for (const f of followers) {
+    followerMap[f.user_id] = {
+      user_login: f.user_login,
+      user_name: f.user_name,
+      profile_image_url: f.profile_image_url ?? null,
+    };
+  }
   const res = await fetch(url, {
     method: "POST",
     headers: supabaseHeaders(),
     body: JSON.stringify({
-      follower_ids: followerIds,
+      // Keep follower_ids array for fast set operations
+      follower_ids: Object.keys(followerMap),
+      // Store full map so we can reconstruct unfollower details
+      follower_data: followerMap,
       total_count: totalCount,
     }),
   });
@@ -122,7 +127,6 @@ async function getCountHistory() {
   url.searchParams.set("select", "count,created_at");
   url.searchParams.set("order", "created_at.asc");
   url.searchParams.set("limit", "90");
-
   const res = await fetch(url.toString(), { headers: supabaseHeaders() });
   if (!res.ok) return [];
   return res.json();
@@ -130,7 +134,7 @@ async function getCountHistory() {
 
 // ---------- main handler ----------
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
   const corsHeaders = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "Content-Type",
@@ -147,67 +151,67 @@ exports.handler = async (event) => {
 
     const token = await getAppToken();
 
-    // Fetch current followers and count in parallel
     const [currentFollowers, totalCount] = await Promise.all([
       fetchAllFollowers(token, broadcasterId),
       fetchFollowerCount(token, broadcasterId),
     ]);
 
-    // Build a set of current follower IDs
     const currentIds = new Set(currentFollowers.map((f) => f.user_id));
 
-    // Pull previous snapshot to diff unfollowers
-    const lastSnapshot = await getLastSnapshot();
-    let unfollowers = [];
-    let newFollowers = [];
-
-    if (lastSnapshot) {
-      const prevIds = new Set(lastSnapshot.follower_ids);
-
-      // New followers = in current but not in prev snapshot
-      newFollowers = currentFollowers.filter((f) => !prevIds.has(f.user_id));
-
-      // Unfollowers = in prev snapshot but not in current
-      const unfollowerIds = [...prevIds].filter((id) => !currentIds.has(id));
-      // We only have IDs for unfollowers — enrich with Twitch user lookup
-      if (unfollowerIds.length > 0) {
-        // Twitch /users accepts up to 100 IDs per request
-        const chunks = [];
-        for (let i = 0; i < unfollowerIds.length; i += 100) {
-          chunks.push(unfollowerIds.slice(i, i + 100));
-        }
-        for (const chunk of chunks) {
-          const uurl = new URL(`${TWITCH_API_BASE}/users`);
-          chunk.forEach((id) => uurl.searchParams.append("id", id));
-          const ures = await fetch(uurl.toString(), {
-            headers: {
-              "Client-ID": process.env.TWITCH_CLIENT_ID,
-              Authorization: `Bearer ${token}`,
-            },
-          });
-          if (ures.ok) {
-            const udata = await ures.json();
-            unfollowers.push(
-              ...udata.data.map((u) => ({
-                user_id: u.id,
-                user_login: u.login,
-                user_name: u.display_name,
-                profile_image_url: u.profile_image_url,
-                unfollowed_detected_at: new Date().toISOString(),
-              })),
-            );
-          }
-        }
-      }
+    // Build a lookup map of current followers for fast access
+    const currentMap = {};
+    for (const f of currentFollowers) {
+      currentMap[f.user_id] = f;
     }
 
-    // Save new snapshot + count history (fire and forget errors)
-    await Promise.all([
-      saveSnapshot([...currentIds], totalCount),
-      appendCountHistory(totalCount),
-    ]);
+    // Get the last saved snapshot
+    const lastSnapshot = await getLastSnapshot();
+
+    let newFollowers = [];
+    let unfollowers = [];
+
+    if (lastSnapshot) {
+      const prevIds = new Set(lastSnapshot.follower_ids ?? []);
+
+      // New followers = in current but not in previous snapshot
+      newFollowers = currentFollowers.filter((f) => !prevIds.has(f.user_id));
+
+      // Unfollowers = in previous snapshot but not in current
+      // Use stored follower_data to get their names without an API call
+      const prevData = lastSnapshot.follower_data ?? {};
+      const unfollowerIds = [...prevIds].filter((id) => !currentIds.has(id));
+
+      unfollowers = unfollowerIds.map((id) => ({
+        user_id: id,
+        user_login: prevData[id]?.user_login ?? id,
+        user_name: prevData[id]?.user_name ?? id,
+        profile_image_url: prevData[id]?.profile_image_url ?? null,
+        unfollowed_detected_at: new Date().toISOString(),
+      }));
+    }
+
+    // Only save a new snapshot when the follower list actually changed.
+    // This is the key fix: if we saved on every load, the "previous" snapshot
+    // would always match the current list, making diffs permanently empty.
+    const prevIds = new Set(lastSnapshot?.follower_ids ?? []);
+    const listChanged =
+      currentIds.size !== prevIds.size ||
+      [...currentIds].some((id) => !prevIds.has(id)) ||
+      [...prevIds].some((id) => !currentIds.has(id));
+
+    if (listChanged) {
+      await Promise.all([
+        saveSnapshot(currentFollowers, totalCount),
+        appendCountHistory(totalCount),
+      ]);
+    }
 
     const history = await getCountHistory();
+    const snapshotAge = lastSnapshot
+      ? Math.round(
+          (Date.now() - new Date(lastSnapshot.created_at).getTime()) / 60000,
+        )
+      : null;
 
     return {
       statusCode: 200,
@@ -218,12 +222,7 @@ exports.handler = async (event) => {
         newFollowers,
         unfollowers,
         history,
-        snapshotAge: lastSnapshot
-          ? Math.round(
-              (Date.now() - new Date(lastSnapshot.created_at).getTime()) /
-                60000,
-            )
-          : null,
+        snapshotAge,
       }),
     };
   } catch (err) {
@@ -234,4 +233,4 @@ exports.handler = async (event) => {
       body: JSON.stringify({ error: err.message }),
     };
   }
-};;
+};
