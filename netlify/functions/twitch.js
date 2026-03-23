@@ -19,12 +19,76 @@ async function getAppToken() {
   return (await res.json()).access_token;
 }
 
-// fetchAllFollowers uses a USER access token with moderator:read:followers scope.
+async function refreshUserToken() {
+  const res = await fetch(TWITCH_TOKEN_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      client_id: process.env.TWITCH_CLIENT_ID,
+      client_secret: process.env.TWITCH_CLIENT_SECRET,
+      grant_type: "refresh_token",
+      refresh_token: process.env.TWITCH_USER_REFRESH_TOKEN,
+    }),
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(
+      `Failed to refresh user token: ${err.message ?? res.status}`,
+    );
+  }
+  const data = await res.json();
+
+  // Persist new tokens to Netlify env vars so the next invocation uses them
+  if (process.env.NETLIFY_ACCESS_TOKEN && process.env.NETLIFY_SITE_ID) {
+    try {
+      await fetch(
+        `https://api.netlify.com/api/v1/sites/${process.env.NETLIFY_SITE_ID}/env`,
+        {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${process.env.NETLIFY_ACCESS_TOKEN}`,
+          },
+          body: JSON.stringify([
+            {
+              key: "TWITCH_USER_ACCESS_TOKEN",
+              values: [{ value: data.access_token, context: "production" }],
+            },
+            {
+              key: "TWITCH_USER_REFRESH_TOKEN",
+              values: [{ value: data.refresh_token, context: "production" }],
+            },
+          ]),
+        },
+      );
+      console.log("Netlify env vars updated with refreshed Twitch tokens");
+    } catch (e) {
+      console.error(
+        "Could not persist refreshed tokens to Netlify:",
+        e.message,
+      );
+    }
+  }
+
+  return data.access_token;
+}
+
+// Validate the current user token and refresh if expired
+async function getUserToken() {
+  const currentToken = process.env.TWITCH_USER_ACCESS_TOKEN;
+  const validateRes = await fetch("https://id.twitch.tv/oauth2/validate", {
+    headers: { Authorization: `OAuth ${currentToken}` },
+  });
+  if (validateRes.ok) return currentToken;
+  console.log("User token expired, refreshing...");
+  return refreshUserToken();
+}
+
+// Requires a user access token with moderator:read:followers scope.
 // App tokens from client_credentials cannot read follower lists (Twitch changed this in 2023).
-async function fetchAllFollowers(broadcasterId) {
+async function fetchAllFollowers(broadcasterId, userToken) {
   const followers = [];
   let cursor = null;
-  const userToken = process.env.TWITCH_USER_ACCESS_TOKEN;
   do {
     const url = new URL(`${TWITCH_API_BASE}/channels/followers`);
     url.searchParams.set("broadcaster_id", broadcasterId);
@@ -61,6 +125,31 @@ async function fetchFollowerCount(token, broadcasterId) {
   });
   if (!res.ok) throw new Error("Failed to fetch follower count");
   return (await res.json()).total ?? 0;
+}
+
+// Enrich followers with profile images via /helix/users (max 100 IDs per request)
+async function enrichWithAvatars(followers, appToken) {
+  const enriched = [...followers];
+  for (let i = 0; i < enriched.length; i += 100) {
+    const chunk = enriched.slice(i, i + 100);
+    const url = new URL(`${TWITCH_API_BASE}/users`);
+    chunk.forEach((f) => url.searchParams.append("id", f.user_id));
+    const res = await fetch(url.toString(), {
+      headers: {
+        "Client-ID": process.env.TWITCH_CLIENT_ID,
+        Authorization: `Bearer ${appToken}`,
+      },
+    });
+    if (!res.ok) continue;
+    const data = await res.json();
+    const map = Object.fromEntries(
+      data.data.map((u) => [u.id, u.profile_image_url]),
+    );
+    chunk.forEach((f) => {
+      f.profile_image_url = map[f.user_id] ?? null;
+    });
+  }
+  return enriched;
 }
 
 // ---------- Supabase helpers ----------
@@ -109,10 +198,7 @@ async function saveSnapshot(followers, totalCount) {
   const text = await res.text();
   if (!res.ok) console.error("Snapshot save failed:", res.status, text);
   else
-    console.log(
-      "Snapshot saved OK, ids stored:",
-      Object.keys(followerMap).length,
-    );
+    console.log("Snapshot saved, ids stored:", Object.keys(followerMap).length);
 }
 
 async function appendCountHistory(totalCount) {
@@ -153,15 +239,24 @@ export const handler = async (event) => {
     const broadcasterId = process.env.TWITCH_BROADCASTER_ID;
     if (!broadcasterId) throw new Error("TWITCH_BROADCASTER_ID not set");
 
-    const token = await getAppToken();
-
-    const [currentFollowers, totalCount] = await Promise.all([
-      fetchAllFollowers(broadcasterId),
-      fetchFollowerCount(token, broadcasterId),
+    // App token for count + validate; user token for follower list
+    const [appToken, userToken] = await Promise.all([
+      getAppToken(),
+      getUserToken(),
     ]);
 
-    const currentIds = new Set(currentFollowers.map((f) => f.user_id));
+    const [currentFollowers, totalCount] = await Promise.all([
+      fetchAllFollowers(broadcasterId, userToken),
+      fetchFollowerCount(appToken, broadcasterId),
+    ]);
 
+    // Enrich with profile avatars via separate /users API call
+    const enrichedFollowers = await enrichWithAvatars(
+      currentFollowers,
+      appToken,
+    );
+
+    const currentIds = new Set(enrichedFollowers.map((f) => f.user_id));
     const lastSnapshot = await getLastSnapshot();
 
     let newFollowers = [];
@@ -171,10 +266,8 @@ export const handler = async (event) => {
       const prevIds = new Set(lastSnapshot.follower_ids ?? []);
       const prevData = lastSnapshot.follower_data ?? {};
 
-      // New followers = in current but not in previous snapshot
-      newFollowers = currentFollowers.filter((f) => !prevIds.has(f.user_id));
+      newFollowers = enrichedFollowers.filter((f) => !prevIds.has(f.user_id));
 
-      // Unfollowers = in previous snapshot but not in current
       const unfollowerIds = [...prevIds].filter((id) => !currentIds.has(id));
       unfollowers = unfollowerIds.map((id) => ({
         user_id: id,
@@ -185,7 +278,7 @@ export const handler = async (event) => {
       }));
     }
 
-    // Save snapshot when the list has actually changed or no snapshot exists yet
+    // Save snapshot only when follower list has changed or no snapshot exists yet
     const prevIds = new Set(lastSnapshot?.follower_ids ?? []);
     const listChanged =
       !lastSnapshot ||
@@ -195,7 +288,7 @@ export const handler = async (event) => {
 
     if (listChanged) {
       await Promise.all([
-        saveSnapshot(currentFollowers, totalCount),
+        saveSnapshot(enrichedFollowers, totalCount),
         appendCountHistory(totalCount),
       ]);
     }
@@ -212,7 +305,7 @@ export const handler = async (event) => {
       headers: corsHeaders,
       body: JSON.stringify({
         totalCount,
-        followers: currentFollowers,
+        followers: enrichedFollowers,
         newFollowers,
         unfollowers,
         history,

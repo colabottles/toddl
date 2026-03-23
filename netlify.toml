@@ -52,7 +52,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-    Content-Security-Policy = "default-src 'self'; style-src 'self' unsafe-inline'; form-action 'self'; script-src 'self'; connect-src 'self'; img-src 'self' data: https:; base-uri 'self'; style-src 'self' 'unsafe-inline';"
+    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://cdnjs.cloudflare.com; connect-src 'self' https://api.twitch.tv https://id.twitch.tv; img-src 'self' data: https:; form-action 'self'; base-uri 'self'; frame-ancestors 'none';"
 
 [[redirects]]
   from = "/*"
