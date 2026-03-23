@@ -146,7 +146,10 @@ export const handler = async (event) => {
 
   // Temporary debug endpoint — remove after diagnosing
   // Visit: /.netlify/functions/twitch?debug=1
-  if (event.queryStringParameters?.debug === "1") {
+  // VERSION CHECK — remove after confirming deploy
+  if (event.queryStringParameters?.version === "1") {
+    return { statusCode: 200, headers: corsHeaders, body: JSON.stringify({ version: "v3-jsonb", saveSnapshot: saveSnapshot.toString().slice(0, 200) }) };
+
     try {
       const snapshot = await getLastSnapshot();
       const allSnapshots = await (async () => {
