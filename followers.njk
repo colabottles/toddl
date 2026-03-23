@@ -585,7 +585,16 @@ permalink: /followers/
         },
         scales: {
           x: { ticks: { color: "#a8a59e", font: { size: 11 }, maxTicksLimit: 10 }, grid: { display: false } },
-          y: { ticks: { color: "#a8a59e", font: { size: 11 }, callback: v => v.toLocaleString() }, grid: { color: "rgba(255,255,255,0.06)" } }
+          y: {
+            ticks: {
+              color: "#a8a59e",
+              font: { size: 11 },
+              stepSize: 1,
+              callback: v => Number.isInteger(v) ? v.toLocaleString() : null,
+            },
+            grid: { color: "rgba(255,255,255,0.06)" },
+            min: undefined,
+          }
         }
       }
     });
