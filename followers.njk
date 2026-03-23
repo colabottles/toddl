@@ -164,10 +164,14 @@ permalink: /followers/
     border: none;
   }
 
+  .followers-page .fp-chart-canvas-wrap {
+    position: relative;
+    height: 160px;
+    width: 100%;
+  }
+
   .followers-page canvas {
     display: block;
-    width: 100%;
-    height: 160px;
   }
 
   /* ── tabs ── */
@@ -432,7 +436,7 @@ permalink: /followers/
 
   <div class="fp-chart-wrap" id="fp-chart-wrap" style="display:none" role="region" aria-label="Follower count chart">
     <span class="fp-chart-title">Follower count — last 90 days</span>
-    <canvas id="fp-chart" role="img" aria-label="Line chart of follower count over the past 90 days"></canvas>
+    <div class="fp-chart-canvas-wrap"><canvas id="fp-chart" role="img" aria-label="Line chart of follower count over the past 90 days"></canvas></div>
   </div>
 
   <div class="fp-tabs" role="tablist" aria-label="Follower views">
@@ -592,7 +596,6 @@ permalink: /followers/
             grid:  { display: false },
           },
           y: {
-            min: 0,
             ticks: { color: "#a8a59e", font: { size: 11 }, callback: v => v.toLocaleString() },
             grid:  { color: "rgba(255,255,255,0.06)" },
           }
