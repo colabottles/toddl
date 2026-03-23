@@ -213,7 +213,10 @@ export const handler = async (event) => {
     const token = await getAppToken();
 
     const [currentFollowers, totalCount] = await Promise.all([
-      fetchAllFollowers(token, broadcasterId),
+      fetchAllFollowers(token, broadcasterId).catch((err) => {
+        console.error("fetchAllFollowers failed:", err.message);
+        return [];
+      }),
       fetchFollowerCount(token, broadcasterId),
     ]);
 
@@ -232,6 +235,11 @@ export const handler = async (event) => {
     let unfollowers = [];
 
     const prevIds = new Set(lastSnapshot?.follower_ids ?? []);
+    const listChanged =
+      !lastSnapshot ||
+      currentIds.size !== prevIds.size ||
+      [...currentIds].some((id) => !prevIds.has(id)) ||
+      [...prevIds].some((id) => !currentIds.has(id));
 
     const history = await getCountHistory();
     const snapshotAge = lastSnapshot
