@@ -592,22 +592,9 @@ permalink: /followers/
             grid:  { display: false },
           },
           y: {
-            min: (ctx) => {
-              const values = ctx.chart.data.datasets[0].data;
-              const min = Math.min(...values);
-              const max = Math.max(...values);
-              const range = max - min;
-              // If range is tiny (< 5% of total), force a zero-based-ish floor
-              // so the line looks proportionally flat rather than a spike
-              return range < min * 0.05 ? Math.floor(min * 0.95) : undefined;
-            },
-            ticks: {
-              color: "#a8a59e",
-              font: { size: 11 },
-              precision: 0,
-              callback: v => Number.isInteger(v) ? v.toLocaleString() : null,
-            },
-            grid: { color: "rgba(255,255,255,0.06)" },
+            min: 0,
+            ticks: { color: "#a8a59e", font: { size: 11 }, callback: v => v.toLocaleString() },
+            grid:  { color: "rgba(255,255,255,0.06)" },
           }
         }
       }
