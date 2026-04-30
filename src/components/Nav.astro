@@ -1,0 +1,88 @@
+---
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const primaryLinks = [
+  { href: "/about", label: "about" },
+  { href: "/projects", label: "projects" },
+  { href: "/writing", label: "writing" },
+];
+
+const moreLinks = [
+  { href: "/speaking", label: "speaking" },
+  { href: "/uses", label: "uses" },
+  { href: "/contact", label: "contact" },
+  { href: "/blog", label: "blog" },
+  { href: "/elsewhere", label: "elsewhere" },
+  { href: "/podcast", label: "podcast" },
+  { href: "/colophon", label: "colophon" },
+];
+
+const infoLinks = [
+  { href: "/accessibility", label: "accessibility" },
+  { href: "/privacy", label: "privacy" },
+];
+
+function isCurrent(href: string) {
+  return currentPath === href || currentPath.startsWith(href + "/");
+}
+---
+
+<nav aria-label="Primary navigation">
+  <ul role="list" class="nav">
+    <li>
+      <p class="nav__group-label">explore</p>
+    </li>
+    {
+      primaryLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class="nav__link"
+            aria-current={isCurrent(link.href) ? "page" : undefined}
+          >
+            <span class="nav__prefix">./</span>
+            {link.label}
+          </a>
+        </li>
+      ))
+    }
+    <li>
+      <p class="nav__group-label">more</p>
+    </li>
+    {
+      moreLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class="nav__link"
+            aria-current={isCurrent(link.href) ? "page" : undefined}
+          >
+            <span class="nav__prefix">./</span>
+            {link.label}
+          </a>
+        </li>
+      ))
+    }
+    <li>
+      <p class="nav__group-label">info</p>
+    </li>
+    {
+      infoLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class="nav__link"
+            aria-current={isCurrent(link.href) ? "page" : undefined}
+          >
+            <span class="nav__prefix">./</span>
+            {link.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

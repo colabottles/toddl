@@ -1,0 +1,175 @@
+---
+import portland from "../assets/images/portland.jpg";
+import phoenix from "../assets/images/phoenix.jpg";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Todd Libby - Web Developer and Accessibility Advocate"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todd Libby</title>
+  </head>
+  <body>
+    <main class="splash">
+      <div class="splash__left" role="presentation">
+        <img src={portland.src} alt="Portland, Maine harbor at night" />
+      </div>
+      <div class="splash__right" role="presentation">
+        <img
+          src={phoenix.src}
+          alt="Phoenix, Arizona skyline at night with a full moon"
+        />
+      </div>
+      <header class="splash__content">
+        <p class="splash__name">Todd Libby</p>
+        <p class="splash__role">Web Developer</p>
+        <a href="/about" class="splash__enter">Enter Site</a>
+      </header>
+    </main>
+  </body>
+</html>
+
+<style>
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    height: 100%;
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+    background: #000;
+  }
+
+  .splash {
+    position: relative;
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .splash__left,
+  .splash__right {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .splash__left {
+    background-color: #2a3a52;
+  }
+
+  .splash__right {
+    background-color: #2a1a4a;
+  }
+
+  .splash__left {
+    left: 0;
+  }
+
+  .splash__right {
+    right: 0;
+  }
+
+  .splash__left img,
+  .splash__right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .splash__content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 2.5rem 3.5rem;
+    border-radius: 4px;
+  }
+
+  .splash__name {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #f8f7f4;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+
+  .splash__role {
+    font-size: 1rem;
+    color: #a3af7c;
+    letter-spacing: 0.05em;
+  }
+
+  .splash__enter {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    color: #f8f7f4;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    letter-spacing: 0.04em;
+    transition: color 150ms ease;
+  }
+
+  .splash__enter:hover {
+    color: #a3af7c;
+  }
+
+  :focus-visible {
+    outline: 2px solid #a3af7c;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
+  @media (max-width: 600px) {
+    .splash__left,
+    .splash__right {
+      width: 100%;
+      height: 50%;
+    }
+
+    .splash__left {
+      top: 0;
+      left: 0;
+    }
+
+    .splash__right {
+      top: 50%;
+      left: 0;
+    }
+
+    .splash__name {
+      font-size: 2rem;
+    }
+
+    .splash__content {
+      padding: 1.5rem 2rem;
+    }
+  }
+</style>

@@ -1,0 +1,234 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => {
+    return import.meta.env.PROD ? true : !data.draft;
+  });
+  return posts.map((post: CollectionEntry<"blog">) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const date = new Date(post.data.date).toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<Base title={post.data.title} description={post.data.description}>
+  <article aria-labelledby="post-heading">
+    <header class="post-header">
+      <h1 id="post-heading" class="post-title">{post.data.title}</h1>
+      <div class="post-meta">
+        <time class="post-date" datetime={post.data.date.toISOString()}
+          >{date}</time
+        >
+        {
+          post.data.tags && post.data.tags.length > 0 && (
+            <ul class="post-tags" aria-label="Tags">
+              {post.data.tags.map((tag: string) => (
+                <li class="post-tag">{tag}</li>
+              ))}
+            </ul>
+          )
+        }
+      </div>
+    </header>
+    <div class="post-content">
+      <Content />
+    </div>
+    <footer class="post-footer">
+      <a href="/blog" class="post-back">cd ../blog</a>
+    </footer>
+  </article>
+</Base>
+
+<style>
+  article {
+    max-width: 72ch;
+  }
+
+  .post-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 0.5px solid var(--warm-border);
+  }
+
+  .post-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.3;
+    margin-bottom: 0.875rem;
+  }
+
+  .post-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .post-date {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .post-tags {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+  }
+
+  .post-tag {
+    font-size: 0.75rem;
+    color: var(--accent);
+    border: 0.5px solid var(--accent-border);
+    border-radius: var(--radius-sm);
+    padding: 0.125rem 0.5rem;
+  }
+
+  .post-content {
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+    line-height: 1.75;
+  }
+
+  :global(.post-content p) {
+    margin-bottom: 1.25rem;
+  }
+
+  .post-content h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin: 2rem 0 0.875rem;
+    padding-bottom: 0.375rem;
+    border-bottom: 0.5px solid var(--warm-border);
+  }
+
+  .post-content h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin: 1.75rem 0 0.75rem;
+  }
+
+  .post-content h4 {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  :global(.post-content a) {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+  }
+
+  :global(.post-content a:hover) {
+    opacity: 0.75;
+  }
+
+  :global(.post-content ul),
+  :global(.post-content ol) {
+    margin: 1.5rem 0 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  :global(.post-content ul) {
+    list-style: disc;
+  }
+  :global(.post-content ol) {
+    list-style: decimal;
+  }
+
+  :global(.post-content li) {
+    color: var(--text-primary);
+    line-height: 1.7;
+  }
+
+  :global(.post-content li::marker) {
+    color: var(--accent);
+  }
+
+  :global(.post-content pre) {
+    background: #1a1f27;
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 1.25rem;
+    overflow-x: auto;
+    font-size: 0.875rem;
+    margin: 2rem 0;
+    line-height: 1.7;
+    color: #e2dfd8;
+  }
+
+  :global(.post-content pre code) {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #e2dfd8;
+    font-size: inherit;
+    font-family: var(--font-mono);
+  }
+
+  :global(.post-content code) {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--accent);
+    background: var(--warm-mid);
+    border: 0.5px solid var(--warm-border);
+    padding: 0.2rem 0.45rem;
+    border-radius: 3px;
+  }
+
+  .post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    margin: 1.5rem 0;
+    border: 0.5px solid var(--warm-border);
+  }
+
+  .post-content hr {
+    border: none;
+    border-top: 0.5px solid var(--warm-border);
+    margin: 2rem 0;
+  }
+
+  .post-footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 0.5px solid var(--warm-border);
+  }
+
+  .post-back {
+    font-size: 0.875rem;
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .post-back:hover {
+    opacity: 0.8;
+  }
+</style>
