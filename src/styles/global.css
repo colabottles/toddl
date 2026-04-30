@@ -129,7 +129,8 @@ body {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 240px;
   grid-template-rows: 1fr;
-  min-height: 100dvh;
+  height: 100dvh;
+  min-height: 100%;
   margin-left: var(--sidebar-w);
   align-items: stretch;
   overflow-x: hidden;
@@ -147,7 +148,7 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   padding: 1.75rem 1.25rem;
-  overflow-y: auto;
+  overflow-y: scroll;
   z-index: 100;
   transform: translateX(0);
 }
@@ -263,7 +264,6 @@ body {
 
 /* Stack */
 .stack {
-  margin-top: auto;
   padding-top: 1rem;
   border-top: 0.5px solid var(--sidebar-border);
 }
@@ -302,7 +302,7 @@ body {
 .main {
   grid-column: 1;
   grid-row: 1;
-  padding: 2rem 2.5rem;
+  padding: 2rem 5rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -559,15 +559,6 @@ body {
   border-color: var(--accent-border);
 }
 
-/* Layout with gh panel open */
-.layout {
-  grid-template-columns: var(--sidebar-w) 1fr;
-}
-
-.layout.gh-open {
-  grid-template-columns: var(--sidebar-w) 1fr 280px;
-}
-
 /* Right panel */
 .right-panel {
   grid-column: 2;
@@ -579,13 +570,10 @@ body {
   border-left: 0.5px solid var(--sidebar-border);
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  height: 100dvh;
+  min-height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-}
-
-.layout {
-  grid-template-columns: var(--sidebar-w) minmax(0, 1fr) 240px;
 }
 
 .right-panel__top {
@@ -991,39 +979,14 @@ body {
   max-width: 65ch;
 }
 
+
+
 /* Mobile right panel */
 .right-panel-btn {
   display: none;
 }
 
-.right-panel__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1rem 0.5rem;
-  border-bottom: 0.5px solid var(--sidebar-border);
-  position: sticky;
-  top: 0;
-  background: var(--sidebar-bg);
-  z-index: 10;
-}
-
-.right-panel-close {
-  display: none;
-  background: transparent;
-  border: none;
-  color: var(--sidebar-text);
-  cursor: pointer;
-  padding: 0.25rem;
-  border-radius: var(--radius-sm);
-}
-
 @media (max-width: 768px) {
-  .right-panel-close {
-    display: flex;
-    align-items: center;
-  }
-
   .right-panel-btn {
     display: flex;
     align-items: center;
@@ -1054,13 +1017,5 @@ body {
     height: 100dvh;
     z-index: 150;
     overflow-y: auto;
-  }
-
-  .right-panel.mobile-open .sponsor-panel {
-    display: flex;
-  }
-  .right-panel.mobile-open {
-    display: flex;
-    flex-direction: column;
   }
 }

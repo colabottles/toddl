@@ -1,0 +1,499 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="How I built @colabottles/center-div - a complete journey from problem to published package."><meta name="theme-color" content="#252C37"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><title>Building a Production-Ready Nuxt Module From Idea to Published · Todd Libby</title><script>
+      const stored = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      const theme = stored ?? (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    </script><link rel="stylesheet" href="/_astro/Base.CB34O-77.css">
+<style>article[data-astro-cid-4sn4zg3r]{max-width:72ch}.post-header[data-astro-cid-4sn4zg3r]{margin-bottom:2rem;padding-bottom:1.25rem;border-bottom:.5px solid var(--warm-border)}.post-title[data-astro-cid-4sn4zg3r]{font-size:1.25rem;font-weight:500;color:var(--text-primary);line-height:1.3;margin-bottom:.875rem}.post-meta[data-astro-cid-4sn4zg3r]{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}.post-date[data-astro-cid-4sn4zg3r]{font-size:.875rem;color:var(--text-secondary)}.post-tags[data-astro-cid-4sn4zg3r]{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.375rem}.post-tag[data-astro-cid-4sn4zg3r]{font-size:.75rem;color:var(--accent);border:.5px solid var(--accent-border);border-radius:var(--radius-sm);padding:.125rem .5rem}.post-content[data-astro-cid-4sn4zg3r]{font-size:.9375rem;color:var(--text-primary);line-height:1.75}.post-content p{margin-bottom:1.25rem}.post-content[data-astro-cid-4sn4zg3r] h2[data-astro-cid-4sn4zg3r]{font-size:1.125rem;font-weight:500;color:var(--text-primary);margin:2rem 0 .875rem;padding-bottom:.375rem;border-bottom:.5px solid var(--warm-border)}.post-content[data-astro-cid-4sn4zg3r] h3[data-astro-cid-4sn4zg3r]{font-size:1rem;font-weight:500;color:var(--text-primary);margin:1.75rem 0 .75rem}.post-content[data-astro-cid-4sn4zg3r] h4[data-astro-cid-4sn4zg3r]{font-size:.9375rem;font-weight:500;color:var(--accent);margin:1.5rem 0 .5rem}.post-content a{color:var(--accent);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}.post-content a:hover{opacity:.75}.post-content ul,.post-content ol{margin:1.5rem 0 1.5rem 2rem;display:flex;flex-direction:column;gap:.5rem}.post-content ul{list-style:disc}.post-content ol{list-style:decimal}.post-content li{color:var(--text-primary);line-height:1.7}.post-content li::marker{color:var(--accent)}.post-content pre{background:#1a1f27;border-left:3px solid var(--accent);border-radius:var(--radius-sm);padding:1.25rem;overflow-x:auto;font-size:.875rem;margin:2rem 0;line-height:1.7;color:#e2dfd8}.post-content pre code{background:none;border:none;padding:0;color:#e2dfd8;font-size:inherit;font-family:var(--font-mono)}.post-content code{font-family:var(--font-mono);font-size:.875rem;color:var(--accent);background:var(--warm-mid);border:.5px solid var(--warm-border);padding:.2rem .45rem;border-radius:3px}.post-content[data-astro-cid-4sn4zg3r] img[data-astro-cid-4sn4zg3r]{max-width:100%;height:auto;border-radius:var(--radius-md);margin:1.5rem 0;border:.5px solid var(--warm-border)}.post-content[data-astro-cid-4sn4zg3r] hr[data-astro-cid-4sn4zg3r]{border:none;border-top:.5px solid var(--warm-border);margin:2rem 0}.post-footer[data-astro-cid-4sn4zg3r]{margin-top:3rem;padding-top:1rem;border-top:.5px solid var(--warm-border)}.post-back[data-astro-cid-4sn4zg3r]{font-size:.875rem;color:var(--accent);text-decoration:underline;text-underline-offset:3px}.post-back[data-astro-cid-4sn4zg3r]:hover{opacity:.8}
+</style></head> <body> <header> <a href="#main-content" class="skip-link">skip to main content</a> </header> <aside class="sidebar" id="sidebar" aria-label="Site navigation"> <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode"> <svg role="img" class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"> <title>Switch to light mode</title> <circle cx="12" cy="12" r="4"></circle> <line x1="12" y1="2" x2="12" y2="4"></line> <line x1="12" y1="20" x2="12" y2="22"></line> <line x1="4.93" y1="4.93" x2="6.34" y2="6.34"></line> <line x1="17.66" y1="17.66" x2="19.07" y2="19.07"></line> <line x1="2" y1="12" x2="4" y2="12"></line> <line x1="20" y1="12" x2="22" y2="12"></line> <line x1="4.93" y1="19.07" x2="6.34" y2="17.66"></line> <line x1="17.66" y1="6.34" x2="19.07" y2="4.93"></line> </svg> <svg role="img" class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"> <title>Switch to dark mode</title> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> <div> <p class="sidebar__prompt">~/toddl $</p> <p class="sidebar__name">Todd Libby</p> <p class="sidebar__role">Web Developer</p> </div> <nav aria-label="Primary navigation"> <ul role="list" class="nav"> <li> <p class="nav__group-label">explore</p> </li> <li> <a href="/about" class="nav__link"> <span class="nav__prefix">./</span> about </a> </li><li> <a href="/projects" class="nav__link"> <span class="nav__prefix">./</span> projects </a> </li><li> <a href="/writing" class="nav__link"> <span class="nav__prefix">./</span> writing </a> </li> <li> <p class="nav__group-label">more</p> </li> <li> <a href="/speaking" class="nav__link"> <span class="nav__prefix">./</span> speaking </a> </li><li> <a href="/uses" class="nav__link"> <span class="nav__prefix">./</span> uses </a> </li><li> <a href="/contact" class="nav__link"> <span class="nav__prefix">./</span> contact </a> </li><li> <a href="/blog" class="nav__link" aria-current="page"> <span class="nav__prefix">./</span> blog </a> </li><li> <a href="/elsewhere" class="nav__link"> <span class="nav__prefix">./</span> elsewhere </a> </li><li> <a href="/podcast" class="nav__link"> <span class="nav__prefix">./</span> podcast </a> </li><li> <a href="/colophon" class="nav__link"> <span class="nav__prefix">./</span> colophon </a> </li> <li> <p class="nav__group-label">info</p> </li> <li> <a href="/accessibility" class="nav__link"> <span class="nav__prefix">./</span> accessibility </a> </li><li> <a href="/privacy" class="nav__link"> <span class="nav__prefix">./</span> privacy </a> </li> </ul> </nav> <section class="webring" aria-labelledby="webring-heading"> <h2 id="webring-heading" class="webring__title">a11y-webring.club</h2> <p class="webring__desc">
+This site is a member of the <a href="https://a11y-webring.club/" class="webring__link" target="_blank" rel="noopener noreferrer">a11y-webring.club</a>.
+</p> <nav aria-label="a11y webring navigation"> <ul class="webring__links"> <li> <a href="https://a11y-webring.club/prev" class="webring__link" rel="external">Previous</a> </li> <li> <a href="https://a11y-webring.club/random" class="webring__link" rel="external">Random</a> </li> <li> <a href="https://a11y-webring.club/next" class="webring__link" rel="external">Next</a> </li> </ul> </nav> </section> <section class="stack" aria-labelledby="stack-heading"> <h2 id="stack-heading" class="stack__label">stack</h2> <ul class="stack__chips"> <li> <span class="chip chip--hi">Nuxt 4</span> </li><li> <span class="chip chip--hi">TypeScript</span> </li> <li> <span class="chip">Supabase</span> </li><li> <span class="chip">Netlify</span> </li><li> <span class="chip">Astro</span> </li><li> <span class="chip">WCAG 2.2</span> </li><li> <span class="chip">Node</span> </li> </ul> </section> </aside> <div class="sidebar-overlay" id="sidebar-overlay"></div> <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar"> <span class="hamburger__line"></span> <span class="hamburger__line"></span> <span class="hamburger__line"></span> </button> <div class="layout" id="layout"> <main class="main" id="main-content" tabindex="-1">  <article aria-labelledby="post-heading" data-astro-cid-4sn4zg3r> <header class="post-header" data-astro-cid-4sn4zg3r> <h1 id="post-heading" class="post-title" data-astro-cid-4sn4zg3r>Building a Production-Ready Nuxt Module From Idea to Published</h1> <div class="post-meta" data-astro-cid-4sn4zg3r> <time class="post-date" datetime="2026-01-17T00:00:00.000Z" data-astro-cid-4sn4zg3r>January 16, 2026</time> <ul class="post-tags" aria-label="Tags" data-astro-cid-4sn4zg3r> <li class="post-tag" data-astro-cid-4sn4zg3r>post</li><li class="post-tag" data-astro-cid-4sn4zg3r>nuxt</li><li class="post-tag" data-astro-cid-4sn4zg3r>vue</li><li class="post-tag" data-astro-cid-4sn4zg3r>coding</li> </ul> </div> </header> <div class="post-content" data-astro-cid-4sn4zg3r> <h2 id="how-i-built-colabottlescenter-div---a-complete-journey-from-problem-to-published-package">How I built @colabottles/center-div - a complete journey from problem to published package</h2>
+<h3 id="the-impetus">The Impetus</h3>
+<p>My background allows me to pick up on programming pretty good these days, that said, I don’t have an eidetic memory, I have a 40-plus year trove of what I call “space junk” floating around in my head, real life things to think about, but I understand the fundamentals and can understand and process by doing and reading. I figured this project is a great little thing to do. So I did it.</p>
+<h3 id="the-post-i-saw">The Post I Saw</h3>
+<p>I was on my usual jaunt through Bluesky seeing if there was anything positive or interesting to read and laid eyes <a href="https://bsky.app/profile/stephfh.dev/post/3mbmrbat4os2u">on this comment</a> and the reply to it by <a href="https://roe.dev">Daniel Roe</a>, lead maintainer with the Nuxt core team. I thought to myself, <em>“This looks like a funny thing I can do, here is something I can challenge myself with.”</em> and thus I started doing the research.</p>
+<h3 id="the-problem-issue-that-started-it-all">The <del>Problem</del> Issue That Started It All</h3>
+<p>If you’ve built anything with Nuxt (or anything with anything really), you’ve probably written this code (or something similar) dozens of times:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="html" role="group" aria-label="code code block"><code><span class="line"><span style="color:#C4C0BA">&#x3C;</span><span style="color:#79B8FF">div </span><span style="color:#A3AF7C">style</span><span style="color:#C4C0BA">=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">display: grid; place-items: center; min-height: 25vh</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;</span><span style="color:#79B8FF">button</span><span style="color:#C4C0BA">></span><span style="color:#E2DFD8">Perfectly Centered</span><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">button</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">div</span><span style="color:#C4C0BA">></span></span></code></pre>
+<p>or a version of this in your preferred programming language.</p>
+<p>It’s such a common pattern—centering content on a page—yet we repeat the same CSS (Cascading Style Sheets) Grid boilerplate over and over. Worse, when you try to abstract it into a component, you often run into <strong>hydration mismatches</strong> that make your console light up with warnings.</p>
+<p>I decided to try and solve this once and for all by building <code>@colabottles/center-div</code>, a simple Nuxt module for accessible, hydration-safe centering. Here’s what I learned building and publishing a production-ready Nuxt module.</p>
+<hr>
+<h2 id="the-journey-from-idea-to-npm">The Journey: From Idea to npm</h2>
+<h3 id="day-1-the-hydration-nightmare">Day 1: The Hydration Nightmare</h3>
+<p>My first attempt was straightforward—create a Vue component that applies centering styles:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="html" role="group" aria-label="code code block"><code><span class="line"><span style="color:#C4C0BA">&#x3C;</span><span style="color:#79B8FF">script </span><span style="color:#A3AF7C">setup</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#79B8FF">const</span><span style="color:#E2DFD8"> props = </span><span style="color:#B392F0">defineProps</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#E2DFD8">  minHeight</span><span style="color:#C4C0BA">:</span><span style="color:#E2DFD8"> String</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">script</span><span style="color:#C4C0BA">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;</span><span style="color:#79B8FF">template</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;</span><span style="color:#79B8FF">div</span></span>
+<span class="line"><span style="color:#A3AF7C">    :style</span><span style="color:#C4C0BA">=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">{</span></span>
+<span class="line"><span style="color:#A3AF7C">      display: 'grid',</span></span>
+<span class="line"><span style="color:#A3AF7C">      placeItems: 'center',</span></span>
+<span class="line"><span style="color:#A3AF7C">      minHeight: minHeight</span></span>
+<span class="line"><span style="color:#A3AF7C">    }</span><span style="color:#C4C0BA">"</span></span>
+<span class="line"><span style="color:#C4C0BA">  ></span></span>
+<span class="line"><span style="color:#C4C0BA">    &#x3C;</span><span style="color:#79B8FF">slot </span><span style="color:#FF6B6B">/</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;/</span><span style="color:#79B8FF">div</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">template</span><span style="color:#C4C0BA">></span></span></code></pre>
+<p>Simple, right? <strong>Wrong. Hydration errors everywhere.</strong></p>
+<p>The problem: Vue was applying styles differently on the server versus the client, causing the dreaded:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="bash" role="group" aria-label="code code block"><code><span class="line"><span style="color:#B392F0">Hydration</span><span style="color:#A3AF7C"> completed</span><span style="color:#A3AF7C"> but</span><span style="color:#A3AF7C"> contains</span><span style="color:#A3AF7C"> mismatches.</span></span></code></pre>
+<h3 id="the-solution-timing-is-everything">The Solution: Timing is Everything</h3>
+<p>After researching (and a lot of trial and error), I discovered the issue was about <strong>when</strong> styles get applied. The fix involved two key changes:</p>
+<p><strong>1. Use <code>computed</code> styles instead of reactive object spreads:</strong></p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="typescript" role="group" aria-label="code code block"><code><span class="line"><span style="color:#E2DFD8">&#x3C;script setup lang=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">ts</span><span style="color:#C4C0BA">"</span><span style="color:#E2DFD8">></span></span>
+<span class="line"><span style="color:#79B8FF">import</span><span style="color:#C4C0BA"> {</span><span style="color:#E2DFD8"> computed </span><span style="color:#C4C0BA">}</span><span style="color:#79B8FF"> from</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">vue</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">const</span><span style="color:#E2DFD8"> computedStyle = </span><span style="color:#B392F0">computed</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">()</span><span style="color:#79B8FF"> =></span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  const</span><span style="color:#E2DFD8"> baseStyle: </span><span style="color:#79D4F0">Record</span><span style="color:#C4C0BA">&#x3C;</span><span style="color:#79D4F0">string</span><span style="color:#C4C0BA">,</span><span style="color:#79D4F0"> string</span><span style="color:#C4C0BA">></span><span style="color:#E2DFD8"> = </span><span style="color:#C4C0BA">{</span><span style="color:#E2DFD8"> display</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">grid</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA"> }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">  switch</span><span style="color:#E2DFD8"> (props</span><span style="color:#C4C0BA">.axis</span><span style="color:#E2DFD8">) </span><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#79B8FF">    case</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">horizontal</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#E2DFD8">      baseStyle</span><span style="color:#C4C0BA">.justifyItems</span><span style="color:#E2DFD8"> = </span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">center</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"><span style="color:#79B8FF">      break</span></span>
+<span class="line"><span style="color:#79B8FF">    case</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">vertical</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#E2DFD8">      baseStyle</span><span style="color:#C4C0BA">.alignItems</span><span style="color:#E2DFD8"> = </span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">center</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"><span style="color:#79B8FF">      break</span></span>
+<span class="line"><span style="color:#79B8FF">    default</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#E2DFD8">      baseStyle</span><span style="color:#C4C0BA">.placeItems</span><span style="color:#E2DFD8"> = </span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">center</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"><span style="color:#C4C0BA">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">  if</span><span style="color:#E2DFD8"> (props</span><span style="color:#C4C0BA">.minBlockSize</span><span style="color:#E2DFD8">) </span><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#E2DFD8">    baseStyle</span><span style="color:#C4C0BA">.minBlockSize</span><span style="color:#E2DFD8"> = props</span><span style="color:#C4C0BA">.minBlockSize</span></span>
+<span class="line"><span style="color:#C4C0BA">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">  return</span><span style="color:#E2DFD8"> baseStyle</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#E2DFD8">&#x3C;/script></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E2DFD8">&#x3C;</span><span style="color:#79D4F0">template</span><span style="color:#E2DFD8">></span></span>
+<span class="line"><span style="color:#E2DFD8">  &#x3C;component </span><span style="color:#C4C0BA">:</span><span style="color:#E2DFD8">is=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">as</span><span style="color:#C4C0BA">"</span><span style="color:#E2DFD8"> :style=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">computedStyle</span><span style="color:#C4C0BA">"</span><span style="color:#E2DFD8">></span></span>
+<span class="line"><span style="color:#E2DFD8">    &#x3C;slot /></span></span>
+<span class="line"><span style="color:#E2DFD8">  &#x3C;/component></span></span>
+<span class="line"><span style="color:#E2DFD8">&#x3C;/template></span></span></code></pre>
+<p><strong>2. For the directive, use <code>beforeMount</code> instead of <code>mounted</code>:</strong></p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="typescript" role="group" aria-label="code code block"><code><span class="line"><span style="color:#79B8FF">export</span><span style="color:#79B8FF"> default</span><span style="color:#B392F0"> defineNuxtPlugin</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">(</span><span style="color:#E2DFD8">nuxtApp</span><span style="color:#C4C0BA">)</span><span style="color:#79B8FF"> =></span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#E2DFD8">  nuxtApp</span><span style="color:#C4C0BA">.</span><span style="color:#E2DFD8">vueApp</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">directive</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">center</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#B392F0">    beforeMount</span><span style="color:#C4C0BA">(</span><span style="color:#E2DFD8">el: </span><span style="color:#79D4F0">HTMLElement</span><span style="color:#C4C0BA">)</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#E2DFD8">      el</span><span style="color:#C4C0BA">.</span><span style="color:#E2DFD8">style</span><span style="color:#C4C0BA">.display</span><span style="color:#E2DFD8"> = </span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">grid</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"><span style="color:#E2DFD8">      el</span><span style="color:#C4C0BA">.</span><span style="color:#E2DFD8">style</span><span style="color:#C4C0BA">.placeItems</span><span style="color:#E2DFD8"> = </span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">center</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"><span style="color:#E2DFD8">      el</span><span style="color:#C4C0BA">.</span><span style="color:#E2DFD8">style</span><span style="color:#C4C0BA">.height</span><span style="color:#E2DFD8"> = </span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">100dvh</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"><span style="color:#E2DFD8">      el</span><span style="color:#C4C0BA">.</span><span style="color:#E2DFD8">style</span><span style="color:#C4C0BA">.width</span><span style="color:#E2DFD8"> = </span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">100%</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"><span style="color:#C4C0BA">    }</span></span>
+<span class="line"><span style="color:#C4C0BA">  }</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span><span style="color:#E2DFD8">)</span></span></code></pre>
+<p><strong>Result:</strong> Zero hydration warnings. The component rendered identically on server and client.</p>
+<hr>
+<h2 id="making-it-accessible-wcag-web-content-accessibility-guidelines-22-compliance">Making It Accessible: WCAG (Web Content Accessibility Guidelines) 2.2 Compliance</h2>
+<p>Centering seems simple, but accessibility matters. I wanted this module to be usable by everyone, including users with disabilities. Here’s what I focused on:</p>
+<h3 id="1-preserving-dom-document-object-model-order">1. Preserving DOM (Document Object Model) Order</h3>
+<p>Many centering techniques use absolute positioning or flexbox in ways that change visual order without changing DOM order. This breaks screen readers.</p>
+<p><strong>My approach:</strong> Pure CSS Grid with <code>place-items: center</code>. No position manipulation, no reordering.</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="css" role="group" aria-label="code code block"><code><span class="line"><span style="color:#C4C0BA">.</span><span style="color:#A3AF7C">nuxt-center-div</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#C4C0BA">  display:</span><span style="color:#A3AF7C"> grid</span><span style="color:#C4C0BA">;</span></span>
+<span class="line"><span style="color:#C4C0BA">  place-items:</span><span style="color:#A3AF7C"> center</span><span style="color:#C4C0BA">;</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span></span></code></pre>
+<h3 id="2-usage-of-logical-properties">2. Usage of Logical Properties</h3>
+<p>Instead of <code>min-height</code>, I used <code>min-block-size</code> to respect writing modes and text direction:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="html" role="group" aria-label="code code block"><code><span class="line"><span style="color:#C4C0BA">&#x3C;</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#A3AF7C"> min-block-size</span><span style="color:#C4C0BA">=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">25vh</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#E2DFD8">  Content</span></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#C4C0BA">></span></span></code></pre>
+<p>This works correctly for RTL (Right-to-Left) languages and vertical writing modes.</p>
+<h3 id="3-never-manipulate-aria-accessible-rich-internet-applications">3. Never Manipulate ARIA (Accessible Rich Internet Applications)</h3>
+<p>The component doesn’t add any ARIA  attributes, change roles, or trap focus. It’s purely presentational—exactly what a layout utility should be. The less the ARIA, the better I say.</p>
+<h3 id="4-support-semantic-html-hypertext-markup-language">4. Support Semantic HTML (HyperText Markup Language)</h3>
+<p>The <code>as</code> prop lets users choose the correct semantic element:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="html" role="group" aria-label="code code block"><code><span class="line"><span style="color:#FF6B6B;font-style:italic">&#x3C;!-- Default: &#x3C;section> --></span></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#C4C0BA">></span><span style="color:#E2DFD8">Content</span><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#C4C0BA">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF6B6B;font-style:italic">&#x3C;!-- Use &#x3C;main> for main content --></span></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#A3AF7C"> as</span><span style="color:#C4C0BA">=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">main</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">></span><span style="color:#E2DFD8">Content</span><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#C4C0BA">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF6B6B;font-style:italic">&#x3C;!-- Use &#x3C;article> for articles --></span></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#A3AF7C"> as</span><span style="color:#C4C0BA">=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">article</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">></span><span style="color:#E2DFD8">Content</span><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#C4C0BA">></span></span></code></pre>
+<p>Let’s face it, semantic HTML is an art form and one we don’t see too often these days that are all about “build fast and break things”. That is complete malarkey by the way. I’ll explain more in a future blog post.</p>
+<p><strong>Standards met:</strong></p>
+<ul>
+<li>✅ WCAG 1.3.2 - Meaningful Sequence</li>
+<li>✅ WCAG 1.4.10 - Reflow (supports 400% zoom)</li>
+<li>✅ WCAG 2.4.3 - Focus Order</li>
+</ul>
+<hr>
+<h2 id="testing-the-foundation-of-confidence">Testing: The Foundation of Confidence</h2>
+<p>I learned that <strong>tests aren’t optional</strong> for published packages. Users depend on your code working correctly. Here’s the testing stack I built:</p>
+<h3 id="unit-tests-vitest--vue-test-utils">Unit Tests (Vitest + Vue Test Utils)</h3>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="typescript" role="group" aria-label="code code block"><code><span class="line"><span style="color:#79B8FF">import</span><span style="color:#C4C0BA"> {</span><span style="color:#E2DFD8"> describe</span><span style="color:#C4C0BA">,</span><span style="color:#E2DFD8"> it</span><span style="color:#C4C0BA">,</span><span style="color:#E2DFD8"> expect </span><span style="color:#C4C0BA">}</span><span style="color:#79B8FF"> from</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">vitest</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"><span style="color:#79B8FF">import</span><span style="color:#C4C0BA"> {</span><span style="color:#E2DFD8"> mount </span><span style="color:#C4C0BA">}</span><span style="color:#79B8FF"> from</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">@vue/test-utils</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"><span style="color:#79B8FF">import</span><span style="color:#E2DFD8"> CenterDiv </span><span style="color:#79B8FF">from</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">../../src/runtime/components/CenterDiv.vue</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">describe</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">CenterDiv</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span><span style="color:#C4C0BA"> ()</span><span style="color:#79B8FF"> =></span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#B392F0">  it</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">renders with default props</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span><span style="color:#C4C0BA"> ()</span><span style="color:#79B8FF"> =></span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#79B8FF">    const</span><span style="color:#E2DFD8"> wrapper = </span><span style="color:#B392F0">mount</span><span style="color:#E2DFD8">(CenterDiv</span><span style="color:#C4C0BA">,</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#E2DFD8">      slots</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#E2DFD8">        default</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">&#x3C;button>Test&#x3C;/button></span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">      },</span></span>
+<span class="line"><span style="color:#C4C0BA">    }</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">    expect</span><span style="color:#E2DFD8">(wrapper</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">find</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">section</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">)</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">exists</span><span style="color:#E2DFD8">())</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">toBe</span><span style="color:#E2DFD8">(</span><span style="color:#F8C555">true</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#B392F0">    expect</span><span style="color:#E2DFD8">(wrapper</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">find</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">button</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">)</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">text</span><span style="color:#E2DFD8">())</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">toBe</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">Test</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#C4C0BA">  }</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">  it</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">applies minBlockSize prop</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span><span style="color:#C4C0BA"> ()</span><span style="color:#79B8FF"> =></span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#79B8FF">    const</span><span style="color:#E2DFD8"> wrapper = </span><span style="color:#B392F0">mount</span><span style="color:#E2DFD8">(CenterDiv</span><span style="color:#C4C0BA">,</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#E2DFD8">      props</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> {</span><span style="color:#E2DFD8"> minBlockSize</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">100vh</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA"> },</span></span>
+<span class="line"><span style="color:#C4C0BA">    }</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">    const</span><span style="color:#E2DFD8"> el = wrapper</span><span style="color:#C4C0BA">.element</span><span style="color:#79B8FF"> as</span><span style="color:#79D4F0"> HTMLElement</span></span>
+<span class="line"><span style="color:#B392F0">    expect</span><span style="color:#E2DFD8">(el</span><span style="color:#C4C0BA">.</span><span style="color:#E2DFD8">style</span><span style="color:#C4C0BA">.minBlockSize</span><span style="color:#E2DFD8">)</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">toBe</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">100vh</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#C4C0BA">  }</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span><span style="color:#E2DFD8">)</span></span></code></pre>
+<p><strong>Coverage:</strong></p>
+<ul>
+<li>Component rendering</li>
+<li>Props (axis, as, minBlockSize)</li>
+<li>Style application</li>
+<li>7 tests total</li>
+</ul>
+<h3 id="e2e-tests-playwright">E2E Tests (Playwright)</h3>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="typescript" role="group" aria-label="code code block"><code><span class="line"><span style="color:#79B8FF">import</span><span style="color:#C4C0BA"> {</span><span style="color:#E2DFD8"> test</span><span style="color:#C4C0BA">,</span><span style="color:#E2DFD8"> expect </span><span style="color:#C4C0BA">}</span><span style="color:#79B8FF"> from</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">@playwright/test</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">test</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">component renders and centers content</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span><span style="color:#79B8FF"> async</span><span style="color:#C4C0BA"> ({</span><span style="color:#E2DFD8"> page </span><span style="color:#C4C0BA">})</span><span style="color:#79B8FF"> =></span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  await</span><span style="color:#E2DFD8"> page</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">goto</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">/</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#79B8FF">  await</span><span style="color:#E2DFD8"> page</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">waitForLoadState</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">networkidle</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">  const</span><span style="color:#E2DFD8"> centerDiv = page</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">locator</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">.nuxt-center-div</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">)</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">first</span><span style="color:#E2DFD8">()</span></span>
+<span class="line"><span style="color:#79B8FF">  await</span><span style="color:#B392F0"> expect</span><span style="color:#E2DFD8">(centerDiv)</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">toBeVisible</span><span style="color:#E2DFD8">()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">  const</span><span style="color:#E2DFD8"> styles = </span><span style="color:#79B8FF">await</span><span style="color:#E2DFD8"> centerDiv</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">evaluate</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">(</span><span style="color:#E2DFD8">el</span><span style="color:#C4C0BA">)</span><span style="color:#79B8FF"> =></span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#79B8FF">    const</span><span style="color:#E2DFD8"> computed = window</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">getComputedStyle</span><span style="color:#E2DFD8">(el)</span></span>
+<span class="line"><span style="color:#79B8FF">    return</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#E2DFD8">      display</span><span style="color:#C4C0BA">:</span><span style="color:#E2DFD8"> computed</span><span style="color:#C4C0BA">.display,</span></span>
+<span class="line"><span style="color:#E2DFD8">      placeItems</span><span style="color:#C4C0BA">:</span><span style="color:#E2DFD8"> computed</span><span style="color:#C4C0BA">.placeItems,</span></span>
+<span class="line"><span style="color:#C4C0BA">    }</span></span>
+<span class="line"><span style="color:#C4C0BA">  }</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">  expect</span><span style="color:#E2DFD8">(styles</span><span style="color:#C4C0BA">.display</span><span style="color:#E2DFD8">)</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">toBe</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">grid</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#B392F0">  expect</span><span style="color:#E2DFD8">(styles</span><span style="color:#C4C0BA">.placeItems</span><span style="color:#E2DFD8">)</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">toBe</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">center</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span><span style="color:#E2DFD8">)</span></span></code></pre>
+<p>These tests verify the component works in <strong>actual browsers</strong>, not just in Node.</p>
+<h3 id="accessibility-tests-vitest-axe">Accessibility Tests (vitest-axe)</h3>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="typescript" role="group" aria-label="code code block"><code><span class="line"><span style="color:#79B8FF">import</span><span style="color:#C4C0BA"> {</span><span style="color:#E2DFD8"> axe </span><span style="color:#C4C0BA">}</span><span style="color:#79B8FF"> from</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">vitest-axe</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">it</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">has no accessibility violations</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span><span style="color:#79B8FF"> async</span><span style="color:#C4C0BA"> ()</span><span style="color:#79B8FF"> =></span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  const</span><span style="color:#E2DFD8"> wrapper = </span><span style="color:#B392F0">mount</span><span style="color:#E2DFD8">(CenterDiv</span><span style="color:#C4C0BA">,</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#E2DFD8">    slots</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#E2DFD8">      default</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">&#x3C;button>Accessible Button&#x3C;/button></span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">    },</span></span>
+<span class="line"><span style="color:#C4C0BA">  }</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">  const</span><span style="color:#E2DFD8"> results = </span><span style="color:#79B8FF">await</span><span style="color:#B392F0"> axe</span><span style="color:#E2DFD8">(wrapper</span><span style="color:#C4C0BA">.element</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#B392F0">  expect</span><span style="color:#E2DFD8">(results</span><span style="color:#C4C0BA">.violations</span><span style="color:#E2DFD8">)</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">toHaveLength</span><span style="color:#E2DFD8">(</span><span style="color:#F8C555">0</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span><span style="color:#E2DFD8">)</span></span></code></pre>
+<p>This caught issues I might have missed, like missing ARIA labels or incorrect heading hierarchy.</p>
+<p><strong>Final count:</strong> 11 tests, 100% passing.</p>
+<hr>
+<h2 id="the-module-structure-following-best-practices">The Module Structure: Following Best Practices</h2>
+<p>The official Nuxt module template provides excellent scaffolding. Here’s the structure I ended up with:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="md" role="group" aria-label="code code block"><code><span class="line"><span style="color:#E2DFD8">center-div-module/</span></span>
+<span class="line"><span style="color:#E2DFD8">├── src/</span></span>
+<span class="line"><span style="color:#E2DFD8">│   ├── module.ts                    # Module registration</span></span>
+<span class="line"><span style="color:#E2DFD8">│   └── runtime/</span></span>
+<span class="line"><span style="color:#E2DFD8">│       ├── components/</span></span>
+<span class="line"><span style="color:#E2DFD8">│       │   └── CenterDiv.vue       # Component</span></span>
+<span class="line"><span style="color:#E2DFD8">│       ├── plugin.ts               # Directive</span></span>
+<span class="line"><span style="color:#E2DFD8">│       └── types.ts                # TypeScript definitions</span></span>
+<span class="line"><span style="color:#E2DFD8">├── playground/                     # Local development</span></span>
+<span class="line"><span style="color:#E2DFD8">│   ├── app.vue</span></span>
+<span class="line"><span style="color:#E2DFD8">│   └── nuxt.config.ts</span></span>
+<span class="line"><span style="color:#E2DFD8">├── test/</span></span>
+<span class="line"><span style="color:#E2DFD8">│   ├── unit/</span></span>
+<span class="line"><span style="color:#E2DFD8">│   │   └── CenterDiv.test.ts</span></span>
+<span class="line"><span style="color:#E2DFD8">│   └── e2e/</span></span>
+<span class="line"><span style="color:#E2DFD8">│       └── CenterDiv.spec.ts</span></span>
+<span class="line"><span style="color:#E2DFD8">├── package.json</span></span>
+<span class="line"><span style="color:#E2DFD8">├── tsconfig.json</span></span>
+<span class="line"><span style="color:#E2DFD8">└── vitest.config.ts</span></span></code></pre>
+<h3 id="key-files-explained">Key Files Explained</h3>
+<p><strong><code>src/module.ts</code></strong> - Registers the component and plugin:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="typescript" role="group" aria-label="code code block"><code><span class="line"><span style="color:#79B8FF">import</span><span style="color:#C4C0BA"> {</span><span style="color:#E2DFD8"> defineNuxtModule</span><span style="color:#C4C0BA">,</span><span style="color:#E2DFD8"> addComponent</span><span style="color:#C4C0BA">,</span><span style="color:#E2DFD8"> addPlugin</span><span style="color:#C4C0BA">,</span><span style="color:#E2DFD8"> createResolver </span><span style="color:#C4C0BA">}</span><span style="color:#79B8FF"> from</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">@nuxt/kit</span><span style="color:#C4C0BA">'</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">export</span><span style="color:#79B8FF"> default</span><span style="color:#B392F0"> defineNuxtModule</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#E2DFD8">  meta</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#E2DFD8">    name</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">center-div</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#E2DFD8">    configKey</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">centerDiv</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">  },</span></span>
+<span class="line"><span style="color:#B392F0">  setup</span><span style="color:#C4C0BA">(</span><span style="color:#E2DFD8">_options</span><span style="color:#C4C0BA">,</span><span style="color:#E2DFD8"> _nuxt</span><span style="color:#C4C0BA">)</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#79B8FF">    const</span><span style="color:#E2DFD8"> resolver = </span><span style="color:#B392F0">createResolver</span><span style="color:#E2DFD8">(</span><span style="color:#79B8FF">import</span><span style="color:#C4C0BA">.</span><span style="color:#E2DFD8">meta</span><span style="color:#C4C0BA">.url</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">    addComponent</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#E2DFD8">      name</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">CenterDiv</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#E2DFD8">      filePath</span><span style="color:#C4C0BA">:</span><span style="color:#E2DFD8"> resolver</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">resolve</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">./runtime/components/CenterDiv.vue</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">)</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">    }</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">    addPlugin</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#E2DFD8">      src</span><span style="color:#C4C0BA">:</span><span style="color:#E2DFD8"> resolver</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">resolve</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">./runtime/plugin</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">)</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#E2DFD8">      mode</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">client</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">    }</span><span style="color:#E2DFD8">)</span></span>
+<span class="line"><span style="color:#C4C0BA">  },</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span><span style="color:#E2DFD8">)</span></span></code></pre>
+<p><strong><code>playground/</code></strong> - Critical for development. Run <code>pnpm dev</code> and you get a live Nuxt app with your module loaded. Instant feedback loop.</p>
+<hr>
+<h2 id="the-build-process-getting-ready-for-npm-node-package-manager">The Build Process: Getting Ready for npm (Node PAckage Manager)</h2>
+<p>Building the module involves several steps:</p>
+<h3 id="1-module-builder">1. Module Builder</h3>
+<p>Nuxt provides <code>nuxt-module-build</code> which handles:</p>
+<ul>
+<li>Bundling (ESM (ECMAScript Modules) + CommonJS)</li>
+<li>TypeScript compilation</li>
+<li>Type definitions generation</li>
+</ul>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="bash" role="group" aria-label="code code block"><code><span class="line"><span style="color:#B392F0">pnpm</span><span style="color:#A3AF7C"> run</span><span style="color:#A3AF7C"> prepack</span></span></code></pre>
+<p>This creates the <code>dist/</code> folder:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="md" role="group" aria-label="code code block"><code><span class="line"><span style="color:#E2DFD8">dist/</span></span>
+<span class="line"><span style="color:#E2DFD8">├── module.mjs              # ESM entry</span></span>
+<span class="line"><span style="color:#E2DFD8">├── module.cjs              # CommonJS entry</span></span>
+<span class="line"><span style="color:#E2DFD8">├── module.d.ts             # TypeScript definitions</span></span>
+<span class="line"><span style="color:#E2DFD8">└── runtime/</span></span>
+<span class="line"><span style="color:#E2DFD8">    ├── components/</span></span>
+<span class="line"><span style="color:#E2DFD8">    │   └── CenterDiv.vue</span></span>
+<span class="line"><span style="color:#E2DFD8">    └── plugin.js</span></span></code></pre>
+<h3 id="2-package-configuration">2. Package Configuration</h3>
+<p>The <code>package.json</code> tells npm what to publish:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="json" role="group" aria-label="code code block"><code><span class="line"><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#C4C0BA">  "name"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> "</span><span style="color:#A3AF7C">@colabottles/center-div</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">  "version"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> "</span><span style="color:#A3AF7C">0.1.2</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">  "type"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> "</span><span style="color:#A3AF7C">module</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">  "exports"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#C4C0BA">    "."</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#C4C0BA">      "types"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> "</span><span style="color:#A3AF7C">./dist/types.d.ts</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">      "import"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> "</span><span style="color:#A3AF7C">./dist/module.mjs</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">      "require"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> "</span><span style="color:#A3AF7C">./dist/module.cjs</span><span style="color:#C4C0BA">"</span></span>
+<span class="line"><span style="color:#C4C0BA">    }</span></span>
+<span class="line"><span style="color:#C4C0BA">  },</span></span>
+<span class="line"><span style="color:#C4C0BA">  "files"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> [</span></span>
+<span class="line"><span style="color:#C4C0BA">    "</span><span style="color:#A3AF7C">dist</span><span style="color:#C4C0BA">"</span></span>
+<span class="line"><span style="color:#C4C0BA">  ]</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span></span></code></pre>
+<p><strong>Only the <code>dist/</code> folder gets published.</strong> This keeps the package size tiny (4.4 kB).</p>
+<h3 id="3-publishing">3. Publishing</h3>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="bash" role="group" aria-label="code code block"><code><span class="line"><span style="color:#B392F0">npm</span><span style="color:#A3AF7C"> publish</span><span style="color:#F8C555"> --access</span><span style="color:#A3AF7C"> public</span></span></code></pre>
+<p>The <code>--access public</code> flag is required for scoped packages (@username/package-name).</p>
+<hr>
+<h2 id="cicd-automating-quality">CI/CD: Automating Quality</h2>
+<p>GitHub Actions runs tests on every push:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="yaml" role="group" aria-label="code code block"><code><span class="line"><span style="color:#79B8FF">name</span><span style="color:#C4C0BA">:</span><span style="color:#A3AF7C"> ci</span></span>
+<span class="line"><span style="color:#F8C555">on</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#79B8FF">  push</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#79B8FF">    branches</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#C4C0BA">      -</span><span style="color:#A3AF7C"> main</span></span>
+<span class="line"><span style="color:#79B8FF">  pull_request</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#79B8FF">    branches</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#C4C0BA">      -</span><span style="color:#A3AF7C"> main</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">jobs</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#79B8FF">  test</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#79B8FF">    runs-on</span><span style="color:#C4C0BA">:</span><span style="color:#A3AF7C"> ubuntu-latest</span></span>
+<span class="line"><span style="color:#79B8FF">    steps</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#C4C0BA">      -</span><span style="color:#79B8FF"> uses</span><span style="color:#C4C0BA">:</span><span style="color:#A3AF7C"> actions/checkout@v6</span></span>
+<span class="line"><span style="color:#C4C0BA">      -</span><span style="color:#79B8FF"> uses</span><span style="color:#C4C0BA">:</span><span style="color:#A3AF7C"> actions/setup-node@v6</span></span>
+<span class="line"><span style="color:#79B8FF">        with</span><span style="color:#C4C0BA">:</span></span>
+<span class="line"><span style="color:#79B8FF">          node-version</span><span style="color:#C4C0BA">:</span><span style="color:#F8C555"> 20</span></span>
+<span class="line"><span style="color:#C4C0BA">      -</span><span style="color:#79B8FF"> run</span><span style="color:#C4C0BA">:</span><span style="color:#A3AF7C"> corepack enable</span></span>
+<span class="line"><span style="color:#C4C0BA">      -</span><span style="color:#79B8FF"> name</span><span style="color:#C4C0BA">:</span><span style="color:#A3AF7C"> Install dependencies</span></span>
+<span class="line"><span style="color:#79B8FF">        run</span><span style="color:#C4C0BA">:</span><span style="color:#A3AF7C"> pnpm install</span></span>
+<span class="line"><span style="color:#C4C0BA">      -</span><span style="color:#79B8FF"> name</span><span style="color:#C4C0BA">:</span><span style="color:#A3AF7C"> Prepare playground</span></span>
+<span class="line"><span style="color:#79B8FF">        run</span><span style="color:#C4C0BA">:</span><span style="color:#A3AF7C"> pnpm run dev:prepare</span></span>
+<span class="line"><span style="color:#C4C0BA">      -</span><span style="color:#79B8FF"> name</span><span style="color:#C4C0BA">:</span><span style="color:#A3AF7C"> Test</span></span>
+<span class="line"><span style="color:#79B8FF">        run</span><span style="color:#C4C0BA">:</span><span style="color:#A3AF7C"> pnpm run test</span></span></code></pre>
+<p>This catches issues <strong>before</strong> they reach users.</p>
+<hr>
+<h2 id="challenges-i-faced-and-how-i-solved-them">Challenges I Faced (And How I Solved Them)</h2>
+<h3 id="challenge-1-typescript-configuration">Challenge 1: TypeScript Configuration</h3>
+<p><strong>Problem:</strong> Tests failed in CI because <code>tsconfig.json</code> extended <code>.nuxt/tsconfig.json</code> which doesn’t exist until you run the dev server.</p>
+<p><strong>Solution:</strong> Create a standalone <code>tsconfig.json</code> that doesn’t depend on generated files:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="json" role="group" aria-label="code code block"><code><span class="line"><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#C4C0BA">  "compilerOptions"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#C4C0BA">    "target"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> "</span><span style="color:#A3AF7C">ESNext</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">    "module"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> "</span><span style="color:#A3AF7C">ESNext</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">    "moduleResolution"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> "</span><span style="color:#A3AF7C">Bundler</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">    "strict"</span><span style="color:#C4C0BA">:</span><span style="color:#F8C555"> true</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">    "types"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> [</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">node</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">,</span><span style="color:#C4C0BA"> "</span><span style="color:#A3AF7C">vitest</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">]</span></span>
+<span class="line"><span style="color:#C4C0BA">  },</span></span>
+<span class="line"><span style="color:#C4C0BA">  "include"</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> [</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">src/**/*</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">,</span><span style="color:#C4C0BA"> "</span><span style="color:#A3AF7C">test/**/*</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">]</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span></span></code></pre>
+<h3 id="challenge-2-vite-version-conflicts">Challenge 2: Vite Version Conflicts</h3>
+<p><strong>Problem:</strong> Vitest and @vitejs/plugin-vue used different Vite versions, causing type errors.</p>
+<p><strong>Solution:</strong> Add a type assertion to ignore the incompatibility:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="typescript" role="group" aria-label="code code block"><code><span class="line"><span style="color:#79B8FF">export</span><span style="color:#79B8FF"> default</span><span style="color:#B392F0"> defineConfig</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#FF6B6B;font-style:italic">  // @ts-expect-error - Vite version conflict</span></span>
+<span class="line"><span style="color:#E2DFD8">  plugins</span><span style="color:#C4C0BA">:</span><span style="color:#E2DFD8"> [</span><span style="color:#B392F0">vue</span><span style="color:#E2DFD8">()]</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#E2DFD8">  test</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> {</span></span>
+<span class="line"><span style="color:#E2DFD8">    environment</span><span style="color:#C4C0BA">:</span><span style="color:#C4C0BA"> '</span><span style="color:#A3AF7C">happy-dom</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">  }</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span><span style="color:#E2DFD8">)</span></span></code></pre>
+<h3 id="challenge-3-eslint-checking-generated-files">Challenge 3: ESLint Checking Generated Files</h3>
+<p><strong>Problem:</strong> ESLint was throwing 2,825 errors from generated files in <code>playwright-report/</code>.</p>
+<p><strong>Solution:</strong> Add ignore patterns to <code>eslint.config.mjs</code>:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="javascript" role="group" aria-label="code code block"><code><span class="line"><span style="color:#79B8FF">export</span><span style="color:#79B8FF"> default</span><span style="color:#B392F0"> createConfigForNuxt</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#FF6B6B;font-style:italic">  // ...</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span><span style="color:#E2DFD8">)</span><span style="color:#C4C0BA">.</span><span style="color:#B392F0">append</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#E2DFD8">  ignores</span><span style="color:#C4C0BA">:</span><span style="color:#E2DFD8"> [</span></span>
+<span class="line"><span style="color:#C4C0BA">    '</span><span style="color:#A3AF7C">**/dist/**</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">    '</span><span style="color:#A3AF7C">**/node_modules/**</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">    '</span><span style="color:#A3AF7C">**/.nuxt/**</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">    '</span><span style="color:#A3AF7C">**/playwright-report/**</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">    '</span><span style="color:#A3AF7C">**/test-results/**</span><span style="color:#C4C0BA">'</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#E2DFD8">  ]</span><span style="color:#C4C0BA">,</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span><span style="color:#E2DFD8">)</span></span></code></pre>
+<hr>
+<h2 id="real-world-usage">Real-World Usage</h2>
+<p>Once published, using the module is straightforward:</p>
+<h3 id="installation">Installation</h3>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="bash" role="group" aria-label="code code block"><code><span class="line"><span style="color:#B392F0">npm</span><span style="color:#A3AF7C"> install</span><span style="color:#A3AF7C"> @colabottles/center-div</span></span></code></pre>
+<h3 id="configuration">Configuration</h3>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="typescript" role="group" aria-label="code code block"><code><span class="line"><span style="color:#FF6B6B;font-style:italic">// nuxt.config.ts</span></span>
+<span class="line"><span style="color:#79B8FF">export</span><span style="color:#79B8FF"> default</span><span style="color:#B392F0"> defineNuxtConfig</span><span style="color:#E2DFD8">(</span><span style="color:#C4C0BA">{</span></span>
+<span class="line"><span style="color:#E2DFD8">  modules</span><span style="color:#C4C0BA">:</span><span style="color:#E2DFD8"> [</span><span style="color:#C4C0BA">'</span><span style="color:#A3AF7C">@colabottles/center-div</span><span style="color:#C4C0BA">'</span><span style="color:#E2DFD8">]</span></span>
+<span class="line"><span style="color:#C4C0BA">}</span><span style="color:#E2DFD8">)</span></span></code></pre>
+<h3 id="component-usage">Component Usage</h3>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="html" role="group" aria-label="code code block"><code><span class="line"><span style="color:#C4C0BA">&#x3C;</span><span style="color:#79B8FF">template</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#FF6B6B;font-style:italic">  &#x3C;!-- Full viewport centering --></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#A3AF7C"> min-block-size</span><span style="color:#C4C0BA">=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">100vh</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">    &#x3C;</span><span style="color:#79B8FF">button</span><span style="color:#C4C0BA">></span><span style="color:#E2DFD8">Click Me</span><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">button</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;/</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#C4C0BA">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF6B6B;font-style:italic">  &#x3C;!-- Horizontal only --></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#A3AF7C"> axis</span><span style="color:#C4C0BA">=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">horizontal</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C"> min-block-size</span><span style="color:#C4C0BA">=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">50vh</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">    &#x3C;</span><span style="color:#79B8FF">nav</span><span style="color:#C4C0BA">></span><span style="color:#E2DFD8">Navigation</span><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">nav</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;/</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#C4C0BA">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF6B6B;font-style:italic">  &#x3C;!-- Custom semantic element --></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#A3AF7C"> as</span><span style="color:#C4C0BA">=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">main</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">    &#x3C;</span><span style="color:#79B8FF">h1</span><span style="color:#C4C0BA">></span><span style="color:#E2DFD8">Main Content</span><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">h1</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;/</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">template</span><span style="color:#C4C0BA">></span></span></code></pre>
+<h3 id="directive-usage">Directive Usage</h3>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="html" role="group" aria-label="code code block"><code><span class="line"><span style="color:#C4C0BA">&#x3C;</span><span style="color:#79B8FF">template</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;</span><span style="color:#79B8FF">div </span><span style="color:#A3AF7C">v-center</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#E2DFD8">    Quick full-viewport centering</span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;/</span><span style="color:#79B8FF">div</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">template</span><span style="color:#C4C0BA">></span></span></code></pre>
+<hr>
+<h2 id="what-i-learned">What I Learned</h2>
+<h3 id="1-developer-experience-matters">1. Developer Experience Matters</h3>
+<p>Small details make a huge difference:</p>
+<ul>
+<li>Clear prop names (<code>minBlockSize</code> vs <code>minHeight</code>)</li>
+<li>TypeScript autocomplete</li>
+<li>Helpful README with examples</li>
+<li>Fast development server</li>
+</ul>
+<h3 id="2-tests-give-confidence">2. Tests Give Confidence</h3>
+<p>Every test I wrote caught a real bug. The time invested in testing paid off immediately.</p>
+<h3 id="3-accessibility-isnt-optional-which-i-already-knew">3. Accessibility Isn’t Optional (Which I Already Knew)</h3>
+<p>Building accessible components from the start is easier than retrofitting them later. Using semantic HTML and CSS Grid made accessibility almost automatic.</p>
+<h3 id="4-the-nuxt-ecosystem-is-excellent">4. The Nuxt Ecosystem is Excellent</h3>
+<p>The module template, build tools, and documentation made this process smooth. The Nuxt team has done incredible work.</p>
+<h3 id="5-community-feedback-is-essential">5. Community Feedback is Essential</h3>
+<p>Reaching out to experienced developers provides invaluable perspective before launching.</p>
+<hr>
+<h2 id="performance-metrics">Performance Metrics</h2>
+<p>The final package is <strong>tiny</strong>:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="md" role="group" aria-label="code code block"><code><span class="line"><span style="color:#E2DFD8">Package size: 4.4 kB (compressed)</span></span>
+<span class="line"><span style="color:#E2DFD8">Unpacked size: 10.3 kB</span></span>
+<span class="line"><span style="color:#E2DFD8">Files: 15</span></span></code></pre>
+<p>For comparison, that’s smaller than a single medium-resolution image. Zero dependencies beyond Nuxt itself.</p>
+<hr>
+<h2 id="future-improvements">Future Improvements</h2>
+<p>Ideas for future versions:</p>
+<ol>
+<li>
+<p><strong>Gap prop</strong> for spacing between centered items:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="html" role="group" aria-label="code code block"><code><span class="line"><span style="color:#C4C0BA">&#x3C;</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#A3AF7C"> gap</span><span style="color:#C4C0BA">=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">2rem</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;</span><span style="color:#79B8FF">button</span><span style="color:#C4C0BA">></span><span style="color:#E2DFD8">One</span><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">button</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;</span><span style="color:#79B8FF">button</span><span style="color:#C4C0BA">></span><span style="color:#E2DFD8">Two</span><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">button</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#C4C0BA">></span></span></code></pre>
+</li>
+<li>
+<p><strong>Animation support</strong> for smooth centering transitions</p>
+</li>
+<li>
+<p><strong>Max inline size</strong> for constraining width:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="html" role="group" aria-label="code code block"><code><span class="line"><span style="color:#C4C0BA">&#x3C;</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#A3AF7C"> max-inline-size</span><span style="color:#C4C0BA">=</span><span style="color:#C4C0BA">"</span><span style="color:#A3AF7C">60ch</span><span style="color:#C4C0BA">"</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">  &#x3C;</span><span style="color:#79B8FF">article</span><span style="color:#C4C0BA">></span><span style="color:#E2DFD8">Readable text width</span><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#79B8FF">article</span><span style="color:#C4C0BA">></span></span>
+<span class="line"><span style="color:#C4C0BA">&#x3C;/</span><span style="color:#FF6B6B">CenterDiv</span><span style="color:#C4C0BA">></span></span></code></pre>
+</li>
+<li>
+<p><strong>Nuxt DevTools integration</strong> to visualize all CenterDiv instances on a page</p>
+</li>
+</ol>
+<hr>
+<h2 id="try-it-yourself">Try It Yourself</h2>
+<p>The module is live on npm:</p>
+<pre class="astro-code toddl-dark" style="background-color:#1a1f27;color:#e2dfd8; overflow-x: auto;" data-language="bash" role="group" aria-label="code code block"><code><span class="line"><span style="color:#B392F0">npm</span><span style="color:#A3AF7C"> install</span><span style="color:#A3AF7C"> @colabottles/center-div</span></span></code></pre>
+<p><strong>Links:</strong></p>
+<ul>
+<li><a href="https://www.npmjs.com/package/@colabottles/center-div">npm: Click this link to go to the npm listing</a></li>
+<li><a href="https://github.com/colabottles/center-div-module">GitHub: Click this link to go to the GitHub repository</a></li>
+<li>Documentation: <em>See README on GitHub</em></li>
+</ul>
+<hr>
+<h2 id="key-takeaways-for-building-your-own-module">Key Takeaways for Building Your Own Module</h2>
+<ol>
+<li>
+<p><strong>Start with the official template:</strong> <code>npx nuxi init my-module -t module</code></p>
+</li>
+<li>
+<p><strong>Test from day one:</strong> Unit, E2E, and accessibility tests</p>
+</li>
+<li>
+<p><strong>Use the playground:</strong> Instant feedback beats blind development</p>
+</li>
+<li>
+<p><strong>Focus on DX:</strong> Clear APIs, good docs, TypeScript support</p>
+</li>
+<li>
+<p><strong>Make it accessible:</strong> Follow WCAG guidelines from the start</p>
+</li>
+<li>
+<p><strong>Keep it small:</strong> Every kilobyte matters</p>
+</li>
+<li>
+<p><strong>Automate everything:</strong> CI/CD catches issues early</p>
+</li>
+<li>
+<p><strong>Get feedback:</strong> Community review prevents bad patterns</p>
+</li>
+</ol>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>Building a Nuxt module taught me more about Vue, TypeScript, testing, and accessibility than any tutorial could. The process of taking an idea from concept to published package—with real users able to <code>npm install</code> it—is incredibly rewarding.</p>
+<p>If you have a common pattern in your Nuxt projects, consider extracting it into a module. The ecosystem benefits, and you’ll learn a ton in the process.</p>
+<p><strong>What patterns do you find yourself repeating in Nuxt?</strong> Maybe your next module idea is already in your codebase.</p>
+<hr>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://github.com/nuxt/starter/tree/module"><strong>Nuxt Module Template:</strong></a></li>
+<li><a href="https://nuxt.com/docs/guide/going-further/modules"><strong>Nuxt Module Author Guide:</strong></a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/quickref/"><strong>WCAG Guidelines:</strong></a></li>
+<li><a href="https://vitest.dev/"><strong>Vitest Documentation:</strong></a></li>
+<li><a href="https://playwright.dev/"><strong>Playwright Testing:</strong></a></li>
+</ul> </div> <footer class="post-footer" data-astro-cid-4sn4zg3r> <a href="/blog" class="post-back" data-astro-cid-4sn4zg3r>cd ../blog</a> </footer> </article>  </main> <aside class="right-panel" id="right-panel" aria-label="Support and GitHub"> <div class="right-panel__top"> <button class="gh-toggle" id="gh-toggle" aria-label="Open GitHub panel" aria-expanded="false" aria-controls="gh-panel"> <svg role="img" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" focusable="false"> <title>GitHub</title> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path> </svg> </button> <button class="right-panel-close" id="right-panel-close" aria-label="Close panel"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"> <line x1="18" y1="6" x2="6" y2="18"></line> <line x1="6" y1="6" x2="18" y2="18"></line> </svg> </button> </div> </aside> <section class="sponsor-panel" id="sponsor-panel" aria-labelledby="sponsor-heading"> <h2 id="sponsor-heading" class="sponsor-panel__title">
+support my work
+</h2> <p class="sponsor-panel__pitch">
+I build accessible, open-source tools and write about web
+          accessibility. If my work has helped you, consider sponsoring or
+          advertising here.
+</p> <ul class="sponsor-panel__links"> <li> <a href="https://github.com/sponsors/colabottles" class="sponsor-link sponsor-link--gh" target="_blank" rel="noopener noreferrer"> <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" focusable="false"> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path> </svg>
+GitHub Sponsors
+</a> </li> <li> <a href="https://ko-fi.com/Y8Y727FD2" class="sponsor-link sponsor-link--kofi" target="_blank" rel="noopener noreferrer"> <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" focusable="false"> <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.483-2.566 2.483-2.566s-.016-1.682.104-3.937c.148-3.053 1.547-3.513 1.547-3.513h1.585c1.995 0 3.357 1.106 3.357 3.357 0 1.784-1.32 2.748-2.89 2.748H20.29c-.708 0-1.027.607-1.027 1.152 0 .803.645 1.229 1.027 1.229h.938c2.527 0 5.009-1.47 5.009-4.613a5.058 5.058 0 0 0-2.366-4.266zM5.393 14.5H3.107V7h2.286v7.5zm5.357 0H8.464V7h2.286v7.5z"></path> </svg>
+Ko-fi
+</a> </li> <li> <a href="/contact" class="sponsor-link sponsor-link--ad">advertise here</a> </li> </ul> </section> <aside class="gh-panel" id="gh-panel" aria-label="GitHub profile" aria-hidden="true"> <header class="gh-panel__header"> <h2 class="gh-panel__title">GitHub</h2> <button class="gh-panel__close" id="gh-close" aria-label="Close GitHub panel"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"> <line x1="18" y1="6" x2="6" y2="18"></line> <line x1="6" y1="6" x2="18" y2="18"></line> </svg> </button> </header> <div class="gh-panel__body" id="gh-body"> <p class="gh-loading">Loading...</p> </div> </aside> </div> <button class="right-panel-btn" id="right-panel-btn" aria-label="Open support and GitHub panel" aria-expanded="false" aria-controls="right-panel"> <svg role="img" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" focusable="false"> <title>Support and GitHub</title> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path> </svg> </button> <script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.DCVBhDVg.js"></script> </body></html>
