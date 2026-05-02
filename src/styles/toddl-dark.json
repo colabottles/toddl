@@ -2,8 +2,8 @@
   "name": "toddl-dark",
   "type": "dark",
   "colors": {
-    "editor.background": "#252C37",
-    "editor.foreground": "#3a4150"
+    "editor.background": "#3a4150",
+    "editor.foreground": "#252C37"
   },
   "tokenColors": [
     {
