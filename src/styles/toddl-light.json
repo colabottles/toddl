@@ -3,7 +3,7 @@
   "type": "light",
   "colors": {
     "editor.background": "#eeece8",
-    "editor.foreground": "#252C37"
+    "editor.foreground": "#1a1f27"
   },
   "tokenColors": [
     {
@@ -13,7 +13,7 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "#c0392b",
+        "foreground": "#b91c1c",
         "fontStyle": "italic"
       }
     },
@@ -32,12 +32,11 @@
       "scope": [
         "keyword",
         "keyword.control",
-        "keyword.operator",
         "storage.type",
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#0055b3"
+        "foreground": "#0040a0"
       }
     },
     {
@@ -58,7 +57,7 @@
         "variable.other"
       ],
       "settings": {
-        "foreground": "#252C37"
+        "foreground": "#1a1f27"
       }
     },
     {
@@ -70,7 +69,7 @@
         "constant.character"
       ],
       "settings": {
-        "foreground": "#b05a00"
+        "foreground": "#9a3a00"
       }
     },
     {
@@ -82,7 +81,7 @@
         "support.class"
       ],
       "settings": {
-        "foreground": "#0077aa"
+        "foreground": "#005f87"
       }
     },
     {
@@ -92,7 +91,7 @@
         "meta.tag"
       ],
       "settings": {
-        "foreground": "#0055b3"
+        "foreground": "#0040a0"
       }
     },
     {
@@ -110,7 +109,7 @@
         "keyword.operator"
       ],
       "settings": {
-        "foreground": "#252C37"
+        "foreground": "#1a1f27"
       }
     },
     {
@@ -119,7 +118,7 @@
         "punctuation"
       ],
       "settings": {
-        "foreground": "#3a4150"
+        "foreground": "#252C37"
       }
     },
     {
@@ -128,7 +127,7 @@
         "constant.numeric"
       ],
       "settings": {
-        "foreground": "#b05a00"
+        "foreground": "#9a3a00"
       }
     },
     {
@@ -137,7 +136,7 @@
         "constant.language.boolean"
       ],
       "settings": {
-        "foreground": "#b05a00"
+        "foreground": "#9a3a00"
       }
     },
     {
@@ -147,7 +146,7 @@
         "support.type.property-name"
       ],
       "settings": {
-        "foreground": "#3a4150"
+        "foreground": "#252C37"
       }
     },
     {
@@ -156,7 +155,7 @@
         "string.regexp"
       ],
       "settings": {
-        "foreground": "#0077aa"
+        "foreground": "#005f87"
       }
     },
     {
@@ -165,7 +164,7 @@
         "constant.character.entity"
       ],
       "settings": {
-        "foreground": "#b05a00"
+        "foreground": "#9a3a00"
       }
     },
     {
@@ -183,7 +182,7 @@
         "invalid"
       ],
       "settings": {
-        "foreground": "#c0392b"
+        "foreground": "#b91c1c"
       }
     }
   ]
