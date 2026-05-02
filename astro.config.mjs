@@ -1,13 +1,17 @@
 import { defineConfig } from "astro/config"
 import vue from "@astrojs/vue"
 import toddlDark from "./src/styles/toddl-dark.json"
+import toddlLight from "./src/styles/toddl-light.json"
 
 export default defineConfig({
   integrations: [vue()],
   output: "static",
   markdown: {
     shikiConfig: {
-      theme: toddlDark,
+      themes: {
+        light: toddlLight,
+        dark: toddlDark,
+      },
       transformers: [
         {
           pre(node) {
@@ -15,12 +19,10 @@ export default defineConfig({
             node.properties["role"] = "group"
             node.properties["aria-label"] = lang + " code block"
             delete node.properties["tabindex"]
-            node.properties["style"] = node.properties["style"]
-              ?.toString()
-              .replace(/background-color:[^;]+;?/, "")
           }
         }
       ]
     },
   },
 })
+
