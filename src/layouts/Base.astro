@@ -206,23 +206,23 @@ const currentPath = Astro.url.pathname;
         </div>
 
         <section
-          class="sponsor-panel"
-          id="sponsor-panel"
+          class="support-panel"
+          id="support-panel"
           aria-labelledby="sponsor-heading"
         >
-          <h2 id="sponsor-heading" class="sponsor-panel__title">
+          <h2 id="sponsor-heading" class="support-panel__title">
             support my work
           </h2>
-          <p class="sponsor-panel__pitch">
+          <p class="support-panel__pitch">
             I build accessible, open-source tools and write about web
             accessibility. If my work has helped you, consider sponsoring or
             advertising here.
           </p>
-          <ul class="sponsor-panel__links">
+          <ul class="support-panel__links">
             <li>
               <a
                 href="https://github.com/sponsors/colabottles"
-                class="sponsor-link sponsor-link--gh"
+                class="support-link support-link--gh"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -245,7 +245,7 @@ const currentPath = Astro.url.pathname;
             <li>
               <a
                 href="https://ko-fi.com/Y8Y727FD2"
-                class="sponsor-link sponsor-link--kofi"
+                class="support-link support-link--kofi"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -266,7 +266,7 @@ const currentPath = Astro.url.pathname;
               </a>
             </li>
             <li>
-              <a href="/contact" class="sponsor-link sponsor-link--ad"
+              <a href="/contact" class="support-link support-link--ad"
                 >advertise here</a
               >
             </li>
@@ -342,7 +342,7 @@ const currentPath = Astro.url.pathname;
       const ghPanel = document.getElementById("gh-panel")!;
       const ghClose = document.getElementById("gh-close")!;
       const ghBody = document.getElementById("gh-body")!;
-      const sponsorPanel = document.getElementById("sponsor-panel")!;
+      const sponsorPanel = document.getElementById("support-panel")!;
 
       function trapFocus(e: KeyboardEvent) {
         const focusable = Array.from(
