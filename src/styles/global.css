@@ -653,6 +653,10 @@ body {
   gap: 0.5rem;
 }
 
+.sponsor-panel__links li {
+  display: list-item;
+}
+
 .sponsor-link:hover {
   border-color: var(--accent-border);
   color: var(--sidebar-prompt);
