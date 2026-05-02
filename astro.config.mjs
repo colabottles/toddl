@@ -15,6 +15,9 @@ export default defineConfig({
             node.properties["role"] = "group"
             node.properties["aria-label"] = lang + " code block"
             delete node.properties["tabindex"]
+            node.properties["style"] = node.properties["style"]
+              ?.toString()
+              .replace(/background-color:[^;]+;?/, "")
           }
         }
       ]
