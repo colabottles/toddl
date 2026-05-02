@@ -217,7 +217,7 @@ const bskyHandle = "toddl.dev";
   }
 
   :global(.post-content pre) {
-    background: #1a1f27;
+    background: var(--warm-mid);
     border-left: 3px solid var(--accent);
     border-radius: var(--radius-sm);
     padding: 1.25rem;
@@ -268,13 +268,6 @@ const bskyHandle = "toddl.dev";
     border: 0.5px solid var(--warm-border);
     border-radius: var(--radius-md);
     min-height: 200px;
-  }
-
-  img.bsky-like__avatar {
-    border-radius: 100%;
-    width: 3rem;
-    height: 3rem;
-    object-fit: cover;
   }
 
   .bsky-likes__title {
