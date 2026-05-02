@@ -632,6 +632,20 @@ body {
   line-height: 1.6;
 }
 
+.sponsor-link {
+  display: block;
+  width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  border: 0.5px solid var(--sidebar-border);
+  color: var(--sidebar-name);
+  transition: border-color var(--transition), color var(--transition);
+}
+
 .sponsor-panel__links {
   list-style: none;
   padding: 0;
