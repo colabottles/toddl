@@ -8,12 +8,15 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "post-to-bsky": "node post-to-bsky.mjs"
   },
   "dependencies": {
     "@astrojs/netlify": "^7.0.8",
     "@astrojs/vue": "^6.0.1",
     "astro": "^6.1.10",
+    "dotenv": "^17.4.2",
+    "gray-matter": "^4.0.3",
     "vue": "^3.5.33"
   },
   "devDependencies": {

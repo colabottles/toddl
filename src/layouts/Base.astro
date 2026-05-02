@@ -1,16 +1,23 @@
 ---
 import "../styles/global.css";
 import Nav from "../components/Nav.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog");
+const recentPosts = allPosts
+  .filter((p) => !p.data.draft)
+  .sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  )
+  .slice(0, 5);
 
 interface Props {
   title: string;
   description?: string;
 }
 
-const {
-  title,
-  description = "Web developer based in Phoenix, AZ.",
-} = Astro.props;
+const { title, description = "Web developer based in Phoenix, AZ." } =
+  Astro.props;
 const currentPath = Astro.url.pathname;
 ---
 
@@ -117,19 +124,22 @@ const currentPath = Astro.url.pathname;
               <a
                 href="https://a11y-webring.club/prev"
                 class="webring__link"
-                rel="external">Previous</a>
+                rel="external">Previous</a
+              >
             </li>
             <li>
               <a
                 href="https://a11y-webring.club/random"
                 class="webring__link"
-                rel="external">Random</a>
+                rel="external">Random</a
+              >
             </li>
             <li>
               <a
                 href="https://a11y-webring.club/next"
                 class="webring__link"
-                rel="external">Next</a>
+                rel="external">Next</a
+              >
             </li>
           </ul>
         </nav>
@@ -270,6 +280,38 @@ const currentPath = Astro.url.pathname;
                 >advertise here</a
               >
             </li>
+          </ul>
+        </section>
+
+        <section class="recent-posts" aria-labelledby="recent-posts-heading">
+          <h2 id="recent-posts-heading" class="recent-posts__title">
+            recent posts
+          </h2>
+          <ul class="recent-posts__list">
+            {
+              recentPosts.map((post) => (
+                <li class="recent-post">
+                  <a href={`/blog/${post.id}`} class="recent-post__link">
+                    <span class="recent-post__title">{post.data.title}</span>
+                    <span class="recent-post__date">
+                      {new Date(post.data.date).toLocaleDateString("en-US", {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric",
+                      })}
+                    </span>
+                    {post.data.bskyPostId && (
+                      <span
+                        class="recent-post__likes"
+                        data-bsky-id={post.data.bskyPostId}
+                      >
+                        🦋 —
+                      </span>
+                    )}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </section>
 
@@ -543,6 +585,26 @@ const currentPath = Astro.url.pathname;
             document.body.style.overflow = "";
           }
         });
+      }
+
+      // Fetch Bluesky likes for recent posts
+      const likeEls = document.querySelectorAll("[data-bsky-id]");
+      if (likeEls.length > 0) {
+        const myDid = "did:plc:gevyqibw5p2xsonkbsbjm5vy";
+        for (const el of likeEls) {
+          const id = el.getAttribute("data-bsky-id");
+          if (!id) continue;
+          try {
+            const res = await fetch(
+              `https://public.api.bsky.app/xrpc/app.bsky.feed.getPosts?uris=at://${myDid}/app.bsky.feed.post/${id}`,
+            );
+            const data = await res.json();
+            const count = data.posts?.[0]?.likeCount ?? 0;
+            el.textContent = `🦋 ${count}`;
+          } catch {
+            el.textContent = "";
+          }
+        }
       }
     </script>
   </body>

@@ -7,9 +7,7 @@ export default defineConfig({
   output: "static",
   markdown: {
     shikiConfig: {
-      themes: {
-        dark: toddlDark,
-      },
+      theme: toddlDark,
       transformers: [
         {
           pre(node) {
