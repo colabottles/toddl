@@ -29,6 +29,9 @@
     "bskyPostId": {
       "type": "string"
     },
+    "image": {
+      "type": "string"
+    },
     "$schema": {
       "type": "string"
     }

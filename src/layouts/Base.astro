@@ -14,10 +14,14 @@ const recentPosts = allPosts
 interface Props {
   title: string;
   description?: string;
+  image?: string;
 }
 
-const { title, description = "Web developer based in Phoenix, AZ." } =
-  Astro.props;
+const {
+  title,
+  description = "Web developer and accessibility advocate based in Phoenix, AZ.",
+  image,
+} = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
 
@@ -35,6 +39,21 @@ const currentPath = Astro.url.pathname;
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <meta property="og:title" content={title + " · Todd Libby"} />
+    <meta property="og:description" content={description} />
+    <meta
+      property="og:url"
+      content={`https://toddl.dev${Astro.url.pathname}`}
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content={image ??
+        "https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-names.png"}
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title + " · Todd Libby"} />
+    <meta name="twitter:description" content={description} />
     <title>{title} · Todd Libby</title>
     <script is:inline>
       const stored = localStorage.getItem("theme");

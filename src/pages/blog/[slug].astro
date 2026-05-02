@@ -29,7 +29,11 @@ const myDid = "did:plc:gevyqibw5p2xsonkbsbjm5vy";
 const bskyHandle = "toddl.dev";
 ---
 
-<Base title={post.data.title} description={post.data.description}>
+<Base
+  title={post.data.title}
+  description={post.data.description}
+  image={post.data.image}
+>
   <article aria-labelledby="post-heading">
     <header class="post-header">
       <h1 id="post-heading" class="post-title">{post.data.title}</h1>

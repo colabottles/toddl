@@ -58,36 +58,50 @@ const ogRes = await fetch(`${BSKY_API}/app.bsky.embed.external.resolve`, {
   headers: { Authorization: `Bearer ${accessJwt}` },
 }).catch(() => null)
 
-// 3. Build the post with a link card embed
+// 3. Build the post with a link card embed and fetch OG data from the live URL
+const pageRes = await fetch(postUrl)
+const pageHtml = await pageRes.text()
+
+const ogTitle = pageHtml.match(/<meta property="og:title" content="([^"]+)"/)?.[1] ?? data.title
+const ogDesc = pageHtml.match(/<meta property="og:description" content="([^"]+)"/)?.[1] ?? data.description ?? ""
+const ogImage = pageHtml.match(/<meta property="og:image" content="([^"]+)"/)?.[1] ?? null
+
+let thumb = undefined
+
+if (ogImage) {
+  const imgRes = await fetch(ogImage)
+  const imgBuffer = await imgRes.arrayBuffer()
+  const imgBytes = new Uint8Array(imgBuffer)
+  const mimeType = ogImage.endsWith(".png") ? "image/png" : "image/jpeg"
+
+  const uploadRes = await fetch("https://bsky.social/xrpc/com.atproto.repo.uploadBlob", {
+    method: "POST",
+    headers: {
+      "Content-Type": mimeType,
+      Authorization: `Bearer ${accessJwt}`,
+    },
+    body: imgBytes,
+  })
+  const uploadData = await uploadRes.json()
+  thumb = uploadData.blob
+}
+
 const postBody = {
   repo: did,
   collection: "app.bsky.feed.post",
   record: {
     $type: "app.bsky.feed.post",
-    text: `${data.title}`,
+    text: `${data.title}\n\n${data.description ?? ""}`,
     createdAt: new Date().toISOString(),
     embed: {
       $type: "app.bsky.embed.external",
       external: {
         uri: postUrl,
-        title: data.title,
-        description: data.description ?? "",
+        title: ogTitle,
+        description: ogDesc,
+        ...(thumb ? { thumb } : {}),
       },
     },
-    facets: [
-      {
-        index: {
-          byteStart: 0,
-          byteEnd: new TextEncoder().encode(data.title).length,
-        },
-        features: [
-          {
-            $type: "app.bsky.richtext.facet#link",
-            uri: postUrl,
-          },
-        ],
-      },
-    ],
   },
 }
 

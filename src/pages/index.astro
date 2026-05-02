@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import portland from "../assets/images/portland.jpg";
 import phoenix from "../assets/images/phoenix.jpg";
 ---
@@ -8,10 +9,7 @@ import phoenix from "../assets/images/phoenix.jpg";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Todd Libby - Web Developer"
-    />
+    <meta name="description" content="Todd Libby - Web Developer" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,12 +22,21 @@ import phoenix from "../assets/images/phoenix.jpg";
   <body>
     <main class="splash">
       <div class="splash__left" role="presentation">
-        <img src={portland.src} alt="Portland, Maine harbor at night" />
+        <Image
+          src={portland}
+          alt="Portland, Maine harbor at night"
+          width={960}
+          height={1080}
+          quality={80}
+        />
       </div>
       <div class="splash__right" role="presentation">
-        <img
-          src={phoenix.src}
+        <Image
+          src={phoenix}
           alt="Phoenix, Arizona skyline at night with a full moon"
+          width={960}
+          height={1080}
+          quality={80}
         />
       </div>
       <header class="splash__content">
