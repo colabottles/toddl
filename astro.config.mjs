@@ -1,7 +1,6 @@
 import { defineConfig } from "astro/config"
 import vue from "@astrojs/vue"
 import toddlDark from "./src/styles/toddl-dark.json"
-import toddlLight from "./src/styles/toddl-light.json"
 
 export default defineConfig({
   integrations: [vue()],
@@ -9,7 +8,6 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       themes: {
-        light: toddlLight,
         dark: toddlDark,
       },
       transformers: [
