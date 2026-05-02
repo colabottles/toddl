@@ -16,7 +16,7 @@ draft: false
 
 I don't know, but I can tell you the landscape of tech, the U.S., and the world is slowly eroding my faith in humanity that we can actually be nice to each other, help each other out, and not destroy everything because of the agendas people have.
 
-I want to work. I want to create and build things and get paid for it, and not have to worry about the 17 phone calls, 9 texts, and 4 emails a day from credit card companies. Or worry about being able to pitch on with bills and food and other necessities.
+I want to work. I want to create and build things and get paid for it, and not have to worry about the 17 phone calls, 9 texts, and 4 emails a day from credit card companies. Or worry about being able to pitch in with bills and food and other necessities.
 
 Or just have some money to buy myself something I want&excl;
 
