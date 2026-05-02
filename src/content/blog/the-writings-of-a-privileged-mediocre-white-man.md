@@ -8,7 +8,7 @@ tags:
   - privilege
   - interviewing
   - judgment
-layout: layouts/post.njk
+draft: false
 ---
 
 ## My Position in Tech

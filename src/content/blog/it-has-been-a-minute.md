@@ -8,10 +8,10 @@ tags:
   - miscellaneous
   - life
   - slacker
-layout: layouts/post.njk
+draft: false
 ---
 
-### It Has Been A Hot Minute
+## It Has Been A Hot Minute
 
 After a lot of travel speaking at conferences and getting myself out there and advocating for the accessibility community, I finally got to clearning my schedule in between moving to a new home and all the work I have been doing in the W3C and at work to write something.
 

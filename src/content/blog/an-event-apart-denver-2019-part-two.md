@@ -5,12 +5,12 @@ date: 2019-10-29
 tags:
   - conference
   - denver
-layout: layouts/post.njk
+draft: false
 ---
 
-### An Event Apart Denver 2019, Denver, CO
+## An Event Apart Denver 2019, Denver, CO
 
-#### Day Two
+### Day Two
 
 <div class="content__placeholder">
   <figure>
@@ -19,7 +19,7 @@ layout: layouts/post.njk
   </figure>
 </div>
 
-<a href="https://bigmedium.com/">Josh Clark</a>, the Eleventh Strongest Man in Maine, started the day off talking about machines. Automation. 
+<a href="https://bigmedium.com/">Josh Clark</a>, the Eleventh Strongest Man in Maine, started the day off talking about machines. Automation.
 
 <blockquote cite="Josh Clark">How can we use technology in a way that adds meaning?"</blockquote>
 
@@ -48,9 +48,9 @@ What is it to have machine learning as a design material. What can machine learn
   </figure>
 </div>
 
-<a href="https://faraimadzima.com/">Farai Madzima</a> spoke next about how design teams can  work well together to make products that make the company profitable and make the world a better place. How can we make our teams more diverse? How can we keep those people that are lost when the environments they are in aren't safe and they leave? 
+<a href="https://faraimadzima.com/">Farai Madzima</a> spoke next about how design teams can  work well together to make products that make the company profitable and make the world a better place. How can we make our teams more diverse? How can we keep those people that are lost when the environments they are in aren't safe and they leave?
 
-How can we make this industry more diverse and inclusive? All are fantastic questions and the answers are there in the future, but we're working on them now. Farai’s talk captured me, entranced me, and make me think. I need to stop and assist in the need for tech to make change. A phenomenal talk that I am super glad to have seen. 
+How can we make this industry more diverse and inclusive? All are fantastic questions and the answers are there in the future, but we're working on them now. Farai’s talk captured me, entranced me, and make me think. I need to stop and assist in the need for tech to make change. A phenomenal talk that I am super glad to have seen.
 
 It was a pleasure and I am grateful to have met Farai, had a great disscussion with him at lunch and was able to be there for his talk.a11y
 
@@ -81,7 +81,7 @@ It was great to hear and see Luke again. The last time I had heard him speak was
   </figure>
 </div>
 
-<a href="http://mina.codes/">Mina Markham</a> then took the stage for Full-Featured Art Direction for the Web, creator of the Pantsuit UI Pattern Library for the Hilary Clinton campaign in 2016, Mina took us through progressive enhancement and little design changes that make for huge payoffs in the end design-wise. Localization is important. 
+<a href="http://mina.codes/">Mina Markham</a> then took the stage for Full-Featured Art Direction for the Web, creator of the Pantsuit UI Pattern Library for the Hilary Clinton campaign in 2016, Mina took us through progressive enhancement and little design changes that make for huge payoffs in the end design-wise. Localization is important.
 
 Mina talked about localization on Slack and how it was rough at the beginning when the team was translating but not localizing. Inclusion and how art direction is inclusive. Very important to many, including myself and for crying out loud Beyonce! HIRE MINA MARKHAM! Mina also reminds us that not only is color contrast important for art and design, but for accessibility sake.
 
@@ -101,9 +101,9 @@ Then we all took this photo op, seeing is I had the shirt (one of many colors) a
   </figure>
 </div>
 
-To finish off Day Two was <a href="https://danmall.me/">Dan Mall</a> talking about Putting the 'Design' in Design Systems. A deep dive into design systems, again playing the _"Name That Design System"_ game show (which I 'won' at Boston and did not participate in). I could listen to this talk again and again, as well as listen to Dan again and again. 
+To finish off Day Two was <a href="https://danmall.me/">Dan Mall</a> talking about Putting the 'Design' in Design Systems. A deep dive into design systems, again playing the _"Name That Design System"_ game show (which I 'won' at Boston and did not participate in). I could listen to this talk again and again, as well as listen to Dan again and again.
 
-Dan explains it's not the components, it's about how they relate to each other. How to make your design system distinct, there are multiple design principles you can use, universal principles _"accessible"_ and _"simple"_. 
+Dan explains it's not the components, it's about how they relate to each other. How to make your design system distinct, there are multiple design principles you can use, universal principles _"accessible"_ and _"simple"_.
 
 <div class="content__placeholder">
   <figure>

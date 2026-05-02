@@ -5,7 +5,7 @@ date: 2019-06-18
 tags:
   - accessibility
   - design
-layout: layouts/post.njk
+draft: false
 ---
 
 Accessibility: _adj. that can be used, entered, reached, etc._
@@ -14,13 +14,13 @@ Some of us all too often forget how easy it is for us able-bodied persons to acc
 
 We able-bodied people are fortunate. As of 2010, 56.7 million people in the United States had a disability of some kind and around 38.3 million people had a severe disability. That's 95 million people out of (as of 2010) around 309 million people. That's over a quarter of the entire populace, 30.7% to be precise.
 
-### What does that have to do with me&quest;
+## What does that have to do with me&quest;
 
 A: Everything.
 
 As designers and even developers, we **must** take into consideration that 30.7% of the population, there shouldn't be _any_ argument about it. It's 2019 folks, time to get inclusive!
 
-#### There's that word "inclusive"
+### There's that word "inclusive"
 
 Yes, and it's here to stay. As of 2016, it was the UN that declared;
 
@@ -36,7 +36,7 @@ Accessibility is part of the fabric now, it is part of an inclusive experience f
 
 ### What Do I Need To Do&quest;
 
-**The use of descriptive alt tags.** 
+**The use of descriptive alt tags.**
 
 Just having an alt tag of a boat that says &ldquo;boat&rdquo; isn't good enough. How about &ldquo;Picture of a boat, a lobster boat coming into dock with a full haul from a day of hauling traps off the Maine coast.&rdquo;
 
@@ -52,11 +52,11 @@ Make sure form fields have `aria-required="true"` so they are read by screen rea
 
 **Closed captioning**
 
-Make sure all videos are closed captioned. 
+Make sure all videos are closed captioned.
 
 **Basic ARIA landmarks**
 
-Use `role` properly. 
+Use `role` properly.
 
 **Table tags**
 

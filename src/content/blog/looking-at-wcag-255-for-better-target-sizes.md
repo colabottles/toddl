@@ -8,14 +8,14 @@ tags:
   - wcag
   - targetsize
   - mobile
-layout: layouts/post.njk
+## LEAVE THIS TAG HERE
 ---
 
 Have you ever experienced the frustration of trying to tap a button on a mobile device only to have it do nothing because the target size is just not large enough **and it’s not picking up on your press? Maybe you have larger fingers, like I do, or maybe it’s due to limited dexterity. This is because the sadly ever-decreasing target area of elements we, the users, have to interact with.
 
 Let’s talk about target size and how to make it large enough for users to easily interact with an element. This is an especially big deal if a user is accessing content on a small hand-held touch screen device where real estate is much tighter.
 
-### Success criterion revisited
+## Success criterion revisited
 
 I touched (no pun intended) on Success Criterion in [a previous article](https://css-tricks.com/whats-new-in-wcag-2-1-label-in-name/#you-lost-me-at-success-criterion) covering the WCAG 2.1 criterion, Label in Name. In short, the WCAG criteria is the baseline from which we determine whether our work is “accessible.”
 

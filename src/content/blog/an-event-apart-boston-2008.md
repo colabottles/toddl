@@ -5,10 +5,10 @@ date: 2008-05-01
 tags:
   - conference
   - boston
-layout: layouts/post.njk
+draft: false
 ---
 
-### Preface
+## Preface
 
 This is a super fanboy-ish post, but it is (100%) in its original entirety.
 

@@ -5,7 +5,7 @@ date: 2019-06-16
 tags:
   - code
   - design
-layout: layouts/post.njk
+draft: false
 ---
 
 This is just an introduction in a condensed form. Just a minor basic level overview of the cascade.
@@ -16,7 +16,7 @@ This is just an introduction in a condensed form. Just a minor basic level overv
 
 There is an order in which selectors are prioritized. Importance, scope, specificity, and order. Let's go over each priority starting with importance. You don't have to take it all in at once. Break down each part until you understand it and then move on to the next section. I have provided code examples along the way.
 
-### Importance
+## Importance
 
 An `!important` declaration takes precedence over a normal declaration. Such as when the star selector is used for site-wide styling, take for instance `box-sizing: border-box;` and then the same property (in this case below, `background-color`) is using it in the case of the `body` selector. So `background-color: red !important;` will overrule the `background-color: white;`.
 

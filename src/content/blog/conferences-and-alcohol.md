@@ -9,10 +9,10 @@ tags:
   - culture
   - accessibility
   - boozefree
-layout: layouts/post.njk
+draft: false
 ---
 
-### Hello, I'm Todd
+## Hello, I'm Todd
 
 and I am a recovering alcoholic.
 

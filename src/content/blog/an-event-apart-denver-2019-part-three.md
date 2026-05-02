@@ -5,12 +5,12 @@ date: 2019-10-31
 tags:
   - conference
   - denver
-layout: layouts/post.njk
+draft: false
 ---
 
-### An Event Apart Denver 2019, Denver, CO
+## An Event Apart Denver 2019, Denver, CO
 
-#### Day Three - The Final Chapter
+### Day Three - The Final Chapter
 
 I never look forward to the final day because it’s the final day. With all good things however, they must come to an end.
 

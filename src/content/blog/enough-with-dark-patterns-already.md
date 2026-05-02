@@ -10,7 +10,7 @@ tags:
   - web
   - tech
   - namingconventions
-layout: layouts/post.njk
+draft: false
 ---
 
 ## This Isn't Going To Go Over Well

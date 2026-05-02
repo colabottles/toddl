@@ -7,9 +7,9 @@ tags:
   - nuxt
   - vue
   - coding
-layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-nuxtmod.png
 bskyPostId: 3mcn4sxc6bk27
+draft: false
 ---
 
 ## How I built @colabottles/center-div - a complete journey from problem to published package

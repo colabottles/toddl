@@ -7,7 +7,7 @@ tags:
   - conferences
   - fin
   - tech
-layout: layouts/post.njk
+draft: false
 ---
 
 ## New Year, Different Me

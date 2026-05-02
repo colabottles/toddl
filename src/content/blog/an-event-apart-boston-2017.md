@@ -5,10 +5,10 @@ date: 2017-05-20
 tags:
   - conference
   - boston
-layout: layouts/post.njk
+draft: false
 ---
 
-### An Event Apart Boston 2017, Boston, MA
+## An Event Apart Boston 2017, Boston, MA
 
 Well, I finally have some free time to sit down and collect my thoughts about the past couple of weeks that have been a whirlwind of activity. Here, however, is the wrap-up for An Event Apart that took place this past Monday through Wednesday.
 

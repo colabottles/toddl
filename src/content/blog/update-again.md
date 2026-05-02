@@ -6,7 +6,7 @@ tags:
   - updated
   - life
   - thoughts
-layout: layouts/post.njk
+draft: false
 ---
 
 I have gotten word that the doctor is now the source of the hold up with finding out test results or even testing and what is going on with my significant other. This in itself is a weight on the mind and I can't imagine the weight she is dealing with herself.

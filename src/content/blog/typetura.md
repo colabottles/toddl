@@ -5,7 +5,7 @@ date: 2019-06-15
 tags:
   - discoveries
   - tools
-layout: layouts/post.njk
+draft: false
 ---
 
 I found this nice tool on Twitter (exactly where escapes me) and I had tinkered around with it and found it very useful. I haven't used it in production or development when it comes to my projects, but I know that someone could make great use of it somewhere, which is why I am posting this.

@@ -6,7 +6,7 @@ tags:
   - fonts
   - typography
   - adventure
-layout: layouts/post.njk
+draft: false
 ---
 
 I finally am getting around to writing again after not having written for some time. This is about my adventure down to [David Jonathan Ross](https://djr.com/)'s home in Conway, Massachusetts for an open house. It was a great weekend full of adventure and meeting people I normally wouldn't have, talking typography and fonts, and watching some very cool and extremely awesome rpesentations.
@@ -35,7 +35,7 @@ Back to the weekend. A great breakfast, some great conversation and as much as I
 
 <figcaption>and here is the group photo, courtesy of Matthew Rechs, taken at Apex Orchards</figcaption>
 
-### Summary
+## Summary
 
 Overall. I had a blast. I don't get out much and do thing like this. It is rare. It was great meeting people and getting to talk to folks outside the programming world (there were a few programmers there as well). For someone that feels like he is alone in a room full of people sometimes, I can say it helped my hesitation to do social things like this.
 

@@ -26,6 +26,9 @@
       "default": false,
       "type": "boolean"
     },
+    "bskyPostId": {
+      "type": "string"
+    },
     "$schema": {
       "type": "string"
     }

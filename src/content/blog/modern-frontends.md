@@ -5,7 +5,7 @@ date: 2022-11-19 ## YYYY-MM-DD
 tags:
   - modernfrontends
   - organizers
-layout: layouts/post.njk
+draft: false
 ---
 
 ## No Filter

@@ -6,9 +6,10 @@ tags:
   - post ## LEAVE THIS TAG HERE
   - roachmotel
   - forcedcontinuity
-layout: layouts/post.njk
+
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-dc2.png
 bskyPostId: 3m5uw4wwbs22c
+draft: false
 ---
 
 ## Roach Motels

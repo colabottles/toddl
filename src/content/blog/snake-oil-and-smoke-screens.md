@@ -7,7 +7,7 @@ tags:
   - snakeoil
   - smokescreens
   - accessibility
-layout: layouts/post.njk
+draft: false
 ---
 
 ## Where It Began
@@ -18,7 +18,7 @@ For me, a guy from Portland, Maine, whenever I see Portland (the original one) o
 
 DiMillo's Restaurant has been a mainstay in Portland for 57 years, it is now a "floating" restaurant, as it sits in Casco Bay. Great food. Some of the best in Portland. The surf and turf was what I was watching on Delicious Destinations and I was asked what the price of the item was. Not sure, I went to the website to find out.
 
-## What The F@$k?!
+## What The F@$k?
 
 On page load, on mobile, there is that icon. staring me in the face. In its usual place, indicating that the site has an overlay.
 

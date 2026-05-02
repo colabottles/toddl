@@ -10,7 +10,7 @@ tags:
   - techniques
   - usability
   - tools
-layout: layouts/post.njk
+draft: false
 ---
 
 (Originally posted on [Smashing Magazine](https://www.smashingmagazine.com/2021/07/strong-case-for-accessibility/) on 9 July, 2021)
@@ -31,7 +31,7 @@ Inclusive design is a way of **creating digital products that are accessible to 
 
 Practicing accessibility in your workflows and methodologies ensures people — disabled or not — that they can access your product, your website, and your brands. Inclusive design and accessibility go hand-in-hand. Let’s look at some examples of accessibility.
 
-### Examples Of Practical Digital Accessibility
+## Examples Of Practical Digital Accessibility
 
 1. Your site has a color scheme that looks great after the designers are done with the mock-ups or the color scheme your brand uses is “perfect” in the eyes of people that do not have a visual disability. For people that have a visual disability like glaucoma, cataracts, or tritanopia (the deficiency of blue in one’s vision) they cannot make out that particular color and it does not meet [WCAG standards](https://shop.bsigroup.com/upload/Download/30317424.pdf).
 

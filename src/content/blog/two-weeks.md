@@ -12,7 +12,7 @@ tags:
   - london
   - brighton
   - atlanta
-layout: layouts/post.njk
+draft: false
 ---
 
 ## Firstly

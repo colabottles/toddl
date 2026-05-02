@@ -6,7 +6,7 @@ tags:
   - meetings
   - zoom
   - chats
-layout: layouts/post.njk
+draft: false
 ---
 
 For the past couple of weeks I have been holding some Zoom chats for whomever wanted to come in and just talk to someone. It didn’t have to be on anything gin particular and could be about whatever the person wanted to talk about.

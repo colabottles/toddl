@@ -7,7 +7,7 @@ tags:
   - hiring
   - exclusion
   - opportunities
-layout: layouts/post.njk
+draft: false
 ---
 
 ## A Lot of Thinking Was Done Today

@@ -8,9 +8,8 @@ tags:
   - restaurants
   - comparison
   - common-ground
-layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1641401477/images/backdrop_lobster.jpg
-
+draft: false
 ---
 
 ## Mirror images

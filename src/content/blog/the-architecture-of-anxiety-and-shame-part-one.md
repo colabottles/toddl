@@ -10,9 +10,9 @@ tags:
   - fakescarcity
   - timepressure
   - confirmshaming
-layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-deceptivepatterns.png
 bskyPostId: 3m2lu52omns2j
+draft: false
 ---
 
 ## Part One, The Scarcity and Pressure to Make Decisions and Placing Guilt in the Users Lap
@@ -25,21 +25,21 @@ In the work and research I have done for a number of years now, I have found tha
 
 Lost is the humanity I can see clearly. How that kid that just wanted to code, grew up to want to take over the world and throw away any kind of humanity though, that is the part that baffles me. Where does that get lost and at what point does something inside a person's head just snap and say, &apos;Let's do evil things today&excl;&apos;&quest; As I try to answer those questions I have, I also look to help others that are the targets of these deceptive practices now so that they do not fall prey to the silent hunter that is literally stalking them.
 
-I wanted to go over four patterns, four of many patterns, that are used to play with people psychologically, that draw out the anxiety and fear, the guilt and shame, and how these patterns are used and what we can do to combat them. 
+I wanted to go over four patterns, four of many patterns, that are used to play with people psychologically, that draw out the anxiety and fear, the guilt and shame, and how these patterns are used and what we can do to combat them.
 
 ## The Three Amigos
 
 ### Timed-based urgency/Fake urgency/Confirmshaming
 
-The exploitation of FOMO (Fear of Missing Out) and social comparison is used a lot. Literally everywhere in a digital space where there is some kind of revenue involved. Social anxiety is something that is used to pressure people into action. Many deceptive patterns come in pairs. Some, come in groups, like The Outsiders (a great movie and book by the way). 
+The exploitation of FOMO (Fear of Missing Out) and social comparison is used a lot. Literally everywhere in a digital space where there is some kind of revenue involved. Social anxiety is something that is used to pressure people into action. Many deceptive patterns come in pairs. Some, come in groups, like The Outsiders (a great movie and book by the way).
 
-Fake scarcity (FOMO), time pressure (anxiety), and confirmshaming (guilt/social inadequacy) are used to target the social fears that are very real that affect 1 in 10 Americans. The economic and emotional/psychological cost is massive and any design that amplifies that anxiety for-profit isn't bad business. It is an ethical attack on the public's well-being. Businesses that use these patterns should never have business and people should never deal with companies that use these patterns for-profit against them. 
+Fake scarcity (FOMO), time pressure (anxiety), and confirmshaming (guilt/social inadequacy) are used to target the social fears that are very real that affect 1 in 10 Americans. The economic and emotional/psychological cost is massive and any design that amplifies that anxiety for-profit isn't bad business. It is an ethical attack on the public's well-being. Businesses that use these patterns should never have business and people should never deal with companies that use these patterns for-profit against them.
 
 ### The Data and Key Points
 
 The condition of social anxiety isn't just a rare shyness, it is actually [the third largest mental health care problem globally according to the Social Anxiety Association](https://socialphobia.org/social-anxiety-disorder-definition-symptoms-treatment-therapy-medications-insight-prognosis).
 
-According to sources from the National Institute of Mental Health, Yale Medicine, Mental Health America, and the American Psychological Association, 12.1% of adults experience [Social Anxiety Disorder (SAD)](https://www.mayoclinic.org/diseases-conditions/social-anxiety-disorder/symptoms-causes/syc-20353561) at some point in their lives. An estimated 7.1% of adults in the U.S. had SAD in the past year, which is approximately 15 million people. Of those adults with SAD in the past year, 29.9% of those people had serious impairment, and 38.8% had moderate impairment in their lives. The onset of SAD typically begins during childhood or teenage years with the median age being 13 years old. 
+According to sources from the National Institute of Mental Health, Yale Medicine, Mental Health America, and the American Psychological Association, 12.1% of adults experience [Social Anxiety Disorder (SAD)](https://www.mayoclinic.org/diseases-conditions/social-anxiety-disorder/symptoms-causes/syc-20353561) at some point in their lives. An estimated 7.1% of adults in the U.S. had SAD in the past year, which is approximately 15 million people. Of those adults with SAD in the past year, 29.9% of those people had serious impairment, and 38.8% had moderate impairment in their lives. The onset of SAD typically begins during childhood or teenage years with the median age being 13 years old.
 
 The impact on function, work, and education can limit a person's participation in society, which is exactly where deceptive patterns in consumer tech can inflict the most damage. For instance individuals with SAD are over two times more likely to be unemployed than those without the disorder. Approximately 20% os people with SAD reported declining a job offer or promotion due to social fears.
 
@@ -69,7 +69,7 @@ Passive social media usage has been directly linked to an increase in social anx
 
 **The Case:** A popular e-commerce site uses a platform that is the widely used platform for e-com websites. That popular e-com platform has a plugin store, and that plugin store has a plugin for flash sales. &ldquo;Sale ends in 11:34:21&excl;&rdquo; that is thrown in your face, you cannot miss the component this thing has been designed by. In fact, this is a plugin that got banned from this very widely-used e-com platform's plugin store, yet they still exist as a standalone product&excl; You can go into the (plugin, at the time) administration panel and choose to restart the timer and just restart it whenever you feel the desire to. A 24 hour flash sale could, in reality, last as long as the company wants.
 
-**The Deception:** The deal usually reappears the next day or the timer magically resets if the user refreshes the page or the user returns later. The pattern is aimed at inducing anxiety and panic, thus making the cognitive load so high, that the user clicks that buy button before they have time to consider anything about what impact buying the product will have on them financially, the necessity of having that product, or even the actual value of owning that product.  
+**The Deception:** The deal usually reappears the next day or the timer magically resets if the user refreshes the page or the user returns later. The pattern is aimed at inducing anxiety and panic, thus making the cognitive load so high, that the user clicks that buy button before they have time to consider anything about what impact buying the product will have on them financially, the necessity of having that product, or even the actual value of owning that product.
 
 ### Confirmshaming
 

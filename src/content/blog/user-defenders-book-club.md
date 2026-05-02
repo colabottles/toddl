@@ -11,7 +11,7 @@ tags:
   - ethics
   - userdefendersbookclub
   - userdefenders
-layout: layouts/post.njk
+draft: false
 ---
 
 It was a pleasure being a part of this discussion about a book I really liked. Mike Monteiro's _Ruined By Design_. Have a look at the video below and join User Defenders for more community events and more book club discussions!

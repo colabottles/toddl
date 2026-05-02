@@ -10,12 +10,12 @@ tags:
   - javascript
   - typescript
   - ionicpartone
-layout: layouts/post.njk
+draft: false
 ---
 
 ![The Ionic Framework logo, a blue circle enclosed in a thick blue, incomplete line with a small blue ball rotating around the center circle, next to the Vue JS logo, a V-shaped logo with a light green V and a slate grey blue smaller V sitting inside the large V-shape.](https://res.cloudinary.com/colabottles/image/upload/v1670038063/images/vue-ionic-logos.png)
 
-## Well, Here I Go!
+## Well, Here I Go
 
 I've been looking to start coding again after doing accessibility auditing for two solid years and also have had an idea that's been swirling around in my head for a long time now. This brought me to the idea of an app, which finds the best lobster roll shacks in your area (yes, IYKYK).
 

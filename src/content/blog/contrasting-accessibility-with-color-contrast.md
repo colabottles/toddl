@@ -8,7 +8,7 @@ tags:
   - color
   - design
   - colorcontrast
-layout: layouts/post.njk
+draft: false
 ---
 
 I came across a website that had some significant visual issues pertaining to color contrast. These visual issues made it difficult, if not impossible, to read the website’s content. This led me to wonder how people with visual impairments and/or use assistive technology might navigate these issues.

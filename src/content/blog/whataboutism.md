@@ -5,7 +5,7 @@ date: 2023-09-15
 tags:
   - accessibility
   - ableism
-layout: layouts/post.njk
+draft: false
 ---
 
 > What about it? This doesn’t need accessibility.

@@ -8,7 +8,7 @@ tags:
   - deceptive
   - patterns
   - design
-layout: layouts/post.njk
+draft: false
 ---
 
 Don't look now but you're probably installing something else other than what you downloaded.

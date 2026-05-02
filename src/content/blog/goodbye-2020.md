@@ -6,7 +6,7 @@ tags:
   - general
   - life
   - twentytwenty
-layout: layouts/post.njk
+draft: false
 ---
 
 What can be said that already hasn't been said about this year&quest;

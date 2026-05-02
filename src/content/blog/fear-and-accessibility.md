@@ -5,10 +5,10 @@ date: 2019-08-23
 tags:
   - accessibility
   - opinion
-layout: layouts/post.njk
+draft: false
 ---
 
-### Fear of the Unknown
+## Fear of the Unknown
 
 With the recent court appeal to the US Supreme Court with a certain pizza conglomerate, “Dom Inos” I’ll call them, against blind persons, I have been thinking of what could drive a corporation to do something so egregious that it brings about the need for me to voice my opinion.
 

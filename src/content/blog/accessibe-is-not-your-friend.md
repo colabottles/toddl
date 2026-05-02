@@ -7,14 +7,14 @@ tags:
   - snakeoil
   - overlay
   - accessibility
-layout: layouts/post.njk
+draft: false
 ---
 
 ![A snake oil salesman on his wagon where he sells snake oil that has the AccessiBe logo Photoshopped on the side of the wagon.](https://res.cloudinary.com/colabottles/image/upload/v1626382025/images/snakeoil.jpg "A snake oil salesman on his wagon where he sells snake oil that has the AccessiBe logo Photoshopped on the side of the wagon.")
 
 The following view does not represent my employer, or any other entity I am involved with. The views expressed here are strictly my own.
 
-### The Shot
+## The Shot
 
 A recent thread on Twitter caught my eye and it was probably the most ridiculous thing I have read in a very long time.
 
@@ -38,7 +38,7 @@ AccessiBe execs get defensive real quick when there is any opposition to their p
 
 ### The Chaser
 
-Few have sung the praise of the snake oil, yet when time and time again, accessibility professional after accessibility professional has come forward with **evidence** that the overlay _does not work_, they slither their way to ramping up ads or their propaganda against the accessibility community and the professionals that have helped the disabled/accessibility community for *decades*.
+Few have sung the praise of the snake oil, yet when time and time again, accessibility professional after accessibility professional has come forward with **evidence** that the overlay _does not work_, they slither their way to ramping up ads or their propaganda against the accessibility community and the professionals that have helped the disabled/accessibility community for _decades_.
 
 ![The chaser. Proof from Eric Eggert that AccessiBe's overlay does not work as the company claims.](https://res.cloudinary.com/colabottles/image/upload/v1626383910/images/chaser.png "The chaser. Proof from Eric Eggert that AccessiBe's overlay does not work as the company claims.")
 
@@ -113,4 +113,4 @@ It just doesn't end. That's the real problem, and with a boat load of money behi
 
 Sheldon just exacerbates it.
 
-Sheldon may be a very nice human being, I'm not saying Sheldon isn't. However, what I am saying is Sheldon is part of the problem. What woks in your browser doesn't work in everyone else's.
+Sheldon may be a very nice human being, I'm not saying Sheldon isn't. However, what I am saying is Sheldon is part of the problem. What works in your browser doesn't work in everyone else's.

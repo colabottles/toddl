@@ -9,7 +9,7 @@ tags:
   - speechtotext
   - screenreader
   - braille
-layout: layouts/post.njk
+draft: false
 ---
 
 ![A user sitting in front of a computer using a Braille reader.](https://res.cloudinary.com/colabottles/image/upload/v1605616284/images/accessibility.jpg "Photo by Sigmund on Unsplash.")

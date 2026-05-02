@@ -6,7 +6,7 @@ tags:
   - html
   - semantichtml
   - accessibility
-layout: layouts/post.njk
+draft: false
 ---
 
 Note that there are times and places to use the `div` and `section` elements. This article addresses the need for more accessible solutions and fixes as well as the need to stop over-engineering things.

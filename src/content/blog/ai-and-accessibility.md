@@ -7,7 +7,7 @@ tags:
   - ai
   - accessibility
   - disabledcommunity
-layout: layouts/post.njk
+draft: false
 ---
 
 ## The Promise of AI-Powered Accessibility

@@ -4,9 +4,10 @@ Personal portfolio site for Todd Libby. Built with Astro, deployed to Netlify.
 
 ## Stack
 
-- **Astro** — static site generator
+- **Astro 6** — static site generator
 - **Vue 3** — available for interactive islands where needed
 - **Vanilla CSS** — custom properties, no utility frameworks
+- **TypeScript** — always
 - **Netlify** — deployment + CDN
 
 ## Design tokens
@@ -31,8 +32,11 @@ npm run preview   # preview build locally
 
 ## Project structure
 
-```
+```plaintext
 src/
+  content/
+    blog/             # markdown blog posts (74 posts)
+  content.config.ts   # content collection schema
   data/
     content.ts        # all projects, writing, talks, uses — edit here
   layouts/
@@ -40,17 +44,29 @@ src/
   components/
     Nav.astro         # navigation with aria-current
   pages/
-    index.astro       # /about
+    index.astro       # splash page
+    about.astro       # /about
     projects.astro    # /projects
     writing.astro     # /writing
     speaking.astro    # /speaking
     uses.astro        # /uses
     contact.astro     # /contact
+    blog/
+      index.astro     # /blog
+      [slug].astro    # /blog/[slug]
+    elsewhere.astro   # /elsewhere
+    podcast.astro     # /podcast
+    colophon.astro    # /colophon
+    accessibility.astro # /accessibility
+    privacy.astro     # /privacy
     404.astro         # 404
   styles/
     global.css        # design tokens + layout
+    toddl-dark.json   # custom Shiki syntax highlighting theme
 public/
   favicon.svg
+  portland.jpg
+  phoenix.jpg
 ```
 
 ## Adding content
@@ -69,17 +85,34 @@ All content is driven from `src/data/content.ts`. Add a new project:
 }
 ```
 
+## Blog posts
+
+Blog posts live in `src/content/blog/` as Markdown files. Frontmatter fields:
+
+```yaml
+title: string
+description: string (optional)
+date: YYYY-MM-DD
+tags:
+  - tag
+draft: boolean (optional, defaults to false)
+```
+
 ## Accessibility
 
 - Skip link on every page
 - `aria-current="page"` on active nav link
 - Semantic landmarks: `<aside>`, `<nav>`, `<main>`
 - `aria-label` on all landmark regions
-- Screen-reader-only `<h1>` on every page
 - `prefers-reduced-motion` respected globally
 - WCAG 2.2 AA contrast throughout
+- All SVG icons have accessible names or are `aria-hidden`
+
+## Notes
+
+- Avoid CSS class names containing `sponsor`, `ad`, `banner`, `track`, `analytics`, `social`, or `share` — these are blocked by ad blockers
+- Node 22 required
 
 ## Deployment
 
-Push to GitHub, connect repo to Netlify. `netlify.toml` handles build config.
-Netlify adapter is set but `output: 'static'` — fully static, no serverless functions needed.
+Push to GitHub, connect repo to Netlify. Netlify auto-deploys from main branch. `output: 'static'` — fully static, no serverless functions needed.

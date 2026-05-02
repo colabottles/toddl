@@ -8,7 +8,7 @@ tags:
   - accessibility
   - talks
   - speaking
-layout: layouts/post.njk
+draft: false
 ---
 
 ## There's A Better Way

@@ -6,7 +6,7 @@ tags:
   - update
   - life
   - thoughts
-layout: layouts/post.njk
+draft: false
 ---
 
 I know I have written a lot about quitting, retiring, stepping back, etc. and all I can say is that is from a place where desperation and exasperation reigned supreme. This time however, it is different. My gut is not screaming at me to "stay in the game".

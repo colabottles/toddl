@@ -2,13 +2,13 @@
 title: An Event Apart 2018 - Wrap-Up Edition
 description: The wrap-up article I authored in 2018 after An Event Apart.
 date: 2018-05-28
-tags: 
+tags:
   - conference
   - boston
-layout: layouts/post.njk
+draft: false
 ---
 
-### An Event Apart Boston 2018, Boston, MA
+## An Event Apart Boston 2018, Boston, MA
 
 **_Originally posted on my old site in installments, this has been compiled into one post._**
 
@@ -73,21 +73,21 @@ Then Eric Meyer took the stage to discuss Feature Queries. What are the pros and
 Feature Queries examples.
 
 ```css
-  @supports (prop: val) { /* CSS goes here */ } 
-    @supports (--css: variables) { 
+  @supports (prop: val) { /* CSS goes here */ }
+    @supports (--css: variables) {
       html {
-        --color1: navy; 
+        --color1: navy;
         --color2: red;
-      } 
+      }
       html.help {
         --color1: teal;
         --color2: maroon;
       } body {
         color: var(--color1);
-      } 
+      }
       .highlight {
         color: var(--color2);
-      } 
+      }
     }
 ```
 
@@ -95,7 +95,7 @@ Feature Queries examples.
   @supports (prop: val) {
     /* CSS goes here */
   }
-  
+
   @supports (--css: variables) {
     html {
       --color1: navy;
@@ -128,9 +128,9 @@ Rachel and Jen both have been the catalyst for changing the way we look at the w
 
 &hellip;and I cannot forget to mention that I got to see my friend Claudia Snell again!
 
-If you are a speaker and happen to see this, and if there is anything I missed upon, key points perhaps, then please reach out and I can certainly add those. 
+If you are a speaker and happen to see this, and if there is anything I missed upon, key points perhaps, then please reach out and I can certainly add those.
 
-### Day Two 
+### Day Two
 
 Well, it is finished and as usual the second day of speakers was as good as the first!
 

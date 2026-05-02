@@ -5,12 +5,12 @@ date: 2019-05-03
 tags:
   - conference
   - burlingtonvt
-layout: layouts/post.njk
+draft: false
 ---
 
-### UX Burlington 2019 - Burlington, VT
+## UX Burlington 2019 - Burlington, VT
 
-#### My First UX Burlington
+### My First UX Burlington
 
 While scanning the countryside for conferences in the New England area, I was drawn to UX Burlington. So I snagged a ticket. Best decision I made that week. More on the food that I had there on Church Street as well.
 
@@ -71,7 +71,7 @@ Don't say I did not warn you!
 
 Here is a quote from Henri I loved.
 
-<blockquote cite="Henri Helvetica">Resource loading is a delicate dance that can be delightful, but also destructivedue to device damper and limitations.</blockquote>
+<blockquote cite="Henri Helvetica">Resource loading is a delicate dance that can be delightful, but also destructive due to device damper and limitations.</blockquote>
 
 I won't (and possibly have not a chance to explain these as well as Henri did) go into the API's in-depth, but I will give you and overview of what they are and [point you to the video on the UX Burlington YouTube page](https://youtu.be/DLvSPYklE4U).
 
@@ -84,7 +84,7 @@ I won't (and possibly have not a chance to explain these as well as Henri did) g
 
 I'll go back to another quote from Henri;
 
-<blockquote cite="Henri Helvetica">You can't improve what you don't measure.</blockquote> 
+<blockquote cite="Henri Helvetica">You can't improve what you don't measure.</blockquote>
 
 I had written down a lot of notes, what mobile browsers these are all good in and not implemented in yet, but again, I'll direct and suggest that [folks go to the UX Burlington YouTube page and view his talk there](https://youtu.be/DLvSPYklE4U). Henri articulated everything so well, I don't want to butcher it.
 

@@ -8,7 +8,7 @@ tags:
   - accessibility
   - goodbye
   - cya
-layout: layouts/post.njk
+draft: false
 ---
 
 ![Todd speaking at HalfStack Phoenix about leaving tech.](https://res.cloudinary.com/colabottles/image/upload/v1707139800/todd-halfstack.jpg)

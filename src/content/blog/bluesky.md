@@ -7,7 +7,7 @@ tags:
 - bluesky
 - social
 - community
-layout: layouts/post.njk
+draft: false
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png
 ---
 

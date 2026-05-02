@@ -9,9 +9,9 @@ tags:
   - web
   - tools
   - accessibility
-layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-toddle.png
 bskyPostId: 3ljsfz2e4m22z
+draft: false
 ---
 
 ## Wait&hellip; ToddL or Toddle or Toddl&quest;

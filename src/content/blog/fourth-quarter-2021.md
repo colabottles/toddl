@@ -7,7 +7,7 @@ tags:
   - life
   - career
   - fourthq
-layout: layouts/post.njk
+draft: false
 ---
 
 ## It's been a long fourth quarter

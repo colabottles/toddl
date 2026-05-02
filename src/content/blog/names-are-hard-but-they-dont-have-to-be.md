@@ -7,9 +7,9 @@ tags:
   - naming
   - coding
   - development
-layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-names.png
 bskyPostId: 3me7fa2md5c2n
+draft: false
 ---
 
 ## The $10,000 Bug

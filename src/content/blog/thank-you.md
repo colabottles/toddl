@@ -4,7 +4,7 @@ description: The title says it all.
 date: 2024-02-07
 tags:
   - thanks
-layout: layouts/post.njk
+draft: false
 ---
 
 I would like to take the time to address everyone who reached out to me and who left messages on the socials I inhabit:

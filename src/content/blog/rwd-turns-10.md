@@ -8,7 +8,7 @@ tags:
   - design
   - rwd
   - anniversary
-layout: layouts/post.njk
+draft: false
 ---
 
 There are some things I always will remember like it was yesterday that I have learned or read that have helped me along in my web career. Whether it was remembering my od friend the Mosaic browser, when I switched to using Macromedia Fireworks as my vector image tool, the times when I bought such career-altering books such as Laura Lemay's *SAMS Tech Yourself Web Publishing with HTML and XHTML in 21 Days* or Jeffrey Zeldmans *Designing With Web Standards* or Eric Meyer's *CSS: The Definitive Guide*.

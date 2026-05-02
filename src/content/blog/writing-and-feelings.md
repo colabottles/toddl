@@ -7,7 +7,7 @@ tags:
   - feelings
   - recovery
   - life
-layout: layouts/post.njk
+draft: false
 ---
 
 ## A Little Backstory

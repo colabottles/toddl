@@ -6,10 +6,10 @@ tags:
   - development
   - frontend
   - fonts
-layout: layouts/post.njk
+draft: false
 ---
 
-### CORS, CodePen and Me
+## CORS, CodePen and Me
 
 I have been experimenting and leaning about Variable Fonts ever since [Jason Pamental](https://rwt.io) spoke at An Event Apart this past May in Boston. I had been following Jason as well as Mandy Michael and Scott Kellum’s works/tweets/articles/talks as well. All great stuff.
 
@@ -21,7 +21,7 @@ CORS, or Cross-Origin Resource Sharing, is, according to [MDN](https://developer
 
 <blockquote cite="MDN">a mechanism that uses additional HTTP headers to tell a browser to let a web application running at one origin (domain) have permission to access selected resources from a server at a different origin. A web application executes a cross-origin HTTP request when it requests a resource that has a different origin (domain, protocol, or port) than its own origin.</blockquote>
 
-So, unbeknownst to me, browsers restrict cross-origin HTTP requests initiated from within scripts. [To quote from MDN again](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS); 
+So, unbeknownst to me, browsers restrict cross-origin HTTP requests initiated from within scripts. [To quote from MDN again](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS);
 
 <blockquote cite="MDN">This means that a web application using those APIs can only request HTTP resources from the same origin the application was loaded from, unless the response from the other origin includes the right CORS headers.</blockquote>
 

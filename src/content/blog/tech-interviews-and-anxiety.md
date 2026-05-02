@@ -9,7 +9,7 @@ tags:
   - interviews
   - anxiety
   - jobsearch
-layout: layouts/post.njk
+draft: false
 ---
 
 ![A woman clutching at the neck line of her shirt with eyes closed in contemplation with the photo having a red overlay.](https://res.cloudinary.com/colabottles/image/upload/v1605623948/images/anxiety.jpg "Photo by Chaozzy Lin on Unsplash.")

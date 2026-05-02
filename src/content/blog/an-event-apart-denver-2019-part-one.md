@@ -5,12 +5,12 @@ date: 2019-10-28
 tags:
   - conference
   - denver
-layout: layouts/post.njk
+draft: false
 ---
 
-### An Event Apart Denver 2019, Denver, CO
+## An Event Apart Denver 2019, Denver, CO
 
-#### The Day Before
+### The Day Before
 
 I got into Denver after seven hours of travel, and it had been thirty-two years since I had been here. It was snowing, which I could have waited on but still I was traveling again. I got to do something I never thought I would ever do and that was attend the speaker meeting prior to the conference.
 

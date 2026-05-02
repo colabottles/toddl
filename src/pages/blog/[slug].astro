@@ -4,9 +4,7 @@ import { getCollection, render } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog", ({ data }) => {
-    return import.meta.env.PROD ? true : !data.draft;
-  });
+  const posts = await getCollection("blog");
   return posts.map((post: CollectionEntry<"blog">) => ({
     params: { slug: post.id },
     props: { post },
@@ -25,6 +23,10 @@ const date = new Date(post.data.date).toLocaleDateString("en-US", {
   month: "long",
   day: "numeric",
 });
+
+const bskyPostId = post.data.bskyPostId ?? null;
+const myDid = "did:plc:gevyqibw5p2xsonkbsbjm5vy";
+const bskyHandle = "toddl.dev";
 ---
 
 <Base title={post.data.title} description={post.data.description}>
@@ -50,6 +52,34 @@ const date = new Date(post.data.date).toLocaleDateString("en-US", {
       <Content />
     </div>
     <footer class="post-footer">
+      {
+        bskyPostId && (
+          <section
+            class="bsky-likes"
+            data-bsky-container
+            aria-labelledby="bsky-likes-heading"
+          >
+            <meta data-bsky-post-id={bskyPostId} />
+            <h2 id="bsky-likes-heading" class="bsky-likes__title">
+              <span aria-hidden="true">🦋</span>
+              <span data-bsky-likes-count>0</span> likes on Bluesky
+            </h2>
+            <a
+              class="bsky-likes__cta"
+              href={`https://bsky.app/profile/${bskyHandle}/post/${bskyPostId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Like this post on Bluesky to see your face here
+            </a>
+            <ul
+              data-bsky-likes
+              class="bsky-likes__list"
+              aria-label="People who liked this post on Bluesky"
+            />
+          </section>
+        )
+      }
       <a href="/blog" class="post-back">cd ../blog</a>
     </footer>
   </article>
@@ -112,7 +142,7 @@ const date = new Date(post.data.date).toLocaleDateString("en-US", {
     margin-bottom: 1.25rem;
   }
 
-  .post-content h2 {
+  :global(.post-content h2) {
     font-size: 1.125rem;
     font-weight: 500;
     color: var(--text-primary);
@@ -121,14 +151,14 @@ const date = new Date(post.data.date).toLocaleDateString("en-US", {
     border-bottom: 0.5px solid var(--warm-border);
   }
 
-  .post-content h3 {
+  :global(.post-content h3) {
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-primary);
     margin: 1.75rem 0 0.75rem;
   }
 
-  .post-content h4 {
+  :global(.post-content h4) {
     font-size: 0.9375rem;
     font-weight: 500;
     color: var(--accent);
@@ -148,15 +178,16 @@ const date = new Date(post.data.date).toLocaleDateString("en-US", {
 
   :global(.post-content ul),
   :global(.post-content ol) {
-    margin: 1.5rem 0 1.5rem 2rem;
+    margin: 0.75rem 0 1.5rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.375rem;
   }
 
   :global(.post-content ul) {
     list-style: disc;
   }
+
   :global(.post-content ol) {
     list-style: decimal;
   }
@@ -164,10 +195,25 @@ const date = new Date(post.data.date).toLocaleDateString("en-US", {
   :global(.post-content li) {
     color: var(--text-primary);
     line-height: 1.7;
+    margin: 0.5rem 0 0.5rem 1.5rem;
   }
 
   :global(.post-content li::marker) {
     color: var(--accent);
+  }
+
+  :global(.post-content blockquote) {
+    border-left: 3px solid var(--accent);
+    padding: 0.75rem 1rem;
+    margin: 1.5rem 0;
+    background: var(--warm-mid);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+
+  :global(.post-content blockquote p) {
+    margin-bottom: 0;
   }
 
   :global(.post-content pre) {
@@ -182,15 +228,6 @@ const date = new Date(post.data.date).toLocaleDateString("en-US", {
     color: #e2dfd8;
   }
 
-  :global(.post-content pre code) {
-    background: none;
-    border: none;
-    padding: 0;
-    color: #e2dfd8;
-    font-size: inherit;
-    font-family: var(--font-mono);
-  }
-
   :global(.post-content code) {
     font-family: var(--font-mono);
     font-size: 0.875rem;
@@ -201,7 +238,15 @@ const date = new Date(post.data.date).toLocaleDateString("en-US", {
     border-radius: 3px;
   }
 
-  .post-content img {
+  :global(.post-content pre code) {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+  }
+
+  :global(.post-content img) {
     max-width: 100%;
     height: auto;
     border-radius: var(--radius-md);
@@ -209,10 +254,81 @@ const date = new Date(post.data.date).toLocaleDateString("en-US", {
     border: 0.5px solid var(--warm-border);
   }
 
-  .post-content hr {
+  :global(.post-content hr) {
     border: none;
     border-top: 0.5px solid var(--warm-border);
     margin: 2rem 0;
+  }
+
+  /* Bluesky likes */
+  .bsky-likes {
+    margin-bottom: 2rem;
+    padding: 1.25rem;
+    background: var(--warm-mid);
+    border: 0.5px solid var(--warm-border);
+    border-radius: var(--radius-md);
+    min-height: 200px;
+  }
+
+  .bsky-likes__title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .bsky-likes__cta {
+    font-size: 0.875rem;
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    display: block;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+
+  .bsky-likes__cta:hover {
+    opacity: 0.8;
+  }
+
+  .bsky-likes__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .bsky-like {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    margin-right: -0.75rem;
+    border-radius: 100%;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+  }
+
+  .bsky-like__avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+
+  .bsky-like--placeholder,
+  .bsky-like--more {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: #208bfe;
+    color: #fff;
+    border-radius: 100%;
   }
 
   .post-footer {
@@ -232,3 +348,76 @@ const date = new Date(post.data.date).toLocaleDateString("en-US", {
     opacity: 0.8;
   }
 </style>
+
+<script>
+  const LIMIT = 55;
+  const myDid = "did:plc:gevyqibw5p2xsonkbsbjm5vy";
+  const bskyAPI = "https://public.api.bsky.app/xrpc/";
+  const getLikesURL = `${bskyAPI}app.bsky.feed.getLikes?limit=${LIMIT}&uri=`;
+  const getPostURL = `${bskyAPI}app.bsky.feed.getPosts?uris=`;
+
+  const metaEl = document.querySelector(
+    "[data-bsky-post-id]",
+  ) as HTMLMetaElement | null;
+  const container = document.querySelector("[data-bsky-container]");
+  const likesContainer = document.querySelector("[data-bsky-likes]");
+  const likesCount = document.querySelector("[data-bsky-likes-count]");
+
+  if (!metaEl || !container || !likesContainer || !likesCount) {
+    // no bskyPostId on this post, nothing to do
+  } else {
+    const bskyPostId = metaEl.dataset.bskyPostId;
+
+    if (bskyPostId) {
+      const postUri = `at://${myDid}/app.bsky.feed.post/${bskyPostId}`;
+
+      function drawHowManyMore(
+        postLikesCount: number,
+        likesActorLength: number,
+      ) {
+        if (postLikesCount > LIMIT) {
+          const likesMore = document.createElement("li");
+          likesMore.classList.add("bsky-like", "bsky-like--more");
+          likesMore.textContent = `+${postLikesCount - likesActorLength}`;
+          likesContainer!.appendChild(likesMore);
+        }
+      }
+
+      function drawLikes(likesActors: any[], postLikesCount: number) {
+        for (const like of likesActors) {
+          const likeEl = document.createElement("li");
+          likeEl.classList.add("bsky-like");
+
+          if (like.actor.avatar) {
+            likeEl.innerHTML = `<img class="bsky-like__avatar" src="${like.actor.avatar.replace("avatar", "avatar_thumbnail")}" alt="${like.actor.displayName ?? like.actor.handle}" width="48" height="48" loading="lazy" />`;
+          } else {
+            likeEl.classList.add("bsky-like--placeholder");
+            likeEl.innerHTML = `<span aria-label="${like.actor.displayName ?? like.actor.handle}">@</span>`;
+          }
+
+          likesContainer!.appendChild(likeEl);
+        }
+        drawHowManyMore(postLikesCount, likesActors.length);
+      }
+
+      try {
+        const [bskyPost, bskyPostLikes] = await Promise.all([
+          fetch(getPostURL + postUri),
+          fetch(getLikesURL + postUri),
+        ]);
+        const postData = await bskyPost.json();
+        const likesData = await bskyPostLikes.json();
+        const totalLikesCount = postData.posts[0].likeCount;
+
+        if (likesData.likes.length > 0) {
+          likesCount.textContent = totalLikesCount;
+          drawLikes(likesData.likes, totalLikesCount);
+        } else {
+          likesCount.textContent = "0";
+        }
+      } catch {
+        container.remove();
+      }
+    }
+  }
+</script>

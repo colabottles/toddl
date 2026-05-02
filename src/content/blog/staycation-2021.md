@@ -6,7 +6,7 @@ tags:
   - staycation
   - mentalhealth
   - life
-layout: layouts/post.njk
+draft: false
 ---
 
 ![A person sitting on a bed or couch and holding a coffee mug in one hand and reading a book an dturning a page with the other hand.](https://res.cloudinary.com/colabottles/image/upload/v1611591059/images/staycation.jpg "Photo by Nathan Dumlao on Unsplash.")

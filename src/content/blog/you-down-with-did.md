@@ -7,8 +7,8 @@ tags:
   - didfixit
   - bluesky
   - did
-layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/did-card.png
+draft: false
 ---
 
 ## Yeah You Know Me&excl;
@@ -33,7 +33,7 @@ Then I went to my host and domain provider (Netlify, in my case) and I went into
 
 ## The Part That Gets Tricky
 
-Now I have a feeling this had absolutely nothing to do with anything, but I did a DNS flush from my Windows machine, just in case. 
+Now I have a feeling this had absolutely nothing to do with anything, but I did a DNS flush from my Windows machine, just in case.
 
 `ipconfig /flushdns`
 `ipconfig /renew`
@@ -62,10 +62,10 @@ So I did my due diligence (and being as stubborn as I can be, not giving up toni
 Again, I tried it once and failed due to some bad typing on my part. So I repeated the steps, triple-checked my work, and ran the commands again (all one line and spaces between the hyphens at the beginning e.g., Invoke-RestMethod -Method POST):
 
 ```js
-$sessionResponse = Invoke-RestMethod 
--Method POST 
--Uri https://bsky.social/xrpc/com.atproto.server.createSession ` 
--body (@{identifier = 'email@example.com'; password ='PASSWORDGOESHERE'} | ConvertTo-Json) ` 
+$sessionResponse = Invoke-RestMethod
+-Method POST
+-Uri https://bsky.social/xrpc/com.atproto.server.createSession `
+-body (@{identifier = 'email@example.com'; password ='PASSWORDGOESHERE'} | ConvertTo-Json) `
 -ContentType 'application/json'
 ```
 
@@ -84,11 +84,11 @@ toddl.dev                   SOA  3600  Authority  dns1.wha.tevr.itis          ho
 Awesome&excl; Let's move on. I then ran (again, all one line and spaces between the hyphens at the beginning e.g., Invoke-RestMethod ` -Method POST ...):
 
 ```php
-Invoke-RestMethod ` 
--Method POST ` 
--Uri https://bsky.social/xrpc/com.atproto.identity.updateHandle ` 
--Headers @{Authorization = "Bearer $($sessionResponse.accessJwt)"} ` 
--Body (@{ = 'toddl.dev'} | ConvertTo-Json) ` 
+Invoke-RestMethod `
+-Method POST `
+-Uri https://bsky.social/xrpc/com.atproto.identity.updateHandle `
+-Headers @{Authorization = "Bearer $($sessionResponse.accessJwt)"} `
+-Body (@{ = 'toddl.dev'} | ConvertTo-Json) `
 -ContentType 'application/json'
 ```
 

@@ -6,7 +6,7 @@ tags:
   - return
   - life
   - tech
-layout: layouts/post.njk
+draft: false
 ---
 
 ## Well now

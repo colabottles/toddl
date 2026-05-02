@@ -9,7 +9,7 @@ tags:
   - web
   - life
   - death
-layout: layouts/post.njk
+draft: false
 ---
 
 ## CW: Death

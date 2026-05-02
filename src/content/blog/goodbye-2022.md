@@ -6,7 +6,7 @@ tags:
   - review
   - twentytwentytwo
   - endofyear
-layout: layouts/post.njk
+draft: false
 ---
 
 ## Hey 2022

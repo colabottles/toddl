@@ -7,12 +7,12 @@ tags:
   - accessibility
   - web
   - perseverance
-layout: layouts/post.njk
+draft: false
 ---
 
 ![The symbol for a handicapped parking space with the blue square and white figure sitting in a wheelchair.](https://res.cloudinary.com/colabottles/image/upload/v1617229521/images/employed.jpg "Photo by AbsolutVision on Unsplash")
 
-### The More You Persist
+## The More You Persist
 
 It has been a very trying year. Pandemic and employment-wise. The fact we have all made it this far is a testament to all of us. Jobs or no jobs. If you have found a job, congratulations. Keep it. Especially going out (hopefully) of this pandemic.
 

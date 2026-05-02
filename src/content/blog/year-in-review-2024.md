@@ -7,9 +7,9 @@ tags:
   - 2024review
   - yearinreview
   - lookingback
-layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1735593061/todd-social-card-2024.png
 bskyPostId: 3lekmgqd2ys27
+draft: false
 ---
 
 ## It&apos;s Been A Roller Coaster

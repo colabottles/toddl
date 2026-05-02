@@ -8,7 +8,7 @@ tags:
   - speaking
   - community
   - travel
-layout: layouts/post.njk
+draft: false
 ---
 
 ## Connect.Tech

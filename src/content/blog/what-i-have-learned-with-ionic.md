@@ -9,7 +9,7 @@ tags:
   - development
   - learning
   - ioniclearning1
-layout: layouts/post.njk
+draft: false
 ---
 
 ![The Ionic logo in blue](https://res.cloudinary.com/colabottles/image/upload/v1679077487/ionic_logotype_blue_jde7di.png)

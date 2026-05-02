@@ -10,10 +10,10 @@ tags:
   - culture
   - accessibility
   - inclusion
-layout: layouts/post.njk
+draft: false
 ---
 
-### To Tech Event Organizers
+## To Tech Event Organizers
 
 I have an open challenge to you if your event(s) are very heavily focused on alcohol.
 

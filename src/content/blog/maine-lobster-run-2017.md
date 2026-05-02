@@ -4,12 +4,12 @@ description: A look back on the adventures up the Maine coast.
 date: 2017-09-04
 tags:
   - adventure
-layout: layouts/post.njk
+draft: false
 ---
 
 The trip entailed a five-day jaunt up the Maine coast starting in Kittery, Maine at Bob's Clam Hut who has one of the best lobster rolls in southern Maine.
 
-### I've Only Met Two Lobster Rolls I Didn't Like
+## I've Only Met Two Lobster Rolls I Didn't Like
 
 But they weren't at any place on the coast. They were at places that were inland, which is why I go to very few places inland to get a delicious lobster roll.
 

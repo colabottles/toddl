@@ -7,7 +7,7 @@ tags:
   - conference
   - web
   - java
-layout: layouts/post.njk
+draft: false
 ---
 
 ## Why a Java Conference?

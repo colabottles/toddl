@@ -10,7 +10,7 @@ tags:
   - javascript
   - typescript
   - ionicparttwo
-layout: layouts/post.njk
+draft: false
 ---
 
 ![The Ionic Framework logo, a blue circle enclosed in a thick blue, incomplete line with a small blue ball rotating around the center circle, next to the Vue JS logo, a V-shaped logo with a light green V and a slate grey blue smaller V sitting inside the large V-shape.](https://res.cloudinary.com/colabottles/image/upload/v1670038063/images/vue-ionic-logos.png)

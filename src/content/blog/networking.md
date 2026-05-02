@@ -9,9 +9,9 @@ tags:
   - traveling
   - speaking
   - community
-layout: layouts/post.njk
 image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/social-card-networking.png
 bskyPostId: 3ldkd2njozc2k
+draft: false
 ---
 
 ## I had the time of my life and more so I decided to write about it
