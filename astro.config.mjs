@@ -9,7 +9,6 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       themes: {
-        light: toddlLight,
         dark: toddlDark,
       },
       transformers: [
