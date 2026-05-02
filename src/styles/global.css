@@ -640,6 +640,10 @@ body {
   gap: 0.5rem;
 }
 
+.sponsor-panel__links li {
+  display: flex;
+}
+
 .sponsor-link {
   display: flex;
   align-items: center;
