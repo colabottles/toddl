@@ -16,7 +16,7 @@ const blog = defineCollection({
 })
 
 const podcast = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/podcast" }),
+  loader: glob({ pattern: "**/*.md", base: "./src/content/transcripts" }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date().optional(),
