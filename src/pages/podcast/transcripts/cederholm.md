@@ -1,0 +1,412 @@
+---
+title: Dan Cederholm
+description: My Interview with Dan Cederholm
+date: 2021-09-29
+layout: layouts/post.njk
+---
+
+## S1:E10
+
+[00:00:00] Todd Libby: Welcome to the Front End Nerdery Podcast, a podcast about front end development and design. I'm your host Todd Libby. My guest today is founder of SimpleBits, author and aspiring sea captain, Dan Cederholm. Dan, how are you today?
+[00:00:15] Dan Cederholm: Hey Todd. I'm doing awesome. Thanks, thanks so much. Thanks for having me on here.
+[00:00:21] Todd: Yeah, thanks for coming on. Why don't you tell the listeners a little bit about yourself?
+[00:00:24] Dan: Yeah, so I am Dan and I, currently living up in Salem, Massachusetts and, have, have lived in New England my whole life. So, this is home. it's good to talk to a fellow New Englander. Right? And, yeah, so I, I, I'm a designer, an accidental entrepreneur, accidental author.
+Accidental everything now that I think of it. Nothing's been a super well thought out on my end in terms of my professional life, and, yeah, so, designer and, and I, I co-founded a site called Dribbble, which is a community for designers, back in 2009. And, have since moved on from, from the company as of a couple of years ago.
+And I'm sort of over the last few years, anyway, I've kind of been reinventing my design self by taking on a bunch of different projects, just making things. I think I realized, like, I just like to make stuff and not necessarily manage things or I'm not good at managing things. So that's been a rev revelation, but, so yeah, back to making stuff, designing, making fonts, books, shirts, hats, you know, fun stuff.
+And, and just getting back to just designing
+[00:01:42] Todd: Yeah
+[00:01:43] Dan: for the sake of designing, maybe.
+[00:01:44] Todd: Yeah
+[00:01:43] Dan: Just been fun. Just been a been a blast actually.
+[00:01:50] Todd: Yeah, I, I have a thing with t-shirts, so you get a lot of orders from me for t-shirts
+[00:01:51] Dan: I know. I was going to say I you're like super wonderful costumer of SimpleBits and I really appreciate that and all the support.
+[00:02:02] Todd: you know, I, you know, the first time I saw you had merch out, I was like, oh, I gotta get that stuff. Because you know, the book, the, the, the, the, the first book, the orange one.
+[00:02:16] Dan: Yup, yup
+[00:02:18] Todd: But they even went way back. So, I'll get to that part in a minute.
+[00:02:22] Dan: Yeah
+[00:02:23] Todd: But, yeah, the, the, the stuff you put out is great, I love it. I really wish that I know you had a shirt that you had to take down.
+[00:02:31] Dan: Yeah, yeah
+[00:02:32] Todd: I wish I, I wish I had got my hands on that one, but,
+[00:02:37] Dan: oh, well, we, I do have some, left. I can send you with the, with the replaced book.
+Cause he got it. This is timely, but you got, you got a book deliver today, completely damaged.
+[00:02:49] Todd: Yup, I did.
+[00:02:37] Dan: in the mail. Not by us I promise you, but,
+[00:02:52] Todd: Right
+[00:02:37] Dan: But, that that's wow. It got seriously mangled in the, in the mail. I don't know what happened there.
+TODD HOLDS UP BOOK
+[00:02:59] Dan: Wow, look at that.
+[00:03:00] Todd: Yeah. I think they ran it
+[00:03:02] Dan: They must have ran it over with something
+[00:03:04] Todd: Yeah, and they ran it over and then backed up before they ran it over.
+[00:03:09] Dan: Right, right?
+[00:03:09] Todd: Took off again
+[00:03:09] Dan: That happens. but yeah, the, the shirt was interesting. That that's a whole thing we can talk about if you want, like it's, someone owned the trademark to the phrase, stay salty, which, which is something that I, you know, you see a lot of people use it. There's tons of folks that, that have that saying on their products.
+If you do Google search, it's everywhere.
+[00:03:31] Todd: Right.
+[00:03:09] Dan: And I didn't, I was unaware of this company that reached out and said, “Hey, we own the trademark to this”. And yeah. I had to talk to my lawyer about it and they're like, well, they do own the trademark. So, they have a legit, you know, case.  If you wanted to litigate it'll cost six figures.
+No, no, no, that's fine. It's not the name of the business or anything. So, yeah, so anyway, we had to take that down, which is a shame, but yeah, we'll get you one.
+[00:04:00] Todd: All right, cool. Thanks. I appreciate it. So, my first question, we'll get right into the questions now.
+[00:04:04] Dan: Yeah, let's do it. you
+[00:04:05] Todd: You know, I hinted back to the, to the first book that, you, you put out, which I'll get to in my second question, but how did you get started in your web development and design journey?
+[00:04:18] Dan: Yeah, well, yeah. Going way back, you know, it's funny. I, I think that I was always interested in design, you know, even like early, early age, I think that's. I didn't really know. I didn't know that that was a thing, you know, when I was younger, I didn't know that was a profession that you could do. And I just loved, I loved logos and I was really into skateboarding when I was younger and I just loved all the, I think I liked the design better than I did actual skateboarding part.
+And, and then, you know, music, I was really into music for a long time and, and still am, but the, the design of the album covers and that, that like those parts always interested me in whatever I was interested in the design aspect of something. And then it didn't, it wasn't until like I discovered the web, in the mid-nineties really where I, I, I saw an avenue to say, oh, this is, this is something I can do.
+I can build websites that, you know, everyone can see. That has internet connection. And the design of the site was something that really appealed to me. Like it was this thing that was very, self-contained all you needed was a computer in front of you. You didn't need equipment. Other than that, and you could, you could create, and you could create something visually that something, someone would, would see, the distribution, like it took the distribution out of it.
+You know, you weren't mailing records or skateboards to people. You were just posting it online. And then, and I loved that about it. And so, I think it was the web that like kind of brought those interests all together and made me realize, oh, this is what, this is what I've been interested in all along. And I didn't really, really know it until, I had that tool, the computer really to, to, to do that.
+And yeah, so it was really the web that, that sparked that. And, I had a really crappy job, making minimum wage at a record label and I worked my way up to this desk job that had like a windows 3.1 machine. You know, that, that was my, that was my computer. Cause I didn't have one at home at the time and we had internet.
+So, I was like, that was my brief little taste of the web at that time, which was really interesting. And, and then I just kinda, I just ever since then, I was just all about the web and creating for the web and learning as much as I could know when I got home, you know, about building a webpage, cause I just wanted to do, I wanted to build a web page for my, my band and I wanted to, I wanted to learn how to, I just want to learn, learn it all, you know.
+View source could figure it out on your own. That DIY aspect of, of building websites back then was so fun and exciting and felt like pioneering, you know, those early days, cause it was just like a free for all, you know? And, and it just grew from there. And I just, I kept, you know, I kept learning on my own at night and, and started documenting that in a blog.
+And which eventually became SimpleBits. I think we're coming up on the 20 year
+[00:07:31] Todd: Oh wow
+[00:07:32] Dan: anniversary of the domain name. So, I had a few other ones before that, but like just blogging early on in those days. And I'm sure you remember, like it's, it's like, that was the, it was the best time to learn things while also sharing that learning process at the same time.
+And that's something I've tried to embrace even today. The, the idea of sharing, what you're sharing what you're learning as you're learning. You know, I think that in that, that was the spirit of, of the web, and may, and maybe still is actually, that would be interesting to see what people that are starting now think of it.
+Hopefully they think of it the same way that a lot of people share, share their knowledge. And it's, it's a, it's easy to get free, free, free knowledge out there about building websites. And I hope that's still the case. And cause that was, that's what fueled me and fueled that community at that time is just sharing.
+Like we were figuring things out together and everyone was kind of documenting that in their own way. Yeah, actually on blogs initially. Cause that's all there was.
+[00:08:38] Todd: Yeah
+[00:08:39] Dan: That was a long-winded answer to your question. And this kind of went all over the place there.
+[00:08:47] Todd: Oh no, that was a great answer. I, I, I did the same thing, you know, I, I started with a small little site, a little blog, turned it into a blog actually.
+[00:08:54] Dan: Yup
+[00:08:55] Todd: And yeah, yeah. I remember those days of just this. I, I think there's more now these days with the, you know, the advancement of course in technology and you know, people, they you do a learning on Twitch and on, you know, all these other platforms that, you can write and like, you know, there was Medium and then all these other sites came out as well.
+[00:09:20] Dan: Yeah.
+[00:09:21] Todd:  Kind of like Medium.
+[00:09:22] Dan: Yeah. The, the ability to publish has certainly been simplified
+[00:09:26] Todd: Yeah
+[00:09:27] Dan: And which is great, right? It's no longer like let’s code as a web page and FTP it to, to, to, to, to convey something it's, it's so much easier, which is, which is awesome.
+[00:09:40] Todd: Yeah
+[00:09:27] Dan: Yeah. It's a good way. I, I, I feel like, I'm curious, you know, about the newcomers and how, how they, they view it.
+But I, I, I hope that there's still that sense of camaraderie among the design community that, that, that helps each other learn. And I think it is, I, I see it a little bit here and there, but yeah.
+[00:10:03] Todd: So, let's talk about books because
+[00:10:06] Dan: Yeah
+[00:10:03] Todd: I have many of your books.
+[00:10:10] Dan: Have a lot of books? Oh, oh, nice, oh excellent. Thanks Todd.
+[00:10:14] Todd: You've written, and you know, there was the ones that I alluded to a couple of times Web Standard Solutions was the, the first one or was it Bulletproof Web, Bulletproof Web Design was after a Web Standard Solutions.
+[00:10:29] Dan: Yes. Yeah. That was the second, second Book. Yeah. Yeah.
+[00:10:33] Todd: So, I have those two Web Standards, Web Standard Solutions. I had that; I actually bought that one in a local bookstore. It was a Walden books.
+[00:10:45] Dan: Wow.
+[00:10:47] Todd: It was one of my first, I think. Maybe four or five web design books I bought Jeffrey Zeldman’s book of course Designing with Web Standards.
+[00:10:59] Dan: Yeah, of course, absolutely. Yup.
+[00:11:02] Todd: And a few others, then you had, Handcrafted CSS just to name a few. We've had a couple A Book Apart titles.
+[00:11:10] Dan: Yup.
+[00:11:02] Todd: And that was what CSS three. And for wh—for web designers and SASS for web designers,
+[00:11:19] Dan: Yes.
+[00:11:02] Todd: What was the process like writing those books and I guess it was correct me if I'm wrong. Yeah. That was still when you were designing for the web. So, why was the focus on CSS?
+[00:11:36] Dan: Yeah. Good question. yeah, I, I. I really love CSS or, you know, I, I should say loved because I honestly, I, I don't do a lot of it now. I kind of miss it in a way and in a way a lot. And, and I think I still love it actually. It's I think it's, it's for whatever reason. I don’t know I just fell in love with, you know, markup and, and, and CSS and the combination of those two things, to, to visually create something.
+I just love it. And I, at the time, I think back in 2003 or whatever it was when the first book emerged, you know, that web standards movement was, was in full force and it was, everyone was like, I was saying earlier, everyone was sort of learning together about how to solve these problems that we were trying to solve, you know?
+And there wasn't a ton of, at the time there wasn't a ton of books, obviously Jeffrey's book, you know, epic and pioneering and, paved the way for what is, or, you know, the web standards movement. And I, through my blog, I think that's what tipped it, I was just I blogged a lot about CSS and, and web design and what I was learning and figuring out, and everyone's, you know, figuring out these little solutions, you know, A List Apart, you know, which was great, a huge resource, right?
+Every time someone came out with an article, you'd be like, ah, this is how I'm going to tackle this problem now. And, I remember, blogging about, you know, how to I had this thing on the site called simple quiz, really dumb name, but, but it was like asking the, posing the question on the blog, like, how would you mark up, you know, an address, you know?
+And then then there's the multiple-choice answers, because I, I think what I was doing as I was trying to get a consensus, but at the same time show that there are multiple ways to solve every, there is no one solution to, to designing something on for the web. And, that the, the idea of like, well, this should, this could be a book, you know, this, I could, this should, this should be a book and people can collect all these things together.
+And, and this could be maybe a valuable teaching tool or, or whatever. And so, I approached a couple publishers and the one that really wanted to work with me was, was friends of ED, which was, a press, in print. And, you know, got, had a really good editor there that was just, on really on board with the idea.
+And I was like, yeah, absolutely. This is great. And, I didn't want to call it, it's funny, it's Web Standard Solutions is kind of a dumb name, but they, they, they really liked it. And that's kinda what, how it went, but, you know, at the time I was, I didn't know what I was doing. I didn't know what the hell I was doing writing wise.
+And, you know, like the thought of writing a book actually was, was really daunting and scary. And, I had never, you know, other than writing on the blog and whatever, it, it's not something I went to school for. It's not something I studied or even aspired to do really. It's kind of bizarre, the way it happened, but I'm glad it did.
+And, and I just, I loved, I guess I fell in love with the idea of, of, of having to explain the same things that I was figuring out, you know, as I was figuring them out. And I think that became useful for other people. And I, I realized that blogging immediately have that immediate, like put something up and you get immediate comments and feedback, and whether you're doing it right or not.
+And that, that was, that was great. And that was super helpful to say, okay, maybe I do, maybe this is something I can do, and I could, I could tackle. And, and then having a great editor was, was key. At that point. It was not, not being an author that really doesn't know what they're doing the editor becomes super valuable and helpful and necessary.
+But the, the, yeah, so the process emerged from blogging really initially. And that got me started, and kind of got a framework in place for me to be able to share. How, how I would learn something and maybe try to explain that, that same, technique and to others. And, and that led to the, and that's where the books kind of started going. The Bulletproof book was, was interesting because that, that one's, I was specifically trying to show like this is pre responsive web design, right.
+So, I was trying to show how CSS specifically could, make things more flexible, and in a way accessible, I don't, I didn't that wasn't like a, obvious focus, but in a way, you know, writing semantic markup at the time was kind of a big, it wasn't something everyone was doing. And, trying to, having to explain like, well, we, you can do this 15 different ways, but these few ways here, here's why that could be beneficial for, for everybody.
+So that one was more, more focused. I think on the way CSS could make things more flexible extensible and, and that, I think it was just, you know, right place, right time too, in terms of getting an actual book out there, there's plenty of people writing about it and doing it and, you know, doing it better than I, than I ever will.
+And, even explaining it may be better, but I just happened to be there willing to actually print it or have it printed at that point. But I, yeah.
+[00:17:13] Todd: So, from that I know. I, I always thought, yeah, I want to write a book, but then I hear people talking about the process is difficult and
+[00:17:25] Dan: Yeah
+[00:17:26] Todd: While it can be difficult, it can be, it's a long process. So, I was like, nah, I'll just, I’ll just keep on buying these books and reading them.
+[00:17:40] Dan: Well, it is, the process, it is painful, actually. The multiple parts of it are painful. For me, I always thought the initial writing of it was the best part and the easiest part. And it was later like the editing and, preparing the figures and the, the, the actual logistical, production of it was, was really laborious and kind of boring for me, but the actual writing, that's why having a great editor it's actually gold because they can take the heavy lifting on.
+But it is, it's, it's daunting. And, and it's, it's not, it's not, it's not always fun for sure, but the, the, the, the reward is always great when you're done. And I don't run marathons or anything, but I can see how, like, people that do enjoy that, like, it's all about that finish line and the way you feel after it, you know
+[00:18:31] Todd: Yeah
+[00:18:32] Dan: That makes it, that makes it worth it. But I'm also of the, of the mind that like, everybody can, can write books. And I really do believe that. And I, I think that, you know, back when those books that we were just talking about were published that was kind of like, there was like this whole industry of, of web design books, right? You go to the Walden, like you said, you go to Walden books, there's like a section.
+And there's every, every imaginable topic you can imagine is there and you can buy it and that's the way people would learn. And now it's so different. But I think what, what is interesting is getting people's personal takes on these, these topics now. Now that the topics are out there and it's easier to find information on them, but like, I would love to read a Todd book on anything, you know, like I just feel like the book, it, it seems so permanent, and you know it's paper.
+You know, when it's printed on paper, it seems so it elevates the content, I believe, to just naturally, by the way of like, okay, well there's a lot of work, went into this, you have to print it. There's like physical things happening to make it, make it work. And, and so the con the content could be, I'm just rambling here now.
+But, the content, that, that, what I really love now is like that personal take on whatever it is, and as opposed to being completely academic, you know what I mean? Like, like if, if you wanted to write a book on lobster rolls, you know, for instance, which I know you love, like, I, I would love that book. And I don't think it would need to be the book on lobster rolls, like where you have to like, research the lobster's history and all that crap.
+[00:20:25] Todd: Right
+[00:20:26] Dan: Just be about here's what here's, here's where I go. Here's why I like them. Here's who makes them well. Here's what goes into it. Here's my take on, so like a book on lobster rolls rather than the book. And that's what I'm trying to do now, actually with, with books is, is kind of remove that like barrier. If I can't write this book on, on fonts, I didn't go to school for it.
+I don't know what I'm doing. I there's so many other more people that are more qualified than me to do this. So why, why should I write it? It's like, if you take that barrier away and say, well, just write a book on making fonts that that is your experience. And cause there, there’s, there's room for all there's room for more books, there's room for, you know, multiple books on, on lobster rolls and fonts, I think.
+[00:21:15] Todd: That's actually been. I've had people approach me. I said, yeah, I was thinking of writing a book and oh, you should write one on lobster rolls so.
+[00:21:25] Dan: Oh, I'm not the first?
+[00:21:26] Todd: No, you're not the first.
+[00:21:28] Dan: Yeah, I love it. Todd let's make this happen. I mean
+[00:21:31] Todd: Yeah.
+[00:21:32] Dan:  I, I honestly like I'm like, that would be a really interesting book because that's something people are passionate about.
+Right? And you're passionate about it. That's the other thing, when you're passionate about something it's going to come through, you know, whatever you, however you write about it. Yeah, let's, I mean, you gotta do it now. It's got to happen.
+[00:21:50] Todd: I gotta do it.
+[00:21:52] Dan: Yeah.
+[00:21:53] Todd: I gotta do it. The, the heat is on.
+[00:21:59] Dan: Yeah, yes.
+[00:22:01] Todd: So, I know you have a article on Medium. “What I Learned Co-Founding Dribbble.”
+[00:22:09] Dan: Yeah. Yup. Yup.
+[00:22:11] Todd: So, staying on the topic of books. Was that part of, and I think that was a little, you had that in the book, 20 things I learned about design business and community.
+[00:22:19] Dan: Yes, exactly. Yup. Yup.
+[00:22:26] Todd: Tell us about that book because I enjoyed that book, very much. And we'll go from there actually.
+[00:22:34] Dan: Yeah. Cool. Yeah, that was, you know, I, I had, retired from Dribbble and, was just reflecting on what you was like, what the heck just happened over the last 10 years. And it looks like my videos frozen. Huh?
+[00:22:51] Todd: I think it did freeze.
+[00:22:53] Dan: Yeah. Sorry.
+[00:22:54] Todd: That’s all right.
+[00:22:55] Dan: Let me, let me try to restart it. See if. There we go. There we go. sorry about that.
+[00:22:59] Todd: That’s all right.
+[00:23:00] Dan: I was reflecting on you know what just happened there with Dribbble and founding it, and like what I learned as like someone who's not a businessperson per se and not an entrepreneur at, at its core, but like as a designer that started a business that had some success and grew and what, what did I learn from that?
+And so, I thought I would just outline like 20 things, you know, 20 bits I learned about that. And, and, and, and, and put that on Medium and, and then realize, hey, this could be, why don't I write a little book, going back to what I was saying earlier. It was like, why not? I'm not, you know, I'm not an expert in all this, but it might be interesting to share like, you know what I learned and, and, and really just self-publish it completely and, and do all the doodles, even though I'm not really a doodler and, and why not, you know, learn how to, learn how to lay out a book and get it printed hard cover.
+And like the whole process of that is like equally as interesting to me
+[00:23:59] Todd: Right
+[00:24:00] Dan: How you make the book is, is interesting too. And as in addition to, you know, the stuff that I'm writing about. So that, that's what led to that. And, and, and that's been fun because that, that format of, you know, it's not quite a memoir, but it sort of is in that I was trying to encapsulate, you know, what, what I learned over those 10 years and, you know, settling on a format that's like here, it's going to be 20 little chapters and each one's going to be a little short thing and it doesn't matter how short or long each thing is that that really freed me up to be like okay.
+This is really, this makes the process of writing this a lot easier. I can take each one and maybe one, do one a day or something even. Or every other day, or whenever I can and focus on one of those and they're connected in a way, but they don't have to necessarily be exactly connected, you know, chronologically or anything.
+It's more just like sort of these 20 things that I learned and, takeaway then something that you could read on a plane, plane ride, and then land and be like, okay, that's cool. I, I learned some stuff about, what Dan thought about this and, that, that kind of format was really worked for my style of thinking I do.
+And, and I, I would love to see other people take that on too. It'd be neat. I mean, just here you go, this is how you can set up a book just like about any topic, you know? And, and, and it was received well, and that, you know, led me to do another one that's just come out about making fonts. And that that's another new, even a, a, a topic that I really, really not qualified to write about.
+But yeah, I did anyway, because what the hell? And, and I took that same format and broke it down. Like here's 20 things I learned about, making fonts and, and, and, and hopefully it's, hopefully it's as well received as the first one, but that's to be seen. But I just, I just love the pr the whole process I, I like.
+I think when you, when you, when you enjoy the process of something, it, it matters less about how successful that end thing is. Right? It's, it's, that's icing on the cake. If it's, if it's actually successful, if it's profitable or if it's well-received or whatever, it's, it that's icing on the cake when you've enjoyed that process from start to finish.
+And so, like writing books, going back to your question earlier about, you know, it seems like a laborious process it's it seems hard. And it is, and I think these, these two books that I've done self, self-publishing have been my way of saying, all right, how do I break it down so that I, I enjoy like all of the process, the whole way through, and sort of optimize my time on, on, being passionate about the whole thing.
+[00:26:56] Todd: Right
+[00:26:57] Dan: That's, that's the result, I guess, just these, these little, these little, arguably artistic books.
+[00:27:03] Todd: Yup. I think your video froze again.
+[00:27:06] Dan: Video froze again, geez. What’s going on. Sorry. There we go. I’m back.
+[00:27:16] Todd: No worries. This is a low budget production anyways. So.
+[00:27:22] Dan: Yeah, see, that's, but that's the way to do it.
+[00:27:26] Todd: Yeah. Yeah.
+I just, I decided I, I decided, you know what, I'm going to do a podcast and I'm just gonna press record and let it do, do its thing.
+[00:27:35] Dan: Yeah. Let it do its thing.
+[00:27:36] Todd: Let nature take its course. So, the book I enjoyed that book, 20 what? 20 things I learned about design business and community. And I remember we were both on, the, the, quarantine book club, Mike and Erica had.
+[00:27:49] Dan: Yeah. Yes. Fantastic. Yup.
+[00:27:52] Todd: And I enjoyed. And I, I, well, I, I, again, I enjoyed the book a lot and though the one thing, and I think we might've touched upon this, in that book club meeting at the time was you had a chapter in the book that said, choose the right partner or something similar to that.
+[00:28:16] Dan: Yes, yes, yes. Yep.
+[00:28:22] Todd: I had almost, almost chosen the wrong partner and that kinda, that resonated with me
+[00:28:27] Dan: Yeah, sure.
+[00:28:28] Todd: For some reason it just, you know, I was thinking, boy, you know, I dodged a bullet there and that and you're right. You know, you have to find the right partner, that right fit to do, you know
+[00:28:39] Dan: Yeah
+[00:28:40] Todd: to go into business with. So that was a great book. And I, you know, I I'll put everything in the show notes, links to the books and everything.
+[00:28:50] Dan: Awesome. I appreciate it. Yeah, no
+[00:28:51] Todd: Yeah
+[00:28:50] Dan: That's, that's great to hear Todd. I think, I think, yeah, that choosing the right partner, it's one of those things that, you know, I obviously wasn't thinking of at the time, and I don't think Rich was either, Rich, the co-founder of Dribbble. And I think we got fortunate in that we were good friends first and, but at the same time, there's challenges there, even when you're good friends, you know, running a business together, it's not like you're not just hanging around and being friends.
+It's, it's, there's a lot of a lot that goes into it and there's, you know, making sure that things are delegated equally and, everyone's pulling their weight and, and, you know, there. I, I learned a ton, from, from obviously from, from the whole experience. And I certainly learned that I'm awful at managing and, well, that's not all I'm awful at, but, but I, I think that it is, like I say, in the book, it is like a marriage, you know, co-founding something with someone. And, whether you have multiple founders or whatever, maybe it's a marriage that involves multiple people but, but it is, it is like that.
+And you, you're going to run into a lot of, a lot of weird things, like if, if you're successful, right? Which you hopefully are with your business, the thing that you're starting whatever. You're going to be spending a lot, a, a lot of time with these people and making a lot of decisions with these people.
+And some of the decisions are big and they're sort of affect lives and employees and everything. And, you know, having that foundation of being on the same page with the person you're, you're starting, this thing with, is, is super important. And, you know, that not, everyone's fortunate enough to, to, you know, to make that decision thoughtfully.
+It's tough. You know, things start in various ways, you know, Dribbble started as a side project and, we didn't start with a business plan where we sat down and said, this is, this is the business. And this is what you're going to be in charge of. This is what I'm going to be in charge of, and this is how we're going to run it.
+And it just sort of evolved over time. And, and so. When I say, choose your partner wisely. I kind of, it's almost like a warning for folks that do have the opportunity to, to say I I'm looking for a co-founder right now, before we even get started. And here's, here's, here's some things to think about when you're, when you're choosing that person or looking for that person.
+You know, and, and, and, and recognizing that that's not all, that's not always how businesses start and, and, and, and sometimes those work out great and sometimes they don't, but if you're able to have that time to choose and, and thoughtfully think about, your strengths versus the other person's strengths and how those mesh and all that that's, that's, that's the ideal, you know, that's the ideal time to do that. Yeah.
+[00:31:45] Todd: Yeah. So, I gotta ask because I, I see it on your bio's and, and when I was, when I was doing my research, I saw it a lot. Tell us, tell the listeners about accidental entrepreneur and cautious adventurer.
+[00:32:09] Dan: Ah, yeah, yeah, exactly. Yeah. So, I'm glad you mentioned that. Yeah, so accidental entrepreneur is definitely my it's a way of saying like, look, I may have started a few businesses and, but I, I didn’t tr I, I it's almost like my way of saying, I don't really know what I'm doing.
+And it's like, like a distant neighbor, you know, like, I, I don't, I don't know. I, I, I didn't go to business school and I really, I don't know what I'm doing. So, take anything that I prescribe, as, as, as actually non-prescriptive, and, and since sort of like, here's, here's what worked for me, but it may not work for you.
+And, and it's true. It's totally true in that I've stumbled into all these things. I think getting, you know, I was at Fast Company Magazine back in 2000 early two thousands. And, and that's where, when the web standards thing was going, and we redesigned the site with CSS. And that was that gave, gave me some notoriety in the, in the web standard space at the time.
+And then I, I got laid off from them because they moved to New York and they changed and, and, and then I didn't know what to do. And I, that, that forced me into freelancing. And I didn't set out to do that. I didn't want to; it was scary as hell. I didn't want to, but I ended up, you know, getting lucky with getting a few clients lined up initially, and then suddenly a few months went by, and I said, oh, I guess I, I guess I'm a freelancer now because I've been paying the bills and I haven't really, it's been working.
+So that was accidental. Dribbble was accidental. You know, in terms of being a side project and just growing that, and that was, that was a journey. And there was another site I did with, with Dan Benjamin called Cork’d, which was like a wine, social network for wine people.
+[00:33:56] Todd: I remember that one, yeah.
+[00:33:57] Dan: Yeah.
+[00:33:59] Todd: I do remember that one.
+[00:34:01] Dan: Yeah, it was fun. And that again, that was accidental as well, because it was just like, oh, why can't I share, I want to follow what you're drinking, if you like wine. And you know, not that I'm a wine expert or anything, but like, it was just something that I wanted to see for myself. And then that turned into something and then we later sold, sold that to Gary, Gary V of all people who's done quite well for himself after that.
+But, but so that's accidental. And, and so I think that part of my bio is just like a disclaimer in that you can create businesses like unintentionally, that, that still work out and, I'm still learning, you know, every day. I don't, I don't, I don't pretend to know what I'm doing.
+But I kinda like it that way. I think that the older I get, I learned like that's okay that I don't know. And it's less scary and more like, I'm just going to embrace that and, maybe willing to take some, some more risks than, than, than I, than it was when I was younger. The, the cautious adventure part, I is, is more of like a, a non, non-design interesting where I love outdoors and I love, you know, being on the water, however I can and, and exploring.
+And, at the same time, I, you know, I have anxiety and, deal with that. And, and so I'm super cautious. I'm not one of those people that like kind of rock climbing
+[00:35:29] Todd: Yeah
+[00:36:29] Dan: and jump out of an airplane, but I love anything to do with that, watching it.
+So, I'm like I'm sort of a poser outdoor person or something. And that's where I would write cautious adventure because I love adventuring, but I'm definitely, nervous about a lot of things. And, so that was little, little, teeny insight into, into my non-design space. I guess.
+[00:36:01] Todd: Yeah, I, I, I, I get that. I, I the cautious adventure part is something that I, that really, I'm like, I'm one of those people too, that are like, yeah, I can watch, people jump out of a plane or, you know, jump off a bridge with a cord strapped to their foot but,
+[00:36:24] Dan: Yes.
+[00:36:25] Todd: But yeah, that's it, that's the extent of it.
+[00:36:27] Dan: Right. Well, it’s great. And like and like yes and I love that. And I'm like a fan of that stuff. Like, I, I love the idea of snow. Like I did some snowboarding and then I like landed on my knee and that was like, this is I'm like, I stay away from, I would, I would not go on black diamond and trails or even blue trails for that matter.
+It'd be like, I stick to green and, but I love it. You know, I love the green trail. Right. It's not like I'm this sucks I can only do green trails it's like, no, I love the cautious adventure part of this, you know, like I'm going to stick to the easy, easy, where I'm in control. And, and so I, yeah, like you, I, I love the idea of jumping out of a plane or anything like adventury like that I'm, I'm totally, you know, like, climbing, Mount Everest or whatever.
+It's like, that is so cool. And I'll watch documentaries every night about things like that. And, but when it comes down to doing it like, again it's another disclaimer like, hey, I might talk about this stuff and post photos from crazy places or whatever, but I'm not, I'm not one of those people that’s daring or anything. You know what I mean?
+[00:37:37] Todd: Yeah. Yeah
+[00:37:38] Dan: Just being honest.
+[00:37:40] Todd: Looking at it from a far works for me in some, in some things.
+[00:37:46] Dan: Say it.
+[00:37:40] Todd: So, going back, you know, to the, to the business part. What's the best thing you've learned about starting a business?
+[00:37:56] Dan: Best part? Well, I think there's a couple things that I love about it, and I think one of them is, the independence is, is huge. I think, I'm certainly unemployable at this point, because I've been doing this long enough on my own where I can't, I can't imagine.
+I think, you know, light like work-life balance is huge. I mean, there, there are, don't get me wrong. There's many stresses about running a business that anybody knows that they would agree, you know, like it's not all. It's certainly risky and there's, unknowns and stuff that, that, that come up. But that, that independent part of independence part of it is, is, is crucial in like being able to be there for kids’ doctor's appointments, without having to worry about literally not telling anybody and just being able to sort of roll with the punches of life is, is, is huge.
+I think that's probably the top one for me. I think the other, the other one for me has been exploring different interests and having the flexibility to do that. I think, I guess that goes along with independence too, but just, I think the way business for me has evolved like started freelancing building websites.
+And that has evolved into just sort of a general design, like creating anything, logos and fonts and, and, and writing and, and, and the, the ability to explore those different things. And some of them don't work out. Some of them do, but just having the being fortunate enough to be able to experiment with them and find the things that I do like to do has been invaluable.
+And that's not really a good business plan, like experimenting with things to see if they work. But for me, I kind of, I kind of lump it in with that because being my own boss, so I'm able to do, I'm able to do those experiments and see what works. So, I think, yeah, in general with the sort of independence of it has definitely made it all worth it.
+I think with Dribbble, it was eventually it would became, and I touch on this in the book too, about those relationships that you make with people on, on teams and, and, and I do miss that being on my own again, but, the, the fact that you're employing people was really satisfying, you know, that you're building a, a, a culture in a place for people to be creative.
+And that, that is, that was really satisfying and, and, and amazing. And, you know, I do miss that. So maybe we'll get back to that at some point building a team. But, but I, I, yeah, I talk about those relationships, you know, after everything is gone, all the pixels are gone because when you talk about building for the web, like there's very little.
+I remember looking back at my portfolio, like everything I had created, digitally, it was just not even there anymore. Like all these projects I did. And, and, and that, that seems so important at the time they seemed like life or death, death matters for the clients. And, and now they're just not even there anymore because they replaced.
+And it just, that's just the nature of, of, of, of creating on the web, which is also its strength to you. Right? And, and sort of the appeal of it. But, but when you, when you toss all that aside, it's like what's left. Is those, those relationships with the people that you have worked with. And, and that's kind of why I realized what mattered the most was like the, the people.
+So, I would say that would, that would be another, another one of, of, of running a business is that the, those, those, those relationships and, and the people that you get to meet and, and work with and yeah.
+[00:41:37] Todd: Right. Yeah. Yeah. It got to a point with me very recently where I look back at what I, I did, back in the day. And now everything's on the, what is it, archive.org. It's on the internet
+[00:41:50] Dan: Sure
+[00:41:51] Todd: way back machine
+[00:41:51] Dan: Yeah, yeah.
+[00:41:52] Todd: you know, and, and, lucky to be where I am now at the company that I'm with now because of the transition I made. So, it's, you know, that, that
+[00:42:01] Dan: Yeah
+[00:42:02] Todd: part really, I, I, I really got that part.
+[00:42:06] Dan: Yeah
+[00:42:07] Todd: So, if you had any words of advice for anybody that, and I know a few people that I've talked to recently have become accidental entrepreneurs, what would that be?
+[00:42:18] Dan: Yeah.
+[00:42:18] Todd: First I would say buy, buy the book. And read that book.
+[00:42:23] Dan: I’m glad you said that. Yes, absolutely. That’s step one. Buy the book that I made. Yeah, I, I think, I was going to say for me more so at the beginning of my career, I guess, but writing was like the biggest boost for, for everything. whether that be a blog or, you know, these days, there's a host of ways that you can publish things, but, writing your thoughts and sharing those as you're learning and not, not be afraid to be a voice about a topic, you know?
+I kind of wish I knew that earlier in life, I got to I feel like I’d be doing different things, maybe. So, writing, writing, I think it sounds goofy, but I think writing down things is important
+[00:43:23] Todd: Yup
+[00:43:24] Dan: and so, then a lot of people are probably yeah that's obvious. That's what I do all the time, you know, whatever. But I think not only just writing, but the sharing of that is, is important.
+[00:43:30] Todd: Yup
+[00:43:31] Dan: Right? So, for visibility for you and your business or your project or whatever you're doing, the more you can share about not only the product, but the process, I think is, was valuable to me anyway. So, I, I, I would, that's something I would recommend, a little vague, but, writing, sharing, you know, there's there the other thing I would, I would say is. What would I say? That's a tough one. Why is it so tough?
+You know, like, I think you've gotta be passionate. So here here's one thing you gotta be passionate about what it is, what it is you're doing. I think that the best, I think the best business, not every business, but the best businesses to me are born from something where the people or person is, is supremely passionate about that, that thing.
+And it's not just a wake up in the morning and say, okay, I've got to start a business. So, what's going to make me the most money. And that, and that, and that does happen, and businesses are born that way and some of them may be successful, but I think the best brands and businesses that have a lasting impact, I think are born from, from being very passionate about, about it.
+And so that it shows that that, that it was created because of the people that created it, wanted it to be there and not necessarily with, revenue primarily in mind. So be passionate, write, share, choose a good founder that you love, or you know, that you can stay partnered with for indefinitely. Be, be nice. Be kins.
+Because you never know. That's another thing. I mean, you never know who you're going to run into again, later on in your career. And that's been, that's certainly been true for me. I think that the connections I’ve made with people, whether it be clients or colleagues or whatever over the years, those have always been the kinder you are and the, and this more stand-up person you can be is gonna, you know, it's kar, it goes back like karma, you know.
+It comes back to you, later on, I think so that's important as well. Just be nice.
+[00:46:02] Todd: Yep, yeah, definitely.
+[00:46:05] Dan: And this turned into like a Tony Robbins style thing. Hopefully not, but.
+[00:46:12] Todd: Oh I, I 100 and well I, I should say just 100% agree, because if I say 110%, I have people coming at me. You can't do that, well anyways.
+[00:46:24] Dan: Right?
+[00:46:28] Todd: So, swinging the conversation now to the book, Twenty Bits
+[00:46:35] Dan: Yeah
+[00:46:36] Todd: I've Learned About Making Fonts.
+[00:46:36] Dan: Oh yeah yup.
+[00:46:37] Todd: I was, and, and you've seen some of the, the photos I've taken, and I use actually a vault alarm on the,
+[00:46:46] Dan: yeah, for the podcast
+[00:46:48] Todd: the YouTube channel.
+[00:46:49] Dan: Yeah. Which I love. Yes. Excellent.
+[00:46:51] Todd: also, a big fan of the fonts. I love the font I actually have all of them so
+[00:46:56] Dan: Wow, thanks Todd.
+[00:46:57] Todd: I urge people if you're into fonts, go out and buy them. I'm not a big, you know, I, I, I, over the years, my design has kind of changed. It's kind of, it’s, it’s, it's gone to what really first got me into design was the labels
+[00:47:18] Dan: Yeah
+[00:47:19] Todd: Whether it was from bottles or from cans or from old ads
+[00:47:23] Dan: Packaging stuff. Yeah. Yeah.
+[00:47:26] Todd: Yeah. And that shifted to signage. And then now, you know, and fonts as well. Again, I had another idea of making a font and the people that know me best while the lobster font has already been taken. What are you going to do?
+[00:47:47] Dan: Right. It's called lobster. Yeah, sure. And that's a, that's a pretty popular, popular font too, I guess.
+[00:47:51] Todd: It is. But focusing on the book, what has been, you know, the best part about doing making, making fonts, because you know, you have what five, I believe out now?
+[00:48:04] Dan: Yeah. Yeah. There's five out right now. Yep. That's right. Yeah, no, that's, it's been such a fun journey. I, I, I was like, I've always been interested in fonts too. And, and like you, yeah, packaging and it just any, you know, anytime you see fonts are everywhere, once you realize that it's kind of maddening, right. You start noticing them everywhere. It’s like a curse.
+[00:48:25] Todd: Yes. It is
+[00:48:26] Dan: It’s a curse for people that, you know, like fonts, but, but yeah, so I, I always loved fonts and, and you know, back in this is years and years ago, but I, I made a pixel font, which was my first attempt at creating a font. And at the time that that program that I was using was, I only remember, I think it was Font Lab.
+I'm pretty sure. And they probably made a lot since then, but it was just really difficult to use and, and, you know. People go to school full time to, to learn how to make fonts. So, it, it’s, it definitely can be a very academic practice that requires a lot of skill and education and everything. At the same time, I think there is room, and this is why I wanted to create this book is for designers that already are creating things and making letters.
+And, and I actually mentioned in the book that everyone actually does draw letters. Right? Right, we're all we are write, handwriting, less and less so now. But, you know, that the, the idea of making fonts, it is, it can be accessible to, to any designer, I think. And if I can do it, then, you know, anyone can.
+And so again, it was like one of those things that I, I, as I was learning and discovered, glyphs app specifically was kind of an eye-opener for me, because that was, that was, it made it a lot easier. It, it, the software made much more sense to me. And it's just a, well, really well-made piece of software that, that makes it easier, easier to make fonts than previous ones.
+So, once I started doing that, I'm like, this is great. And why don’t I document this process because there's probably a lot of folks out there like me that want to make a font or are able to, but just are maybe just intimidated by the type community, which can be intimidating or, or the software. And, and, and, and how do I get started?
+And, and I think that there's a lot of room for quirky fonts that aren't necessarily meant to be replacements for something like Helvetica or Times New Roman or something that you would use to, to, in, in a book or a document or something. There's a lot of room for fonts that are used for signage and packaging, like you were saying, and, and logos and things and things with a lot of personality from that specific designer. That, that that's, that was really what got me motivated to, to do that.
+So, it's just been a blast to, to, to realize like, oh, this it's not that difficult, this is possible. I can, I can make fonts that I want to see, you know, based on inspiration from signs or whatever I see. I can, it's fun to, to see that and, and, and have that, that itch to scratch and actually be able to do it and follow through with it and release it and have it be used, you know, people can, can use it.
+It's, that's so satisfying to me. And it's been a real turning point for, for me in terms of design and what I want to create and sort of how I want to pivot, pivot is not the right word, but focus the business forward, you know, sort of, type centric and design centric and, creating different products in different things off of that.
+So, it's, it's, it's been a blast. I mean the whole, and I've been learning a ton and I still have an infinite amount to learn about it because there, there really is, an infinite amount to learn.
+[00:51:50] Todd: Yeah. So, what's the hardest part about font making for you?
+[00:51:54] Dan: Yeah, so there's a couple of things, you know, kerning is, is, is, is tough. It's, it's, it's, it's tedious and there are, you know, ways to make it easier. And I think that that's, it's the most daunting part of it and the most tedious, and it's kind of a pain in the ass, but it's super important. And you know, you're, you're creating these things for designers to use.
+So obviously there's that little pressure to the, got to get this kerning, right or else, you know, people love the call-out bad kerning and that's like a pastime with designers, whether you make fonts or not, you're going to call it out. So, the, the kerning is, is, is tough and I'm learning more and more about that.
+And, but also like our realization that, that some of the stuff is subjective, right. And there's not, there are rules, and you can go to school for creating type, but they're also, there are parts of that are subjective. And, and sometimes I second guess myself on is this curve, the perfect curve for this letter.
+And, and you kind of can go back and forth, like nonstop about that and then realize, wait, it's fine. It's like, I think it's fine right now. So, I'm gonna move on and come back to it. And, but, but yeah, so kerning to answer your question, kerning is definitely one of the hardest parts. And you know, I, I think that that grows exponentially, the larger your font set is the exponent that just grows exponentially, the kerning pairs across weights and styles and, you know, lowercase, uppercase.
+That's why, like I say, in the book to like start with, start with uppercase, start with a display font that's an uppercase. Because that's, that, that reduces the amount of, of, kerning and spacing and all that you have to do. So that's an easy way to get started in. And, and, I'd say that's, that's probably the hardest.
+The other, the other hardest part, I think, is the actual, some of the letters are tough. Right? I think, getting those curves correct on some, some letters is just, is, is just, you can, you can drive yourself crazy, just dragging Bezier curve handles, you know, all day. And it's like, it's like, you know, like I just spent an hour on this S or not even the S, but like the part of the S.
+[00:54:14] Todd: Right.
+[00:54:15] Dan: And now it looks worse than it did an hour ago you know. And you can, that's, that’s just, I think that that's part I’d love to ask the actual, you know, type designers, but I feel like that's probably the curse of a lot of, a lot of folks, second guessing every, every move of every minute move of one of the handles, you know?
+[00:54:38] Todd: Right.
+[00:54:39] Dan: And, and so some, yeah, some of, some of the letters are easier than others. Some are tough. I, you know, yeah. S obviously is, is a tough one. But once, you know, once you have, once you nail it, I just love the fact that fonts building a font is like building these, these components really, right?
+That start to get reused in letters. And once you, once you get started, the momentum sort of exponentially grows. So, you get through faster, you know, oh, okay this is a three, well, I've already done these curves on this B maybe, maybe this is we can reuse those and maybe that's the right. So, I'm always looking for ways to reuse, you know, reuse parts of, of the letters and, and, and that helps to make it whole cohesive as well.
+[00:55:28] Todd: Yeah, so let's go into the book. I just got mine this morning, so I haven't been able to open it. You're literally, literally not able to open it.
+[00:55:37] Dan: Yeah, I know. It got mangled in the mail. Oof.
+[00:55:44] Todd: What can you tell us about the book?
+[00:55:47] Dan: I can, I can tell you that it was, it, it was really fun, it was really fun to write and because it's something new, like, I, I basically spent, like, the quarantine really is the reason this book is out because I spent a lot of it initially, like learning how to, how to make fonts from, from scratch really from, from, from the beginning.
+And there was this sign that I would walk by all the time. And I talk about this in the book, but the Vault Alarm actually that you, that you use for the spot guest. And I, I would walk by, you know, for 20 years or something, I'd walk by this, that's such a cool, it's like this vintage type. I don't know what font it is, and I'd walk by it and be like, I wish there was a font, an entire font made from, you know, this style.
+And maybe I should do that someday. And then finally the quarantine, like everybody we're sitting around trying to think of what things to do. And that was one, I was like, I'm finally gonna do this. And I, I actually was, I had interviewed, the Hood Sisters, Amy and Jen Hood, Hoodzpah Design on the SimpleBits podcast.
+And they, they had mentioned they were making fonts and they mentioned Glyphs this app, and you gotta check out Glyphs. It's really easy to use. And, and so that was a, oh, okay. I'll check that out. And I you know downloaded it and that kind of snowballed and, and then, so, you know, made that font and then made a couple more and just sorta of it just grew and grew.
+And then I realized, okay, I think this would be fun to document this the way I did document the drill experience in this book with the same format, Twenty Bits I Learned, each, each bit is like a little teeny chapter and we can illustrate it the same way we can, basically share like, here's, here's a book about making fonts from someone that had no idea what he was doing a year ago, you know.
+And that's the kind of book that I cause that's, yeah, that's the thing that I would have liked when I first started. Right? And there, there's infinite amount of books about typography and, and making fonts, and you're talking about an severe investment of time to get through some of that stuff. And I just wanted to get to the end goal, which was make this sign I saw into a font that I can download and use.
+And, and that was the goal initially. And so, I, I, I, I thought this would be helpful for folks that, we're in the same boat and they're like, I know design, I know how to draw letters I do it all day. But making that into a font, that's crazy. That's for people with like master's degrees or something, and that's, and that's not the case.
+Right? So, so I'd use that same format as the first book, breaking it down into those 20 bits. Which makes it easy for me to write or easier for me to write. And then self-containment like, it's only gonna be a hundred pages. It's going to be this dimension. That's going to be two colors, offset printed. There's all these constraints that I set on this, which really helped help a lot to just focus the project.
+Right? Because you could say, oh, I want to write a book on, on fonts. And, and they could go in a million different directions. It could be a thousand pages. It could be full color illustrated by somebody. It could, you know, there's a whole bunch of things that I had set these constraints on so that I can, it doesn't seem so crazy an idea to me and I can actually get through it and do it and get printed, you know, in a reasonable amount of time. So that it's still relevant
+[00:59:30] Todd: Yeah
+[00:59:31] Dan:  to where I'm at with the process. But, yeah, that was so that's what I, that's what I did. And, hopefully it's, hopefully it's useful for folks that are interested in this. And, hopefully it's just you know one of many tools that they'll need to, to, and again, that goes back to the idea that I love of, of, of books being more casual, less academic, and it doesn't have to be this definitive, definitive book on the topic.
+It's just something that's a little more fun and helpful. If you're interested in this stuff, I'd love to do more of these too. I don't know about different topics. I don't know what they'd be.
+[01:00:17] Todd: I think maybe, maybe there there's a idea running through my head right now of a collab with doing one of these in lobster rolls.
+[01:00:27] Dan: Yeah, right, exactly. That's what I mean. Yeah. Like Twenty Bits I Learned About Lobster Rolls. Like there you go. I mean, imagine that that'd be a fun book and it'd be fun, visually and actually interesting. Right? Like you, there's a whole bunch of things I could think to that I would want to know from you about this.
+And it makes it palatable. Yeah, I had that. I actually had that thought about like, well, could this be like a, like a publishing platform for people in a way that, that where it, it creates this framework, that's a little, like, less intimidating. And it's like, oh, I could write a book on lobster rolls where I could write a book on, you know, making leather wallets.
+Cause that's what I do or whatever it is
+[01:01:08] Todd: Yeah
+[01:01:09] Dan: that, that has crossed my mind. Like, I don't know. I guess we'll have to see how these books, these books do first.
+[01:01:16] Todd: Yeah
+[01:01:17] Dan: But, but again, I would love, I would love a Todd. Libby book on lobster rolls honestly. And I don't even like to eat lobster. That's how much I that's how much I think it's a good idea.
+I don't even, I don't eat lobster and I, but I still would read that, but I would love that book though, because it, you know. Yeah, anyway.
+[01:01:36] Todd: Yeah, yeah, yeah.
+[01:01:37] Dan: I’ll stop. I see the wheels turning.
+[01:01:43] Todd: Oh, we'll have to talk more about that.
+[01:01:45] Dan: Yeah. There you go.
+[01:01:45] Todd: What’s that?
+ [01:01:45] Dan: Well, I see the wheels turning though. This is good. Yeah.
+[01:01:50] Todd: I, yeah. Well, we'll have to follow up on this. Definitely. I'm all for it. So, you have, we mentioned, I want to mention real quickly cause I'm looking at them right here.
+[01:01:58] Dan: Yeah.
+[01:01:59] Todd: Yeah. The Captain Edward font, you have the Rotundo font, you had a Ship's Whistle. And the, the one that I really liked that I thought about using before I went with Vault Alarm was the Parkly font.
+[01:02:12] Dan: Yeah, yeah. Yes.
+[01:02:13] Todd: That's a really nice font and that was
+[01:02:15] Dan: thank you.
+[01:02:16] Todd: That one really caught my eye, but yeah, they're, they're really great and again, I'll put everything in the show notes for, for those, links and stuff to those fonts.
+[01:02:28] Dan: I appreciate that.
+[01:02:30] Todd: So, you mentioned the SimpleBits Podcast, and it's been a while. Are you going
+[01:02:34] Dan: Yeah
+[01:02:35] Todd: to be picking that up again?
+[01:02:38] Dan: Yes. Yes. That's I’m glad you asked. Yes. I definitely want to reboot that again. And I, for some reason during the pandemic, I, that, I don't know, there's something about podcasting that just seemed weird for me.
+There's no reason for it. It's actually perfectly fine thing to do because you've got, you can do this remotely and it's, I don't know why I don't know what I was thinking. But for whatever reason, I do want to bring it back, now actually, and, and start, start a new and, we've got some plans actually to do that.
+one of the things I'd love to do is, is like a game show, maybe format with sort of like, wait, wait, don't tell me, but for design.
+[01:03:16] Todd: Yup
+[01:03:17] Dan: So, you can do like have a, have a, have a couple of guests on and, and, and have some fun there, but, and also get back to interviewing folks and all that.
+[01:03:25] Todd: Yup
+[01:03:26] Dan: Yeah. So hopefully soon, hopefully soon.
+[01:03:30] Todd: I, I, I really liked like the, what you had there and, and the puppet. So,
+[01:03:36] Dan:  The puppet yeah
+[01:03:38] Todd: You know, the puppet— [indistinct chatter]
+[01:03:39] Dan:  You know I’d be sick of the puppet; I can never tell I love it, but who knows.
+[01:03:46] Todd: Oh, I love it. I love it. I think you should stay, stick with it, you know, if anybody's not sure I would go and, subscribe to the podcast and I think you had a video out, didn’t you?
+[01:04:00] Dan: Yeah. I've made some little videos here and there, you know, with the puppet, I mean, it would be the reason, my ideal, if I had a set if I could set it up where I'm actually the puppet the entire time we do like a video podcast, I'd be the puppet the entire time.
+That would be amazing. But I'll tell you one thing I have learned, and this could be another book, maybe 20 bits I learned about puppeteering, but like, it's, it’s extremely physically demanding to, to, to properly puppet. And a lot of it comes down to the position you have to be in to be out of the frame, but it also have the puppet in the proper frame.
+And then you have to have like a monitor system, so you can actually see what you're doing. So, I I've done ones where I'm really uncomfortably contorted on the floor, like trying to, I can only do it for like a minute or something. And I would do like a few like teaser videos, you know, or, but in a perfect world, both guests would be puppets and that would be incredible.
+[01:05:07] Todd: Yeah. Yeah. No, I
+[01:05:08] Dan: I’m glad you like it. You inspired me to keep it going so.
+[01:05:11] Todd: Well, the content. I love the content. You know, you're talking about design, which still I mean, I'm not in much into design anymore as I used to be, but it's still, like you were talking about with CSS. You still have that love for it.
+[01:05:31] Dan: yeah
+[01:05:32] Todd: And I still have that love for design. So, yeah. So, we're getting close to, to time here. So, I have three questions I ask all my guests, and why don't we get to those questions right now?
+[01:05:44] Dan: Right.
+[01:05:45] Todd: First one is what about the web these days excites you and keeps you excited in what you do?
+[01:05:54] Dan: Wow. Yeah, that's a good question.
+[01:05:57] Todd: Or it could be design as well.
+[01:05:59] Dan: Yeah, well, yeah, with the web, I think it's, it's I want to say it's probably the same thing that that got me excited about it in the first place. I think it's the, the ability to share immediately, you know, with whoever, wherever. I still think that's like something that's amazing. And maybe it's like being from that generation that we're, we're an interesting generation, cause we, we remember what life was like before the web and then we grew you know, and now we, now we, now we know what it's like with, with the web.
+And whereas, whereas like I think about my kids, like they've just grown up and it's just been there the whole time. And so maybe it's, it's, it's second nature. Right? And maybe it's taken for granted or hopefully not, but, but I, I think I'm old enough where I still appreciate the fact that my God, we're communicating this way and it's immediate.
+And I love the idea that it democratizes like creative, creativity and that people can be creative and, and literally anybody can, you know, have their creation seen and appreciated. I think that's something like growing up, it was always, it seems like this other world that I would just be, observing, you know, like whether it be musicians or publishing, but even, but even book publishing when I first got started, like that was the barrier to entry was so much greater than it is now.
+So, I think that's, that's what really gets me excited is that, you know, people and people are getting discovered every day, just, just on, even on social media or whatever, it just it's, it's so much easier to, to be seen, to have your voice heard. I guess that's one way of looking at it. Yeah.
+[01:07:57] Todd: Yeah, so if there is one thing that you could change about the web that we know today, what would that be?
+[01:08:08] Dan: Ooh, good question, Todd. I do wish that, but I'm going to sound like an old guy here I do, which is accurate, but I do wish that it was easier to build websites. I'll say it. I, I, I was thinking about this the other day. Like I, one of the things that got me excited too, early on was that you didn't really need to be specialized at all when you're creating something.
+And it certainly was like far more duct tape than it is now. I think it still is kind of duct-taped actually, maybe that's, that's just the nature of what the web is, but, but, you know, when I first started there was like, you know, webmaster was like a thing, and it was like this, the one person right, on a team that would be responsible for all of everything.
+And that's kinda, that was kind of fun. And, you had more control and it, you at least understood, granted designing for the web was a big pain in the ass back then, of course, but, but we're capable of so much more now obviously, but for people starting out, like, is it, it must be intimidating. Like, you can't just be like, I just want to make web websites, you know, it's like, you—
+Are you a front end developer? Are you back end? You, you know, are you JavaScript? Are you, you know, there's, there's a lot more that goes into creating websites and special specialization, which is needed for all, everything that we're doing. But I just wish it was, I just wish that it was easier to create independently things on the web, I guess.
+And again, that probably sounded like an old curmudgeon in the old days are better, you know, which they weren't really, I mean, obviously like
+[01:10:02] Todd: Yeah
+[01:11:03] Dan: what we had to deal with was just absurd with the browser issues and that kind of thing. And then, then some, so to, to, to counterpoint what I just said, it is easier to create for the web now, but I think that the industry in general is certainly different.
+The professional side of making websites is, is far more specialized and, and, but I wish there was a, I just wish it was easier. I just feel like the technology, I wish the technology was simpler that I don't know. I don't know where I'm going with that, but I'll leave it at that. I just wish it was easier.
+[01:10:40] Todd: Yeah. no, that was, yeah. You know, we had back in the day we had FTP and now
+[01:10:47] Dan: Yeah
+[01:10:48] Todd: You can push whatever to GitHub and then
+[01:10:53] Dan: Exactly.
+[01:10:54] Todd: it goes on your, on your Netlify, you know, account and, and boom. It's on, on the web.
+[01:11:00] Dan: Exactly. Like there wasn't—
+[01:11:01] Todd: You weren’t—
+[01:11:00] Dan: there was like, it was just, there was fewer avenues to get something published, I think back then.
+So it was, it was easier to know what you were up against. And I feel like now, if someone just starting out now start mentioning, well, what's GitHub and what's, you know, what, what’s I dunno, I'm trying to think of like, what's NPM and what do I have to do this command line stuff? Like there's just so many, it's overwhelming.
+Or to me it looks like it would be overwhelming, but for someone, for someone coming in, I just wonder, I always have wondered for a while. I wondered, like if, if will there be a level of abstraction soon that, that, that, and you sort of see that with some of the, like I'm thinking of like web flow and some other tools where they are abstracting the, the, all the front-end goodies behind something that's a lot easier to, to handle.
+But I wonder if there's a, a non, non-capitalist way of looking at that where it’s, is there a web standard that could emerge that, that is a level above what the current stuff is, and for folks that just want to simply create something, and I don't know. I don't know where I'm going with that, Todd, but I just wish it was easier for, for, for folks that’s all.
+[01:12:29] Todd: Yeah, there’s, there’s, there’s such a wide variety of choices.
+[01:12:34] Dan: Yeah
+[01:12:35] Todd: And I look at, I look at, oh, I do it a certain way now with my site that I like, you know, I use Eleventy, I got my, you know, everything in on GitHub and that pushes out to Netlify. That works for me. That's, that's, I'm, I'm fine with that.
+[01:12:55] Dan: Yeah
+[01:12:56] Todd: You know, just all the tools that I see coming out. It's, it's oh, this one's faster but this one’s— [indistinct chatter]
+[01:13:04] Dan: Yeah. The tools exactly, it's overwhelming to keep up with, you know, What I should be using to do the job that I do. Right? And that, that as a somewhat outsider to this now, which is weird, I, I, I feel like that, yeah, that would be intimidating. I just wouldn't want someone turned off from, you know, web development that, that might be really talented and qualified to do it just because things are moving so fast that, it's, it’s a turnoff, you know.
+At the same time, you can't, you can't knock the speed at which things are changing and, and that's, that's good too. So, I, I, I get it. But, but it, it, it just, should be, hopefully it should be easier. Yeah.
+[01:13:52] Todd: So last question.
+[01:13:54] Dan: Yeah.
+[01:13:55] Todd: Is your favorite part of the front-end, front-end development, or, you know, your favorite part of design that you've really liked the most or, you know, the, the thing that you nerd out over.
+[01:14:10] Dan: Ooh. Yeah. I like this one. Okay. Right. Which is appropriate for the title of this podcast. Right?
+[01:14:17] Todd: Yes
+[01:14:18] Dan: Nerdery I mean, geez, I nerd about, out about so much, I'm trying to think of what would I choose?
+I think I, I, you know, and I don't do this a ton these days, but I really miss like that fresh, you open up a new, you know, a new text editor tab, and you're literally building that thing from, from scratch. I just loved that, those, that first few hours of, of building a new web page, I'm thinking, I'm thinking of like a standalone, like page, not like template or component or something, which they literally, like, I've got to create this one page. That just to me, it was like, it's so exhilarating.
+Like it was that it was way back then when I was first learning and it still is to me today, the fact that you can take like just HTML and, and CSS and build something like that, that I don't know, it was just so fun. And you still can, that's the thing is like I, you don't need all the things that, that we use today, the tools and the, and that kind of thing.
+And I just, like, I would love to get back to just creating HTML and CSS pages. I would love that would be my ideal job now, actually.
+[01:15:40] Todd: Yeah.
+[01:16:41] Dan:  It's just like somewhat like, you know what I mean? Like it's, they, they just send you a very, you know, simple, simple static mock, and I would just turn that into a webpage.
+That would be like an amazing job to me where I didn't need to use any, like, there'd be no command line required, no JavaScript required. I'm literally just marking up the page and styling it with CSS to look like a, that that would be my ideal job. Is anyone hiring? Anyone do that anymore? Like, that’s the thing.
+[01:16:08] Todd: I, I don't know. I don't know.
+[01:16:10] Dan: Without a frame where no frame, no, nothing. Just like, and I literally, I, you know, I wouldn't need a book to open up beside me. I wouldn't need anything. It would just be like, I'm just coding it from, from memory and, is I miss that immensely actually, that, cause that's the part, that's that creative part of that's the creative part of web development that I miss, you know? I really do.
+[01:16:38] Todd: Yeah. It takes me back to the days of GeoCities and Angelfire and all those sites.
+[01:16:45] Dan: Yeah, yeah, absolutely.
+[01:16:48] Todd: I wish it was that easy. You just, you code what you're going to code and click that publish button and
+[01:16:56] Dan: Yep.
+[01:16:57] Todd: You were, you were done.
+[01:16:58] Dan: Done. Yeah, here it is. And there's the information for people, you know?
+[01:17:03] Todd: Yeah. So, I'd like to close out the podcast with my guests, letting the listeners know what they currently have going on and where people can find you. So, the floor is yours.
+[01:17:16] Dan: Hey, thanks, Todd. Yeah. So, I, you know, currently my big push this month is, is the new book. So that's, 20 bits I learned about making fonts.
+It just self-published. It's it we just arrived. The books just arrive. We're shipping them now. So that's been a focus there. and the other focus is, you know, continuing to make fonts. So, we've got some things in the works there. Getting the podcast going again. I'm glad you mentioned that, actually. That was something I was gonna mention.
+And, growing, you know, just growing SimpleBits as a, as a business again, which has been really to kind of double back and focus on that. And, and, yeah, so folks can find me SimpleBits.com is, is, is the main site in the, in the shop where you get the fonts and t-shirts and all that stuff.
+And SimpleBits on Twitter and SimpleBits on an Instagram. If your algorithm even wants to show me in there, but, go directly to my profile and you'll see it. But, yeah, and that's where you can find me. And I'd love if you did, you know, reach out. I'd love to hear from folks. If you, if you pick up the book or a font or anything, just, you know, give me a shout, give Todd a shout.
+Get him, get him motivated on this book on the lobster rolls.
+[01:18:31] Todd: Yeah, definitely. Definitely. Well, Dan, thank you so much for coming on today. I had a great time, talking and chatting with you. It was, it was great.
+[01:18:43] Dan: Oh, thanks so much. Thanks for having me, Todd. It's a pleasure and, love what you're doing with it and, and all your work and, and, and I, I wish you the best of luck with moving to the west coast and yeah.
+[01:18:56] Todd: Yeah, it's, it’s going to be, it's going to be different, but
+[01:18:58] Dan: Yeah
+[01:18:59] Todd: You know, it's just a new chapter in that autobiography that will be coming about 20 years from now.
+[01:19:07] Dan: There you go. Chapter indeed. It's awesome. But yeah, thanks so much for having me on.
+[01:19:14] Todd: Yeah, thank you. And I, I appreciate your time today, and I want to thank the listeners for tuning into the Front End Nerdery podcast.
+I'll be back next month with a new guest new conversation about front end design development and whatever else comes up. If you would please rate this podcast on your podcast device of choice, like, subscribe and watch on the Front End Nerdery YouTube channel as well. Where I use the Vault Alarm font provided by Dan himself, links to transcripts and show notes will be there.
+I'm Todd Libby, and this has been the Front End Nerdery podcast. Thanks. And we'll see you next time.

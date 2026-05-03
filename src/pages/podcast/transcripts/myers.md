@@ -1,0 +1,257 @@
+---
+title: Ben Myers
+description: My Interview with Ben Myers
+date: 2022-06-10
+layout: layouts/post.njk
+---
+
+## S2:E7
+
+[00:00:00] Todd Libby: Welcome to the Front End Nerdery Podcast, a podcast about front end development and design. I'm your host Todd Libby. My guest today is software engineer, teacher, and you can catch him on Twitch and a tabletop RPG fanatic, from what I understand, Ben Myers. Ben, how are you doing today?
+[00:00:22] Ben Myers: Howdy, Todd. I'm doing great. Just to preempt any questions out there from the audience, if you're ever curious how many, tabletop role playing games is too many for one person at one time, the answer is in fact. four maybe fewer.
+Maybe, maybe just, maybe just one game is enough, but I'm currently in four games and it's a bit much.
+[00:00:45] Todd: Yeah. yeah. I used to play a lot and if I remember correctly I had about three or four going at one time too. So yeah, it can be pretty it can be pretty busy. So, getting into, you know, would you tell the listeners a little bit about yourself?
+[00:01:02] Ben: Yeah, howdy. So, I'm Ben, I've been in the industry for about three and a half years now, the, the front end industry that is. And I'm currently a software engineer at Microsoft.
+I'm working on the developer documentation platform. And if you've seen me around already, it's because I am a huge proponent of web accessibility. And I, I love putting resources out into the world around that. My current big thing is I do a weekly Twitch show called Some Antics. Todd, you were actually my second ever guest on that show a year ago.
+[00:01:34] Todd: Yes
+[00:01:34] Ben: Coming up on the one year anniversary of, of the show.
+[00:01:37] But every week I bring on guests from around the web development industry to teach me something about building great user experiences in a hands on way. Typically, with a focus on accessibility and core web technologies. Can you tell I've rehearsed that pitch quite a bit? But yeah, it's a delightful, delightful show.
+You can find it twitch.tv/SomeAnticsDev. I'll be sure to make sure that Todd has that in the show notes, but that's kind of the big thing I do. I also blog and like about accessibility that tends to be a lot less frequent. But yeah, so that's who I am and, and kind of how folks might have seen me around already.
+[00:02:14] Todd: Nice. Excellent. So, let's hop right into the questions here. My first question that I ask all my guess is how did you get started in your web development journey?
+[00:02:22] Ben: Oh, goodness. So, Todd, I, I am the ripe old age of 25. Ripe.
+[00:02:30] Todd: Yes
+[00:02:30] Ben: Truly, truly I am in my ripeness. But what this means is when I grew up was when home computers were first starting to be a, a thing, like just, just on that precipice there.
+My dad actually he when he was working on his doctorate thesis, he was also kind of my, my babysitter in those moments. And, and the way he would keep me entertained was by giving me like spare keyboards and stuff like that, that I could just slam my hands into and pretend I was, I was typing.
+So, I was indoctrinated into the computer world from a, a very early age. And I don't know, I, I think sometimes it's a lot easier to see the trajectory of your life in retrospect than it is when you're going through it. Because I built my first website back in like fourth or fifth grade. I did not have my parents’ permission.
+I did not ask. And yeah, it was, it was just a, I, I found like a website builder online, put a, a really kooky, cheesy homepage up there. Which thankfully the internet has scrubbed from existence because I don't, I don't know if I want people finding what fourth grade Ben thought was funny. And, and yet, you know, I got to college, and I was completely undecided.
+I had such analysis paralysis around just, what am I going to do? What career do I want? Despite the fact that like, you know, you look biographically, and every single signal is pointing me towards like, doing something with computers or doing something in like digi, like disability, advocacy space and stuff like that.
+I was undecided. I eventually tried my hand at computer science. As a degree realized it was probably gonna be the best fit for me. Got my degree in that. And then I interned with USAA, the insurance and, and banking provider. I was over on the, the banking side. And honestly, the fact that I ended up in web development was mostly at the whim of my manager at that point.
+I was like, you know what? I, like, I feel like I have such a, a wide potential ahead of me. I don't know what aspects of, you know, softer development there even are let alone what, what I would wanna do. And she was like, we're gonna try you in web development. And lo and behold, that ended up just being an absolute passion.
+So that is, I think the, the roundabout path that like looking back, it's like incredibly obvious that I would end up here, but going through it, not nearly so obvious.
+[00:04:45] Todd: Yeah, I think, I think that happens to a lot of people that, that, that makes me think back to when I got started, I got started many, many moons ago.
+We'll leave it at that. I'm long in the tooth.
+[00:04:58] Ben: At the ripe old age of 26. I, understand.
+[00:04:59] Todd: Yeah, absolutely. absolutely. I turned 26 pretty soon for the 27th time. I think right around there anyways. I started on a Commodore 64, just typing in, you know, programming and basic. I learned basic at an early age. I, my parents didn't know what I was doing either, so. Yeah, that's a great, great you know, origin story.
+So, let's talk accessibility
+[00:05:25] Ben: Yeah.
+[00:05:25] Todd: Cause that's why I have you here. What are we seeing these days, as far as you're concerned with accessibility and issues that you come across a lot?
+[00:05:36] Ben: That is an interesting question. I think we are still very much so figuring out how to handle dynamic web applications accessibly.
+I, I think we found through user testing and through just a lot of like practice and, and teaching as the accessibility and web dev community. I think we have landed on some best practices, but dynamic web applications feels to me like still kind of an on unsolved space there. That, that seems to be kind of a big one.
+The, the other thing is I think keeping pace with, you know, change. I, so I'm still new to the, I, I realize I, I, I interrupted my own thought there, but like, I am so new to the web dev space that like HTML five is all I've known, right?
+[00:06:26] Todd: Right.
+[00:06:26] Ben: And HTML five is very stable, right? And, and folks are continuing to expand upon that, but it's still a stable spec and nevertheless, the expansion is still something that we need to keep up with.
+And I, I think that mostly comes from, not all of HTML five was like directly, totally 100% supported in browsers immediately. Now browsers are adding more and more support for some of those specs and those elements. Assistive technology is getting better. And what that means is that the best patterns, even five years ago aren't necessarily the same.
+Right. And so how do we communicate? Not just in this unsolved space of dynamic web applications, but in this, still mutating kind of conglomerate of an experience that the web is. The web is a blob that is trudging forward. Trudging at light speed it seems.
+[00:07:22] Todd: Yep
+[00:07:22] Ben: But just keeping pace with that and figuring out how do we continually update our guidance so that the, the stuff that was true or years ago can be supplanted by the stuff that is true now.
+[00:07:32] Todd: Yeah, definitely. Definitely agree with you there.
+So, I know you write a lot about, and you, you on your, on your Twitch stream, on your Twitch channel, you talk about it a lot and that's semantics.
+[00:07:48] Ben: Yes.
+[00:07:49] Todd: And semantic, HTML. One of your articles, the definition was, or the description list
+[00:07:55] Ben: [inaudible]
+[00:07:55] Todd: article.
+[00:07:56] Ben: Yep.
+[00:07:57] Todd: Yeah. That was. I, I passed that along to a few people as a reference.
+And they found it very useful. I find it very useful as a, you know, just so I can go back and go, oh, I need to, you know, I've run into a couple situations. Let's say that I've gone back and have said, okay, I know Ben's articles out there. Why aren't I compare what I'm looking at too can I use this in your article to use in what I'm looking at and, you know, a couple times I've had to. So, I wanna thank you for that for writing that first of all. And second of all, it's, you know, very handy. I will also put that link into, into the show notes.
+My question is what is the inspiration behind some of the stuff that you either, you know, you, you wanna do on your, on your Twitch channel
+[00:08:50] Ben: Yeah.
+[00:08:50] Todd:  or write, that, you know, regarding semantic HTML?
+[00:08:55] Ben: So first of all, thank you so much for the, the kind words about the DL post is maybe my favorite thing I've ever written. And I was blown away by just how many people took a lot away from that post. Right. And that, that post actually represents in some ways, some of the things I was just talking about with how things are still changing.
+[00:09:13] Todd: Yep.
+[00:09:13] Ben: Because one of the things I just casually mentioned in there is like, oh, you can wrap DT and DD tags and divs now.
+Which is very new. That is like relative to, I wanna say like 2018 was when that guidance was like, first kind of like updated that you
+[00:09:28] Todd: Yep
+[00:09:28] Ben: You could do that. So that is, is very reasonable for web developers to have learned old truths about description lists that are now out of date and that like this updated guidance can make their lives so much easier.
+I think in general we can benefit a lot from there's this kind of mantra that you see on like Twitter and stuff, which is quote using the platform. And it's something that I agree a lot with. I think that you know, browser developers are really, really good at their job. They're really good at having put forth baseline, default, like accessible experiences, usable experiences.
+And we would save our developers a lot of time and energy. We would save a whole lot of code that we don't need to send over if we would just leverage the platform more,
+[00:10:14] Todd: Yeah
+[00:10:14] Ben: leverage that consistency, so that folks have experiences across the same pages. So, the core web technologies, I think, are something that it feels basic.
+It feels to me like this should be 101 material. But it isn't right.
+[00:10:31] Todd: Yeah
+[00:10:31] Ben: Folks are taught the fundamental syntax of HTML and CSS, but maybe not these days equipped with the skills to use that use those tags and those styles deftly.
+[00:10:42] Todd: Yeah
+[00:10:42] Ben: And certainly not in any way that allows them to refresh their guidance and figure out like what, what has changed since they first learned things.
+So, I really love semantics as, as a foundation, not just because, you know, semantics will, for the most part, provide a default accessible experience. But, but also because it, it feels like it's something that we still have to learn. We as an industry still have to, you know, just dive deep on. And that is, that is something that I really like diving into.
+I, I think it's a bit of a fun technical problem. And I'd love to tell a, a quick story, which is, I guess, continuing my, my origin story here. Which is when I first came to web development. My first job was actually as a React developer
+[00:11:28] Todd: Okay
+[00:11:28] Ben: and when like, and, and my job to, to train me in this paid for me to take a well-known popular video course, I'm not gonna name the course because this isn't about pointing fingers.
+[00:11:38] Todd: Right
+[00:11:38] Ben: I think this is emblematic of a, a bigger experience I've had, which is yeah, I took this course learned, React. Started applying what I learned in the course into the work that I was doing. A year later, I had the opportunity to revisit that course as I started to volunteer with our company's onboarding process for college hires and people who would just change careers into web development.
+So, folks who did not know web development, my job was for, to, for 12 weeks to, to be one of the people that mentored them in web development best practices. And I realized in that year that a lot of things I had just taken for granted from this course. Were blisteringly wrong. The one that I point to as the emblematic example there is that the course instructor consistently recommended clickable divs, like adding click handlers to divs.
+And, you know, in the year, since I had first taken that course, I had learned that like, obviously, there's almost never a, a case to do that. Right. There's almost never a, a reason to attach a click handler to a div, because usually what you want is a button that has so much experience for you out of the box.
+And so that, like out of spite, I wrote the first technical blog post I had written, which was which I called How parentheses not to build a button. So how not to build a button.
+[00:12:59] Todd: Yeah
+[00:12:59] Ben: And I went through the same steps, but like, how would you take a clickable div and, and like MacGyver it into a button and then being like, okay, but the button tag is still far easier than, than all of this.
+I just, I think that a lot of times in, in the industry we take for granted just how influenced newcomers and beginners can be by, you know, the first tutorials they take and those tutorials likely are not gonna be explicitly web accessibility tutorials. Right. They almost definitely aren't, they're usually introduction to React, but those folks don't have the context to know any better.
+They don't have enough information to be able to approach the course critically. And, and so that means that they're likely to interpret just about anything the instructor does as more or less an industry standard. And that includes things like clickable divs. And so, what's really inspired me to do kind of the accessibility, advocacy and education work I do is I wanna prove, like I wanna put forth into the world a, that accessibility is important.
+B, that it's actually fairly approachable, right? Like that you can start incorporating this stuff and showing like live demos as to like how this meaningfully changes the experience for disabled users. To kind of combat the sense that you know, it's maybe a tack on thing or that you don't need to worry about it or that it's hard. That really gets to the heart of why I'm doing what I'm doing.
+[00:14:23] Todd: Yeah. Do you think, now that you mentioned the, the education piece. Do you think that, and, and I just talked about this the day, as a matter of fact, do you think there is a lack of education in boot camps or higher education as far as accessibility goes?
+[00:14:46] Ben: Definitely. I have been fortunate enough to talk to several people who have, you know, are, are, are early in their careers who have gone through boot camps.
+And consistently what I hear is either the boot camps or the higher education program did not mention a word about it. Or they actively recommended anti patterns and worst practices. Or they brushed right past it and said, and you'll want to learn accessibility because that's important for the job without actually saying anything about what that means or how to like, without setting up a framework for learning any of that.
+[00:15:20] Todd: Right, right.
+[00:15:21] Ben: Yeah. And I think that really, really sets the tone for what newcomers are gonna prioritize. We, I, I think anyone in the educator space has a responsibility to guide people in positive directions. Like you, you, I don't think every course instructor is going to be an accessibility expert and is gonna recommend all the accessibility best practices and make this like a, a very special episode about accessibility.
+But I do think it is the responsibility of educators to at least not actively recommend bad practices. Right?
+[00:15:51] Todd: Yeah
+[00:15:51] Ben: To at least be mindful of that. And, and to like call that out and say like, hey, maybe while that's not the focus of this course, here are some resources to learn more stuff like that. And a lot of times that comes down to very subtle things.
+There are some streamers I watch like Jason Lengstorf who hosts the show Learn with Jason, which you and I are both LWJ alums.
+[00:16:12] Todd: Yep
+[00:16:12] Ben: He, one of the things I've noticed is anytime as part of his streams, he puts an image on the page. He immediately fills it with some sort of alt.
+[00:16:20] Todd: Yeah
+[00:16:20] Ben: Now, usually that alt text is not, you know, the most florid well thought out alt text. It's usually maybe a couple of words, right. Because that's not the focus of the stream, but he still puts it there. He still demonstrates that it deserves to be there. Right. And it's like not the worst alt text in the world.
+[00:16:41] Todd: Yeah. And you know, I, I actually spoke with somebody, what was it maybe the end of last week or the beginning of this week? We were talking about, you know, boot camps and this person actually graduated from one recently and said, well, the only thing they told us about accessibility was you have to have alt text in images and that was it. And we moved right on.
+And that, that instance, and I've heard of a couple other instances where one bootcamp and maybe one other one institute of higher learning was teaching accessibility. And that was it. There was nothing else. I've not heard very much of, of that either. So yeah, there, there's a definitely a lot of lacking as far as education for accessibility goes, other than, you know, you, you, you and I see what maybe one or two sites out there that, you know, they offer maybe a little more than one or two, but they offer some sort of accessibility training, web aim for instance,
+[00:17:56] Ben:  Yeah
+[00:17:56] Todd: or DQ. But other than that, you don't see much.
+[00:18:00] Ben: Yeah, and a big part of it is those things are seen as separate programs, right?
+[00:18:04] Todd: Yep
+[00:18:04] Ben: They are detached from core education about what it means to do web development.
+[00:18:09] Todd: Yeah
+[00:18:09] Ben: When I was, yeah, when I was on when I was helping with the onboarding program at my old role. This was one of the things of like, we initially started with doing like a quote unquote accessibility week in like part of that kind of informal quasi, like internal bootcamp, that thing that we were doing. And what we ultimately found was the only reason we were doing it as like segmented off week was because we needed to ensure the availability of the instructors like myself who were knowledgeable about it, so that we could like actually pop in and provide guidance.
+But the takeaway that people were having was that accessibility was its own kind of separate thing. And that you know, is the responsibility of the person who does the accessibility and that it was kind of seen as this optional thing. Whereas I think if accessibility is going to get better as an industry, we need to like more like frequently integrate it with just generic web development training, I think.
+[00:19:08] Todd: Yeah, definitely. So I was, you know coming up on our, when we were to get, get together, I came across some interesting stuff that I wanted to share with you. So, I, I ran into a, a div that had text that was in a paragraph tag. That used a span tag. So, you had your div, you had your paragraph and then you had your span and then the text.
+And in the span, there was an inline styling of no, no, no, no, I'm sorry. In the span, there was an "I" tag. Okay. That, that was just for that one word. The rest of it was in regular, you know, regular text and then everything else closed. So that kind of made my that kinda, that kind of made me tear up a little bit when I saw that
+And the other, the other instance, which even at my ripe old age of 26 I learned that so I've never come across this and I'm surprised I never have to my knowledge that in a section tag, you can have Aria labeled by. And I just learned that yesterday, your yesterday, the day before for that matter.
+So, I just wanted to share those with you. What do you think, and with me, it makes, you know, I, I have my idea book. When I see stuff like that, I write down, okay, maybe an article or, you know, a presentation or something. What do you think when you see stuff like this, either every day or, you know, just whatever, what do you think?
+And, and should we as educators, you know, people that, you know, either, you know, whether it be in a bootcamp, whether it be a university, whether it be just, you know, on Twitch for that matter or a podcast. What do you think we should do as far as getting the word out to people that, you know yeah, React, Vue, Angular they're great. But HTML and CSS, they're, they're great too. Especially when we see people that get discouraged or frustrated at CSS. So how do, how do we bring those people in, I guess is my question and how do we educate them further?
+[00:21:58] Ben: Yeah, I so never underestimate the power of a vibrant, story. I, I think one of the most helpful things sometimes is showing what the actual experience is for end users.
+It's, it's kind of funny that, like, we talk about semantic HTML, because I think the term semantics sometimes carries with it a bit of dismissiveness outside of web dev spaces, right? Like, oh, it's all just semantics.
+[00:22:26] Todd: Yeah
+[00:22:26] Ben: And I think some people take that a attitude with them when they're thinking about semantic markup.
+Right. We're, we're talking about something that's very academic and philosophical. Right. But at the end of the day, like I just need an element. Right.
+[00:22:38] Todd: Yeah
+[00:22:38] Ben: Like a lot of this stuff, the, the things about good HTML and CSS techniques can sometimes feel very abstract and very academic until you, for instance, pull up a screen reader and you show the measurable differences.
+[00:22:53] Todd: Yeah
+[00:22:53] Ben:  And you go, hey, this is the experience that we've got right now.
+Notice how we're kind of leaving the user to their own devices in this moment. Right. We're not being helpful. In fact, we're being actively like counterproductive. Oh, because we, we, because we removed this element the user's keyboard focus is now back at the beginning of the page, right? This is inconvenient at nicest, right?
+Showing the, the actual user experience that results from the work that we do I think makes that a lot more tangible for folks. It takes it out of the realm of the abstract and the academic into the realm of creating usable user interfaces, which at its heart is the role of a web developer.
+Right? You can be like my opinion is that when you are hired as a web developer, or any interface developer, your job is not slinging around JavaScript. It's not slinging around React or the framework dujour, it's not even slinging around HTML or CSS. Like your job is creating a user interface that people can use, whatever that means, right.
+That usability is at the core. Your job is to make sure that the user can do what it is they need to do. And that is a comfortable experience. I mean, accessibility falls into that as well. Right. And that's why accessibility is your job as well, right? Is because your job is usability. That is what you were in the business of and everything else, HTML, CSS, JavaScript, framework of the day those are tools to help you get there.
+And I, I think most front end developers I've seen get that to some degree, right? They, they might have their favorite camps to fall in fall into their, their favorite tools to use. And I'll admit I love me some elevnty and I will defend it till the day I die.
+I love me my tools too. Right.
+[00:24:44] Todd: Yep
+[00:24:44] Ben: But at the end of the day, I think most front end developers actually really want to have an experience like that folks can use. No one wants to know that folks can't use your experience. And so, by showing actionable demos of like, here's how the user experience is for real people.
+And here's how we could make it better. I think makes it very visceral
+[00:25:06] Todd: Yeah
+[00:25:06] Ben: in a way that I, I think, resonates with folks. And so that was kind of what I was trying to do for instance, with the DL post is like
+[00:25:15] Todd: Right
+[00:25:15] Ben: this is a pattern that you do a lot, right. But the way that you're structuring this very likely isn't communicating as much information or is isn't providing as much ease of use to your users, but here's an element that could make that so much easier for you. Right?
+Here, here's a thing that could provide an experience that folks can actually use and use more deftly. And so that I think is, is kind of the, the big thing that I would say. It's not about like shaming bad practices there, but about demonstrating hey, we're, we're all on this like positive trend line, right?
+That's the goal is we all wanna be on this positive trend line of increasing usability. Here's how we could take some actionable steps to make this more usable for real people.
+[00:25:57] Todd: Right. Yeah. Definitely agree with you there. So, you know, we have tons and tons of sites, all, you know, teaching HTML, CSS, JavaScript, on and on and on that are on the internet. Some are, you know, let's say three to six months old. Some are, you know, as old as I am, maybe older. Right? How do we,
+[00:26:32] Ben: 26, of course.
+[00:26:32] Todd: 26, of course, yes. How do we now, my opinionated state, I say, you know, there's a few out there that you probably don't want to refer to, or if you refer to them, refer to them, but you know, don't fall into a rabbit hole as far as, you know, the infor, the outdated information on them. How do we, you know, how do we say to, to people that are learning, you know, here's, here's where you want to go, let's just say for instance, MDN, that's very popular of course, Mozilla developer network.
+Go here, you know, learn, you know, learn your basics there. And then here's another list here's to follow. Is there a list that you usually would refer people to, or do you just say, you know, go out there and learn?
+Cause I've done both in the past now I kind of say. You know, definitely Mozilla developer network free code camp for that matter.
+[00:27:49] Ben: Yeah
+[00:27:49] Todd: So, what's your pre, preference?
+[00:27:51] Ben: I think it depends a lot on who we're talking to. Right?
+[00:27:55] Todd: Right
+[00:27:56] Ben: Because for, like part of me wants to say like, oh, recommend people to like, look at the specs. Right.
+[00:28:05] Todd: Right
+[00:28:05] Ben: But you don't recommend the specs to everyone. You shouldn't because while the specs are good, they're very good. They, they're, they're often very inscrutable if you don't have the context of the years of work that led into them and
+[00:28:18] Todd: Yes
+[00:28:18] Ben: into why they they're, they word things the way they do and stuff like that.
+And that means that you get a whole bunch of jargon and not a whole lot of takeaways. Right. So, I might point someone to the specs if I know that, you know, they've been this isn't their first rodeo. They've been at this for a while and they need to get to the sorts of truth,
+[00:28:33] Todd: Yeah
+[00:28:33] Ben: but, you know, it's, it's not something I would recommend for everyone.
+I do love MDN as a general resource. I, I think that there are very few times where MDN isn’t the right place to go, you know, like it's, it's generally helpful for generally anyone who, who needs it. So, I love MDN. I also have to give a shout out to WebAim, which we've talked about a bit before.
+[00:28:56] Todd: Yep
+[00:28:56] Ben: When I was first learning accessibility. I fell down the WebAim rabbit hole, and I am eternally grateful to that team
+[00:29:01] Todd: Yeah
+[00:29:01] Ben: because it's just a fantastic resource. I really enjoy the works of Adrian Roselli because one of the things I like is he focuses on user tested examples.
+[00:29:13] Todd: Right
+[00:29:13] Ben: Or if he doesn't have direct user testing to back up what he's saying, he will at very least demonstrate what he's seeing with a whole bunch of videos of like screen readers in action.
+I think that, again, kind of going to this whole thing of like sometimes talking about accessibility and semantics can be can feel very academic and very intangible. I think having something that refers to direct user testing or at very least can show you what that example is, is I think a huge asset rather than things learned from things someone else wrote about three years ago based on what they read about like five years before that.
+I think focusing on the real examples, the real validation can be a huge help there. So, I would recommend resources like Adrian Roselli. I also think just in general is good to, if, if you have an inkling that a problem, you're trying to solve might have some accessibility considerations just straight up Googling, like, you know, accessible modal, accessible carousel, whatever.
+Accessible carousels, not gonna return a whole lot for you that's actionable because that is a fundamentally hard problem.
+There's two hard problems in computer science. There's P equals NP and there's accessible carousels.
+[00:30:22] Todd: Yeah
+[00:30:22] Ben: And the third is Array out of bounds exceptions. And the so just simply Googling what it is you're looking for and seeing if you can find things that directly tackle the specific experience you're trying to address.
+And so, at this time I also wanna shout out the Aria authoring practices. I think it's worth of mentioning that you know, the Aria authoring practices are like, they adhere to what is theoretically correct in many ways. And aren't always incredibly user tested. But they're kind of the like best approaches of the people who put together the specs.
+And, and I think they really demonstrate, like here's kind of the expected behavior for a lot of like, accessible experiences. And maybe you're not gonna implement it exactly for this word for word, but it can give you a sense of like, what is expected from this experience. So those are a few places I find myself referring people to a whole lot.
+And if you're not finding those resources that's a call to action to write about it because some of my blog posts were things that I felt like there should be blog posts on, and some people had written similar blog posts, and I just wasn't satisfied with their explanation. It didn't,
+[00:31:29] Todd: Yep
+[00:31:29] Ben: they didn't focus on the same things I focused on
+[00:31:31] Todd: Right
+[00:31:31] Ben: or they the same applicable examples I wanted seen.
+And when I was responsible for sharing resources, with, you know, newcomers to the industry, like I wanted them, I wanted those resources to focus on the things I cared about, you know? So, writing those blog posts based on what it is you're actually trying to get across what that fundamental message actually is.
+If you find a void there, if you're not finding blog posts that are satisfying the needs that you have, write it.
+[00:32:00] Todd: Yeah. So, a few things that I wanna mention after you just spoke. One, we're developers. We Google a lot.
+[00:32:10] Ben: Yes
+[00:32:10] Todd: So, you know, I, I don't use Google, but I do use a search engine. I use duckduckgo. But still, I use that search, search engine feature a lot still. The specs are very technical, and I tell people, especially with accessibility and I can imagine other areas would be, you know, a little bit more, maybe equally harder that they're very technical.
+It's a, basically a technical manual that you're reading. Like WICAG, for instance, it's a technical manual. Hopefully the, the work that I'm doing with other, you know, awesome people in, in the W3C that's gonna be a lot easier for people just starting out to do with, with WICAG 3.0, but that's, that's a ways down the line.
+[00:33:08] Ben: And worth calling out I'm I don't mean to like dis the specs, right?
+[00:33:12] Todd: Right
+[00:33:12] Ben: It's just there for a different audience and for different reasons.
+[00:33:15] Todd: Yes
+[00:33:15] Ben: They are not meant to be your introduction into this world.
+[00:33:18] Todd: Right. A hundred percent agree, a hundred percent agree with you there. And you know, there are other ways to, to, you know, learn and you get to that point where you finally go, okay, I'm ready.
+It was the same with me. I'm ready to dip my toes into the CS specs or WICAG. So yeah, that, yeah, that is, you know, it it's, well, it goes back to learning and, you know, we're always learning.
+[00:33:51] Ben: Yeah.
+[00:33:51] Todd: And I love, learn to learn, you know, to learn the new thing the other day. And, and, you know, I had a good laugh about it.
+Cause I never, I'd never come across it.
+ Let's switch over to your Twitch stream. Cause I've popped in a few times. It's been a while since I popped in, but I promise I will hopefully get to another stream at some point. Tell the listeners a little bit about your stream, cause I, I want to get that out there and you know, you do a phenomenal job, first of all, with the stream and the people that you have on and the learning that you know, everybody in the chat and everybody does. So, tell us a, a little bit more about your Twitch stream.
+[00:34:37] Ben: Yeah. So first of all, I think anyone who does anything in education knows the challenges of finding the right medium for what you wanna talk about? One of the reasons I don't write a whole lot of blog posts, especially these days is because sometimes the ideas I wanna talk about are not good fits for blog posts.
+There was a blog post that bounced around in my head for months, and I eventually burnt out on it. So please, someone else write this, but it was about some of the dis, like some of the, some of my beliefs around focus management in frameworks such as React. I, I don't know that we always follow best practices and focus management.
+And, and so I had this like blog post I was wanting to write, I couldn't actually do it as a blog post because it was my, like my fundamental thesis was that, you know, as your application scales, this particular approach to focus management would not scale with it. And that is a problem that only comes from complexity and blog posts are not great at onboarding you into an already complex situation.
+[00:35:42] Todd: Yep
+[00:35:42] Ben: To convince you that this other way would be simpler. Like there's just a mismatch there. So, picking your medium, picking your format is incredibly important. And I have been incredibly encouraged by Twitch as a medium lately. Just because it provides a different experience than, you know, blog posts for instance, which is that you have a bunch of people attending, like watching in real time, live, participating in the chat.
+Twitch is such a participatory experience. You are actively encouraged to just play around in the chat box, have fun, say things to the streamer. This is actively encouraged in a way that, you know, I don't see in other accessible in accessibility education. Right. Or, or any other like education for that matter, that kind of interaction of being able to say something to the streamer and have them reply back in just a, a few minutes or something and give you an answer.
+There is such a live vibrant community there, real time interaction. And also, I, community forms around it in a way. So, Twitch, for those of you who aren't Twitch viewers, one of the coolest Twitch features in my book is this feature called rating, which is when the streamers done rating, they choose to automatically send their streamers to, sorry, send their audience to another streamer who is live.
+And so, there's this community of people who just kind of go on this daisy chain of stream to stream. There's all this like kind of interplay. And so, this isn't me putting solitary videos out into the world and, you know, someone can find my channel, but rather, you know, some big streamer might send their folks my way, and then I'm gonna send those folks, someone else there's this really vibrant, medium.
+And that I think kind of gets to the heart of like, why my show Some Antics is the way that it is. It is, I would call it an interview slash live demo format. Where each week I bring on a guest from around web development. And they teach me something and they do so in a predominantly hands on way, like we hop into the editor, we make some changes or we're pulling up the docs.
+Is a live demo. It's not a scripted prerecorded thing. But it's something that's subject to change based on, you know, questions that I have or questions that the chat has in this fundamentally real time interactive way. I just, I think that's really cool.
+[00:37:59] Todd: Yeah
+[00:37:59] Ben: I think that that is such a powerful way to get accessible messaging out in front of a bunch of different people to have them propose genuine questions.
+Whereas if I were to put video tutorials on YouTube, those are great, but you kind of have to go looking for them. Right.
+[00:38:16] Todd: Yeah
+[00:38:16] Ben: You kind of have to go looking for a video about like, how do I build an accessible model as opposed to this kind of vibrant, real time in the moment community that Twitch supports.
+So, if any of this seems interesting to you. You should check out the show Some Antics it's every Tuesday at 2:00 PM central time, which is 12:00 PM Pacific time at twitch.tv/SomeAnticsDev. I know that that link is gonna be in the show notes. But it's just, it's so fun and I get to have just wonderful people on.
+I don't think I could have kept up with the show as long as I had without just all the different guests, because I would've rapidly just exhausted the depths of my understanding of like accessibility and the things I feel are interesting to talk about. It's so much more engaging for me personally, to bring in someone such as yourself, Todd, or any of the other, just many wonderful people I've had the chance to bring on.
+Just to get to meet them, get know them a bit, get to chat with them and have fun and goof off a bit live and get to learn from them.
+[00:39:16] Todd: Yeah
+[00:39:16] Ben: Just, and, and their, their experience. By the way, if you are listening to this show, chances are really good you are the target audience for Some Antics.
+This is something that would excite you and chances are also really good you know something that I don't about this field, and you might be a good fit for hopping on the show. So please If you think you've got something that you would like to have me do in this live demo format, please reach out twitter.com/BenDMyers.
+Please, please reach out because I'm always looking for a diversity of people to, to bring on and to share their experience and just create fun stuff.
+[00:39:52] Todd: Yeah, definitely. I definitely recommend it. And yeah, everything will be in the show notes. Highly recommend people reach out to you and, and you know, like you said that diversity of guests.
+It's, it's very I’ve, I mean, I haven't got in as much as I want to, to the stream, but when I have you've, you've had always had, you know, a very diverse group of guests and it's always been fun and you know, pop in and put up a lobster emoji in the chat so yeah, definitely, definitely recommend it.
+So, I'm gonna get into the three questions we have as we come down on our time today. And these are the three questions I ask everybody that comes on the podcast.
+And I call it the hot seat. So, you're on the hot seat now. Are you ready?
+[00:40:46] Ben: We'll see. I mean.
+[00:40:48] Todd: Okay
+[00:40:48] Ben: We'll, we'll see how well I'm able to improvise this. It's not like I have a, a, a show that's basically weekly improv about web dev stuff, so we'll see how well this goes.
+[00:40:59] Todd: All right sounds good. So, the first question is what about the web these days excites you and keeps you excited in what you do?
+[00:41:06] Ben: Man. It's huge. And there's constantly new ways to build great user experiences for people.
+One of the things that with my new role I've been learning more and more about is localization, for instance that is not something I'd had the chance to work with. And just realizing that that was a thing that I could spend some time learning and getting better at was like, it unlocked so much for me. Right.
+[00:41:29] Todd: Yeah
+[00:41:29] Ben: And it's not that the web has a couple of things like that. Like, oh, there's accessibility and there's localization and there's performance. The web has so many of those things. There's, it's just a labyrinth that you could get lost in a forest of things to learn. Right. And just things to learn, to build great user experiences for people.
+There's just something very, very exciting about knowing that at the end of the day, someone is going to be using what I've built, and it could help them do something really important. Right. I could make their world so much easier. It's just, it's, it's fun. And I, I really, really enjoy that stuff.
+[00:42:07] Todd: Okay. Awesome. I like that answer because yeah, I've never thought it that way and yeah. Yeah. Matter of fact, this is a little sidebar that, that kind of, that was kind of, you know, I was found out about localization. I found, also found out about international internationalization and it got me, you know, it got me wanting to learn.
+So yeah, that's, that's a great answer. Second question is if there were one thing you could change about the web that we know today, what would that be?
+[00:42:42] Ben: Man. More, I, I don't know if I would change the web itself so much as I would change the web dev community, but I would really love more of a focus on those kind of on using the platform on understanding what is the platform actually provides for us and celebrating. Maybe it's just my corner of the, of Twitter, these days of web dev Twitter.
+But I'm really encouraged by seeing folks celebrate when new features land in browsers, like just the absolute, just excitement that occurred when accent color landed in Chrome and Firefox.
+[00:43:13] Todd: Yeah
+[00:43:13] Ben: Just stuff like that. And I wish I wish there were, I wish we, as an industry were more excited about those fundamentals and about just kinda the robustness of the, the core web technologies and about teaching folks about that and about empathy.
+Right. Like I said, with our role as web developers, our role as front end developers is building usable experiences for real people. First and foremost. Like, I, I wish we could put more emphasis on that as an industry rather than, you know, here's the latest, greatest up to datest technology that you're gonna forget about in a few years’ time.
+[00:43:50] Todd: Yeah
+[00:43:50] Ben: That use, the, the, the usability I think is, is something I wish I saw more celebration of in the industry.
+[00:43:57] Todd: Yeah, definitely. So, the last question I have is your favorite part or front end development or design or anything else that you really like to, that you really like the most or that you nerd out over?
+[00:44:10] Ben: It's, the easy answer is accessibility.
+[00:44:13] Todd: Yeah
+[00:44:13] Ben: I think accessibility is in my book, the perfect confluence of the things I love most about web development. I think that someone who is very proficient in web accessibility is someone who is very proficient in just about anything that could be asked about a front end developer.
+Whether that's, you know, being well versed in the, the core web technologies and the fundamentals or being well versed in user experience and design or being well versed in being a tester, a robust tester quality assurance. Just about anything you can ask of a front end developer, it's gonna be incorporated some way in accessibility.
+And so, it's a lot of those just, a lot of those responsibilities, I think really shine in accessibility. Accessibility is for me kind of the pinnacle of web development there. And just knowing that it like makes a difference for folks who you know, unfortunately, and I hate to say it like, unfortunately we don't always consider disabled people in building environments for like just people in general.
+Right.
+[00:45:14] Todd: Yep
+[00:45:14] Ben: And being able to build user experiences with them in mind is huge, I think. So, that's, that's something I, I nerd out about. The most is accessibility. I, I don't think that comes as a surprise to anyone who's been listening for the past hour.
+[00:45:30] Todd: No, not at all. All right. Well, that's great.
+Thank you very much. I appreciate it. So, I'd like to close out the podcast with my guests, letting the listeners know what they have what they currently have going on. And where people can find you. So, I'm gonna give you the, the floor and I'm gonna let you let, let everybody know what, what you got going on and where they can find you.
+[00:45:51] Ben: Awesome. So, the best place to find me and the things I'm working on is on Twitter. I'm @BenDMyers that's M Y E R S. And the D as you is D as in dog there. So, B E N, D as in dog, M Y E R S. That's the best place to find what I'm working on. The main thing I'm working on right now is the stream, which you can find at twitch.tv/SomeAnticsDev.
+That is, it's because, because it's a, a pun that I am saying out loud I will go ahead spell it. It's S O M E A N T I C S D E V, but it sounds like semantics as a semantic markup. I'm a pun driven developer, but it does make it very hard to talk about what it is I do on stream. So that, that is kinda the big thing that I've been working on there is that stream. That's live every Tuesday at 2:00 PM central, you can go to that Twitch channel, and you can follow so that you get notified.
+And I'm just super excited for the year ahead. Looking to step up the stream in a few ways and I really hope y'all will join me there. Those are, are, are kind of the best places to, to find me and, and what I'm working on right now. So yeah, I, I, I think that's where you should go looking.
+[00:47:01] Todd: Awesome. And definitely I recommend going to the Twitch stream and watching, you know, you and your guests, you know, talk about what you're talking about for the day and, and what you do on there. I, you know, one of the, one of the Twitch streams that I highly recommend to people and we, I, again, we will have that in the show notes for people to have available to them.
+And I'm gonna push them to, to get there. So, Ben, thank you very much for coming on today and sharing a part of your day with me and the listeners. I appreciate it very much. I've been wanting to get you on after you had me on your stream and talk a little accessibility and here we are finally.
+So, thank you very much. I appreciate it.
+[00:47:45] Ben: Thank you so much for having me on Todd. This has been a blast and I always enjoy getting to chat with you
+[00:47:51] Todd: Likewise, as well. Thank you. So, with that, I want to thank you listeners for tuning into the Front End Nerdery Podcast. I'll be back next time with a new guest, new conversation about frontend design, development and other topics as well.
+If you would please rate this podcast on your podcast device of choice, like, subscribe and watch on the Front End Nerdery YouTube channel. Links to transcripts and show notes are there because this podcast is accessible. I'm Todd Libby, and this has been the Front End Nerdery Podcast. Thanks and we'll see you next time.
