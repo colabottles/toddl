@@ -245,7 +245,6 @@ import Base from "../layouts/Base.astro";
     display: block;
     width: 100%;
     height: 160px;
-    max-height: 160px;
   }
 
   .fp-tabs {
@@ -644,6 +643,8 @@ import Base from "../layouts/Base.astro";
 
   function fpDrawChart(history: any[]) {
     const canvas = document.getElementById("fp-chart") as HTMLCanvasElement;
+    canvas.style.width = "100%";
+    canvas.width = canvas.offsetWidth;
     const ctx = canvas.getContext("2d")!;
     if (fpChart) fpChart.destroy();
     const Chart = (window as any).Chart;
@@ -670,7 +671,7 @@ import Base from "../layouts/Base.astro";
         ],
       },
       options: {
-        responsive: false,
+        responsive: true,
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
