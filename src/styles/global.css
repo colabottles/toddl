@@ -1009,7 +1009,7 @@ body {
   font-weight: 500;
   color: var(--accent);
   letter-spacing: 0.05em;
-  margin-bottom: 0.625rem;
+  margin: 0.625rem 0;
 }
 
 .sr-only {
