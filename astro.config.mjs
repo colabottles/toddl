@@ -5,6 +5,9 @@ import toddlDark from "./src/styles/toddl-dark.json"
 export default defineConfig({
   integrations: [vue()],
   output: "static",
+  redirects: {
+    "/": "/about",
+  },
   markdown: {
     shikiConfig: {
       theme: toddlDark,
