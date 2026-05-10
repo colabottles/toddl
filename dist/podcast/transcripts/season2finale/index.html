@@ -1,0 +1,170 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Front End Nerdery Podcast transcript — Season Two Finale"><meta name="theme-color" content="#252C37"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><meta property="og:title" content="Season Two Finale · Todd Libby"><meta property="og:description" content="Front End Nerdery Podcast transcript — Season Two Finale"><meta property="og:url" content="https://toddl.dev/podcast/transcripts/season2finale/"><meta property="og:type" content="website"><meta property="og:image" content="https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-names.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Season Two Finale · Todd Libby"><meta name="twitter:description" content="Front End Nerdery Podcast transcript — Season Two Finale"><title>Season Two Finale · Todd Libby</title><script>
+      const stored = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      const theme = stored ?? (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    </script><link rel="stylesheet" href="/_astro/Base.Be53e9kI.css">
+<style>.transcript-header[data-astro-cid-vu7fdcp3]{margin-bottom:2rem;padding-bottom:1.25rem;border-bottom:.5px solid var(--warm-border);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}.post-title[data-astro-cid-vu7fdcp3]{font-size:1.25rem;font-weight:500;color:var(--text-primary);line-height:1.3}.post-content[data-astro-cid-vu7fdcp3]{font-size:.9375rem;color:var(--text-primary);line-height:1.75}.post-content p{margin-bottom:1.25rem}.post-content a{color:var(--accent);text-decoration:underline;text-underline-offset:4px}.post-content a:hover{opacity:.75}.post-footer[data-astro-cid-vu7fdcp3]{margin-top:3rem;padding-top:1rem;border-top:.5px solid var(--warm-border)}.post-back[data-astro-cid-vu7fdcp3]{font-size:.875rem;color:var(--accent);text-decoration:underline;text-underline-offset:3px}.post-back[data-astro-cid-vu7fdcp3]:hover{opacity:.8}
+</style></head> <body> <header> <a href="#main-content" class="skip-link">skip to main content</a> </header> <aside class="sidebar" id="sidebar" aria-label="Site navigation"> <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode"> <svg role="img" class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"> <title>Switch to light mode</title> <circle cx="12" cy="12" r="4"></circle> <line x1="12" y1="2" x2="12" y2="4"></line> <line x1="12" y1="20" x2="12" y2="22"></line> <line x1="4.93" y1="4.93" x2="6.34" y2="6.34"></line> <line x1="17.66" y1="17.66" x2="19.07" y2="19.07"></line> <line x1="2" y1="12" x2="4" y2="12"></line> <line x1="20" y1="12" x2="22" y2="12"></line> <line x1="4.93" y1="19.07" x2="6.34" y2="17.66"></line> <line x1="17.66" y1="6.34" x2="19.07" y2="4.93"></line> </svg> <svg role="img" class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"> <title>Switch to dark mode</title> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> <div> <p class="sidebar__prompt">~/toddl $</p> <p class="sidebar__name">Todd Libby</p> <p class="sidebar__role">Web Developer</p> </div> <nav aria-label="Primary navigation"> <ul role="list" class="nav"> <li> <p class="nav__group-label">explore</p> </li> <li> <a href="/about" class="nav__link"> <span class="nav__prefix">./</span> about </a> </li><li> <a href="/projects" class="nav__link"> <span class="nav__prefix">./</span> projects </a> </li><li> <a href="/writing" class="nav__link"> <span class="nav__prefix">./</span> writing </a> </li> <li> <p class="nav__group-label">more</p> </li> <li> <a href="/speaking" class="nav__link"> <span class="nav__prefix">./</span> speaking </a> </li><li> <a href="/uses" class="nav__link"> <span class="nav__prefix">./</span> uses </a> </li><li> <a href="/contact" class="nav__link"> <span class="nav__prefix">./</span> contact </a> </li><li> <a href="/blog" class="nav__link"> <span class="nav__prefix">./</span> blog </a> </li><li> <a href="/elsewhere" class="nav__link"> <span class="nav__prefix">./</span> elsewhere </a> </li><li> <a href="/podcast" class="nav__link" aria-current="page"> <span class="nav__prefix">./</span> podcast </a> </li><li> <a href="/colophon" class="nav__link"> <span class="nav__prefix">./</span> colophon </a> </li> <li> <p class="nav__group-label">info</p> </li> <li> <a href="/accessibility" class="nav__link"> <span class="nav__prefix">./</span> accessibility </a> </li><li> <a href="/privacy" class="nav__link"> <span class="nav__prefix">./</span> privacy </a> </li> </ul> </nav> <section class="webring" aria-labelledby="webring-heading"> <h2 id="webring-heading" class="webring__title">a11y-webring.club</h2> <p class="webring__desc">
+This site is a member of the <a href="https://a11y-webring.club/" class="webring__link" target="_blank" rel="noopener noreferrer">a11y-webring.club</a>.
+</p> <nav aria-label="a11y webring navigation"> <ul class="webring__links"> <li> <a href="https://a11y-webring.club/prev" class="webring__link" rel="external">Previous</a> </li> <li> <a href="https://a11y-webring.club/random" class="webring__link" rel="external">Random</a> </li> <li> <a href="https://a11y-webring.club/next" class="webring__link" rel="external">Next</a> </li> </ul> </nav> </section> <section class="stack" aria-labelledby="stack-heading"> <h2 id="stack-heading" class="stack__label">stack</h2> <ul class="stack__chips"> <li> <span class="chip chip--hi">Nuxt 4</span> </li><li> <span class="chip chip--hi">TypeScript</span> </li> <li> <span class="chip">Supabase</span> </li><li> <span class="chip">Netlify</span> </li><li> <span class="chip">Astro</span> </li><li> <span class="chip">WCAG 2.2</span> </li><li> <span class="chip">Node</span> </li> </ul> </section> </aside> <div class="sidebar-overlay" id="sidebar-overlay"></div> <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar"> <span class="hamburger__line"></span> <span class="hamburger__line"></span> <span class="hamburger__line"></span> </button> <div class="layout" id="layout"> <main class="main" id="main-content" tabindex="-1">  <article aria-labelledby="transcript-heading" data-astro-cid-vu7fdcp3> <header class="transcript-header" data-astro-cid-vu7fdcp3> <h1 id="transcript-heading" class="post-title" data-astro-cid-vu7fdcp3>Season Two Finale</h1> <a href="/podcast" class="post-back" data-astro-cid-vu7fdcp3>cd ../podcast</a> </header> <div class="post-content" data-astro-cid-vu7fdcp3> <h2 id="s1e14">S1:E14</h2>
+<p>[00:00:00] Todd Libby: All right. Welcome to the Front End Nerdery Podcast. And you may wonder why these people are with me. Well, I’ll explain in a minute.
+[00:00:06] Homer Gaines: We’re wondering too.
+[00:00:07] Todd: Yeah, I know. We’re at Modern Frontends Live, and we’ll just go around and introduce ourselves. I’m the host, Todd Libby.
+[00:00:18] Amy Dutton: Hello, my name is Amy Dutton and I’m the Director of Design at Zeal.
+[00:00:22] Homer: And I’m Homer Gaines. I’m a staff UI Engineer and Accessibility Specialist for Guru.
+[00:00:27] James Q. Quick: Staff something question mark? I am James Q. Quick, and I am a full-time technical content creator.
+[00:00:30] Homer: Shut up James.
+[Group laughter]
+[00:00:37] Todd: So, this is the end of year wrap up for Front End Nerdery, and going out of season two, into season three, there’s going to be some changes. And so first I wanted to get out of the way that I wanted to thank all the guests from this season, this past season. Jason Pamental was the first episode in season two, all the way to when this is released Crystal Preston-Watson is the last interview episode of this season of the podcast. Next season, this guy right here, Homer. You want to? You want to break the bad news?
+[00:01:19] Homer: Apparently, he thinks it’s gonna be a good idea that I’m a co-host.
+[00:01:21] Todd: So,
+[00:01:23] Homer: You can see my excitement.
+[00:01:24] Todd: Yes. Yeah, he’s thrilled.
+[00:01:26] Homer: Thrilled
+[00:01:26] Todd: to be my, my co-host. And we got together with the folks from CompressedFM. And
+[00:01:34] Amy: You’re not wearing your shirt today?
+[00:01:34] Todd: Yeah.
+[00:01:35] Homer: Oh, branded fail.
+[00:01:36] Todd: For the brand. James, come on. You know we are gonna do a full episode, but I figured while we were all here, we could just talk a little bit about what we, you know, we did while we were here. I know you two had your.
+[00:01:51] James: Livestream.
+[00:01:52] Todd: Livestream.
+[00:01:52] James: Well, we had the livestream part live.
+[00:01:54] Amy: Yeah.
+[00:01:54] James: So, we just kind of did this, but in a more central to the conference and actually live streamed it. And then random people came in and we just had conversations and took questions from the chat. So, it’s something we’ve talked about doing
+[00:02:05] Amy: Yeah.
+[00:02:06] James: At conferences in the future just to get, I think it gives like other people externally and, an insider look to a conference. Maybe that’ll like give them some interest to come to conferences in the future and also get to connect with multiple different people maybe that they’ve recognized from online or content or something like that.
+[00:02:22] Todd: Yeah
+[00:02:22] James: So, it seemed like it went well.
+[00:02:23] Amy: We, the first time that we did that was when we were at MagnoliaJS and we were with a friend, and our friend did it. And I think what impressed both of us is we create content, but it was super low barrier to entry.
+[00:02:35] Todd: Yeah
+[00:02:35] Amy: We just kind of pulled back into a hotel lobby, flipped open the laptop and got on their Wi-Fi and hit play. And I think that’s the thing that a lot of people forget a lot of times is that they wanna have the equipment or the fancy cameras and microphones.
+[00:02:49] Homer: Yeah, they think you need a full-blown studio, sound stage.
+[00:02:51] Amy: Well, and I am a gearhead. I love all that stuff, but it’s not necessary and not needed. And it’s fun to have opportunities like this where we can kinda the low, lower budget thing and just walk around and say hi to people.
+[00:03:03] Todd: Yeah. And we even used James’ microphone for the first time.
+[00:03:07] James: Brand, brand new microphone that I’ve had.
+[00:03:09] Homer: Nice.
+[00:03:10] James: For a month and a half. And this is the first time it’s being used, so, yes.
+[00:03:13] Todd: Good way to break it in. And Homer, you had your talk today.
+[00:03:20] Homer: None of the audio is caught.
+[00:03:20] Todd: I hope it’s recording. Yes, it says it’s recording.
+[00:03:22] Homer: Yeah, alright.
+[00:03:22] Amy: We had one episode like that.
+[00:03:24] Todd: Yeah.
+[00:03:25] Amy: Knock on wood, only one.
+[00:03:27] Homer: Turned into a silent film real quick.
+[00:03:29] Todd: I did one episode, and the, the mic wasn’t on too. So yeah, I’ve been there and talking to myself is just, I already do that outside the podcast. I don’t,
+[00:03:39] James: They don’t even know about that.
+[00:03:40] Todd: So, Homer, you gave your talk today. What was that talk on?
+[00:03:45] Homer: I gave a talk on the four principles of accessibility where I went over WCAG 2.1 and the different sections, perceivable, operable, understandable, robust.
+Showed how developers, designers, anyone in the room who is listening can actually take the WCAG and tie it into real world examples with issues that we are currently seeing on websites from our particular audits. Kind of touched a little bit on neurodivergence a little bit and how to actually test for that and what to expect.
+Obviously touched on screen readers. Manual testing, tools that they can use for manual testing, tools that they can use for automated testing. And then, you know, touched on section of empathy.
+[00:04:28] Todd: Yep.
+[00:04:29] Homer: Bringing it all together. So. Well received it was a full room.
+[00:04:33] Todd: Good, good.
+[00:04:33] Homer: Yeah.
+[00:04:34] Todd: And how, how did it turn out?
+[00:04:37] James: Last night. So
+[00:04:38] Todd: go for last night. Yeah.
+[00:04:39] James: Yeah, we did.
+[00:04:40] Amy: That’s really cool.
+[00:04:40] James: Our second live episode of the podcast. I think it went really well.
+[00:04:44] Amy: Yeah.
+[00:04:45] James: I feel like we got good feedback. We got interactions. I think people laughed some.
+[00:04:48] Amy: Yeah.
+[00:04:49] James: And I think it was relatable too cuz we talked about the how to get the most out of being at conferences and really embraced how awkward it can be.
+Like at times like when you don’t know people, especially, you’re new to it and you’re nervous
+[00:05:00] Todd: Yup
+[00:05:00] James: and you have imposter syndrome. So, I think we kind of try to lower, lower the barrier to entry
+[00:05:06] Amy: Yeah.
+[00:05:06] James: for people to get a lot out of tech conferences and hopefully feel a little bit more comfortable in the future.
+[00:05:10] Todd: Yeah.
+[00:05:10] Homer: That’s good.
+[00:05:12] Todd: So, I was there for the MagnoliaJS podcast you did. That one was great. I listened to it. I told you last week.
+[00:05:19] James: Yeah.
+[00:05:19] Todd: And it was, it was great. Yeah, it, it was a lot of fun.
+[00:05:22] Amy: Was it a lot different listening to it in the audio version versus being in there in person?
+[00:05:28] Todd: Yes.
+[00:05:28] James: Yeah.
+[00:05:29] Todd: Yes, it was. But at the same time when I was listening to it, it was like, okay, I remember, you know, being there for it.
+And everybody that, you know, we all had, I think we all had a great time in Magnolia.
+[00:05:41] James: Yes.
+[00:05:41] Todd: And that was one of the better conferences that we’ve been to.
+[00:05:44] James: Yep.
+[00:05:44] Amy: Yeah.
+[00:05:44] Todd: So.
+[00:05:45] Homer: I’ll be there next year.
+[00:05:46] James: You, you’ll be there next year.
+[00:05:47] Amy: Yes
+[00:05:47] Todd: I, I submitted a couple of things. The talk that I’m doing today, I submitted to Magnolia for next year.
+And hopefully we’re all there next year. That’ll be great.
+[00:06:00] Homer: I didn’t make it this year cause my, my baby sister was getting married.
+[00:06:01] Amy: Oh yeah.
+[00:06:02] Homer: So, it was just like, conference, baby sister’s wedding.
+[00:06:02] Todd: Yeah. Not much thought in that. Yeah.
+[00:06:10] James: Sounds like a reasonable excuse.
+[00:06:11] Todd: Yeah, yeah, yeah, yeah, they forgave me.
+[00:06:13] Amy: This time.
+[00:06:14] Homer: This time.
+[00:06:14] Todd: Yeah, yeah, and shout to Kayla and Richard Sween.
+[00:06:18] Amy: Yep.
+[00:06:18] Homer: Yes.
+[00:06:18] Todd: Definitely because they put on a heck of a show. And they had, you know, all the, you know, safety measures were in place, and I appreciated that.
+[00:06:28] Amy: Yeah.
+[00:06:28] Todd: And, you know, they came to me about a, a certain topic that I won’t go into, but they made me feel included in that conference.
+So that was a great conference. So yes, next season you and I.
+[00:06:45] Homer: Shenanigans
+[00:06:46] Todd: Shenanigans, lots of it. Tomfoolery?
+[00:06:49] Homer: Yes.
+[00:06:50] Todd: Yeah.
+[00:06:50] James: Joe Foolery.
+[00:06:51] Todd: Joe Foolery
+[00:06:54] Homer: All of it.
+[00:06:54] Todd: And then,
+[00:06:55] Amy: [Inaudible]
+[00:06:55] Homer: We will be 12 years old sometimes.
+[00:06:56] Todd: sometimes
+[00:06:57] Homer: Just brace.
+[00:06:58] Todd: Yeah. And then we’ll invite you back on
+[00:07:01] James: Yep
+[00:07:01] Todd: for a full episode, so
+[00:07:02] James: we’ll be ready.
+[00:07:04] Todd: That’ll be fun. We can talk all sorts of web and tech stuff, so.
+[00:07:08] Amy: Perfect.
+[00:07:09] Todd: Awesome.
+[00:07:09] Homer: Maybe we can even do a gear episode where we just geek out
+[00:07:12] James: That’d be fun.
+[00:07:13] Todd: Yes.
+[00:07:14] Amy: I can talk for hours about that stuff.
+[00:07:15] Homer: Well, I was a studio engineer. I still do studio engineering.
+[00:07:18] James: Oh really?
+[00:07:18] Homer: So, it’s just like, yeah, we, we can start talking about some gear.
+[00:07:20] Todd: We’ll plan for that. But yeah, from Modern Frontends Live, this has been the year end wrap up for Front End Nerdery. I gotta make sure I say the right podcast.
+[00:07:31] James: Podcast
+[00:07:31] Todd: Yeah. Before I sign off. So, see ya.
+[00:07:39] Homer: Peace
+[00:07:39] Todd: Yeah. Which button? There we go.</p> </div> <footer class="post-footer" data-astro-cid-vu7fdcp3> <a href="/podcast" class="post-back" data-astro-cid-vu7fdcp3>cd ../podcast</a> </footer> </article>  </main> <aside class="right-panel" id="right-panel" aria-label="Support and GitHub"> <div class="right-panel__top"> <button class="gh-toggle" id="gh-toggle" aria-label="Open GitHub panel" aria-expanded="false" aria-controls="gh-panel"> <svg role="img" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" focusable="false"> <title>GitHub</title> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path> </svg> </button> </div> <section class="support-panel" id="support-panel" aria-labelledby="sponsor-heading"> <h2 id="sponsor-heading" class="support-panel__title">
+support my work
+</h2> <p class="support-panel__pitch">
+I build accessible, open-source tools and write about web
+            accessibility. If my work has helped you, consider sponsoring or
+            advertising here.
+</p> <ul class="support-panel__links"> <li> <a href="https://github.com/sponsors/colabottles" class="support-link support-link--gh" target="_blank" rel="noopener noreferrer"> <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" focusable="false"> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path> </svg>
+GitHub Sponsors
+</a> </li> <li> <a href="https://ko-fi.com/Y8Y727FD2" class="support-link support-link--kofi" target="_blank" rel="noopener noreferrer"> <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" focusable="false"> <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.483-2.566 2.483-2.566s-.016-1.682.104-3.937c.148-3.053 1.547-3.513 1.547-3.513h1.585c1.995 0 3.357 1.106 3.357 3.357 0 1.784-1.32 2.748-2.89 2.748H20.29c-.708 0-1.027.607-1.027 1.152 0 .803.645 1.229 1.027 1.229h.938c2.527 0 5.009-1.47 5.009-4.613a5.058 5.058 0 0 0-2.366-4.266zM5.393 14.5H3.107V7h2.286v7.5zm5.357 0H8.464V7h2.286v7.5z"></path> </svg>
+Ko-fi
+</a> </li> <li> <a href="/contact" class="support-link support-link--ad">advertise here</a> </li> </ul> </section> <section class="recent-posts" aria-labelledby="recent-posts-heading"> <h2 id="recent-posts-heading" class="recent-posts__title">
+recent posts
+</h2> <ul class="recent-posts__list"> <li class="recent-post"> <a href="/blog/how-its-going" class="recent-post__link"> <span class="recent-post__title">How It&#39;s Going</span> <span class="recent-post__date"> May 1, 2026 </span> <span class="recent-post__likes" data-bsky-id="3mkvnlc4kft2i">
+🦋 —
+</span> </a> </li><li class="recent-post"> <a href="/blog/names-are-hard-but-they-dont-have-to-be" class="recent-post__link"> <span class="recent-post__title">Names Are Hard But They Don&#39;t Have To Be</span> <span class="recent-post__date"> Jan 21, 2026 </span> <span class="recent-post__likes" data-bsky-id="3me7fa2md5c2n">
+🦋 —
+</span> </a> </li><li class="recent-post"> <a href="/blog/building-a-production-ready-nuxt-module" class="recent-post__link"> <span class="recent-post__title">Building a Production-Ready Nuxt Module From Idea to Published</span> <span class="recent-post__date"> Jan 16, 2026 </span> <span class="recent-post__likes" data-bsky-id="3mcn4sxc6bk27">
+🦋 —
+</span> </a> </li><li class="recent-post"> <a href="/blog/the-architecture-of-anxiety-and-shame-part-two" class="recent-post__link"> <span class="recent-post__title">The Architecture of Anxiety and Shame, Part Two</span> <span class="recent-post__date"> Nov 16, 2025 </span> <span class="recent-post__likes" data-bsky-id="3m5uw4wwbs22c">
+🦋 —
+</span> </a> </li><li class="recent-post"> <a href="/blog/the-architecture-of-anxiety-and-shame-part-one" class="recent-post__link"> <span class="recent-post__title">The Architecture of Anxiety and Shame, Part One</span> <span class="recent-post__date"> Oct 6, 2025 </span> <span class="recent-post__likes" data-bsky-id="3m2lu52omns2j">
+🦋 —
+</span> </a> </li> </ul> </section> <aside class="gh-panel" id="gh-panel" aria-label="GitHub profile" aria-hidden="true"> <header class="gh-panel__header"> <h2 class="gh-panel__title">GitHub</h2> <button class="gh-panel__close" id="gh-close" aria-label="Close GitHub panel"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"> <line x1="18" y1="6" x2="6" y2="18"></line> <line x1="6" y1="6" x2="18" y2="18"></line> </svg> </button> </header> <div class="gh-panel__body" id="gh-body"> <p class="gh-loading">Loading...</p> </div> </aside> </aside> </div> <button class="right-panel-btn" id="right-panel-btn" aria-label="Open support and GitHub panel" aria-expanded="false" aria-controls="right-panel"> <svg role="img" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" focusable="false"> <title>Support and GitHub</title> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path> </svg> </button> <script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.BzGF4zlp.js"></script> </body> </html>

@@ -6,6 +6,7 @@ import Base from "../layouts/Base.astro";
   <section aria-labelledby="whoami-heading">
     <h1 id="whoami-heading" class="cmd-heading">
       <span class="cmd-prompt">$</span> whoami
+      <span class="cursor"></span>
     </h1>
 
     <dl class="about-block">
@@ -49,7 +50,6 @@ import Base from "../layouts/Base.astro";
       <div class="about-row">
         <dt class="about-key">status</dt>
         <dd class="about-val">available for projects and full-time work</dd>
-        <span class="cursor"></span>
       </div>
     </dl>
   </section>
@@ -139,23 +139,14 @@ import Base from "../layouts/Base.astro";
     opacity: 0.8;
   }
 
-  /* .cursor {
+  .cursor {
     display: inline-block;
     width: 7px;
-    height: 1em;
+    height: 1.2em;
     background: var(--accent);
     margin-left: 2px;
     vertical-align: middle;
     animation: blink 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  } */
-  .cursor::before {
-    content: "|";
-  }
-  .cursor {
-    color: var(--accent);
-    display: inline-block;
-    margin-left: 2px;
-    animation: blink 1.5s step-end infinite;
   }
 
   @keyframes blink {
