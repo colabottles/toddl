@@ -144,10 +144,10 @@ import Base from "../layouts/Base.astro";
     display: inline-block;
     width: 7px;
     height: 1em;
-    background: currentColor;
+    background: var(--accent);
     margin-left: 2px;
     vertical-align: middle;
-    animation: blink 1.5s steps(1) infinite;
+    animation: blink 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   }
 
   @keyframes blink {
