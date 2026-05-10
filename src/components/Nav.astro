@@ -6,7 +6,7 @@ interface Props {
 const { currentPath } = Astro.props;
 
 const primaryLinks = [
-  { href: "/about", label: "about" },
+  { href: "/", label: "about" },
   { href: "/projects", label: "projects" },
   { href: "/writing", label: "writing" },
 ];
@@ -27,7 +27,8 @@ const infoLinks = [
 ];
 
 function isCurrent(href: string) {
-  return currentPath === href || currentPath.startsWith(href + "/");
+  if (href === "/") return currentPath === "/";
+  return currentPath.startsWith(href);
 }
 ---
 
