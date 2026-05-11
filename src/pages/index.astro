@@ -139,7 +139,7 @@ import Base from "../layouts/Base.astro";
     opacity: 0.8;
   }
 
-  /* .cursor {
+  .cursor {
     display: inline-block;
     width: 7px;
     height: 1.2em;
@@ -150,26 +150,6 @@ import Base from "../layouts/Base.astro";
   }
 
   @keyframes blink {
-    50% {
-      opacity: 0;
-    }
-  } */
-
-  .cursor {
-    display: inline-block;
-    width: 7px;
-    height: 0.75rem;
-    background: var(--accent);
-    margin-left: 2px;
-    vertical-align: middle;
-    animation: blink 1.1s step-end infinite;
-  }
-
-  @keyframes blink {
-    0%,
-    100% {
-      opacity: 1;
-    }
     50% {
       opacity: 0;
     }
