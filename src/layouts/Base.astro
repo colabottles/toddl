@@ -508,9 +508,12 @@ const currentPath = Astro.url.pathname;
             PushEvent: "pushed to",
             PullRequestEvent: "PR on",
             IssuesEvent: "issue on",
-            CreateEvent: "created",
+            CreateEvent: "created branch in",
+            DeleteEvent: "deleted branch in",
             WatchEvent: "starred",
             ForkEvent: "forked",
+            ReleaseEvent: "released",
+            IssueCommentEvent: "commented on",
           };
 
           ghBody.innerHTML = `
@@ -551,7 +554,8 @@ const currentPath = Astro.url.pathname;
                     const action =
                       typeMap[e.type] ?? e.type.replace("Event", "");
                     const repo = e.repo.name.split("/")[1];
-                    return `<li class="gh-event"><span class="gh-event__action">${action}</span> <span class="gh-event__repo">${repo}</span></li>`;
+                    const branch = e.payload?.ref ? ` (${e.payload.ref})` : "";
+                    return `<li class="gh-event"><span class="gh-event__action">${action}</span> <span class="gh-event__repo">${repo}${branch}</span></li>`;
                   })
                   .join("")}
               </ul>

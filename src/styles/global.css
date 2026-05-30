@@ -561,6 +561,7 @@ body {
 
 /* Right panel */
 .right-panel {
+  font-size: 0.875rem;
   grid-column: 2;
   grid-row: 1;
   width: 240px;
