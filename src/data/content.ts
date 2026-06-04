@@ -35,7 +35,7 @@ export const projects: Project[] = [
     name: 'BasketBuddy',
     description: 'Grocery budgeting PWA with Stripe subscriptions, category management, and mobile-first UI.',
     stack: ['Nuxt 4', 'Supabase', 'Stripe', 'PWA', 'pnpm'],
-    url: 'https://basketbuddy.netlify.app',
+    url: 'https://basketbuddyapp.netlify.app',
     status: 'active',
     featured: true,
   },
