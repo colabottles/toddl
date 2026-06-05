@@ -1,4 +1,4 @@
-export type ProjectStatus = 'active' | 'live' | 'sunset' | 'streaming' | undefined
+export type ProjectStatus = 'active' | 'live' | 'RIP' | 'streaming' | undefined
 
 export interface Project {
   name: string
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     name: 'Broadcast',
     description: 'Multi-platform social posting — Bluesky, Mastodon, and LinkedIn from one place.',
     stack: ['Nuxt 4', 'Supabase', 'OAuth', 'Bluesky API'],
-    status: 'sunset',
+    status: 'RIP',
   },
   {
     name: 'RouteReady',
@@ -102,24 +102,6 @@ export const writing: WriteItem[] = [
   },
 ]
 
-export const talks: TalkItem[] = [
-  {
-    year: '2024',
-    event: 'Devnexus',
-    title: 'Accessibility beyond compliance',
-  },
-  {
-    year: '2023',
-    event: 'KCDC',
-    title: 'Writing CSS that doesn\'t exclude anyone',
-  },
-  {
-    year: 'Magnolia Conf',
-    event: 'Smashing Conference',
-    title: 'Semantic HTML is not optional',
-  },
-]
-
 export const uses: UsesItem[] = [
   {
     category: 'editor',
@@ -147,7 +129,7 @@ export const uses: UsesItem[] = [
   {
     category: 'tools',
     items: [
-      { name: 'Axe DevTools, ARC Toolkit, IBM Equal Access Checker', note: 'accessibility is a priority' },
+      { name: 'Axe DevTools, ARC Toolkit, IBM Equal Access Checker', note: 'a11y is a right' },
       { name: 'NVDA + VoiceOver', note: 'screen reader testing' },
       { name: 'Affinity Photo, CodePen', note: 'technodesign' },
     ],
