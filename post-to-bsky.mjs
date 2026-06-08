@@ -134,9 +134,6 @@ fs.writeFileSync(filePath, updated, "utf-8")
 
 console.log(`Updated frontmatter in ${filePath}`)
 
-// 6. Register with Standard.site
-import { BskyAgent } from '@atproto/api'
-
 const PUBLICATION_AT_URI = process.env.STANDARD_SITE_PUBLICATION_URI ?? ''
 
 const ssAgent = new BskyAgent({ service: 'https://bsky.social' })
