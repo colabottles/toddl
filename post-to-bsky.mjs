@@ -2,6 +2,7 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import { config } from "dotenv"
+import { BskyAgent } from '@atproto/api'
 config()
 
 const BSKY_IDENTIFIER = process.env.BSKY_IDENTIFIER
@@ -132,4 +133,40 @@ const updated = matter.stringify(content, data)
 fs.writeFileSync(filePath, updated, "utf-8")
 
 console.log(`Updated frontmatter in ${filePath}`)
+
+// 6. Register with Standard.site
+import { BskyAgent } from '@atproto/api'
+
+const PUBLICATION_AT_URI = process.env.STANDARD_SITE_PUBLICATION_URI ?? ''
+
+const ssAgent = new BskyAgent({ service: 'https://bsky.social' })
+await ssAgent.login({
+  identifier: BSKY_IDENTIFIER ?? '',
+  password: BSKY_APP_PASSWORD ?? '',
+})
+
+const ssResult = await ssAgent.api.com.atproto.repo.createRecord({
+  repo: ssAgent.session?.did ?? '',
+  collection: 'site.standard.document',
+  record: {
+    $type: 'site.standard.document',
+    site: PUBLICATION_AT_URI,
+    title: data.title,
+    path: `/blog/${slug}`,
+    description: data.description ?? '',
+    publishedAt: new Date(data.date).toISOString(),
+    tags: data.tags ?? [],
+    textContent: content.replace(/[#*`>\-\[\]!]/g, '').trim(),
+    bskyPostRef: {
+      uri: postData.uri,
+      cid: postData.cid,
+    },
+  },
+})
+
+data.standardSiteUri = ssResult.data.uri
+const updatedWithUri = matter.stringify(content, data)
+fs.writeFileSync(filePath, updatedWithUri, 'utf-8')
+console.log(`Registered with Standard.site: ${ssResult.data.uri}`)
+
 console.log(`Done! Now run: git add ${filePath} && git commit -m "chore: add bskyPostId to ${slug}" && git push`)
