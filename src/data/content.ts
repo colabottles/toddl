@@ -1,4 +1,4 @@
-export type ProjectStatus = 'active' | 'live' | 'RIP' | 'streaming' | undefined
+export type ProjectStatus = 'active' | 'live' | 'retired' | 'streaming' | 'in progress' | undefined
 
 export interface Project {
   name: string
@@ -32,23 +32,26 @@ export interface UsesItem {
 
 export const projects: Project[] = [
   {
+    name: 'BranchFlow',
+    description: 'Keyboard-accessible Git history explorer with SVG commit graph, ARIA live regions, and light, dark, and high-contrast modes.',
+    stack: ['Nuxt 4', 'TypeScript', 'GitHub API', 'SVG', 'Vanilla CSS', 'Netlify'],
+    status: 'live',
+    url: 'https://branchflow.netlify.app',
+    featured: true,
+  },
+  {
     name: 'BasketBuddy',
     description: 'Grocery budgeting PWA with Stripe subscriptions, category management, and mobile-first UI.',
     stack: ['Nuxt 4', 'Supabase', 'Stripe', 'PWA', 'pnpm'],
     url: 'https://basketbuddyapp.netlify.app',
-    status: 'active',
-    featured: true,
+    status: 'live',
   },
   {
     name: 'Broadcast',
     description: 'Multi-platform social posting — Bluesky, Mastodon, and LinkedIn from one place.',
     stack: ['Nuxt 4', 'Supabase', 'OAuth', 'Bluesky API'],
-    status: 'RIP',
-  },
-  {
-    name: 'RouteReady',
-    description: 'Route management SaaS for tracking drivers, vehicles, and properties.',
-    stack: ['Nuxt 4', 'Supabase', 'PostgreSQL', 'Better Auth', 'Netlify'],
+    status: 'retired',
+    repo: 'https://github.com/colabottles/broadcast',
   },
   {
     name: 'Blurcle',
@@ -59,38 +62,42 @@ export const projects: Project[] = [
     repo: 'https://github.com/colabottles/blurcle',
   },
   {
+    name: 'RouteReady',
+    description: 'Route management SaaS for tracking drivers, vehicles, and properties.',
+    stack: ['Nuxt 4', 'Supabase', 'PostgreSQL', 'Better Auth', 'Netlify'],
+    status: 'in progress',
+    wide: true,
+  },
+  {
     name: 'Chirp',
     description: 'Twitter-style social platform with full auth, follow system, RLS, and accessibility preferences.',
     stack: ['Nuxt 4', 'Supabase', 'RLS', 'TypeScript'],
-  },
-  {
-    name: 'Beacon',
-    description: 'Ethical newsletter platform with a 95/5 revenue split. Auth, publications, posts, and subscriptions.',
-    stack: ['Nuxt 4', 'Supabase', 'Stripe'],
-  },
-  {
-    name: 'ZulkirBot',
-    description: 'Fully featured Twitch chat RPG bot with two bot accounts, combat system, spellbook, rogue skills, and D&D mechanics built around Dungeons & Dragons Online.',
-    stack: ['Node', 'TypeScript', 'Supabase', 'tmi.js', 'DDO'],
-    status: 'streaming',
-    wide: true,
+    status: 'in progress',
   },
   {
     name: 'ddo-overlay',
     description: 'OBS browser source overlay pulling live character data from the DDO Audit API via URL query params.',
     stack: ['TypeScript', 'DDO Audit API', 'Netlify'],
+    status: 'live',
     url: 'https://ddooverlay.netlify.app',
+  },
+  {
+    name: 'ZulkirBot',
+    description: 'Fully featured Twitch chat RPG bot with two bot accounts, combat system, spellbook, rogue skills, and D&D mechanics built around Dungeons & Dragons Online.',
+    stack: ['Node', 'TypeScript', 'Supabase', 'tmi.js', 'DDO'],
+    status: 'live',
+    wide: true,
   },
 ]
 
 export const writing: WriteItem[] = [
   {
-    year: 'ongoing',
+    year: '2026',
     title: 'The Web Accessibility Handbook',
     tag: 'book',
   },
   {
-    year: 'ongoing',
+    year: '2026',
     title: 'Why hiring in tech is broken',
     tag: 'book',
   },

@@ -14,6 +14,7 @@
   "dependencies": {
     "@astrojs/netlify": "^7.0.8",
     "@astrojs/vue": "^6.0.1",
+    "@atproto/api": "^0.20.9",
     "astro": "^6.1.10",
     "dotenv": "^17.4.2",
     "gray-matter": "^4.0.3",
