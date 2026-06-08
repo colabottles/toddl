@@ -1,15 +1,17 @@
 ---
 title: Hello Standard.site
 description: Wiring up Standard.site on my blog.
-date: 2026-06-07
+date: 2026-06-07T00:00:00.000Z
 tags:
   - post
   - bluesky
   - atproto
   - standard.site
-image: https://res.cloudinary.com/colabottles/image/upload/v1780889320/todd-social-card-standard.png
-bskyPostId: ""
+image: >-
+  https://res.cloudinary.com/colabottles/image/upload/v1780889320/todd-social-card-standard.png
+bskyPostId: 3mnqqtepjsx24
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqqtfgzrh24'
 ---
 
 ## I Sat Down to Try My Hand at Standard.site
