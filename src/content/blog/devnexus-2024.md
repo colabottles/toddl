@@ -1,13 +1,14 @@
 ---
 title: Devnexus 2024
 description: A look back at Devnexus 2024.
-date: 2024-04-12 ## YYYY-MM-DD
+date: 2024-04-12T00:00:00.000Z
 tags:
   - devnexus
   - conference
   - web
   - java
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmgupg722'
 ---
 
 ## Why a Java Conference?

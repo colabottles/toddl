@@ -1,7 +1,7 @@
 ---
 title: Two Weeks
 description: Two weeks in November 2022 on the speaking circuit.
-date: 2022-11-22 ## YYYY-MM-DD
+date: 2022-11-22T00:00:00.000Z
 tags:
   - speakingcircuit
   - speakerfamily
@@ -13,6 +13,7 @@ tags:
   - brighton
   - atlanta
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmnay47725'
 ---
 
 ## Firstly

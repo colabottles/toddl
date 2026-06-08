@@ -1,11 +1,12 @@
 ---
 title: Fear and Accessibility
 description: A post on the state of web accessibility.
-date: 2019-08-23
+date: 2019-08-23T00:00:00.000Z
 tags:
   - accessibility
   - opinion
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmisxb32p'
 ---
 
 ## Fear of the Unknown

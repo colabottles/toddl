@@ -1,12 +1,13 @@
 ---
 title: That Was Short-Lived
 description: The retirement I thought I could take did not last long.
-date: 2024-08-02 ## YYYY-MM-DD
+date: 2024-08-02T00:00:00.000Z
 tags:
   - return
   - life
   - tech
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmn3b4lp2a'
 ---
 
 ## Well now

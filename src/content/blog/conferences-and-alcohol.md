@@ -1,7 +1,7 @@
 ---
 title: Conferences and Alcohol
 description: Conferences and the culture of alcohol that they foster.
-date: 2022-10-19 ## YYYY-MM-DD
+date: 2022-10-19T00:00:00.000Z
 tags:
   - conferences
   - alcohol
@@ -10,6 +10,7 @@ tags:
   - accessibility
   - boozefree
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmc56ev24'
 ---
 
 ## Hello, I'm Todd

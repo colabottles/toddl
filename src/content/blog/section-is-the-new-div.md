@@ -1,12 +1,15 @@
 ---
 title: <section> is the new <div>
-description: The use of the div element in code is still over-abundant, but the section element is replacing that.
-date: 2023-10-12
+description: >-
+  The use of the div element in code is still over-abundant, but the section
+  element is replacing that.
+date: 2023-10-12T00:00:00.000Z
 tags:
   - html
   - semantichtml
   - accessibility
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmvxvkh2a'
 ---
 
 Note that there are times and places to use the `div` and `section` elements. This article addresses the need for more accessible solutions and fixes as well as the need to stop over-engineering things.

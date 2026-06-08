@@ -1,7 +1,7 @@
 ---
 title: The Perpetual Circle of Accessibility
 description: Twenty-five years and we can't get off the ever-merry-go-round
-date: 2023-09-05 ## YYYY-MM-DD
+date: 2023-09-05T00:00:00.000Z
 tags:
   - accessibility
   - development
@@ -10,6 +10,7 @@ tags:
   - html
   - aria
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmn6734y2x'
 ---
 
 ![A man holding his glasses in his hands while rubbing the bridge of his nose in frustration.](https://res.cloudinary.com/colabottles/image/upload/v1693938299/frustration.jpg)

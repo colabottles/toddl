@@ -1,12 +1,13 @@
 ---
 title: Staycation 2021
 description: When you just need to take some time off and it has been a long time coming.
-date: 2021-01-25
+date: 2021-01-25T00:00:00.000Z
 tags:
   - staycation
   - mentalhealth
   - life
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmxftg725'
 ---
 
 ![A person sitting on a bed or couch and holding a coffee mug in one hand and reading a book an dturning a page with the other hand.](https://res.cloudinary.com/colabottles/image/upload/v1611591059/images/staycation.jpg "Photo by Nathan Dumlao on Unsplash.")

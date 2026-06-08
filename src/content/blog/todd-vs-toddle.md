@@ -1,7 +1,9 @@
 ---
 title: Todd Vs Toddle
-description: The relationship of the toddl's begins. Thoughts about a new development tool and accessibility.
-date: 2025-03-07 ## YYYY-MM-DD
+description: >-
+  The relationship of the toddl's begins. Thoughts about a new development tool
+  and accessibility.
+date: 2025-03-07T00:00:00.000Z
 tags:
   - post
   - toddle
@@ -9,9 +11,11 @@ tags:
   - web
   - tools
   - accessibility
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-toddle.png
+image: >-
+  https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-toddle.png
 bskyPostId: 3ljsfz2e4m22z
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmn7llew2w'
 ---
 
 ## Wait&hellip; ToddL or Toddle or Toddl&quest;

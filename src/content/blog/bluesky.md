@@ -1,14 +1,19 @@
 ---
 title: Bluesky
-description: There are some decisions in life I would like to change, some I would not change for anything. Leaving Bluesky might be one of those I wish I could take back.
-date: 2024-11-11 ## YYYY-MM-DD
+description: >-
+  There are some decisions in life I would like to change, some I would not
+  change for anything. Leaving Bluesky might be one of those I wish I could take
+  back.
+date: 2024-11-11T00:00:00.000Z
 tags:
-- post
-- bluesky
-- social
-- community
+  - post
+  - bluesky
+  - social
+  - community
 draft: false
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png
+image: >-
+  https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card.png
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmma4jdb2j'
 ---
 
 ## Regrets, I Have A Few

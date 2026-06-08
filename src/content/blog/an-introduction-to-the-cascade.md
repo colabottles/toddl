@@ -1,11 +1,12 @@
 ---
 title: An Introduction to the Cascade
 description: A brief introduction to the casecade in CSS.
-date: 2019-06-16
+date: 2019-06-16T00:00:00.000Z
 tags:
   - code
   - design
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmm63zwb2f'
 ---
 
 This is just an introduction in a condensed form. Just a minor basic level overview of the cascade.

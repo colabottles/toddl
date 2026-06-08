@@ -1,13 +1,14 @@
 ---
 title: AccessiBe Is Not Your Friend
 description: A company that touts a quick fix is a wolf in sheeps clothing.
-date: 2021-07-15
+date: 2021-07-15T00:00:00.000Z
 tags:
   - accessibe
   - snakeoil
   - overlay
   - accessibility
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmlwkfns2w'
 ---
 
 ![A snake oil salesman on his wagon where he sells snake oil that has the AccessiBe logo Photoshopped on the side of the wagon.](https://res.cloudinary.com/colabottles/image/upload/v1626382025/images/snakeoil.jpg "A snake oil salesman on his wagon where he sells snake oil that has the AccessiBe logo Photoshopped on the side of the wagon.")

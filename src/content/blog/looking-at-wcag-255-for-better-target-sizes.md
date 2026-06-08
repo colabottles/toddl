@@ -1,14 +1,16 @@
 ---
 title: Looking at WCAG 2.5.5 for Better Target Sizes
-description: Looking at better target sizes for mobile devices to improve the user experience.
-date: 2021-07-29
+description: >-
+  Looking at better target sizes for mobile devices to improve the user
+  experience.
+date: 2021-07-29T00:00:00.000Z
 tags:
   - accessibility
   - a11y
   - wcag
   - targetsize
   - mobile
-## LEAVE THIS TAG HERE
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmqfcej2j'
 ---
 
 Have you ever experienced the frustration of trying to tap a button on a mobile device only to have it do nothing because the target size is just not large enough **and it’s not picking up on your press? Maybe you have larger fingers, like I do, or maybe it’s due to limited dexterity. This is because the sadly ever-decreasing target area of elements we, the users, have to interact with.

@@ -1,15 +1,16 @@
 ---
-title: The Architecture of Anxiety and Shame, Part Two
+title: 'The Architecture of Anxiety and Shame, Part Two'
 description: How they trap you and pressure you into staying in a toxic relationship.
-date: 2025-11-17 ## YYYY-MM-DD
+date: 2025-11-17T00:00:00.000Z
 tags:
-  - post ## LEAVE THIS TAG HERE
+  - post
   - roachmotel
   - forcedcontinuity
-
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-dc2.png
+image: >-
+  https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-dc2.png
 bskyPostId: 3m5uw4wwbs22c
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmn4sc2o2f'
 ---
 
 ## Roach Motels

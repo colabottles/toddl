@@ -1,7 +1,7 @@
 ---
 title: It Has Been A Minute
 description: It's been a while since I've added content here.
-date: 2022-10-07 ## YYYY-MM-DD
+date: 2022-10-07T00:00:00.000Z
 tags:
   - random
   - general
@@ -9,6 +9,7 @@ tags:
   - life
   - slacker
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmo7cmh25'
 ---
 
 ## It Has Been A Hot Minute

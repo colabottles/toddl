@@ -1,13 +1,18 @@
 ---
-title: AI and Accessibility, Transforming Digital Access for People with Disabilities
-description: Artificial intelligence has emerged as a powerful force in accessibility technology offering unprecedented opportunities to bridge gaps that have long excluded disabled people from full digital participation. Yet this transformation comes with complexities that deserve careful examination.
-date: 2023-10-12 ## YYYY-MM-DD
+title: 'AI and Accessibility, Transforming Digital Access for People with Disabilities'
+description: >-
+  Artificial intelligence has emerged as a powerful force in accessibility
+  technology offering unprecedented opportunities to bridge gaps that have long
+  excluded disabled people from full digital participation. Yet this
+  transformation comes with complexities that deserve careful examination.
+date: 2023-10-12T00:00:00.000Z
 tags:
-  - post ## LEAVE THIS TAG HERE
+  - post
   - ai
   - accessibility
   - disabledcommunity
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmlxxesf27'
 ---
 
 ## The Promise of AI-Powered Accessibility

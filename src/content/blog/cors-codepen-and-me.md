@@ -1,12 +1,13 @@
 ---
-title: CORS, CodePen & Me
+title: 'CORS, CodePen & Me'
 description: My adventures solving the CORS issue.
-date: 2019-09-06
+date: 2019-09-06T00:00:00.000Z
 tags:
   - development
   - frontend
   - fonts
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmeqxfj2f'
 ---
 
 ## CORS, CodePen and Me

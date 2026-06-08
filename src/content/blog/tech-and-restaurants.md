@@ -1,15 +1,22 @@
 ---
 title: Tech and Restaurants
-description: There are a ton of similarities between the tech industry and working as an engineer or manager/lead and working in a professional kitchen as an executive head chef/head chef, sous chef, or even a chef de partie. I have been wanting to write this article for a while as it has been swimming around in my head for quite some time now.
-date: 2024-08-05 ## YYYY-MM-DD
+description: >-
+  There are a ton of similarities between the tech industry and working as an
+  engineer or manager/lead and working in a professional kitchen as an executive
+  head chef/head chef, sous chef, or even a chef de partie. I have been wanting
+  to write this article for a while as it has been swimming around in my head
+  for quite some time now.
+date: 2024-08-05T00:00:00.000Z
 tags:
   - post
   - tech
   - restaurants
   - comparison
   - common-ground
-image: https://res.cloudinary.com/colabottles/image/upload/v1641401477/images/backdrop_lobster.jpg
+image: >-
+  https://res.cloudinary.com/colabottles/image/upload/v1641401477/images/backdrop_lobster.jpg
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmz7pff27'
 ---
 
 ## Mirror images

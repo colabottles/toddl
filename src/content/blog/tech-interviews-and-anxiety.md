@@ -1,7 +1,9 @@
 ---
 title: Tech Interviews and Anxiety
-description: My latest process in the job hunt and how my anxiety played a part in my downfall.
-date: 2020-10-29
+description: >-
+  My latest process in the job hunt and how my anxiety played a part in my
+  downfall.
+date: 2020-10-29T00:00:00.000Z
 tags:
   - tech
   - web
@@ -10,6 +12,7 @@ tags:
   - anxiety
   - jobsearch
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmzvs3j2s'
 ---
 
 ![A woman clutching at the neck line of her shirt with eyes closed in contemplation with the photo having a red overlay.](https://res.cloudinary.com/colabottles/image/upload/v1605623948/images/anxiety.jpg "Photo by Chaozzy Lin on Unsplash.")

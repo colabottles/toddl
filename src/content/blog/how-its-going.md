@@ -10,6 +10,7 @@ image: >-
   https://res.cloudinary.com/colabottles/image/upload/v1777758670/todd-social-card-update.png
 bskyPostId: 3mkvnlc4kft2i
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmm4bjf27'
 ---
 
 ## When Is Enough, Enough

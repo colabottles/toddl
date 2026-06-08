@@ -1,7 +1,7 @@
 ---
 title: Label in Name in WCAG 2.1
 description: What is new in WCAG 2.1 Label in Name.
-date: 2020-12-15
+date: 2020-12-15T00:00:00.000Z
 tags:
   - accessibility
   - a11y
@@ -10,6 +10,7 @@ tags:
   - screenreader
   - braille
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmoxilq2x'
 ---
 
 ![A user sitting in front of a computer using a Braille reader.](https://res.cloudinary.com/colabottles/image/upload/v1605616284/images/accessibility.jpg "Photo by Sigmund on Unsplash.")

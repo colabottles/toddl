@@ -1,13 +1,14 @@
 ---
 title: Don't Ever Give Up
 description: A post of hope and perseverance.
-date: 2021-03-31
+date: 2021-03-31T00:00:00.000Z
 tags:
   - employed
   - accessibility
   - web
   - perseverance
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmhiljh25'
 ---
 
 ![The symbol for a handicapped parking space with the blue square and white figure sitting in a wheelchair.](https://res.cloudinary.com/colabottles/image/upload/v1617229521/images/employed.jpg "Photo by AbsolutVision on Unsplash")

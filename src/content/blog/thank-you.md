@@ -1,10 +1,11 @@
 ---
 title: Thank You
 description: The title says it all.
-date: 2024-02-07
+date: 2024-02-07T00:00:00.000Z
 tags:
   - thanks
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmn2kl2h25'
 ---
 
 I would like to take the time to address everyone who reached out to me and who left messages on the socials I inhabit:

@@ -1,13 +1,16 @@
 ---
 title: An Event Apart
-description: An iconic front end conference I have attended many times. Goodbye, old friend.
-date: 2022-12-27 ## YYYY-MM-DD
+description: >-
+  An iconic front end conference I have attended many times. Goodbye, old
+  friend.
+date: 2022-12-27T00:00:00.000Z
 tags:
   - aea
   - conferences
   - aneventapart
   - goodbye
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmm5iazz2j'
 ---
 
 ## Shocked

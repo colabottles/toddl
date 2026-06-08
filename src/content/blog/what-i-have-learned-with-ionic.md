@@ -1,7 +1,7 @@
 ---
 title: What I Have Learned With Ionic
 description: What I have learned with using the Ionic framework in three months.
-date: 2023-03-17 ## YYYY-MM-DD
+date: 2023-03-17T00:00:00.000Z
 tags:
   - ionic
   - framework
@@ -10,6 +10,7 @@ tags:
   - learning
   - ioniclearning1
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmnfnqeo2f'
 ---
 
 ![The Ionic logo in blue](https://res.cloudinary.com/colabottles/image/upload/v1679077487/ionic_logotype_blue_jde7di.png)

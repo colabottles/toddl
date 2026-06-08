@@ -1,12 +1,13 @@
 ---
 title: An Update on Things
 description: What is going on and what is the future.
-date: 2024-10-07 ## YYYY-MM-DD
+date: 2024-10-07T00:00:00.000Z
 tags:
   - update
   - life
   - thoughts
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmncvyqj2s'
 ---
 
 I know I have written a lot about quitting, retiring, stepping back, etc. and all I can say is that is from a place where desperation and exasperation reigned supreme. This time however, it is different. My gut is not screaming at me to "stay in the game".

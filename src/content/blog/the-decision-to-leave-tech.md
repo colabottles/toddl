@@ -1,7 +1,7 @@
 ---
 title: The Decision to Leave Tech
 description: It is time for me to walk away on my own terms.
-date: 2024-02-05
+date: 2024-02-05T00:00:00.000Z
 tags:
   - tech
   - web
@@ -9,6 +9,7 @@ tags:
   - goodbye
   - cya
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmn5i2kb2z'
 ---
 
 ![Todd speaking at HalfStack Phoenix about leaving tech.](https://res.cloudinary.com/colabottles/image/upload/v1707139800/todd-halfstack.jpg)

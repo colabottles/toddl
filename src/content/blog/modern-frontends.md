@@ -1,11 +1,12 @@
 ---
 title: Modern Frontends
 description: My thoughts on Modern Frontends in London.
-date: 2022-11-19 ## YYYY-MM-DD
+date: 2022-11-19T00:00:00.000Z
 tags:
   - modernfrontends
   - organizers
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmshrms2i'
 ---
 
 ## No Filter

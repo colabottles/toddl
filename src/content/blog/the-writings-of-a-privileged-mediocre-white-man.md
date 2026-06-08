@@ -1,7 +1,9 @@
 ---
 title: The Writings of a Privileged Mediocre White Man
-description: After a recent interview where my writing was brought up, it brought up a whole new topic.
-date: 2022-12-02 ## YYYY-MM-DD
+description: >-
+  After a recent interview where my writing was brought up, it brought up a
+  whole new topic.
+date: 2022-12-02T00:00:00.000Z
 tags:
   - writing
   - tech
@@ -9,6 +11,7 @@ tags:
   - interviewing
   - judgment
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmn6vjqv27'
 ---
 
 ## My Position in Tech

@@ -1,15 +1,19 @@
 ---
 title: Year in Review 2024
-description: 2024 had been a year of ups and downs and looking forward, I'm hopeful for change for the good.
-date: 2024-12-30 ## YYYY-MM-DD
+description: >-
+  2024 had been a year of ups and downs and looking forward, I'm hopeful for
+  change for the good.
+date: 2024-12-30T00:00:00.000Z
 tags:
   - post
   - 2024review
   - yearinreview
   - lookingback
-image: https://res.cloudinary.com/colabottles/image/upload/v1735593061/todd-social-card-2024.png
+image: >-
+  https://res.cloudinary.com/colabottles/image/upload/v1735593061/todd-social-card-2024.png
 bskyPostId: 3lekmgqd2ys27
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmnie5ns2w'
 ---
 
 ## It&apos;s Been A Roller Coaster

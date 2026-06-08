@@ -1,11 +1,12 @@
 ---
 title: Whataboutism
 description: What about accessibility is it that makes devs turn into ableist .
-date: 2023-09-15
+date: 2023-09-15T00:00:00.000Z
 tags:
   - accessibility
   - ableism
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmngebm722'
 ---
 
 > What about it? This doesn’t need accessibility.

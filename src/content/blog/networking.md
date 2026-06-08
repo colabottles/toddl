@@ -1,7 +1,9 @@
 ---
 title: Networking
-description: When I set out to give accessibility talks, I never thought I'd meet some of the best people ever
-date: 2024-12-17 ## YYYY-MM-DD
+description: >-
+  When I set out to give accessibility talks, I never thought I'd meet some of
+  the best people ever
+date: 2024-12-17T00:00:00.000Z
 tags:
   - post
   - networking
@@ -9,9 +11,11 @@ tags:
   - traveling
   - speaking
   - community
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/social-card-networking.png
+image: >-
+  https://res.cloudinary.com/colabottles/image/upload/v1731376889/social-card-networking.png
 bskyPostId: 3ldkd2njozc2k
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmtwcin27'
 ---
 
 ## I had the time of my life and more so I decided to write about it

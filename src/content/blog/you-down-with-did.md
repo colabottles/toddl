@@ -1,14 +1,17 @@
 ---
 title: You Down With DID?
-description: The pain of having a DID issue on Bluesky and the hours it took to research and fix.
-date: 2024-11-14 ## YYYY-MM-DD
+description: >-
+  The pain of having a DID issue on Bluesky and the hours it took to research
+  and fix.
+date: 2024-11-14T00:00:00.000Z
 tags:
   - post
   - didfixit
   - bluesky
   - did
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/did-card.png
+image: 'https://res.cloudinary.com/colabottles/image/upload/v1731376889/did-card.png'
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmnj2nbp22'
 ---
 
 ## Yeah You Know Me&excl;

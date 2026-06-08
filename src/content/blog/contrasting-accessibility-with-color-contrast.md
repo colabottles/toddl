@@ -1,7 +1,9 @@
 ---
 title: Contrasting Accessibility with Color Contrast
-description: Bringing color contrast in accessibility to the table and why we need to do more checking of color contrast in our work on the web.
-date: 2020-11-21
+description: >-
+  Bringing color contrast in accessibility to the table and why we need to do
+  more checking of color contrast in our work on the web.
+date: 2020-11-21T00:00:00.000Z
 tags:
   - accessibility
   - tools
@@ -9,6 +11,7 @@ tags:
   - design
   - colorcontrast
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmdi46g2w'
 ---
 
 I came across a website that had some significant visual issues pertaining to color contrast. These visual issues made it difficult, if not impossible, to read the website’s content. This led me to wonder how people with visual impairments and/or use assistive technology might navigate these issues.

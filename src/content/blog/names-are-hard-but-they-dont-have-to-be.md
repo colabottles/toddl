@@ -1,15 +1,17 @@
 ---
 title: Names Are Hard But They Don't Have To Be
 description: A guide to handling names in web applications with respect to people.
-date: 2026-01-22 ## YYYY-MM-DD
+date: 2026-01-22T00:00:00.000Z
 tags:
-  - post  ## LEAVE THIS TAG HERE
+  - post
   - naming
   - coding
   - development
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-names.png
+image: >-
+  https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-names.png
 bskyPostId: 3me7fa2md5c2n
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmtbwsg2f'
 ---
 
 ## The $10,000 Bug

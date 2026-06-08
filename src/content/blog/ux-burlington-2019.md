@@ -1,11 +1,12 @@
 ---
 title: UX Burlington 2019
-description: A recap of the conference in Burlington, Vermont. UX Burlington.
-date: 2019-05-03
+description: 'A recap of the conference in Burlington, Vermont. UX Burlington.'
+date: 2019-05-03T00:00:00.000Z
 tags:
   - conference
   - burlingtonvt
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmnevzd22i'
 ---
 
 ## UX Burlington 2019 - Burlington, VT

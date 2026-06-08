@@ -1,7 +1,9 @@
 ---
 title: Making A Strong Case For Accessibility
-description: Accessibility is often overlooked or bolted on to the end of a project from the experiences in Todd’s career in web development and design.
-date: 2021-07-30
+description: >-
+  Accessibility is often overlooked or bolted on to the end of a project from
+  the experiences in Todd’s career in web development and design.
+date: 2021-07-30T00:00:00.000Z
 tags:
   - post
   - accessibility
@@ -11,6 +13,7 @@ tags:
   - usability
   - tools
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmrrpl22i'
 ---
 
 (Originally posted on [Smashing Magazine](https://www.smashingmagazine.com/2021/07/strong-case-for-accessibility/) on 9 July, 2021)

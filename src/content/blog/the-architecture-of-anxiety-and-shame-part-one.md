@@ -1,18 +1,22 @@
 ---
-title: The Architecture of Anxiety and Shame, Part One
-description: Deceptive Patterns succeed not just because they trick the user, but because they engineer an atmosphere of social and cognitive pressure.
-date: 2025-10-07 ## YYYY-MM-DD
+title: 'The Architecture of Anxiety and Shame, Part One'
+description: >-
+  Deceptive Patterns succeed not just because they trick the user, but because
+  they engineer an atmosphere of social and cognitive pressure.
+date: 2025-10-07T00:00:00.000Z
 tags:
-  - post ## LEAVE THIS TAG HERE
+  - post
   - deceptivepatterns
   - userexperience
   - accessibility
   - fakescarcity
   - timepressure
   - confirmshaming
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-deceptivepatterns.png
+image: >-
+  https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-deceptivepatterns.png
 bskyPostId: 3m2lu52omns2j
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmn423mz2s'
 ---
 
 ## Part One, The Scarcity and Pressure to Make Decisions and Placing Guilt in the Users Lap

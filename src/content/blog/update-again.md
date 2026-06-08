@@ -1,12 +1,13 @@
 ---
 title: Another Update on Things
 description: What is going on now and what is the future.
-date: 2024-10-17 ## YYYY-MM-DD
+date: 2024-10-17T00:00:00.000Z
 tags:
   - updated
   - life
   - thoughts
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmncauha2x'
 ---
 
 I have gotten word that the doctor is now the source of the hold up with finding out test results or even testing and what is going on with my significant other. This in itself is a weight on the mind and I can't imagine the weight she is dealing with herself.

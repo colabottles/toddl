@@ -1,7 +1,7 @@
 ---
 title: An Open Challenge
 description: An open challenge to conference organizers.
-date: 2022-11-10 ## YYYY-MM-DD
+date: 2022-11-10T00:00:00.000Z
 tags:
   - openchallenge
   - conferences
@@ -11,6 +11,7 @@ tags:
   - accessibility
   - inclusion
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmm6r5ws2i'
 ---
 
 ## To Tech Event Organizers

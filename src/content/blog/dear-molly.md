@@ -1,7 +1,7 @@
 ---
 title: Dear Molly
 description: A letter to Molly Holzschlag.
-date: 2023-09-06 ## YYYY-MM-DD
+date: 2023-09-06T00:00:00.000Z
 tags:
   - post
   - molly
@@ -10,6 +10,7 @@ tags:
   - life
   - death
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmfizmd2p'
 ---
 
 ## CW: Death

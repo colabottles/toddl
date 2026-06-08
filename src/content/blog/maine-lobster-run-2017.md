@@ -1,10 +1,11 @@
 ---
 title: Maine Lobster Run 2017
 description: A look back on the adventures up the Maine coast.
-date: 2017-09-04
+date: 2017-09-04T00:00:00.000Z
 tags:
   - adventure
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmr2dp725'
 ---
 
 The trip entailed a five-day jaunt up the Maine coast starting in Kittery, Maine at Bob's Clam Hut who has one of the best lobster rolls in southern Maine.

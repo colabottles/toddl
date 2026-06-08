@@ -1,12 +1,15 @@
 ---
-title: Coronavirus, Quarantine, and Chats
-description: A retrospective on the Zoom chats I have had with several people from around the world.
-date: 2020-03-22
+title: 'Coronavirus, Quarantine, and Chats'
+description: >-
+  A retrospective on the Zoom chats I have had with several people from around
+  the world.
+date: 2020-03-22T00:00:00.000Z
 tags:
   - meetings
   - zoom
   - chats
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmme54dl2p'
 ---
 
 For the past couple of weeks I have been holding some Zoom chats for whomever wanted to come in and just talk to someone. It didn’t have to be on anything gin particular and could be about whatever the person wanted to talk about.

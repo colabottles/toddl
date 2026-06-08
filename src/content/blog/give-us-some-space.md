@@ -1,7 +1,9 @@
 ---
 title: Give Us Some Space!
-description: Conferences that jam accessibility talks together at the end of the day need to stop.
-date: 2022-03-25 ## YYYY-MM-DD
+description: >-
+  Conferences that jam accessibility talks together at the end of the day need
+  to stop.
+date: 2022-03-25T00:00:00.000Z
 tags:
   - conferences
   - schedules
@@ -9,6 +11,7 @@ tags:
   - talks
   - speaking
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmk53vd2p'
 ---
 
 ## There's A Better Way

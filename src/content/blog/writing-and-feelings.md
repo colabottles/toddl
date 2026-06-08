@@ -1,13 +1,14 @@
 ---
 title: Writing and Feelings
-description: When writing, I pour my feelings into the work. I'll explain.
-date: 2022-11-23 ## YYYY-MM-DD
+description: 'When writing, I pour my feelings into the work. I''ll explain.'
+date: 2022-11-23T00:00:00.000Z
 tags:
   - writing
   - feelings
   - recovery
   - life
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmnhpat72a'
 ---
 
 ## A Little Backstory

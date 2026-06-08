@@ -1,7 +1,9 @@
 ---
 title: Enough with "Dark Patterns" Already!
-description: The term "dark patterns" is monolithic, archaic and racial connotations, let's change the terminology.
-date: 2023-01-01 ## YYYY-MM-DD
+description: >-
+  The term "dark patterns" is monolithic, archaic and racial connotations, let's
+  change the terminology.
+date: 2023-01-01T00:00:00.000Z
 tags:
   - ux
   - darkpatterns
@@ -11,6 +13,7 @@ tags:
   - tech
   - namingconventions
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmi6k3f27'
 ---
 
 ## This Isn't Going To Go Over Well

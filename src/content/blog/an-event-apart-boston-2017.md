@@ -1,11 +1,12 @@
 ---
 title: An Event Apart 2017 - Wrap-Up Edition
 description: The wrap-up article I authored in 2017 after An Event Apart.
-date: 2017-05-20
+date: 2017-05-20T00:00:00.000Z
 tags:
   - conference
   - boston
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmlzcptc2w'
 ---
 
 ## An Event Apart Boston 2017, Boston, MA

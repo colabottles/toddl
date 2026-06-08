@@ -1,13 +1,14 @@
 ---
-title: "2024"
-description: New year, different me.
-date: 2024-01-11 ## YYYY-MM-DD
+title: '2024'
+description: 'New year, different me.'
+date: 2024-01-11T00:00:00.000Z
 tags:
   - twentytwentyfour
   - conferences
   - fin
   - tech
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmnabi4y2x'
 ---
 
 ## New Year, Different Me

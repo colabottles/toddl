@@ -12,6 +12,7 @@ const blog = defineCollection({
     draft: z.boolean().optional().default(false),
     bskyPostId: z.string().optional(),
     image: z.string().optional(),
+    standardSiteUri: z.string().optional(),
   }),
 })
 

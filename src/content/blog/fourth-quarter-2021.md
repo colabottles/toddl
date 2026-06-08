@@ -1,13 +1,14 @@
 ---
 title: Fourth Quarter 2021
 description: A busy end to the year.
-date: 2020-11-24
+date: 2020-11-24T00:00:00.000Z
 tags:
   - work
   - life
   - career
   - fourthq
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmjhtaj2z'
 ---
 
 ## It's been a long fourth quarter

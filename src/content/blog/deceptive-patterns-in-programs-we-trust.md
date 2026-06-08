@@ -1,7 +1,9 @@
 ---
 title: Deceptive Patterns In Programs We Trust
-description: Exploring deceptive patterns in UX and why companies have to do better to their customers.
-date: 2020-02-24
+description: >-
+  Exploring deceptive patterns in UX and why companies have to do better to
+  their customers.
+date: 2020-02-24T00:00:00.000Z
 tags:
   - ux
   - userexperience
@@ -9,6 +11,7 @@ tags:
   - patterns
   - design
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmgaovk2w'
 ---
 
 Don't look now but you're probably installing something else other than what you downloaded.

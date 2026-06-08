@@ -1,12 +1,13 @@
 ---
 title: Goodbye 2020
 description: Farewell to a year to forget.
-date: 2020-12-31
+date: 2020-12-31T00:00:00.000Z
 tags:
   - general
   - life
   - twentytwenty
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmkueys22'
 ---
 
 What can be said that already hasn't been said about this year&quest;

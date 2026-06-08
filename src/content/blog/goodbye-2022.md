@@ -1,12 +1,13 @@
 ---
 title: Goodbye 2022
 description: The year of 2022 in review.
-date: 2022-12-28 ## YYYY-MM-DD
+date: 2022-12-28T00:00:00.000Z
 tags:
   - review
   - twentytwentytwo
   - endofyear
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmlijsq2x'
 ---
 
 ## Hey 2022

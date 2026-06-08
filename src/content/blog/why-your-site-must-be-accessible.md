@@ -1,11 +1,12 @@
 ---
 title: Why Your Site Must Be Accessible
 description: Accessibility is an afterthought still. It shouldn't be.
-date: 2019-06-18
+date: 2019-06-18T00:00:00.000Z
 tags:
   - accessibility
   - design
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmnh27ws2i'
 ---
 
 Accessibility: _adj. that can be used, entered, reached, etc._

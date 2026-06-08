@@ -1,13 +1,14 @@
 ---
 title: Stepping Out
 description: I am stepping out of the Accessibility arena and here's why.
-date: 2023-04-12 ## YYYY-MM-DD
+date: 2023-04-12T00:00:00.000Z
 tags:
   - devrel
   - accessibility
   - devex
   - development
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmyjqgb2f'
 ---
 
 ## It&apos;s a great song&excl;

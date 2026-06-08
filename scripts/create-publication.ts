@@ -1,4 +1,3 @@
-// scripts/create-publication.ts
 import { BskyAgent } from '@atproto/api'
 import { config } from 'dotenv'
 config()

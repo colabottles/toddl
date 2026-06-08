@@ -1,11 +1,12 @@
 ---
-title: An Event Apart 2019 - Denver Wrap-Up Edition, Part Three
-description: The wrap-up article after An Event Apart in Denver, Colorado.
-date: 2019-10-31
+title: 'An Event Apart 2019 - Denver Wrap-Up Edition, Part Three'
+description: 'The wrap-up article after An Event Apart in Denver, Colorado.'
+date: 2019-10-31T00:00:00.000Z
 tags:
   - conference
   - denver
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmm43kpp2a'
 ---
 
 ## An Event Apart Denver 2019, Denver, CO

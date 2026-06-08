@@ -1,7 +1,7 @@
 ---
 title: User Defenders Book Club
-description: A discussion on the book Ruined By Design, by Mike Monteiro.
-date: 2020-02-02
+description: 'A discussion on the book Ruined By Design, by Mike Monteiro.'
+date: 2020-02-02T00:00:00.000Z
 tags:
   - discussion
   - userexperience
@@ -12,6 +12,7 @@ tags:
   - userdefendersbookclub
   - userdefenders
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmndkxkx25'
 ---
 
 It was a pleasure being a part of this discussion about a book I really liked. Mike Monteiro's _Ruined By Design_. Have a look at the video below and join User Defenders for more community events and more book club discussions!

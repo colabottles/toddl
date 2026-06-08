@@ -1,14 +1,18 @@
 ---
 title: Accessibility Misinformation
-description: Misinformation is quite the thing these days. Now it seems to be working its way into the accessibility space.
-date: 2024-11-13 ## YYYY-MM-DD
+description: >-
+  Misinformation is quite the thing these days. Now it seems to be working its
+  way into the accessibility space.
+date: 2024-11-13T00:00:00.000Z
 tags:
   - misinfo
   - misinformation
   - accessibility
-image: https://res.cloudinary.com/colabottles/image/upload/v1731541393/scard-a11y-misinfo.png
+image: >-
+  https://res.cloudinary.com/colabottles/image/upload/v1731541393/scard-a11y-misinfo.png
 bskyPostId: 3lauorp3v4k2g
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmlxbtyb2s'
 ---
 
 ## Don't Believe Everything You Read

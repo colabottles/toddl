@@ -1,7 +1,7 @@
 ---
-title: Ionic and Vue, Part Two
+title: 'Ionic and Vue, Part Two'
 description: My deep dive into learning Ionic and Vue.
-date: 2023-04-26 ## YYYY-MM-DD
+date: 2023-04-26T00:00:00.000Z
 tags:
   - ionic
   - vue
@@ -11,6 +11,7 @@ tags:
   - typescript
   - ionicparttwo
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmniut62w'
 ---
 
 ![The Ionic Framework logo, a blue circle enclosed in a thick blue, incomplete line with a small blue ball rotating around the center circle, next to the Vue JS logo, a V-shaped logo with a light green V and a slate grey blue smaller V sitting inside the large V-shape.](https://res.cloudinary.com/colabottles/image/upload/v1670038063/images/vue-ionic-logos.png)

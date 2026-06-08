@@ -1,15 +1,19 @@
 ---
 title: Building a Production-Ready Nuxt Module From Idea to Published
-description: How I built @colabottles/center-div - a complete journey from problem to published package.
-date: 2026-01-17 ## YYYY-MM-DD
+description: >-
+  How I built @colabottles/center-div - a complete journey from problem to
+  published package.
+date: 2026-01-17T00:00:00.000Z
 tags:
-  - post ## LEAVE THIS TAG HERE
+  - post
   - nuxt
   - vue
   - coding
-image: https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-nuxtmod.png
+image: >-
+  https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-nuxtmod.png
 bskyPostId: 3mcn4sxc6bk27
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmarvf62w'
 ---
 
 ## How I built @colabottles/center-div - a complete journey from problem to published package

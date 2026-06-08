@@ -15,12 +15,14 @@ interface Props {
   title: string;
   description?: string;
   image?: string;
+  standardSiteUri?: string;
 }
 
 const {
   title,
   description = "Web developer and accessibility advocate based in Phoenix, AZ.",
   image,
+  standardSiteUri,
 } = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
@@ -36,6 +38,11 @@ const currentPath = Astro.url.pathname;
       rel="site.standard.publication"
       href="at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.publication/3mnqgth7gxo2f"
     />
+    {
+      standardSiteUri && (
+        <link rel="site.standard.document" href={standardSiteUri} />
+      )
+    }
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -1,12 +1,13 @@
 ---
 title: Open House
 description: The open house at David Jonathan Ross's House.
-date: 2019-10-18
+date: 2019-10-18T00:00:00.000Z
 tags:
   - fonts
   - typography
   - adventure
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmulhvb2s'
 ---
 
 I finally am getting around to writing again after not having written for some time. This is about my adventure down to [David Jonathan Ross](https://djr.com/)'s home in Conway, Massachusetts for an open house. It was a great weekend full of adventure and meeting people I normally wouldn't have, talking typography and fonts, and watching some very cool and extremely awesome rpesentations.

@@ -1,7 +1,7 @@
 ---
 title: ConnectTech 2021
-description: Thoughts, takeaways from ConnectTech 2021.
-date: 2021-11-14
+description: 'Thoughts, takeaways from ConnectTech 2021.'
+date: 2021-11-14T00:00:00.000Z
 tags:
   - connecttech
   - conferences
@@ -9,6 +9,7 @@ tags:
   - community
   - travel
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmmcrepz2s'
 ---
 
 ## Connect.Tech

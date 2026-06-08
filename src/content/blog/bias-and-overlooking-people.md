@@ -1,13 +1,16 @@
 ---
 title: Bias and Overlooking People
-description: Bias needs to be destroyed because good people are falling by the wayside when it comes to being overlooked for things beyond their control.
-date: 2022-11-03 ## YYYY-MM-DD
+description: >-
+  Bias needs to be destroyed because good people are falling by the wayside when
+  it comes to being overlooked for things beyond their control.
+date: 2022-11-03T00:00:00.000Z
 tags:
   - bias
   - hiring
   - exclusion
   - opportunities
 draft: false
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqmm7hozn24'
 ---
 
 ## A Lot of Thinking Was Done Today
