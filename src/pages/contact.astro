@@ -1,97 +1,156 @@
 ---
-import Base from "../layouts/Base.astro";
-
-const links = [
-  { label: "web", value: "toddl.dev", href: "https://toddl.dev" },
-  {
-    label: "github",
-    value: "colabottles",
-    href: "https://github.com/colabottles",
-  },
-  {
-    label: "bluesky",
-    value: "@toddl.dev",
-    href: "https://bsky.app/profile/toddl.dev",
-  },
-  { label: "twitch", value: "toddcodes", href: "https://twitch.tv/toddcodes" },
-  {
-    label: "mastodon",
-    value: "@toddlibby",
-    href: "https://front-end.social/@todd",
-  },
-];
+import PageLayout from "../layouts/PageLayout.astro";
 ---
 
-<Base title="Contact" description="Get in touch with Todd Libby.">
-  <section aria-labelledby="contact-heading">
-    <h1 id="contact-heading" class="cmd-heading">
-      <span class="cmd-prompt">$</span> ./contact
-    </h1>
+<PageLayout
+  title="Contact — Todd Libby"
+  pageNumber={3}
+  pageLabel="Contact"
+  nextLabel="04 — Links"
+  nextHref="/links"
+>
+  <Fragment slot="main">
+    <p class="section-label">Get in touch</p>
+    <p class="intro-text">
+      Have a project, question, or just want to talk about the web? I'm
+      reachable in a few places.
+    </p>
+    <p class="body-text">
+      The best way to reach me is via email or Bluesky. I try to respond within
+      a day or two. If it's about an accessibility audit, a speaking engagement,
+      or a freelance project, the more detail you can include the better.
+    </p>
 
-    <ul class="contact-list">
-      {
-        links.map((l) => (
-          <li class="contact-item">
-            <p class="contact-item__label">{l.label}</p>
-            {l.href ? (
-              <a
-                href={l.href}
-                class="contact-item__value"
-                target={l.href.startsWith("mailto") ? undefined : "_blank"}
-                rel={
-                  l.href.startsWith("mailto")
-                    ? undefined
-                    : "noopener noreferrer"
-                }
-              >
-                {l.value}
-              </a>
-            ) : (
-              <span class="contact-item__value contact-item__value--plain">
-                {l.value}
-              </span>
-            )}
-          </li>
-        ))
-      }
-    </ul>
-  </section>
-</Base>
+    <blockquote class="pull-quote">
+      <p>"If it's about the web, I probably want to hear it."</p>
+    </blockquote>
+
+    <p class="body-text">
+      I'm not currently taking on new long-term client projects, but I'm open to
+      short engagements, accessibility audits, and consulting work.
+    </p>
+
+    <div class="contact-grid" role="list" aria-label="Contact methods">
+      <div class="contact-item" role="listitem">
+        <p class="contact-label">Email</p>
+        <a href="mailto:todd@toddl.dev" class="contact-value">todd@toddl.dev</a>
+      </div>
+      <div class="contact-item" role="listitem">
+        <p class="contact-label">Bluesky</p>
+        <a
+          href="https://bsky.app/profile/toddl.dev"
+          class="contact-value"
+          rel="noopener noreferrer">@toddl.dev</a
+        >
+      </div>
+      <div class="contact-item" role="listitem">
+        <p class="contact-label">GitHub</p>
+        <a
+          href="https://github.com/colabottles"
+          class="contact-value"
+          rel="noopener noreferrer">colabottles</a
+        >
+      </div>
+      <div class="contact-item" role="listitem">
+        <p class="contact-label">Twitch</p>
+        <a
+          href="https://twitch.tv/zulkirjax"
+          class="contact-value"
+          rel="noopener noreferrer">zulkirjax</a
+        >
+      </div>
+    </div>
+  </Fragment>
+
+  <Fragment slot="aside">
+    <div class="side-item">
+      <p class="section-label">Response time</p>
+      <p class="side-heading">1–2 days</p>
+      <p class="side-text">Usually faster on Bluesky.</p>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Open to</p>
+      <div class="tag-list">
+        <span class="tag">Audits</span>
+        <span class="tag">Consulting</span>
+        <span class="tag">Speaking</span>
+        <span class="tag">Short projects</span>
+      </div>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Not open to</p>
+      <div class="tag-list">
+        <span class="tag tag--dim">Long-term retainers</span>
+        <span class="tag tag--dim">Cold sales pitches</span>
+      </div>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Timezone</p>
+      <p class="side-heading">MST / UTC−7</p>
+      <p class="side-text">Phoenix, Arizona. No DST.</p>
+    </div>
+  </Fragment>
+</PageLayout>
 
 <style>
-  .contact-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    list-style: none;
-    padding: 0;
+  @import "../styles/page-content.css";
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid #222;
+    margin-top: 2rem;
   }
 
   .contact-item {
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-    padding: 0.625rem 0.875rem;
-    border: 0.5px solid var(--warm-border);
-    border-radius: var(--radius-sm);
-    background: var(--warm-mid);
-    font-size: 0.875rem;
+    padding: 1.25rem 0;
+    border-right: 1px solid #222;
+    border-bottom: 1px solid #222;
   }
 
-  .contact-item__label {
-    color: var(--accent);
-    min-width: 5rem;
-    flex-shrink: 0;
-    font-size: 0.8125rem;
+  .contact-item:nth-child(even) {
+    border-right: none;
+    padding-left: 1.25rem;
   }
 
-  .contact-item__value {
-    color: var(--text-primary);
-    text-decoration: underline;
-    text-underline-offset: 3px;
+  .contact-item:nth-last-child(-n + 2) {
+    border-bottom: none;
   }
 
-  .contact-item__value:hover {
-    color: var(--accent);
+  .contact-label {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-value {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .contact-value:hover,
+  .contact-value:focus-visible {
+    color: #aaa;
+  }
+
+  .contact-value:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  .tag--dim {
+    color: #555;
+    border-color: #222;
   }
 </style>

@@ -1,0 +1,219 @@
+---
+import PageLayout from "../../layouts/PageLayout.astro";
+import { getCollection, render, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const formattedDate = new Date(post.data.date).toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<PageLayout
+  title={`${post.data.title} — Todd Libby`}
+  pageNumber={2}
+  pageLabel="Blog"
+  nextLabel="All posts"
+  nextHref="/blog"
+>
+  <Fragment slot="main">
+    <p class="section-label">
+      <time datetime={new Date(post.data.date).toISOString()}
+        >{formattedDate}</time
+      >
+    </p>
+
+    {post.data.description && <p class="intro-text">{post.data.description}</p>}
+
+    <article class="post-content" aria-label={post.data.title}>
+      <Content />
+    </article>
+  </Fragment>
+
+  <Fragment slot="aside">
+    <div class="side-item">
+      <p class="section-label">Published</p>
+      <p class="side-heading">
+        <time datetime={new Date(post.data.date).toISOString()}
+          >{formattedDate}</time
+        >
+      </p>
+    </div>
+
+    {
+      post.data.tags?.length > 0 && (
+        <div class="side-item">
+          <p class="section-label">Tags</p>
+          <div class="tag-list">
+            {post.data.tags.map((tag: string) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        </div>
+      )
+    }
+
+    <div class="side-item">
+      <p class="section-label">Share</p>
+      <ul class="side-list" aria-label="Share options">
+        <li>
+          <a
+            href={`https://bsky.app/intent/compose?text=${encodeURIComponent(post.data.title + " " + Astro.url)}`}
+            class="side-link"
+            rel="noopener noreferrer"
+          >
+            Bluesky
+          </a>
+        </li>
+        <li>
+          <a
+            href={`https://mastodon.social/share?text=${encodeURIComponent(post.data.title + " " + Astro.url)}`}
+            class="side-link"
+            rel="noopener noreferrer"
+          >
+            Mastodon
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Back</p>
+      <a href="/blog" class="side-link">All posts</a>
+    </div>
+  </Fragment>
+</PageLayout>
+
+<style>
+  @import "../../styles/page-content.css";
+
+  .side-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 0.4rem;
+  }
+
+  .post-content {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #ccc;
+  }
+
+  .post-content h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 2rem 0 0.75rem;
+    line-height: 1.1;
+  }
+
+  .post-content h3 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ddd;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .post-content p {
+    margin-bottom: 1.25rem;
+  }
+
+  .post-content a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .post-content a:hover,
+  .post-content a:focus-visible {
+    text-decoration: none;
+  }
+
+  .post-content a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  .post-content ul,
+  .post-content ol {
+    padding-left: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .post-content li {
+    margin-bottom: 0.4rem;
+  }
+
+  .post-content blockquote {
+    border-left: 3px solid #fff;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.2;
+  }
+
+  .post-content code {
+    font-family: "Courier New", monospace;
+    font-size: 0.85em;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 1px 5px;
+    color: #ddd;
+  }
+
+  .post-content pre {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 1.25rem;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .post-content pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.85rem;
+  }
+
+  .post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #333;
+    margin: 1.5rem 0;
+  }
+
+  .post-content hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 2rem 0;
+  }
+</style>
