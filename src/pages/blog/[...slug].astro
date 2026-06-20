@@ -22,12 +22,21 @@ const formattedDate = new Date(post.data.date).toLocaleDateString("en-US", {
   month: "long",
   day: "numeric",
 });
+
+const canonicalUrl = new URL(
+  `/blog/${post.id}`,
+  "https://toddl.dev",
+).toString();
+
+const shareText = encodeURIComponent(`${post.data.title} ${canonicalUrl}`);
 ---
 
 <PageLayout
   title={`${post.data.title} — Todd Libby`}
   pageNumber={2}
   pageLabel="Blog"
+  description={post.data.description}
+  standardSiteUri={post.data.standardSiteUri}
   nextLabel="All posts"
   nextHref="/blog"
 >
@@ -73,7 +82,7 @@ const formattedDate = new Date(post.data.date).toLocaleDateString("en-US", {
       <ul class="side-list" aria-label="Share options">
         <li>
           <a
-            href={`https://bsky.app/intent/compose?text=${encodeURIComponent(post.data.title + " " + Astro.url)}`}
+            href={`https://bsky.app/intent/compose?text=${shareText}`}
             class="side-link"
             rel="noopener noreferrer"
           >
@@ -82,7 +91,7 @@ const formattedDate = new Date(post.data.date).toLocaleDateString("en-US", {
         </li>
         <li>
           <a
-            href={`https://mastodon.social/share?text=${encodeURIComponent(post.data.title + " " + Astro.url)}`}
+            href={`https://mastodon.social/share?text=${shareText}`}
             class="side-link"
             rel="noopener noreferrer"
           >
@@ -170,7 +179,6 @@ const formattedDate = new Date(post.data.date).toLocaleDateString("en-US", {
     border-left: 3px solid #fff;
     padding-left: 1rem;
     margin: 1.5rem 0;
-    border-radius: 0;
     font-family: "Oswald", sans-serif;
     font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 700;

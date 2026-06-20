@@ -6,6 +6,8 @@ interface Props {
   totalPages?: number;
   nextLabel?: string;
   nextHref?: string;
+  description?: string;
+  standardSiteUri?: string;
 }
 
 const {
@@ -15,7 +17,17 @@ const {
   totalPages = 5,
   nextLabel,
   nextHref,
+  description,
+  standardSiteUri,
 } = Astro.props;
+
+const PUBLICATION_AT_URI =
+  "at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.publication/3mnqgth7gxo2f";
+
+const canonicalUrl = new URL(
+  Astro.url.pathname,
+  "https://toddl.dev",
+).toString();
 ---
 
 <!doctype html>
@@ -23,16 +35,22 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {description && <meta name="description" content={description} />}
     <title>{title}</title>
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Standard.site publication registration -->
+    <link rel="site.standard.publication" href={PUBLICATION_AT_URI} />
+
+    <!-- Standard.site document registration (blog posts only) -->
+    {
+      standardSiteUri && (
+        <link rel="site.standard.document" href={standardSiteUri} />
+      )
+    }
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Barlow+Condensed:wght@400;600&family=Barlow:wght@400;500&display=swap"
       rel="stylesheet"
@@ -49,7 +67,9 @@ const {
       </nav>
       <div class="header-body">
         <div class="header-text">
-          <p class="page-label">{String(pageNumber).padStart(2, "0")} &mdash; {pageLabel}</p>
+          <p class="page-label">
+            {String(pageNumber).padStart(2, "0")} &mdash; {pageLabel}
+          </p>
           <h1 class="page-title">{title}</h1>
         </div>
         <div class="page-number" aria-hidden="true">{pageNumber}</div>
@@ -67,13 +87,21 @@ const {
 
     <footer class="page-footer">
       <div class="footer-col">
-        {nextLabel && nextHref ? (
-          <p class="footer-label">Next</p>
-          <a href={nextHref} class="footer-value footer-link">{nextLabel}</a>
-        ) : (
-          <p class="footer-label">End</p>
-          <p class="footer-value">&mdash;</p>
-        )}
+        {
+          nextLabel && nextHref ? (
+            <>
+              <p class="footer-label">Next</p>
+              <a href={nextHref} class="footer-value footer-link">
+                {nextLabel}
+              </a>
+            </>
+          ) : (
+            <>
+              <p class="footer-label">End</p>
+              <p class="footer-value">&mdash;</p>
+            </>
+          )
+        }
       </div>
       <div class="footer-col">
         <p class="footer-label">Site</p>
@@ -81,7 +109,11 @@ const {
       </div>
       <div class="footer-col">
         <p class="footer-label">Page</p>
-        <p class="footer-value">{String(pageNumber).padStart(2, "0")} of {String(totalPages).padStart(2, "0")}</p>
+        <p class="footer-value">
+          {String(pageNumber).padStart(2, "0")} of {
+            String(totalPages).padStart(2, "0")
+          }
+        </p>
       </div>
     </footer>
   </body>
