@@ -1,185 +1,315 @@
 ---
-import Base from "../layouts/Base.astro";
+// Home page — magazine-style nav grid
+// Five columns link to the main sections of the site
+
+interface Column {
+  number: number;
+  author: string;
+  blurb: string;
+  page: string;
+  href: string;
+  label: string;
+}
+
+const columns: Column[] = [
+  {
+    number: 1,
+    author: "Todd Libby",
+    blurb: "Who I am, what I do, and how I got here.",
+    page: "About",
+    href: "/about",
+    label: "About — column 1",
+  },
+  {
+    number: 2,
+    author: "Writing & Ideas",
+    blurb: "Long-form thoughts on the web, accessibility, and everything else.",
+    page: "Blog",
+    href: "/blog",
+    label: "Blog — column 2",
+  },
+  {
+    number: 3,
+    author: "Get In Touch",
+    blurb: "Have a project in mind? Drop me a line and let's talk.",
+    page: "Contact",
+    href: "/contact",
+    label: "Contact — column 3",
+  },
+  {
+    number: 4,
+    author: "Around the Web",
+    blurb: "A curated collection of things worth reading and bookmarking.",
+    page: "Links",
+    href: "/links",
+    label: "Links — column 4",
+  },
+  {
+    number: 5,
+    author: "Odds & Ends",
+    blurb: "Projects, experiments, and things that don't fit anywhere else.",
+    page: "Misc",
+    href: "/misc",
+    label: "Misc — column 5",
+  },
+];
+
+const svgIllustrations: Record<string, string> = {
+  About: `<circle cx="50" cy="30" r="18" stroke="#fff" stroke-width="1.5"/>
+    <path d="M20 85 Q35 55 50 48 Q65 55 80 85" stroke="#fff" stroke-width="1.5" fill="none"/>`,
+  Blog: `<rect x="15" y="15" width="70" height="10" rx="2" fill="#fff" opacity="0.6"/>
+    <rect x="15" y="32" width="50" height="8" rx="2" fill="#fff" opacity="0.4"/>
+    <rect x="15" y="47" width="60" height="8" rx="2" fill="#fff" opacity="0.4"/>
+    <rect x="15" y="62" width="40" height="8" rx="2" fill="#fff" opacity="0.4"/>`,
+  Contact: `<rect x="12" y="22" width="76" height="46" rx="3" stroke="#fff" stroke-width="1.5"/>
+    <path d="M12 28 L50 54 L88 28" stroke="#fff" stroke-width="1.5"/>`,
+  Links: `<circle cx="25" cy="45" r="10" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="75" cy="20" r="10" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="75" cy="70" r="10" stroke="#fff" stroke-width="1.5"/>
+    <line x1="35" y1="40" x2="65" y2="25" stroke="#fff" stroke-width="1.2"/>
+    <line x1="35" y1="50" x2="65" y2="65" stroke="#fff" stroke-width="1.2"/>`,
+  Misc: `<polygon points="50,10 90,80 10,80" stroke="#fff" stroke-width="1.5" fill="none"/>
+    <circle cx="50" cy="55" r="8" stroke="#fff" stroke-width="1.2"/>
+    <line x1="50" y1="10" x2="50" y2="47" stroke="#fff" stroke-width="1"/>`,
+};
 ---
 
-<Base title="About">
-  <section aria-labelledby="whoami-heading">
-    <h1 id="whoami-heading" class="cmd-heading">
-      <span class="cmd-prompt">$</span> whoami
-      <span class="cursor"></span>
-    </h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Todd Libby — web developer and accessibility advocate based in Phoenix, Arizona."
+    />
+    <title>Todd Libby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Barlow+Condensed:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="#main-nav" class="skip-link">Skip to navigation</a>
 
-    <dl class="about-block">
-      <div class="about-row">
-        <dt class="about-key">location</dt>
-        <dd class="about-val">
-          Phoenix, AZ <span class="about-comment"
-            >// by way of Portland, ME</span
-          >
-        </dd>
-      </div>
-      <div class="about-row">
-        <dt class="about-key">focus</dt>
-        <dd class="about-val">Accessible web experiences</dd>
-      </div>
-      <div class="about-row">
-        <dt class="about-key">building</dt>
-        <dd class="about-val">
-          Nuxt 4, Node, PostgreSQL, Vanilla CSS, HTML.
-        </dd>
-      </div>
-      <div class="about-row">
-        <dt class="about-key">writing</dt>
-        <dd class="about-val">
-          <span class="about-comment">// in development</span>
-        </dd>
-      </div>
-      <div class="about-row">
-        <dt class="about-key">streaming</dt>
-        <dd class="about-val">
-          <a
-            href="https://twitch.tv/toddcodes"
-            class="about-link"
-            target="_blank"
-            rel="noopener noreferrer">toddcodes</a
-          >
-          <span class="about-comment"> // twitch - learning in public</span>
-        </dd>
-      </div>
-      <div class="about-row">
-        <dt class="about-key">status</dt>
-        <dd class="about-val">retired</dd>
-      </div>
-    </dl>
-  </section>
+    <nav id="main-nav" aria-label="Main navigation" class="mag-nav">
+      <ul class="mag-grid" role="list">
+        {
+          columns.map((col) => (
+            <li class="mag-item">
+              <a class="mag-col" href={col.href} aria-label={col.label}>
+                <span class="col-number" aria-hidden="true">
+                  {col.number}
+                </span>
 
-  <hr class="divider" />
+                <div class="col-meta">
+                  <p class="col-author">{col.author}</p>
+                  <p class="col-blurb">{col.blurb}</p>
+                </div>
 
-  <section aria-labelledby="principles-heading">
-    <h2 id="principles-heading" class="cmd-heading">
-      <span class="cmd-prompt">$</span> cat ./principles
-    </h2>
+                <p class="col-page">{col.page}</p>
 
-    <ul class="principles-list">
-      <li class="principle-item">
-        WCAG 2.2 AA compliance is a baseline, not the end goal
-      </li>
-      <li class="principle-item">
-        Semantic HTML first - ARIA only when HTML falls short
-      </li>
-      <li class="principle-item">
-        Vanilla CSS over frameworks - precision over convenience
-      </li>
-      <li class="principle-item">
-        Minimal, purposeful changes - no over-engineering, less code is better
-      </li>
-    </ul>
-  </section>
+                <div class="col-map" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 100 90"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <Fragment set:html={svgIllustrations[col.page]} />
+                  </svg>
+                </div>
 
-  <hr class="divider" />
-
-  <section aria-labelledby="bio-heading">
-    <h2 id="bio-heading" class="cmd-heading">
-      <span class="cmd-prompt">$</span> cat ./bio
-    </h2>
-    <p class="bio">
-      Former web developer and accessibility advocate. Hobbyist and generalist. Retired from professional development, now focused on learning and creating in public.
-    </p>
-  </section>
-</Base>
+                <div class="col-title-wrap">
+                  <span class="col-title" aria-hidden="true">
+                    {col.page}
+                  </span>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </body>
+</html>
 
 <style>
-  .about-block {
-    background: var(--warm-mid);
-    border: 0.5px solid var(--warm-border);
-    border-radius: var(--radius-md);
-    padding: 1rem 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .about-row {
-    display: flex;
-    gap: 1rem;
-    font-size: 0.875rem;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
-
-  .about-key {
-    color: var(--accent);
-    min-width: 5rem;
-    flex-shrink: 0;
-  }
-
-  .about-val {
-    color: var(--text-primary);
-  }
-
-  .about-comment {
-    color: var(--text-secondary);
-    font-size: 0.8125rem;
-  }
-
-  .about-link {
-    color: var(--accent);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-  }
-
-  .about-link:hover {
-    opacity: 0.8;
-  }
-
-  .cursor {
-    display: inline-block;
-    width: 7px;
-    height: 1.2em;
-    background: var(--accent);
-    margin-left: 2px;
-    vertical-align: middle;
-    animation: blink 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  }
-
-  @keyframes blink {
-    50% {
-      opacity: 0;
-    }
-  }
-
-  .principles-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    list-style: none;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
   }
 
-  .principle-item {
-    font-size: 0.875rem;
-    color: var(--text-secondary);
+  html,
+  body {
+    height: 100%;
+    background: #111;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    background: #fff;
+    color: #111;
+    padding: 0.5rem 1rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 100;
+  }
+
+  .skip-link:focus {
+    top: 1rem;
+  }
+
+  .mag-nav {
+    background: #111;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #fff;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mag-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+    flex: 1;
+  }
+
+  .mag-item {
+    display: contents;
+  }
+
+  .mag-col {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #333;
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .mag-col:last-child {
+    border-right: none;
+  }
+
+  .mag-col:hover {
+    background: #1a1a1a;
+  }
+
+  .mag-col:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: -3px;
+  }
+
+  .col-number {
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1;
+    padding: 1rem 0.75rem 0.5rem;
+    border-bottom: 1px solid #333;
+  }
+
+  .col-meta {
+    padding: 0.75rem 0.75rem 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .col-author {
+    font-size: clamp(0.55rem, 1.1vw, 0.7rem);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    color: #ccc;
+  }
+
+  .col-blurb {
+    font-size: clamp(0.65rem, 1.2vw, 0.8rem);
+    line-height: 1.4;
+    color: #ddd;
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  .col-page {
     padding: 0.5rem 0.75rem;
-    border: 0.5px solid var(--warm-border);
-    border-radius: var(--radius-sm);
-    background: var(--warm-mid);
-    line-height: 1.5;
+    font-size: clamp(0.5rem, 1vw, 0.65rem);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #333;
+    margin: 0;
   }
 
-  .principle-item::before {
-    content: "// ";
-    color: var(--accent);
+  .col-map {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
   }
 
-  .inline-code {
-    font-family: var(--font-mono);
-    font-size: 0.8125rem;
-    color: var(--accent);
+  .col-map svg {
+    width: 100%;
+    max-height: 120px;
+    opacity: 0.7;
   }
 
-  .bio {
-    font-size: 0.875rem;
-    color: var(--text-primary);
-    line-height: 1.75;
+  .col-title-wrap {
+    padding: 0.5rem 0.5rem 0;
+    flex-shrink: 0;
+    overflow: hidden;
+    height: 160px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .col-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    line-height: 0.88;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    .mag-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .mag-col {
+      border-right: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .col-title-wrap {
+      height: auto;
+      padding: 0.75rem;
+    }
+
+    .col-title {
+      writing-mode: horizontal-tb;
+      transform: none;
+      font-size: clamp(2rem, 10vw, 3rem);
+    }
   }
 </style>
