@@ -1,0 +1,511 @@
+---
+title: Eric Meyer
+description: My Interview with Eric Meyer
+date: 2021-12-17
+layout: layouts/post.njk
+---
+
+## S1:E16
+
+[00:00:00] Todd Libby: Welcome to the Front End Nerdery Podcast a podcast about front end development and design. I'm your host Todd Libby. My guest today is speaker, author, co-founder of An Event Apart, developer advocate, and second most famous person in his graduating class, Eric Meyer. Eric, how are you today?
+[00:00:24] Eric Meyer: I'm doing not too badly. How about yourself?
+[00:00:27] Todd: I am doing well. Thank you. So why don't you tell the listeners a little bit about yourself?
+[00:00:32] Eric: Well, I started out as a child and, that's very old, comedy reference. Sorry. yeah, so,
+[00:00:38] Todd: Yes
+[00:00:38] Eric: I've, I've been hanging around since the late seventies, and, At least as I, as I conceive it.
+And, I am now, as you said, a developer advocate at Igalia, which is a consultancy based in Spain, you listeners to the podcast might remember them as the people who implemented grid in, you know, multiple browsers, chromium, and, and, and WebKit, I believe I might've missed remembered that it was before my time, so
+[00:01:04] Todd: Right
+[00:01:04] Eric: the details get fuzzy, but they were a major driver in getting grid into browsers at all.
+so, I'm doing, I'm doing developer advocacy, documentation and stuff like that there. but I started out on the web in late 93, mid to late 93, started with CSS in middle of 96, 1996. which might well be before some listeners to the podcast were born, cause that's how long we've, we’ve, we've had this web thing now.
+[00:01:31] Todd: Yeah
+[00:01:31] Eric: It's long enough that people can have careers in it that literally were not born before it, it was created, which should make me feel old. But I think more makes me feel gratified that this thing that, the web that is this thing that, that was so compelling to me when I first saw it. And I think to most of us was in fact that compelling, it was compelling enough that it's still around a quarter century on so, or more three, three decades now.
+So yeah, that's cause lots of technologies, you know, have come and gone.
+[00:02:06] Todd: Yes
+[00:02:06] Eric: Right? Lots of them before the web. And since the web emerged, lots of technologies have come and gone and
+[00:02:12] Todd: Yep
+[00:02:12] Eric: flashes the obvious sort of an easy one to grab,
+[00:02:17] Todd: Yeah
+[00:02:17] Eric: but it's not the only one. There are plenty of other technologies that, that have had their moment and then faded away.
+And the web is not one of them. And it, it feels a little, I, I'll be honest. It feels a little validating, right. The idea that, that thing that was so amazing to me, that I actually had a reason to be amazed by it.
+[00:02:40] Todd: Yeah, yeah. And I started a little after you did. I was well, professionally. It was 99. I was a little bit before that I was learning Basic on a Commodore.
+[00:02:49] Eric: Oh yeah.
+[00:02:50] Todd: So, one of the many flavors of BASIC
+[00:02:53] Eric: Yeah.
+[00:02:53] Todd: cause I know you remember all those magazines we would get that had the code in the magazines and
+[00:03:00] Eric: Yep
+[00:03:00] Todd: read the magazine, go through and try it. Yeah, it was, it was great. And then
+[00:03:03] Eric: Good old Byte!
+[00:03:03] Todd: And then you were talking. Yes. Yes. And then you were, you jogged my memory when you were talking about flash.
+cause I was talking the other day about JScript and that, that, when you mentioned flashed, jogged a memory. So, let's get right into the questions cause
+[00:03:24] Eric: Okay
+[00:03:24] Todd: I am, eager to ask you of these questions. First one. And I've heard this before a little bit when you've been on other podcasts and, and listening, you know, it reading also from your website, how did you get started in your development and design journey?
+[00:03:44] Eric: Well, I mean, which, which stage, because
+[00:03:50] Todd: Yeah
+[00:03:50] Eric: like my development journey much, like you was BASIC on things like Commodores or before that actually a couple of mainframes that I was lucky enough to have access to. and that was in the late seventies, like, like I say, and, but the design, the design and development, I mean, I really, those sort of start with my getting involved with the Web.
+Which was in, like I say, mid to late 1993, I was working at Case Western Reserve University, a private university in Cleveland, Ohio. It's actually the university I graduated from. And then I got a job at a reasoning that if I stayed there long enough, I could make back all of the money I had given them in tuition.
+it took longer than four years I will say Case was not an, an, an inexpensive school, still isn't an expensive school. and, my starting pay was not great, but it got better, and I stayed longer than four years anyway. so I was, I was, I was a hardware jockey for the library system and was like, we had these 486’s.
+[00:04:59] Eric: You'll remember what that means. Not everyone
+[00:05:01] Todd: Yes
+[00:05:01] Eric: listening well, but these old PCs, that were used as terminals for our, for the online card catalog. Like,
+[00:05:09] Todd: Yep
+[00:05:09] Eric: as I started working, we were transitioning away from literal paper card catalogs to the electronic card catalog. And instead of being a bunch of dumb terminals that were wired up to a mainframe, it was a bunch of 486’s wired up to a server, over, because at the time the campus had very good networking.
+we had fiber optic networking, like in the late eighties. so, I was exposed to the web by one of my coworkers. Who's still a, still a friend. and I got really excited by it. So, I really, I started working on it really hard and I was like, we should have a website for the school, we sorta had one, it was a web front end to a gopher server
+[00:05:49] Todd: Yeah
+[00:05:49] Eric: because that was a thing you could do back in the day.
+[00:05:51] Todd: Yep
+[00:05:51] Eric: but I, I was like, no, it needs to be native web, not just a front end on something else and nobody else really wanted the job. So, I, I sort of got it. And so, then I had to design home pages for the university because like nobody else at the university was interested. At, at, at one point, I went to the marketing department and said, hey, this thing, the world wide web, the whole world can see it.
+And we're doing a thing. Do you want to help out? They're like, no we're not interested. Okay. I guess I'll just do this then. So, I, I just did it. And then years later they came back, they're like, hey, can we help out? I was like, nah, not interested. they are of course in charge of it now, but that's, that's many years later, But, yeah, that's I think, I think that's probably the, where I started because I had, like, I had to design a homepage.
+I didn't have any design training, still don't really other than experience. and I'm not going to say that they were great designs. They were very basic. I mean, maybe they weren't that basic by the standards of the day. It was 1994. That wasn't a lot, in terms of,
+[00:06:57] Todd: Yeah
+[00:06:57] Eric: in terms of design possibility, I mean, I had to design a homepage before we even had tables.
+Right. So, like, I couldn't lay it out with tables. I never actually did. I never use tables for layout because it just struck me as, as wrong even before there was CSS. but it wasn't even an option when I got started. And so, you know, maybe it was okay by the standards of the day. I feel like we did some decent information architecture.
+It was one of the very, one of the very first sites that had a toolbar at the top and the bottom of each page. And it, at the time it was just an image because it branding, right?
+[00:07:35] Todd: Yeah
+[00:07:35] Eric: It was like logo and the name of the school. And then there were these buttons, and it was just one image that had area. It was an image map.
+[00:07:43] Todd: Yep
+[00:07:43] Eric: And there was one at the top and one at the bottom. And we did that on every page. And most like almost no sites did that at the time. you know, whether it was visually appealing, you know, beauty's in the eye of the holder, but information
+[00:07:57] Todd: Exactly
+[00:07:57] Eric: architecture wise, if I felt like it was, it was a good move now of course we had way too many buttons.
+Right. I had like two rows of buttons, and they were like pixel texts that I had drawn myself
+[00:08:06] Todd: Yeah
+[00:08:06] Eric: and everything was like hand balanced and the whole line, you know, the sort of thing we would do in a flash today with Flexbox or whatever. But, yeah, I, we did that, and it was, you know, felt useful.
+[00:08:19] Todd: Yeah
+[00:08:19] Eric: So that's, I mean, I dunno if that's what you were thinking.
+[00:08:23] Todd: Yeah
+[00:08:23] Eric: That's kind of
+[00:08:24] Todd: Yeah
+[00:08:24] Eric: where I got started.
+[00:08:25] Todd: Yeah, yeah. I, I was, I, thinking back to the first few sites I, I did back in the day. So, when I started doing professional web design,
+[00:08:40] Eric: Right
+[00:08:40] Todd: it was front page express on a, 386. I believe it
+[00:08:49] Eric: Ok
+[00:08:49] Todd: was either an SX or DX I believe it was a DX.
+[00:08:52] Eric: Yeah
+[00:08:52] Todd: We had an IBM, one of the big, huge, you know
+[00:08:56] Eric: Yeah
+[00:08:56] Todd: 200 pound paperweights.
+[00:08:58] Eric: Oh yeah.
+[00:08:58] Todd: and yeah, there wasn't much to go on back in the day. Although I believe that was the time when. I believe wired was on
+[00:09:11] Eric: Yeah
+[00:09:11] Todd: wired had a website
+[00:09:13] Eric: Yep
+[00:09:13] Todd: you know, during the time where GeoCities, Tripod, all those sites too so
+[00:09:17] Eric: Angelfire.
+[00:09:19] Todd: Yes. Angelfire
+[00:09:21] Eric: NeoPets, for that matter.
+[00:09:21] Todd: NeoPets. Yep. Yep. So, yeah. so I wanted to briefly touch upon because I just, I, I kind of go back and forth looking at The Event Apart website, and I see there's three dates
+[00:09:35] Eric: Yeah
+[00:09:35] Todd: that are live events, which is exciting. So my first question is, cause I missed the last, what was it, Fall Summit was the last virtual one, I believe.
+[00:09:46] Eric: Yep
+[00:09:46] Todd: How did that go? And can you quickly, you know, recap, how, you know, who, who was there, how it went?
+[00:09:53] Eric: Oh, man. I mean, it went well.
+[00:09:57] Todd: Yeah they all do, yeah
+[00:09:57] Eric: Who was, who was there? I would honestly
+[00:10:01] Todd: A lot of people
+[00:10:01] Eric: to some extent I would have to look
+[00:10:04] Todd: Okay
+[00:10:04] Eric: if you're, if you're asking in terms of like who spoke.
+[00:10:09] Todd: Yes. You, I know you had a very great roster of speakers, so.
+[00:10:18] Eric: Yeah, I mean, we try, okay. Right. And part of the problem is of course, because they're virtual, every virtual event happens for me, happens in my office. Right. So, I don't have like place association.
+[00:10:38] Todd: Okay
+[00:10:38] Eric: So, in the past, if you said, so how was, you know, An Event Apart in Denver? All right. I'd be like, okay. I was at the Denver hotel, who do I see there? Right
+[00:10:48] Todd: Right
+[00:10:48] Eric: Right.
+[00:10:48] Todd: Right
+[00:10:48] Eric: That's kind of how my memory works
+[00:10:51] Todd: Gotcha
+[00:10:51] Eric: Here, it's, it's like,
+[00:10:52] Todd: Yeah
+[00:10:52] Eric: which, which month in my office anyway. I, yeah, I mean, we had a great lineup now, now that I'm looking at it, I'm remembering, we had some new faces. we were excited to, to, to do that.
+Erin Casali, who did a great talk on feedback. Hui Jing Chen, who is, someone known in the CSS space, she talked about CSS. Tom Greenwood had a thing on, efficient web design, and like energy efficient. Regine Gilbert did a thing on accessibility research. I feel like there was somebody else new.
+Oh, sorry. Yeah, of course Eva PenzeyMoog talked about ethics, and design and technology,
+[00:11:24] Todd: Yeah
+[00:11:24] Eric: which is interesting. You would think ethics sounds like, you know, what is this a philosophy conference, but actually ethics in tech talks have been some of, I think our best talks in the last year or two, in, in the sense of the most thought provoking
+[00:11:42] Todd: Yes
+[00:11:42] Eric: and the most sort of challenging. But we also had, Rachel Andrew, Derek Featherstone, Jason Grigsby, Kristina Halvorson, Sarah Parmenter, and Sara Soueidan, Melanie Richards, Miriam Suzanne, David Dylan Thomas. And I hope I didn't miss. Oh, Kristina Halvorson of course, had a chat with Kristina for 45 minutes or whatever.
+We just chatted. It was fun. yeah. And it just sort of the usual range of topics, but we had a good time.
+[00:12:11] Todd: Yeah, there was a few
+[00:12:12] Eric: Oh and, oh geez Mike Essl. I completely forgot.
+[00:12:17] Todd: Right, right, yeah
+[00:12:17] Eric: Sorry, Mike. Yeah, kind of a legendary designer.
+[00:12:22] Todd: Yes
+[00:12:22] Eric: One of the, he was a founder of one of the first like major, design consultancies, The Chopping Block.
+They did a lot of early, websites and he's done some amazing books, The Art of Superman, The Art of the Dark Knight, some others as well. He, and, and we learned in the course of the chat he owns one of the two largest collections in the world of Mr. T memorabilia.
+[00:12:46] Todd: Yes, yes.
+[00:12:46] Eric: So
+[00:12:47] Todd: he was. I believe wasn't he at 2019 in Denver? If I recall correctly. Or was it
+[00:12:55] Eric: Was it Denver?
+[00:12:57] Todd: It might've been Boston.
+[00:13:01] Eric: We, no, actually I think it was Orlando.
+[00:13:03] Todd: Was it Orlando?
+[00:13:04] Eric: I think it was Orlando 2018? Were we in Orlando in 2018? I can't remember it all runs together. What is time?
+[00:13:13] Todd: That's exactly. cause I remember I was, oh yeah, I'll have to look that up later.
+[00:13:20] Eric: It’s possible he also came to Denver because again, I'm old memory,
+[00:13:27] Todd: so. Cause I remember him talking about the Mr. T collection and yes. Yeah, yeah. That's, that's I remember, remember that part of, you know, other than the rest, which is pretty important too, you know, was he at this one because I was there, but,
+[00:13:45] Eric: Yeah, and, and another thing I learned, I absolutely had not known this, one of my favorite t-shirts I actually don't own it. Even one of my favorite t-shirts of all time is the GI Joe percentage of the battle pie chart t-shirt
+[00:13:59] Todd: Yeah
+[00:13:59] Eric: GI Joe across the top. And then it says the battle 50% is knowing, cause knowing is half the battle plans of GI Joe. And then the other half is 25% is red lasers and 25% is blue lasers. Mike Essl designed that shirt.
+[00:14:13] Todd: Oh wow
+[00:14:13] Eric: I had no idea. I was just like you’re kidding.
+[00:14:19] Todd: Wow.
+[00:14:20] Eric: I love that shirt. you know, it was this whole for kids of the eighties.
+[00:14:25] Todd: Yes
+[00:14:25] Eric: Or those who are kids of kids of the eighties,
+[00:14:31] Todd: Right
+[00:14:31] Eric: had to go through their parents, nostalgia trip, there was this, you know, but for everyone else, it was a Saturday cartoon GI Joe. And at the end of many, most, all, I don't remember now,
+[00:14:45] Todd: A lot yeah
+[00:14:45] Eric: but I think some episodes, at least there would be, you know, a short, like one minute where some kid would be like, hey, Timmy, let's go play in the well, and then.
+Some member of GI Joe would be like, stop. That would be dangerous and explain why that would be dangerous. And then,
+[00:15:02] Todd: Yep
+[00:15:02] Eric: wow. Now we know and knowing is half the battle.
+[00:15:06] Todd: Exactly, yes, yes, yeah
+[00:15:06] Eric: So, the battle is you. You get it anyway.
+[00:15:09] Todd: I’ll have, I’ll have to hunt down for one of those shirts and kinda,
+[00:15:13] Eric: yeah
+[00:15:13] Todd: want one, I want one now.
+[00:15:18] Eric: Yeah, that’s fantastic.
+[00:15:19] Todd: Yeah.
+[00:15:19] Eric: anyway
+[00:15:19] Todd: So, are tickets or people can down or they pay to be able to view?
+[00:15:28] Eric: Yeah
+[00:15:28] Todd: the event.
+[00:15:29] Eric: So
+[00:15:29] Todd: On demand.
+[00:15:30] Eric: You can do that now for fall summit. Yes. there's the, you can buy a ticket to, so that you're part of, sort of the live show. Right where we have live Q and A with the live question and answer with the speakers, but it is all now available on demand if you want.
+For fall summit, all the talks, all the Q and A's were recorded. Everything's captioned like professionally captioned, not auto captioned, including the Q and A's. and the slide decks when we got them from speakers, which I think was all, but maybe one, or no, maybe it, maybe it was all of them in the end anyway, regardless, slides and you get access to the forums and stuff like that.
+So, yeah. That's.
+[00:16:07] Todd: Yeah, yeah, and I, I always recommend to people that they, you know, spend the money and, and watch, you know, the event because they're always great. The ones that I've attended virtually are great. The in-person ones are
+[00:16:23] Eric: Wow
+[00:16:23] Todd: Although even better because they're in person, they're, you know, that they're still every, you know, it's all still great. I, it’s one of my favorite conferences
+[00:16:30] Eric: Well
+[00:16:30] Todd: and it's a great conference that's put on. So
+[00:16:33] Eric: Thank you, we do our best
+[00:16:34] Todd: Yes,
+[00:16:35] Eric: Jeffrey and I set out way back in the day. And it's been a while now, to
+[00:16:38] Todd: Yep
+[00:16:38] Eric: design the kind of conference we would want to attend
+[00:16:40] Todd: Right
+[00:16:40] Eric: and that's still sort of the guiding star.
+[00:16:43] Todd: Yeah
+[00:16:43] Eric: So, we're, you know, everyone feels both attendees and speakers. It feels like, you know, it was a good experience because I think a lot of us have been to conferences for came away from it. Like, well, I've learned a lot, but it was kind of a crappy experience for
+[00:16:58] Todd: Yes
+[00:16:58] Eric: whatever, you know, for various reasons. we've we try really hard to not have that.
+[00:17:02] Todd: Yeah. Right. Yeah. And like I said, they're all, you know, I, I, tell the people that when, oh, you know what conferences you go to, you know, An Event Apart is always on the list because it's, you know, that great it's, you know, I've even traveled like, you know, Denver, I look forward to traveling to, you have Denver, Seattle, and San Francisco on the list?
+[00:17:25] Eric: Yeah.
+[00:17:27] Todd: This year, or next year?
+[00:17:28] Eric: Yeah. That's all we have for 2022 is Seattle in the spring.
+[00:17:33] Todd: Yes
+[00:17:33] Eric: Denver in October and San Francisco next December. So, a little more than a year from now.
+[00:17:39] Todd: Yeah, yeah. And the community segueing here into community and the community, a community is great. A wide range of people. I love, you know, the halt, what I was talking about this last conference I went to, which was Connect.Tech in Atlanta, in well a few weeks ago, actually.
+[00:17:58] Eric: Okay, okay.
+[00:17:59] Todd: Is the hallway track, you know,
+[00:18:02] Eric: Yeah
+[00:18:02] Todd: talking to him with people in the hallway and it's, you know, those things are great. So, my first question on community is, you know, what does community, community mean to you?
+[00:18:14] Eric: A lot of things, I mean, at Event Apart, community is the community of people who are there, the attendees, the speakers who are like-minded in a, in a certain way, right?
+It's not, we all think exactly the same way about everything, but we all have a shared passion for the web and for interaction, digital interaction, and helping users and being better. All of the aspects of that really. and so yeah, the hallway track, the lunchtime conversations, the breakfast conversations, you know, when you're sitting at a table with a, probably a bunch of people you've never met before, but you'll automatically know, it's like, we're all like, we're all here for this.
+Right. We're and because we're here for this week, we have something in common. but the sort of the broader community, it means a lot of things. It's very complicated. because of course any community has its positives and negatives.
+[00:19:13] Todd: Yep
+[00:19:13] Eric: And, you know, I, I try to focus on the positive for me when I try to remember some of the negatives. I mean, unfortunately we have people who try to gatekeep.
+[00:19:25] Todd: Yes, yep
+[00:19:26] Eric: You know, which I've never really been a fan of. And I know that sometimes I can come off as a little gatekeep-y about some things. Right. I have, I have certain beliefs about what the craft of the web demands, but what I try to remember is that the community is more than just the craftspeople, right?
+So, there's people like, like maybe you and me, people who listen to this podcast who are like super into the front end, super into development, super into design, super into user experience, you know, information architecture, you know, color theory, visual design, CSS, HTML, JavaScript, all that stuff. Like we're super into that.
+And I feel like there are sort of minimal standards that have to be met accessibility being one of them. Right. I think being a very important one, it's not the only one, but it's very important because the web was designed to be accessible. It prioritizes. I've, I've said before, but it prioritizes ubiquity over consistency because the point is to have access to information.
+And it should not matter if you're on a 49 inch curved monitor, you know, rig or, an internet connected television or an iPhone or a feature phone as they're called the non-smart phones are called feature phones. the industry apparently, right? Shouldn't matter, you should be able to get access to that information.
+The experience will not be consistent between those right. My desktop design on the curve. I don't have a curved 49 inch monitor, but I keep getting ads for them. So that's, what's coming to mind, but the experience there is going to be very different than somebody on a flip phone
+[00:21:06] Todd: Right
+[00:21:06] Eric: who only has a textbook browser. Right.
+[00:21:07] Todd: Yep
+[00:21:07] Eric: But the web wasn't designed to care about that, like flash was kind of the opposite. Flash was all about consistency, right? You should have the same experience in basically every place where you get the flash experience, they sacrifice that ubiquity for that. Right. You couldn't have a flash experience on your flip phone.
+[00:21:24] Todd: Right
+[00:21:25] Eric: All right.
+[00:21:26] Todd: Yeah
+[00:21:26] Eric: And so, I try to remember that, right? Like it's, it's more about access to information and sharing information. That's what the broader community is about. Right. So, if you are a crafts person, yes, I do have my opinions about what you should or shouldn't be able to do what you should or shouldn't prioritize, but it's not to the extent of, and only such people should put things on the web
+[00:21:51] Todd: Yeah
+[00:21:51] Eric: right now, not like that. and, but we do, yeah, I mean, we have, we have some people who, you know, we're doing the, if you're not using the Framework X, I'm not even going to use the name of a framework.
+[00:22:01] Todd: Right
+[00:22:01] Eric: If you're not using this framework, then you're not really doing web
+[00:22:05] Todd: Right
+[00:22:05] Eric: like brighten up wrong. if you're not viewing source, you're not really a web for, you're not really publishing like, come on.
+[00:22:11] Todd: Right
+[00:22:11] Eric: You know? Yes. I know View source is awesome. I absolutely think it's awesome. But web inspector is even more awesome, but anyway, because when I got started in this, what compelled me the most about the web was the ability for anyone to share information
+[00:22:25] Todd: Yeah
+[00:22:25] Eric: my sort of my starting vision of what made the web great and what drove me to do things like rate HTML tutorials in 1995 was to help people share what they knew, because I don't know what your super expert in that may be only 20 people in the world are also interested in, but those 20 people could really use your expertise. Right?
+[00:22:47] Todd: Yep
+[00:22:47] Eric: Maybe you're like one of the most knowledgeable people in the world about lobster rolls. Okay. Like how to make lobster rolls.
+[00:22:56] Todd: Right
+[00:22:56] Eric: I want you to be able to put that information out there for other people to find
+[00:23:00] Todd: Yeah
+[00:23:00] Eric: that was absolutely what I thought the web was great for.
+[00:23:03] Todd: Yeah
+[00:23:03] Eric: And I still do it still is great for that. You know, you, were you someone I just followed recently on Twitter, possibly one of the world's greatest voxel artists, amazing work.
+[00:23:15] Todd: Yeah
+[00:23:15] Eric: And it's much easier for her to share that because we have the web, we have Twitter, but Twitter is part of the web. Right.
+[00:23:23] Todd: Yes
+[00:23:23] Eric: So, you know, community is, is, is that it’s the ability for us to hear each other, right.
+[00:23:30] Todd: Yep
+[00:23:30] Eric: To be able to not only speak, but potentially to be heard. And there's no guarantee of that.
+You know, there's freedom of speech in America, but that's not freedom of reach. Like you don't have the right for people to see what you have to say. but you have that opportunity. You have that chance, right.
+[00:23:47] Todd: Yeah
+[00:23:47] Eric: You can say. Here's what I know, here's what I'm experiencing. Here's what I've seen. And then someone else maybe comes along because they're, they're, they're, they're going through something very similar or they're trying to figure out something.
+and you can, we've started to refer to these as conceptual silos. You know, we hear about, accessibility Twitter, for example
+[00:24:07] Todd: Yes
+[00:24:07] Eric: or, you know, the accessibility web, web rings we’re bringing them back anyway. but Twitter makes it, it makes it easy, Instagram, same kind of thing happens. Right. It's you know, oh, I fell into, I fell into a Brony TikTok.
+[00:24:19] Todd: Yeah
+ [00:24:19] Eric: And like, we know what that means, even though it shouldn't make any sense. Right. but yeah, you know, we're, we're people who have the same habits or kinda, or the same interest or kind of linking up and sharing and you can find some really amazing stuff out there. I I've fallen slightly into miniature modeling YouTube over the last
+[00:24:41] Todd: Okay
+[00:24:41] Eric: year or so. I don't do diorama's I'm, I'm not a modeler, but just watching someone like who knows what they're doing do it is really interesting.
+[00:24:51] Todd: Yeah
+[00:24:51] Eric: there's a Boulder, Boulder Creek railroad. I think it's called the, the YouTube channel. The guy on the YouTube channel, his name is Luke Towan. I believe he's Australian.
+And he does these great little diorama's, he's a commercial airline pilot. And also does these diorama's and has a family. And one of these people who apparently doesn't sleep. And so, he does these videos where he, he starts from nothing. And at the end, he's got like the Ewok village from Return of the Jedi with the little going from tree to tree in the.
+[00:25:40] Todd: Right, right
+[00:25:40] Eric: And the that's amazing. That's so cool. How you did that. Like, I don't know that I would have the patience to do that, but it's so interesting to like follow that process and you know, that. That's what interests me. One of the things that interests me so much about the web is that these communities can form.
+And it's great when they're positive communities where they're sort of collaborative, supportive communities.
+[00:25:48] Todd: Right. So, with community, you know that, from what I understand of the position of developer advocate, a develop developer advocate is very involved with community. So, what does the developer advocate role, entail?
+[00:26:09] Eric: Well, so there's a few things, and it's a I think it's a little different for everybody. So, one of my co basically my closest coworker, Brian Kardell, he's also a developer advocate at Igalia. and what he does is a little different than what I do.
+[00:26:22] Todd: Okay
+[00:26:22] Eric: But there's a lot of overlap. So as an example, one of the things I do as a developer advocate is I have joined the CSS working group as a representative of Igalia.
+Now, Igalia has several representatives on the CSS working group. What I view my role there as being is to say, hey, I think developers will be really interested in this, or, yeah, I've never heard a developer ever say that they want this right. Or something like that. So, to be something of an advocate as best I can for developers in places like the CSS working group or, you know, there's a, there's a group that I'm a member of called Web We Want.
+And the also the Open Web Docs steering committee, I'm a member of as a result of, working for Igalia and you know, one of the things that, that I'm not the only person there is a developer advocate at Open Web Docs, I think kind of, we all are, but again, to contribute to that conversation where somebody says, Hey, what if we changed the MDN pages so that they had this new thing or so that we remove this thing that doesn't seem like many people like it, you know, just to provide a perspective to say, oh, I find that interesting for XYZ or, yeah, I think we could drop that.
+Nobody, nobody needs that anymore, whatever it is. and so, there's that, there's also being that representative within Igalia. So Igalia has a lot of projects that they could take on in addition to the ones that they have taken on. And so sometimes there'll be a question like, you know, hey, we have these two possible projects we could take.
+Which one seems better for the, you know, the web, the web, which includes everyone who develops audit, but also everyone who uses it. Right. So to pick an example that there was no discussion about, because it was completely obvious, but you know, maybe someone had suppose someone had come to us and said, we really want you to implement focus visible the CSS pseudo class in a browser in WebKit, you know, maybe there was a competing project there wasn't, you know, about the same amount of time, about the same amount of resource commitment about the same amount of income for Igalia, you know, that would be a situation where I might say, yeah, I absolutely think we should take focus visible.
+Now I didn't have to do that because again, there was no question within Igalia, you know, basically, as soon as the focus visible came up, they're like, yes, that would be amazing. We should do that.
+[00:28:53] Todd: Yes
+[00:28:53] Eric: But it's that kind of thing. you know, where should we do this JavaScript API or that JavaScript API. Maybe
+[00:28:59] Todd: Okay
+[00:28:59] Eric: right. It doesn't happen often, but it can happen. we also have input on, marketing and marketing materials, doing some of the communication work, blog posts, that sort of stuff. but also helping internally. it's not, I mean, developer advocate as a title, but it's not everything that I do. an example is, speaking of JavaScript APIs, anyone who's written Java script that has anything to do with date and time knows of the pain.
+That is the date object in JavaScript.
+[00:29:29] Todd: Yep
+[00:29:29] Eric: So, there's a new top level JavaScript API called Temporal, which is based largely on moment.js.
+[00:29:37] Todd: Yep
+[00:29:37] Eric: In fact, the moment.js people sort of brought it to TC39, which is the committee that sort of does that sort of thing for ECMAScript and said, hey, people love this it's really popular.
+This should be a JavaScript. It's been a multi-year process, but it's now starting to happen. Like the AP of the specification is basically nailed down and it's starting to be implemented in WebKit. You can in technology previews of safari, if you do this very specific flag thing, you can play with parts of the Temporal API right now.
+[00:30:15] Todd: Okay
+[00:30:15] Eric: So, they had a bunch of documentation that had been written to go along with the specification and they, the, they wanted it on MDN. So, I was able to take that as a project, just literally translating all, all over to MBN, to migrate it in effect, rewrite it as necessary adapted to the MDN templates, et cetera, et cetera, et cetera.
+So that the people who are writing the code could get back to writing the code and didn't have to devote all that time to the documentation migration.
+[00:30:47] Todd: Right
+[00:30:47] Eric: So that was, I mean, that's one project of, of, of the ones that I've done since I came on. it's actually currently the reference documentation is already to go.
+I have a branch of MDN content that it'll just, when, when, when they're ready to accept it, it can just go in and the same thing with the browser compatibility data, which underpins, can I use, and also the compatibility tables on, on the Mozilla developer network. That's starting to be updated, but we haven't quite cleared the hurdle where they're ready to have it show up because there's this balancing act that MDN has to, has to do, which is they don't want to document every single thing that's been proposed, because then it becomes known as this place where, yeah, there's this documentation, but you have no idea if you will ever actually be able to use it.
+Right. So that's one side of the balance. The other side of the balance is if people are super interested in a thing and they don't have documentation, right. Then that's also a letdown. And so, they have to thread that needle. And it's not always easy, especially with something like Temporal, where every browser maker is like, yes, we're doing this, but not yet, except it's starting to land in WebKit right now.
+[00:32:05] Todd: Okay
+[00:32:05] Eric: So, I think next year, I'm hoping next year that, it'll be much more. There'll be much, much more accessible to developers in, in Safari technical technology previews, so that they can, you know, click a checkbox or, you know, it's part of the advanced features, experimental features, flag or whatever. so that people can start to mess with it because Temporal, I mean, I don't even, I don't even really do date-based JavaScript it’s so cool.
+It’s awesome. It's basically think, well it, it's moment.js, but more.
+[00:32:43] Todd: Okay
+[00:32:43] Eric: Right. So, it's date and time math. That's completely aware of time zones. It's aware of, summertime slash daylight saving shifts when they are. it has every, every single time zone, including the odd ones that are like 15 minutes off, whatever's around them.
+[00:33:01] Todd: Yeah
+[00:33:01] Eric: it has nanosecond precision.
+[00:33:03] Todd: Oh wow
+[00:33:03] Eric: instead of millisecond precision, and it takes big integer values for nanoseconds. So that's plus or minus approximately 500,000 years from the Unix epoch
+[00:33:18] Todd: Okay
+[00:33:18] Eric: I think is correct. Some yeah. Something, or maybe, yeah, some of them, some huge amount of time.
+[00:33:25] Todd: Right
+[00:33:25] Eric: So, either side of the, you know, Unix epoch, which was midnight universal time, January 1st, 1970.
+so, you can say, you know, this time here and you know, this date and time six years in the future, on the other side of the world, and Temporal will tell you exactly how many, you know, years, months, hours, days, minutes, seconds, away that is,
+[00:33:48] Todd: Yeah
+[00:33:48] Eric: if you want and, and have it correct for time zone shifts and all that, and summertime and wintertime and all that stuff, it's just, it's great.
+And, yeah, I got to, I got to transfer over the documentation and rewrite parts of it and create examples, pretty soon. I'm one of the things I want to do once the documentation is live. Once, once the reference materials live is start putting in, you know, those live examples that they have on MBN.
+[00:34:17] Todd: Yes, yep
+[00:34:17] Eric: Where just like click run and it does a thing. And then you can edit the code. Like I want to do that stuff
+[00:34:22] Todd: Yeah
+[00:34:22] Eric: but we can't really do it yet because it wouldn't work in really any browser
+[00:34:26] Todd: Right, yeah, yeah
+[00:34:28] Eric: Anyway, those are some of the things I do
+[00:34:30] Todd: Yeah
+[00:34:30] Eric: there's other stuff too. I mean, I got pulled into to, to write and present a talk at TPAC recently.
+[00:34:37] Todd: Okay
+[00:34:37] Eric: Cause the person who was supposed to do it, had something like a major life thing that prevented him from doing it. So, I did it, you know, so there's that too. It's challenging. It, it's challenging, but it's fun.
+[00:34:51] Todd: I did see you at TPAC. We were in a couple of rooms together
+[00:34:57] Eric: Yep
+[00:34:57] Todd: Don't remember which ones. Cause again, time is
+[00:35:04] Eric: What can you do?
+[00:35:05] Todd: Yeah
+[00:35:05] Eric: Probably accessibility ones. Would be my guess.
+[00:35:09] Todd: One of them was, one of them. one of them was the ethics
+[00:35:12] Eric: Oh okay
+[00:35:12] Todd: One that I do remember
+[00:35:14] Eric: Oh, that’s right. Yeah, yeah
+[00:35:18] Todd: Yeah, that I found that one to be that piqued my interest. So
+[00:35:21] Eric: Yeah
+[00:35:21] Todd: I was in that one. So, what is the best part about your job?
+[00:35:28] Eric: Oh, geez. The best part about my job. Well, I'm not going to lie. The paychecks are nice. It's not Google money
+[00:35:38] Todd: Right
+[00:35:38] Eric: It's not, it's not FAANG money or MANGA money or whatever we're calling it now, Meta instead of Facebook
+[00:35:47] Todd: Okay
+[00:35:47] Eric: but it's it, I've no complaints, and one of the things I like about it is, is, is actually a collective. So, there's every, everyone gets the same salary basically. there's, there's no like weird negotiation stuff.
+It's just. Which is also how I like, what's why I miss Saturn the car company
+[00:36:09] Todd: Okay
+[00:36:09] Eric: because it was, this is the price of the car. It, it’s not a negotiation situation. It's a, this is what we're selling the car for. If that seems fair to you, please buy a one. If it does not. Don't. I, I miss that so much
+[00:36:25] Todd: Right
+[00:36:25] Eric: because now I was like, all right, well, let me go talk to my manager and see what I can do. Why are we doing this just anyway?
+[00:36:33] Todd: Yeah
+[00:36:33] Eric: So that, that was, I actually liked that, quite a bit, but one of the best, I think one of the best parts of my job is that the goal is to make the web better and not just the goal of my job, the goal of a company, right. They're very invested in the open web. They're very invested in improving the web and pushing it forward, making it more capable.
+They, they, last year, before I came on, they launched, a, a project called open prioritization, or basically they said, here are five things that could be worked on, focus visible was one of them. and you know, you can pledge money for each of them because it takes money to implement some of this stuff.
+Right. and whichever one is the most popular effectively we'll do. And they did, and it was focus visual. They matched the dollar for dollar, Igalia did. so, they raised however much they raised I don't remember, but they match that dollar for dollar. And this year they did something similar, except they didn't do the competition.
+They had a couple of people who said the math ML core specification should be supported in all browsers. You know, we've done really well in tech. We're going to contribute. X money to start the math ML collective. and so, there's going to be work done to make the app, make math ML natively supported in multiple browsers, math ML core, more natively supported than it is now, and better supported and more accessible
+[00:37:59] Todd: Yeah
+[00:37:59] Eric: much more exposed to the accessibility tree. And part of that effort is going to be figuring out, you know, how to resolve problems that come up. Cause this is a thing specifications get written, the various members of whatever working group or community group or whatever it is, hash out, what they think should happen, how, how they think the specifications should work.
+The specification gets finalized implementers, go in and start implementing it. And then they discover, oh, this phrase, that seems so obvious when we were talking about it six months ago. Now, I'm not sure how that interacts with X, Y, and Z. So, they got to come back and like, you know, what should happen in this situation?
+Should we do X, should we do Y, should we do Z does someone else have a different, proposal? So that sort of stuff inevitably happens and will probably happen here trying to make math mark, math mark up more accessible. They're probably gonna run into things that either nobody thought of or weren't made clear in the specifications.
+So that's, I mean, that's the kind of stuff that they do and, you know, yes, Igalia did get paid to do the focus visible implementation, but it was a thing that the community had said, this is what we want. And you know, they, like I say, they also matched contributions dollar for dollar. So, they Igalia kind of paid itself for half of it, and that was half the battle.
+Anyway. so, yeah. And, and the thing about open prioritization is that it's not like this is an Igalia thing. What you're voting on is what to pay Igalia. No, absolutely not. Any open prioritization collective like the math ML core collective can just the, basically once, once a collective is formed, the people who were, who helped form it put together like a steering committee for lack of a better term, some kind of governing group.
+[00:39:55] Todd: Yep
+[00:39:55] Eric: And they decide, how do we want to, like, what's the roadmap? Who are we hiring to do this? Or are we paying ourselves because we have the expertise, whatever it is. Right. so, the math ML collective might decide, you know, we think these are the first three steps. And we're going to hire, you know, this consultancy we're going to hire, you know, coding group.
+They could hire, Filament Group. I'll just, I'll toss about. Cause I know that Filament Group does coding. They might decide they want to hire a Filament rather than Igalia that's, that's fine. or they might decide they want to hire Igalia instead of whatever.
+[00:40:32] Todd: Right
+[00:40:33] Eric: And every collective can do that, make their sort of chart their own course.
+And so, we realize, so, so Igalia created open prioritization because we want this capability out there because there's kind of a bit of bottleneck in the development of the web and the advancement of the web. And that bottleneck is the browser teams. It's not a bottleneck as in they're gatekeeping and, and, you know, spitefully refusing to move forward. No, they want to move forward as much as anyone else, but they only have so much time.
+[00:41:06] Todd: Right
+[00:41:06] Eric: Right. There's
+[00:41:08] Todd: Yeah
+[00:41:08] Eric: so many people it's so much time and so much money.
+[00:41:10] Todd: Yep
+[00:41:11] Eric: Right. And you think yourself, Google has all the money in the world. What's a what. Okay but the browser team doesn't right. The browser team does not get all of Google's money, much as we might wish that they did. Right. Same thing with the web team, WebKit team at Apple. Right. They don't have all of Apple's money.
+[00:41:25] Todd: Right, yeah
+[00:41:25] Eric: They have their budgets and their line items, and they have so many people that they can hire and a head count. Now, I just recently saw that the WebKit team has 30 engineer positions just open, like just opened they're hiring 30 engineers. So clearly, they're getting at least some resources and it sounds like a lot more resources, which is great.
+But again, it's still a bottleneck, right. Because whatever they prioritize. All this stuff, they prioritize means that all this stuff, they didn't prioritize. Isn't getting worked on by the WebKit team. And it's again, not a, not a spiteful thing. It's not something they should be blamed for. It just, it is what it is.
+Right. Like I can only do one thing at a time, myself. It turns out. So, and sometimes the things that need to be worked on don't have domain expertise within the teams, right? How many math ML experts are there in the world?
+[00:42:16] Todd: Yeah
+[00:42:16] Eric: And how many of them are working on browser teams that Venn diagram might not have any overlap?
+[00:42:21] Todd: Right, yeah
+[00:42:22] Eric: Like I don't, I don't know for sure. you know, but, or if there is overlap, it might be one person and that one person already has a backlog that's, you know, longer than, than their arm, because they all the other things that they've, that they, that they need to work on. So, the goal here is that people, other than browser teams can commit resources and get things done.
+now it's likely that this will mostly be companies because, you know, $500, isn't going to do it, unfortunately
+[00:42:58] Todd: Right
+[00:42:58] Eric: These are major projects. You need 75,000, a hundred thousand, 200,000 dollars. So, it's likely that collectives will be, let's say a group of 10 news organizations say this specification, that's kind of been languishing for sharing anonymous information securely.
+Would be really useful for us in our reporting. And we want to see an implemented, but no browser teams or are prioritizing it. So, each of us are going to kick in $10,000, right? So, New York Times, Washington Post yada yada yum, National Review, et cetera, they all come together, and they kick in, each of them kicks in some, some amount, which is small for them, but would be very burdensome for most of us as individuals.
+[00:43:50] Todd: Yeah
+[00:43:50] Eric: Right? So, they raised $150,000 and they hire Filament Group or Igalia or Accenture or whatever to start implementing it in browser. So that, you know, let's say they in their roadmap, they say, well, we're going to start with Chrome because it's the most widely used desktop browser.
+Or they say, we're going to start with I, you know, WebKit because it's, what's in all of the iOS devices, you know, whichever, and then somebody implements it, and it starts landing in browsers. Right. Awesome. Now individuals can certainly kick in as a show of sort of moral support. You know, I'm going to give my five bucks a month, which doesn't seem like much, it much, it gets $150,000.
+Let's say that was raised by these companies. But if enough people do that, it starts to add up.
+[00:44:33] Todd: Yeah
+[00:44:34] Eric: Now certainly. The TikTok teams could identify an API that would make their sharing of memes more awesome. And 10,000 of them each decide to pledge, you know, two bucks a month, that's $20,000 a month. You could hire a really good engineer for that
+[00:44:58] Todd: Yeah
+[00:44:58] Eric: you know?
+[00:44:59] Todd: Yep
+[00:44:59] Eric: So that, that option is there. We don't anticipate that it will be individuals doing it upfront, but like at first, but that's it’s a possibility.
+[00:45:10] Todd: Yeah
+[00:45:10] Eric: So, but that's, that's an example of sort of like how Igalia tries to, it tries to widen these bottlenecks and to make things better
+[00:45:24] Todd: Yeah
+[00:45:24] Eric: for the, for the web in general,
+[00:45:25] Todd: Yeah
+[00:45:25] Eric: and, and tries to give over to the community. Hey, what is it that you want? You know, instead of us saying, well, we think this is what. Tell us what you want, show us what you want,
+[00:45:36] Todd: Yeah
+[00:45:36] Eric: like commit to what you want. And then like you can make that happen.
+[00:45:42] Todd: Right
+[00:45:42] Eric: Which I think is a really great thing. And that is that kind of ethic that really, I think is the best part of the job.
+[00:45:49] Todd: Yeah, okay Well, I have, before you get into the final three questions, I have two quick CSS questions. One, what are you seeing today, in looking forward or looking forward to, as far as CSS goes, what we can do with it now, experimentally or in the browser now and in the future, kind of like, what can an example be?
+I guess just subgrid let's look, you know, it's still, you know, we're not seeing that in Chrome yet, but
+[00:46:19] Eric: no, although it's starting to move.
+[00:46:21] Todd: Yes
+[00:46:21] Eric: We're waiting for layout in G.
+[00:46:25] Todd: Okay
+[00:46:25] Eric: Which was their complete restructuring, like complete rewrite of their layout engine, basically. And I'm, I'm subscribed to the sort of the tracker bug in the chromium
+[00:46:36] Todd: Yes
+[00:46:36] Eric: tracker
+[00:46:37] Todd: Yes
+[00:46:37] Eric: And it started, and we're starting to see posts things like, okay, layout engines done and we're ready and
+[00:46:44] Todd: Right
+[00:46:44] Eric: intend to do this and intend to that, to do that. And so, yeah, that'll be super cool. Honestly, though. I think the thing that jazzes me the most at the moment is not container queries.
+[00:46:59] Todd: Okay
+[00:46:59] Eric: Although that’s pretty awesome.
+[00:47:02] Todd: Yep
+[00:47:02] Eric: Not going to lie, but CSS nesting and CSS cascade layers.
+[00:47:07] Todd: Yes
+[00:47:07] Eric: Those two, I think are super great. So, nesting for those of you who, who use Sass and you can, how you can nest rules inside of each other, so you don't have to write &lt;li&gt; or like &lt;ul&gt;, &lt;ul&gt; &lt;li&gt; code &lt;ul&gt;, &lt;li&gt; code a right nesting, just lets you do UL and then indented as LI and then indented is like that. So that's coming, they're working on bringing that natively to CSS so that you don't need a preprocessor to do it, which would make it more performance and et cetera.
+That's pretty cool. I think cascade layers. We right now we have a limited number of cascade layers and from a developer, from an author point of view, there's my, my, my styles and my important styles. Those are the two layers for, from the author side. There are more layers. There's the author, author important reader, reader important,
+[00:47:58] Todd: Right
+[00:47:58] Eric: but let's just stick with the author side
+[00:48:00] Todd: Right
+[00:48:01] Eric: Regular styles, important styles, cascade layers will let you define more layers that you just name. So, you can have your unnamed regular styles that are in sort of the base layer and the important layer will, will, will be there sort of as a reserved keyword in a way, but then you could say, you can have a layer that you call moderate, which is your moderately important styles.
+You put them all in that cascade layer. So, you have regular, moderate, important,
+[00:48:36] Todd: Right, yeah
+[00:48:37] Eric: Fantastic.
+[00:48:39] Todd: Yeah, so those are, those are a couple, you know, that I'm looking forward to as well. So, my last question, and it's kind of, I was, I was listening to a podcast that you were on. And it meant you mentioned, or they met whatever, whoever it was, and I can't remember who it was. And I apologize for that, but are you still getting emails about the WordPress reset CSS reset?
+[00:49:08] Eric: Yeah occasionally, although more often it comes out as, hey, great work on this, on that site or, hey, I think you need to fix X and it's all, it's always because the resets in the CSS
+[00:49:24] Todd: Yeah
+[00:49:24] Eric: which has a URL to my website
+[00:49:26] Todd: Right
+[00:49:26] Eric: So, they like look at the source, see the URL, copy paste a URL, find the contact form and send me an email. Like I had someone recently was just like really great work on blah, blah, blah. It's like, yeah, I didn't work on blah, blah, blah. I'm curious why you, why you think I did. I mean that’s usually the answer but.
+[00:49:45] Todd: I had to ask, I had to ask. So, the last three questions that I usually ask my guests are first one being, what about the web these days excites you and keeps you excited in what you do? I think we've pretty much touched upon that.
+[00:49:59] Eric: Yeah, I think we touched on that, it's the web
+[00:50:02] Todd: Yeah
+[00:50:02] Eric: the web is what keeps me excited about the web. Web is awesome.
+[00:50:06] Todd: Okay. Second question is, if there were one thing you could change about the web that we know today, what would that be?
+[00:50:15] Eric: Ooh, what would I change about the web?
+That's much harder than it used to be because once upon a time, my answer would have been, I would change it so that it was editable the way that it was when Tim Berners-Lee created it.
+[00:50:35] Todd: Right
+[00:50:35] Eric: Like the first web browser was also a web editor.
+[00:50:39] Todd: Yes
+[00:50:39] Eric: But I'm not sure that that's true anymore. Sort of like occasionally people propose the idea of being able to annotate webpages. And my first thought is always now, how is that going to be abused?
+[00:51:00] Todd: Right
+[00:51:00] Eric: Which is a sign of the field maturing. Right? That we've, we’ve started thinking about those kinds of things.
+It's not just, that would be awesome because awesome people would do awesome things with it. It's all, we're also, we also think how would that not be awesome because not awesome people will try to do not awesome things with it.
+If I could change anything, I would, most of the things I can think of that I would change or things that the working groups are working on
+[00:51:29] Todd: Right, okay, okay.
+[00:51:29] Eric:  at most. I think I would say things like I would, what I would change is that grid was implemented 10 years earlier.
+[00:51:36] Todd: Yes
+[00:51:36] Eric: But yeah. You know, I don't have a time machine, so,
+[00:51:40] Todd: Right, right. Okay. What's your favorite part of front end development or design that you really like the most that you nerd out over?
+[00:51:52] Eric: What do I like the most honestly, edit command S, command tab, command R, which I know is a completely dinosaur way of doing it, but make a change, save it tab over your browser. Hit reload, see the change. That's still
+[00:52:08] Todd: Yeah
+[00:52:08] Eric: amazing. It's so cool.
+[00:52:10] Todd: Yeah
+[00:52:10] Eric: It's always been the case, but I think specifically what I probably nerd out about the most these days is just the way people are being so creative.
+[00:52:23] Todd: Okay
+[00:52:23] Eric: you know, there are so many examples, but I'll pick Lynn Fisher's A Single Div.
+[00:52:27] Todd: Yes
+[00:52:27] Eric: Asinglediv.com I believe
+[00:52:33] Todd: Yes
+[00:52:33] Eric: where it's just all this stuff that she's on. Like these, these interesting illustrations and animations and every single one of them is just one div and some CSS. And some of them, you look at it, you're like, no, I don't believe, I don't believe that it's a single div and yet it is right.
+[00:52:52] Todd: Yeah
+[00:52:52] Eric: just because, and you know, they're not necessarily things that anyone would ever do in production, but they're just fascinating because they're so creative and they really make you think about what else can we do, right?
+[00:53:06] Todd: Right
+[00:53:06] Eric: Like this, you know, this incredible animation of, of, of packages on a conveyor belt that go through an x-ray machine that was all done with a single dev.
+Okay. I'm probably not ever going to do that. If I needed an animation like that, I'm probably not going to do it this way, but what can I learn from that? What can I learn from what was done here? That might actually make sense for me to do.
+[00:53:28] Todd: Right
+[00:53:28] Eric: Like how did, how did, how does she do X? Because just this one little thing about that, because you know, that relates to a thing that I'm trying to do.
+[00:53:39] Todd: Yeah
+[00:53:39] Eric: And, you know, there's, the CSS Lace was another one. I forgot I blanked on the name. I'm sorry. but the, the, the, the person that does the like classic painting styles, but they're just divs and CSS and SVG. And
+[00:53:56] Todd: Was that Diana Smith?
+[00:53:59] Eric: You might now see now I have all these names that I'm sure aren't right in my head, whatever. Well, you can put a link in the show notes
+[00:54:09] Todd: Yeah
+[00:54:09] Eric: Stuff like that. You know, people being really creative and really finding new ways to use CSS, HTML, JavaScript, right. In ways that are very performant that are very lightweight but do really interesting things that that's, that's been the case for a long time.
+And I think it always will be it's those two things, both the savory load, instant change
+[00:54:33] Todd: Right
+[00:54:33] Eric: and just the amazing amount of creativity.
+[00:54:40] Todd: We'll find that at some point.
+[00:54:43] Eric: Yeah. Yeah.
+[00:54:44] Todd: Okay. The, the stuff being done with CSS is amazing. So yeah, the Baroque paintings and
+[00:54:55] Eric: Yeah.
+[00:54:55] Todd: and, yeah Lynn, you know, Lynn’s site is, I'm looking at it right now, it's just
+[00:55:01] Eric: Yeah
+[00:55:01] Todd: some of this stuff is amazing.
+[00:55:02] Eric: How does she do it?
+[00:55:04] Todd: Ah, yeah. I mean
+[00:55:06] Eric: Genius. It’s sheer genius.
+[00:55:08] Todd: Yeah
+[00:55:08] Eric: That’s what it is.
+[00:55:08] Todd: Yeah. It's, there's one here where the person, you can drag the cursor and it makes the person taller.
+[00:55:15] Eric: Yeah
+[00:55:15] Todd: It’s, it's amazing. it's, it's, I'm getting caught in a rabbit hole right now.
+[00:55:21] Eric: Yeah, sorry.
+[00:55:21] Todd: No, no worries. So, I like to close the podcast out with my guests, letting the listeners know what they currently have going on and where people can find you online. So, the floor is yours.
+[00:55:29] Eric: Well, I mean, what I have going on is we talked about Igalia, An Event Apart, 2022 shows are up, and we actually have a big old sale happening right now on three-day tickets for 2022. at least at the time that we're recording this and, I'm also going to start writing again soon, I hope.
+But people can find me on the web pretty much at Myer web. So meyerweb.com. It's MEYERweb.com. Meyerweb on Twitter, I’m meyerweb on LinkedIn, meyerweb on GitHub. Meyerweb on Facebook, I think called I'm rarely ever on Facebook anymore. and, yeah, pretty much. And if you go to meyerweb.com down in the footer on every page, there's a, it's labeled identity archipelago.
+[00:56:11] Todd: Yep
+[00:56:12] Eric: Links to various, like my Flickr account is linked there, stuff like that, even though I haven't posted there in years.
+[00:56:19] Todd: Yeah
+[00:56:19] Eric: But you can, you can see pictures that I've taken.
+[00:56:25] Todd: Yeah, and the, the Twitter content, especially with the malfunctioning Markov chain generator. I enjoy those. So
+[00:56:34] Eric: I's fun. And what, what's becoming increasingly challenging is that there are more and more headlines that almost qualify, but not quite anyway.
+[00:56:46] Todd: Well, thank you, Eric. I appreciate
+[00:56:48] Eric: No
+[00:56:48] Todd: You coming on and
+[00:56:50] Eric: Todd, thank you, good time.
+[00:56:50] Todd: spending time with me today. Yeah, it's been great. maybe at some point. Hopefully in 2022 will. I could see you up at Denver and San Francisco where the two I was going to try to get to
+[00:57:03] Eric: Alright
+[00:57:03] Todd: next year. So hopefully
+[00:57:06] Eric: Yeah, hopefully
+[00:57:06] Todd: we'll see each other then.
+[00:57:07] Eric: Absolutely
+[00:57:07] Todd: yeah. So again, thank you very much for your time and thank you listeners for tuning into the Front End Nerdery Podcast.
+I'll be back next time with a new guest, new conversations about front end design, development and other topics. Actually, this is going to be the last, episode of the first season. I'm closing out with the interviews anyways. Next episode will be just a wrap up of this year. it's been a great, an awesome, first season.
+So, if you would please rate this podcast on your podcast device of choice, like, subscribe and watch on the Front End Nerdery YouTube channel links to transcripts and show notes are there. I'm Todd Libby, and this has been the Front End Nerdery Podcast. Thank you. And we'll see you next time.

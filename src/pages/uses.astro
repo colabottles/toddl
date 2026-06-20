@@ -1,0 +1,93 @@
+---
+import Base from "../layouts/Base.astro";
+import { uses } from "../data/content";
+---
+
+<Base
+  title="Uses"
+  description="Tools, hardware, and software Todd Libby uses every day."
+>
+  <section aria-labelledby="uses-heading">
+    <h1 id="uses-heading" class="cmd-heading">
+      <span class="cmd-prompt">$</span> cat ./uses
+    </h1>
+
+    <dl class="uses-list">
+      {
+        uses.map((category) => (
+          <div class="uses-group">
+            <dt class="uses-group__label">{category.category}</dt>
+            <dd class="uses-group__items">
+              <ul>
+                {category.items.map((item) => (
+                  <li class="uses-item">
+                    <strong class="uses-item__name">{item.name}</strong>
+                    {item.note && (
+                      <span class="uses-item__note">{item.note}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </section>
+</Base>
+
+<style>
+  .uses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .uses-group {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: 0.75rem;
+    padding: 0.75rem 0.875rem;
+    border: 0.5px solid var(--warm-border);
+    border-radius: var(--radius-sm);
+    background: var(--warm-mid);
+    align-items: start;
+  }
+
+  .uses-group__label {
+    font-size: 0.875rem;
+    color: var(--accent);
+    padding-top: 0.125rem;
+  }
+
+  .uses-group__items ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .uses-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.625rem;
+    font-size: 0.875rem;
+  }
+
+  .uses-item__name {
+    color: var(--text-primary);
+    font-weight: 400;
+  }
+
+  .uses-item__note {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .uses-item__note::before {
+    content: "// ";
+    color: var(--accent);
+    opacity: 0.6;
+  }
+</style>

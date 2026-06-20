@@ -1,0 +1,109 @@
+---
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const primaryLinks = [
+  { href: "/", label: "about" },
+  { href: "/projects", label: "projects" },
+  { href: "/writing", label: "writing" },
+  { href: "/blog", label: "blog" },
+];
+
+const moreLinks = [
+  { href: "/contact", label: "contact" },
+  { href: "/accessibility", label: "accessibility" },
+  { href: "/elsewhere", label: "elsewhere" },
+];
+
+const infoLinks = [
+  { href: "/privacy", label: "privacy" },
+  { href: "/uses", label: "uses" },
+  { href: "/colophon", label: "colophon" },
+];
+
+const vaultLinks = [
+  { href: "/podcast", label: "podcast" },
+  { href: "/speaking", label: "speaking" },
+];
+
+function isCurrent(href: string) {
+  if (href === "/") return currentPath === "/";
+  return currentPath.startsWith(href);
+}
+---
+
+<nav aria-label="Primary navigation">
+  <ul role="list" class="nav">
+    <li>
+      <p class="nav__group-label">explore</p>
+    </li>
+    {
+      primaryLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class="nav__link"
+            aria-current={isCurrent(link.href) ? "page" : undefined}
+          >
+            <span class="nav__prefix">./</span>
+            {link.label}
+          </a>
+        </li>
+      ))
+    }
+    <li>
+      <p class="nav__group-label">more</p>
+    </li>
+    {
+      moreLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class="nav__link"
+            aria-current={isCurrent(link.href) ? "page" : undefined}
+          >
+            <span class="nav__prefix">./</span>
+            {link.label}
+          </a>
+        </li>
+      ))
+    }
+    <li>
+      <p class="nav__group-label">info</p>
+    </li>
+    {
+      infoLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class="nav__link"
+            aria-current={isCurrent(link.href) ? "page" : undefined}
+          >
+            <span class="nav__prefix">./</span>
+            {link.label}
+          </a>
+        </li>
+      ))
+    }
+    <li>
+      <p class="nav__group-label">vault</p>
+    </li>
+    {
+      vaultLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class="nav__link"
+            aria-current={isCurrent(link.href) ? "page" : undefined}
+          >
+            <span class="nav__prefix">./</span>
+            {link.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

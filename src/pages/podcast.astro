@@ -1,0 +1,333 @@
+---
+import Base from "../layouts/Base.astro";
+
+const seasons = [
+  {
+    season: "Season One",
+    date: "September 29, 2021",
+    episodes: [
+      { title: "Intro", href: "https://toddl.dev/podcast/transcripts/intro" },
+      {
+        title: "Jeffrey Zeldman Part One",
+        href: "https://toddl.dev/podcast/transcripts/zeldman1",
+      },
+      {
+        title: "Jeffrey Zeldman Part Two",
+        href: "https://toddl.dev/podcast/transcripts/zeldman2",
+      },
+      {
+        title: "Homer Gaines",
+        href: "https://toddl.dev/podcast/transcripts/gaines",
+      },
+      {
+        title: "Stephanie Eckles",
+        href: "https://toddl.dev/podcast/transcripts/eckles",
+      },
+      {
+        title: "Prince Wilson",
+        href: "https://toddl.dev/podcast/transcripts/wilson",
+      },
+      {
+        title: "David Dylan Thomas",
+        href: "https://toddl.dev/podcast/transcripts/thomas",
+      },
+      {
+        title: "Mike Monteiro",
+        href: "https://toddl.dev/podcast/transcripts/monteiro",
+      },
+      { title: "Preston So", href: "https://toddl.dev/podcast/transcripts/so" },
+      {
+        title: "Rahat Chowdhury",
+        href: "https://toddl.dev/podcast/transcripts/chowdhury",
+      },
+      {
+        title: "Miriam Suzanne",
+        href: "https://toddl.dev/podcast/transcripts/suzanne",
+      },
+      {
+        title: "Dan Cederholm",
+        href: "https://toddl.dev/podcast/transcripts/cederholm",
+      },
+      {
+        title: "Nicolas Steenhout",
+        href: "https://toddl.dev/podcast/transcripts/steenhout",
+      },
+      {
+        title: "Chris DeMars",
+        href: "https://toddl.dev/podcast/transcripts/demars",
+      },
+      {
+        title: "Marcy Sutton",
+        href: "https://toddl.dev/podcast/transcripts/sutton",
+      },
+      {
+        title: "Erika Hall",
+        href: "https://toddl.dev/podcast/transcripts/hall",
+      },
+      {
+        title: "Joe Natoli Part One",
+        href: "https://toddl.dev/podcast/transcripts/natoli1",
+      },
+      {
+        title: "Joe Natoli Part Two",
+        href: "https://toddl.dev/podcast/transcripts/natoli2",
+      },
+      {
+        title: "Eric Meyer",
+        href: "https://toddl.dev/podcast/transcripts/meyer",
+      },
+      {
+        title: "Season One Wrap-Up",
+        href: "https://toddl.dev/podcast/transcripts/season1finale",
+      },
+    ],
+  },
+  {
+    season: "Season Two",
+    date: "September 13, 2022",
+    episodes: [
+      {
+        title: "Jason Pamental",
+        href: "https://toddl.dev/podcast/transcripts/pamental",
+      },
+      {
+        title: "Anna E. Cook",
+        href: "https://toddl.dev/podcast/transcripts/cook",
+      },
+      {
+        title: "Shop Talk Show: Chris Coyier & Dave Rupert",
+        href: "https://toddl.dev/podcast/transcripts/shoptalkshow",
+      },
+      {
+        title: "Molly Holzschlag",
+        href: "https://toddl.dev/podcast/transcripts/holzschlag",
+      },
+      {
+        title: "Chris Ferdinandi",
+        href: "https://toddl.dev/podcast/transcripts/ferdinandi",
+      },
+      {
+        title: "Rachele DiTullio",
+        href: "https://toddl.dev/podcast/transcripts/ditullio",
+      },
+      {
+        title: "Ben Myers",
+        href: "https://toddl.dev/podcast/transcripts/myers",
+      },
+      {
+        title: "Kayla Sween",
+        href: "https://toddl.dev/podcast/transcripts/sween",
+      },
+      {
+        title: "Paul Boag",
+        href: "https://toddl.dev/podcast/transcripts/boag",
+      },
+      { title: "Dan Mall", href: "https://toddl.dev/podcast/transcripts/mall" },
+      {
+        title: "Bekah Hawrot-Weigel",
+        href: "https://toddl.dev/podcast/transcripts/hawrotweigel",
+      },
+      {
+        title: "Gant Laborde",
+        href: "https://toddl.dev/podcast/transcripts/laborde.md",
+      },
+      {
+        title: "Crystal Preston Watson",
+        href: "https://toddl.dev/podcast/transcripts/prestonwatson",
+      },
+      {
+        title: "End of Season Two Wrap-Up",
+        href: "https://toddl.dev/podcast/transcripts/season2finale",
+      },
+    ],
+  },
+  {
+    season: "Season Three",
+    date: "October 4, 2023",
+    episodes: [
+      {
+        title: "Josh Goldberg",
+        href: "https://toddl.dev/podcast/transcripts/goldberg",
+      },
+      {
+        title: "Carie Fisher",
+        href: "https://toddl.dev/podcast/transcripts/fisher",
+      },
+      {
+        title: "Deceptive Patterns",
+        href: "https://toddl.dev/podcast/transcripts/deceptivepatterns",
+      },
+      {
+        title: "James Q. Quick & Amy Dutton",
+        href: "https://toddl.dev/podcast/transcripts/compressedfm",
+      },
+      {
+        title: "Jason Lengstorf",
+        href: "https://toddl.dev/podcast/transcripts/lengstorf",
+      },
+      {
+        title: "Alvin Bryan",
+        href: "https://toddl.dev/podcast/transcripts/bryan",
+      },
+      {
+        title: "Mike Hartington",
+        href: "https://toddl.dev/podcast/transcripts/hartington",
+      },
+      {
+        title: "Taylor Desseyn",
+        href: "https://toddl.dev/podcast/transcripts/desseyn",
+      },
+      { title: "Hiatus", href: "https://toddl.dev/podcast/transcripts/hiatus" },
+    ],
+  },
+];
+---
+
+<Base
+  title="Podcast"
+  description="Front End Nerdery Podcast transcripts by season."
+>
+  <section aria-labelledby="podcast-heading">
+    <h1 id="podcast-heading" class="cmd-heading">
+      <span class="cmd-prompt">$</span> cat ./podcast
+    </h1>
+
+    <p class="podcast-intro">
+      The <strong>Front End Nerdery Podcast</strong> — conversations with web developers,
+      designers, and accessibility advocates. Currently on hiatus. Listen on <a
+        href="https://open.spotify.com/show/3oEGCFmMvRHgCBQJpiKBFP"
+        class="podcast-link"
+        target="_blank"
+        rel="noopener noreferrer">Spotify</a
+      > or watch on <a
+        href="https://www.youtube.com/@frontendnerdery"
+        class="podcast-link"
+        target="_blank"
+        rel="noopener noreferrer">YouTube</a
+      >.
+    </p>
+
+    {
+      seasons.map((s) => (
+        <section
+          class="season"
+          aria-labelledby={`season-${s.season.toLowerCase().replace(" ", "-")}`}
+        >
+          <h2
+            id={`season-${s.season.toLowerCase().replace(" ", "-")}`}
+            class="season__heading"
+          >
+            {s.season}
+            <time class="season__date">{s.date}</time>
+          </h2>
+          <ul class="episode-list">
+            {s.episodes.map((ep) => (
+              <li class="episode-item">
+                <a
+                  href={ep.href}
+                  class="episode-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {ep.title}
+                </a>
+                <span class="episode-label">transcript</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </section>
+</Base>
+
+<style>
+  .podcast-intro {
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    padding: 0.875rem 1rem;
+    background: var(--warm-mid);
+    border: 0.5px solid var(--warm-border);
+    border-radius: var(--radius-sm);
+  }
+
+  .podcast-intro strong {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .podcast-link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .podcast-link:hover {
+    opacity: 0.8;
+  }
+
+  .season {
+    margin-bottom: 2rem;
+  }
+
+  .season__heading {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
+
+  .season__date {
+    font-size: 0.6875rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+  }
+
+  .episode-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .episode-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem 0.875rem;
+    background: var(--warm-mid);
+    border: 0.5px solid var(--warm-border);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+  }
+
+  .episode-item:hover {
+    border-color: var(--accent-border);
+  }
+
+  .episode-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    flex: 1;
+  }
+
+  .episode-link:hover {
+    color: var(--accent);
+  }
+
+  .episode-label {
+    font-size: 0.625rem;
+    color: var(--accent);
+    border: 0.5px solid var(--accent-border);
+    border-radius: 2px;
+    padding: 0.125rem 0.375rem;
+    flex-shrink: 0;
+  }
+</style>

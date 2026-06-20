@@ -1,0 +1,754 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Followers" description="Twitch follower stats for toddcodes.">
+  <div class="followers-page">
+    <header class="fp-header">
+      <h1 class="fp-title">
+        Twitch Followers
+        <span id="fp-updated"></span>
+      </h1>
+      <button class="fp-btn" id="fp-refresh" aria-label="Refresh follower data"
+        >Refresh</button
+      >
+    </header>
+
+    <div class="fp-stats" role="region" aria-label="Follower statistics">
+      <div class="fp-stat total">
+        <span class="fp-stat-label" id="fp-lbl-total">Total followers</span>
+        <span class="fp-stat-value" id="fp-total" aria-labelledby="fp-lbl-total"
+          >—</span
+        >
+      </div>
+      <div class="fp-stat new">
+        <span class="fp-stat-label" id="fp-lbl-new">New since last check</span>
+        <span class="fp-stat-value" id="fp-new" aria-labelledby="fp-lbl-new"
+          >—</span
+        >
+      </div>
+      <div class="fp-stat lost">
+        <span class="fp-stat-label" id="fp-lbl-lost"
+          >Unfollowed since last check</span
+        >
+        <span class="fp-stat-value" id="fp-lost" aria-labelledby="fp-lbl-lost"
+          >—</span
+        >
+      </div>
+    </div>
+
+    <div
+      class="fp-chart-wrap"
+      id="fp-chart-wrap"
+      style="display:none"
+      role="region"
+      aria-label="Follower count chart"
+    >
+      <span class="fp-chart-title">Follower count — last 90 days</span>
+      <div class="fp-chart-canvas-wrap">
+        <canvas
+          id="fp-chart"
+          width="800"
+          height="160"
+          role="img"
+          aria-label="Line chart of follower count over the past 90 days"
+        ></canvas>
+      </div>
+    </div>
+
+    <div class="fp-tabs" role="tablist" aria-label="Follower views">
+      <button
+        class="fp-tab active"
+        role="tab"
+        aria-selected="true"
+        data-tab="all">All followers</button
+      >
+      <button class="fp-tab" role="tab" aria-selected="false" data-tab="new"
+        >New</button
+      >
+      <button class="fp-tab" role="tab" aria-selected="false" data-tab="lost"
+        >Unfollowers</button
+      >
+      <div class="fp-search-wrap">
+        <label for="fp-search" class="sr-only">Search followers</label>
+        <input
+          class="fp-search"
+          type="search"
+          id="fp-search"
+          placeholder="Search…"
+        />
+      </div>
+      <span class="fp-snapshot" id="fp-snapshot" aria-live="polite"></span>
+    </div>
+
+    <div id="fp-error" role="alert"></div>
+    <div
+      id="fp-grid"
+      class="fp-grid"
+      aria-live="polite"
+      aria-label="Follower list"
+    >
+    </div>
+    <div class="fp-status" id="fp-status" aria-live="polite"></div>
+  </div>
+</Base>
+
+<style>
+  .followers-page {
+    --f-purple: #b07ee0;
+    --f-purple-hover: #c9a2f0;
+    --f-green: #5fd97a;
+    --f-green-bg: #0a2414;
+    --f-green-border: #2a6640;
+    --f-red: #f4918a;
+    --f-red-bg: #2e1010;
+    --f-red-border: #7a2020;
+    --f-text: #f0ede6;
+    --f-text-muted: #ccc9c0;
+    --f-text-subtle: #a8a59e;
+    --f-surface: #1a2e2a;
+    --f-surface-2: #1e3530;
+    --f-border: #2e4a44;
+    --f-radius: 8px;
+    color: var(--f-text);
+    padding-block: 1rem 4rem;
+  }
+
+  .fp-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .fp-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--f-purple);
+    flex: 1;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .fp-title span {
+    color: var(--f-text-subtle);
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 0.25rem;
+  }
+
+  .fp-btn {
+    display: inline-block;
+    padding: 0.45rem 1.25rem;
+    border-radius: 999px;
+    border: 2px solid var(--f-purple);
+    background: transparent;
+    color: var(--f-purple);
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: var(--font-mono);
+    cursor: pointer;
+    transition:
+      background 0.15s,
+      color 0.15s;
+    text-decoration: none;
+  }
+
+  .fp-btn:hover {
+    background: var(--f-purple);
+    color: #ffffff;
+  }
+
+  .fp-btn:focus-visible {
+    outline: 3px solid var(--f-purple);
+    outline-offset: 2px;
+  }
+
+  .fp-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  .fp-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .fp-stat {
+    display: block;
+    background: var(--f-surface);
+    border: 1px solid var(--f-border);
+    border-radius: var(--f-radius);
+    padding: 1rem 1.25rem;
+  }
+
+  .fp-stat-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--f-text-muted);
+    margin-bottom: 0.35rem;
+    line-height: 1.3;
+    min-height: 2em;
+  }
+
+  .fp-stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--f-text);
+  }
+
+  .fp-stat.total .fp-stat-value {
+    color: var(--f-purple);
+  }
+  .fp-stat.new .fp-stat-value {
+    color: var(--f-green);
+  }
+  .fp-stat.lost .fp-stat-value {
+    color: var(--f-red);
+  }
+
+  .fp-chart-wrap {
+    display: block;
+    background: var(--f-surface);
+    border: 1px solid var(--f-border);
+    border-radius: var(--f-radius);
+    padding: 1.25rem 1.25rem 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .fp-chart-title {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--f-text-muted);
+    margin: 0 0 0.75rem;
+  }
+
+  .fp-chart-canvas-wrap {
+    position: relative;
+    height: 160px;
+    width: 100%;
+  }
+
+  .fp-chart-canvas-wrap canvas {
+    display: block;
+    width: 100%;
+    height: 160px;
+  }
+
+  .fp-tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .fp-tab {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    border: 2px solid var(--f-border);
+    background: var(--f-surface);
+    color: var(--f-text-muted);
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: var(--font-mono);
+    cursor: pointer;
+    transition:
+      border-color 0.15s,
+      color 0.15s,
+      background 0.15s;
+  }
+
+  .fp-tab:hover {
+    border-color: var(--f-purple);
+    color: var(--f-purple);
+  }
+
+  .fp-tab:focus-visible {
+    outline: 3px solid var(--f-purple);
+    outline-offset: 2px;
+  }
+
+  .fp-tab.active {
+    background: var(--f-purple);
+    border-color: var(--f-purple);
+    color: #ffffff;
+  }
+
+  .fp-search-wrap {
+    margin-left: auto;
+  }
+
+  .fp-search {
+    display: block;
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid var(--f-border);
+    border-bottom: 2px solid var(--f-purple);
+    background: var(--f-surface-2);
+    color: var(--f-text);
+    font-size: 0.875rem;
+    font-family: var(--font-mono);
+    outline: none;
+    width: 200px;
+  }
+
+  .fp-search:focus {
+    border-color: var(--f-purple);
+    outline: 3px solid var(--f-purple);
+    outline-offset: 1px;
+  }
+
+  .fp-snapshot {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--f-text-subtle);
+  }
+
+  .fp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .fp-card {
+    display: flex;
+    background: var(--f-surface);
+    border: 1px solid var(--f-border);
+    border-radius: var(--f-radius);
+    padding: 0.75rem;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.15s;
+  }
+
+  .fp-card:hover {
+    transform: translateY(-2px);
+  }
+  .fp-card.new-follower {
+    border-left: 4px solid var(--f-green);
+  }
+  .fp-card.unfollower {
+    border-left: 4px solid var(--f-red);
+  }
+
+  :global(.fp-avatar) {
+    display: block;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    max-width: 44px;
+    max-height: 44px;
+    border-radius: 50%;
+    background: var(--f-border);
+    object-fit: cover;
+  }
+
+  .fp-info {
+    min-width: 0;
+  }
+
+  .fp-name {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--f-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fp-login {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--f-text-muted);
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fp-when {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--f-text-subtle);
+    margin-top: 0.15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fp-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+    border: 1px solid transparent;
+  }
+
+  .fp-badge-new {
+    background: var(--f-green-bg);
+    color: var(--f-green);
+    border-color: var(--f-green-border);
+  }
+
+  .fp-badge-lost {
+    background: var(--f-red-bg);
+    color: var(--f-red);
+    border-color: var(--f-red-border);
+  }
+
+  .fp-status {
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    color: var(--f-text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .fp-error-msg {
+    display: block;
+    background: var(--f-red-bg);
+    color: var(--f-red);
+    border: 1px solid var(--f-red-border);
+    border-radius: var(--f-radius);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  @keyframes fp-shimmer {
+    0% {
+      background-position: -600px 0;
+    }
+    100% {
+      background-position: 600px 0;
+    }
+  }
+
+  .fp-skeleton {
+    background: linear-gradient(
+      90deg,
+      var(--f-border) 25%,
+      var(--f-surface-2) 50%,
+      var(--f-border) 75%
+    );
+    background-size: 600px 100%;
+    animation: fp-shimmer 1.4s infinite linear;
+    border-radius: 6px;
+  }
+
+  .fp-skel-card {
+    display: flex;
+    background: var(--f-surface);
+    border: 1px solid var(--f-border);
+    border-radius: var(--f-radius);
+    padding: 1rem;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .fp-skel-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .fp-skel-lines {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .fp-skel-line {
+    height: 10px;
+  }
+  .fp-skel-line.short {
+    width: 55%;
+  }
+
+  @media (max-width: 540px) {
+    .fp-grid {
+      grid-template-columns: 1fr;
+    }
+    .fp-title {
+      font-size: 1.3rem;
+    }
+  }
+</style>
+
+<script>
+  const FP_URL = "/.netlify/functions/twitch";
+  let fpAll: any[] = [],
+    fpNew: any[] = [],
+    fpLost: any[] = [],
+    fpTab_ = "all",
+    fpChart: any = null;
+
+  const refreshBtn = document.getElementById("fp-refresh")!;
+  refreshBtn.addEventListener("click", fpLoad);
+
+  document.querySelectorAll(".fp-tab").forEach((tab) => {
+    tab.addEventListener("click", () =>
+      fpTab((tab as HTMLElement).dataset.tab!),
+    );
+  });
+
+  document.getElementById("fp-search")!.addEventListener("input", fpRender);
+
+  fpLoad();
+
+  async function fpLoad() {
+    const btn = document.getElementById("fp-refresh") as HTMLButtonElement;
+    btn.disabled = true;
+    btn.textContent = "Loading…";
+    fpSetError("");
+    fpSkeletons();
+    try {
+      const res = await fetch(FP_URL);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Unknown error");
+
+      fpAll = data.followers ?? data.data ?? [];
+      fpNew = data.newFollowers ?? [];
+      fpLost = data.unfollowers ?? [];
+
+      document.getElementById("fp-total")!.textContent = (
+        data.totalCount ?? fpAll.length
+      ).toLocaleString();
+      document.getElementById("fp-new")!.textContent = String(fpNew.length);
+      document.getElementById("fp-lost")!.textContent = String(fpLost.length);
+
+      if (data.snapshotAge != null)
+        document.getElementById("fp-snapshot")!.textContent =
+          `Last snapshot ${data.snapshotAge}m ago`;
+
+      if (data.history && data.history.length >= 1) {
+        fpDrawChart(data.history);
+        (
+          document.getElementById("fp-chart-wrap") as HTMLElement
+        ).style.display = "";
+      }
+
+      document.getElementById("fp-updated")!.textContent =
+        `Updated ${new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`;
+
+      fpRender();
+    } catch (err: any) {
+      fpSetError("Could not load follower data: " + err.message);
+      document.getElementById("fp-grid")!.innerHTML = "";
+      document.getElementById("fp-status")!.textContent = "";
+    } finally {
+      btn.disabled = false;
+      btn.textContent = "Refresh";
+    }
+  }
+
+  function fpTab(tab: string) {
+    fpTab_ = tab;
+    document.querySelectorAll(".fp-tab").forEach((t) => {
+      const active = (t as HTMLElement).dataset.tab === tab;
+      t.classList.toggle("active", active);
+      t.setAttribute("aria-selected", String(active));
+    });
+    fpRender();
+  }
+
+  function fpRender() {
+    const q = (
+      (document.getElementById("fp-search") as HTMLInputElement).value || ""
+    ).toLowerCase();
+    let list =
+      fpTab_ === "new"
+        ? fpNew
+        : fpTab_ === "lost"
+          ? fpLost
+          : fpAll.slice(0, 20);
+    if (q)
+      list = list.filter(
+        (f: any) =>
+          (f.user_name || "").toLowerCase().includes(q) ||
+          (f.user_login || "").toLowerCase().includes(q),
+      );
+    const grid = document.getElementById("fp-grid")!;
+    const status = document.getElementById("fp-status")!;
+    if (list.length === 0) {
+      grid.innerHTML = "";
+      status.textContent = q
+        ? "No results match your search."
+        : fpTab_ === "new"
+          ? "No new followers since last check."
+          : fpTab_ === "lost"
+            ? "No unfollowers detected since last check."
+            : "No followers yet.";
+      return;
+    }
+    status.textContent = "";
+    grid.innerHTML = list.map(fpCard).join("");
+  }
+
+  function fpCard(f: any) {
+    const isLost = fpTab_ === "lost";
+    const isNew =
+      fpTab_ === "new" || fpNew.some((n: any) => n.user_id === f.user_id);
+    const cls =
+      "fp-card" + (isLost ? " unfollower" : isNew ? " new-follower" : "");
+    const name = f.user_name || f.display_name || f.user_login || "Unknown";
+    const login = f.user_login || "";
+    const avatar = f.profile_image_url
+      ? `<img class="fp-avatar" src="${esc(f.profile_image_url)}" alt="${esc(name)}" loading="lazy">`
+      : `<div class="fp-avatar" role="img" aria-label="${esc(name)}"></div>`;
+    const when = isLost
+      ? f.unfollowed_detected_at
+        ? `<span class="fp-when">Detected ${fpRelTime(f.unfollowed_detected_at)}</span>`
+        : ""
+      : f.followed_at
+        ? `<span class="fp-when">Since ${fpRelTime(f.followed_at)}</span>`
+        : "";
+    const badge = isLost
+      ? `<span class="fp-badge fp-badge-lost">Unfollowed</span>`
+      : isNew
+        ? `<span class="fp-badge fp-badge-new">New</span>`
+        : "";
+    return `<article class="${cls}" aria-label="${esc(name)}">
+      ${avatar}
+      <div class="fp-info">
+        <span class="fp-name">${esc(name)}</span>
+        <span class="fp-login">@${esc(login)}</span>
+        ${when}${badge}
+      </div>
+    </article>`;
+  }
+
+  function fpDrawChart(history: any[]) {
+    const canvas = document.getElementById("fp-chart") as HTMLCanvasElement;
+    canvas.style.width = "100%";
+    canvas.width = canvas.offsetWidth;
+    const ctx = canvas.getContext("2d")!;
+    if (fpChart) fpChart.destroy();
+    const Chart = (window as any).Chart;
+    fpChart = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: history.map((h: any) =>
+          new Date(h.created_at).toLocaleDateString([], {
+            month: "short",
+            day: "numeric",
+          }),
+        ),
+        datasets: [
+          {
+            data: history.map((h: any) => h.count),
+            borderColor: "#b07ee0",
+            backgroundColor: "rgba(176,126,224,0.1)",
+            borderWidth: 2,
+            pointRadius: history.length > 30 ? 0 : 3,
+            pointHoverRadius: 5,
+            fill: true,
+            tension: 0,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (c: any) => ` ${c.parsed.y.toLocaleString()} followers`,
+            },
+          },
+        },
+        scales: {
+          x: {
+            ticks: {
+              color: "#a8a59e",
+              font: { size: 11 },
+              maxTicksLimit: 7,
+              maxRotation: 0,
+              minRotation: 0,
+            },
+            grid: { display: false },
+          },
+          y: {
+            ticks: {
+              color: "#a8a59e",
+              font: { size: 11 },
+              precision: 0,
+              callback: (v: any) =>
+                Number.isInteger(v) ? v.toLocaleString() : "",
+            },
+            grid: { color: "rgba(255,255,255,0.06)" },
+          },
+        },
+      },
+    });
+  }
+
+  function fpSkeletons() {
+    document.getElementById("fp-grid")!.innerHTML = Array.from(
+      { length: 12 },
+      () => `
+      <div class="fp-skel-card" aria-hidden="true">
+        <div class="fp-skeleton fp-skel-avatar"></div>
+        <div class="fp-skel-lines">
+          <div class="fp-skeleton fp-skel-line"></div>
+          <div class="fp-skeleton fp-skel-line short"></div>
+        </div>
+      </div>`,
+    ).join("");
+  }
+
+  function fpSetError(msg: string) {
+    document.getElementById("fp-error")!.innerHTML = msg
+      ? `<div class="fp-error-msg">${esc(msg)}</div>`
+      : "";
+  }
+
+  function esc(s: any) {
+    return String(s ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function fpRelTime(iso: string) {
+    const d = Date.now() - new Date(iso).getTime();
+    const m = Math.floor(d / 60000),
+      h = Math.floor(m / 60),
+      dy = Math.floor(h / 24);
+    if (dy > 1) return `${dy}d ago`;
+    if (h > 0) return `${h}h ago`;
+    if (m > 0) return `${m}m ago`;
+    return "just now";
+  }
+</script>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"
+></script>

@@ -1,0 +1,370 @@
+---
+title: Dan Mall
+description: My Interview with Dan Mall
+date: 2022-09-13
+layout: layouts/post.njk
+---
+
+## S2:E10
+
+[00:00:00] Todd Libby: Welcome to the Front End Nerdery Podcast, a podcast about front end development and design. I'm your host Todd Libby. My guest today is founder and CEO of Super Friendly. Co-founder and CEO of Arcade. He’s a speaker and author. And, we have this thing where one person likes one NBA team and the other likes another NBA team.
+So, we have a little rivalry going. My guest today is Dan Mall. Dan, how are you today?
+[00:00:32] Dan Mall: I'm doing well, the Sixers are doing well. So yeah, everything is good.
+[00:00:37] Todd: Yes, they are. Yes, they are. I wish I could say the same for my team, the Celtics, but,
+[00:00:42] Dan: I didn't say it. I didn't say it.
+[00:00:43] Todd: Somebody had to. So, you know, would you tell us a little bit more about yourself?
+[00:00:50] Dan: Yeah, sure. So, I run an agency called, called Super Friendly. We focus on design systems. We work a lot with in-house teams and help coach those teams to do better and to do work that they can't do on their own. Aside from that at home, I'm a husband. I've been married to my wife for 13 years we met when we were both in fifth grade.
+So, we've known each other for a long time. We have two kids, we have two daughters, a 10-year-old and an eight-year-old. I like taking photos. I like playing basketball. I like playing video games. I learned how to swim recently.
+[00:01:22] Todd: Nice.
+[00:01:22] Dan: So, I think that's my, my recent life in a nutshell.
+[00:01:27] Todd: Well, that's awesome. So, I'll just dive right into the questions, and
+[00:01:32] Dan: Go for it.
+[00:01:32] Todd: you know, I've followed you for quite a long time now, but how did you get in, started in your web development design journey? Is the first question.
+[00:01:41] Dan: Oh yeah. So, I, I, I went to school for animation cuz when I was a kid I always used to draw and you know, lot read comic books and do cartoons and, and things like that.
+And so, I wanted to make movies, like when I first saw Toy Story come out, I was like, oh, people do this for a living. And so, you know, my whole my whole life as a kid drawing and, and I was like, I want to be a Pixar animator. So, I went to school for animation and in school, I was, I realized I was awful at animation.
+Just so bad, so bad at it. Because it was difficult for me. And I saw other people just excelling at it. And I got lucky that my major was split between animation and this newfangled thing called, called digital design at times digital media. That's what it was. So, I learned about Director and Flash and HTML and JavaScript and DHTML, you know, all that's stuff.
+And I was like, oh, I actually like this stuff and I'm good at it. And so, I discovered graphic design in college and, and became a developer started as a developer and then eventually became a designer after that.
+[00:02:45] Todd: Yeah. I remember Director and Flash and even dabbled in Action Script and all that stuff.
+[00:02:53] Dan: Absolutely, yeah.
+[00:02:53] Todd: That was, that was the good stuff.
+[00:02:55] Dan: I agree. Yeah.
+[00:02:59] Todd: What was, oh, I was just talking about the other day Fireworks.
+[00:03:03] Dan: Yes.
+[00:03:03] Todd: Micromedia Fireworks.
+[00:03:05] Dan: Totally.
+[00:03:06] Todd: One of, yeah.
+[00:03:06] Dan: I mean, that was like, that was the tool set back in the day. Right. It was like, I remember, you know, designing things in Photoshop and then slicing them up in Image Ready so that you can make HTML tables either by hand or in Dream Weaver or something like that.
+And reconstruct your, you know, your Jenga piece puzzle piece layout you know, in your tables where you're nesting and merging cells and you know, all that stuff.
+[00:03:50] Todd: Yeah.
+[00:03:50] Dan: So that was the workflow and it's you know, it's amazing how much it has changed since then.
+[00:03:36] Todd: Sure has. So, let's, there's few things I wanted to talk with you today about, and one of them is Super Friendly.
+[00:03:43] Dan: Okay.
+[00:03:43] Todd: Could you, you did go into a little, you know, told us what Super Friendly was about. Is there anything else you can tell us more about Super Friendly?
+[00:03:53] Dan: Oh, I could write books. What do you wanna know?
+[00:03:57] Todd: So, you have a bunch of people that they they're kinda like consultants or, you know, they, you know, lack of a better term.
+I, I, I mean, I'm in, you know, kind of like been so busy, you know, and it's been like, I have, you know, a bunch of questions I have to get together, and I haven't done as much research as I wanted to. So,
+[00:04:26] Dan: That's fine. I could tell you; I could tell you all about it.
+[00:04:28] Todd: Go for it.
+[00:04:29] Dan: Yeah, so, I initially started Super Friendly. So actually, Super Friendly's 10-year anniversary was, was Tuesday.
+[00:04:35] Todd: Okay.
+[00:04:36] Dan: So, we've been doing it for 10 years and in the 10 years it has shifted and morphed. And we tried this thing and was this for a while, and then we tried this other thing. So, initially I started Super Friendly just as like, I don't know, Dan Mall's freelancing.
+Right. That's and I didn't want to be like Dan Mall design or, you know, I knew at some point I wanted to work with larger teams and, and but that's what Super Friendly was at first was just a way to say, like, I'm officially on the market, not working for agencies anymore, have my own, you know, which is basically just me.
+I'll take any work you got. It's mostly like a way to put food on the table. And I was fortunate enough for that to happen quickly. And I started to realize that like, I really believe that good work gets done in teams. When teams have good culture and they can work on a shared goal, you know, and things like that.
+So, I've always done my best work in teams. I wanted that to happen more at Super Friendly. And so, what I didn't wanna do though, was run an agency. What I didn't wanna do was have like 30 people on payroll and, you know, I've been part of, of places and seen other agency owners do the, like, refinance their house, cuz they can't make payroll one week.
+You know, like all of that stuff, it's a hard, it's a hard struggle. And one of the things that I learned early on was like, well, I have a good network of folks who don't want to be employed by me. I couldn't employ them, but they would love to partner up on things, you know, when the time suits. So, like that's how the model was born.
+Initially was, well, what if we could get together for a, a small amount of time, three months, six months, 12 week, you know, whatever it is, and then work on things for clients, and then everybody's free to do whatever they want after that. Like, we can come together again. We could not, we could come together again, partially, you know, that group and with other people.
+So, you know, I started to look around and like, what, what other models exist? Like obviously I can't have invented this and I'm like, oh, Hollywood, Hollywood does this. Like the way that movies are made. And there's a whole thing called the Hollywood model, which is that, you know, essentially everybody in Hollywood is a freelancer.
+All directors are freelancers. Actors are freelancers, screenwriters are freelancers, but they, and yet they come together. Thousands of people come together for years sometimes to make a thing together. And then everybody goes their separate ways. So, I was just thinking about how that applies to digital and how it applies to, you know, making websites and apps and things like that.
+And it applies pretty well. So, for a long time, you know, up until really, six months ago, most of what Super Friendly was, was as a client comes in, or we get a, a lead or something like that, we figure out what it, what it means, what the client wants, what they're looking for. And then we go, do we know people who can provide that?
+You know, writers, accessibility folks, developers, designers, you know, whatever the project seems to need, who are the people that can, that can fit that well? What superpowers do they have that can actually combine to make something larger than, than each of us could individually? So that's the model we've been running for about 10 years.
+I recently stopped, you know, about six months ago. And I can talk more about that, but like that's, that's worked well for the last 10 years.
+[00:07:26] Todd: Yeah, definitely. I've seen some of the projects you've done and they’re, lack of a better word, super.
+[00:07:33] Dan: Yeah. I mean, one of the things that I felt like I wanted to prove to myself was that like, it can be done, you know, that, like, I think a lot of people, especially when I started, you know, 2012.
+Freelancer had such a, such an odd stigma, you know, like freelancer was like, oh, that's like a person who's not serious. Who's like eating Cheetos and Mountain Dew in their mom's basement, you know, like,
+[00:07:56] Todd: Yeah.
+[00:07:56] Dan: And it had, and, and I was like, I don't, you know, that's not everybody, that's not all freelancers. Some freelancers are great.
+You know, they're as professional as anyone else are, are can do the work that they, and I, I wanted to see if like, could we do that without everybody being W2 employed, you know. Is that possible to do, good quality work at a large scale with high stakes. Can you execute on that? And I have at least a few examples of, of being able to say yes.
+[00:08:23] Todd: Yeah. Yeah. And recently you, was it a blog post that you wrote about some, some of the goals that you didn’t hit or, you know, it was very transparent and I, it was just, I read it and, and, you know, one you know, I admire somebody that is, is transparent as that, and says here's what happened and got a lot to learn from it.
+And two, you know, a lot, a lot more respect, you know, because of that. Could you go into that a little bit?
+[00:08:55] Dan: Yeah, totally. So, I, I wrote a year interview at the end of 2021 kind of a year review, review post. I usually do two every year I do one for like here's a year in review of, of Super Friendly and how that's like work has gone.
+And then here's like a personal year in review for me. So, in the Super Friendly one, the, the 2021 year in review, basically what I shared in that was on paper, everything's going in the right direction. So, like we're making more money, I guess, is what agencies are supposed to do. Right? Like you're supposed to make more money and hire more people and work with more clients and more, more, more and more.
+But one of the things that I noticed was, you know, certainly on paper at least profit was going down. So, like, that's like, it's odd. And that had, that had started to happen the year before. And I think in the year before the year in review post that I wrote, it was like, well, I'm noticing that this is happening.
+And this is something that I want to correct over the next year. But over the next year in 2021, it, that had started to, to fade, like continue to go down and to the right, which is not the way that you want that, that number to go.
+[00:09:55] Todd: Right.
+[00:09:55] Dan: And so, so it was creating this weird split of like, well, revenue is going up a profit's going down and so it, and, and you could feel that in the work.
+And that's the part that's not on paper. You could feel that in the, like, people aren't happy doing the work that they’re doing, clients aren't getting good results as, as a, as, as a result of that. And I think a lot of that, you know, I own a lot of that as the CEO in 2018, I think I moved to, to being like, I'm gonna stop working on client work myself, and try to be the CEO of a company, like try to, and to me, that's like casting a vision and painting pictures and saying like, this is where we need to go and how we need to get there.
+And, you know, trying to rally people around that. And I just learned that I'm not good at that. Like I'm not in that context. I'm not very good at that. I wasn't able to do that well. With the, with the folks that we had, you know, like I wasn't able to rally them to say like, this is how we need to do this.
+And this is why, and you know, all that stuff. And that's, that's mostly what I wrote about was like, it was the first year that we had to give massive refund refunds to clients. I mean, the only thing, the only time that we've done that before is like 2014 or something like that. We, we gave $5,000 back to a client because we didn't think that we did a good job on it.
+[00:11:06] Todd: Right.
+[00:11:06] Dan:  This year, like, clients requested it. They were like, ah, we don't think that we got what we paid for. I mean, that's a, if, if that's not a wakeup call right,
+[00:11:13] Todd: Yeah.
+[00:11:13] Dan: to say like, this is our livelihood, this is how, you know, the Super Friendly has always, and I think agencies in general always persist on the quality of their work.
+And so, if you don't have that, you know, like what are you trading on then at that, at that point, only reputation and that that's very flimsy. So, you know, before that got too dire before, it was like, well, we're running, we have no money left or we have no clients coming in. It's like, ah, it's time to change that.
+It's time to do something else.
+[00:11:42] Todd: Yeah, and you know, it's a lesson learned. Nothing wrong with learning a lesson.
+[00:11:47] Dan: For sure, for sure. And I think that's the point of having a business.
+[00:11:50] Todd: Yeah.
+[00:11:50] Dan: Like as a, as a business owner, you know, part of the reason that I set up the, the business that way was so that we could change it if it didn't work so that, you know, it's not like, oh, we have to lay off a hundred people now like that, to me, that's one of the worst things you could do to somebody.
+I, I'm, I'm lucky to never been part of a layoff, but, you know, just observing it and seeing, seeing how that happens to people. Like, I bet it sucks.
+[00:12:11] Todd: Yeah.
+[00:12:12] Dan: And so, I didn't want to build a company the way that most agencies do, which is, oh, we got a giant account. Let's hire 20 people. Oh, that account didn't renew.
+Let's lay off 15 of them, you know, like that happens all the time. And I, I just feel like there's a, I think there's a kinder way to do that, you know.
+[00:12:25] Todd: Yeah.
+[00:12:25] Dan: Even if it's more, even if it's whatever you don't make as much money doing it, I think, you know, I don't think that's, that's it at the end of the day. So, part of it was, if we learn something, if we learn that we're not doing something well, shouldn't, we change it? You know, and a lot of people don't change it because they have a lot of things in place that make it difficult to change.
+But with Super Friendly, there aren't a lot of things in place that are difficult to change. So why not take advantage of that?
+[00:12:50] Todd: Yeah, and it's, I, you know, from an outsider's perspective it's a great model that for a business. So yeah, I, again, you know, when I, when I read that, I, I was like, well, you know, that's, I, you don't see that often is somebody saying, here's what here, here's how it is.
+You know, here's what happened. And, you know, this is this is what I, how I feel and what I think. And, you know, I, I definitely, I think I said it in a tweet, I was like, I applaud it. You know, I'd like to see more of it, but, you know,
+[00:13:25] Dan: Yeah, thank you. I, I would like to see more of it too. I, I find that I'm drawn to people who are, are sharers, you know, like people who share what they do and what they've done and how they do it and how they feel and how they think.
+And I'm like, well, if I'm drawn to people like that, like maybe it's cuz I want to be that kind of person too. So, I have to actually be that, try to be that kind of person and do those kinds of things too. And I feel like that, you know, that's, I have benefited greatly from other people, sharing things with me.
+So, I feel like it, you know, it's, it's the least that I could do to try and share what I have done or learned or, you know, the good, bad and the ugly.
+[00:13:56] Todd: Yeah.
+[00:13:56] Dan: A lot of people share the good, you know, especially in whatever Instagram, influencer days that, that we live in. Like every everybody's life is peachy.
+[00:14:04] Todd: Yeah.
+[00:14:04] Dan: But I think that that's, that's half the story,
+[00:14:07] Todd: Yeah.
+[00:14:07] Dan: So, we gotta, we gotta know the other half too.
+[00:14:10] Todd: So, moving away from, from that and, you know, if there, there is anybody listening out there, that's looking for some, somebody to do work for 'em, you know, I, I Super Friendly, you know.
+[00:14:23] Dan: Thanks. I'll send you a royalty check in the mail for that. Thank you.
+[00:14:28] Todd: So, I wanna do pivot to you were in the, the, the, and I, I have one around here somewhere it's from a long time ago, the, the, the pricing guide you were in the pricing guide for.
+[00:14:49] Dan: Yeah. It was the price. I, I always fumble around the title. It's such a long title, the Handbook of Ethical and Pricing Guide, the, the Graphic Artist Guild Handbook to Pricing and Ethical Guidelines, something like that.
+[00:15:01] Todd: Yeah.
+[00:15:02] Dan: Which was, you know, a Bible for me growing up.
+[00:15:05] Todd: Yes.
+[00:15:05] Dan: Growing up in design, like always consulting that thing. And in the, in the latest edition, they, they featured, they did a feature on me and a bunch of other studio owners and freelancers and stuff. So very honored to be part of that.
+[00:15:15] Todd: Yeah, well congratulations, first of all.
+[00:15:17] Dan: Thank you.
+[00:15:17] Todd: Second of all, you know, speaking of books, cuz here's where the segue goes. You have a book Pricing Design and it’s; it's been out for a while.
+[00:15:28] Dan: Yeah.
+[00:15:28] Todd: But I wanted to talk about it. I've, I've read it. It's a the, one of the short books from A Book Apart and I love A Book Apart. I have them all.
+[00:15:39] Dan: Same.
+[00:15:39] Todd: That's how dedicated I am to those books.
+[00:15:42] Dan: Yeah. Same, same.
+[00:15:44] Todd: I read it took a lot out away from it. So, thank you. That helped me when I was on my own, because when I had to do everything, I was like, this is kinda like one of the Bibles that I use. So again, thank you for that.
+[00:16:01] Dan: Thank you.
+[00:16:02] Todd: Could you tell people about cuz you know, let's try to sell some books here.
+[00:16:06] Dan: Sure. Alright. Let, lemme put on my, my sales pitch hat here. The book is called Pricing Design as you said, Todd, it's a, it's a short book. It's a, it's about 40 or 50 pages. I've. Don't I forget how long I book it, 50 pages, you know, you could read it on a, on a flight or, or a, you know, a particularly vigorous restroom trip or something.
+It's about how. It's for agency owners, it's for freelancers it's for anybody that prices their services, it's called Pricing Design, but it applies to pricing, you know, anything development, you know, any kind of service. And the, the basic gist of the book is around a, a thing called value pricing, which is the idea that if I simplify it, it's the idea that any price should be a price that's worth it to both parties.
+And a lot of people don't work that way. I think said that way. I think it's simple and I think everybody would be, yeah, that makes sense. But a lot of people don't price that way. A lot of people and, and not because they think it's wrong or anything, but like, because we don't talk about pricing to the, to the thing that you and I just talked about, about transparency.
+[00:17:02] Todd: Yeah.
+[00:17:03] Dan: Not, a lot of people are very secretive about pricing, and I think some rightly so, but I think because we don't talk about pricing a lot as an industry or as a, as a craft, you know, like that part gets like, well, you just figured that out. And what people do is they ask a friend, and they go, hey, what do you charge?
+Well, I charge a hundred and a hundred dollars an hour. Okay. I'm gonna charge a hundred dollars an hour.
+[00:17:22] Todd: Yeah.
+[00:17:22] Dan: Like, and that's one way to do it, but it's not the only way.
+[00:17:25] Todd: Right.
+[00:17:25] Dan: So, what I wanted to do in the book was expose, here are a bunch of different ways to do pricing. Here's the one that is my favorite and the one that has worked the best for me when I was freelancing as a, as a solo entrepreneur and, and also running an agency, we value price just about everything.
+You know, I could probably count maybe four times in the 10 years that we haven't value priced and they were worse for us. But the book is basically about here's what that pricing approach entails, here’s how you do it. Here's how I understand it. And then here's a, a bit of a case study on, on how it works.
+[00:17:56] Todd: Yeah. And, and, really, if anybody is in the finds themselves, you know, thinking about any of that, they should pick up that book. Cuz, I think it's still pretty, it, it still holds, you know, it's
+[00:18:10] Dan: Thanks.
+[00:18:10] Todd: One of those it's, it's one of those timeless classics. How’s that?
+[00:18:13] Dan: That's right. Yeah. You know, it's like Dickens and then Pricing Design.
+[00:18:17] Todd: Yes.
+[00:18:17] Dan: It's like the right and the same ballpark for sure.
+[00:18:19] Todd: There you go, there you go. Yeah. So. I just wanted to mention that cuz I, you know, again, great book and you know, let you know, hopefully you get at least a couple sales from this podcast.
+[00:18:32] Dan: I would love it. That'd be great.
+[00:18:33] Todd: So, the meat and potatoes of this episode that I wanted to bring you on for was let's talk about design systems, cuz I have some questions about design systems.
+[00:18:43] Dan: Fire away.
+[00:18:45] Todd: That I've had people, you know, ask me about design systems, but also in the order of the accessibility of design systems.
+[00:18:58] Dan: Yes.
+[00:18:59] Todd: And so, I guess the first question is going, I guess kind here, here’s a sports analogy that I know, you know, I'm gonna softball this one in.
+[00:19:14] Dan: Alright, alright.
+[00:19:14] Todd: When should design systems be implemented in a project?
+[00:19:18] Dan: Oh, that's a good one. My general take on that is I think design systems are larger than a project. So, I think I, I think about them in the context of a, of an organization.
+[00:19:29] Todd: Okay.
+[00:19:29] Dan: And I, I think of it as any organization that is managing two or more digital products or will.
+Time to start thinking about design systems. If you're making a one-off website, I don't know, will a design system work for you? At some point it might be too high of a level of investment to pay off. If you're like, you know, we have one website that we maintain and we have one app that we maintain. Like maybe you could make a case for why it could help.
+When you're talking about three websites you're trying to maintain or 12 or 30 or 300 or thousands. Yeah. Design system is gonna be a force multiplier for you. So, I generally say like two or more is probably the time where you wanna start thinking about that.
+[00:20:10] Todd: Second question. I've been asked this, and I think it's very important, but how important and impactful can design system be for an organization?
+[00:20:24] Dan: I recently worked with a, with a client. I wish I could talk about it maybe, maybe soon. And we were, we were working on like a pitch to executive leadership, right?
+So, the, the design team and UX team are kind of working on design, so, and saying like, if we scale this properly, this is the impact that it could have. And I think like, seriously, the numbers in that deck that was like, we could save 16 million hours of something. Some we could save $20.8 billion of like, like astronomical numbers.
+And they were all, when I looked at them, I'm like, well, it actually makes sense in this context. Like at this size of an enterprise. Yeah. We're talking about $20 billion. We're talking about 16 million hours over the X amount of years. And I think it's, it, it sounds like monopoly money, and it sounds like, you know, just astronomical numbers, but a design system deployed well is a tool of scale.
+And when you're working at scale, you, you, you make mistakes at scale, but you also get rewards at scale too. So done well, you know, done perfectly. That's what the opportunity is. I don't know that I've ever seen any organization do it perfectly, but some fraction of that they could do half, half of it. You know, like a quarter of it, three quarters of it.
+That's still lots and lots of savings, not just from an efficiency standpoint, like that's the tip of the iceberg, you know, you can be more efficient, but then after that, like you could be more innovative. You know, leading to new product creation or new, you know, new areas for the company to all that stuff.
+Design systems are a way to, to open that stuff up. So, I think that they are, they are a tool at scale. And depending on the scale you're talking about, you could, you could very literally see like saving millions of dollars or this, you know, hundreds of millions of hours or whatever, you know, that just seem ridiculous, but actually aren't that inaccurate.
+[00:22:11] Todd: Yeah. So that kind of ties into my next question. Cause I usually say, and I'm not, you know, the, one of the, you know, I don't wanna say foremost expert, but I'm not, I'm not, I know enough to be dangerous. How's that about design systems?
+[00:22:29] Dan: Yeah, totally.
+[00:22:30] Todd: It, it ties into for me anyways, that you have a design system, you have something to go with going, moving forward that helps, you know, create your brand or whate the product or whatever.
+And then developers’, designers they don't have to go back, and they don't have to fix things. And then come back again. Then there's not this back and forth, I guess you, I I'm try trying to say here. Because in a talk I give, I mentioned design systems and accessibility, and when a well bit built well-built design system is implemented.
+It just, it helps with that, you know, not going back and forth. It helps with accessibility. And when that design system is built, keeping accessibility in mind, the design system can be great. So how important are accessibility and design systems coexisting together.
+[00:23:30] Dan: So important, like it critically important. And I, I feel the same about anything that can have impact at scale, right?
+Because so good design, you know, like design systems. I, I just retweeted something earlier today about like design systems isn't where innovation should happen. Right. That should happen on product design. And I think what design systems allow is it enables better process, the better process of creating products, creating things that people can use, whether those products or websites or applications, or, you know, whatever those are.
+Design systems are a tool to enable that to happen faster, bigger, you know, like at scale. And other things can happen at scale when you have a vehicle for scale too. So that's why a lot of times, you know accessibility is, is tied on to design systems. Or a lot of times, the other way around design systems are tied on to accessibility initiatives. Because design systems are in some context a little bit more opaque.
+Like people don't understand them as well as they, as they do accessibility. And a lot of that unfortunately is negative. A lot of that is, well, we know that other people have gotten sued for accessibility. And so, this is, has to become an initiative and we're gonna do it across all of our different, you know, orgs or our different teams or whatever.
+So, accessibility is, is, is at least recognized in that way. Hope, ideally, it's more recognized for positive things than negative things, but okay, fine. Whatever, like, wherever we need to start, I guess. Same thing with performance too, you know, like a lot of times access design systems and performance initiatives are tied together.
+Because again, you're looking at scale, you're looking at well across our whole organization or our whole suite of apps or products. We want to improve performance by 5% or like, that's not a thing that you can do project by project that would take four years, you know, at, at certain places. So instead, we go, well, if we had all of this connected.
+Systems, all these connected systems, then we can make a change in one place, and it trickles out everywhere. And I think that, so that's why accessibility, you know, is, is so closely tied to design systems. And I think, you know, rightly so. I think the, the mantra that we hear a lot though, which I, which I agree with is that, you know, accessible components don't mean you have an accessible experience for people.
+[00:25:38] Todd: Yes.
+[00:25:38] Dan: Which I agree with that. Like if you, you know, you, you might have an accessible tab set, but implement it in a product inaccessibly. Right. So, like I think it's Derek Featherstone that always gives us example, but you could have an accessible modal, an accessible tab set and, and an accessible accordion. But if you nest that accordion inside the tab set inside the modal, inside the page, you could very quickly create a terrible experience for someone, you know?
+[00:26:00] Todd: Yeah.
+[00:26:00] Dan: And so, I think, I think. That what, what design systems enable though are process like they, they enable work better workflow. And if you have that culture and that workflow, then you can spot accessibility things at the page level, at the experience level much better because now the team knows how, oh, this is how design and engineering work together.
+This is how we test; this is how we do this. And like, that's really what design systems are. At a, at a most philosophical level, like, like how Brad Frost says it, he says like design systems are the story of how an organization creates digital interfaces. It's the story. It's like, this is the way we do things.
+So, if the way that we do things is every time we build something, we test with people who have disabilities or every time we create something, we involve people who have disabilities. Like that, that's what that's, what design systems enable. And that's the way that we do things here. Every time. This is how we do it with performance.
+This is how we do it with engineering. This is how we do it with design. This is how we do it with UX. Anyway, I'm preaching. I'll stop. But like, that's why I think they're so tied, tied, closely together is because they're both enablers. So, when you put 'em together, they're, you know, they're even better.
+[00:27:06] Todd: Yeah, and the way I've kind of fumbled through an explanation to people is. When you have those things streamlined, it makes the, for the better part of it makes the process so much easier for an organization for those people that the designers, the developers, everybody else involved as well to do their job.
+And then that leads to. Like in my talk, I gave, you know, explaining design systems and tying that into accessibility. It leads to less stress. You're not wasting as much money, and you have a happier organization.
+[00:27:52] Dan: Yes.
+[00:27:52] Todd: And you're doing it for people that are, you know, on the other side of the glasses, Mike Montero puts it. And I love that.
+[00:28:01] Dan: Yes.
+[00:28:01] Todd: I love that quote. So, I stole it.
+[00:28:06] Dan: Yeah.
+[00:28:06] Todd: It just makes it so much easier. And I just think about when I see somebody, you know you know, it is we’re, we’re doing this again. And I just think about if, if it was the, if the everything was streamlined with the design system and everything, we've been talking about that we wouldn't see tweets like that, or we wouldn't see blog posts like that.
+And that would be so, so much better to see, you know, see more happier designers and happier developers. So
+[00:28:34] Dan: I'm, I'm really glad that you brought that up, cuz I think that's the part about design systems don't get talked about as much. I'm, I'm happy to see people talking about it more, but the rhetoric around design systems is usually around efficiency.
+And like, yeah, I mean, that's true. It's not, it's not false, you know, and, or consistency, you know, design systems will help you build more consistently and more efficiently true, but who cares? Like I've seen lots of efficient things that no one cares about , you know, like there's and so the part to me that I, that I like talking about and similar to you is, is like design systems should be a relief to people, you know, because, because if they're not the opposite of that is, is design systems become a chore.
+You know, like what a lot of designers who, who are less familiar with design systems go like, well, wait, a design system just means like everything's out of the box now. So, like, what's my job. Like what? Never mind. I don't, I don't care about that then I don't, you know.
+[00:29:27] Todd: Yeah.
+[00:29:27] Dan: I don't care, but instead design system should be like, oh, thank God I don't have to do that part anymore.
+[00:29:32] Todd: Yeah.
+[00:29:32] Dan: Now I can go do this other part. And my job's more fun.
+[00:29:35] Todd: Yup.
+[00:29:35] Dan: And I think that's where we, like, I love how you said happy, happier companies, happier organizations, cuz that's where we see like retention rates increase. And that's where we see like people have more higher job satisfaction and like, those are the kinds of things that solve a lot of our problems in tech, you know, not all of them, but like I think it was Cameron Mall who to shared this the other day on Twitter or something.
+But he said like, instead of worrying about how instead of worrying about your people getting headhunted instead worry about why they're taking those calls in the first place. Like fix that problem first.
+[00:30:09] Todd: Yeah.
+[00:30:09] Dan: You know, then you won't have to worry about them getting hit, head hunted. You won't worry about them getting recruited away, you know, or at least not as much because, because you fix the root of the problem.
+And I think, I think that's a thing is. Design system should be a thing that solved the root of the problem, which is like all the stuff that can be automated. Let's just automate that stuff.
+[00:30:25] Todd: Yeah.
+[00:30:25] Dan: How many times do we wanna redo dropdown menus? Like, I mean, like really, is that what we're gonna spend our time on as an industry?
+[00:30:32] Todd: Yeah.
+[00:30:32] Dan: You know, we, we can literally fly people into space and we're gonna spend like weeks and weeks on dropdown menus. It's just, you know, it's bananas.
+[00:30:39] Todd: Yeah.
+[00:30:40] Dan: So that's the part, you know, I love talking about that part most is what do design systems free people up to do? Like what happens then? You know, that's when we're really seeing the, the value of that.
+[00:30:49] Todd: Yeah.
+[00:30:49] Dan: Accessibility should be a thing that we just take for granted, like, yeah, yeah. It's accessible. Like the fact that we have to work on it sucks. You know, the fact that we have to like worry about is this design gonna be a good user experience or a bad user experience? Like that stuff should be automated away by now.
+[00:31:04] Todd: Yeah, definitely.
+[00:31:04] Dan: You know, and then we should, we should focus on other things, cooler things, more useful things, more fun things.
+[00:31:10] Todd: Yeah.
+[00:31:10] Dan: Anyway, I get all riled up about it.
+[00:31:13] Todd: No, no.
+[00:31:13] Dan: Hits me in the feels.
+[00:31:15] Todd: Yeah. And I also wanna throw in there too, cuz, I had somebody ask me, you know, is a, is a style guide, a design system. And I said, no.
+[00:31:25] Dan: Right.
+[00:31:26] Todd: No. So, I, I, did learn a few things from going down to An Event Apart. So, I yes.
+[00:31:33] Dan: I mean, it's part of, you know, style guides are part of them, like that's, they're important.
+[00:31:38] Todd: Yeah.
+[00:31:38] Dan: But you know, design at least the way that, that we define it as Super Friendly design systems are software products.
+[00:31:44] Todd: Yeah.
+[00:31:44] Dan: Like they’re, they’re a piece of software that is connected to all your other software. And the connected part is the important part. Style guides typically are not connected. That's what makes them part of a design system, but not a design system as a whole.
+[00:31:57] Todd: Yeah.
+[00:31:57] Dan: Connected means. It's, you know, it's a dependency in your software.
+It means if you change one thing here, you have the ability to change something else automatically. Like that connection part is the, is the system part of it.
+[00:32:07] Todd: Yeah.
+[00:32:07] Dan: Otherwise, it is just a guide.
+[00:32:09] Todd: Yeah.
+[00:32:09] Dan: It is just a thing that says, like, I don't know, you should do it this way, I guess. Good luck.
+[00:32:13] Todd: Do you still see a little confusion out there with
+[00:32:16] Dan: Yes.
+[00:32:17] Todd: The, the two?
+[00:32:18] Dan: Yeah. Almost every time that we work with a client. And I I'll admit it's a little bit self-selecting in that the organizations that already know what a design system is, and they have it down and like they don't come to us. Right. They're, they're not the ones that are like seeking help in it.
+So, a lot of the clients are coming to us. Are not necessarily coming and saying like, oh, you do design systems. Can you build a design system? Some of them are, but a lot of 'em are saying like, we have this problem where like we have to change this thing, but then we have to change all these other things too.
+And that seems like 4 years of work. Is there a way to do that better? And we're like, yeah, let us tell you about a thing called design systems, you know, and, and then everywhere in between. The first thing that we do on almost every, every engagement that we work on is we say like, let's define the terms.
+Like let's, let's, let's be shared on the definitions. This is what we mean by design system. You will hear other versions of it and that's not wrong, but this is what we're talking about. So, let's at least align on that. What we're talking about is creating a software product
+[00:33:16] Todd: Yeah.
+[00:33:16] Dan: And this is what that software product is supposed to do. Here's how it's gonna be implemented. This is what we mean by that. And a lot of people go like, I don't agree with that.
+And then they don't work with us. And then other people go like, ah, that makes a lot of sense. We would like to do it that way. And then they do work with us.
+[00:33:29] Todd: Right.
+[00:33:29] Dan: You know? So, I think that's the first thing we do is go like, let's make sure we're talking about the same thing when it comes to design systems. A lot of our prospective clients say like, we want a design system.
+And then as we dig into it more, what they mean is we want a, a shared set of templates that has shared, you know, design language and things like, which is like, cool. That's useful. That's not what we're talking about though.
+So, you know, just aligning on, like, this is what it is, this is what we mean it to be. And if you work on it with us, this is what we'll, this is what you're gonna get at the end. It makes some clients go like, oh, that's not at all what I wanted. Like great, better to find that out now than 14 weeks later, you know, when you're requesting a refund that like, that's not what I thought that I was, I was signing up for, for.
+[00:34:10] Todd: Yeah, definitely. So, I, I was thinking of this question before we jumped on the call and I didn't, I really didn't know a good, a better way to word this. So, I will just ask. What can people do, or what can organizations do to make their design system accessible if they aren't and you know, what steps can they take to streamline the process and make them accessible?
+[00:34:40] Dan: I mean, you probably have a better answer to that than I do, but I'll, I'll take a stab at it, you know, and please feel free to correct me on this or add to this, you know, I'm, I'm not a, by any means an accessibility expert. I, it is important to me in the work that we do.
+I always advocate for it, but I also always look to learn more about it and partner with people who are doing it, you know, more than more than I am. One of the ones that I use all the time when I'm building something or designing something, especially, you know, for, for the web and I, I definitely got this from, I learned a lot of my accessibility stuff from people like Derek Featherstone and Sarah Soueidan who like really, really dig into what it means to do it well, you know, as a craft.
+One of the things that always stuck with me is like, test with the keyboard.
+[00:35:22] Todd: Yep.
+[00:35:22] Dan: I, I'm fumbly around screen readers, you know, like I, I use voiceover every now and again, but I don't even know exactly how to use it, but like the keyboard I know how to use. And if I can get through my site with a keyboard, that's a good first step. If I can, like, if I can click that link, if I can get over there, if I can, you know, scroll down the page, the page, if I can read the headings, if I can do all that stuff.
+That's a good place to start. So that's the first place that I, you know, whenever I I'm working with designers who don't know very much about accessibility, you know, on, on client teams, they go like, well, you know, like what they know about accessibility is color contrast. I'm like, great. That's a good, that's a good thing.
+So great. Let's focus on color contrast. And then also let's try this thing. Let's go, let's go through it together. Let's go. Let's just tab through this page and see how it goes. And then that, that makes them go like, oh, I didn't, well, I don't even know where I am on the page. Ah, cool. So, let's talk about focus states, then let's talk about like, it opens a door to all of those things.
+So that's usually where I start is let's just tab through this page and, and what that exposes is some designers go like, well, all, but all we have is a Figma file. I'm like, okay. So, then we don't have a real product yet. We have, we have some paintings that are nice. Let's get this into a browser and see what it does.
+And they go, well, how, I mean, how do I, well, how do I get in the browser? I don't know. How would you get it in the browser? I mean, I guess I could, I guess I could ask that engineer over there. If like he could spend a little of time or she could spend a little of time with me to like, and it just opens these doors that I think designers who are designers or engineers who are engineers and purely sit in their silos.
+They, they’re, they’re purview is shallow. You know, the purview is well, oh, accessibility is only about Aria roles. Well, not really, like accessibility is only about color contract. I mean, that's a part of it, but there's a whole world there, you know. And so, let's, let's be more inclusive of, of even just our team members.
+You know, like, you know, and then once we can create that practice, then it opens a door to well, let's be more inclusive of people who are gonna be using our pro, not just making the things that we're making, but using these things.
+[00:37:20] Todd: Yeah.
+[00:37:20] Dan: You know, and, and that to me is, is a gateway from, you know, accessibility as a checklist to a process of inclusive design, you know, and how you get there.
+And so, again, not an expert, that's, that's my experience. And, and like what I've done so far, I'm sure there's stuff that's missing from that, but like, I like things that open doors that then people can go, like, I really wanna dive deep into, into this. So, I'm gonna go become an expert on, you know, color luminance because I realize how important I'm great.
+Excellent. Like, and then bring that back to the team and share that knowledge with everybody else too. I don’t know, Todd, what, what did I miss?
+[00:37:56] Todd: There's so much to accessibility.
+[00:37:58] Dan: Right.
+[00:37:59] Todd: So, so much I don't think we have time.
+[00:38:02] Dan: Exactly.
+[00:38:05] Todd: There's, there's so much, I find myself taking long walks and, you know, taking a few breathers now and then, and just saying, okay, you know, there, I can get through this, but yeah, definitely.
+No, that was, that was a great answer. I, I, you know, you know, I, I get that question some of the time and I'm like, yeah, I'm no design systems expert, but you know, accessibility, I can tell you a little bit about it. So, yeah, that's great. So, my final question before I get to the big three is kind of I, I, I say this, I ask this question.
+And I ask it kind of hesitantly
+[00:38:49] Dan: Okay
+[00:38:49] Todd: and that is who's gonna finish ahead of one another. The Sixers are the Celtics.
+[00:38:54] Dan: Oh boy. I mean, I will not take the bait of trying to answer that question accurately. What I will say is Sixers and five. Every year that's, that's my answer. So, I'm, I'm not gonna, I'm not gonna take that question from you.
+I'm just gonna say we're going all the way this year. Like I say every year. Yeah.
+[00:39:21] Todd: Yeah. I'm, I'm having an up and, well, you know, just like teams lately in, in New, in New England, it's been an up and down couple years, so.
+[00:39:32] Dan: Yep, I hear that. Yep. yeah.
+[00:39:35] Todd: Okay. The final three. The hot seat questions. Are you ready?
+[00:39:39] Dan: I'm ready. Let's do it.
+[00:39:40] Todd: All right. So, number one is, what about the web these days excites you and keeps you excited in what you do?
+[00:39:50] Dan: Ooh. Honestly, not a lot. I haven't been seeing things on the web that I'm like, this is awesome. At least not as much as I used to.
+[00:39:59] Todd: Right, right.
+[00:40:40] Dan: I will say though that, because my attention is on design system so much when I see a design system that looks great. Like when I see a website that looks great, that I know is built on a design system.
+I'm like, yes, there's a good example of it. Cuz, I think we see a lot of examples of like, well design system work kind of makes like drag websites, right? Cuz it's like just boxes, you know that we're putting together. So, whenever I see something that's beautiful that there's a system to. Whether it's our, you know, a software product design system definition, like I'm talking about earlier, or it's just like, I don't know.
+The design language is beautiful. To me the Oculus site, I've spent a lot of time on that site lately and I'm like, it's beautiful. Like it's simple. It seems like there are, there is a design language and an art direction, you know, system consideration to it. It seems expressive where it needs to be and, and, you know, and not where it doesn't need to be.
+So, I, I like seeing a lot of that stuff lately. I've been taking a lot of inspiration from, from that site.
+[00:40:56] Todd: Second question. If there were one thing you could change about the web that we know today what would that be?
+[00:41:05] Dan: Todd, these are heavy hitters, man. Okay. One thing that I could change about the web. I think it's still too hard to make for the web right now.
+It, it like. Build tools and however many design comps we need to like the pro it's just, it's just broken. I love, and this relates to the first question, I guess. I love seeing all the developments in like the no code movement and you know, like that's the stuff that makes me go. I could get my kid to use that, you know, if you wanna be my, my kid 10-year-old and 8-year-old, you wanna make a website?
+I don't go alright, let's just spin up an NPM packet, you know, like.
+[00:41:44] Todd: Right.
+[00:41:44] Dan: Okay. NPM install this. They'd be like what?
+[00:41:46] Todd: Yeah.
+[00:41:46] Dan: I'm like, yeah, let's open Webflow and we'll just build a thing like that. I, I like that. I think it's too hard for people to make for the web still. I think it's getting more difficult, which sucks.
+It should be getting easier, but I think co tools like no code tools, tools, like, you know, Framer app like all that stuff. I'm, I'm loving where that stuff's going.
+[00:42:06] Todd: Yeah. Third question. Favorite part of development or design front end that you really like the most that you nerd out over. And I think that would be design systems. Am I correct?
+[00:42:18] Dan: Oh, that's a good, it's not design systems.
+[00:42:20] Todd: Okay.
+[00:42:21] Dan: It's not design. I it's, it's things that are clever.
+[00:42:24] Todd: Okay.
+[00:42:25] Dan: Like I love seeing, because at some point design systems, like they're all, they all are gonna be the same, you know, like material design and ant design and this and that. Like it just bootstrap, it's all bootstrap.
+Right? It's all, it's all buttons and boxes and links and texts. So, fine. But there's, but the stuff that, that goes in them. Whenever I see little trinkets like that. I'm like, ah, this is great, like little moments, you know, sometimes little pieces of copy that like a whole webpage that's serious, but then there's a joke somewhere.
+I'm like, yes, that like somebody paid attention. Somebody cared about that. Cause it's, I think, you know, contrary to my last answer, I, I said it was hard to make web things. For people who do make web things, it's easy to make boring ones. It's easy to make standard things like. Cool. We can do that.
+We do that all day. But I think anything that shows a little elevated, something, you know, something that's animated that doesn't need to be that didn't there, wasn't on like a product managers, like, well, we have to do this though. Like something, a piece of copy that didn't need to be like that a, a design element, a, you know code, I'm a big fan of doing things, a long, hard, stupid way.
+Like that, that's a, I think that's a blog post of Frank Camaro wrote at some point
+[00:43:41] Todd: Yeah
+[00:43:41] Dan: or to something. And it's like some, I think that's the stuff that excites me about the web when people sometimes just do things a long, hard, stupid way. When somebody writes, you know, an SVG by hand and animates it by hand.
+Like you could tell you're like, look at that, the thing its saucy, you know, like it's just those little, those things, the sauce.
+[00:44:00] Todd: Yeah
+[00:44:00] Dan: That's the stuff that I, I really like. So, I like finding those. I, I feel like I'm finding 'em less and less nowadays, which I think is sad, but every time I find it, I'm like, yes, somebody who cared about this. And I, I think that we should celebrate that more.
+[00:44:14] Todd: Yeah, definitely. And I gotta ask, I'm gonna throw one more question.
+[00:44:16] Dan: Okay.
+[00:44:16] Todd: I gotta ask. Photography. I mean, you, I see some of the photography and I'm like, come on. I, I, I can't operate a camera like that.
+[00:44:27] Dan: I also wasn't able to.
+[00:44:29] Todd: Yeah.
+[00:44:29] Dan: It's you know, I think, I think it was a pandemic thing, although it started a couple years before that, but certainly with COVID I'm like, I think I need creative outlet that’s not business related.
+Like, because you know, I get to do that for my job every day, which I'm grateful for. I get to design and and develop and do all those things that clients pay, but it's different. And it's nice to have a hobby that's not. And like when I do photography, it, I can't think about anything else, you know, cuz I'm, I'm looking for the shot that I want I'm and, and I'm not so good at photography that it's like, oh, it's like, it's natural.
+And I just shoot and I, you know, whatever comes. It's, it's conscious work for me to go like what F stop do I want here? And what should the ISO be? Oh, why should it be that? Like, so I'm still in that kind of beginner mode where I'm like, oh, I have to be like literally dialed in you know, to it. And I can't be thinking about, oh, what, what do I have to do for work tomorrow? What do I have to, you know, what deliverable do I have? I'm not there. I'm fully present in photography work, now.
+And I just do it for fun. You know, I go out and shoot with friends and, you know, we go out to where let's go to the lake. Oh, you know, over here and see what's over there that's cool.
+And it's just this creative pursuit of like, and, and, and it fails a lot too. Sometimes I go out and I shoot a thousand photos of just nothing, you know, I'm like, I literally got no good shots today. I just got like some dirt or some trees or some this, like nothing. And so, I I've really been liking the challenge of it's like multiple challenges stacked on top of each other.
+It's finding something really interesting or finding a framing on something that makes it interesting and then capturing it well technically. You know, it's just all these different layers of challenges that when I get something I'm really proud of it.
+And, and a lot of times I'm, I I'm, I don't get something and I'm like, ah, I wanna go out and do it again. So, it's really been helpful for my mental health lately.
+[00:46:20] Todd: Yeah. Kind of, I did that kind of, I mean, it's still work. It's a lot of work, but I kind of did the same thing with this podcast. You know, I was like going into a pandemic and I don't want to be walking around a house in my own head
+[00:46:34] Dan: Yep.
+[00:46:34] Todd: Because it's a dangerous place to be.
+[00:46:36] Dan: Totally, yep.
+[00:46:38] Todd: That's how, you know, this is more, granted, it's still talking about work. Well, it's not really talking about work, work, but it's still talking about stuff that I deal with, kind of not, you know, on a daily basis, but it's still the, the biggest thing is it's been fun.
+[00:46:55] Dan: Yes.
+[00:46:56] Todd: And everybody, you know, who I asked, you know, would you like to come on the podcast? Nobody said no. And I asked a lot of people.
+[00:47:04] Dan: Nice.
+[00:47:04] Todd: And I was like, wow, I'm I, I have more than a couple of seasons, people that I need to talk to, I guess. So.
+[00:47:13] Dan: That’s awesome. For, for a while. So, when I, when I stopped doing client work at Super Friendly, I think I just stopped having fun. I think that's why I didn't succeed at the CEO stuff is cuz like, I think I'm a maker at heart.
+Oh, I think, I guess I believe that everybody's a maker, right? Like, but I, I like making things and, you know, sometimes not just making like a vision board, you know, like sometimes just making something tangible, you know, going like, ah, I made the design. And so, I think that there's gotta be that work overlap cuz to me, even when I'm doing photography, I'm opening design tools, I'm editing I'm, you know, I'm uploading it here.
+I'm like I'm doing strategy work the same way that I would do on a client project or at work, work, right? Like I'm still using those same tools, but for a completely different output. So, I think if it was completely outside of it, I don't know, I mean, I'm good at work. So, to take those skills and apply it into something else.
+I'm like, I, I wanna be good at it too. I don't know that I like, I don't know how much I can stomach being so bad at this thing for such a long time.
+[00:48:12] Todd: Yeah.
+[00:48:12] Dan: You know that I would just give up. So, I think that I think that if, for us who, I mean, this is such a, a, a weird industry and that we're like one of the only ones who do the same thing for a hobby that we you do for a profession. You know, like, I, I don't know any plumber that like, does plumbing on the side, like side projects, you know, like other than maybe their own house, you know. But they're not like, like, ah, let me go, you know, somebody who works, I don't know, like you get what I'm saying
+[00:48:37] Todd: Yeah.
+[00:48:37] Dan: But, but we do. So, I think that we do, we do get to mix that stuff. I think that's a, that's an advantage and that's a good thing that we have a benefit. It's just, it's tough when it overruns our lives.
+[00:48:48] Todd: Yeah.
+[00:48:48] Dan: But I think being able to use the same skills elsewhere and something that's fun. Oh, so, my point was, when I, when I stopped doing client work, I had a every month I would change the wallpaper on my phone to say, are you having fun?
+And then have just like a fun like illustration or something that I made on it. Because I realized I stopped having fun. And like, that's why I got into this stuff in the first place I got into this stuff because I saw Toy Story and it looked like so much fun
+[00:49:12] Todd: Yeah.
+[00:49:12] Dan: to work on that and make that and get paid for it. Amazing. And so now I think that that's a big part and that's, that's my like design system goal thing is like, when I work with teams, I want them to have fun. I want design systems to enable fun. So, we focused on that a lot.
+[00:49:27] Todd: Yeah.
+[00:49:27] Dan: You know, rather than just the components of the APIs or.
+[00:49:33] Todd: Yeah.
+[00:49:33] Dan: A lot more than [inaudible], I'm sorry.
+[00:49:34] Todd: No, that's quite all right. Quite all right. I love it. So, I'd like to close the podcast with my guest, letting the listeners know what they currently have going on and where people can find you online. So, the floor is yours.
+[00:49:46] Dan: Alright. Thanks. Well, I mean, that's tough cuz you plugged everything that I've got already during this episode.
+I, Super Friendly does design system work. If, if clients are looking for design system help. The way that we do it is we coach so very rarely now, do we bring on like a full team of designers and engineers on, we mostly bring on two or three coaches at most, and we work directly with in-house teams and the team there.
+So, if there's a team out there that wants that or interested in that, please get in touch. Love to talk to you about it. That's one thing. I'm writing a book about design systems right now. And so that's been taking up a lot of my time and brain space and figuring that out.
+And aside from that, the only other thing I'll plug is find a cause that you're passionate about especially with people who need help somehow and give them money. If you can. Couple bucks, couple hundred bucks or a thousand bucks, whatever you can afford. But that has been really helpful to me and my family to just find something that we believe in and, and, and support it. And I think that more people could use support. So, whatever the cause is, it doesn't matter to me, but I hope that everyone gets a chance to do something like that.
+[00:50:53] Todd: Definitely. Well, Dan, thank you for coming on and spending part of your day with me.
+[00:50:59] Dan: It's my pleasure.
+[00:51:00] Todd: I appreciate that.
+[00:51:00] Dan:  Thank you for inviting me.
+[00:51:02] Todd: Yeah definitely. And it's been a pleasure being able to catch up and talk some shop with you and
+[00:51:08] Dan: Likewise
+[00:51:08] Todd: You know, razz you about the Sixers a little bit.
+[00:51:13] Dan: Alright, right. It was just enough. Yeah.
+[00:51:15] Todd: Just, just enough. I know where to toe the line.
+[00:51:18] Dan: I appreciate it.
+[00:51:20] Todd: So, you know, go buy the book pricing. What is it? Yeah.
+[00:51:23] Dan: Pricing Design.
+[00:51:25] Todd: Yeah, Pricing Design. I'll off camera have to ask you about the other one.
+[00:51:30] Dan: Cool.
+[00:51:30] Todd: I'd like a little bit of the scoop here and
+[00:51:32] Dan: Alright
+[00:51:32] Todd: And yeah, Super Friendly, you know, get ahold of them if, if you need design systems help and coaching, because they're great.
+And so, with that, I'd like to thank you again for coming on, and thank you listeners for tuning into the Front End Nerdery Podcast. I'll be back next time with a new guest, new conversation about front end design, development or any other topic that we can think of. I don’t know.
+But if you would please rate this podcast on your podcast device of choice. Like, subscribe and watch on the Front End Nerdery YouTube channel. Links to transcripts and show notes are there because the podcast is as accessible as I hope it is and and create it to be. I'm Todd Libby. And this has been the Front End Nerdery Podcast. Thanks. And we will see you next time.

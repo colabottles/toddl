@@ -1,0 +1,172 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Privacy" description="Privacy policy for toddl.dev.">
+  <section aria-labelledby="privacy-heading">
+    <h1 id="privacy-heading" class="cmd-heading">
+      <span class="cmd-prompt">$</span> cat ./privacy
+    </h1>
+
+    <dl class="info-list">
+      <div class="info-group">
+        <dt class="info-group__label">the short version</dt>
+        <dd class="info-group__content">
+          <p>
+            This site does not track you. No analytics, no advertising, no
+            third-party scripts that follow you around the web.
+          </p>
+        </dd>
+      </div>
+
+      <div class="info-group">
+        <dt class="info-group__label">what is stored</dt>
+        <dd class="info-group__content">
+          <ul>
+            <li>
+              <strong>Theme preference</strong> — stored in <code
+                >localStorage</code
+              > on your device. Never sent to a server. You can clear it any time
+              by clearing your browser storage.
+            </li>
+          </ul>
+        </dd>
+      </div>
+
+      <div class="info-group">
+        <dt class="info-group__label">what is not stored</dt>
+        <dd class="info-group__content">
+          <ul>
+            <li>No cookies</li>
+            <li>No analytics</li>
+            <li>No advertising trackers</li>
+            <li>No fingerprinting</li>
+            <li>No personal data collected</li>
+            <li>No data sold or shared with third parties</li>
+          </ul>
+        </dd>
+      </div>
+
+      <div class="info-group">
+        <dt class="info-group__label">third parties</dt>
+        <dd class="info-group__content">
+          <ul>
+            <li>
+              <strong>Google Fonts</strong> — JetBrains Mono is loaded from Google
+              Fonts. Google may log the request. To avoid this, use a browser extension
+              that blocks Google Fonts requests.
+            </li>
+            <li>
+              <strong>GitHub API</strong> — The GitHub panel fetches public data from
+              the GitHub API. No credentials or personal data are sent.
+            </li>
+            <li>
+              <strong>YouTube</strong> — The speaking page embeds YouTube videos.
+              YouTube may set cookies if you interact with them. Videos use <code
+                >youtube-nocookie.com</code
+              > where possible.
+            </li>
+            <li>
+              <strong>Netlify</strong> — This site is hosted on Netlify, who may collect
+              standard server logs (IP address, request time, user agent). See <a
+                href="https://www.netlify.com/privacy/"
+                class="info-link"
+                target="_blank"
+                rel="noopener noreferrer">Netlify's privacy policy</a
+              >.
+            </li>
+          </ul>
+        </dd>
+      </div>
+
+      <div class="info-group">
+        <dt class="info-group__label">contact</dt>
+        <dd class="info-group__content">
+          <p>
+            Questions about privacy? <a href="/contact" class="info-link"
+              >./contact</a>
+          </p>
+        </dd>
+      </div>
+
+      <div class="info-group">
+        <dt class="info-group__label">last updated</dt>
+        <dd class="info-group__content">
+          <p>April 2026</p>
+        </dd>
+      </div>
+    </dl>
+  </section>
+</Base>
+
+<style>
+  .info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .info-group {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+    border: 0.5px solid var(--warm-border);
+    border-radius: var(--radius-sm);
+    background: var(--warm-mid);
+    align-items: start;
+  }
+
+  .info-group__label {
+    font-size: 0.75rem;
+    color: var(--accent);
+    padding-top: 0.125rem;
+  }
+
+  .info-group__content {
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    line-height: 1.7;
+  }
+
+  .info-group__content p {
+    margin-bottom: 0;
+  }
+
+  .info-group__content ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .info-group__content li::marker {
+    color: var(--accent);
+  }
+
+  .info-group__content strong {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  .info-group__content code {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--accent);
+    background: var(--warm-mid);
+    border: 0.5px solid var(--warm-border);
+    padding: 0.125rem 0.375rem;
+    border-radius: 3px;
+  }
+
+  .info-link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .info-link:hover {
+    opacity: 0.8;
+  }
+</style>
