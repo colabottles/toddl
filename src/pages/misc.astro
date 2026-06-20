@@ -1,96 +1,87 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
 
-interface Project {
+interface MiscSection {
   title: string;
-  url: string;
+  href: string;
   description: string;
-  stack: string[];
-  status: "active" | "ongoing" | "stable";
+  external?: boolean;
 }
 
-const projects: Project[] = [
+const sections: MiscSection[] = [
   {
-    title: "ZulkirBot",
-    url: "https://zulkirbot-docs.netlify.app",
+    title: "Projects",
+    href: "/projects",
     description:
-      "A full chat RPG bot for my Twitch stream. Duels, campaigns, inventories, guild bonuses, and a barkeep named Nachowench.",
-    stack: ["TypeScript", "tmi.js", "Supabase"],
-    status: "active",
+      "Side projects, portfolio work, and tools I've built — ZulkirBot, Groovemark, BranchFlow, and more.",
   },
   {
-    title: "DDO Overlay",
-    url: "https://github.com/colabottles",
+    title: "Writing",
+    href: "/writing",
     description:
-      "OBS overlay for DDO stream data pulled from the DDO Audit API. Config page, character display, WCAG 2.2 contrast.",
-    stack: ["Nuxt 4", "DDO Audit API", "Netlify"],
-    status: "active",
+      "Longer essays, articles, and pieces published outside the blog.",
   },
   {
-    title: "Groovemark",
-    url: "https://github.com/colabottles",
+    title: "Accessibility",
+    href: "/accessibility",
     description:
-      "A Last.fm alternative and music scrobbler with D3 visualizations and a browser extension for Chrome and Firefox.",
-    stack: ["Nuxt 4", "Supabase", "AT Protocol", "D3"],
-    status: "ongoing",
+      "My accessibility statement, commitments, and how I approach inclusive design on this site and in my work.",
   },
   {
-    title: "Candlekeep Codex",
-    url: "https://github.com/colabottles",
+    title: "Speaking & Podcast",
+    href: "/speaking",
     description:
-      "D&D lore reference covering all nine editions. Sanity CMS, D3 force graph, Leaflet map, Pagefind search.",
-    stack: ["Astro 6", "Sanity", "D3", "Leaflet"],
-    status: "ongoing",
+      "22 conference talks, 2 workshops, 21 podcast and stream appearances from 2019 through 2025.",
   },
   {
-    title: "BranchFlow",
-    url: "https://branchflow.netlify.app",
+    title: "Elsewhere",
+    href: "/elsewhere",
     description:
-      "Keyboard-accessible Git history explorer with an SVG commit graph and ARIA live regions.",
-    stack: ["Nuxt 4", "GitHub API"],
-    status: "stable",
+      "Where to find me across the web — Bluesky, GitHub, Twitch, and everywhere else.",
+  },
+  {
+    title: "Uses",
+    href: "/uses",
+    description:
+      "The hardware, software, and tools I use day to day for development and streaming.",
+  },
+  {
+    title: "Colophon",
+    href: "/colophon",
+    description:
+      "How this site is built — stack, fonts, hosting, and the decisions behind the design.",
+  },
+  {
+    title: "Privacy",
+    href: "/privacy",
+    description:
+      "What this site does and doesn't collect. Short version: not much.",
   },
 ];
-
-const statusLabel: Record<Project["status"], string> = {
-  active: "Active",
-  ongoing: "In progress",
-  stable: "Stable",
-};
 ---
 
 <PageLayout title="Misc — Todd Libby" pageNumber={5} pageLabel="Misc">
   <Fragment slot="main">
-    <p class="section-label">Projects & experiments</p>
+    <p class="section-label">Everything else</p>
     <p class="intro-text">
-      Things that don't fit neatly anywhere else — side projects, experiments,
-      and tools I've built for myself or the stream.
+      The pages that don't fit into a single column — projects, writing,
+      accessibility, speaking, and the rest.
     </p>
 
-    <ul class="project-list" role="list">
+    <ul class="section-list" role="list">
       {
-        projects.map((project) => (
-          <li class="project-item">
+        sections.map((section) => (
+          <li class="section-item">
             <a
-              href={project.url}
-              class="project-link"
-              rel="noopener noreferrer"
+              href={section.href}
+              class="section-link"
+              {...(section.external ? { rel: "noopener noreferrer" } : {})}
             >
-              <div class="project-header">
-                <span class="project-title">{project.title}</span>
-                <span
-                  class={`project-status status--${project.status}`}
-                  aria-label={`Status: ${statusLabel[project.status]}`}
-                >
-                  {statusLabel[project.status]}
-                </span>
-              </div>
-              <p class="project-desc">{project.description}</p>
-              <div class="tag-list" aria-label="Stack">
-                {project.stack.map((s) => (
-                  <span class="tag">{s}</span>
-                ))}
-              </div>
+              <span class="section-title">{section.title}</span>
+              <span class="section-arrow" aria-hidden="true">
+                &rarr;
+              </span>
+              <p class="section-desc">{section.description}</p>
             </a>
           </li>
         ))
@@ -100,25 +91,26 @@ const statusLabel: Record<Project["status"], string> = {
 
   <Fragment slot="aside">
     <div class="side-item">
-      <p class="section-label">Projects</p>
-      <p class="stat-num">{projects.length}</p>
+      <p class="section-label">Pages here</p>
+      <p class="stat-num">{sections.length}</p>
     </div>
 
     <div class="side-item">
-      <p class="section-label">Status key</p>
-      <ul class="status-key" aria-label="Project status legend">
-        <li>
-          <span class="status-dot status--active" aria-hidden="true"></span>
-          <span class="side-text">Active — being worked on now</span>
-        </li>
-        <li>
-          <span class="status-dot status--ongoing" aria-hidden="true"></span>
-          <span class="side-text">In progress — being built</span>
-        </li>
-        <li>
-          <span class="status-dot status--stable" aria-hidden="true"></span>
-          <span class="side-text">Stable — live, not changing</span>
-        </li>
+      <p class="section-label">Quick links</p>
+      <ul class="quick-links" aria-label="Quick links to misc pages">
+        {
+          sections.map((section) => (
+            <li>
+              <a
+                href={section.href}
+                class="side-link"
+                {...(section.external ? { rel: "noopener noreferrer" } : {})}
+              >
+                {section.title}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </div>
 
@@ -136,116 +128,77 @@ const statusLabel: Record<Project["status"], string> = {
 <style>
   @import "../styles/page-content.css";
 
-  .project-list {
+  .section-list {
     list-style: none;
     display: flex;
     flex-direction: column;
   }
 
-  .project-item {
+  .section-item {
     border-bottom: 1px solid #222;
   }
 
-  .project-link {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  .section-link {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0.2rem 0.5rem;
     padding: 1.25rem 0;
     text-decoration: none;
     color: inherit;
     transition: padding-left 0.15s;
   }
 
-  .project-link:hover {
+  .section-link:hover {
     padding-left: 0.5rem;
   }
 
-  .project-link:focus-visible {
+  .section-link:focus-visible {
     outline: 2px solid #fff;
     outline-offset: 2px;
   }
 
-  .project-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-
-  .project-title {
+  .section-title {
     font-family: "Oswald", sans-serif;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
     line-height: 1.1;
+    grid-column: 1;
+    grid-row: 1;
   }
 
-  .project-status {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 0.6rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 2px 7px;
-    border: 1px solid;
-    white-space: nowrap;
+  .section-arrow {
+    font-size: 1rem;
+    color: #444;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    transition:
+      color 0.15s,
+      transform 0.15s;
   }
 
-  .status--active {
-    color: #6fcf97;
-    border-color: #2d5a3d;
+  .section-link:hover .section-arrow {
+    color: #fff;
+    transform: translateX(3px);
   }
 
-  .status--ongoing {
-    color: #f2c94c;
-    border-color: #5a4a1a;
-  }
-
-  .status--stable {
+  .section-desc {
+    font-size: 0.82rem;
     color: #888;
-    border-color: #333;
+    line-height: 1.55;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin: 0;
   }
 
-  .project-desc {
-    font-size: 0.85rem;
-    color: #888;
-    line-height: 1.6;
-  }
-
-  .status-key {
+  .quick-links {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-top: 0.5rem;
-  }
-
-  .status-key li {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .status-dot {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-
-  .status-dot.status--active {
-    background: #6fcf97;
-    border: none;
-  }
-
-  .status-dot.status--ongoing {
-    background: #f2c94c;
-    border: none;
-  }
-
-  .status-dot.status--stable {
-    background: #555;
-    border: none;
+    gap: 5px;
+    margin-top: 0.4rem;
   }
 </style>
