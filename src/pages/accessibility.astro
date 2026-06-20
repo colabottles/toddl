@@ -1,150 +1,223 @@
 ---
-import Base from "../layouts/Base.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 ---
 
-<Base
-  title="Accessibility"
-  description="Accessibility statement for toddl.dev."
+<PageLayout
+  title="Accessibility — Todd Libby"
+  pageNumber={5}
+  pageLabel="Misc / Accessibility"
+  nextLabel="05 — Misc"
+  nextHref="/misc"
 >
-  <section aria-labelledby="a11y-heading">
-    <h1 id="a11y-heading" class="cmd-heading">
-      <span class="cmd-prompt">$</span> cat ./accessibility
-    </h1>
+  <Fragment slot="main">
+    <p class="section-label">Accessibility statement</p>
+    <p class="intro-text">
+      This site is built by an accessibility advocate. WCAG 2.2 Level AA
+      compliance is a baseline, not a goal.
+    </p>
 
-    <dl class="info-list">
-      <div class="info-group">
-        <dt class="info-group__label">commitment</dt>
-        <dd class="info-group__content">
-          <p>
-            This site is built by an accessibility advocate. WCAG 2.2 Level AA
-            compliance is a baseline, not a goal. Semantic HTML, proper landmark
-            structure, keyboard navigation, and sufficient color contrast are
-            standard practice here — not afterthoughts.
-          </p>
-        </dd>
-      </div>
+    <section aria-labelledby="commitment-heading">
+      <h2 id="commitment-heading" class="content-heading">Commitment</h2>
+      <p class="body-text">
+        Semantic HTML, proper landmark structure, keyboard navigation, and
+        sufficient color contrast are standard practice here — not
+        afterthoughts. Every page is built with these in mind from the first
+        line of markup.
+      </p>
+    </section>
 
-      <div class="info-group">
-        <dt class="info-group__label">standards</dt>
-        <dd class="info-group__content">
-          <ul>
-            <li>WCAG 2.2 Level AA</li>
-            <li>WAI-ARIA 1.2</li>
-            <li>Semantic HTML5 throughout</li>
-            <li>Keyboard navigable</li>
-            <li>Screen reader tested with NVDA, JAWS, and VoiceOver</li>
-            <li>Respects <code>prefers-reduced-motion</code></li>
-            <li>Respects <code>prefers-color-scheme</code></li>
-          </ul>
-        </dd>
-      </div>
+    <section aria-labelledby="standards-heading">
+      <h2 id="standards-heading" class="content-heading">Standards</h2>
+      <ul class="standards-list" role="list">
+        <li class="standards-item">
+          <span class="standards-label">Spec</span>
+          <span class="standards-value">WCAG 2.2 Level AA</span>
+        </li>
+        <li class="standards-item">
+          <span class="standards-label">ARIA</span>
+          <span class="standards-value">WAI-ARIA 1.2</span>
+        </li>
+        <li class="standards-item">
+          <span class="standards-label">Markup</span>
+          <span class="standards-value">Semantic HTML5 throughout</span>
+        </li>
+        <li class="standards-item">
+          <span class="standards-label">Input</span>
+          <span class="standards-value">Fully keyboard navigable</span>
+        </li>
+        <li class="standards-item">
+          <span class="standards-label">Screen readers</span>
+          <span class="standards-value"
+            >Tested with NVDA, JAWS, and VoiceOver</span
+          >
+        </li>
+        <li class="standards-item">
+          <span class="standards-label">Motion</span>
+          <span class="standards-value"
+            >Respects <code>prefers-reduced-motion</code></span
+          >
+        </li>
+        <li class="standards-item">
+          <span class="standards-label">Color</span>
+          <span class="standards-value"
+            >Respects <code>prefers-color-scheme</code></span
+          >
+        </li>
+      </ul>
+    </section>
 
-      <div class="info-group">
-        <dt class="info-group__label">known issues</dt>
-        <dd class="info-group__content">
-          <p>
-            Code blocks use <code>tabindex="0"</code> to enable keyboard scrolling per WCAG
-            2.1.1. Some automated tools incorrectly flag this as a violation —
-            it is intentional and correct behavior.
-          </p>
-          <p>
-            Logical OR operators <code>||</code> in code blocks are flagged by some
-            automated tools as special characters. These are valid programming
-            syntax and are expected content within code examples.
-          </p>
-        </dd>
-      </div>
+    <section aria-labelledby="testing-heading">
+      <h2 id="testing-heading" class="content-heading">Testing</h2>
+      <p class="body-text">
+        This site is regularly tested with automated tools (axe, WAVE) and
+        manual testing with keyboard navigation and screen readers. Browser and
+        OS combinations tested include Windows with NVDA and macOS with
+        VoiceOver.
+      </p>
+    </section>
 
-      <div class="info-group">
-        <dt class="info-group__label">contact</dt>
-        <dd class="info-group__content">
-          <p>
-            Found an accessibility issue? Contact me at <a
-              href="/contact"
-              class="info-link">./contact</a
-            > and I will address it as quickly as possible.
-          </p>
-        </dd>
-      </div>
+    <section aria-labelledby="known-heading">
+      <h2 id="known-heading" class="content-heading">Known issues</h2>
+      <p class="body-text">
+        Code blocks use <code>tabindex="0"</code> to enable keyboard scrolling per
+        WCAG 2.1.1. Some automated tools incorrectly flag this as a violation — it
+        is intentional and correct behavior.
+      </p>
+      <p class="body-text">
+        Logical OR operators <code>||</code> in code blocks are flagged by some automated
+        tools as special characters. These are valid programming syntax and expected
+        content within code examples.
+      </p>
+    </section>
 
-      <div class="info-group">
-        <dt class="info-group__label">testing</dt>
-        <dd class="info-group__content">
-          <p>
-            This site is regularly tested with automated tools (axe, WAVE) and
-            manual testing with keyboard navigation and screen readers. Browser
-            and OS combinations tested include Windows with NVDA, and
-            macOS with VoiceOver.
-          </p>
-        </dd>
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="content-heading">Report an issue</h2>
+      <p class="body-text">
+        Found an accessibility issue? <a href="/contact" class="inline-link"
+          >Contact me</a
+        > and I will address it as quickly as possible.
+      </p>
+    </section>
+  </Fragment>
+
+  <Fragment slot="aside">
+    <div class="side-item">
+      <p class="section-label">Target</p>
+      <p class="side-heading">WCAG 2.2 AA</p>
+      <p class="side-text">AA is the floor, not the ceiling.</p>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Screen readers</p>
+      <div class="tag-list">
+        <span class="tag">NVDA</span>
+        <span class="tag">JAWS</span>
+        <span class="tag">VoiceOver</span>
       </div>
-    </dl>
-  </section>
-</Base>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Automated tools</p>
+      <div class="tag-list">
+        <span class="tag">axe</span>
+        <span class="tag">WAVE</span>
+        <span class="tag">ARC Toolkit</span>
+        <span class="tag">IBM Equal Access</span>
+      </div>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Report</p>
+      <a href="/contact" class="side-link">Contact me</a>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Back</p>
+      <a href="/misc" class="side-link">Misc</a>
+    </div>
+  </Fragment>
+</PageLayout>
 
 <style>
-  .info-list {
+  @import "../styles/page-content.css";
+
+  .content-heading {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #555;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #222;
+    margin: 2rem 0 0;
+    font-weight: 400;
+  }
+
+  .content-heading + .body-text,
+  .content-heading + .standards-list {
+    margin-top: 1rem;
+  }
+
+  .standards-list {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .info-group {
-    display: grid;
-    grid-template-columns: 8rem 1fr;
-    gap: 0.75rem;
-    padding: 0.875rem 1rem;
-    border: 0.5px solid var(--warm-border);
-    border-radius: var(--radius-sm);
-    background: var(--warm-mid);
-    align-items: start;
-  }
-
-  .info-group__label {
-    font-size: 0.75rem;
-    color: var(--accent);
-    padding-top: 0.125rem;
-  }
-
-  .info-group__content {
-    font-size: 0.875rem;
-    color: var(--text-primary);
-    line-height: 1.7;
-  }
-
-  .info-group__content p {
     margin-bottom: 0;
   }
 
-  .info-group__content ul {
-    list-style: disc;
-    padding-left: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+  .standards-item {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #1a1a1a;
+    align-items: baseline;
   }
 
-  .info-group__content li::marker {
-    color: var(--accent);
+  .standards-label {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #555;
   }
 
-  .info-group__content code {
-    font-family: var(--font-mono);
-    font-size: 0.8125rem;
-    color: var(--accent);
-    background: var(--warm-mid);
-    border: 0.5px solid var(--warm-border);
-    padding: 0.125rem 0.375rem;
-    border-radius: 3px;
+  .standards-value {
+    font-size: 0.85rem;
+    color: #ccc;
+    line-height: 1.5;
   }
 
-  .info-link {
-    color: var(--accent);
-    text-decoration: underline;
+  .standards-value code {
+    font-family: "Courier New", monospace;
+    font-size: 0.82em;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 1px 4px;
+    color: #ddd;
+  }
+
+  .inline-link {
+    color: #fff;
     text-underline-offset: 3px;
   }
 
-  .info-link:hover {
-    opacity: 0.8;
+  .inline-link:hover,
+  .inline-link:focus-visible {
+    text-decoration: none;
+  }
+
+  .inline-link:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  code {
+    font-family: "Courier New", monospace;
+    font-size: 0.85em;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 1px 5px;
+    color: #ddd;
   }
 </style>

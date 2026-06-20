@@ -1,187 +1,192 @@
 ---
-import Base from "../layouts/Base.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+
+interface ColophonItem {
+  label: string;
+  value: string;
+}
+
+interface ColophonSection {
+  heading: string;
+  items: ColophonItem[];
+}
+
+const sections: ColophonSection[] = [
+  {
+    heading: "Built with",
+    items: [
+      { label: "Generator", value: "Astro" },
+      { label: "Interactivity", value: "Vue 3 islands where needed" },
+      { label: "CSS", value: "Vanilla CSS — no frameworks, no utilities" },
+      { label: "Types", value: "TypeScript throughout" },
+    ],
+  },
+  {
+    heading: "Deployed to",
+    items: [
+      { label: "Host", value: "Netlify" },
+      { label: "CI/CD", value: "Netlify — auto-deploy from main" },
+    ],
+  },
+  {
+    heading: "Typography",
+    items: [
+      { label: "Display", value: "Oswald" },
+      { label: "Condensed", value: "Barlow Condensed" },
+      { label: "Body", value: "Barlow" },
+    ],
+  },
+  {
+    heading: "Colors",
+    items: [
+      { label: "Background", value: "#111" },
+      { label: "Border", value: "#333" },
+      { label: "Text primary", value: "#fff" },
+      { label: "Text secondary", value: "#aaa" },
+    ],
+  },
+  {
+    heading: "Accessibility",
+    items: [
+      { label: "Standard", value: "WCAG 2.2 AA" },
+      { label: "HTML", value: "Semantic HTML5 throughout" },
+      { label: "Screen readers", value: "Tested with NVDA, JAWS, VoiceOver" },
+      { label: "Input", value: "Fully keyboard navigable" },
+      { label: "Motion", value: "Respects prefers-reduced-motion" },
+    ],
+  },
+  {
+    heading: "Design",
+    items: [
+      {
+        label: "Aesthetic",
+        value: "Dark editorial — inspired by print magazine layouts",
+      },
+      { label: "Analytics", value: "None" },
+      { label: "Tracking", value: "None" },
+      { label: "Ads", value: "None" },
+    ],
+  },
+];
 ---
 
-<Base title="Colophon" description="How this site was built.">
-  <section aria-labelledby="colophon-heading">
-    <h1 id="colophon-heading" class="cmd-heading">
-      <span class="cmd-prompt">$</span> cat ./colophon
-    </h1>
+<PageLayout
+  title="Colophon — Todd Libby"
+  pageNumber={5}
+  pageLabel="Misc / Colophon"
+  nextLabel="05 — Misc"
+  nextHref="/misc"
+>
+  <Fragment slot="main">
+    <p class="section-label">How this site is built</p>
+    <p class="intro-text">
+      Stack, fonts, hosting, and the decisions behind the design.
+    </p>
 
-    <dl class="colophon-list">
-      <div class="colophon-group">
-        <dt class="colophon-group__label">built with</dt>
-        <dd class="colophon-group__items">
-          <ul>
-            <li class="colophon-item">
-              <strong>Astro</strong>
-              <span class="colophon-note">static site generator</span>
-            </li>
-            <li class="colophon-item">
-              <strong>Vue 3</strong>
-              <span class="colophon-note">interactive islands</span>
-            </li>
-            <li class="colophon-item">
-              <strong>Vanilla CSS</strong>
-              <span class="colophon-note">no frameworks, no utilities</span>
-            </li>
-            <li class="colophon-item">
-              <strong>TypeScript</strong>
-              <span class="colophon-note">always</span>
-            </li>
-          </ul>
-        </dd>
-      </div>
+    {
+      sections.map((section) => (
+        <section
+          aria-labelledby={`section-${section.heading.toLowerCase().replace(/\s+/g, "-")}`}
+          class="colophon-section"
+        >
+          <h2
+            id={`section-${section.heading.toLowerCase().replace(/\s+/g, "-")}`}
+            class="content-heading"
+          >
+            {section.heading}
+          </h2>
+          <dl class="colophon-list">
+            {section.items.map((item) => (
+              <>
+                <dt class="col-term">{item.label}</dt>
+                <dd class="col-def">{item.value}</dd>
+              </>
+            ))}
+          </dl>
+        </section>
+      ))
+    }
+  </Fragment>
 
-      <div class="colophon-group">
-        <dt class="colophon-group__label">deployed to</dt>
-        <dd class="colophon-group__items">
-          <ul>
-            <li class="colophon-item">
-              <strong>Netlify</strong>
-              <span class="colophon-note">CI/CD + CDN</span>
-            </li>
-          </ul>
-        </dd>
-      </div>
+  <Fragment slot="aside">
+    <div class="side-item">
+      <p class="section-label">Generator</p>
+      <p class="side-heading">Astro</p>
+    </div>
 
-      <div class="colophon-group">
-        <dt class="colophon-group__label">typeface</dt>
-        <dd class="colophon-group__items">
-          <ul>
-            <li class="colophon-item">
-              <strong>JetBrains Mono</strong>
-              <span class="colophon-note">monospace throughout</span>
-            </li>
-          </ul>
-        </dd>
-      </div>
+    <div class="side-item">
+      <p class="section-label">Host</p>
+      <p class="side-heading">Netlify</p>
+    </div>
 
-      <div class="colophon-group">
-        <dt class="colophon-group__label">colors</dt>
-        <dd class="colophon-group__items">
-          <ul>
-            <li class="colophon-item">
-              <span class="swatch" style="background:#a3af7c"></span><strong
-                >#a3af7c</strong
-              >
-              <span class="colophon-note">accent (dark mode)</span>
-            </li>
-            <li class="colophon-item">
-              <span class="swatch" style="background:#3a6200"></span><strong
-                >#3a6200</strong
-              >
-              <span class="colophon-note">accent (light mode)</span>
-            </li>
-            <li class="colophon-item">
-              <span class="swatch" style="background:#252C37"></span><strong
-                >#252C37</strong
-              >
-              <span class="colophon-note">sidebar</span>
-            </li>
-            <li class="colophon-item">
-              <span
-                class="swatch"
-                style="background:#f8f7f4; border: 0.5px solid #ccc"
-              ></span><strong>#f8f7f4</strong>
-              <span class="colophon-note">warm background</span>
-            </li>
-          </ul>
-        </dd>
+    <div class="side-item">
+      <p class="section-label">Fonts</p>
+      <div class="tag-list">
+        <span class="tag">Oswald</span>
+        <span class="tag">Barlow Condensed</span>
+        <span class="tag">Barlow</span>
       </div>
+    </div>
 
-      <div class="colophon-group">
-        <dt class="colophon-group__label">accessibility</dt>
-        <dd class="colophon-group__items">
-          <ul>
-            <li class="colophon-item">WCAG 2.2 AA compliant</li>
-            <li class="colophon-item">Semantic HTML5 throughout</li>
-            <li class="colophon-item">Tested with NVDA, JAWS, and VoiceOver</li>
-            <li class="colophon-item">Keyboard navigable</li>
-            <li class="colophon-item">Respects prefers-reduced-motion</li>
-            <li class="colophon-item">
-              Light and dark mode via prefers-color-scheme
-            </li>
-          </ul>
-        </dd>
-      </div>
+    <div class="side-item">
+      <p class="section-label">Source</p>
+      <a
+        href="https://github.com/colabottles/toddl"
+        class="side-link"
+        rel="noopener noreferrer"
+      >
+        colabottles/toddl
+      </a>
+    </div>
 
-      <div class="colophon-group">
-        <dt class="colophon-group__label">design</dt>
-        <dd class="colophon-group__items">
-          <ul>
-            <li class="colophon-item">Terminal-inspired aesthetic</li>
-            <li class="colophon-item">
-              Persistent dark sidebar, warm content area
-            </li>
-            <li class="colophon-item">No tracking, no analytics, no ads</li>
-          </ul>
-        </dd>
-      </div>
-    </dl>
-  </section>
-</Base>
+    <div class="side-item">
+      <p class="section-label">Back</p>
+      <a href="/misc" class="side-link">Misc</a>
+    </div>
+  </Fragment>
+</PageLayout>
 
 <style>
+  @import "../styles/page-content.css";
+
+  .colophon-section {
+    margin-bottom: 0;
+  }
+
+  .content-heading {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #555;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #222;
+    margin: 2rem 0 0;
+    font-weight: 400;
+  }
+
   .colophon-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .colophon-group {
     display: grid;
-    grid-template-columns: 7rem 1fr;
-    gap: 0.75rem;
-    padding: 0.75rem 0.875rem;
-    border: 0.5px solid var(--warm-border);
-    border-radius: var(--radius-sm);
-    background: var(--warm-mid);
-    align-items: start;
+    grid-template-columns: 9rem 1fr;
+    margin: 0;
   }
 
-  .colophon-group__label {
-    font-size: 0.75rem;
-    color: var(--accent);
-    padding-top: 0.125rem;
+  .col-term {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #555;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #1a1a1a;
   }
 
-  .colophon-group__items ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-  }
-
-  .colophon-item {
-    font-size: 0.875rem;
-    color: var(--text-primary);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .colophon-item strong {
-    font-weight: 500;
-  }
-
-  .colophon-note {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-  }
-
-  .colophon-note::before {
-    content: "// ";
-    color: var(--accent);
-    opacity: 0.6;
-  }
-
-  .swatch {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 2px;
-    flex-shrink: 0;
+  .col-def {
+    font-size: 0.85rem;
+    color: #ccc;
+    line-height: 1.5;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #1a1a1a;
+    margin: 0;
   }
 </style>

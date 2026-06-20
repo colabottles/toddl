@@ -1,93 +1,180 @@
 ---
-import Base from "../layouts/Base.astro";
-import { uses } from "../data/content";
+import PageLayout from "../layouts/PageLayout.astro";
+
+interface UsesItem {
+  name: string;
+  note?: string;
+}
+
+interface UsesCategory {
+  label: string;
+  items: UsesItem[];
+}
+
+const categories: UsesCategory[] = [
+  {
+    label: "Editor",
+    items: [
+      { name: "VS Code", note: "Primary" },
+      { name: "Vim", note: "Quick edits" },
+    ],
+  },
+  {
+    label: "Terminal",
+    items: [{ name: "Ghostty" }, { name: "zsh + oh-my-zsh" }],
+  },
+  {
+    label: "Stack",
+    items: [
+      { name: "Nuxt 4", note: "All projects" },
+      { name: "Supabase", note: "Auth + DB" },
+      { name: "Netlify", note: "Deployment" },
+      { name: "TypeScript", note: "Always" },
+    ],
+  },
+  {
+    label: "Accessibility tools",
+    items: [
+      { name: "Axe DevTools" },
+      { name: "ARC Toolkit" },
+      { name: "IBM Equal Access Checker" },
+      { name: "NVDA", note: "Screen reader testing" },
+      { name: "VoiceOver", note: "Screen reader testing" },
+    ],
+  },
+  {
+    label: "Design & misc",
+    items: [{ name: "Affinity Photo" }, { name: "CodePen" }],
+  },
+  {
+    label: "Hardware",
+    items: [
+      { name: "PC", note: "Primary machine" },
+      { name: "MacBook Pro 2019", note: "Still tickin'" },
+    ],
+  },
+];
 ---
 
-<Base
-  title="Uses"
-  description="Tools, hardware, and software Todd Libby uses every day."
+<PageLayout
+  title="Uses — Todd Libby"
+  pageNumber={5}
+  pageLabel="Misc / Uses"
+  nextLabel="05 — Misc"
+  nextHref="/misc"
 >
-  <section aria-labelledby="uses-heading">
-    <h1 id="uses-heading" class="cmd-heading">
-      <span class="cmd-prompt">$</span> cat ./uses
-    </h1>
+  <Fragment slot="main">
+    <p class="section-label">Tools & setup</p>
+    <p class="intro-text">
+      The hardware, software, and tools I use day to day for development,
+      accessibility testing, and streaming.
+    </p>
 
-    <dl class="uses-list">
-      {
-        uses.map((category) => (
-          <div class="uses-group">
-            <dt class="uses-group__label">{category.category}</dt>
-            <dd class="uses-group__items">
-              <ul>
-                {category.items.map((item) => (
-                  <li class="uses-item">
-                    <strong class="uses-item__name">{item.name}</strong>
-                    {item.note && (
-                      <span class="uses-item__note">{item.note}</span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </dd>
-          </div>
-        ))
-      }
-    </dl>
-  </section>
-</Base>
+    {
+      categories.map((cat) => (
+        <section
+          aria-labelledby={`cat-${cat.label.toLowerCase().replace(/\s+&?\s*/g, "-")}`}
+          class="uses-section"
+        >
+          <h2
+            id={`cat-${cat.label.toLowerCase().replace(/\s+&?\s*/g, "-")}`}
+            class="content-heading"
+          >
+            {cat.label}
+          </h2>
+          <ul class="uses-list" role="list">
+            {cat.items.map((item) => (
+              <li class="uses-item">
+                <span class="uses-name">{item.name}</span>
+                {item.note && <span class="uses-note">{item.note}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </Fragment>
+
+  <Fragment slot="aside">
+    <div class="side-item">
+      <p class="section-label">Primary editor</p>
+      <p class="side-heading">VS Code</p>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Terminal</p>
+      <p class="side-heading">Ghostty</p>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">OS</p>
+      <div class="tag-list">
+        <span class="tag">Windows (primary)</span>
+        <span class="tag">macOS</span>
+      </div>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Node</p>
+      <p class="side-heading">v22</p>
+      <p class="side-text">Required on all projects.</p>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Back</p>
+      <a href="/misc" class="side-link">Misc</a>
+    </div>
+  </Fragment>
+</PageLayout>
 
 <style>
+  @import "../styles/page-content.css";
+
+  .uses-section {
+    margin-bottom: 0;
+  }
+
+  .content-heading {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #555;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #222;
+    margin: 2rem 0 0;
+    font-weight: 400;
+  }
+
   .uses-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .uses-group {
-    display: grid;
-    grid-template-columns: 6rem 1fr;
-    gap: 0.75rem;
-    padding: 0.75rem 0.875rem;
-    border: 0.5px solid var(--warm-border);
-    border-radius: var(--radius-sm);
-    background: var(--warm-mid);
-    align-items: start;
-  }
-
-  .uses-group__label {
-    font-size: 0.875rem;
-    color: var(--accent);
-    padding-top: 0.125rem;
-  }
-
-  .uses-group__items ul {
     list-style: none;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
   }
 
   .uses-item {
     display: flex;
     align-items: baseline;
-    gap: 0.625rem;
-    font-size: 0.875rem;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #1a1a1a;
   }
 
-  .uses-item__name {
-    color: var(--text-primary);
-    font-weight: 400;
+  .uses-name {
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
   }
 
-  .uses-item__note {
-    font-size: 0.875rem;
-    color: var(--text-secondary);
-  }
-
-  .uses-item__note::before {
-    content: "// ";
-    color: var(--accent);
-    opacity: 0.6;
+  .uses-note {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    color: #555;
+    text-transform: uppercase;
+    white-space: nowrap;
   }
 </style>
