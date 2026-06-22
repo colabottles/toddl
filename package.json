@@ -12,10 +12,10 @@
     "post-to-bsky": "node post-to-bsky.mjs"
   },
   "dependencies": {
-    "@astrojs/netlify": "^7.0.8",
-    "@astrojs/vue": "^6.0.1",
+    "@astrojs/netlify": "^8.0.0",
+    "@astrojs/vue": "^7.0.0",
     "@atproto/api": "^0.20.9",
-    "astro": "^6.1.10",
+    "astro": "^7.0.0",
     "dotenv": "^17.4.2",
     "gray-matter": "^4.0.3",
     "vue": "^3.5.33"
