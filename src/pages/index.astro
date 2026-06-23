@@ -15,7 +15,7 @@ const columns: Column[] = [
   {
     number: 1,
     author: "Todd Libby",
-    blurb: "Who I am, what I do, and how I got here.",
+    blurb: "The important stuff. Who I am, what I do, and how I got here.",
     page: "About",
     href: "/about",
     label: "About — column 1",
@@ -140,7 +140,7 @@ const svgIllustrations: Record<string, string> = {
   *,
   *::before,
   *::after {
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin: 0;
     padding: 0;
   }
@@ -149,6 +149,7 @@ const svgIllustrations: Record<string, string> = {
   body {
     height: 100%;
     background: #111;
+    font-size: clamp(1rem, 1vw, 1.75rem);
   }
 
   .skip-link {
@@ -273,7 +274,7 @@ const svgIllustrations: Record<string, string> = {
     padding: 0.5rem 0.5rem 0;
     flex-shrink: 0;
     overflow: hidden;
-    height: 200px;
+    height: 500px;
     display: flex;
     align-items: flex-end;
   }
@@ -281,13 +282,13 @@ const svgIllustrations: Record<string, string> = {
   .col-title {
     font-family: "Oswald", sans-serif;
     font-weight: 700;
-    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
-    line-height: 0.88;
+    font-size: clamp(8rem, 4.5vw, 3.5rem);
+    line-height: 2.25;
     text-transform: uppercase;
     writing-mode: vertical-rl;
-    transform: rotate(180deg);
+    transform: rotate(180deg) scaleX(1.75);
     white-space: nowrap;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.09em;
     color: #fff;
   }
 

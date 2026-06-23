@@ -32,6 +32,9 @@
     "image": {
       "type": "string"
     },
+    "standardSiteUri": {
+      "type": "string"
+    },
     "$schema": {
       "type": "string"
     }

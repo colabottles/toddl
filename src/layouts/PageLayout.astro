@@ -8,6 +8,7 @@ interface Props {
   nextHref?: string;
   description?: string;
   standardSiteUri?: string;
+  slug?: string;
 }
 
 const {
@@ -19,6 +20,7 @@ const {
   nextHref,
   description,
   standardSiteUri,
+  slug,
 } = Astro.props;
 
 const PUBLICATION_AT_URI =
@@ -41,17 +43,14 @@ const canonicalUrl = new URL(
     <meta property="og:title" content="Todd Libby" />
     <meta
       property="og:description"
-      content="Web developer and accessibility advocate based in Phoenix, Arizona."
+      content="Former web developer and accessibility advocate based in Phoenix, Arizona."
     />
-    <meta property="og:image" content="https://toddl.dev/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://toddl.dev" />
-    <meta name="twitter:title" content="Todd Libby" />
     <meta
-      name="twitter:description"
-      content="Web developer and accessibility advocate based in Phoenix, Arizona."
+      property="og:image"
+      content={slug
+        ? `https://toddl.dev/og/${slug}.png`
+        : "https://toddl.dev/og-image.png"}
     />
-    <meta name="twitter:image" content="https://toddl.dev/og-image.png" />
     <title>{title}</title>
     <link rel="canonical" href={canonicalUrl} />
 
@@ -202,7 +201,7 @@ const canonicalUrl = new URL(
 
   .back-link {
     font-family: var(--font-condensed);
-    font-size: 0.65rem;
+    font-size: 1rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--color-text-muted);
@@ -229,7 +228,7 @@ const canonicalUrl = new URL(
 
   .page-label {
     font-family: var(--font-condensed);
-    font-size: 0.65rem;
+    font-size: 1rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--color-text-muted);
