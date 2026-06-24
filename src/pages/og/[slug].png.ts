@@ -85,6 +85,17 @@ export const GET: APIRoute = async ({ props }) => {
             type: 'div',
             props: {
               style: {
+                width: '100%',
+                height: '2px',
+                background: '#d1d1d1',
+                margin: '24px 0',
+              },
+            },
+          },
+          {
+            type: 'div',
+            props: {
+              style: {
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'flex-end',
