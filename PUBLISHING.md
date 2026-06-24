@@ -38,8 +38,7 @@ draft: false
 
 **Notes:**
 
-- Keep the `post` tag — it is required
-- `image` is optional but shows in Bluesky link cards; omit it to use the default social card
+- The OG image card is generated automatically from the post title and description, no need to add an image field for blog posts.
 - Leave `bskyPostId` as `""` — the script fills it in
 - Do not add `standardSiteUri` — the script fills that in too
 - Set `draft: true` to preview without publishing
