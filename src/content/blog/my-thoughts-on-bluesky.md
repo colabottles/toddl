@@ -7,11 +7,10 @@ tags:
   - bluesky
   - atproto
   - opinion
-image: >-
-  https://res.cloudinary.com/colabottles/image/upload/v1782258366/og-card.png
-bskyPostId: ""
+image: 'https://res.cloudinary.com/colabottles/image/upload/v1782258366/og-card.png'
+bskyPostId: 3mp3t7njce62a
 draft: false
-standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mnqqtfgzrh24'
+standardSiteUri: 'at://did:plc:gevyqibw5p2xsonkbsbjm5vy/site.standard.document/3mp3t7oeole2f'
 ---
 
 ## Easing Into It
