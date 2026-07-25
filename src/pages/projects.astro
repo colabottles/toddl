@@ -12,13 +12,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "ZulkirBot",
-    description:
-      "Fully featured Twitch chat RPG bot with two bot accounts, combat system, spellbook, rogue skills, and D&D mechanics built around Dungeons & Dragons Online.",
-    stack: ["Node", "TypeScript", "Supabase", "tmi.js", "DDO"],
-    status: "live",
-  },
-  {
     title: "BranchFlow",
     description:
       "Keyboard-accessible Git history explorer with SVG commit graph, ARIA live regions, and light, dark, and high-contrast modes.",
@@ -31,15 +24,7 @@ const projects: Project[] = [
       "Netlify",
     ],
     status: "live",
-    url: "https://branchflow.netlify.app",
-  },
-  {
-    title: "BasketBuddy",
-    description:
-      "Grocery budgeting PWA with Stripe subscriptions, category management, and mobile-first UI.",
-    stack: ["Nuxt 4", "Supabase", "Stripe", "PWA", "pnpm"],
-    status: "live",
-    url: "https://basketbuddyapp.netlify.app",
+    url: "https://branchflowapp.netlify.app",
   },
   {
     title: "Blurcle",
@@ -51,34 +36,11 @@ const projects: Project[] = [
     source: "https://github.com/colabottles/blurcle",
   },
   {
-    title: "ddo-overlay",
-    description:
-      "OBS browser source overlay pulling live character data from the DDO Audit API via URL query params.",
-    stack: ["TypeScript", "DDO Audit API", "Netlify"],
-    status: "live",
-    url: "https://ddooverlay.netlify.app",
-  },
-  {
     title: "RouteReady",
     description:
       "Route management SaaS for tracking drivers, vehicles, and properties.",
     stack: ["Nuxt 4", "Supabase", "PostgreSQL", "Better Auth", "Netlify"],
     status: "in progress",
-  },
-  {
-    title: "Chirp",
-    description:
-      "Twitter-style social platform with full auth, follow system, RLS, and accessibility preferences.",
-    stack: ["Nuxt 4", "Supabase", "RLS", "TypeScript"],
-    status: "in progress",
-  },
-  {
-    title: "Broadcast",
-    description:
-      "Multi-platform social posting — Bluesky, Mastodon, and LinkedIn from one place.",
-    stack: ["Nuxt 4", "Supabase", "OAuth", "Bluesky API"],
-    status: "retired",
-    source: "https://github.com/colabottles/broadcast",
   },
 ];
 
@@ -99,8 +61,7 @@ const statusLabel: Record<Project["status"], string> = {
   <Fragment slot="main">
     <p class="section-label">Built things</p>
     <p class="intro-text">
-      Side projects, portfolio work, and tools I've built — some for clients,
-      some for the stream, most for myself.
+      Side projects for myself.
     </p>
 
     <ul class="project-list" role="list">

@@ -113,8 +113,8 @@ export const uses: UsesItem[] = [
   {
     category: 'editor',
     items: [
-      { name: 'VS Code', note: 'primary' },
-      { name: 'Vim', note: 'quick edits' },
+      { name: 'IntelliJ IDEA', note: 'primary' },
+      { name: 'Neovim', note: 'quick edits' },
     ],
   },
   {
