@@ -13,17 +13,13 @@ const recentPosts = allPosts
 
 interface Props {
   title: string;
-  description?: string;
+  description: string;
   image?: string;
   standardSiteUri?: string;
+  slug?: string;
 }
 
-const {
-  title,
-  description = "Web developer and accessibility advocate based in Phoenix, AZ.",
-  image,
-  standardSiteUri,
-} = Astro.props;
+const { title, description, image, standardSiteUri, slug } = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
 
@@ -59,8 +55,10 @@ const currentPath = Astro.url.pathname;
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
-      content={image ??
-        "https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-names.png"}
+      content={slug
+        ? `https://toddl.dev/og/${slug}.png`
+        : (image ??
+          "https://res.cloudinary.com/colabottles/image/upload/v1731376889/todd-social-card-names.png")}
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title + " · Todd Libby"} />
