@@ -1,265 +1,189 @@
 ---
-import Base from "../layouts/Base.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 
-const talks = [
+interface Talk {
+  year: string;
+  event: string;
+  location: string;
+  slides?: string;
+  slides2?: string;
+  slides2Label?: string;
+  video?: string;
+}
+
+interface Workshop {
+  year: string;
+  event: string;
+  location: string;
+  title: string;
+}
+
+interface PodcastAppearance {
+  date: string;
+  title: string;
+  url: string;
+}
+
+const talks: Talk[] = [
   {
     year: "2025",
     event: "MagnoliaConf",
     location: "Jackson, MS",
-    links: [{ label: "Slides", href: "https://safetydeception.toddl.dev" }],
+    slides: "https://safetydeception.toddl.dev",
   },
   {
     year: "2024",
     event: "KCDC",
     location: "Kansas City, MO",
-    links: [
-      {
-        label: "Deceptive Patterns Slides",
-        href: "https://noti.st/colabottles/2hRkcW/deceptive-patterns-and-fast",
-      },
-      {
-        label: "Burnout Talk Slides",
-        href: "https://noti.st/colabottles/DsfnOY/from-code-to-calm-combating-burnout-in-tech",
-      },
-    ],
+    slides: "https://noti.st/colabottles/2hRkcW/deceptive-patterns-and-fast",
+    slides2:
+      "https://noti.st/colabottles/DsfnOY/from-code-to-calm-combating-burnout-in-tech",
+    slides2Label: "Burnout Talk",
   },
-  { year: "2024", event: "DevNexus", location: "Atlanta, GA", links: [] },
-  {
-    year: "2024",
-    event: "HalfStack Phoenix",
-    location: "Gilbert, AZ",
-    links: [],
-  },
-  {
-    year: "2024",
-    event: "Orlando Code Camp",
-    location: "Orlando, FL",
-    links: [],
-  },
-  { year: "2023", event: "Connect Tech", location: "Atlanta, GA", links: [] },
+  { year: "2024", event: "DevNexus", location: "Atlanta, GA" },
+  { year: "2024", event: "HalfStack Phoenix", location: "Gilbert, AZ" },
+  { year: "2024", event: "Orlando Code Camp", location: "Orlando, FL" },
+  { year: "2023", event: "Connect Tech", location: "Atlanta, GA" },
   {
     year: "2023",
     event: "MagnoliaJS",
     location: "Jackson, MS",
-    links: [
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/W3YuwB/deceptive-patterns-and-fast",
-      },
-    ],
+    slides: "https://noti.st/colabottles/W3YuwB/deceptive-patterns-and-fast",
   },
   {
     year: "2023",
     event: "KCDC",
     location: "Kansas City, MO",
-    links: [
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/Q3zpwL/deceptive-patterns-and-fast",
-      },
-    ],
+    slides: "https://noti.st/colabottles/Q3zpwL/deceptive-patterns-and-fast",
   },
   {
     year: "2023",
     event: "DevNexus",
     location: "Atlanta, GA",
-    links: [
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/5AUHLm/deceptive-patterns-and-fast",
-      },
-    ],
+    slides: "https://noti.st/colabottles/5AUHLm/deceptive-patterns-and-fast",
   },
   {
     year: "2023",
     event: "Orlando Code Camp",
     location: "Orlando, FL",
-    links: [
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/HMDpbS/deceptive-patterns-and-fast",
-      },
-    ],
+    slides: "https://noti.st/colabottles/HMDpbS/deceptive-patterns-and-fast",
   },
   {
     year: "2023",
     event: "Halfstack Phoenix",
     location: "Gilbert, AZ",
-    links: [
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/bqmKaC/deceptive-patterns-and-fast",
-      },
-    ],
+    slides: "https://noti.st/colabottles/bqmKaC/deceptive-patterns-and-fast",
   },
   {
     year: "2023",
     event: "Codemash",
     location: "Sandusky, OH",
-    links: [
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/tp43rp/deceptive-patterns-and-fast",
-      },
-    ],
+    slides: "https://noti.st/colabottles/tp43rp/deceptive-patterns-and-fast",
   },
   {
     year: "2022",
     event: "Modern Frontends Live",
     location: "London, UK",
-    links: [
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/2d8lKi/deceptive-patterns-and-fast",
-      },
-    ],
+    slides: "https://noti.st/colabottles/2d8lKi/deceptive-patterns-and-fast",
   },
   {
     year: "2022",
     event: "ConnectTech",
     location: "Atlanta, GA",
-    links: [
-      {
-        label: "Deceptive Patterns",
-        href: "https://noti.st/colabottles/h9ojoL/deceptive-patterns-and-fast",
-      },
-      {
-        label: "Overlays",
-        href: "https://noti.st/colabottles/vPO2HH/accessibility-overlays-why-you-should-avoid-them",
-      },
-    ],
+    slides: "https://noti.st/colabottles/h9ojoL/deceptive-patterns-and-fast",
+    slides2:
+      "https://noti.st/colabottles/vPO2HH/accessibility-overlays-why-you-should-avoid-them",
+    slides2Label: "Overlays",
   },
   {
     year: "2022",
     event: "MagnoliaJS",
     location: "Jackson, MS",
-    links: [{ label: "Video", href: "https://youtu.be/7Fu3fClkR1c" }],
+    video: "https://youtu.be/7Fu3fClkR1c",
   },
   {
     year: "2022",
     event: "Code PaLOUsa",
     location: "Louisville, KY",
-    links: [
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/Em3aKQ/making-a-strong-case-for-accessibility",
-      },
-    ],
+    slides:
+      "https://noti.st/colabottles/Em3aKQ/making-a-strong-case-for-accessibility",
   },
   {
     year: "2022",
     event: "KCDC",
     location: "Kansas City, MO",
-    links: [
-      {
-        label: "POUR Slides",
-        href: "https://noti.st/colabottles/eHPdlN/the-four-principles-of-the-a-pour-calypse-the-harbingers-of-accessibility",
-      },
-      {
-        label: "Business Case Slides",
-        href: "https://noti.st/colabottles/MBkT1n/making-the-pragmatic-business-case-for-accessibility",
-      },
-    ],
+    slides:
+      "https://noti.st/colabottles/eHPdlN/the-four-principles-of-the-a-pour-calypse-the-harbingers-of-accessibility",
+    slides2:
+      "https://noti.st/colabottles/MBkT1n/making-the-pragmatic-business-case-for-accessibility",
+    slides2Label: "Business Case",
   },
   {
     year: "2022",
     event: "Beer City Code",
     location: "Grand Rapids, MI",
-    links: [
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/IjWu31/making-a-strong-case-for-accessibility",
-      },
-    ],
+    slides:
+      "https://noti.st/colabottles/IjWu31/making-a-strong-case-for-accessibility",
   },
   {
     year: "2022",
     event: "Code on the Beach",
     location: "Atlantic Beach, FL",
-    links: [{ label: "Video", href: "https://youtu.be/MqyEQ4BRPmY" }],
+    video: "https://youtu.be/MqyEQ4BRPmY",
   },
   {
     year: "2022",
     event: "DevNexus",
     location: "Atlanta, GA",
-    links: [
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/SJME5e/making-a-strong-case-for-accessibility",
-      },
-    ],
+    slides:
+      "https://noti.st/colabottles/SJME5e/making-a-strong-case-for-accessibility",
   },
   {
     year: "2021",
     event: "Connect Tech",
     location: "Atlanta, GA",
-    links: [{ label: "Video", href: "https://youtu.be/hNNl-t3Zx7Q" }],
+    video: "https://youtu.be/hNNl-t3Zx7Q",
   },
   {
     year: "2021",
     event: "Web Directions AAA",
     location: "Virtual",
-    links: [
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/gcPUQc/wcag-and-color-contrast",
-      },
-    ],
+    slides: "https://noti.st/colabottles/gcPUQc/wcag-and-color-contrast",
   },
-  {
-    year: "2021",
-    event: "#a11yTO Conf",
-    location: "Virtual",
-    links: [{ label: "Conference", href: "https://conf.a11yto.com/" }],
-  },
+  { year: "2021", event: "#a11yTO Conf", location: "Virtual" },
   {
     year: "2021",
     event: "Virtual Coffee Lunch & Learn",
     location: "Virtual",
-    links: [
-      { label: "Video 1", href: "https://youtu.be/BhUtMZtv-DQ" },
-      { label: "Video 2", href: "https://youtu.be/MbLRilx7IXA" },
-    ],
+    video: "https://youtu.be/BhUtMZtv-DQ",
   },
   {
     year: "2021",
     event: "HelloA11y GAAD",
     location: "Virtual",
-    links: [
-      { label: "Video", href: "https://youtu.be/6QxjNGCNptE?t=10595" },
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/Wu7yc5/start-your-a11y-journey-how-to-become-an-accessibility-advocate",
-      },
-    ],
+    video: "https://youtu.be/6QxjNGCNptE?t=10595",
+    slides:
+      "https://noti.st/colabottles/Wu7yc5/start-your-a11y-journey-how-to-become-an-accessibility-advocate",
   },
   {
     year: "2020",
     event: "Virtual Coffee Lightning Talks",
     location: "Virtual",
-    links: [
-      { label: "Video", href: "https://youtu.be/ZHIgB3AKPkA" },
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/NJDuFV/start-your-a11y-journey-how-to-become-an-accessibility-advocate",
-      },
-    ],
+    video: "https://youtu.be/ZHIgB3AKPkA",
+    slides:
+      "https://noti.st/colabottles/NJDuFV/start-your-a11y-journey-how-to-become-an-accessibility-advocate",
   },
   {
     year: "2020",
     event: "BarCamp Philly",
     location: "Virtual",
-    links: [
-      { label: "Video", href: "https://youtu.be/_Jw1KTpcnVw" },
-      {
-        label: "Slides",
-        href: "https://noti.st/colabottles/NGPAzX/contrasting-accessibility-with-color-contrast",
-      },
-    ],
+    video: "https://youtu.be/_Jw1KTpcnVw",
+    slides:
+      "https://noti.st/colabottles/NGPAzX/contrasting-accessibility-with-color-contrast",
   },
 ];
 
-const workshops = [
+const workshops: Workshop[] = [
   {
     year: "2023",
     event: "CodeMash",
@@ -274,149 +198,173 @@ const workshops = [
   },
 ];
 
-const podcasts = [
+const podcasts: PodcastAppearance[] = [
   {
     date: "December 2022",
-    name: "iamdeveloper.live w/ Nick Taylor",
-    href: "https://youtu.be/2ivODfxrDR4",
+    title: "iamdeveloper.live w/ Nick Taylor",
+    url: "https://youtu.be/2ivODfxrDR4",
   },
   {
     date: "November 2022",
-    name: "Compressed FM w/Amy Dutton & James Q. Quick",
-    href: "https://youtu.be/sNwkyLpCCgc",
+    title: "Compressed FM w/ Amy Dutton & James Q. Quick",
+    url: "https://youtu.be/sNwkyLpCCgc",
   },
   {
     date: "September 2022",
-    name: "SomeAntics w/Ben Myers",
-    href: "https://someantics.dev/deceptive-patterns-and-fast/",
+    title: "SomeAntics w/ Ben Myers",
+    url: "https://someantics.dev/deceptive-patterns-and-fast/",
   },
   {
     date: "September 2022",
-    name: "A11y Talks",
-    href: "https://a11ytalks.com/posts/2022-SEP",
+    title: "A11y Talks",
+    url: "https://a11ytalks.com/posts/2022-SEP",
   },
   {
     date: "December 2021",
-    name: "How To Business with Fredrick Weiss",
-    href: "https://youtu.be/edhzUEO79ds",
+    title: "How To Business with Fredrick Weiss",
+    url: "https://youtu.be/edhzUEO79ds",
   },
   {
     date: "October 2021",
-    name: "Learn With Jason",
-    href: "https://www.learnwithjason.dev/understanding-color-contrast-for-accessibility",
+    title: "Learn With Jason",
+    url: "https://www.learnwithjason.dev/understanding-color-contrast-for-accessibility",
   },
   {
     date: "October 2021",
-    name: "Virtual Coffee Lunch & Learn",
-    href: "https://youtu.be/BhUtMZtv-DQ",
+    title: "Virtual Coffee Lunch & Learn",
+    url: "https://youtu.be/BhUtMZtv-DQ",
   },
   {
     date: "October 2021",
-    name: "Virtual Coffee Twitch Channel",
-    href: "https://youtu.be/8R2Zv8Ic0Cc",
+    title: "Virtual Coffee Twitch Channel",
+    url: "https://youtu.be/8R2Zv8Ic0Cc",
   },
   {
     date: "October 2021",
-    name: "Virtual Coffee Podcast",
-    href: "https://virtualcoffee.io/podcast/0402-todd-libby/",
+    title: "Virtual Coffee Podcast",
+    url: "https://virtualcoffee.io/podcast/0402-todd-libby/",
   },
   {
     date: "September 2021",
-    name: "Greater Than Code",
-    href: "https://www.greaterthancode.com/diplomatic-accessibility-advocacy",
+    title: "Greater Than Code",
+    url: "https://www.greaterthancode.com/diplomatic-accessibility-advocacy",
   },
   {
     date: "August 2021",
-    name: "Dev Roulette",
-    href: "https://youtu.be/eTJKI1q_k5w",
+    title: "Dev Roulette",
+    url: "https://youtu.be/eTJKI1q_k5w",
   },
   {
     date: "July 2021",
-    name: "Thunder Nerds Ep. 285",
-    href: "https://youtu.be/6ttbKtIRFMo",
+    title: "Thunder Nerds Ep. 285",
+    url: "https://youtu.be/6ttbKtIRFMo",
   },
   {
     date: "February 2021",
-    name: "Spark Connections",
-    href: "https://anchor.fm/sparkyarcster/episodes/Episode-2---Todd-Libby-etlr45",
+    title: "Spark Connections",
+    url: "https://anchor.fm/sparkyarcster/episodes/Episode-2---Todd-Libby-etlr45",
   },
   {
     date: "February 2021",
-    name: "The Practical Dev",
-    href: "https://youtu.be/idyqPHD9uGA",
+    title: "The Practical Dev",
+    url: "https://youtu.be/idyqPHD9uGA",
   },
   {
     date: "February 2021",
-    name: "SomeAntics",
-    href: "https://youtu.be/aChBL4fsr2E",
+    title: "SomeAntics",
+    url: "https://youtu.be/aChBL4fsar2E",
   },
   {
     date: "December 2020",
-    name: "Auth0",
-    href: "https://www.twitch.tv/videos/824499882",
+    title: "Auth0",
+    url: "https://www.twitch.tv/videos/824499882",
   },
   {
     date: "June 2020",
-    name: "Thunder Nerds Ep. 237",
-    href: "https://youtu.be/5MKfiNZjSVg",
+    title: "Thunder Nerds Ep. 237",
+    url: "https://youtu.be/5MKfiNZjSVg",
   },
   {
     date: "June 2020",
-    name: "Thunder Nerds Ep. 236",
-    href: "https://youtu.be/VIvmyl00G-8",
+    title: "Thunder Nerds Ep. 236",
+    url: "https://youtu.be/VIvmyl00G-8",
   },
   {
     date: "March 2020",
-    name: "That's My Jamstack",
-    href: "https://thatsmyjamstack.com/posts/todd-libby/",
+    title: "That's My Jamstack",
+    url: "https://thatsmyjamstack.com/posts/todd-libby/",
   },
   {
     date: "2020",
-    name: "User Defenders Book Club",
-    href: "https://youtu.be/bT1YXw6MySc",
+    title: "User Defenders Book Club",
+    url: "https://youtu.be/bT1YXw6MySc",
   },
   {
     date: "2019",
-    name: "User Defenders Book Club Discussion",
-    href: "https://youtu.be/OfxEJvJ5GsQ",
+    title: "User Defenders Book Club Discussion",
+    url: "https://youtu.be/OfxEJvJ5GsQ",
   },
 ];
+
+const years = [...new Set(talks.map((t) => t.year))].sort(
+  (a, b) => Number(b) - Number(a),
+);
 ---
 
-<Base
-  title="Speaking"
-  description="Conference talks, workshops, and podcast appearances by Todd Libby."
+<PageLayout
+  title="Speaking — Todd Libby"
+  pageNumber={5}
+  pageLabel="Misc / Speaking"
+  nextLabel="05 — Misc"
+  nextHref="/misc"
 >
-  <section aria-labelledby="speaking-heading">
-    <h1 id="speaking-heading" class="cmd-heading">
-      <span class="cmd-prompt">$</span> ls ./speaking
-    </h1>
+  <Fragment slot="main">
+    <p class="section-label">Past talks</p>
+    <p class="intro-text">
+      Conference talks, workshops, and podcast appearances from 2019 through
+      2025.
+    </p>
 
     <section aria-labelledby="talks-heading">
-      <h2 id="talks-heading" class="group-heading">past talks</h2>
-      <ul class="talks-list">
+      <h2 id="talks-heading" class="content-heading">Conferences</h2>
+      <ul class="talk-list" role="list">
         {
-          talks.map((t) => (
+          talks.map((talk) => (
             <li class="talk-item">
-              <time class="talk-item__year">{t.year}</time>
-              <p class="talk-item__event">{t.event}</p>
-              <p class="talk-item__location">{t.location}</p>
-              {t.links.length > 0 && (
-                <ul class="talk-item__links">
-                  {t.links.map((l) => (
-                    <li>
-                      <a
-                        href={l.href}
-                        class="talk-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {l.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              )}
+              <span class="talk-year">{talk.year}</span>
+              <div class="talk-body">
+                <span class="talk-event">{talk.event}</span>
+                <span class="talk-location">{talk.location}</span>
+              </div>
+              <div class="talk-links">
+                {talk.slides && (
+                  <a
+                    href={talk.slides}
+                    class="talk-link"
+                    rel="noopener noreferrer"
+                  >
+                    Slides
+                  </a>
+                )}
+                {talk.slides2 && (
+                  <a
+                    href={talk.slides2}
+                    class="talk-link"
+                    rel="noopener noreferrer"
+                  >
+                    {talk.slides2Label ?? "Slides 2"}
+                  </a>
+                )}
+                {talk.video && (
+                  <a
+                    href={talk.video}
+                    class="talk-link"
+                    rel="noopener noreferrer"
+                  >
+                    Video
+                  </a>
+                )}
+              </div>
             </li>
           ))
         }
@@ -424,15 +372,17 @@ const podcasts = [
     </section>
 
     <section aria-labelledby="workshops-heading">
-      <h2 id="workshops-heading" class="group-heading">workshops</h2>
-      <ul class="talks-list">
+      <h2 id="workshops-heading" class="content-heading">Workshops</h2>
+      <ul class="talk-list" role="list">
         {
           workshops.map((w) => (
             <li class="talk-item">
-              <time class="talk-item__year">{w.year}</time>
-              <p class="talk-item__event">{w.event}</p>
-              <p class="talk-item__location">{w.location}</p>
-              <p class="talk-item__title">{w.title}</p>
+              <span class="talk-year">{w.year}</span>
+              <div class="talk-body">
+                <span class="talk-event">{w.event}</span>
+                <span class="talk-location">{w.location}</span>
+                <span class="talk-workshop-title">{w.title}</span>
+              </div>
             </li>
           ))
         }
@@ -440,236 +390,188 @@ const podcasts = [
     </section>
 
     <section aria-labelledby="podcasts-heading">
-      <h2 id="podcasts-heading" class="group-heading">podcasts & streams</h2>
-      <ul class="talks-list">
+      <h2 id="podcasts-heading" class="content-heading">Podcasts & Streams</h2>
+      <ul class="podcast-list" role="list">
         {
           podcasts.map((p) => (
-            <li class="talk-item">
-              <time class="talk-item__year">{p.date}</time>
-              <a
-                href={p.href}
-                class="talk-item__event talk-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {p.name}
+            <li class="podcast-item">
+              <span class="talk-year">{p.date}</span>
+              <a href={p.url} class="podcast-title" rel="noopener noreferrer">
+                {p.title}
               </a>
             </li>
           ))
         }
       </ul>
     </section>
-  </section>
+  </Fragment>
 
-  <section aria-labelledby="videos-heading">
-    <h2 id="videos-heading" class="group-heading">videos</h2>
-    <ul class="talks-list">
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=P-P50Ztejfo"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">MagnoliaConf 2025</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=M-5p1UCcj-c"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Todd Libby speaking</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=ZHIgB3AKPkA"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Virtual Coffee Lightning Talks 2020</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=BhUtMZtv-DQ"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Virtual Coffee Lunch and Learn 2021</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=hNNl-t3Zx7Q"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Connect Tech 2021</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=MqyEQ4BRPmY"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Code on the Beach 2022</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=7Fu3fClkR1c"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">MagnoliaJS 2022</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=mr6rWFgh_1E&t=25385"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Todd Libby speaking</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=sNwkyLpCCgc"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Compressed FM</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=C7FI3XB4MpM"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Todd Libby speaking</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=Ls84UkYB5sk"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Todd Libby speaking</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=2ivODfxrDR4"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">iamdeveloper.live with Nick Taylor</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=aChBL4fsr2E"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">SomeAntics with Ben Myers</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=JrmaC5zeSPA"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Todd Libby speaking</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=luvkjIpUc-Q"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Todd Libby speaking</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=_a6mEXb6Ldg"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Todd Libby speaking</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=eTJKI1q_k5w"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Dev Roulette</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=dBNwq3rPJlQ"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Todd Libby speaking</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=5tomkLpdtP4"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Todd Libby speaking</a>
-      </li>
-      <li class="talk-item">
-        <a
-          href="https://www.youtube.com/watch?v=Ya2s9TK-4_8"
-          class="talk-link"
-          target="_blank"
-          rel="noopener noreferrer">Todd Libby speaking</a>
-      </li>
-    </ul>
-  </section>
-</Base>
+  <Fragment slot="aside">
+    <div class="side-item">
+      <p class="section-label">Conferences</p>
+      <p class="stat-num">{talks.length}</p>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Workshops</p>
+      <p class="stat-num">{workshops.length}</p>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Podcasts & streams</p>
+      <p class="stat-num">{podcasts.length}</p>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Years active</p>
+      <div class="tag-list">
+        {years.map((y) => <span class="tag">{y}</span>)}
+      </div>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Slides on</p>
+      <a
+        href="https://noti.st/colabottles"
+        class="side-link"
+        rel="noopener noreferrer"
+      >
+        noti.st/colabottles
+      </a>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Back</p>
+      <a href="/misc" class="side-link">Misc</a>
+    </div>
+  </Fragment>
+</PageLayout>
 
 <style>
-  .talks-list {
+  @import "../styles/page-content.css";
+
+  .content-heading {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #555;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #222;
+    margin: 2rem 0 0;
+    font-weight: 400;
+  }
+
+  .talk-list,
+  .podcast-list {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0.375rem;
-    list-style: none;
-    padding: 0;
+    margin-bottom: 0;
   }
 
   .talk-item {
+    display: grid;
+    grid-template-columns: 3rem 1fr auto;
+    gap: 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid #1a1a1a;
+    align-items: start;
+  }
+
+  .talk-year {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    color: #555;
+    padding-top: 2px;
+  }
+
+  .talk-body {
     display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
-    padding: 0.5rem 0.875rem;
-    border: 0.5px solid var(--warm-border);
-    border-radius: var(--radius-sm);
-    background: var(--warm-mid);
-    flex-wrap: wrap;
-    font-size: 0.875rem;
+    flex-direction: column;
+    gap: 2px;
   }
 
-  .talk-item__year {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    min-width: 3rem;
-    flex-shrink: 0;
+  .talk-event {
+    font-family: "Oswald", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.1;
   }
 
-  .talk-item__event {
-    font-weight: 500;
-    color: var(--text-primary);
-    flex-shrink: 0;
+  .talk-location {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    color: #555;
   }
 
-  .talk-item__location {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    flex-shrink: 0;
+  .talk-workshop-title {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 2px;
   }
 
-  .talk-item__title {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    width: 100%;
-  }
-
-  .talk-item__links {
-    list-style: none;
-    padding: 0;
+  .talk-links {
     display: flex;
-    gap: 0.625rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
   }
 
   .talk-link {
-    font-size: 0.75rem;
-    color: var(--accent);
-    text-decoration: underline;
-    text-underline-offset: 3px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #666;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1px;
+    white-space: nowrap;
+    transition:
+      color 0.15s,
+      border-color 0.15s;
   }
 
-  .talk-link:hover {
-    opacity: 0.8;
+  .talk-link:hover,
+  .talk-link:focus-visible {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .talk-link:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  .podcast-item {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #1a1a1a;
+    align-items: baseline;
+  }
+
+  .podcast-title {
+    font-size: 0.85rem;
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.4;
+    transition: color 0.15s;
+  }
+
+  .podcast-title:hover,
+  .podcast-title:focus-visible {
+    color: #fff;
+  }
+
+  .podcast-title:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
   }
 </style>

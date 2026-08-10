@@ -1,64 +1,67 @@
 ---
-import Base from "../layouts/Base.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 
-const writing = [
+interface Book {
+  year: string;
+  title: string;
+}
+
+interface Article {
+  year: string;
+  title: string;
+  publication: string;
+  url: string;
+}
+
+const books: Book[] = [
+  { year: "2024", title: "The Web Accessibility Handbook" },
+  { year: "2023", title: "Why hiring in tech is broken" },
+];
+
+const articles: Article[] = [
   {
     year: "2021",
     title: "Making A Strong Case For Accessibility",
-    tag: "article",
     publication: "Smashing Magazine",
     url: "https://www.smashingmagazine.com/2021/07/strong-case-for-accessibility/",
   },
   {
     year: "2021",
     title: "Looking at WCAG 2.5.5 for Better Target Sizes",
-    tag: "article",
     publication: "CSS-Tricks",
     url: "https://css-tricks.com/looking-at-wcag-2-5-5-for-better-target-sizes/",
   },
   {
     year: "2020",
     title: "What's New in WCAG 2.1: Label in Name",
-    tag: "article",
     publication: "CSS-Tricks",
     url: "https://css-tricks.com/whats-new-in-wcag-2-1-label-in-name/",
   },
 ];
-
-const books = [
-  {
-    year: "2024",
-    title: "The Web Accessibility Handbook",
-    tag: "book",
-    url: undefined,
-  },
-  {
-    year: "2023",
-    title: "Why hiring in tech is broken",
-    tag: "book",
-    url: undefined,
-  },
-];
 ---
 
-<Base
-  title="Writing"
-  description="Books and articles by Todd Libby on web accessibility and the tech industry."
+<PageLayout
+  title="Writing — Todd Libby"
+  pageNumber={5}
+  pageLabel="Misc / Writing"
+  nextLabel="05 — Misc"
+  nextHref="/misc"
 >
-  <section aria-labelledby="writing-heading">
-    <h1 id="writing-heading" class="cmd-heading">
-      <span class="cmd-prompt">$</span> cat ./writing
-    </h1>
+  <Fragment slot="main">
+    <p class="section-label">Books & articles</p>
+    <p class="intro-text">
+      Books, articles, and longer-form writing published outside the blog.
+    </p>
 
     <section aria-labelledby="books-heading">
-      <h2 id="books-heading" class="group-heading">books</h2>
-      <ul class="writing-list">
+      <h2 id="books-heading" class="content-heading">Books</h2>
+      <ul class="writing-list" role="list">
         {
-          books.map((w) => (
+          books.map((book) => (
             <li class="writing-item">
-              <time class="writing-item__date">{w.year}</time>
-              <p class="writing-item__title">{w.title}</p>
-              <span class="writing-item__tag">{w.tag}</span>
+              <span class="writing-year">{book.year}</span>
+              <span class="writing-title">{book.title}</span>
+              <span class="writing-type">Book</span>
             </li>
           ))
         }
@@ -66,85 +69,132 @@ const books = [
     </section>
 
     <section aria-labelledby="articles-heading">
-      <h2 id="articles-heading" class="group-heading">articles</h2>
-      <ul class="writing-list">
+      <h2 id="articles-heading" class="content-heading">Articles</h2>
+      <ul class="writing-list" role="list">
         {
-          writing.map((w) => (
+          articles.map((article) => (
             <li class="writing-item">
-              <time class="writing-item__date">{w.year}</time>
+              <span class="writing-year">{article.year}</span>
               <a
-                href={w.url}
-                class="writing-item__title writing-item__title--link"
-                target="_blank"
+                href={article.url}
+                class="writing-title writing-link"
                 rel="noopener noreferrer"
               >
-                {w.title}
+                {article.title}
               </a>
-              <span class="writing-item__pub">{w.publication}</span>
-              <span class="writing-item__tag">{w.tag}</span>
+              <span class="writing-type">{article.publication}</span>
             </li>
           ))
         }
       </ul>
     </section>
-  </section>
-</Base>
+  </Fragment>
+
+  <Fragment slot="aside">
+    <div class="side-item">
+      <p class="section-label">Books</p>
+      <p class="stat-num">{books.length}</p>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Articles</p>
+      <p class="stat-num">{articles.length}</p>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Published in</p>
+      <div class="tag-list">
+        <span class="tag">Smashing Magazine</span>
+        <span class="tag">CSS-Tricks</span>
+      </div>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Also read</p>
+      <a href="/blog" class="side-link">Blog</a>
+    </div>
+
+    <div class="side-item">
+      <p class="section-label">Back</p>
+      <a href="/misc" class="side-link">Misc</a>
+    </div>
+  </Fragment>
+</PageLayout>
 
 <style>
+  @import "../styles/page-content.css";
+
+  .content-heading {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #555;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #222;
+    margin-bottom: 0;
+    font-weight: 400;
+    margin-top: 2rem;
+  }
+
+  .content-heading:first-of-type {
+    margin-top: 0;
+  }
+
   .writing-list {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    list-style: none;
-    padding: 0;
+    margin-bottom: 2rem;
   }
 
   .writing-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3rem 1fr auto;
     align-items: baseline;
-    gap: 0.75rem;
-    font-size: 0.875rem;
-    padding: 0.5rem 0.75rem;
-    border: 0.5px solid var(--warm-border);
-    border-radius: var(--radius-sm);
-    background: var(--warm-mid);
-    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #1a1a1a;
   }
 
-  .writing-item__date {
-    color: var(--text-secondary);
-    min-width: 3.5rem;
-    font-size: 0.75rem;
+  .writing-year {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    color: #555;
     flex-shrink: 0;
   }
 
-  .writing-item__title {
-    color: var(--text-primary);
-    flex: 1;
+  .writing-title {
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.2;
+  }
+
+  .writing-link {
     text-decoration: none;
+    transition: color 0.15s;
   }
 
-  .writing-item__title--link {
-    text-decoration: underline;
-    text-underline-offset: 3px;
+  .writing-link:hover,
+  .writing-link:focus-visible {
+    color: #aaa;
   }
 
-  .writing-item__title--link:hover {
-    color: var(--accent);
+  .writing-link:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
   }
 
-  .writing-item__pub {
-    font-size: 0.6875rem;
-    color: var(--text-secondary);
-    flex-shrink: 0;
-  }
-
-  .writing-item__tag {
-    font-size: 0.625rem;
-    border: 0.5px solid var(--accent-border);
-    border-radius: 2px;
-    padding: 0.125rem 0.375rem;
-    color: var(--accent);
-    flex-shrink: 0;
+  .writing-type {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #444;
+    white-space: nowrap;
   }
 </style>
