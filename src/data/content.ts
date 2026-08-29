@@ -44,7 +44,7 @@ export const projects: Project[] = [
     description: 'Grocery budgeting PWA with Stripe subscriptions, category management, and mobile-first UI.',
     stack: ['Nuxt 4', 'Supabase', 'Stripe', 'PWA', 'pnpm'],
     url: 'https://basketbuddyapp.netlify.app',
-    status: 'live',
+    status: 'retired',
   },
   {
     name: 'Broadcast',
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     description: 'Bluesky analytics — engagement metrics, activity charts, and repost filtering.',
     stack: ['Nuxt 4', 'Bluesky API', 'npm'],
     url: 'https://blurcle.netlify.app',
-    status: 'live',
+    status: 'retired',
     repo: 'https://github.com/colabottles/blurcle',
   },
   {
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     name: 'Chirp',
     description: 'Twitter-style social platform with full auth, follow system, RLS, and accessibility preferences.',
     stack: ['Nuxt 4', 'Supabase', 'RLS', 'TypeScript'],
-    status: 'in progress',
+    status: 'retired',
   },
   {
     name: 'ddo-overlay',
