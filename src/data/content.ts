@@ -50,28 +50,26 @@ export const projects: Project[] = [
     name: 'Broadcast',
     description: 'Multi-platform social posting — Bluesky, Mastodon, and LinkedIn from one place.',
     stack: ['Nuxt 4', 'Supabase', 'OAuth', 'Bluesky API'],
-    status: 'retired',
     repo: 'https://github.com/colabottles/broadcast',
+    status: 'retired',
   },
   {
     name: 'Blurcle',
     description: 'Bluesky analytics — engagement metrics, activity charts, and repost filtering.',
     stack: ['Nuxt 4', 'Bluesky API', 'npm'],
-    url: 'https://blurcle.netlify.app',
     status: 'retired',
-    repo: 'https://github.com/colabottles/blurcle',
   },
   {
     name: 'RouteReady',
     description: 'Route management SaaS for tracking drivers, vehicles, and properties.',
-    stack: ['Nuxt 4', 'Supabase', 'PostgreSQL', 'Better Auth', 'Netlify'],
+    stack: ['Nuxt 4', 'PostgreSQL', 'Better Auth', 'Netlify'],
     status: 'in progress',
     wide: true,
   },
   {
     name: 'Chirp',
     description: 'Twitter-style social platform with full auth, follow system, RLS, and accessibility preferences.',
-    stack: ['Nuxt 4', 'Supabase', 'RLS', 'TypeScript'],
+    stack: ['Nuxt 4', 'OAuth', 'RLS', 'TypeScript'],
     status: 'retired',
   },
   {
@@ -84,7 +82,7 @@ export const projects: Project[] = [
   {
     name: 'ZulkirBot',
     description: 'Fully featured Twitch chat RPG bot with two bot accounts, combat system, spellbook, rogue skills, and D&D mechanics built around Dungeons & Dragons Online.',
-    stack: ['Node', 'TypeScript', 'Supabase', 'tmi.js', 'DDO'],
+    stack: ['Node', 'TypeScript', 'PostgreSQL', 'tmi.js'],
     status: 'live',
     wide: true,
   },
@@ -113,14 +111,14 @@ export const uses: UsesItem[] = [
   {
     category: 'editor',
     items: [
-      { name: 'VS Code', note: 'primary' },
+      { name: 'IntelliJIDEA', note: 'primary' },
       { name: 'Vim', note: 'quick edits' },
     ],
   },
   {
     category: 'terminal',
     items: [
-      { name: 'Ghostty' },
+      { name: 'Yaw' },
       { name: 'zsh + oh-my-zsh' },
     ],
   },
@@ -128,24 +126,9 @@ export const uses: UsesItem[] = [
     category: 'stack',
     items: [
       { name: 'Nuxt 4', note: 'all projects' },
-      { name: 'Supabase', note: 'auth + db' },
+      { name: 'PostgreSQL', note: 'all your database belongs to us' },
       { name: 'Netlify', note: 'deployment' },
       { name: 'TypeScript', note: 'always' },
-    ],
-  },
-  {
-    category: 'tools',
-    items: [
-      { name: 'Axe DevTools, ARC Toolkit, IBM Equal Access Checker', note: 'a11y is a right' },
-      { name: 'NVDA + VoiceOver', note: 'screen reader testing' },
-      { name: 'Affinity Photo, CodePen', note: 'technodesign' },
-    ],
-  },
-  {
-    category: 'hardware',
-    items: [
-      { name: 'MacBook Pro 2019', note: 'still tickin' },
-      { name: 'PC', note: 'because it is my primary machine' },
     ],
   },
 ]
