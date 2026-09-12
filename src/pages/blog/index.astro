@@ -1,5 +1,5 @@
 ---
-import PageLayout from "../../layouts/PageLayout.astro";
+import Base from "../../layouts/Base.astro";
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("blog", ({ data }) => !data.draft);
@@ -10,17 +10,44 @@ const sorted = posts.sort(
 const tags = [...new Set(posts.flatMap((p) => p.data.tags ?? []))];
 ---
 
-<PageLayout
-  title="Blog — Todd Libby"
-  pageNumber={2}
-  pageLabel="Blog"
-  nextLabel="03 — Contact"
-  nextHref="/contact"
->
-  <Fragment slot="main">
-    <p class="section-label">All posts</p>
+<Base title="Blog" description="Writing on accessibility, development, and everything in between.">
+  <section aria-labelledby="blog-heading">
+    <h1 id="blog-heading" class="cmd-heading">
+      <span class="cmd-prompt">$</span> ls ./blog
+    </h1>
 
-    <ol class="post-list" reversed>
+    <dl class="info-list">
+      <div class="info-group">
+        <dt class="info-group__label">total posts</dt>
+        <dd class="info-group__content">{posts.length}</dd>
+      </div>
+
+      {
+        tags.length > 0 && (
+          <div class="info-group">
+            <dt class="info-group__label">tags</dt>
+            <dd class="info-group__content">
+              <ul class="tag-list">
+                {tags.map((tag) => (
+                  <li>
+                    <span class="tag">{tag}</span>
+                  </li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+        )
+      }
+
+      <div class="info-group">
+        <dt class="info-group__label">feed</dt>
+        <dd class="info-group__content">
+          <a href="/rss.xml" class="info-link">./rss.xml</a>
+        </dd>
+      </div>
+    </dl>
+
+    <ol class="post-list" reversed aria-label="Blog posts">
       {
         sorted.map((post) => (
           <li class="post-item">
@@ -49,30 +76,67 @@ const tags = [...new Set(posts.flatMap((p) => p.data.tags ?? []))];
         ))
       }
     </ol>
-  </Fragment>
-
-  <Fragment slot="aside">
-    <div class="side-item">
-      <p class="section-label">Total posts</p>
-      <p class="stat-num">{posts.length}</p>
-    </div>
-
-    <div class="side-item">
-      <p class="section-label">Tags</p>
-      <div class="tag-list">
-        {tags.map((tag) => <span class="tag">{tag}</span>)}
-      </div>
-    </div>
-
-    <div class="side-item">
-      <p class="section-label">Feed</p>
-      <a href="/rss.xml" class="side-link">RSS feed</a>
-    </div>
-  </Fragment>
-</PageLayout>
+  </section>
+</Base>
 
 <style>
-  @import "../../styles/page-content.css";
+  .info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .info-group {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+    border: 0.5px solid var(--warm-border);
+    border-radius: var(--radius-sm);
+    background: var(--warm-mid);
+    align-items: start;
+  }
+
+  .info-group__label {
+    font-size: 0.75rem;
+    color: var(--accent);
+    padding-top: 0.125rem;
+  }
+
+  .info-group__content {
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    line-height: 1.7;
+  }
+
+  .info-link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .info-link:hover {
+    opacity: 0.8;
+  }
+
+  .tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    background: var(--warm-mid);
+    border: 0.5px solid var(--warm-border);
+    padding: 0.125rem 0.5rem;
+    border-radius: 3px;
+  }
 
   .post-list {
     list-style: none;
@@ -82,7 +146,7 @@ const tags = [...new Set(posts.flatMap((p) => p.data.tags ?? []))];
   }
 
   .post-item {
-    border-bottom: 1px solid #222;
+    border-bottom: 0.5px solid var(--warm-border);
   }
 
   .post-link {
@@ -100,7 +164,7 @@ const tags = [...new Set(posts.flatMap((p) => p.data.tags ?? []))];
   }
 
   .post-link:focus-visible {
-    outline: 2px solid #fff;
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
 
@@ -112,25 +176,23 @@ const tags = [...new Set(posts.flatMap((p) => p.data.tags ?? []))];
   }
 
   .post-date {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 0.6rem;
-    letter-spacing: 0.15em;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #555;
+    color: var(--text-secondary);
   }
 
   .post-title {
-    font-family: "Oswald", sans-serif;
     font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    line-height: 1.1;
+    color: var(--text-primary);
+    line-height: 1.2;
   }
 
   .post-excerpt {
-    font-size: 0.8rem;
-    color: #888;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
     line-height: 1.5;
   }
 </style>
