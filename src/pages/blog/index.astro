@@ -27,13 +27,16 @@ const tags = [...new Set(posts.flatMap((p) => p.data.tags ?? []))];
           <div class="info-group">
             <dt class="info-group__label">tags</dt>
             <dd class="info-group__content">
-              <ul class="tag-list">
-                {tags.map((tag) => (
-                  <li>
-                    <span class="tag">{tag}</span>
-                  </li>
-                ))}
-              </ul>
+              <details class="tag-details">
+                <summary class="tag-summary">{tags.length} tags</summary>
+                <ul class="tag-list">
+                  {tags.map((tag) => (
+                    <li>
+                      <span class="tag">{tag}</span>
+                    </li>
+                  ))}
+                </ul>
+              </details>
             </dd>
           </div>
         )
@@ -118,6 +121,31 @@ const tags = [...new Set(posts.flatMap((p) => p.data.tags ?? []))];
 
   .info-link:hover {
     opacity: 0.8;
+  }
+
+  .tag-details {
+    display: inline-block;
+  }
+
+  .tag-summary {
+    cursor: pointer;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--accent);
+    width: fit-content;
+  }
+
+  .tag-summary::marker {
+    color: var(--accent);
+  }
+
+  .tag-summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .tag-details[open] .tag-summary {
+    margin-bottom: 0.75rem;
   }
 
   .tag-list {
